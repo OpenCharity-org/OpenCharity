@@ -1,0 +1,22 @@
+[
+  {"country":"Nicaragua","bank_access":"In-person visit required; non-resident foreigners need passport plus a second photo ID and typically two personal/professional references; remote opening not offered."},
+  {"country":"Costa Rica","bank_access":"Most banks require DIMEX residency per SUGEF KYC rules; non-residents can open only a simplified in-person account with low monthly deposit caps, unsuitable for a charity."},
+  {"country":"Panama","bank_access":"Non-residents may open accounts in-person with passport, foreign address proof, home-bank reference and income proof; AML Law 23 KYC and an interview apply; no residency needed."},
+  {"country":"Colombia","bank_access":"Requires cédula de extranjería (residency ID) plus local address proof; tourist status is rejected; in-person visit at the branch is mandatory."},
+  {"country":"Venezuela","bank_access":"Effectively blocked for remote foreigners: banks require cédula de extranjero residency and in-person application; no remote opening; currency controls add friction."},
+  {"country":"Ecuador","bank_access":"In-person; most banks want an Ecuadorian cédula, but some (e.g. Banco del Pacífico) accept a passport with a valid visa plus reference under Superintendencia de Bancos rules."},
+  {"country":"Peru","bank_access":"In-person; full accounts at major banks need a Carné de Extranjería (residency card); a few banks open passport-only savings for non-residents, generally with limits."},
+  {"country":"Bolivia","bank_access":"Blocked for non-residents: banks require a Cédula de Identidad de Extranjero and in-person application (ASFI-regulated); tourist status is not enough."},
+  {"country":"Guyana","bank_access":"In-person visit required with passport, address proof, TIN and source-of-funds disclosure; no statutory ban, but offshore non-resident accounts still need a face-to-face meeting."},
+  {"country":"Suriname","bank_access":"No legal residency restriction on foreigners per central-bank guidance; opening is in-person at the bank with passport, address and (often) a foreign bank reference letter."},
+  {"country":"Brazil","bank_access":"Effectively blocked remotely: banks require CRNM residency, CPF and a Brazilian address with in-person KYC; non-residents are limited to special non-tax-resident (CDE) products."},
+  {"country":"Paraguay","bank_access":"Requires a Paraguayan cédula (residency ID) and in-person presence; a passport alone is not accepted by the major banks, so remote opening is not possible."},
+  {"country":"Uruguay","bank_access":"Most open to non-residents: BROU allows a basic in-person account with home-country address, but requires a US$5,000+ fixed deposit held 181 days for new non-residents."},
+  {"country":"Argentina","bank_access":"In-person at a branch; non-residents can open an account with passport and CUIT/CUIL under BCRA rules; peso savings available even without a DNI, with tighter limits."},
+  {"country":"Chile","bank_access":"In-person; requires a RUT (foreigners with a valid visa can get a provisional one) and ID per ChileAtiende rules; non-residents without RUT/visa are effectively blocked."},
+  {"country":"Mongolia","bank_access":"In-person in Ulaanbaatar with passport, visa and registered address proof; opening from abroad typically requires a local lawyer with power of attorney; remote opening not possible."},
+  {"country":"Japan","bank_access":"Effectively blocked remotely: non-residents (under 6 months in Japan) cannot open standard accounts; in-person with residence card required, Japan Post Bank being the main exception."},
+  {"country":"South Korea","bank_access":"Requires the Alien Registration Card (ARC), i.e. registered residence in Korea, plus in-person application; a remote foreign founder without local presence cannot open an account."},
+  {"country":"China","bank_access":"Blocked remotely: PBOC/SAFE real-name rules require physical presence, a non-tourist visa, a Chinese mobile number and local address, with in-person branch verification."},
+  {"country":"Taiwan","bank_access":"In-person at a branch; foreigners need an Alien Resident Certificate (or Gold Card) plus in-branch identity verification; no online/remote opening for non-residents."}
+]

@@ -1,0 +1,22 @@
+[
+  {"country":"Hong Kong","bank_access":"Needs a local visit: non-residents cannot onboard online; banks (HSBC, BOC, SCB) require in-person branch KYC under AML/CDD rules, with tightened non-resident scrutiny since 2023."},
+  {"country":"Macau","bank_access":"Needs a local visit: BNU e-Application is limited to Macau ID holders; banks require in-person KYC with Macau residency/tax-residency documents. No remote onboarding for non-residents."},
+  {"country":"Singapore","bank_access":"Needs a local visit: DBS, OCBC and UOB run enhanced due diligence on foreign-owned charities and typically require an in-person branch appointment; remote onboarding is limited to existing customers."},
+  {"country":"Malaysia","bank_access":"Needs a local visit: banks gate accounts on visa/residency status, require in-person branch KYC, and often ask for a local resident director or introducer; no remote onboarding for non-residents."},
+  {"country":"Indonesia","bank_access":"Needs a local visit: online onboarding is unavailable to non-residents; banks require an in-person application with KITAS/KITAP, local address and passport under OJK AML rules."},
+  {"country":"Thailand","bank_access":"Needs a local visit: major banks (SCB, KBank, Bangkok Bank) require in-person application, a long-stay non-immigrant visa, Thai address and local mobile number; tourist-visa holders are refused."},
+  {"country":"Vietnam","bank_access":"Needs a local visit: under State Bank Circular 23/2014, in-person application with passport plus valid visa or residence card (TRC) is required; since 2022 big banks refuse tourist-visa holders."},
+  {"country":"Philippines","bank_access":"Needs a local visit: banks (BDO, BPI, Security) require in-person KYC with passport, long-term visa, ACR I-Card (issued only after an extended stay) and local address; no remote onboarding."},
+  {"country":"Cambodia","bank_access":"Needs a local visit but is easy: ABA/ACLEDA open accounts for non-residents in person with passport plus any Cambodian visa, no work permit; no fully remote online option."},
+  {"country":"Laos","bank_access":"Needs a local visit: BCEL/Canadia require in-person KYC with a work permit or stay permit; non-residents with no local presence are generally refused. No remote onboarding available."},
+  {"country":"Myanmar","bank_access":"Effectively blocked for remote founders: in-person KYC with work visa, local address and often an introducer is required; no remote non-resident onboarding at KBZ, Yoma or AYA Bank."},
+  {"country":"Brunei","bank_access":"Needs a local visit: banks (Bank Islam, MUFG, OCBC) require in-person application with passport, employment/dependent pass and local address; no remote onboarding for non-residents."},
+  {"country":"Timor-Leste","bank_access":"Needs a local visit: non-residents open accounts in person at BNCTL/ANZ/BNU with passport plus visa; banks typically require a local tax ID; no remote onboarding available."},
+  {"country":"Australia","bank_access":"Fully online: an AU-resident founder can open accounts at CBA, Westpac, ANZ or NAB via eKYC with passport or driver licence and overseas address proof; no in-person visit needed."},
+  {"country":"New Zealand","bank_access":"Possible online: ANZ, ASB, BNZ and Westpac accept non-resident applications with passport plus proof of address, but most banks require an in-person branch visit within ~12 months to activate."},
+  {"country":"Fiji","bank_access":"Needs a local visit: in-person KYC with passport and a Fijian TIN (FRCS) is required; RBF-regulated banks (BSP, ANZ, Westpac) offer no remote onboarding for non-residents."},
+  {"country":"Papua New Guinea","bank_access":"Needs a local visit, effectively blocked for pure non-residents: Kinabank Digi requires a PNG driver licence and branches expect local presence; expect a full in-person KYC."},
+  {"country":"Samoa","bank_access":"Needs a local visit: ANZ Samoa and local banks require in-person application with passport, local address and residency/work permit; no remote onboarding for non-residents."},
+  {"country":"Tonga","bank_access":"Needs a local visit: BSP and other banks require in-person KYC with passport, local address and residency/work permit; no remote onboarding for non-residents."},
+  {"country":"Vanuatu","bank_access":"Relatively easy: RCV-licensed banks (ANZ, NAB, Bank of the Pacific, WES, Melanesia) offer non-resident multi-currency accounts; in-person branch KYC, or via a local representative."}
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "country": "Montenegro",
+    "bank_access": "Local visit required — remote opening is not possible. Banks run strict AML due diligence and often decline corporate accounts for founders with no residence permit or other tie to Montenegro."
+  },
+  {
+    "country": "North Macedonia",
+    "bank_access": "Non-residents may open accounts (Stopanska Banka publishes non-resident requirements), typically same-day to a week, but an in-person visit to a Skopje branch is required; remote opening is not possible."
+  },
+  {
+    "country": "Albania",
+    "bank_access": "A registered Albanian firm can open a corporate account, but non-resident owners face enhanced AML due diligence; banks (Raiffeisen, BKT) will process it, and a signatory branch visit is the norm."
+  },
+  {
+    "country": "Moldova",
+    "bank_access": "In-person signing at a Chisinau branch is standard; non-resident UBOs trigger enhanced due diligence under AML Law 30/2011 and banks demand detailed source-of-funds documentation."
+  },
+  {
+    "country": "Ukraine",
+    "bank_access": "NBU rules allow banks to serve non-residents and foreign-owned Ukrainian entities open accounts routinely, but expect full KYC/AML, apostilled documents, and usually an in-person visit or notarized power of attorney."
+  },
+  {
+    "country": "Belarus",
+    "bank_access": "Currency law permits non-residents to hold BYN and foreign-currency accounts, but certified documents, UBO disclosure and bank AML/KYC apply; expect an in-person visit (or authorized representative) in Minsk."
+  },
+  {
+    "country": "Romania",
+    "bank_access": "An in-person branch visit by the company administrator is generally required; AML rules impose enhanced due diligence on non-resident directors, and fully remote opening at high-street banks is largely unavailable."
+  },
+  {
+    "country": "Bulgaria",
+    "bank_access": "Banks require in-person verification: personal accounts always, and corporate accounts usually need the director to appear; a non-resident founder should plan a visit or appoint a local agent to sign."
+  },
+  {
+    "country": "Greece",
+    "bank_access": "A Greek tax number (AFM) is a hard precondition, and branches require an in-person visit with due diligence on the account's purpose; there is no fully online route for non-residents."
+  },
+  {
+    "country": "Cyprus",
+    "bank_access": "Residency is not a legal bar, but local banks require in-person KYC and source-of-funds checks under Central Bank of Cyprus AML rules; non-residents are often flagged high-risk. EMIs (Wise, Revolut) open online."
+  },
+  {
+    "country": "Malta",
+    "bank_access": "Traditional banks (BOV, HSBC Malta, APS Bank) require at least one in-person branch visit; fully remote opening is generally unavailable from abroad, with 2-6 weeks to account activation."
+  },
+  {
+    "country": "Ireland",
+    "bank_access": "Irish banks expect local substance — typically a resident (Irish/EEA) director and an Irish operational base; boards with only non-resident, no-presence directors are frequently declined at onboarding."
+  },
+  {
+    "country": "United Kingdom",
+    "bank_access": "Non-residents can open UK business accounts, but AML/KYC and sanctions checks apply; high-street banks often expect a UK address and evidence of genuine UK activity — possible, though tighter than for residents."
+  },
+  {
+    "country": "Iceland",
+    "bank_access": "Banks require an Icelandic kennitala (national ID) and in-person ID verification; company law also expects at least half the board to be resident, so a local presence or representative is effectively needed."
+  },
+  {
+    "country": "Norway",
+    "bank_access": "Registered entities can open accounts, but banks demand board-member ID verification and proof of Norwegian business activity under AML rules; non-resident directors should be EEA-resident and expect a branch visit."
+  },
+  {
+    "country": "Finland",
+    "bank_access": "Banks treat non-EEA directors/UBOs as high-risk; identification at a branch (or strong eID) is required, and non-residents without a Finnish HETU code often face long, complex reviews ending in generic refusal."
+  },
+  {
+    "country": "Sweden",
+    "bank_access": "Foreign-owned companies can open accounts, but traditional banks apply strict residency-based KYC; at least 50% of the board must be EEA-resident (waivable by Bolagsverket) and a branch visit is standard."
+  },
+  {
+    "country": "Denmark",
+    "bank_access": "Danish substance — local clients, office or employees — is effectively required; banks demand MitID and strict AML/KYC on foreign owners, so all-non-resident files are often refused; fintech accounts are easier."
+  },
+  {
+    "country": "Estonia",
+    "bank_access": "An Estonian bank account is not legally required — EEA EMIs (Wise, LHV online) serve non-resident companies — but Estonian banks approve such files mostly with real local operation or a local board member."
+  },
+  {
+    "country": "Latvia",
+    "bank_access": "Since the 2018 reforms, business accounts for non-resident owners are hard to approve (2-4 weeks, elevated refusals); banks require proof of a Latvia connection and usually a visit; EU/EEA applicants can apply remotely."
+  }
+]

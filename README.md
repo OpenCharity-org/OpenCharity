@@ -4,7 +4,7 @@ A fully researched, source-cited dataset on **registering a charity in every
 country of the world**, written specifically for a founder residing in
 Australia with no ties to the target country.
 
-## What it covers (17 columns per country)
+## What it covers (18 columns per country)
 
 | # | Column | What it tells you |
 |---|--------|-------------------|
@@ -23,12 +23,13 @@ Australia with no ties to the target country.
 | 13 | Foreign donor / donation restrictions | FCRA-style limits on inbound foreign funding |
 | 14 | Annual compliance & reporting | Ongoing filings, audit duties, consequences of non-filing |
 | 15 | Tax-exempt status & benefits | Pathway to tax-exempt/recognized status + benefits |
-| 16 | Confidence | high / med / low (all 198 rows reached high/med) |
-| 17 | Sources | URLs of the laws, gazettes and registry pages used |
+| 16 | Bank account (remote feasibility) | Online / local visit / local agent / blocked (KYC & AML constraints) |
+| 17 | Confidence | high / med / low (all 198 rows reached high/med) |
+| 18 | Sources | URLs of the laws, gazettes and registry pages used |
 
 ## Deliverables
 
-- **`charities_by_country_v2.csv`** — the master dataset (198 × 17).
+- **`charities_by_country_v2.csv`** — the master dataset (198 × 18).
 - **`charities_by_country_v2.xlsx`** — styled workbook: Master (heat-mapped
   difficulty, GfN highlights, filters, frozen header), Top-10 Shortlist
   (score-ranked easiest full-remote jurisdictions), Regional Summary,
@@ -56,6 +57,8 @@ United Kingdom, United States, Belize.
    low-confidence rows remain**.
 4. **Pass 3** — 10 agents added the annual-compliance dimension.
 5. **Pass 4** — 10 agents added the tax-exemption dimension.
+6. **Pass 5** — 10 agents added bank-account remote-feasibility (KYC/AML
+   constraints for foreign founders).
 
 GfN eligibility is computed by exact longest-match tokenization against the
 186-name authoritative Google for Nonprofits program list (183 of 198

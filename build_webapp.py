@@ -55,6 +55,7 @@ FIELD_MAP = [
     ("donor_restr",    "Foreign donor / donation restrictions"),
     ("compliance",     "Annual compliance & reporting"),
     ("tax_exempt",     "Tax-exempt status & benefits"),
+    ("bank_access",    "Bank account (remote feasibility)"),
     ("confidence",     "Confidence"),
     ("sources",        "Sources"),
 ]
@@ -318,6 +319,7 @@ function openDrawer(name){
   h+=`<div class="sec"><div class="k">Est. cost &amp; time</div><div class="v">${esc(d.cost_time)||"—"}</div></div>`;
   if(d.compliance)h+=`<div class="sec"><div class="k">Annual compliance &amp; reporting</div><div class="v">${esc(d.compliance)}</div></div>`;
   if(d.tax_exempt)h+=`<div class="sec"><div class="k">Tax-exempt status &amp; benefits</div><div class="v">${esc(d.tax_exempt)}</div></div>`;
+  if(d.bank_access)h+=`<div class="sec"><div class="k">Bank account (remote feasibility)</div><div class="v">${esc(d.bank_access)}</div></div>`;
   if(HAS_ENRICH){
     h+=`<div class="sec"><div class="k">Charitable deduction regime</div><div class="v">${esc(d.deduction)||"—"}</div></div>`;
     h+=`<div class="sec"><div class="k">Foreign donor / donation restrictions</div><div class="v">${esc(d.donor_restr)||"—"}</div></div>`;

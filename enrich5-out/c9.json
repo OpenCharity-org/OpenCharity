@@ -1,0 +1,22 @@
+[
+  {"country": "Libya", "bank_access": "Effectively blocked: state-run banks require in-person visits, local address, and income proof for foreigners; no remote opening or diaspora channel for foreign founders."},
+  {"country": "Algeria", "bank_access": "Needs a local visit: banks demand passport, local address proof, and residency documentation; non-resident (INR) accounts are limited to holders of Algerian public contracts."},
+  {"country": "Tunisia", "bank_access": "In-person at a bank branch: passport, proof of address (often Tunisian) and AML source-of-funds docs; a convertible-dinar account for non-residents exists but opening is branch-based."},
+  {"country": "Morocco", "bank_access": "Needs a local visit, not local residency: a passport suffices to open a non-resident foreign-currency (compte en devises) EUR/USD/GBP account in person; standard dirham accounts require residency."},
+  {"country": "Mauritania", "bank_access": "In-person required: passport, visa/residence documents, local address proof and references; few banks serve foreigners and no remote opening."},
+  {"country": "Western Sahara", "bank_access": "No independent banking infrastructure: no central bank of the territory; accounts depend on Moroccan banks in administered areas (in-person, Moroccan AML rules) and are effectively inaccessible remotely."},
+  {"country": "Ethiopia", "bank_access": "In-person application at a bank: passport, local address proof (utility bill/kebele letter) and photos; diaspora accounts serve only Ethiopians abroad; no remote opening."},
+  {"country": "Eritrea", "bank_access": "Effectively blocked for non-resident foreigners: only state-owned banks, foreign banks excluded, and foreign accounts limited to legal residents under nakfa withdrawal caps; no remote opening."},
+  {"country": "Djibouti", "bank_access": "In-person visit required: passport, local address/residence documentation and source-of-funds checks; several banks offer non-resident accounts on visit, none open fully remotely."},
+  {"country": "Somalia", "bank_access": "In-person with local address proof: passport and CBS/AML-KYC checks; some diaspora products exist (e.g. Salaam SSB non-resident accounts) but generally a local visit is needed."},
+  {"country": "Somaliland", "bank_access": "In-person at Bank of Somaliland branches: passport, local address and KYC under AML Law 72/2016; unrecognised-state status limits correspondent banking; no remote opening."},
+  {"country": "South Sudan", "bank_access": "In-person required: passport, proof of address and sometimes a reference/introduction letter; only a handful of banks and weak infrastructure; no remote opening."},
+  {"country": "Seychelles", "bank_access": "In-person at Seychelles banks (Absa, MCB, Nouvobanq): passport, strict KYC and source-of-funds docs; a Mahé residential address is typically expected; no remote opening."},
+  {"country": "Mauritius", "bank_access": "In-person visit: non-resident and business accounts exist under strict FSC AML/CFT KYC (identity, address, source of funds, CRS/FATCA); most banks expect founder presence."},
+  {"country": "India", "bank_access": "Effectively blocked for foreign non-citizens: RBI/FEMA NRE/NRO accounts are limited to Indian citizens (NRIs/OCIs); resident accounts are off-limits to foreigners without local employment/residency."},
+  {"country": "Pakistan", "bank_access": "Fully online possible: the SBP-regulated Roshan Digital Account (extended to foreign nationals in March 2026) allows remote opening of repatriable accounts within ~48 hours."},
+  {"country": "Bangladesh", "bank_access": "In-branch visit: standard taka accounts need a visa/work permit, local address and e-TIN; only foreign-currency (FC/NFCD) accounts are reachable without residency; no remote opening."},
+  {"country": "Sri Lanka", "bank_access": "In-person with local residency: AML rules bar tourists and remote applicants from rupee accounts; work/residence visa plus local address required; LKR outflows restricted."},
+  {"country": "Nepal", "bank_access": "In-person required: Nepal Rastra Bank rules demand a non-tourist visa, local address and PAN; NPR is non-convertible; no remote opening for foreign founders."},
+  {"country": "Bhutan", "bank_access": "In-person required: passport, Bhutan visa/work permit and local address proof; the Remit Bhutan remote channel serves only non-resident Bhutanese; foreign founders need a local visit."}
+]

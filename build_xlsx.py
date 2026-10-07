@@ -89,7 +89,7 @@ def main():
             row[diff_idx - 1].fill = DIFF_FILL[d]
         if (row[gfn_idx - 1].value or "").startswith("Yes"):
             row[gfn_idx - 1].fill = GFN_YES
-    widths = {0: 26, 1: 12, 2: 30, 3: 12, 4: 42, 5: 22, 6: 46, 7: 14, 8: 30, 9: 14, 10: 24, 11: 26, 12: 26, 13: 10, 14: 46, 15: 40, 16: 40}
+    widths = {0: 26, 1: 12, 2: 30, 3: 12, 4: 42, 5: 22, 6: 46, 7: 14, 8: 30, 9: 14, 10: 24, 11: 26, 12: 26, 13: 10, 14: 46, 15: 40, 16: 40, 17: 40}
     for i in range(len(header)):
         ws.column_dimensions[get_column_letter(i+1)].width = widths.get(i, 24)
     ws.freeze_panes = "B2"
@@ -155,8 +155,8 @@ def main():
     rr = 1
     put(rr, "Purpose", "Charity-registration viability per country for a founder residing in AUSTRALIA (no other country ties). Built for choosing where to register a charity and assessing Google for Nonprofits eligibility."); rr += 2
     put(rr, "Primary columns", "Country; GfN eligible (186-name authoritative Google for Nonprofits list); main charitable entity types; difficulty (easy/medium/hard/very hard) for a remote AU-resident foreign founder; key local requirements; est. cost & time; notes."); rr += 2
-    put(rr, "Enrichment columns", "Foreign founder (no local presence) = yes/partial/no; main bottleneck; registration fee USD; realistic time; local charitable-deduction regime; foreign-donor/donation restrictions (FCRA-style); annual compliance & reporting (ongoing filings, audit, consequences); tax-exempt status & benefits (recognition pathway, tax benefits); confidence (high/med/low); source URLs."); rr += 2
-    put(rr, "Method", "198 jurisdictions researched via DSH subagent fan-out (16 regional batches, 196 countries + North Korea/Russia extras), then enrichment passes 2 (32 agents x ~6 countries), 2b (141 gap-filler deep-dives) and 3 (10 agents, annual compliance) with fresh web research against official registries and NGO-law guides. All 198 rows reached high/med confidence (zero 'low' remaining). Costs in USD approximations; times are realistic end-to-end durations for a foreign founder."); rr += 2
+    put(rr, "Enrichment columns", "Foreign founder (no local presence) = yes/partial/no; main bottleneck; registration fee USD; realistic time; local charitable-deduction regime; foreign-donor/donation restrictions (FCRA-style); annual compliance & reporting (ongoing filings, audit, consequences); tax-exempt status & benefits (recognition pathway, tax benefits); bank account remote feasibility (online / local visit / local agent / blocked); confidence (high/med/low); source URLs."); rr += 2
+    put(rr, "Method", "198 jurisdictions researched via DSH subagent fan-out (16 regional batches, 196 countries + North Korea/Russia extras), then enrichment passes 2 (32 agents x ~6 countries), 2b (141 gap-filler deep-dives), 3 (annual compliance), 4 (tax-exemption) and 5 (bank-access feasibility) with fresh web research against official registries, tax authorities and NGO-law guides. All 198 rows reached high/med confidence (zero 'low' remaining). Costs in USD approximations; times are realistic end-to-end durations for a foreign founder."); rr += 2
     put(rr, "Caveats", "Fees/times are official-fee approximations and exclude agent/lawyer costs (remote registration usually adds 1-3x). Confidence reflects source quality: 'low' = background knowledge, official registry not located. Verify against the cited sources before committing. Not legal advice."); rr += 2
     put(rr, "GfN list", "186 authoritative names tokenized from the Google for Nonprofits program list; 183 of 198 countries qualify. The 15 not on the list: Belarus, China, Cuba, Georgia, Iran, Liechtenstein, Myanmar, Nepal, North Korea, Russia, Somaliland, South Sudan, Sudan, Syria, Western Sahara."); rr += 2
     put(rr, "Reproducibility", "merge.py regenerates v1; merge_enrich.py folds enrich-out/e*.json into charities_by_country_v2.csv; this script builds the XLSX. Run in order after any data change.")

@@ -1,0 +1,22 @@
+[
+{"country":"Solomon Islands","bank_access":"In-person KYC at branch (ANZ, BRED, Westpac) for all accounts; passport plus local ID; foreign-currency accounts possible; no remote onboarding for non-residents."},
+{"country":"Kiribati","bank_access":"In-person at ANZ Kiribati, the only licensed bank (Bairiki/Tarawa branch); non-residents face heavy AML restrictions and no remote onboarding for foreign founders."},
+{"country":"Nauru","bank_access":"Effectively blocked for remote founders: CommBank agencies (Aiwo, Ewa) and Bank of Nauru onboard only in person and target residents; no remote onboarding exists."},
+{"country":"Tuvalu","bank_access":"In-person at National Bank of Tuvalu (Funafuti only, plus rare field visits); passport plus residence proof required; no remote onboarding; ANZ branch closed in 2024."},
+{"country":"Marshall Islands","bank_access":"Local banks (BancFirst, Mid Pacific Bank) require in-person KYC in Majuro; Marshall Islands IBCs are barred from local accounts, so remote foreign founders are effectively blocked."},
+{"country":"Micronesia","bank_access":"In-person at Bank of FSM (Chagol); passport, TIN from Dept. of Finance, local address and initial deposit; no remote onboarding for non-resident foreign founders."},
+{"country":"Turkey","bank_access":"In-person branch visit; passport, Turkish tax number, local SIM and address proof; non-residents allowed under BDDK/AML rules but no remote route for account opening."},
+{"country":"Georgia","bank_access":"Remote opening possible via notarised power of attorney to a local representative (2-4 weeks, full KYC, refusals possible); in-person alternative also available."},
+{"country":"Armenia","bank_access":"Partially remote-friendly: Evocabank onboards non-residents fully online via app; other banks (Amria, Converse) require an in-person branch visit or POA under Central Bank AML rules."},
+{"country":"Azerbaijan","bank_access":"Central Bank allows non-resident accounts but banks routinely demand a residence permit and an in-person branch visit; no remote onboarding; AML checks strict."},
+{"country":"Kazakhstan","bank_access":"Since April 2025 non-resident accounts open only via e-Residency partner banks with their own AML/KYC checks; IIN required; in-person card issuance; refusals common."},
+{"country":"Uzbekistan","bank_access":"Remote opening for non-residents allowed under Central Bank procedure in force since May 2023; TBC UZ app supports app KYC with courier signing; in-person also possible."},
+{"country":"Turkmenistan","bank_access":"Effectively blocked for remote founders: no remote onboarding; foreigners need local work/residence status and in-person branch visit with originals under strict currency-control rules."},
+{"country":"Tajikistan","bank_access":"In-person at local banks (National Bank instruction on account opening); non-residents need full registered-entity documents and signature cards; no remote onboarding."},
+{"country":"Kyrgyzstan","bank_access":"23 commercial banks accept non-resident accounts; in-person branch visit with passport, beneficial-owner questionnaire and entity registration documents; no full-remote route."},
+{"country":"Iran","bank_access":"Money and Credit Council rules allow foreign Rial deposit accounts, but in-person ID verification is mandatory; sanctions/AML environment leaves no realistic remote onboarding."},
+{"country":"Cameroon","bank_access":"In-person branch visit under BEAC/CEMAC rules; NGO accounts additionally need Interior Ministry reconnaissance; foreigner onboarding requires passport and physical presence; no remote."},
+{"country":"Central African Republic","bank_access":"In-person at local banks (COBAC-supervised, mostly Bangui) after arrival; passport and entity documents; ONG accounts need administrative agrement; no remote onboarding."},
+{"country":"Chad","bank_access":"In-person at N'Djamena banks under COBAC rules; NGO accounts require CICA and Interior Ministry agreement; non-resident remote onboarding not available."},
+{"country":"Republic of the Congo","bank_access":"In-person at CEMAC banks (SG CIB, BICEC etc.); association accounts need prefecture declaration/registration; no remote onboarding for non-resident foreign founders."}
+]

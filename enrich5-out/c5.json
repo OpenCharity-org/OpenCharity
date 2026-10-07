@@ -1,0 +1,82 @@
+[
+ {
+  "country": "Congo (DRC)",
+  "bank_access": "Effectively blocked remotely: banks (BCC-supervised) require in-person branch visit, local tax ID (NIF) and local address; no remote onboarding for non-resident entities."
+ },
+ {
+  "country": "Gabon",
+  "bank_access": "Needs a local visit: CFA-CEMAC banks (BGFI, BICEC, SGB) require in-person KYC with passport, residence permit and local address; remote opening not available for foreign entities."
+ },
+ {
+  "country": "Equatorial Guinea",
+  "bank_access": "Needs a local visit: BANGE/BGFIBank branches require in-person appearance with passport/residence card and local address; no remote onboarding for non-residents; rules not fully verified."
+ },
+ {
+  "country": "Sao Tome & Principe",
+  "bank_access": "Personal accounts can be opened remotely by intermediaries, but an NGO corporate account in practice needs in-person KYC in the capital with local address and NIF tax number."
+ },
+ {
+  "country": "Rwanda",
+  "bank_access": "Needs a local visit: banks (Bank of Kigali, I&M, KCB) require physical attendance for in-person interview under AML Law 75/2019; non-resident business accounts need a trip to Kigali."
+ },
+ {
+  "country": "Burundi",
+  "bank_access": "Needs a local visit: banks in Bujumbura (BCB, BCB) require in-person appearance with passport and proof of residence; standard AML/CFT checks, no remote opening for foreign entities."
+ },
+ {
+  "country": "Uganda",
+  "bank_access": "In-person at major banks (Stanbic, Absa, DFCU): passport, URA TIN, board resolution and named signatories; no local address required for foreign-registered entities, no remote opening."
+ },
+ {
+  "country": "Tanzania",
+  "bank_access": "Needs a local visit: banks (CRDB, NMB, Stanbic) require in-person application with passport, TIN and proof of residence; foreign NGOs register at national level; no remote onboarding."
+ },
+ {
+  "country": "Kenya",
+  "bank_access": "In-person at branch under CBK AML/KYC rules; NGO accounts require at least one Kenyan-resident board member as signatory plus an NGO Board recommendation letter, so a local representative is needed."
+ },
+ {
+  "country": "Comoros",
+  "bank_access": "Needs a local visit: opening an account in Moroni requires in-person appearance with passport, residence permit and local address; offshore non-resident accounts do not suit charity banking."
+ },
+ {
+  "country": "Madagascar",
+  "bank_access": "Needs a local visit: banks (BOA, BMOI, MCB) require in-person appearance with passport, residence permit, local address proof and NIF tax ID; minimum deposit, no remote opening."
+ },
+ {
+  "country": "Zambia",
+  "bank_access": "In-person at branch: ZRA TPIN mandatory, local address proof (<3 months) and in-person signature collection; foreign NGOs need resident directors/signatories per bank CDD."
+ },
+ {
+  "country": "Malawi",
+  "bank_access": "Needs a local visit: banks in Lilongwe/Blantyre (StandChart, Centenary, FCB) require in-person appearance with passport, TIN and local address proof; no remote onboarding for foreign entities."
+ },
+ {
+  "country": "Mozambique",
+  "bank_access": "Non-residents may open accounts with NUIT tax ID, but in-person branch visit is required (BCI, Millennium BIM, FNB); foreign-authorized NGOs need local address and resident signatories."
+ },
+ {
+  "country": "Angola",
+  "bank_access": "In-person only (no online option): NIF tax ID is the usual bottleneck, plus passport with valid visa/resident card at a branch; banks cannot onboard foreign entities remotely."
+ },
+ {
+  "country": "Botswana",
+  "bank_access": "Needs a local visit: banks (StandChart, FNB, Stanbic) typically require a residence permit and in-person appearance with local address; remote onboarding not available for foreign entities."
+ },
+ {
+  "country": "Namibia",
+  "bank_access": "In-person is typical (Bank Windhoek opens permanent accounts even without residence status); some banks (Nedbank) allow remote opening via power of attorney, so a local agent can arrange it."
+ },
+ {
+  "country": "Zimbabwe",
+  "bank_access": "In-person KYC at branch (RBZ-supervised AML) with passport and address proof; diaspora products exist for individuals, but charity/NGO accounts need in-person signing with local signatories."
+ },
+ {
+  "country": "Eswatini",
+  "bank_access": "Needs a local visit: non-resident accounts at Standard Bank/FNB/Nedbank require in-person appearance in Mbabane with passport and proof of address; no remote onboarding."
+ },
+ {
+  "country": "Lesotho",
+  "bank_access": "Needs a local visit: banks (PostBank, Stanbic, Nedbank) require in-person verification with passport, residence permit and local proof of residence; no remote onboarding for foreign entities."
+ }
+]

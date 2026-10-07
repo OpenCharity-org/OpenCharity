@@ -1,0 +1,129 @@
+[
+  {
+    "country": "Singapore",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local resident director (CLG/co) or 2 of ≥3 board being SG citizens/PRs (charity); local registered office",
+    "fee_usd": "~$250 (SGD 315 filing; ~$1,100 w/ agent)",
+    "time_to_register": "1–4 weeks (2 wks typical with agent; IRC charity status adds weeks)",
+    "deduction": "No personal income tax deduction for charitable gifts — charities provide no tax benefit",
+    "foreign_donor_restriction": "None notable — no FCRA-style register; foreign funding of Singapore charities freely permitted",
+    "corrections": "Confirm CLG ≥1 resident director; IRC s16 charity registration needs ≥2 of ≥3 board SG citizens/PRs — prior '≥1 trustee' understates",
+    "sources": [
+      "https://www.charities.gov.sg/Pages/Charities-and-IPCs/Register-as-a-Charity/Criteria-for-Registration-as-a-Charity.aspx",
+      "https://sso.agc.gov.sg/SL/CA1994-RG10?DocDate=20230113",
+      "https://krestonhelmitalib.com.sg/guide-to-registering-a-charity/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Malaysia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "≥7 members to register society, ≥1 local resident officer, local registered office; CLBG needs local resident director",
+    "fee_usd": "~$50–500 (RM100–2,000 incl. agent)",
+    "time_to_register": "2–8 weeks (society 4–8 wks; CLBG ~1–2 wks)",
+    "deduction": "Registered charity gifts deductible up to 10% of chargeable income (50% of gift amount)",
+    "foreign_donor_restriction": "None notable — no FCRA-style regime; foreign funding of registered societies permitted",
+    "corrections": "Confirm Societies Act 1966 (Act 32); ≥7 individual members required; ≥1 local resident officer; RM100–2,000 with agent",
+    "sources": [
+      "https://www.mdi.gov.my/wp-content/uploads/2025/06/Akta-832-Akta-Pertubuhan-1966.pdf",
+      "https://www.lowpartners.com/our-services/commercial-corporate/start-up-company-incorporation/faq-on-how-to-set-up-a-society-under-societies-act-1966/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Indonesia",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Foreign founder must have resided in Indonesia ≥5 consecutive years; in practice local individual/PT is founder of record",
+    "fee_usd": "~$400–1,600 (IDR 5–20M w/ notary)",
+    "time_to_register": "1–3 months (if eligibility met)",
+    "deduction": "Gifts to qualified charities (PAWU/PSI) deductible up to 20% of taxable income",
+    "foreign_donor_restriction": "None notable — no FCRA-style regime; foreign funding of foundations permitted",
+    "corrections": "Confirm 5-consecutive-years residence for foreign founder; foreigner may sit on board (pengurus) without residing; all-Indonesian founders min IDR 100M assets",
+    "sources": [
+      "https://www.arma-law.com/news-event/newsflash/a-guideline-to-foundations-in-indonesia-yayasan",
+      "https://mapresourcesindonesia.com/registering-a-non-profit-or-foundation-in-indonesia-as-a-foreigner/",
+      "https://emerhub.com/indonesia/foundation-in-indonesia/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Thailand",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Thai-national founders of record; ≥THB 500k assets (250k cash); local office; Thai-language docs; in-person notarisation",
+    "fee_usd": "~$10 official (THB 210); ~$800–2,800 with counsel",
+    "time_to_register": "1–3 months",
+    "deduction": "Gifts to registered charities/non-profits deductible up to 10% of taxable income",
+    "foreign_donor_restriction": "None notable — no FCRA; foreign funding permitted; lèse-majesté (Art 112) risk if activities touch monarchy",
+    "corrections": "Confirm foundation min assets THB 500k (250k cash); official fee only ~THB 210 — prior THB 30k–100k figure is counsel cost",
+    "sources": [
+      "https://www.siam-legal.com/Business-in-Thailand/thailand-foundation.php",
+      "https://www.thailawonline.com/setting-up-a-foundation-in-thailand/",
+      "https://lawgazette.com.sg/practice/global-news/establishing-a-foundation-in-thailand/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Vietnam",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Individuals cannot found a local charity; INGO rep office needs MFA/COMINGO (Decree 58), single office, foreign-only funding",
+    "fee_usd": "none",
+    "time_to_register": "N/A for individual; INGO rep office 3–6 months",
+    "deduction": "Gifts to registered social-charity orgs deductible; personal cap 10% of taxable income",
+    "foreign_donor_restriction": "INGO rep-office registration via MFA/COMINGO (Decree 58); funding must come from abroad; no local fundraising by INGOs",
+    "corrections": "Confirm; INGO limited to one rep office (Hanoi, HCMC, Da Nang) and foreign-only funding under Decree 58 (2022)",
+    "sources": [
+      "https://cof.org/country-notes/nonprofit-law-vietnam",
+      "https://www.vietnam-briefing.com/news/how-to-set-up-an-ngo-in-vietnam.html",
+      "https://www.lexology.com/library/detail.aspx?g=0ae3e360-b74b-4b5b-9894-11aaaeab0220"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Philippines",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "≥2/3 of directors Filipino & PH-resident; local office; SEC + BIR steps; branch of foreign NSS can't get tax exemption",
+    "fee_usd": "~$1,100–2,800 (PHP 60k–150k incl. counsel)",
+    "time_to_register": "2–6 months (SEC + BIR + LGU)",
+    "deduction": "Gifts to DONR-accredited NPOs deductible; individuals capped at 10% of gross income",
+    "foreign_donor_restriction": "None notable — no FCRA; foreign funding unrestricted; branch offices of foreign NSS don't qualify for tax exemption",
+    "corrections": "Confirm 2/3 resident-Filipino director rule (5–15 directors); trust needs Filipino trustees; branch of foreign NSS not tax-exempt",
+    "sources": [
+      "https://cof.org/content/nonprofit-law-philippines",
+      "https://www.divinalaw.com/news-and-updates/choosing-the-appropriate-mode-for-foreign-corporations-to-do-business-in-the-philippines/",
+      "https://esparc.sec.gov.ph/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Cambodia",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Domestic association: ≥3 Khmer-national founders; foreign NGOs: MOFA 3-yr MOU; 2025 NGO-law amendments tighten controls",
+    "fee_usd": "~$200 (association route)",
+    "time_to_register": "N/A for foreign individual; 1–2 months via Cambodian nationals",
+    "deduction": "Gifts to registered charitable NGOs deductible under PIT; regime modest, administration capacity limited",
+    "foreign_donor_restriction": "Foreign-funded NGOs must register with MOFA (3-yr MOU); 2025 amendments add controls; periodic clampdowns on donor funding",
+    "corrections": "Confirm ≥3 Khmer-national founders (LANGO 2003); foreign NGOs via MOFA 3-yr MOU; 2025 NGO-law amendments further tighten",
+    "sources": [
+      "https://cambodia.ohchr.org/sites/default/files/Unofficial_Translation_of_5th_LANGO_ENG.pdf",
+      "https://cambodiacounsel.com/ngo-registration/",
+      "https://siemreaphub.com/blog/creer-ong-cambodge"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Laos",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Lao-national chair, majority-Lao founders; MFA operation permit + project MOUs; Lao-language filings",
+    "fee_usd": "~$100–300 (registration + legal)",
+    "time_to_register": "N/A for foreign individual; INGO permit 2–6 months",
+    "deduction": "None general — PIT allows no standard charitable deduction for registered organisations",
+    "foreign_donor_restriction": "INGOs need MFA operation permit (PM Decree 013/2010) and project-by-project MOU with line ministries",
+    "corrections": "Confirm state-controlled model; 2023 decree on associations: resident foreigners may join as members, chair must be Lao national",
+    "sources": [
+      "https://ilawasia.com/blogs/setting-up-ngo-in-lao-pdr",
+      "https://www.icj.org/resource/lao-pdr-the-icj-criticizes-new-decree-on-associations/",
+      "https://www.wto.org/english/thewto_e/acc_e/lao_e/wtacclao38_leg_1.pdf"
+    ],
+    "confidence": "med"
+  }
+]

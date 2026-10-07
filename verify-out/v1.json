@@ -1,0 +1,52 @@
+[
+  {
+    "country": "Netherlands",
+    "foreign_no_presence": "yes",
+    "official_entity": "KvK Handelsregister (Dutch Civil Code Book 2, stichting)",
+    "fee_usd": "100",
+    "time_to_register": "2-4 weeks (notarial deed scheduling)",
+    "gfn_ok": "yes",
+    "key_check": "Notarial deed required; Dutch notary acts locally, founders need no Dutch address",
+    "source": "https://www.kvk.nl/inschrijven/inschrijven-stichting/"
+  },
+  {
+    "country": "Poland",
+    "foreign_no_presence": "yes",
+    "official_entity": "Krajowy Rejestr Sadowy (KRS), fundacja",
+    "fee_usd": "65",
+    "time_to_register": "1-3 months (KRS registration)",
+    "gfn_ok": "yes",
+    "key_check": "Notarial deed required; founders need not be Polish nationals; no local presence needed",
+    "source": "https://arch-bip.ms.gov.pl/pl/rejestry-i-ewidencje/krajowy-rejestr-sadowy/oplaty-obowiazujace-w-postepowaniu-rejestrowym/"
+  },
+  {
+    "country": "Czechia",
+    "foreign_no_presence": "yes",
+    "official_entity": "Spolkovy rejstrik (obcanske sdruzeni o.s.)",
+    "fee_usd": "110",
+    "time_to_register": "2-6 weeks (court registration, 15-day filing deadline)",
+    "gfn_ok": "yes",
+    "key_check": "Min. 3 founders; Czech law grants foreigners equal rights to found associations",
+    "source": "https://portal.gov.cz/sluzby-vs/zapis-do-spolkoveho-rejstriku-S15505"
+  },
+  {
+    "country": "Estonia",
+    "foreign_no_presence": "yes",
+    "official_entity": "Estonian e-Business Register (sihtasutus, Foundation Act)",
+    "fee_usd": "10",
+    "time_to_register": "1-3 business days (online via e-Business Register)",
+    "gfn_ok": "yes",
+    "key_check": "Estonian ID-card/e-Residency ID needed for online signing; foreign founders allowed",
+    "source": "https://www.rik.ee/en/e-business-register/e-business-register-portal"
+  },
+  {
+    "country": "United States",
+    "foreign_no_presence": "yes",
+    "official_entity": "State Secretary of State (nonprofit corporation)",
+    "fee_usd": "100",
+    "time_to_register": "Same day to 2 weeks (state-dependent)",
+    "gfn_ok": "yes",
+    "key_check": "No residency requirement for incorporators/directors; local registered agent required in-state",
+    "source": "https://corp.delaware.gov/fee/"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "country": "Greece",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Greek-language notary deed + court registry filing + Greek registered office; local lawyer/notary needed remotely",
+    "fee_usd": "~$1,300 total (govt fees minor, notary dominates)",
+    "time_to_register": "2-4 months (notary + first-instance court filing; slower for remote founders)",
+    "deduction": "Up to 10% of taxable income for donations to approved public-benefit orgs",
+    "foreign_donor_restriction": "None notable; no FCRA-style foreign-donor restriction on EU or overseas donations to public-benefit orgs",
+    "corrections": "Association min 7 founders (not 5); general-benefit status is a separate application after court registry filing. Confirm prior fees/timeline.",
+    "sources": [
+      "https://philea.eu/wp-content/uploads/2024/11/Greece-Philea-2024-Legal-Environment-for-Philanthropy-in-Europe.pdf",
+      "https://companyformationgreece.com/set-up-a-foundation-in-greece/",
+      "https://globallawexperts.com/how-to-start-a-business-in-greece-as-a-foreigner/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Cyprus",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Trust unregistered (easiest); registered body needs Cypriot head office + 7 members + local agent for bank account",
+    "fee_usd": "~$250 (registered body)",
+    "time_to_register": "days-weeks (trust via solicitor); 2-6 weeks (registered body)",
+    "deduction": "Donations to qualifying orgs deductible up to 30% of taxable income; 5% of excess over EUR 150,000",
+    "foreign_donor_restriction": "None notable; no FCRA-style regime; deductibility tracks the org's TRA approval, not donor nationality",
+    "corrections": "Registered body under s.250 Companies Law needs 7 members, not 3; trust route unchanged (unregistered, no govt fee). Confirm prior fees/timeline.",
+    "sources": [
+      "https://www.companies.gov.cy/en/21-eservices/esearch-in-business-entity-s-registry",
+      "https://taxsummaries.pwc.com/cyprus/individual/deductions",
+      "https://whydonate.com/help/donate/what-are-the-tax-benefits-of-charitable-donations-in-different-countries"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Malta",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Malta registered office + at least 3 administrators required; local address provider solves remote bottleneck",
+    "fee_usd": "~$300",
+    "time_to_register": "days-2 weeks (MBR online filing)",
+    "deduction": "Up to 30% of taxable income for donations to public-benefit orgs",
+    "foreign_donor_restriction": "None notable; no FCRA-style foreign-donor restriction; public-benefit status is the key test",
+    "corrections": "Association min 3 members + 3 administrators under Act V/2021; MBR online filing, English accepted. Confirm prior fees/timeline.",
+    "sources": [
+      "https://www.legislation.mt/eli/act/v/2021/eng",
+      "https://www.mbr.mt/website-pages/formation-and-registration",
+      "https://www.bmf.gv.at/dam/jcr:1da187f9-7f84-4c30-8b0b-f7c06244594d/Country-specific_Information_-_Malta_-_BMF_2021-07-22.pdf"
+    ],
+    "confidence": "med"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "country": "Myanmar",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "ORL 2022: foreign individuals cannot form domestic organizations; INGOs need 40% Myanmar-national executives + junta registration.",
+    "fee_usd": "~$50-100",
+    "time_to_register": "3-6 months if feasible via local partner",
+    "deduction": "no charitable donation deduction regime confirmed",
+    "foreign_donor_restriction": "ORL 2022 requires INGOs to register with the junta, 40% Myanmar-national executive committee, criminal penalties for unregistered activity.",
+    "corrections": "2022 Organization Registration Law (Notification 46/2022) repeals the 2014 ARL cited in context; foreign founder route is effectively closed, INGO route only.",
+    "sources": [
+      "https://www.icj.org/wp-content/uploads/2022/11/Myanmar-ORL-final.pdf",
+      "https://asiacentre.org/the-law-on-organisation-registration/",
+      "https://www.dfdl.com/insights/legal-and-tax-updates/myanmar-new-organization-registration-law-enacted/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Brunei",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Societies Act Ch 203: local registered office + resident office-bearer required; paper filing via Registrar (Royal Brunei Police), no online.",
+    "fee_usd": "~$13 (BND 20)",
+    "time_to_register": "4-12 weeks",
+    "deduction": "no charitable donation deduction regime confirmed",
+    "foreign_donor_restriction": "foreigners may join societies but local office and resident office-bearers required; foreign affiliation of societies prohibited.",
+    "corrections": "confirm prior (very hard, local majority/resident officers, in-person); society is deemed established only if an office-bearer/member resides in Brunei (s.6(1) 2005 gazette).",
+    "sources": [
+      "https://www.polis.gov.bn/pendaftar-pertubuhan/",
+      "https://www.icnl.org/research/library/brunei-darussalam_societies/",
+      "https://www.agc.gov.bn/AGC%20Images/LAWS/Gazette_PDF/2005/EN/s001.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Timor-Leste",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign bodies must register with a permanent local representative with powers of representation + local address; slow manual Ministry process.",
+    "fee_usd": "~$50-200 plus legal fees",
+    "time_to_register": "2-6 months",
+    "deduction": "charitable donation deduction regime not confirmed",
+    "foreign_donor_restriction": "none beyond Decree-Law 5/2005 requirements: permanent local representative, local means; foreign members otherwise permitted.",
+    "corrections": "governing instrument is Decree-Law No. 5/2005 (non-profit corporate bodies), not a 2009 Law on Associations; foreign corporate bodies may register if they prove legal existence and have a permanent local representative.",
+    "sources": [
+      "https://www.icnl.org/research/library/timor-leste_decree-law-2005-5/",
+      "https://www.mj.gov.tl/jornal/?q=node%2F1414",
+      "https://www.migracao.gov.tl/pdf/%5b0503-13%5dDLei.Association(english).pdf"
+    ],
+    "confidence": "med"
+  }
+]

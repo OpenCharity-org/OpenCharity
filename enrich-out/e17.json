@@ -1,0 +1,130 @@
+[
+  {
+    "country": "Malawi",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": ">=2 Malawian-citizen directors/trustees required; local office plus NGORA and CONGOMA filings",
+    "fee_usd": "~$50-100",
+    "time_to_register": "4-10 weeks",
+    "deduction": "Deductible to ZRA-approved charitable institutions; verify current caps",
+    "foreign_donor_restriction": "Foreign NGOs require separate NGORA registration; foreign funding only via registered NGO",
+    "corrections": "Corrected: two-thirds Malawian board is not the rule - the Act requires >=2 Malawian-citizen directors/trustees; NGORA fee MK 35k + CONGOMA MK 55k; 2-8 weeks realistic",
+    "sources": [
+      "https://malawilii.org/akn/mw/act/2001/6/eng@2014-12-31",
+      "https://ngora.mw/registration/",
+      "https://www.icnl.org/resources/civic-freedom-monitor/malawi"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Mozambique",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "MFA authorization in Portuguese with a Mozambican legal representative and local office",
+    "fee_usd": "~$100-300",
+    "time_to_register": "2-6 months",
+    "deduction": "Donations to tax-exempt public-interest entities deductible (verify)",
+    "foreign_donor_restriction": "Foreign NGOs need MFA authorization + Mozambican legal rep; operating agreement required",
+    "corrections": "Confirm prior; core law is the NGO law (Lei 31/2002) with foreign-NGO regime via MFA; 2-6 months realistic; fee figure includes agent costs",
+    "sources": [
+      "https://www.hrw.org/legacy/backgrounder/africa/zimbabwe/2004/12/6.htm",
+      "https://archive.doingbusiness.org/en/data/exploreeconomies/mozambique",
+      "https://www.healyconsultants.com/mozambique-company-registration/fees-timelines/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Angola",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Prior government authorization; foreign documents must be consularly legalised; Portuguese filings",
+    "fee_usd": "~$100-500",
+    "time_to_register": "3-12 months",
+    "deduction": "No general charitable deduction regime; verify with DGT",
+    "foreign_donor_restriction": "New NGO law (Law 2/26) requires prior government authorization for all NGOs, including foreign",
+    "corrections": "Confirm hard/3-12 months; note Lei do Estatuto das ONG (Law 2/26) now requires prior authorization for all NGOs; AOA 100k-500k = ~$100-500",
+    "sources": [
+      "https://www.afriwise.com/blog/new-ngo-law-key-changes",
+      "https://www.americanbar.org/groups/human_rights/reports/angola-ngo-bill-analysis/",
+      "https://www.cmi.no/publications/8939-subverting-the-constitution-and-curtailing-civil-society-angolas-new-law-on-ngos"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Botswana",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Resident director/local members and local office; small-bureaucracy processing times",
+    "fee_usd": "~$25-75",
+    "time_to_register": "4-8 weeks",
+    "deduction": "No general charitable donation deduction; verify with BIR",
+    "foreign_donor_restriction": "None notable; donor-funded NGOs obtain NGO certificate from National NGO Committee",
+    "corrections": "Mostly confirm; common route is Societies Act (20+ members) or company limited by guarantee; resident director needed; P 500-1,500 = ~$25-75; 4-8 weeks",
+    "sources": [
+      "https://www.gov.bw/labour-administration/societies-registration",
+      "https://lephutshi.com/guide-registering-ngo-botswana/",
+      "https://www.rsm.global/botswana/news/forming-not-profit-charitable-organization-botswana"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Namibia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Namibia registered office and local agent required; filings via BIPA in Windhoek",
+    "fee_usd": "~$20-70",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Deductible if recipient is a registered PBO (Ministry of Finance)",
+    "foreign_donor_restriction": "None notable; no licensing of foreign donors",
+    "corrections": "Confirm prior; common route is Section 21 company via BIPA; local office + agent, no local director; NAD 300-1,000 = ~$20-70; 2-6 weeks",
+    "sources": [
+      "https://www.bipa.na/business-registration/companies/section-21ngo/",
+      "https://www.civic264.org.na/images/pdf/2024/6/CIVIC_264_Guide_to_Setting_Up_CSOs_in_Namibia_e-_240625_121553.pdf",
+      "https://www.icnl.org/resources/research/ijnl/the-legal-and-regulatory-framework-for-civic-organizations-in-namibia"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Zimbabwe",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "2/3 Zimbabwean board for local PVO; foreign PVOs need a local representative; political climate",
+    "fee_usd": "~$100-500",
+    "time_to_register": "1-4 months",
+    "deduction": "Deductible if PVO is registered under Income Tax Act (verify)",
+    "foreign_donor_restriction": "Foreign PVOs must register with a local representative; politically sensitive activities restricted",
+    "corrections": "Corrected: governing law is the PVO Act [Ch 17:05], not an 'NGO Act 2005'; 2/3 Zimbabwean board for local PVO; US$100-500 and 1-4 months realistic",
+    "sources": [
+      "https://hrlibrary.umn.edu/research/Zimbabwe-NGO%20laws.pdf",
+      "https://www.nangozim.org/wp-content/uploads/2025/07/NANGO-PVO-Registration-Advisory-Note-2025.pdf",
+      "https://zimlii.org/akn/zw/act/1966/63"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Eswatini",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local office and registered agent; limited registrar capacity; pending NPO Bill transition risk",
+    "fee_usd": "~$25-90",
+    "time_to_register": "4-12 weeks",
+    "deduction": "Deductible for gifts to approved public-benefit organizations (verify)",
+    "foreign_donor_restriction": "None notable; local office/agent required; 2024 NPO Bill would add re-registration regime",
+    "corrections": "Corrected: NPOs currently registered under s17 Companies Act 8/2009, not a Societies Act; 2024 NPO Bill pending; SZL 500-2,000 = ~$25-90; 4-12 weeks",
+    "sources": [
+      "https://www.icj.org/wp-content/uploads/2025/02/ANALYSIS-OF-THE-NGO-BILL-Prepared-for-CANGO.pdf",
+      "https://africanphilanthropy.org/wp-content/uploads/2023/03/Understanding-the-Legal-Framework-for-Philanthropy-in-Southern-Africa-eSwatini-Report-Jan-2023.pdf",
+      "https://eusee.hivos.org/assets/2025/10/Final-CFR_Eswatini_JW-9.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Lesotho",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local office/agent in Maseru; slow small-bureaucracy processing",
+    "fee_usd": "~$25-90",
+    "time_to_register": "4-12 weeks",
+    "deduction": "Donor tax exemptions apply by application; few granted in practice",
+    "foreign_donor_restriction": "None notable",
+    "corrections": "Confirm prior; routes: Societies Act, Companies Act 18/2011, Trusts Act; practitioners call registration easy; LSL 500-2,000 = ~$25-90",
+    "sources": [
+      "https://africanphilanthropy.org/wp-content/uploads/2023/06/Understanding-the-Legal-Framework-for-Philanthropy-in-Southern-Africa-Lesotho-Report-Jan-2023.pdf",
+      "https://eusee.hivos.org/assets/2026/02/CFR-Lesotho_final-2.pdf",
+      "https://lndc.org.ls/knowledge-base/business-registration-and-licensing/"
+    ],
+    "confidence": "med"
+  }
+]

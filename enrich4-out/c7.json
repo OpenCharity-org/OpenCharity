@@ -1,0 +1,82 @@
+[
+ {
+  "country": "Montenegro",
+  "tax_exemption": "Automatic on registration: donations, dues and non-economic income are exempt from income tax; the new VAT law broadly exempts NGO services. Donor deduction rate is unpublished."
+ },
+ {
+  "country": "North Macedonia",
+  "tax_exemption": "Not automatic: exemption requires public-interest purpose, non-distribution and registration (OG 52/10). Donations to qualifying bodies deductible under the Law on Donations & Sponsorships; rate unpublished."
+ },
+ {
+  "country": "Albania",
+  "tax_exemption": "CIT exemption is automatic on NPO registration (Law 80/2021); foundations qualify via Income Tax Act art.18 activities. Donor deduction rate unpublished; VAT exemption can be granted. Time unpublished."
+ },
+ {
+  "country": "Moldova",
+  "tax_exemption": "Automatic: Law 86/2020 associations and foundations are income-tax exempt once they perform socially useful activities within 1 year (Tax Code). Donor deduction rate unpublished. Time unpublished."
+ },
+ {
+  "country": "Ukraine",
+  "tax_exemption": "Automatic on state registration (Tax Code art.132); 'public benefit' status is separate. Donor deductions: corporate 2-5% of prior profit, individual 1%; some services VAT-exempt. Time unpublished."
+ },
+ {
+  "country": "Belarus",
+  "tax_exemption": "Public organizations and foundations are non-taxable on donations, budget funds and membership fees under the Tax Code - no separate application. Donor deduction rate unpublished. Time unpublished."
+ },
+ {
+  "country": "Romania",
+  "tax_exemption": "Non-commercial income is exempt from income tax automatically; 'public benefit' status is a separate Ministry of Justice application. Donor deductions: individual 10% of income, corporate 10% of profit."
+ },
+ {
+  "country": "Bulgaria",
+  "tax_exemption": "PBO status needs separate Central Register entry (Ministry of Justice) - PBOs exempt from CIT when income serves public benefit. Donor deductions: individual 5% of income, corporate 10% of profit."
+ },
+ {
+  "country": "Greece",
+  "tax_exemption": "General public-benefit status: separate application to the Directorate for Associations (Law 4873/2021); recognized bodies exempt from tax on contributions. Donor cut: 20% of gifts over EUR 100, cap 10% of income."
+ },
+ {
+  "country": "Cyprus",
+  "tax_exemption": "Separate approval by the Tax Dept/MOF; approved charities get preferential treatment and donors deduct 100% of gifts from taxable income, no cap (ITL 118(I)/2002 art.9). Time unpublished."
+ },
+ {
+  "country": "Malta",
+  "tax_exemption": "Not automatic: apply to Revenue & Customs Administration for income-tax exemption for philanthropic work (LN 62/2024). Corporate donors get tax credit on qualifying gifts (cap EUR 500, LN 86/2024). Time unpublished."
+ },
+ {
+  "country": "Ireland",
+  "tax_exemption": "Two-step: register with the Charities Regulator first, then apply to Revenue for charitable tax exemption (CHY number) - exempts income tax, CIT, CGT, DIRT; donors get 25%/33.33% tax credits. Time unpublished."
+ },
+ {
+  "country": "United Kingdom",
+  "tax_exemption": "Charity Commission registration (charitable purposes, public benefit; mandatory above GBP 5,000): exempts income/corporate tax, Gift Aid 25% donor gross-up, VAT exemption for qualifying supplies. Target 30 working days."
+ },
+ {
+  "country": "Iceland",
+  "tax_exemption": "General exemption from income and property tax, no separate application. Donors deduct ISK 10,000-350,000/yr for gifts to bodies on the public-benefit register; fundraising activities VAT-exempt."
+ },
+ {
+  "country": "Norway",
+  "tax_exemption": "Automatic income and wealth tax exemption when non-commercial (no profit to members). Donors deduct up to NOK 25,000 (2026) for monetary gifts of NOK 500+ to approved organizations. Time unpublished."
+ },
+ {
+  "country": "Finland",
+  "tax_exemption": "Donation deduction: the organization must be on the Tax Administration's approved-donation list (separate application). Monetary gifts to approved orgs are deductible. Time unpublished."
+ },
+ {
+  "country": "Sweden",
+  "tax_exemption": "Dues, donations and grants tax-exempt; other income exempt if 4 public-benefit conditions met. Donor relief (25% tax cut, cap SEK 3,000) needs separate Skatteverket application as gift recipient."
+ },
+ {
+  "country": "Denmark",
+  "tax_exemption": "Non-commercial association income exempt automatically on CVR registration. Donor deduction: up to DKK 20,000/yr (2026) for gifts to tax-approved orgs under Tax Act s.8A. Time unpublished."
+ },
+ {
+  "country": "Estonia",
+  "tax_exemption": "Registration automatic; separate EMTA list application required (Income Tax Act s.11) - listed orgs: donation income not taxable. Donors: individuals up to EUR 1,200; corporate 3% social tax base or 10% prior profit."
+ },
+ {
+  "country": "Latvia",
+  "tax_exemption": "Registration automatic; PBO status is a separate VID application (2016 Law) - PBOs exempt from income tax. Donors: individuals 25.5% tax refund; corporate 5% of prior profit or CIT reduction."
+ }
+]

@@ -1,0 +1,57 @@
+{
+  "country": "Sri Lanka",
+  "gfnp_eligible": true,
+  "microsoft_for_nonprofits": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "NGO registration with the National Secretariat for Non-Governmental Organizations (mandated by Act No. 31 of 1980 s.3 + Presidential Circular RAD/99/01 of 06.02.1999) — mandatory for both domestic and foreign NGOs; the Companies Act No. 07 of 2007 CLG route is barred for INGOs",
+  "entity_types": [
+    "NGO registered with the National Secretariat (domestic and foreign; INGOs must register here even if incorporated elsewhere)",
+    "CLG / private trust via eROC — NOT available to international NGOs (barred); domestic-only alternate route"
+  ],
+  "requirements": {
+    "founders": "Board of directors before registration: at least 5 officers; at most 2 officers may be of the same family (spouse/children/parents/siblings); for local organizations a majority of officers must be Sri Lankan citizens (page text cut off mid-sentence — treat as verified for local orgs, unverified detail for INGOs). Pre-qualifications: voluntary, non-profit, no profit-sharing, funds may come from public or foreign donations, no personal/political/religious aims, constitutional legality, relief or social-service aim",
+    "local_presence": "Communication address in Sri Lanka and demonstrated financial capacity required; no separate local-agent requirement stated on the ngosec page",
+    "documents": "Proposed name + board of directors details before registration; communication address; financial capacity evidence; (full document list not visible on ngosec page — middle-pruned)"
+  },
+  "forms": [
+    "National Secretariat NGO registration application (14th Floor Suhurupaya, Battaramulla; +94 11 287 7376; info@ngosec.gov.lk / ngosecretariat.gov@gmail.com)"
+  ],
+  "fees": [
+    {
+      "item": "Secretariat registration fee",
+      "amount": "unverified — fee not visible on the ngosec.gov.lk page (middle-pruned); no official figure confirmed this round",
+      "source_class": "unverified",
+      "source": "https://ngosec.gov.lk/our-services/registration-of-ngos (fee section not visible in extraction)",
+      "note": "Prior dataset figure 'LKR 5,000-20,000' is unverified — do not assert."
+    },
+    {
+      "item": "CLG/eROC incorporation fees (domestic alternate route only)",
+      "amount": "Rs. 45,000 (one secretary) + Rs. 2,300 per additional director/secretary — government filing fees only",
+      "source_class": "secondary",
+      "source": "https://counselit.com/how-to-register-a-charity-organization-in-sri-lanka/ (2025-09-22)",
+      "note": "Third-party figure; covers gov filing fees only, excludes lawyer/notary. Route is unavailable to international NGOs in any case."
+    }
+  ],
+  "timelines": {
+    "secretariat_registration": "unverified — prior dataset figure '2-6 weeks' not confirmed this round"
+  },
+  "supersedes": [
+    "Prior enrich-task claim 'easy, low fees (~LKR 5,000-20,000), 2-6 weeks' — fee and timeline both unverified against primary sources; downgraded.",
+    "Prior claim 'no citizenship requirement for trustees' — contradicted for local organizations: the Secretariat requires a MAJORITY of Sri Lankan citizen officers for local orgs (ngosec.gov.lk). For INGOs the board rules apply but the local-citizen majority text is cut off; record as unverified for INGOs, verified for local orgs."
+  ],
+  "notes": [
+    "Existing CLGs must ALSO register with the Secretariat if they operate as NGOs",
+    "12B tax-exempt certificate application to the IRD is a separate post-registration step",
+    "CLG route details (if domestic-only): eROC incorporation s.32 — ≥2 members, ≥2 directors, 1 registered company secretary; Forms 05/18/19 + Articles; name reservation valid 3 months (counselit.com, third-party)",
+    "GfNP: Sri Lanka on the official Google for Nonprofits country list, confirmed in _gfnp_audit.json",
+    "MSfN: Sri Lanka confirmed in TechSoup's Microsoft-for-Nonprofits available-countries list (techsoup.org/microsoft country list rendered in page)"
+  ],
+  "sources": [
+    "https://ngosec.gov.lk/our-services/registration-of-ngos",
+    "https://counselit.com/how-to-register-a-charity-organization-in-sri-lanka/",
+    "https://www.sundaytimes.lk/241215/news/all-ngos-and-ingos-to-come-under-national-secretariat-580949.html",
+    "https://www.techsoup.org/microsoft",
+    "https://support.google.com/nonprofits"
+  ]
+}

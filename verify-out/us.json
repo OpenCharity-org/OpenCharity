@@ -1,0 +1,64 @@
+{
+  "country": "United States",
+  "gfnp_eligible": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "State nonprofit corporation + federal 501(c)(3) exemption determination",
+  "entity_types": [
+    "State nonprofit corporation (incorporated under state law, e.g., Delaware, California)",
+    "501(c)(3) tax-exempt organization (federal status layered on the state corporation)",
+    "Private charitable trust (less common for GFNP)"
+  ],
+  "requirements": {
+    "founders": "No residency or citizenship requirement for incorporators, directors, or officers; fully remote/foreign founding permitted",
+    "local_presence": "Registered agent with a physical street address in the state of incorporation (agent services purchasable); no charity regulator, only tax-exempt status",
+    "documents": "Articles of incorporation with tax-exemption and asset-distribution (dissolution) clauses; bylaws"
+  },
+  "forms": [
+    "State articles of incorporation (state-specific form)",
+    "IRS Form 1023-EZ (only if projected annual gross receipts < $50,000) or Form 1023 (full)",
+    "Form SS-4 for EIN (free)"
+  ],
+  "fees": [
+    {
+      "item": "State incorporation filing fee",
+      "amount": "varies by state, commonly $50-300",
+      "source_class": "secondary",
+      "source": "https://www.501c3.org/incorporate-nonprofit-delaware/ and state secretary-of-state sites",
+      "note": "Prior dataset figure ~$90 is a generic mid-range value; check the specific state"
+    },
+    {
+      "item": "IRS Form 1023-EZ user fee",
+      "amount": "$275",
+      "source_class": "primary",
+      "source": "https://www.irs.gov/charities-non-profits/form-1023-and-1023-ez-amount-of-user-fee",
+      "note": "Verified verbatim on irs.gov: 'The user fee for Form 1023-EZ is $275.' Only for projected receipts < $50k."
+    },
+    {
+      "item": "IRS Form 1023 user fee",
+      "amount": "$600",
+      "source_class": "primary",
+      "source": "https://www.irs.gov/charities-non-profits/form-1023-and-1023-ez-amount-of-user-fee",
+      "note": "Verified verbatim on irs.gov: 'The user fee for Form 1023 is $600.' Paid via Pay.gov."
+    },
+    {
+      "item": "Registered agent service (optional)",
+      "amount": "~$50-300/yr",
+      "source_class": "secondary",
+      "source": "market rates (e.g., 501c3.org provider pages)",
+      "note": "Optional; keeps the setup fully remote"
+    }
+  ],
+  "timelines": {
+    "incorporation": "days to 2 weeks (faster in e-filing states like Delaware/California)",
+    "501c3_determination": "6-12 months (IRS processing is the long pole)"
+  },
+  "supersedes": [
+    "Prior v2 'US$400-600 IRS Form 1023 fee' corrected to $275 (1023-EZ) / $600 (1023), verified against irs.gov primary source"
+  ],
+  "sources": [
+    "https://www.irs.gov/charities-non-profits/form-1023-and-1023-ez-amount-of-user-fee",
+    "https://www.irs.gov/charities-non-profits/frequently-asked-questions-about-form-1023",
+    "https://www.501c3.org/incorporate-nonprofit-delaware/"
+  ]
+}

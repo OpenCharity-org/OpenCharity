@@ -1,0 +1,46 @@
+{
+  "country": "Israel",
+  "gfnp_eligible": true,
+  "microsoft_for_nonprofits": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "Association (amuta) under the Law of Associations 5723-1963, registered with the Registrar of Amutot (Ministry of Justice)",
+  "entity_types": [
+    "Amuta (association) under the Law of Associations 5723-1963 — legal entity upon registration (Art. 1)"
+  ],
+  "requirements": {
+    "founders": "2 founders minimum; no citizenship or residency requirement (foreigners can found and serve on the board). Signatures must be made before an Israeli lawyer. Name must be unique with at least 2 alternative names proposed; 3-4 goals defined in the association documents",
+    "local_presence": "An Israeli address is required for the amuta — may be the law office where documents are signed; no local-agent requirement beyond the lawyer signature",
+    "documents": "Founding documents with goals, member list, unique name plus 2 alternatives, Israeli address, board appointment; signatures before an Israeli lawyer"
+  },
+  "forms": [
+    "Registrar of Amutot registration application (paper/online card or post office); no separate online e-filing portal confirmed"
+  ],
+  "fees": [
+    {
+      "item": "Registrar of Amutot registration fee",
+      "amount": "942 NIS (per 2015-dated source; current amount unverified)",
+      "source_class": "secondary",
+      "source": "https://www.lawoffices.co.il (registration guide, fee figure dated April 2015)",
+      "note": "Old figure — re-confirm at registrar before filing. Attorney fee for document preparation and signature is separate and unverified (typically a few hundred to a few thousand NIS, no official rate)."
+    }
+  ],
+  "timelines": {
+    "registration": "≤1 month (secondary source, lawoffices.co.il)"
+  },
+  "supersedes": [
+    "Prior enrich-task claim 'easy, A$150-350 fees + A$500-2,000 attorney' — official fee is 942 NIS (secondary source, 2015); the attorney fee is an additional separate cost, not part of the government fee.",
+    "No source confirms repeal of the 1963 Law; 2024 Associations Bill (Amendment — Donation from Foreign Governmental Entity) is context only. The 1963 law must NOT be stated as repealed."
+  ],
+  "notes": [
+    "Separate status for charities: 13-b / DSD (charitable institution) status from the Tax Authority is a distinct procedure, not required for tech grants",
+    "GfNP: Israel on the official Google for Nonprofits country list, confirmed in _gfnp_audit.json",
+    "MSfN: Israel confirmed in TechSoup's Microsoft-for-Nonprofits available-countries list (techsoup.org/microsoft country list rendered in page)"
+  ],
+  "sources": [
+    "https://www.lawoffices.co.il (association registration guide)",
+    "https://www.knesset.gov.il (Law of Associations 5723-1963 — fetch failed this round; law text via search snippets only)",
+    "https://www.techsoup.org/microsoft",
+    "https://support.google.com/nonprofits"
+  ]
+}

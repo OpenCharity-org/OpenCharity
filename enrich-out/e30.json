@@ -1,0 +1,126 @@
+[
+  {
+    "country": "Colombia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Colombian registered address + local lawyer for public deed & Cámara de Comercio registration; Spanish filings",
+    "fee_usd": "~$300-600",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Separate DIAN certification (calificación) required; donations to certified entities are deductible",
+    "foreign_donor_restriction": "Ley 2287/2022 NGO transparency regime: annual reporting + public disclosure of foreign contributions; no licensing",
+    "corrections": "Prior context confirmed; deduction is a separate DIAN certification step, not automatic; Ley 2287/2022 adds transparency duties",
+    "sources": [
+      "https://www.ccb.org.co",
+      "https://neo-project.github.io/global-blockchain-compliance-hub/colombia/colombia-registry-requirements.html",
+      "https://www.whydonate.com"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Venezuela",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Resident officers + registered office, local lawyer, notarized deed; currency controls; heavy foreign funding scrutiny",
+    "fee_usd": "~$200-500",
+    "time_to_register": "3-6 months",
+    "deduction": "No practical charitable donation deduction regime; NPO tax benefits essentially inoperative",
+    "foreign_donor_restriction": "2024 law (Gaceta 15 Nov 2024): NGOs need state authorization; aimed at restricting international funding; U.S. freeze",
+    "corrections": "Prior context confirmed; 2024/2025 law + donor restrictions make it the hardest in the region; most INGOs use foreign entities",
+    "sources": [
+      "https://www.wola.org/analysis/venezuelas-new-ngo-law-and-u-s-funding-freeze-are-a-death-blow-to-the-countrys-civil-society/",
+      "https://directoriolegislativo.org/en/categoria/ingles/venezuela-en/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Ecuador",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Resident president/board + local address, local lawyer; 2025 social transparency law adds registration & reporting",
+    "fee_usd": "~$150-400",
+    "time_to_register": "2-3 months",
+    "deduction": "Donations deductible up to 5% of net taxable income",
+    "foreign_donor_restriction": "2025 Social Transparency Law: special NGO registry, financial reporting, 30% tax on foreign donations, suspension powers",
+    "corrections": "Prior context confirmed; 2025 Social Transparency Organic Law adds registration + foreign-funding controls (30% tax, suspension)",
+    "sources": [
+      "https://www.upi.com/Top_News/World-News/2025-08-01/ecuador-NGO-funding-bill-legislature/1921754058618/",
+      "https://www.icnl.org/post/analysis/five-things-to-know-ecuadors-2025-organic-law-on-social-transparency"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Peru",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office + SUNARP public deed; president resident for banking; Spanish filings; separate SUNAT exemption",
+    "fee_usd": "~$300-800",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Charitable donations deductible up to 10% of net taxable income (PwC)",
+    "foreign_donor_restriction": "None notable; foreign funding permitted, no FCRA-style licensing, standard reporting",
+    "corrections": "Prior context confirmed; deduction cap is 10% of net taxable income (PwC); SUNAT tax exemption is separate and discretionary",
+    "sources": [
+      "https://taxsummaries.pwc.com/peru/corporate/deductions",
+      "https://nvcabogados.com/how-to-start-an-ngo-in-peru/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Bolivia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Resident officers + local address, notarized deed; 2023 NGO law (Ley 1417) registration + foreign funding restrictions",
+    "fee_usd": "~$400-1000",
+    "time_to_register": "2-4 months",
+    "deduction": "Donations to NGOs are tax deductible (Biz Latin Hub)",
+    "foreign_donor_restriction": "Ley 1417 (2023): registration mandatory; foreign funding restricted; foreign NGOs register with Cancillería",
+    "corrections": "Prior context confirmed; Ley 1417 (2023) replaces Ley 1475 (1993); foreign NGOs register with Ministry of Foreign Affairs",
+    "sources": [
+      "https://www.bizlatinhub.com/how-to-form-ngo-bolivia/",
+      "https://www.rigobertoparedes.com/en/legal-requirements-to-establish-an-ngo-in-bolivia/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Guyana",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Guyanese registered office + resident directors; English official; no citizenship requirement; no donation restrictions",
+    "fee_usd": "~$300-800",
+    "time_to_register": "1-3 months",
+    "deduction": "Donation deduction available; tax exemption discretionary (Commissioner of Inland Revenue)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Prior context confirmed; English-speaking, easiest bureaucracy in sub-region; tax exemption discretionary; Companies Act 1991",
+    "sources": [
+      "https://www.expanship.com/gy/blog/types-of-companies-in-guyana",
+      "https://www.lexmundi.com/guides/social-enterprise-law-surveys/jurisdictions/caribbean/guyana/",
+      "https://mola.gov.gy/laws/Volume%2016%20Cap.%2083.01%20-%2089.011695667005.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Suriname",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Surinamese notary + Dutch deed, local board/office in practice, small legal market, banking requires local presence",
+    "fee_usd": "~$500-1500",
+    "time_to_register": "1-3 months",
+    "deduction": "Charitable donation deduction limited; no broad regime; stichting is tax exempt",
+    "foreign_donor_restriction": "None notable; foundation law permits foreign elements (ICNL)",
+    "corrections": "Prior context confirmed; 2013 Civil Code modernized foundation law; notary deed + local presence required in practice",
+    "sources": [
+      "https://www.offshorecompany.com/company/suriname-private-foundation-spf/",
+      "https://www.icnl.org/wp-content/uploads/Suriname_suriname-Muskiet_T.pdf",
+      "https://www.doingbusinessdutchcaribbean.com/suriname/structures-for-doing-business-sur/the-foundation-sur/"
+    ],
+    "confidence": "low"
+  },
+  {
+    "country": "Brazil",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local address + CNPJ, cartório deed, resident legal rep for foreign founders, bank account (câmbio rules); Portuguese",
+    "fee_usd": "~$500-1500",
+    "time_to_register": "2-4 months",
+    "deduction": "Individuals: up to 6% of IRPF owed (3% child fund + 3% other); corporations: 2% (OSCIP)",
+    "foreign_donor_restriction": "OSCIP certification (Ministry of Justice) enables donor tax deductions; ITCMD on foreign donor donations (transitional)",
+    "corrections": "Prior context confirmed; deduction is 6% individual / 2% corporate; OSCIP certification required for donor deductions",
+    "sources": [
+      "https://brazilfoundation.org/en/get-involved/foundations-and-companies/",
+      "https://www.gbflaw.com.br/imposto-de-renda-2025-pague-menos-imposto-fazendo-doacoes/",
+      "https://taxsummaries.pwc.com/brazil/corporate/deductions"
+    ],
+    "confidence": "med"
+  }
+]

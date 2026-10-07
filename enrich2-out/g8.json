@@ -1,0 +1,92 @@
+[
+  {
+    "country": "Ghana",
+    "entity_types": "Company limited by guarantee under Companies Act 2019 (Act 992) at ORC, then NPO license per Directive for Management of NPOs Operations 2020 and NPOs Policy 2020; Dept. of Social Welfare issues license.",
+    "cost_time": "ORC statutory fee ~GHS 490 (~$40, 2025) plus non-refundable licensing bank draft to Dept. of Social Welfare; provisional license 3 months, official time unpublished.",
+    "source": "https://npos.mogcsp.gov.gh/registration-and-licensing/"
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "entity_types": "Association, fondation, ONG under Ordonnance n° 2024-368 du 12 juin 2024 relative à l'organisation de la société civile, superseding Loi 60-315 de 1960; inscription au registre public des OSC.",
+    "cost_time": "Minimal declaration fee, amount and processing time unpublished. Foreign participation allowed, but foreign-founded NGOs must complete the national declaration and obtain a local base.",
+    "source": "https://droit-et-politique-en-afrique.info/wp-content/uploads/2024/07/ORDONNANCE-n%C2%B0-2024-368-du-12-juin-2024-relative-a-lOrganisation-de-la-societe-civile.pdf"
+  },
+  {
+    "country": "Benin",
+    "entity_types": "Association and fondation under Loi n° 2025-19 du 22 juillet 2025 on associations and foundations (replacing the earlier regime); registration in the Registre des Associations et des Fondations.",
+    "cost_time": "Nominal FCFA registration fee, amount and processing time unpublished. Declaration regime open without prior authorization, but foreign founders need a resident representative.",
+    "source": "https://sgg.gouv.bj/doc/loi-2025-19/"
+  },
+  {
+    "country": "Togo",
+    "entity_types": "Associations under the French Law of 1 July 1901; foreign ONGs governed by Décret n° 92-130/PMRT (art. 4: compliance before installation); government accord-programme for tax and customs exemptions.",
+    "cost_time": "No official fee schedule published; declaration at the ministry, time unpublished. Foreign NGOs may operate only after complying with Décret 92-130/PMRT and signing an accord-programme.",
+    "source": "https://investirautogo.tg/media/decret_92.pdf"
+  },
+  {
+    "country": "Burkina Faso",
+    "entity_types": "Association under Loi n° 064-2015/CNT: art. 4 formation without prior authorization, art. 17 public-utility recognition; ONGs need ministry-of-finance approval and an accord-cadre. New 87-article bill adopted July 2025.",
+    "cost_time": "Registration is nominal (no prior authorization), fee and time unpublished. Foreigners cannot freely found: ONG status requires ministry approval and a signed accord-cadre with the state.",
+    "source": "https://database.ilga.org/api/downloader/download/1/BF%20-%20LEG%20-%20Law%20N%C2%B0064-2015-CNT%20(2015)%20-%20OR-OFF(fr).pdf"
+  },
+  {
+    "country": "Mali",
+    "entity_types": "Association under Loi n° 04-038/AN-RM du 5 août 2004 (art. 3 modified by ordonnance 2024-008/PT-RM of 28 mars 2024); ONGs under décret n° 05-223/P-RM du 11 mai 2005.",
+    "cost_time": "Declaration-based registration, fee nominal (few thousand FCFA), time unpublished. Foreign founders need a local base and, for ONG status, an accord-cadre with the government.",
+    "source": "https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/97007/MLI-97007.pdf"
+  },
+  {
+    "country": "Guinea",
+    "entity_types": "Association under Loi L/2005/013/AN and ONG under Loi L/2005/014/AN; both declaration-based, filed with the Interior Ministry services; ONG status subject to a government protocol.",
+    "cost_time": "Nominal registration fee, amount and time unpublished. Foreign founders need a local base; ONG status additionally requires a state accord-cadre (protocol).",
+    "source": "https://www.amnestyguinee.org/wp-content/uploads/2020/09/Loi-L013-ONG-Guinee.pdf"
+  },
+  {
+    "country": "Guinea-Bissau",
+    "entity_types": "No single OSC statute; associations/ONGs regulated through dispersed laws with notarial recognition of legal personality (IMVF study §4.3); ONG and religious tax exemptions suspended.",
+    "cost_time": "Notarial and registry fees nominal, amount and time unpublished. No dedicated channel for foreign founders; NGO activity is handled case by case with the government.",
+    "source": "https://www.imvf.org/wp-content/uploads/2021/09/estudo-Quadro-legal-osc-guine-bissau-ianda-djuntu.pdf"
+  },
+  {
+    "country": "Senegal",
+    "entity_types": "Association under Loi n° 71-604 du 20 juillet 1971 (1901-style: declaration at préfecture, récépissé); ONG under décret n° 96-103 du 8 février 1996 as modified by décret n° 2010-1490 du 10 novembre 2010.",
+    "cost_time": "No official fee for declaration, time unpublished. Foreigners may join associations, but ONG status requires a local base and a signed accord-cadre with the state.",
+    "source": "https://dgsfc.gouv.sn/sites/default/files/2021-03/guide_pour_la+constitution_ASSOCIATION_et_ONG.pdf"
+  },
+  {
+    "country": "Gambia",
+    "entity_types": "Societies registered via the Ministry of Justice Companies Division; NGOs under the NGO Affairs Agency created by NGO Decree No. 81 (1993); company limited by guarantee route; TIN certificate required.",
+    "cost_time": "MoJ fees: business name 20,000 GMD, company 80,000-90,000 GMD (~$300-350); NGO annual fee ~$5; time unpublished. Non-residents need a resident agent or representative.",
+    "source": "https://www.moj.gm/companies-division"
+  },
+  {
+    "country": "Sierra Leone",
+    "entity_types": "Company limited by guarantee under Companies Act 2009 (Act No. 5 of 2009) registered at the CAC; charities/NGOs registered as non-profit companies (no separate societies act in force).",
+    "cost_time": "CAC fee schedule starts around $20 USD, higher bands for companies limited by guarantee; time unpublished. Foreign directors allowed; no registration bar for foreign founders.",
+    "source": "https://www.wipo.int/wipolex/en/legislation/details/9820"
+  },
+  {
+    "country": "Liberia",
+    "entity_types": "NGO route: Articles of Incorporation at the Liberia Business Registry, endorsed by the Minister of Foreign Affairs, then submitted to the Ministry of Planning and Economic Affairs (NGO registry).",
+    "cost_time": "Government incorporation fee ~US$50-550 (provider quotes), annual license ~US$150; official time unpublished. Foreign NGOs operate through the foreign-affairs endorsement path.",
+    "source": "https://reliefweb.int/report/liberia/faq-document-ngo-humanitarian-community-liberia"
+  },
+  {
+    "country": "Niger",
+    "entity_types": "Association under ordonnance n° 84-06 du 1er mars 1984 and décret n° 84-49/PCMS/MI; ONG sector under décret n° 2022-182/PRN/MAT/DC (agrément protocol regime, financial statements published in the JO).",
+    "cost_time": "Nominal registration, fee and time unpublished. Since 2022 ONGs need an agrément protocol; ~100 associations were suspended in Feb 2022; foreign founders require a state accord-cadre.",
+    "source": "https://wacsi.org/wp-content/uploads/2022/06/DECRET-2022-182-SECTEUR-DES-ONG-3-1-1.pdf"
+  },
+  {
+    "country": "North Korea",
+    "entity_types": "No independent civil-society registration regime exists; all social organizations are state or party organs (mass organizations within the state system); independent NGOs are not recognized.",
+    "cost_time": "n/a - registering a foreign NGO is not possible: every organization is state-sanctioned and foreign activity requires government approval (US persons face OFAC licensing).",
+    "source": "https://www.kcna.kp/en/"
+  },
+  {
+    "country": "Russia",
+    "entity_types": "NCOs under Federal Law 99-FZ 'On Non-Commercial Organizations': public associations, associations/unions, foundations, institutions, autonomous NCOs; registration by the Ministry of Justice.",
+    "cost_time": "n/a for foreign founders - MoJ registration requires a Russian legal base and state policy; foreign-founded NGOs are effectively barred (foreign-agent law expanded 1 Dec 2022).",
+    "source": "https://minjust.gov.ru/en"
+  }
+]

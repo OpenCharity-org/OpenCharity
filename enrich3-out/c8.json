@@ -1,0 +1,82 @@
+[
+  {
+    "country": "Lithuania",
+    "annual_compliance": "Financial statements to the Centre of Registers (JAR) by 30 April; late filing draws an administrative fine (~140-1,400 EUR) and a non-compliance flag; repeated non-filing can trigger compulsory liquidation."
+  },
+  {
+    "country": "Spain",
+    "annual_compliance": "Fundaciones (RD 861/1986): Patronato approves cuentas anuales within 6 months of FY-end and files them with the Protectorado within 10 working days, with audit where size requires; larger ones face independent audit."
+  },
+  {
+    "country": "Portugal",
+    "annual_compliance": "Companies file accounts at the commercial registry by the 15th day of the 7th month after FY-end (late = monetary penalties); public-benefit fundacoes send approved accounts and activity report to the SGPCM in 30 days."
+  },
+  {
+    "country": "Italy",
+    "annual_compliance": "ETS and social cooperatives approve annual accounts within 180 days of FY-end and file them (Registro Imprese, RUNTS) within 30 days; audit is mandatory above statutory size thresholds, with fines for late filing."
+  },
+  {
+    "country": "Vatican City",
+    "annual_compliance": "No ordinary company or charity registry exists; pontifical institutions are supervised by the Secretariat for the Economy and publish consolidated financial statements; no public annual return filing regime."
+  },
+  {
+    "country": "Israel",
+    "annual_compliance": "PBCs and PBFs file annual activity and financial reports with the Registrar of Non-Profits (PBFs also funding-policy reports); the Transparency Law adds quarterly foreign-funding reports; failure triggers fines."
+  },
+  {
+    "country": "Jordan",
+    "annual_compliance": "Associations file with the Ministry of Social Development: GA resolutions in 15 days, an annual plan and an activity report on donations; budgets above JOD 2,000 require audited statements; Ministry can suspend."
+  },
+  {
+    "country": "Lebanon",
+    "annual_compliance": "Law 92/1909 is a simple declaration regime; detailed annual filing duties are unpublished, but the law prohibits undeclared associations and lets the government refuse a declaration and dissolve one."
+  },
+  {
+    "country": "Syria",
+    "annual_compliance": "Ministry of Labour and Social Affairs (Decision 284 of 2026) sets NGO financial and auditing rules: annual budget and final accounts go to the Ministry; enforcement details are opaque and unpublished."
+  },
+  {
+    "country": "Iraq",
+    "annual_compliance": "NGO Law 12/2010 Art. 15: each NGO sends the NGO Directorate (Interior Ministry) a financial report on fund sources and transactions plus an activity report, for the prior year by 31 March; Directorate can sanction."
+  },
+  {
+    "country": "Saudi Arabia",
+    "annual_compliance": "CSOs file an annual budget and closing accounts with the Ministry of Human Resources, Social Development and Labour, which monitors finances; SAMA rules govern charity accounts; sanction is licence revocation."
+  },
+  {
+    "country": "Kuwait",
+    "annual_compliance": "Law 20/2008: every association must appoint an auditor (Art. 22), who sends the Ministry of Social Development a copy of the annual accounts report; books must be kept (Art. 25); Ministry can sanction."
+  },
+  {
+    "country": "Qatar",
+    "annual_compliance": "Law 12/2004: the board presents its annual report and accounts to the general assembly; RACA (Amiri Decree 10/2020) supervises charitable institutions; major ones publish audited financial statements as standard."
+  },
+  {
+    "country": "United Arab Emirates",
+    "annual_compliance": "Charitable societies submit an annual report, including final accounts on resources and spending, plus the annual work program to the IACAD (now the Authority for Public Benefit Organizations)."
+  },
+  {
+    "country": "Oman",
+    "annual_compliance": "Civil Associations Law (RD 14/2000, as amended): ministry supervision includes inspection of annual account audit reports and verification of compliance with the constitution; records must be kept and available."
+  },
+  {
+    "country": "Bahrain",
+    "annual_compliance": "NGO Law 19/2006: each association keeps an annual budget; where revenues or expenses exceed BHD 10,000 the board must present final accounts to a licensed accounting firm; the Ministry supervises and can sanction."
+  },
+  {
+    "country": "Yemen",
+    "annual_compliance": "Law 1/2001: associations submit annual administrative and financial reports to the Ministry of Social Affairs and Labour, which exercises legal and financial control supervision, with sanctions for non-compliance."
+  },
+  {
+    "country": "Palestine",
+    "annual_compliance": "Law 1/2000 (amended 2021): annual work plan and budget to the competent ministry, then by 4 months after fiscal year-end two GA-approved reports, administrative and financial; sanctions up to dissolution."
+  },
+  {
+    "country": "Egypt",
+    "annual_compliance": "Law 84/2014: associations file an annual activity report and financial statements with the supervising ministry (Social Affairs or Interior) by 31 March; larger ones must have accounts audited; risks suspension."
+  },
+  {
+    "country": "Sudan",
+    "annual_compliance": "Voluntary and Humanitarian Work Act 2006 (as amended): registered organizations must re-register annually and submit annual activity and financial reports to the supervising ministry; non-filing risks revocation."
+  }
+]

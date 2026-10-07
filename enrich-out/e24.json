@@ -1,0 +1,130 @@
+[
+  {
+    "country": "Montenegro",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "In-person/notarized steps + Montenegrin-language documents; local office and a local agent are required.",
+    "fee_usd": "none",
+    "time_to_register": "1-3 months",
+    "deduction": "Individual charitable donations deductible, capped at 20% of annual taxable income.",
+    "foreign_donor_restriction": "NGOs receiving >4,000 EUR foreign funding per year must register in the foreign-funded NGO register.",
+    "corrections": "Confirm association/foundation forms and 1-3 months; official gov.me page says registration is free, so prior 50-200 EUR is overestimated.",
+    "sources": [
+      "https://www.gov.me/en/article/cooperation-between-the-government-of-montenegro-and-ngos",
+      "https://cof.org/country-notes/nonprofit-law-montenegro",
+      "https://saaccounting.me/blog/ngo-accounting-montenegro"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "North Macedonia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Macedonian-language charter + local office; no online filing, so a local lawyer/agent is needed.",
+    "fee_usd": "~$0-50",
+    "time_to_register": "1-2 months",
+    "deduction": "Donations deductible, capped at 5% of taxable income.",
+    "foreign_donor_restriction": "NGOs with foreign funding >20% of total annual funding must register as foreign-funded NGOs (2018 law).",
+    "corrections": "Confirm association/foundation and 1-2 months; state registration fee is nominal (~$0-50), prior 100-300 EUR overstates official cost.",
+    "sources": [
+      "https://www.opengovpartnership.org/members/north-macedonia/commitments/MK0148/",
+      "https://ngobase.org/c/MK/north-macedonia-ngos-charities",
+      "https://www.crm.com.mk/en/services/perform-a-registration-or-complete-a-task/establish-a-new-entity/independent-registration-of-an-entity"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Albania",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Albanian-language documents + local office; QKB electronic filing via courier, limited English support.",
+    "fee_usd": "~$30-50",
+    "time_to_register": "2-8 weeks",
+    "deduction": "Donations to registered NGOs deductible, capped at 5% of taxable income.",
+    "foreign_donor_restriction": "NGOs with foreign funding >30% of annual funding must register in the foreign-funded NGO register (Law 104/2018).",
+    "corrections": "Confirm association/foundation and 2021 electronic register; total all-in cost ~$300-550 incl. notary is consistent with prior.",
+    "sources": [
+      "https://jbc.al/registration-of-non-profit-organizations-in-albania/",
+      "https://sherbimekontabiliteti.al/en/albania-ngo-nonprofit-tax/",
+      "https://resourcecentre.al/frequently-asked-questions/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Moldova",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local office + bank account for a foreign director; documents in Romanian (Russian used in practice).",
+    "fee_usd": "none",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Charitable donations deductible, capped at 10% of annual taxable income.",
+    "foreign_donor_restriction": "None notable; no foreign-agent or foreign-funded-NGO registration regime.",
+    "corrections": "Confirm association/foundation and 2-6 weeks; no state registration fee (Lex Mundi guide), prior 100-300 EUR was notary/legal only.",
+    "sources": [
+      "https://www.lexmundi.com/media/oyajwdaw/registering-ngos-moldova.pdf",
+      "https://ong.legal/articles/how-to-register-an-ngo-in-moldova.html",
+      "https://www.icnl.org/resources/research/ijnl/legislation-for-non-profit-organizations-in-the-republic-of-moldova"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Ukraine",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "War risk, banking/sanctions friction; Ukrainian-language documents + certified translations required.",
+    "fee_usd": "~$50",
+    "time_to_register": "1-4 weeks (online filing)",
+    "deduction": "Donations deductible, capped at 3% of annual total income.",
+    "foreign_donor_restriction": "Ukrainian orgs with foreign-state funding >20% of total must register as foreign-agent organizations (2015 law).",
+    "corrections": "Confirm public organization/foundation; state duty ~2,000 UAH (~$50) plus translations/notary; registration itself fast as noted.",
+    "sources": [
+      "https://www.uhy-prostir.com/en/blog-en/how-to-register-the-ngo-in-ukraine-the-procedure-of-registration-and-obtaining-the-taxpayer-status/",
+      "https://www.lexology.com/library/detail.aspx?g=a3d261dd-4c74-4a09-85fe-fba77ca0c84b",
+      "https://ukrainianlawfirms.com/reviews/non-governmental-organizations/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Belarus",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Foreigners barred from founding associations; KGB security checks for new NGOs from 2027; heavy political risk.",
+    "fee_usd": "nominal (<$50)",
+    "time_to_register": "1-3 months nominal; effectively barred",
+    "deduction": "No meaningful individual charitable-donation deduction regime.",
+    "foreign_donor_restriction": "Since 2021, foreign-funded NGOs risk 'undesirable organization' designation and ban; security vetting of founders.",
+    "corrections": "Confirm effectively barred: ICNL notes foreign citizens cannot be founders of public associations; spring96: KGB approval from 2027.",
+    "sources": [
+      "https://www.icnl.org/wp-content/uploads/Belarus_assessment.pdf",
+      "https://spring96.org/en/news/120984",
+      "https://scholarworks.indianapolis.iu.edu/bitstream/1805/15987/1/Belarus.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Romania",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Notarized founding deed + local office; 'de utilitate publica' status needs a separate court procedure.",
+    "fee_usd": "~$70",
+    "time_to_register": "1-3 months (30-day statutory limit)",
+    "deduction": "Donations to public-utility organizations deductible, capped at 10% of annual income.",
+    "foreign_donor_restriction": "None notable (EU); no foreign-agent-style registration regime.",
+    "corrections": "Confirm association/foundation and separate public-utility status; state fee ~300 RON (~$70), prior 500 RON overstated.",
+    "sources": [
+      "https://cof.org/country-notes/nonprofit-law-romania",
+      "https://www.romania-company.com/set-up-ngo-romania/",
+      "https://romanianlawoffice.com/non-profit-foundation-association-romania.htm"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Bulgaria",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local office + notarized deed; Bulgarian-language documents; foreign founder acts via notarized power of attorney.",
+    "fee_usd": "~$75-150",
+    "time_to_register": "1-2 months (30-day statutory limit)",
+    "deduction": "Donations to public-benefit organizations deductible, capped at 10% of annual income.",
+    "foreign_donor_restriction": "None notable (EU); no foreign-agent-style registration regime.",
+    "corrections": "Confirm 1-founder NPL as simplest route; fees ~150-300 BGN plus notary; 30-day statutory limit as prior.",
+    "sources": [
+      "https://www.lexmundi.com/media/wzqlyumt/guidance-for-ngos-operating-out-of-bulgaria.pdf",
+      "https://www.icnl.org/wp-content/uploads/Bulgarian-Non-Profit-Legal-Entities-Act-of-2000.pdf",
+      "https://globallawexperts.com/how-to-form-a-company-in-bulgaria/"
+    ],
+    "confidence": "med"
+  }
+]

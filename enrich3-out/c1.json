@@ -1,0 +1,82 @@
+[
+  {
+    "country": "Canada",
+    "annual_compliance": "CRA Form T3010 (charity information return) due within 6 months of fiscal year-end; audited financial statements required if program expenditures exceed CAD 1M. Non-filing: registered charity status revoked."
+  },
+  {
+    "country": "United States",
+    "annual_compliance": "State annual report/entity list filing plus IRS Form 990 (or 990-EZ/990-PF). Penalties after IRS notice up to ~US$27,782; three consecutive missed 990s = automatic revocation of 501(c)(3) status."
+  },
+  {
+    "country": "Cuba",
+    "annual_compliance": "No private charity sector exists: only state/Communist-Party-recognized mass organizations and foundations (OPCs) operate. A foreign founder with no local presence cannot practically register or run a charity here."
+  },
+  {
+    "country": "Jamaica",
+    "annual_compliance": "Charities Act 2013: RCOs file an Annual Return with the Charities Authority (DCFS) by 31 March each year; above revenue thresholds, audited financial statements too. Non-filing: sanctions and risk of losing recognition."
+  },
+  {
+    "country": "Bahamas",
+    "annual_compliance": "Domestic companies: annual return to the Registrar by 31 March (particulars to 31 Dec); IBCs: return/financials within 10 days of that deadline. Late fees 10-50%; continued default: strike-off."
+  },
+  {
+    "country": "Barbados",
+    "annual_compliance": "CAIPO Companies Act: Form 35 Annual Return to the Registrar each year; late filing penalised up to BDS $3,000 (~BDS $10/day). Accounts kept; audit where thresholds met. Persistent default: strike-off."
+  },
+  {
+    "country": "Trinidad & Tobago",
+    "annual_compliance": "Companies Act Ch. 74:01: annual return to the CRO within 30 days of incorporation anniversary (directors, office, officers); late default: penalties. Accounts kept; audit where required. Non-filing: strike-off."
+  },
+  {
+    "country": "Antigua & Barbuda",
+    "annual_compliance": "ABIPCO Act 2016 (ss.194/356): annual return plus accounts or solvency certificate within 30 days after the anniversary. Late penalty A$50/day up to 90 days; persistent non-filing: strike-off and dissolution."
+  },
+  {
+    "country": "Grenada",
+    "annual_compliance": "Cap. 58A (GFRC registry): annual return with director/shareholder particulars; change-of-director notices within 15 days. Late fees per filing; persistent default: strike-off, then dissolution. Accounts kept."
+  },
+  {
+    "country": "St. Kitts & Nevis",
+    "annual_compliance": "Cap. 21.03 s.72: annual return within 15 days of incorporation anniversary (directors, registered office). Late fees per section; continued default: strike-off. Domestic and external companies both file."
+  },
+  {
+    "country": "St. Lucia",
+    "annual_compliance": "Commercial Registry (Companies Act): annual return by 1 April (particulars to 31 Dec) for share-capital companies; unlimited companies report annually too. Late penalties; persistent default: strike-off. Accounts kept."
+  },
+  {
+    "country": "St. Vincent & Grenadines",
+    "annual_compliance": "CIPO Act 1994: Annual Return (Form 28) by 1 April, particulars to 31 Dec. Unregistered external companies doing business fined EC$350/day; late domestic returns incur fees. Persistent default: strike-off."
+  },
+  {
+    "country": "Dominica",
+    "annual_compliance": "CIPO Act 1994 (ss.154/155/176/194): annual return plus accounts or solvency certificate by 2 April; EC$200 annual fee. Late penalties; persistent non-filing: strike-off and dissolution. IBCs no longer registrable."
+  },
+  {
+    "country": "Dominican Republic",
+    "annual_compliance": "ASFLs (Ley 122-05, Reglamento 40-08, PGR): statute books, minutes and annual reports kept for PGR Title VII inspection; violations fined. DGII tax exemption requires donor receipts and reporting; benefit can be stripped."
+  },
+  {
+    "country": "Haiti",
+    "annual_compliance": "Decree 14 Sept 1989 (MPCE-registered ONGs): each year, 15 May-31 August, file next fiscal year's programme and investment budget; activity reports expected. Inactivity/non-compliance: sanctions up to loss of status."
+  },
+  {
+    "country": "Mexico",
+    "annual_compliance": "Donataria autorizada (SAT): annual income-tax return and annual activity report; keep donor certificate (factura) records. SAT revokes, refuses renewal, or voids authorization for tax obligations not met."
+  },
+  {
+    "country": "Guatemala",
+    "annual_compliance": "REPEJU asociaciones civiles: no routine annual return; keep registered data current (bylaw/address/director amendments filed promptly) and pay AG 404-2011 fees on filings. Inactivity: suspension/cancellation available."
+  },
+  {
+    "country": "Belize",
+    "annual_compliance": "BCCAR (Companies Act 2022; NGO Act Cap. 315): annual return to the Registrar each year; late filing attracts daily penalties. Accounts kept; audit where required. Persistent default: strike-off."
+  },
+  {
+    "country": "El Salvador",
+    "annual_compliance": "Decreto 894 (Ley de Asociaciones y Fundaciones Sin Fines de Lucro): annual filings to the Ministerio de Gobernacion (bylaws, board rosters, reports). Non-compliance/inactivity: registration cancelled (Art. 55 et seq.)."
+  },
+  {
+    "country": "Honduras",
+    "annual_compliance": "Ley Especial de Fomento ONGD (Decreto 32-2011): keep SEIP/DIREF personality records current and file annual reports to the secretariat. Inactivity, dissolution or breach: personality and registration cancelled."
+  }
+]

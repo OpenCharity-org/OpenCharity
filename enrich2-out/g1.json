@@ -1,0 +1,110 @@
+[
+  {
+    "country": "Cuba",
+    "entity_types": "No independent NGO sector: only state-recognized foundations and mass organizations authorized by the Communist Party; private charitable entities are not available to foreigners.",
+    "cost_time": "N/A - not available to foreigners; the state controls the creation of all associations, so no registration fees, filings, or official timelines apply.",
+    "source": "https://www.state.gov/report/custom/ff987665fc"
+  },
+  {
+    "country": "Jamaica",
+    "entity_types": "Company limited by guarantee (Companies Act 2004, Form 1B); charitable status via Recognized Charitable Organisation under the Charities Act 2013 (Companies Office of Jamaica).",
+    "cost_time": "Registration JMD 27,000 (~USD 150) + name search JMD 500 / reservation JMD 3,000; ~1-2 weeks; a local registered office and agent are required, adding ~USD 1,000-2,000 agent fees.",
+    "source": "https://www.miic.gov.jm/register-your-business/"
+  },
+  {
+    "country": "Bahamas",
+    "entity_types": "Company limited by guarantee (Companies Act 2019); domestic company incorporated at the Registrar General's Department; charitable deduction status applied for with IRD.",
+    "cost_time": "Government incorporation fee ~B$200-500 (~USD 100-250) plus name fee; RGD online filing 1-2 days; a licensed Bahamian agent and registered office are required - agent fees ~USD 1,500-2,500/year.",
+    "source": "https://www.rgd.gov.bs/service/incorporation-of-a-regular-company"
+  },
+  {
+    "country": "Barbados",
+    "entity_types": "Company limited by guarantee (Companies Act 2016, CAIPO); tax-deductible charitable status under the Income Tax Act; foreign entities register as external companies (Form 28).",
+    "cost_time": "Registry incorporation fee ~BBD 250-500 (~USD 125-250); 2-4 weeks at CAIPO; a local registered office and Barbadian agent are mandatory - all-in with agent ~USD 2,500-3,000 first year.",
+    "source": "https://caipo.gov.bb"
+  },
+  {
+    "country": "Trinidad & Tobago",
+    "entity_types": "Company limited by guarantee (Companies Act Ch. 74:01, CRO); charitable/tax-exempt status under the Income Tax Act Ch. 79:04; trust deed under the Charities Act as an alternative.",
+    "cost_time": "CRO incorporation fee TT$520-560 (~USD 55-60); 1-2 weeks; charitable status adds a few months; a local registered office and agent are required - all-in with agent ~USD 2,000-2,200.",
+    "source": "https://legalaffairs.gov.tt/faqs.php"
+  },
+  {
+    "country": "Antigua & Barbuda",
+    "entity_types": "Company limited by guarantee (Companies Act 2016, ABIPCO); domestic company; no separate charity registry - charitable purpose stated in the objects; IBCs only via a licensed agent.",
+    "cost_time": "Registry incorporation fee ~EC$500-1,000 (~USD 200-400); 3-7 business days; a local registered office and licensed agent are mandatory - all-in with agent ~USD 2,200 first year.",
+    "source": "https://abipco.gov.ag"
+  },
+  {
+    "country": "Grenada",
+    "entity_types": "Company limited by guarantee (Companies Act 2012, CAIPO); domestic private company; charitable/tax-exempt status via GRA application; trust deed under the Trusts Act as an alternative.",
+    "cost_time": "Registry fees ~US$250 (name reservation US$3.70, incorporation ~US$222, seal US$27); 1-3 days; a licensed local agent and registered office are required - agent fees add ~USD 1,500-2,000/year.",
+    "source": "https://www.multilaw.com/Multilaw/Global_Business_Entities_Guide/Grenada.aspx"
+  },
+  {
+    "country": "St. Kitts & Nevis",
+    "entity_types": "Company limited by guarantee (Companies Act Cap 21.03); Nevis LLC (Companies Ordinance Cap 7.06(N)); exempt company via FSC filing; charitable status via Inland Revenue approval.",
+    "cost_time": "Ordinary company EC$270 (~US$100), exempt EC$540 (~US$200); 1-5 days; annual filing XCD 270; a local registered office and agent are mandatory - agent fees ~USD 1,500-2,000/year.",
+    "source": "https://efiling.fsrc.kn"
+  },
+  {
+    "country": "St. Lucia",
+    "entity_types": "Company limited by guarantee (Companies Act Cap 8.01, Commercial Registry Agency); domestic company; charitable status via Inland Revenue; IBCs prohibited - onshore company only.",
+    "cost_time": "Government incorporation fee ~US$100-400; 2-5 days at the CRA; a local registered office and licensed agent are required - all-in with agent ~USD 1,500-2,500 first year.",
+    "source": "https://www.cra.gov.lc"
+  },
+  {
+    "country": "St. Vincent & Grenadines",
+    "entity_types": "Domestic company limited by guarantee (Companies Act No. 8 of 1994, CIPO); business companies only via a licensed VFA agent; charitable status via Inland Revenue.",
+    "cost_time": "Domestic incorporation fee EC$950 (~US$350) + EC$25 per consent notice; ~2-5 days; a local registered office and agent are mandatory - agent fees add ~USD 1,500-2,000/year.",
+    "source": "https://cipo.gov.vc/index.php/domestic-companies-items/54-incorporation"
+  },
+  {
+    "country": "Dominica",
+    "entity_types": "Domestic company limited by guarantee (Companies Act, CIPO); IBC registration prohibited since 1 Jan 2022; charitable status via Inland Revenue.",
+    "cost_time": "Incorporation fee EC$750 (~US$277) at CIPO; 1-3 days; annual government fee ~US$550; a local registered office and licensed agent are required - agent fees ~USD 1,500-2,500/year.",
+    "source": "https://www.cipodominica.com"
+  },
+  {
+    "country": "Dominican Republic",
+    "entity_types": "Asociación sin fines de lucro (Ley 122-05 + Reglamento 40-08, filed with the PGR); fundación with own capital; both obtain tax exemption from the DGII.",
+    "cost_time": "PGR filing fee RD$2,500 (~USD 50); notary + DGII exemption add ~USD 300-800; 10-30 business days; minimum 5 founders and a local office; a foreign founder may participate.",
+    "source": "https://portal.servicios.pgr.gob.do/ServicioCiudadano/AsociacionSinFinesLucro"
+  },
+  {
+    "country": "Haiti",
+    "entity_types": "ONG d'aide au développement (décret du 14 septembre 1989, administered by the MPCE); association sans but lucratif under the Civil Code; both register at the MPCE.",
+    "cost_time": "Registration fees modest (~USD 50-100 at the MPCE); processing 1-3 months, official time unpublished; a foreign founder may apply via a local representative; authorization may be required.",
+    "source": "https://mpce.gouv.ht/wp-content/uploads/2025/10/FORMALITES-A-REMPLIR-POUR-LOBTENTION-DU-STATUT-LEGAL-DORGANISATION-NON-GOUVERNEMENTALE.pdf"
+  },
+  {
+    "country": "Mexico",
+    "entity_types": "Asociación civil (Código Civil Federal, notarial act); fundación with own capital; donataria autorizada status via SAT for tax-deductible donations.",
+    "cost_time": "Escritura registration MXN 704 (~USD 40) + notary ~USD 300-800; 2-6 weeks; SAT donataria authorization adds 1-3 months; a foreign founder may establish with a local address.",
+    "source": "https://sat.gob.mx/terceros_autorizados/donatarias_donaciones/Paginas/autorizacion_donativos.aspx"
+  },
+  {
+    "country": "Guatemala",
+    "entity_types": "Asociación civil (REPEJU, Código de Comercio); fundación reconocida por el MINGOB; both register at the Registro de Personas Jurídicas.",
+    "cost_time": "Filing fee Q150 (~USD 20) + notary/publications ~USD 300-1,500 all-in; ~10 business days (MINGOB recognition 2-4 months); a local representative address is required for foreigners.",
+    "source": "https://repeju.gob.gt/requisitos-y-documentos/ongs/"
+  },
+  {
+    "country": "Belize",
+    "entity_types": "NGO = company limited by guarantee (Companies Act No. 11 of 2022) with NGO status under NGO Act Cap. 315 RE 2020; domestic company at BCCAR.",
+    "cost_time": "BZ$100 (~USD 8) NGO application + incorporation ~BZ$250-400 (~USD 20-30); 1-4 weeks; a licensed local agent/registered office is required - agent fees add ~USD 750-1,500/year.",
+    "source": "https://bccar.bz/services/non-governmental-organisations/"
+  },
+  {
+    "country": "El Salvador",
+    "entity_types": "Asociación sin fines de lucro (Ley de ONG's No. 894 + Reglamento, Registro de Asociaciones y Fundaciones, Ministerio de Gobernación); fundación; tax benefits via the MEF.",
+    "cost_time": "Registration fee ~USD 50-100 (SVC); ~1-3 months, exact time unpublished; a local office address is required; a foreign founder may participate with local co-founders on the board.",
+    "source": "https://www.gobernacion.gob.sv/preguntas-frecuentes/"
+  },
+  {
+    "country": "Honduras",
+    "entity_types": "Fundación or asociación con personalidad jurídica (Ley Especial de Fomento para ONGD), granted by the Secretaría de Justicia y Derechos Humanos (DIRRSAC).",
+    "cost_time": "Registry fees modest (~USD 50-150) + notarial deed ~USD 200-500; ~15 days after a complete file; official fees unpublished; a local legal representative is required for foreigners.",
+    "source": "https://sgjd.gob.hn/servicios-y-gestiones-web/requisitos/servicios-de-atencion-al-ciudadano/personalidad-juridica/fundaciones"
+  }
+]

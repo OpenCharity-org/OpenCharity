@@ -1,0 +1,74 @@
+[
+ {
+  "country": "Afghanistan",
+  "tax_exemption": "NGO registered with NGO Registration Committee (NGO Law 2015); NOT automatic - apply to Revenue Authority for tax-exemption certificate (income tax + business receipt tax); no donor deduction; ~30-90 days."
+ },
+ {
+  "country": "Maldives",
+  "tax_exemption": "Public charitable trust under Public Trusts Act 2022, registered with Ministry of Justice; registration gives legal personality; income from non-profit purposes tax-exempt; no donor deduction; ~30 days to approve."
+ },
+ {
+  "country": "Nigeria",
+  "tax_exemption": "Incorporated trustee registered with CAC (NGO listed with NCMM); tax exemption under CITA 1999 (non-profit organization) via separate FIRS application; no general donor income-tax deduction; time unpublished."
+ },
+ {
+  "country": "Ghana",
+  "tax_exemption": "CLG (non-profit company) under Companies Act 2019 (Act 992) with NPO license from Registrar; non-profit company income tax-exempt under Act 896; no broad donor deduction; ~4-6 weeks to register."
+ },
+ {
+  "country": "Côte d'Ivoire",
+  "tax_exemption": "Association (société civile) declared with tax service under ordonnance 2024-368; income of non-profit activity tax-exempt if applied to stated purposes; no broad donor deduction; time unpublished."
+ },
+ {
+  "country": "Benin",
+  "tax_exemption": "Association declared with prefecture (loi 2025-19); CGI (loi 2021-15) grants income-tax exemption to non-profit entities; donors may deduct gifts to recognized public-utility organizations; time unpublished."
+ },
+ {
+  "country": "Togo",
+  "tax_exemption": "Association (loi 1901) declared with prefecture; NGO status via décret 92-130; income-tax exemption for non-profit entities under CGI; no general donor deduction; ~1-2 months to declare."
+ },
+ {
+  "country": "Burkina Faso",
+  "tax_exemption": "Association declared with prefecture (loi 064-2015); public-utility recognition by decree adds full tax benefits; association income tax-exempt when applied to its purposes; no donor deduction; time unpublished."
+ },
+ {
+  "country": "Mali",
+  "tax_exemption": "Association declared with regional government (loi 04-038); income-tax exemption for non-profit entities under CGI; public-utility declaration separate; no general donor deduction; time unpublished."
+ },
+ {
+  "country": "Guinea",
+  "tax_exemption": "Association registered with Interior ministry (loi L/2005-013); income of non-profit activity tax-exempt; no general donor deduction or VAT relief; approval time unpublished."
+ },
+ {
+  "country": "Guinea-Bissau",
+  "tax_exemption": "Association formed by public deed (escritura pública) before a notary, then registered; income of non-profit entities tax-exempt; no donor deduction regime; approval time unpublished."
+ },
+ {
+  "country": "Senegal",
+  "tax_exemption": "Association declared with prefecture (loi 71-604); income tax exemption automatic under CGI art.5(7) (since 2019) for non-profit entities without commercial activity; donors deduct gifts to public-utility orgs, cap 0.5%."
+ },
+ {
+  "country": "Gambia",
+  "tax_exemption": "NGO registered with NGO Affairs Agency (Decree No. 81); Income and Sales Tax Act 2004 automatically exempts income of charitable/educational institutions of public character; no donor deduction; ~30 days."
+ },
+ {
+  "country": "Sierra Leone",
+  "tax_exemption": "CLG registered with Registrar of Companies; Tax & Duty Exemption Act 2023 gives duty-free charitable imports (minister-approved, not automatic); no broad income-tax exemption/donor deduction; time unpublished."
+ },
+ {
+  "country": "Liberia",
+  "tax_exemption": "NGO incorporated with LBR, endorsed by Foreign Affairs, then approved/registered with Ministry of Finance; 'Exempt Person' under Revenue Code = income-tax exemption; LRA grants 15% donation deduction; multi-month."
+ },
+ {
+  "country": "Niger",
+  "tax_exemption": "Association (ordonnance 84-06) plus ONG agrément (décret 2022-182) from Interior ministry; CGI contains no general income-tax exemption or donor deduction for associations; time unpublished."
+ },
+ {
+  "country": "North Korea",
+  "tax_exemption": "No civil-society regime exists: all organizations are state organs, so there is no private charitable entity and no tax-exemption pathway available to a foreign founder."
+ },
+ {
+  "country": "Russia",
+  "tax_exemption": "NCO registered with Ministry of Justice (99-FZ); not automatically tax-exempt - apply to tax office for exemption from profit/property tax (non-profit, commercial income under 30%); no donor deduction; 30-90 days."
+ }
+]

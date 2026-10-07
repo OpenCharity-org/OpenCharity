@@ -1,0 +1,57 @@
+{
+  "country": "Netherlands",
+  "gfnp_eligible": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "Stichting (foundation) + separate ANBI tax-exempt status from Belastingdienst",
+  "entity_types": [
+    "Stichting (civil-law foundation; the standard foreign-founder/charity route)",
+    "Vereniging (association; 2+ founders, member-governed)",
+    "ANBI status (not an entity — a separate Belastingdienst tax-exemption designation applied to either)"
+  ],
+  "requirements": {
+    "founders": "No citizenship/residency requirement for founders or board; board may be entirely non-resident; stichting needs at least 1 board member (organs)",
+    "local_presence": "Dutch registered office (postal address in the Netherlands; virtual-office provider acceptable)",
+    "documents": "Notarial deed of establishment (stichtingsakte) drawn up by a civil-law notary; the notary registers the stichting with KVK and the UBO register"
+  },
+  "forms": [
+    "Notarial deed (stichtingsakte) at a civil-law notary — no self-service registration form",
+    "KVK registration is handled by the notary (Business Register + UBO register)",
+    "ANBI application to Belastingdienst (separate, after formation)"
+  ],
+  "fees": [
+    {
+      "item": "KVK registration fee (one-off, first registration)",
+      "amount": "€85.15 (as of 01.01.2026; updated yearly for inflation)",
+      "source_class": "primary",
+      "source": "https://www.kvk.nl/en/registration/registration-fee/",
+      "note": "Verified verbatim on kvk.nl; supersedes prior '~EUR 82-85' estimate"
+    },
+    {
+      "item": "Civil-law notary incorporation",
+      "amount": "€500-1,500 (varies by notary)",
+      "source_class": "primary",
+      "source": "https://www.kvk.nl/en/registration/registering-a-stichting/",
+      "note": "KVK FAQ states the notary range explicitly; this is the dominant cost"
+    },
+    {
+      "item": "eHerkenning (needed later to file stichting taxes)",
+      "amount": "small annual fee (~€5-15 for basic user)",
+      "source_class": "secondary",
+      "source": "https://www.kvk.nl/en/registration/registering-a-stichting/ (KVK notes a fee applies; amount is market-rate)",
+      "note": "Post-formation, not part of setup cost"
+    }
+  ],
+  "timelines": {
+    "formation": "1-2 weeks (notary availability is the pacing step)",
+    "anbi": "4-8 weeks after applying (Belastingdienst decision; longer if they request documents)"
+  },
+  "supersedes": [
+    "Prior v2 'KvK fee ~EUR 82' corrected to €85.15 (kvk.nl fee page, valid from 01.01.2026)"
+  ],
+  "sources": [
+    "https://www.kvk.nl/en/registration/registering-a-stichting/",
+    "https://www.kvk.nl/en/registration/registration-fee/",
+    "https://netherbridge.nl/set-up-dutch-ngo-charity-non-profit/"
+  ]
+}

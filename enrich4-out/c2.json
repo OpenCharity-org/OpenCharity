@@ -1,0 +1,82 @@
+[
+ {
+  "country": "Nicaragua",
+  "tax_exemption": "Not automatic: apply to the DGI (Ministry of Finance) proving income serves charitable purposes (LCT art. 32, 2024 reform) for ISR exemption; no general donor deduction; approval time unpublished."
+ },
+ {
+  "country": "Costa Rica",
+  "tax_exemption": "Separate application: file with the Dirección General de Hacienda via Exonet (Ley 10.286/2022) for ISR exemption of income devoted to charitable aims. Donors deduct 100% (Ley 9.637). Approval usually months."
+ },
+ {
+  "country": "Panama",
+  "tax_exemption": "Non-profit income exempt under the Código Fiscal if devoted to its purpose (DGI verifies at filing). Donor deductions require a separate DGI authorization; DGI revoked such benefits in 2025; timing unpublished."
+ },
+ {
+  "country": "Colombia",
+  "tax_exemption": "No separate tax step: ESALs are special-regime taxpayers (art. 19 E.T.); DIAN exempts non-distributed income where bylaws show a charitable general-interest purpose. Donors deduct up to 15% of taxable income."
+ },
+ {
+  "country": "Venezuela",
+  "tax_exemption": "ISLR art. 14.3: charitable/social-assistance entities whose gains fund their purpose and never distribute profits are exempt — legal, automatic; SENIAT verifies at filing, no separate certificate."
+ },
+ {
+  "country": "Ecuador",
+  "tax_exemption": "Exemption under LRTI art. 9.5 applies to income of private non-profits devoted to their purpose (circular NAC-DGECCGC24-00000006): no separate status; SRI verifies, entity files annual returns. Donors deduct 50%."
+ },
+ {
+  "country": "Peru",
+  "tax_exemption": "Separate step: register in the SUNAT “registro de entidades exoneradas del Impuesto a la Renta” (LIR art. 19: educational, scientific, charitable aims). Donors partial deduction; IGV on sales; time unpublished."
+ },
+ {
+  "country": "Bolivia",
+  "tax_exemption": "Not automatic: formalize the IUE (corporate profit) exemption with the SIN (RND 10-0030-05; Ley 843 art. 4) proving charitable purpose and non-distribution. Donor deductions limited (5%/10%); time unpublished."
+ },
+ {
+  "country": "Guyana",
+  "tax_exemption": "No general non-profit exemption: the Income Tax Act grants only specific reliefs; the GRA's Tax Exemption, Processing & Verification Division issues individual exemption certificates to qualifying non-profits."
+ },
+ {
+  "country": "Suriname",
+  "tax_exemption": "No automatic charitable exemption: a stichting is taxed as an ordinary legal person (35% income tax on business income); individual exemptions must be requested from the Inland Tax Administration (Dib); VAT applies."
+ },
+ {
+  "country": "Brazil",
+  "tax_exemption": "Income-tax exemption (IRPJ/CSLL/COFINS) for a qualifying non-profit is legal and automatic (Lei 9.532; NFPS) — Receita Federal verifies accounts, no separate recognition. Donor deduction needs utilidade pública/OSCIP."
+ },
+ {
+  "country": "Paraguay",
+  "tax_exemption": "Exemption is legal and automatic: Ley 6.380/19 art. 25.2c exempts income of non-profit associations/foundations that do not distribute (DNIT verifies at filing). Donor deduction limited (5% for individuals)."
+ },
+ {
+  "country": "Uruguay",
+  "tax_exemption": "IRAE exemption of income of qualifying non-profits (educational, cultural, scientific, charitable) is legal and automatic; DGI verifies the purpose. The 75%-refund donor benefit requires listing in the MEF regime."
+ },
+ {
+  "country": "Argentina",
+  "tax_exemption": "Separate certificate required: file DJ 953 with ARCA (ex-AFIP) for “certificado de exención” of Impuesto a las Ganancias (Ley 23.349, reg. 1457) — general or simplified route. Benefits: no income tax, no withholding."
+ },
+ {
+  "country": "Chile",
+  "tax_exemption": "No general entity exemption: fundaciones/corporaciones pay IUS on income. Benefit is for donors: Ley 19.885 gives a 15% credit (individuals) if the entity has ministry-recognized interés público status."
+ },
+ {
+  "country": "Mongolia",
+  "tax_exemption": "The National Tax Authority exempts corporate income of registered non-profits whose income is used for charitable, educational, scientific or social purposes — applied by the tax office, no separate charitable status."
+ },
+ {
+  "country": "Japan",
+  "tax_exemption": "No blanket exemption: NPOs pay corporate tax only on business (shu-eigyo) income; public-benefit certification (prefecture, months) makes public-interest activity income tax-free and donations deductible."
+ },
+ {
+  "country": "South Korea",
+  "tax_exemption": "No separate application: NTS automatically exempts the public-interest income of a foundation (재단법인) under the Special Tax Benefits Act art. 6, verified at filing. Donors: up to 100% deduction (individuals)."
+ },
+ {
+  "country": "China",
+  "tax_exemption": "Two separate steps after registration: (1) non-profit tax-exemption qualification from local tax + finance (Caishui [2018] No. 107, 5-year); (2) public-donation pre-tax deduction qualification (2020 Announcement 27)."
+ },
+ {
+  "country": "Taiwan",
+  "tax_exemption": "A private foundation registers with the county/city government; the local tax bureau applies charitable-income exemption (Income Tax Act art. 4) from its bylaws. Donor deduction needs ministry qualification."
+ }
+]

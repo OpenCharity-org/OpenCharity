@@ -1,0 +1,48 @@
+{
+  "country": "Croatia",
+  "gfnp_eligible": true,
+  "microsoft_for_nonprofits": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "Udruga (association) under the Act on Associations (NN 74/14, 70/17, 98/19), registered with the county administrative office (or City of Zagreb) by seat",
+  "entity_types": [
+    "Udruga (association) — the standard nonprofit form under the Act on Associations",
+    "Javno korisna (public-benefit) association — separate Ministry of Interior status layered on top, not needed for tech grants"
+  ],
+  "requirements": {
+    "founders": "At least 3 founders. Any natural person not deprived of legal capacity; legal persons (incl. foreign legal persons) and foreign nationals can be founders. Minors aged 14+ or incapacitated persons may found only with a notarised letter of consent from their legal representative/guardian; at least one founder must be an adult with full capacity, and only such persons may be the authorised representative",
+    "local_presence": "Registered with the competent county administrative office (or City of Zagreb for Zagreb seat) according to the association's seat; no separate residence or local-agent requirement stated by gov.hr",
+    "documents": "Standard application form (Obrazac broj 1) in two identical copies; minutes of the founding assembly; statute; list of founders; names of authorised representatives and liquidator; certified statements on absence of obstacles per Art. 11(7)-(8) and Art. 19(2)-(3) of the Act; extract from the companies register for a foreign legal-person founder; ID/passport copies of founders, liquidator and representatives; sectoral approval where a special law requires it"
+  },
+  "forms": [
+    "Obrazac broj 1 — Application Form for Registration in the Register of Associations (mpu.gov.hr); e-filing available via mpu.gov.hr"
+  ],
+  "fees": [
+    {
+      "item": "Registration fee",
+      "amount": "unverified — gov.hr states no fee for registration; no official fee amount confirmed this round",
+      "source_class": "unverified",
+      "source": "https://gov.hr/en/establishment-and-registration-of-associations/568 (no fee listed)",
+      "note": "Certification of statements and ID copies may cost extra (certified/notarised copies); third-party guides cite ~500-1,500 HRK in combined costs but no official figure was confirmed — treat as unverified"
+    }
+  ],
+  "timelines": {
+    "registration": "unverified — no statutory timeline stated on gov.hr; appeals go to the Ministry of Justice, Public Administration and Digital Transformation"
+  },
+  "supersedes": [
+    "Prior enrich-task claim 'medium difficulty, ~500-1,500 HRK fees + notary' — fee figure NOT verified against any official source; only the document list and process are verified. Downgraded to unverified fee."
+  ],
+  "notes": [
+    "Citizens of 0.25% PIT (payroll income tax) earmark donations — a separate donor-side mechanism",
+    "All newly founded associations must use double-entry bookkeeping and file financial reports to the Ministry of Finance for at least the first 3 years (third-party guide, expatincroatia.com, updated 2026-08)",
+    "GfNP: Croatia on the official Google for Nonprofits country list (support.google.com), confirmed in _gfnp_audit.json",
+    "MSfN: Croatia confirmed in TechSoup's Microsoft-for-Nonprofits available-countries list (techsoup.org/microsoft country list rendered in page)"
+  ],
+  "sources": [
+    "https://gov.hr/en/establishment-and-registration-of-associations/568",
+    "https://mpudt.gov.hr/register-of-associations/25235",
+    "https://www.expatincroatia.com/how-to-open-close-non-profit-udruga-croatia/",
+    "https://www.techsoup.org/microsoft",
+    "https://support.google.com/nonprofits"
+  ]
+}

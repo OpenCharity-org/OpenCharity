@@ -1,0 +1,122 @@
+[
+  {
+    "country": "Nigeria",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "CAC incorporation (CLBG) then NCMM/NGO Bureau registration; foreign NGOs also need SCUML and an Interior ORC",
+    "fee_usd": "US$3k-8k with agents (official fees modest, ~US$300-500)",
+    "time_to_register": "3-9 months",
+    "deduction": "Corporate donors deduct up to 5% of profit; individuals 20% of taxable income (registered NGOs)",
+    "foreign_donor_restriction": "Foreign NGOs need NCMM registration; SCUML registration mandatory; Interior Ministry ORC for foreign-funded NGOs",
+    "corrections": "confirm prior",
+    "sources": [
+      "https://matrixsolicitors.com/registration-of-international-non-profits-with-the-corporate-affairs-commission-in-nigeria/",
+      "https://nnngo.org/wp-content/uploads/2024/03/2018-Updated-Compliance-Manual-for-NGOs-1.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Ghana",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Two-stage: ORC incorporation under Companies Act 992, then NPOS operating license (Charities Act 1035 regime)",
+    "fee_usd": "US$500-1.5k incl. agents (ORC official fee ~GHc520 + NPOS)",
+    "time_to_register": "4-8 weeks",
+    "deduction": "Donations to GRA-approved charitable organisations are income-tax deductible",
+    "foreign_donor_restriction": "No foreign-funding ban; NPOS license required to operate; foreign directors permitted under Act 992",
+    "corrections": "confirm prior",
+    "sources": [
+      "https://npos.mogcsp.gov.gh/faqs/",
+      "https://gra.gov.gh/wp-content/uploads/2020/09/Practice-Note-on-Charitable-Organisation.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Declaration at district registry + foreign-funded NGOs need Interior Ministry authorization; French-only filings",
+    "fee_usd": "US$500-1.5k incl. counsel (declaration fees low)",
+    "time_to_register": "4-12 weeks",
+    "deduction": "Donations to associations declared d'utilite publique are tax-deductible",
+    "foreign_donor_restriction": "Foreign-funded NGOs require Interior Ministry authorization and convention; local office in Abidjan required",
+    "corrections": "OSC framework now Ordinance n° 2024-368 (12 June 2024) replacing Law 2022-443; eDA digital declaration portal live",
+    "sources": [
+      "https://eda.edemarches.gouv.ci/procedure/declaration-d-association-fondations-ong-1",
+      "https://droit-et-politique-en-afrique.info/wp-content/uploads/2024/07/ORDONNANCE-n%C2%B0-2024-368-du-12-juin-2024-relative-a-lOrganisation-de-la-societe-civile.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Benin",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign NGOs need exercise authorization; local associations declared at electronic registry; French filings",
+    "fee_usd": "US$300-1k incl. agents (official fees low)",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Donations to associations of public utility (utilite publique) are tax-deductible",
+    "foreign_donor_restriction": "Foreign NGOs need authorization under Law 2015-04/PRB + Decree 2025-636 (Oct 2025) to establish or act in Benin",
+    "corrections": "New Decree 2025-636 (8 Oct 2025) regulates foreign NGO authorization and compliance declarations via CatIS portal",
+    "sources": [
+      "https://catis.xroad.bj/publicservices/PS01516",
+      "https://service-public.bj/public/services/service/PS01508"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Togo",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign associations declared with local office (Lome); NGOs cooperating with government now need official recognition",
+    "fee_usd": "US$300-1k incl. agents",
+    "time_to_register": "4-10 weeks",
+    "deduction": "Donations to associations declared d'utilite publique are tax-deductible",
+    "foreign_donor_restriction": "No outright foreign-funding ban; declaration regime, but 2024 rules require official recognition for govt partnerships",
+    "corrections": "confirm prior",
+    "sources": [
+      "https://www.togofirst.com/fr/associations-organisations/0810-8648-comment-declarer-une-association-etrangere-au-togo",
+      "https://josephalangue.com/guide-pratique-des-assosiations-et-ong-internationales-au-togo/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Burkina Faso",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Foreign NGOs need state establishment agreement (convention d'etablissement); 10+ authorizations revoked in 2025",
+    "fee_usd": "US$500-2k incl. agents, if approved at all",
+    "time_to_register": "2-6 months, or refusal",
+    "deduction": "Donations to utilite publique associations deductible; NGO funding climate is restrictive",
+    "foreign_donor_restriction": "Constitutional bar on foreign-funded NGOs; new Law 011-2025/ALT (July 2025) adds state agreement requirement",
+    "corrections": "Association law replaced by Law n° 011-2025/ALT (17 July 2025, promulgated 23 July 2025); prior Law 014/1997 superseded",
+    "sources": [
+      "https://burkina-faso.news-pravda.com/burkina-faso/2025/07/31/40984.html",
+      "https://www.aa.com.tr/fr/afrique/burkina-faso-r%C3%A9vocation-des-autorisations-d-une-dizaine-d-associations-et-ong-%C3%A9trang%C3%A8res/3621908"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Mali",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Association registration with Direction de l'Administration Generale; French-only Bamako filings; post-coup instability",
+    "fee_usd": "US$500-2k incl. agents",
+    "time_to_register": "1-4 months",
+    "deduction": "Donations to utilite publique associations deductible; tax registration (NIF) required for NGOs",
+    "foreign_donor_restriction": "Foreign-funded NGOs operate under authorization regime in practice; security limits ops in many regions",
+    "corrections": "Current association law is n° 04-038/ANRM (5 Aug 2004), which repealed Law 01-019 (2001) cited in prior context",
+    "sources": [
+      "https://natlex.ilo.org/dyn/natlex2/natlex2/files/download/97007/MLI-97007.pdf",
+      "https://www.icnl.org/research/library/mali_malien2011/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Guinea",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Declaration of association in Conakry; French-only documents; L013/05 law modernization underway (DNARPROMA)",
+    "fee_usd": "US$300-1k incl. agents",
+    "time_to_register": "4-10 weeks",
+    "deduction": "Donations to utilite publique associations deductible",
+    "foreign_donor_restriction": "Declaration regime (more open than old authorization system); military rule since 2021 adds political risk",
+    "corrections": "Association regime rests on loi 013/05 (2005) + L013 NGO text; prior 'loi L/2010/004 (2010)' not confirmed",
+    "sources": [
+      "https://matd.gov.gn/dnarproma-ouverture-des-ateliers-regionaux-sur-lactualisation-de-la-loi-013-05-a-kindia-et-kankan/",
+      "https://guineelex.com/decrets-arretes/arrete-a-2022-3220-matd-cab-sgg"
+    ],
+    "confidence": "med"
+  }
+]

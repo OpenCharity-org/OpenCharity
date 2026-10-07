@@ -1,0 +1,74 @@
+[
+  {
+    "country": "Afghanistan",
+    "annual_compliance": "NGOs file an annual activity report to the Ministry of Economy (NGO Law 2015, art. 31); associations file reports within 3 months of fiscal year end; non-filing risks sanctions or deregistration."
+  },
+  {
+    "country": "Maldives",
+    "annual_compliance": "No published annual filing for charitable trusts; MIRA requires annual reports from approved charitable organisations; non-filing risks loss of tax status."
+  },
+  {
+    "country": "Nigeria",
+    "annual_compliance": "CAC annual returns + annual report for NGOs (CAMA 2020) due within 6 months of fiscal year end (commonly Jun 30); NCMM annual reports; non-compliance risks fines and deregistration."
+  },
+  {
+    "country": "Ghana",
+    "annual_compliance": "ORC annual return for the CLG (within 30 days of AGM, Act 992) plus NPO annual report with audited financials to NCSCOS; non-compliance risks NPO licence revocation."
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "annual_compliance": "OSCs file an annual activity report and annual accounts with the Interior Ministry (2024-368 ordinance); foreign-funded ONGs also under décret 2015-640; non-compliance risks legal-personality revocation."
+  },
+  {
+    "country": "Benin",
+    "annual_compliance": "Loi 2025-19: associations/fondations must be on the new RAF register; pre-existing entities have a grace period under pain of radiation; ongoing oversight and annual activity reporting."
+  },
+  {
+    "country": "Togo",
+    "annual_compliance": "1901 regime: annual AGM to approve accounts (statute deadline); no strict public annual filing, but bureau/bylaws changes re-declared at préfecture; non-compliance risks court dissolution."
+  },
+  {
+    "country": "Burkina Faso",
+    "annual_compliance": "Associations declared at préfecture; ONGs need ministry-of-finance authorization (loi 064-2015); ongoing oversight, non-compliance risks administrative dissolution (118 CSOs dissolved in 2025)."
+  },
+  {
+    "country": "Mali",
+    "annual_compliance": "Préfecture declaration confers legal personality (loi 04-038); ONGs registered under décret 05-223; no strict published annual filing; government retains dissolution powers."
+  },
+  {
+    "country": "Guinea",
+    "annual_compliance": "Loi L/2005/013 art. 11: every association must send activity reports, budgets and annual accounts to the Interior Ministry; ONGs additionally under L/2005/014 with agrément."
+  },
+  {
+    "country": "Guinea-Bissau",
+    "annual_compliance": "No published annual filing requirement; associations formed by public deed (10+ founders) and registered at the Conservatória; no published consequence of non-filing."
+  },
+  {
+    "country": "Senegal",
+    "annual_compliance": "1901-style préfecture declaration; annual AGM approves accounts (statute); no public annual filing; bureau/bylaws changes re-declared; non-compliance risks court dissolution."
+  },
+  {
+    "country": "Gambia",
+    "annual_compliance": "NGOs must submit annual work plan + budget and a detailed annual report to the NGO Affairs Agency and pay an annual fee (NGO Decree); non-compliance risks registration revocation."
+  },
+  {
+    "country": "Sierra Leone",
+    "annual_compliance": "Annual return at the CAC under the Companies Act 2009 (CLG included); non-profits exempt from public financials filing; non-compliance risks fines and deregistration."
+  },
+  {
+    "country": "Liberia",
+    "annual_compliance": "Accredited NGOs file activity and financial reports with the Ministry of Planning & Economic Affairs within 3 months of fiscal year end (NGO policy); non-compliance risks accreditation revocation."
+  },
+  {
+    "country": "Niger",
+    "annual_compliance": "Declaration-based regime (ordonnance 84-06); ONGs registered under décret 2022-182 with agrément protocol; no strict published annual filing; non-compliance risks administrative radiation."
+  },
+  {
+    "country": "North Korea",
+    "annual_compliance": "No independent civil-society registration exists; only state and party mass organisations, with no annual compliance obligations for foreign founders."
+  },
+  {
+    "country": "Russia",
+    "annual_compliance": "NCOs file an annual activity report plus financial statements to the tax authority (within 3 months of fiscal year end); 'foreign agent' NCOs file quarterly reports to Minjust; fines for non-compliance."
+  }
+]

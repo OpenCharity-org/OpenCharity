@@ -1,0 +1,52 @@
+[
+  {
+    "country": "Croatia",
+    "foreign_no_presence": "yes",
+    "official_entity": "Foundation (zaklada) - Zakon o zakladama i fondacijama, court registry (sudski registar)",
+    "fee_usd": "200",
+    "time_to_register": "2-6 weeks",
+    "gfn_ok": "yes",
+    "key_check": "Foreign founder allowed, no residency rule; deed of establishment must be notarized (via local notary/POA) then court-registered.",
+    "source": "https://www.pravni-leksikon.hr/clan/zakon-o-zakladama-i-fondacijama"
+  },
+  {
+    "country": "United Kingdom",
+    "foreign_no_presence": "yes",
+    "official_entity": "Charity Commission (England & Wales) - Charity Act 2011",
+    "fee_usd": "0",
+    "time_to_register": "3-6 months",
+    "gfn_ok": "yes",
+    "key_check": "Must be based in England/Wales (local postal address + governing document); no trustee-residency rule.",
+    "source": "https://www.gov.uk/setting-up-charity/register-your-charity"
+  },
+  {
+    "country": "Israel",
+    "foreign_no_presence": "partial",
+    "official_entity": "Association (ichud) - Associations Law 5750-1990, Registrar of Associations",
+    "fee_usd": "220",
+    "time_to_register": "2 weeks - 3 months",
+    "gfn_ok": "yes",
+    "key_check": "Requires 7 members and a registered Israeli office (lease >=1 yr); remote-only founders must secure a local address.",
+    "source": "https://www.gov.il/en/pages/interministerial_team_registration_humanitarian_organizations_foreign_employees"
+  },
+  {
+    "country": "Seychelles",
+    "foreign_no_presence": "yes",
+    "official_entity": "Foundation - Seychelles Foundation Law, FSA/SBORA registry",
+    "fee_usd": "200",
+    "time_to_register": "1-3 weeks",
+    "gfn_ok": "yes",
+    "key_check": "No local presence required; foreign founder may be a councillor; FSA registration fee ~US$200 plus ~US$200 annual.",
+    "source": "https://www.fsaseychelles.sc/images/Licensing_and_Registration_Fees.pdf"
+  },
+  {
+    "country": "Sri Lanka",
+    "foreign_no_presence": "partial",
+    "official_entity": "NGO Secretariat (Ministry of Foreign Affairs) NGO registration",
+    "fee_usd": "20",
+    "time_to_register": "4-12 weeks",
+    "gfn_ok": "yes",
+    "key_check": "All international NGOs must register with the NGO Secretariat; MFA approval and a local address/agent required.",
+    "source": "https://ngosec.gov.lk/our-services/registration-of-ngos"
+  }
+]

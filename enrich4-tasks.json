@@ -1,0 +1,794 @@
+[
+ {
+  "country": "Canada",
+  "entity": "Federal registered charity (CRA), incorporated charity (Canada Not-for-Profit Corporations Act), charitable trust"
+ },
+ {
+  "country": "United States",
+  "entity": "State nonprofit corporation (e.g., Delaware, California), private charitable trust, 501(c)(3) tax-exempt organization"
+ },
+ {
+  "country": "Cuba",
+  "entity": "No independent NGO sector: only state-recognized foundations and mass organizations authorized by the Communist Party; private charitable entities are"
+ },
+ {
+  "country": "Jamaica",
+  "entity": "Company limited by guarantee (Companies Act 2004, Form 1B); charitable status via Recognized Charitable Organisation under the Charities Act 2013 (Com"
+ },
+ {
+  "country": "Bahamas",
+  "entity": "Company limited by guarantee (Companies Act 2019); domestic company incorporated at the Registrar General's Department; charitable deduction status ap"
+ },
+ {
+  "country": "Barbados",
+  "entity": "Company limited by guarantee (Companies Act 2016, CAIPO); tax-deductible charitable status under the Income Tax Act; foreign entities register as exte"
+ },
+ {
+  "country": "Trinidad & Tobago",
+  "entity": "Company limited by guarantee (Companies Act Ch. 74:01, CRO); charitable/tax-exempt status under the Income Tax Act Ch. 79:04; trust deed under the Cha"
+ },
+ {
+  "country": "Antigua & Barbuda",
+  "entity": "Company limited by guarantee (Companies Act 2016, ABIPCO); domestic company; no separate charity registry - charitable purpose stated in the objects; "
+ },
+ {
+  "country": "Grenada",
+  "entity": "Company limited by guarantee (Companies Act 2012, CAIPO); domestic private company; charitable/tax-exempt status via GRA application; trust deed under"
+ },
+ {
+  "country": "St. Kitts & Nevis",
+  "entity": "Company limited by guarantee (Companies Act Cap 21.03); Nevis LLC (Companies Ordinance Cap 7.06(N)); exempt company via FSC filing; charitable status "
+ },
+ {
+  "country": "St. Lucia",
+  "entity": "Company limited by guarantee (Companies Act Cap 8.01, Commercial Registry Agency); domestic company; charitable status via Inland Revenue; IBCs prohib"
+ },
+ {
+  "country": "St. Vincent & Grenadines",
+  "entity": "Domestic company limited by guarantee (Companies Act No. 8 of 1994, CIPO); business companies only via a licensed VFA agent; charitable status via Inl"
+ },
+ {
+  "country": "Dominica",
+  "entity": "Domestic company limited by guarantee (Companies Act, CIPO); IBC registration prohibited since 1 Jan 2022; charitable status via Inland Revenue."
+ },
+ {
+  "country": "Dominican Republic",
+  "entity": "Asociación sin fines de lucro (Ley 122-05 + Reglamento 40-08, filed with the PGR); fundación with own capital; both obtain tax exemption from the DGII"
+ },
+ {
+  "country": "Haiti",
+  "entity": "ONG d'aide au développement (décret du 14 septembre 1989, administered by the MPCE); association sans but lucratif under the Civil Code; both register"
+ },
+ {
+  "country": "Mexico",
+  "entity": "Asociación civil (Código Civil Federal, notarial act); fundación with own capital; donataria autorizada status via SAT for tax-deductible donations."
+ },
+ {
+  "country": "Guatemala",
+  "entity": "Asociación civil (REPEJU, Código de Comercio); fundación reconocida por el MINGOB; both register at the Registro de Personas Jurídicas."
+ },
+ {
+  "country": "Belize",
+  "entity": "NGO = company limited by guarantee (Companies Act No. 11 of 2022) with NGO status under NGO Act Cap. 315 RE 2020; domestic company at BCCAR."
+ },
+ {
+  "country": "El Salvador",
+  "entity": "Asociación sin fines de lucro (Ley de ONG's No. 894 + Reglamento, Registro de Asociaciones y Fundaciones, Ministerio de Gobernación); fundación; tax b"
+ },
+ {
+  "country": "Honduras",
+  "entity": "Fundación or asociación con personalidad jurídica (Ley Especial de Fomento para ONGD), granted by the Secretaría de Justicia y Derechos Humanos (DIRRS"
+ },
+ {
+  "country": "Nicaragua",
+  "entity": "Asociación (Ley sobre Asociaciones y Registro Central de Personas Jurídicas, 1983); fundación (Ley de Fundaciones); fideicomiso (Ley 395/1998)."
+ },
+ {
+  "country": "Costa Rica",
+  "entity": "Asociación (Ley 218 de 1920); fundación sin fines de lucro; fideicomiso — personalidad via Registro de la Propiedad / Ministerio de Educación y Cultur"
+ },
+ {
+  "country": "Panama",
+  "entity": "Fundación de interés privado (Ley 25/1995; min endowment US$10,000); asociación; fideicomiso (Ley 10/1994)."
+ },
+ {
+  "country": "Colombia",
+  "entity": "Fundación (Ley 793/2002); asociación (Código Civil); corporación (personas jurídicas de derecho privado) — registro ante Cámara de Comercio."
+ },
+ {
+  "country": "Venezuela",
+  "entity": "Fundación (Ley Orgánica de Fundaciones, 2001); asociación o sociedad civil (Código de Comercio, arts. 158+)."
+ },
+ {
+  "country": "Ecuador",
+  "entity": "Fundación (private foundation), Asociación civil (incorporated association), Institución de utilidad pública (IUP, public-benefit institution)"
+ },
+ {
+  "country": "Peru",
+  "entity": "Asociación civil (Ley 27258/2000); fundación (Ley 27907/2003); instituto de promoción de desarrollo local — registro en SUNARP / Ministerio de Justici"
+ },
+ {
+  "country": "Bolivia",
+  "entity": "Fundación; asociación (Ley 351/2013); cooperativa (Ley 2440) — registro de personas jurídicas (Superintendencia de Compañías)."
+ },
+ {
+  "country": "Guyana",
+  "entity": "Non-profit company (Companies Act cap. 89:01); friendly society (Friendly Societies Act cap. 36:04); co-operative (Co-operative Societies Act 1984)."
+ },
+ {
+  "country": "Suriname",
+  "entity": "Stichting (privaat nut) — Dutch-style foundation by notarial deed under the Stichtingenwet of 19 July 1968; also vereniging (association) and coöperat"
+ },
+ {
+  "country": "Brazil",
+  "entity": "Associação (Código Civil); fundação (Código Civil); OSCIP (Lei 9.790/1999) — registro em cartório de registro civil de pessoas jurídicas."
+ },
+ {
+  "country": "Paraguay",
+  "entity": "Asociación civil y fundación (Ley 5833/2017 de OSC); cooperativa (Ley 1984/1999) — Registro Administrativo de Personas y Estructuras Jurídicas (Ley 64"
+ },
+ {
+  "country": "Uruguay",
+  "entity": "Asociación civil (Ley 17.296); fundación (Código Civil) — reconocimiento ante la Dirección General de Registro (DGR)."
+ },
+ {
+  "country": "Argentina",
+  "entity": "Asociación civil (Ley 23.851); fundación (Ley 27.290/2016 y CCyC arts. 193–224); cooperativa (Ley 20.337) — registro según Ley 26.047."
+ },
+ {
+  "country": "Chile",
+  "entity": "Asociación (Código Civil); corporación (Ley 20.500/2011); fundación de derecho privado (Ley 20.839/2015) — Registro Nacional de Personas Jurídicas."
+ },
+ {
+  "country": "Mongolia",
+  "entity": "Private foundation (хувийн сан); Association (нийгмийн эвлэл); NGO under the 2013 NGO law"
+ },
+ {
+  "country": "Japan",
+  "entity": "General incorporated association (一般社団法人); Specified NPO (特定非営利活動法人); Unincorporated voluntary group (任意団体)"
+ },
+ {
+  "country": "South Korea",
+  "entity": "Private foundation (재단법인); Incorporated association (사단법인); Nonprofit corporation (비영리법인)"
+ },
+ {
+  "country": "China",
+  "entity": "Public-interest foundation (公募基金会); Non-public-interest foundation (非公募基金会); Private non-enterprise unit (民办非企业单位)"
+ },
+ {
+  "country": "Taiwan",
+  "entity": "Private foundation (財團法人); Mutual-benefit association (互益社團法人)"
+ },
+ {
+  "country": "Hong Kong",
+  "entity": "Company limited by guarantee (no share capital); Charitable trust under deed of trust; Registered society (small member groups)"
+ },
+ {
+  "country": "Macau",
+  "entity": "Private foundation (Fundação Privada, Law 16/2021, in force 2022); Association (社團, new law in force 2022)"
+ },
+ {
+  "country": "Singapore",
+  "entity": "Registered charity (Charities Act 1994, Registrar of Charities) on top of a CLG (ACRA), society (Societies Act) or trust; company limited by guarantee"
+ },
+ {
+  "country": "Malaysia",
+  "entity": "Society (Societies Act 1966, Act 832); charitable trust (Trustee Act 1949); company limited by guarantee (Companies Act 2016) — SSM or Registrar of So"
+ },
+ {
+  "country": "Indonesia",
+  "entity": "Yayasan (foundation, UU 16/2001 as amended by UU 28/2004); perkumpulan (association, KUHPerdata) — AHU online at the Ministry of Law."
+ },
+ {
+  "country": "Thailand",
+  "entity": "Foundation (yutthathikam) under the Foundation Act B.E. 2550, registered with the Ministry of Justice; registered association under the Civil and Comm"
+ },
+ {
+  "country": "Vietnam",
+  "entity": "Non-governmental organization under Decree 125/2020; charitable fund under Decree 03/2026 with citizen founders; foreign NGOs may operate only via a R"
+ },
+ {
+  "country": "Philippines",
+  "entity": "Non-stock non-profit corporation under the Revised Corporation Code, filed with the Securities and Exchange Commission via eSPARC; registered foundati"
+ },
+ {
+  "country": "Cambodia",
+  "entity": "Association, NGO (Law on Associations and NGOs 2003, as amended), foundation"
+ },
+ {
+  "country": "Laos",
+  "entity": "Social organisation (Law on Social Organisations and NGOs), INGO representative office"
+ },
+ {
+  "country": "Myanmar",
+  "entity": "Registered charity/association (National Registration Bureau), INGO representative office"
+ },
+ {
+  "country": "Brunei",
+  "entity": "Registered society under the Societies Act, Chap. 203, with the Registrar of Societies (Royal Brunei Police, Gadong); charitable societies must adopt "
+ },
+ {
+  "country": "Timor-Leste",
+  "entity": "Non-profit associations and foundations under Decree-Law 5/2005; an association gains juridical personality on registration with the Ministry of Justi"
+ },
+ {
+  "country": "Australia",
+  "entity": "Public charitable trust, company limited by guarantee (CLBG), registered association"
+ },
+ {
+  "country": "New Zealand",
+  "entity": "Incorporated society under the Incorporated Societies Act 2022 (in force from 6 April 2026) registered with the Companies Office; charitable status is"
+ },
+ {
+  "country": "Fiji",
+  "entity": "Company limited by guarantee under the Companies Act 2015 - the standard charitable form - registered with the Registrar of Companies; a registered cl"
+ },
+ {
+  "country": "Papua New Guinea",
+  "entity": "Company limited by guarantee under the Companies Act 1997 via the IPA registry; associations under the Associations Incorporation Act 2023, whose supp"
+ },
+ {
+  "country": "Samoa",
+  "entity": "Company limited by guarantee under the Companies Act 2001, registered with the Ministry of Commerce, Industry and Labour, the standard form for charit"
+ },
+ {
+  "country": "Tonga",
+  "entity": "Registered charitable trust under the Charitable Trusts Act 1993 with the Registrar of Charitable Trusts, incorporated as a Board; company limited by "
+ },
+ {
+  "country": "Vanuatu",
+  "entity": "Company limited by guarantee under the Companies Act 2012, registered with the Financial Services Commission, the main charitable form; trusts registe"
+ },
+ {
+  "country": "Solomon Islands",
+  "entity": "Company limited by guarantee under the Companies Act 2009 with the Solomon Islands Business Registry; charitable trusts under trustee rules; a company"
+ },
+ {
+  "country": "Kiribati",
+  "entity": "Company under the Companies Ordinance 1979 as amended, registered by the Business and Companies Regulatory Division in Tarawa; associations and trusts"
+ },
+ {
+  "country": "Nauru",
+  "entity": "Trusts under the Trusts Act, corporations under the Corporations Act 1972, both registered by the Department of Justice and Border Control; no dedicat"
+ },
+ {
+  "country": "Tuvalu",
+  "entity": "Company under the Companies Act (Cap 40.08) and the Companies and Business Registration Act, administered by the Ministry of Finance; international co"
+ },
+ {
+  "country": "Marshall Islands",
+  "entity": "Non-resident domestic corporation under the Business Corporations Act 1981, with The Trust Company of the Marshall Islands as registered agent; trusts"
+ },
+ {
+  "country": "Micronesia",
+  "entity": "Corporations and non-profit associations under the FSM Corporations Act (FSMC Title 36), registered with the FSM Registrar of Corporations; state-leve"
+ },
+ {
+  "country": "Turkey",
+  "entity": "Foundation (vakif) under the Foundations Law No. 5737, requiring legal and factual reciprocity for foreigners; association (dernek) under the Associat"
+ },
+ {
+  "country": "Georgia",
+  "entity": "Association or foundation (non-profit legal entities under Civil Code art. 24); optional public-benefit status; registered by the State Registry Agenc"
+ },
+ {
+  "country": "Armenia",
+  "entity": "public organization (հասարակական կազմակերպություն), foundation (հիմնադրամ)"
+ },
+ {
+  "country": "Azerbaijan",
+  "entity": "public association (ictimai birlik), foundation (fond)"
+ },
+ {
+  "country": "Kazakhstan",
+  "entity": "public association (қоғамдық бірлестік / IiO non-profit partnership), foundation (қор)"
+ },
+ {
+  "country": "Uzbekistan",
+  "entity": "public organization (jamoat birligi), charitable foundation (xayriya jamg'armasi)"
+ },
+ {
+  "country": "Turkmenistan",
+  "entity": "Public association (Law No. 70-V of 3 May 2014, as amended) — formed only with state registration consent via the Ministry of Justice; charitable acti"
+ },
+ {
+  "country": "Tajikistan",
+  "entity": "Public association registered with the Ministry of Justice (Law on Public Associations, art. 21 state registration); foreign participation restricted."
+ },
+ {
+  "country": "Kyrgyzstan",
+  "entity": "charitable fund (ылайыктуу фонд / karyte fund), public organization, association (assotsiatsiya)"
+ },
+ {
+  "country": "Iran",
+  "entity": "non-governmental organization (tashkilat-e ghayre-hozoumi / NGO), public-benefit association (ettehadiye-ye khedmat-e ghalbeye mardom)"
+ },
+ {
+  "country": "Cameroon",
+  "entity": "Association (Law 90/053 of 1990) and ONG (Law 99/014 of 22 Dec 1999); ONGs need 'reconnaissance' by Interior Ministry; 2017 civil-society law tightene"
+ },
+ {
+  "country": "Central African Republic",
+  "entity": "Association declared under civil code; ONG status via 'agrement' (administrative act) under the law governing ONGs, which covers national and internat"
+ },
+ {
+  "country": "Chad",
+  "entity": "Association under Ordinance 023/PR/2018 of 27 June 2018; international NGO regime under Law 05/2012 of 17 Feb 2012; registration with Interior Ministr"
+ },
+ {
+  "country": "Republic of the Congo",
+  "entity": "Association declared under the French law of 1 July 1901 (still in force in Congo-Brazzaville); legal personality on declaration to the prefecture, re"
+ },
+ {
+  "country": "Congo (DRC)",
+  "entity": "ASBL (non-profit association) or EUP (public utility establishment) under Law 004/2001 of 20 July 2001; legal personality granted by the Minister."
+ },
+ {
+  "country": "Gabon",
+  "entity": "Association under Law 35-62 of 10 Dec 1962; declared to the prefecture, legal personality on declaration; ONGs need technical 'agrement'."
+ },
+ {
+  "country": "Equatorial Guinea",
+  "entity": "Association under Law 11/1992; NGO regime under Law 1/1999 of 24 Feb 1999 (national ONGs) - registration with Interior Ministry."
+ },
+ {
+  "country": "Sao Tome & Principe",
+  "entity": "ONGs under Lei n.º 8/2012: associações, fundações e instituições de direito privado sem fins lucrativos (art. 2), constituted per the general law (Cód"
+ },
+ {
+  "country": "Rwanda",
+  "entity": "NNGO (national NGO) under RGB (Rwanda Governance Board, est. by Law 56/2016) - certificate of legal personality; INGOs need separate authorization."
+ },
+ {
+  "country": "Burundi",
+  "entity": "Non-profit association under Law 1/02 of Jan 2017 (framework law replacing decree-law 1/11 of 1992); registration with Interior Ministry."
+ },
+ {
+  "country": "Uganda",
+  "entity": "NGO registered with the National Bureau for NGOs under the NGO Act 2016 (categories: indigenous, regional, continental, foreign, international); CBOs "
+ },
+ {
+  "country": "Tanzania",
+  "entity": "NGO under the NGO Act 2002, registered at district/regional/national level with the Community Service Registration Board; INGOs via national level."
+ },
+ {
+  "country": "Kenya",
+  "entity": "NGO under the NGO Co-ordination Act 1990 (NGO Board); PBO under the PBO Act 2013 (PBOR) - the more common charity form."
+ },
+ {
+  "country": "Comoros",
+  "entity": "Association under Law 86-006/AF of 30 May 1986 (art. 9 restricts foreign associations); international NGOs require 'agrement' per Decree 20-101/PR of "
+ },
+ {
+  "country": "Madagascar",
+  "entity": "ONG under Law 96-030 of 14 Aug 1997 (special regime, Decree 98-711 of 1998); association by declaration - legal personality on declaration."
+ },
+ {
+  "country": "Zambia",
+  "entity": "NGO local/foreign (NGO Act No. 16 of 2009); trust (Trusts Restriction Act 1970, Ministry of Lands); society (Societies Act 1930)"
+ },
+ {
+  "country": "Malawi",
+  "entity": "NGO, local or foreign (NGO Act 1997 / No.6 of 2001, amended 2022); incorporated company (Companies Act); trust (Trustee Act 1956)"
+ },
+ {
+  "country": "Mozambique",
+  "entity": "Associations (Lei 8/91); Foundations (Lei 16/2018); Foreign NGO authorization (Decreto 55/98 via Ministry of Foreign Affairs); 2022 NGO law proposal ("
+ },
+ {
+  "country": "Angola",
+  "entity": "Associação registada (civil association, Lei 9/10, legal personality via registry); ONG nacional (Lei 2/26 art. 5); ONG estrangeira registered in Ango"
+ },
+ {
+  "country": "Botswana",
+  "entity": "Society (Societies Act 2022); company limited by guarantee (Companies Act); trust (deed of trust); body established by Act of Parliament"
+ },
+ {
+  "country": "Namibia",
+  "entity": "Non-profit company (Sec. 21 \"company not for gain\", Companies Act 28 of 2004, BIPA); registered society (Societies Act); trust by deed (Deeds Registri"
+ },
+ {
+  "country": "Zimbabwe",
+  "entity": "PVO (Private Voluntary Organisations Act [Ch 17:05], 2005, amended 2025; local & international PVOs); trust (Law of Declaration of Trust Act [Ch 65:03"
+ },
+ {
+  "country": "Eswatini",
+  "entity": "NPO as association not for gain (Companies Act No. 8 of 2009, s17, Registrar of Companies); NGO registration with the NGO Directorate to receive forei"
+ },
+ {
+  "country": "Lesotho",
+  "entity": "Non-profit company (Companies Act 2011 s.15); Society (Societies Act 1966, am. 2001); Trust (Trusts Act); Co-operative (Co-operative Societies Act 6 o"
+ },
+ {
+  "country": "South Africa",
+  "entity": "Non-profit company (NPC, Companies Act 71/2008); trust (Trust Property Control Act 57/1988); NPO (NPO Act 60/1997); PBO tax status (Income Tax Act s.3"
+ },
+ {
+  "country": "Netherlands",
+  "entity": "Stichting (foundation), Vereniging (association), ANBI-registered charity (tax status)"
+ },
+ {
+  "country": "Belgium",
+  "entity": "ASBL/ISP/VOG (non-profit association), Stichting/Fondation (foundation)"
+ },
+ {
+  "country": "Luxembourg",
+  "entity": "Association (1912 law), Fondation (2003 law), European non-profit association (ENPA)"
+ },
+ {
+  "country": "France",
+  "entity": "Association loi 1901, Fonds de dotation, Fondation reconnue d'utilité publique"
+ },
+ {
+  "country": "Germany",
+  "entity": "Eingetragener Verein e.V. (BGB §§55-79); Gemeinnützige gGmbH (GmbHG §5); Private foundation (Stiftung, state law, BGB §§80-90); charitable (gemeinnütz"
+ },
+ {
+  "country": "Austria",
+  "entity": "Eingetragener Verein (Verein, Vereinsgesetz 2002/VerG); Private foundation (Privatstiftung, state-level Stiftungslandesgesetz); non-profit GmbH (GmbHG"
+ },
+ {
+  "country": "Switzerland",
+  "entity": "Stiftung/Foundation, Verein/Association (Swiss Civil Code)"
+ },
+ {
+  "country": "Liechtenstein",
+  "entity": "Stiftung (foundation, PGR 2013 Stiftungsgesetz); Verein (association, PGR Art. 1031 ff.); Anstalt (foundation-like, PGR Art. 55 ff.)"
+ },
+ {
+  "country": "Monaco",
+  "entity": "Fondation/institution of public utility (Loi n°56 of 1922, sovereign decree); Association (Loi n°1355 of 2008, declaration); patrimonial foundation (b"
+ },
+ {
+  "country": "San Marino",
+  "entity": "Fondazione (Law 1 July 2015 n.101; public notarial deed, ATS Registro delle Fondazioni) and Associazione non-profit (ANR/AR registers) under the conso"
+ },
+ {
+  "country": "Andorra",
+  "entity": "Fundació (foundation, Law 14/2003), Associació (non-profit association)"
+ },
+ {
+  "country": "Poland",
+  "entity": "fundacja (foundation), stowarzyszenie (association), public benefit organization (pożytk pożyteczna organizacja, POUS)"
+ },
+ {
+  "country": "Czechia",
+  "entity": "spolek (association), obecně užitečná korporace (OUK, public benefit corporation), nadace (foundation)"
+ },
+ {
+  "country": "Slovakia",
+  "entity": "Združenie (NGO, Act 85/1985 Coll.); nadácia (foundation, Act 34/2002, endowment EUR 6,638); VPO public-benefit status (Act 65/2018, Ministry of Interi"
+ },
+ {
+  "country": "Hungary",
+  "entity": "civil nonprofit szervezet (civil nonprofit organization), nonprofit kft (nonprofit limited company), alapítvány (foundation)"
+ },
+ {
+  "country": "Slovenia",
+  "entity": "združenje (association, javno koristno status), fundacija (foundation)"
+ },
+ {
+  "country": "Croatia",
+  "entity": "udruga (association, javno korisna status), zakladnica (foundation), neprofitna ustanova (nonprofit institution)"
+ },
+ {
+  "country": "Bosnia & Herzegovina",
+  "entity": "udruženje/udruga (association), fundacija (foundation)"
+ },
+ {
+  "country": "Serbia",
+  "entity": "udruženje građana (citizens' association), fundacija (foundation), neprofitna ustanova (nonprofit institution)"
+ },
+ {
+  "country": "Montenegro",
+  "entity": "Udruženje (association, 3+ founders, NGO Law SL CG 39/11, arts 10-13); Fondacija (foundation, 1 founder, same law arts 25-27)"
+ },
+ {
+  "country": "North Macedonia",
+  "entity": "Association (udruženje) and foundation (fundacija) under Law on Associations and Foundations (OG 52/10, am. 239/2022); association: 5+ founders, 3 loc"
+ },
+ {
+  "country": "Albania",
+  "entity": "Non-profit associations (3+ founders, foreigners OK); foundations; NPOs registered under Law 80/2021 via the National Registration Center; public-bene"
+ },
+ {
+  "country": "Moldova",
+  "entity": "Public associations (3+ founders); foundations; registered under the 2020 Law on Non-commercial Organisations. Foreigners may found with local involve"
+ },
+ {
+  "country": "Ukraine",
+  "entity": "publichna organizatsiia (public organization), fundatsiia (foundation), publichno-koristna (public-benefit) status"
+ },
+ {
+  "country": "Belarus",
+  "entity": "publicnaya organizatsiya (public organization), fundatsiya (foundation)"
+ },
+ {
+  "country": "Romania",
+  "entity": "asociație (association), fundație (foundation)"
+ },
+ {
+  "country": "Bulgaria",
+  "entity": "Non-profit legal entities (NPL) under the Non-Profit Legal Entities Act; associations; foundations; registered at the Agency for Registration. A 1-fou"
+ },
+ {
+  "country": "Greece",
+  "entity": "Associations (min 7 founders, Law 1566/1985); foundations (Law 40/2022); general-benefit status via separate application after court-registry filing."
+ },
+ {
+  "country": "Cyprus",
+  "entity": "charitable trust (unregistered), registered body (association), community chest"
+ },
+ {
+  "country": "Malta",
+  "entity": "association (2021 Non-Not-For-Profit Organisations Act), foundation, charitable trust"
+ },
+ {
+  "country": "Ireland",
+  "entity": "Companies limited by guarantee (most charities); incorporated associations; registered with the CRO and then with the Charities Regulatory Authority ("
+ },
+ {
+  "country": "United Kingdom",
+  "entity": "Registered charity (Charity Commission England & Wales), company limited by guarantee, charitable trust"
+ },
+ {
+  "country": "Iceland",
+  "entity": "Associations (felag, 2+ members); foundations (stifting, Act 33/1999); both registered with the Registrator (RSK) under the Directorate of Internal Re"
+ },
+ {
+  "country": "Norway",
+  "entity": "Member associations (lag, Act 2020); foundations; both registered with the Brønnøysund Register. No minimum capital; a simple notification regime."
+ },
+ {
+  "country": "Finland",
+  "entity": "Associations (yhdistys, 5+ members); foundations (säätiö); registered with PRH (Patent and Registration Office). Charitable status via the Tax Adminis"
+ },
+ {
+  "country": "Sweden",
+  "entity": "Economic associations (ekonomiska föreningar); ideal associations; foundations; registered with Bolagsverket (Swedish Companies Registration Office)."
+ },
+ {
+  "country": "Denmark",
+  "entity": "Voluntary associations (frivillige foreninger); foundations; associations registered with the CVR register. The 2023 Foundation Act applies to foundat"
+ },
+ {
+  "country": "Estonia",
+  "entity": "Non-profit association (MTÜ), nonprofit foundation (sihtasutus)"
+ },
+ {
+  "country": "Latvia",
+  "entity": "Non-governmental organisations (NVO); associations; foundations; registered in the Enterprise Register under the 2016 NVO law via the e-portal."
+ },
+ {
+  "country": "Lithuania",
+  "entity": "Nonprofit organization (NVO), public benefit institution (viešoji įstaiga), foundation"
+ },
+ {
+  "country": "Spain",
+  "entity": "Fundación (private foundation), Asociación (unincorporated association), plus limited charitable societies (SL/SA with statutory purpose)"
+ },
+ {
+  "country": "Portugal",
+  "entity": "Fundação (private foundation, public-interest institution), Associação (association), and Instituto (institute)"
+ },
+ {
+  "country": "Italy",
+  "entity": "Fondazione (private foundation), Associazione (unincorporated association), and cooperative sociale (social cooperative)"
+ },
+ {
+  "country": "Vatican City",
+  "entity": "No ordinary commercial/charitable registry; charitable activity is conducted through pontifical institutions, canonically erected entities, or bodies "
+ },
+ {
+  "country": "Israel",
+  "entity": "Associations (7+ members, Law of Associations 5725-1965); societies; companies limited by guarantee; registered with the Registrar of Associations."
+ },
+ {
+  "country": "Jordan",
+  "entity": "registered association (jam'iyya) with Ministry of Social Affairs, charitable trust (less common)"
+ },
+ {
+  "country": "Lebanon",
+  "entity": "Associations under Law 92/1909 (notification/declaration regime); foundations. Ordinary associations operate on a declaration basis, not full registra"
+ },
+ {
+  "country": "Syria",
+  "entity": "association registered with Ministry of Social Affairs and Labor, private foundation"
+ },
+ {
+  "country": "Iraq",
+  "entity": "Non-governmental organisations under Law 12 of 2010; registered with the NGO Directorate of the Interior Ministry. Associations are the main registere"
+ },
+ {
+  "country": "Saudi Arabia",
+  "entity": "civil society organization (association) under the 2024 Civil Society Law, branch of foreign NGO (via partnership)"
+ },
+ {
+  "country": "Kuwait",
+  "entity": "association (jam'iyya) under the NGOs Law, representative office of foreign NGO"
+ },
+ {
+  "country": "Qatar",
+  "entity": "private charitable institution (Qatar Charity framework), branch/partnership with an existing charity"
+ },
+ {
+  "country": "United Arab Emirates",
+  "entity": "private foundation (charitable) under Federal Decree-Law 11/2018, registered charity (DCC/DED charity license), association (jama'iyya) under FDL 2/20"
+ },
+ {
+  "country": "Oman",
+  "entity": "association (jama'iyya), private foundation, branch of foreign NGO"
+ },
+ {
+  "country": "Bahrain",
+  "entity": "Civil (NGO) organisations under Law 19 of 2006; registered with the Ministry of Social Development (NGO Support Department)."
+ },
+ {
+  "country": "Yemen",
+  "entity": "association (jama'iyya) under NGO Law 73/1991, NGO representative office (MOU-based)"
+ },
+ {
+  "country": "Palestine",
+  "entity": "registered society (jam'iyya) under the 1996 Societies Law, private foundation, branch of international NGO"
+ },
+ {
+  "country": "Egypt",
+  "entity": "Association (Jam'iyya, Law 84/2014), private charitable institution (Law 149/2014), nonprofit company"
+ },
+ {
+  "country": "Sudan",
+  "entity": "Voluntary and humanitarian organisations under the 2006 Voluntary & Humanitarian Work (Organisation) Act; associations are the main registered form."
+ },
+ {
+  "country": "Libya",
+  "entity": "Non-governmental organisations under NGO Law No. 19 of 2001 (plus 2013 circulars); scope limited to social, cultural, sports, charitable and humanitar"
+ },
+ {
+  "country": "Algeria",
+  "entity": "Associations under Law 12-06 of 2012 (amended 2020); associations for utility (d'intérêt général); registered with the wilaya (province) authorities."
+ },
+ {
+  "country": "Tunisia",
+  "entity": "Association (Décret-loi 2011-88, declaration at prefecture); CSO/NGO under same law; Foundation (Civil Code)"
+ },
+ {
+  "country": "Morocco",
+  "entity": "Association (Dahir 1-58-376 of 1958, am. 2002; declaration at prefecture); Cooperatives (Law 19-00); foreign associations need Interior Ministry permi"
+ },
+ {
+  "country": "Mauritania",
+  "entity": "Association (levels 1-3, filed with Interior Ministry / wali / hakem) and foundation (min endowment 3,000,000 MRU, notarized act, publication in Journ"
+ },
+ {
+  "country": "Western Sahara",
+  "entity": "No independent registry (non-sovereign territory; Moroccan dahir 1-58-376 applies in Moroccan-administered areas only)"
+ },
+ {
+  "country": "Ethiopia",
+  "entity": "Local CSO and foreign CSO/NGO (CSO Proclamation No. 1113/2019; single-law registration with Civil Society Registry Commission)"
+ },
+ {
+  "country": "Eritrea",
+  "entity": "No independent NGO law; state-controlled associations only; donor funds must pass through government ministries"
+ },
+ {
+  "country": "Djibouti",
+  "entity": "Association (Law No. 51/AN/71 of 1971 as amended; declaration at Ministry of Interior); no separate NGO vehicle"
+ },
+ {
+  "country": "Somalia",
+  "entity": "NGO (NGO Act 2019, FMOO registration); national and international NGOs; domestic associations under regional law"
+ },
+ {
+  "country": "Somaliland",
+  "entity": "NGO/welfare organization (Presidential Decree No. 82/11 of 2010; 5+ founders, nationals or foreigners); association"
+ },
+ {
+  "country": "South Sudan",
+  "entity": "NGO (NGO Act 2016; RRC registration); domestic associations; national and international NGO categories"
+ },
+ {
+  "country": "Seychelles",
+  "entity": "Association (Associations Act 2022, no registration fee); Foundation (Foundations Act 2009, ~US$200); NPO status via CEPS"
+ },
+ {
+  "country": "Mauritius",
+  "entity": "NPO (NPO Act 2003, Registry of Associations); Foundation (Foundations Act 2016); Company Limited by Guarantee (Companies Act 2015)"
+ },
+ {
+  "country": "India",
+  "entity": "Public charitable trust (state trust deeds), registered society, Section 8 company (Companies Act 2013)"
+ },
+ {
+  "country": "Pakistan",
+  "entity": "Public charitable trust (trust deed), Section 21 non-profit company (Companies Act 2017), registered society"
+ },
+ {
+  "country": "Bangladesh",
+  "entity": "NGO (NGO Regulatory Authority Act 2008; registration via BIDA); charitable trust (trust deed); company limited by guarantee (Companies Act 1994)"
+ },
+ {
+  "country": "Sri Lanka",
+  "entity": "Public charitable trust (Public Trusts Act 1950, Commissioner of Charities); Company Limited by Guarantee (Companies Act 2007); association (Companies"
+ },
+ {
+  "country": "Nepal",
+  "entity": "NGO/association (Associations Registration Act 1977, District Administration Office); Trust (Trust Act 2000); Social Welfare Council affiliation"
+ },
+ {
+  "country": "Bhutan",
+  "entity": "NGO/trust (NGO Trust Act 1997; Department of Social Services); limited company (Companies Act 2016)"
+ },
+ {
+  "country": "Afghanistan",
+  "entity": "NGO (NGO Law 2015, NGO Registration Committee), foundation/association under the Hezb and Foundations Act"
+ },
+ {
+  "country": "Maldives",
+  "entity": "Public charitable trust (Public Trusts Act; registered with Ministry of Law); association; private company (Companies Act 2023)"
+ },
+ {
+  "country": "Nigeria",
+  "entity": "Incorporated trustee (NGO, CAC + NCMM registration); company limited by guarantee (CAC, ~NGN 51,000); trust (deed, unregistered)"
+ },
+ {
+  "country": "Ghana",
+  "entity": "Company limited by guarantee under Companies Act 2019 (Act 992) at ORC, then NPO license per Directive for Management of NPOs Operations 2020 and NPOs"
+ },
+ {
+  "country": "Côte d'Ivoire",
+  "entity": "Association, fondation, ONG under Ordonnance n° 2024-368 du 12 juin 2024 relative à l'organisation de la société civile, superseding Loi 60-315 de 196"
+ },
+ {
+  "country": "Benin",
+  "entity": "Association and fondation under Loi n° 2025-19 du 22 juillet 2025 on associations and foundations (replacing the earlier regime); registration in the "
+ },
+ {
+  "country": "Togo",
+  "entity": "Associations under the French Law of 1 July 1901; foreign ONGs governed by Décret n° 92-130/PMRT (art. 4: compliance before installation); government "
+ },
+ {
+  "country": "Burkina Faso",
+  "entity": "Association under Loi n° 064-2015/CNT: art. 4 formation without prior authorization, art. 17 public-utility recognition; ONGs need ministry-of-finance"
+ },
+ {
+  "country": "Mali",
+  "entity": "Association under Loi n° 04-038/AN-RM du 5 août 2004 (art. 3 modified by ordonnance 2024-008/PT-RM of 28 mars 2024); ONGs under décret n° 05-223/P-RM "
+ },
+ {
+  "country": "Guinea",
+  "entity": "Association under Loi L/2005/013/AN and ONG under Loi L/2005/014/AN; both declaration-based, filed with the Interior Ministry services; ONG status sub"
+ },
+ {
+  "country": "Guinea-Bissau",
+  "entity": "Associations (associações) via public deed (escritura pública) at Serviços Notariais under the Código Civil (10+ founders); registry number via Conser"
+ },
+ {
+  "country": "Senegal",
+  "entity": "Association under Loi n° 71-604 du 20 juillet 1971 (1901-style: declaration at préfecture, récépissé); ONG under décret n° 96-103 du 8 février 1996 as"
+ },
+ {
+  "country": "Gambia",
+  "entity": "Societies registered via the Ministry of Justice Companies Division; NGOs under the NGO Affairs Agency created by NGO Decree No. 81 (1993); company li"
+ },
+ {
+  "country": "Sierra Leone",
+  "entity": "Company limited by guarantee under Companies Act 2009 (Act No. 5 of 2009) registered at the CAC; charities/NGOs registered as non-profit companies (no"
+ },
+ {
+  "country": "Liberia",
+  "entity": "NGO route: Articles of Incorporation at the Liberia Business Registry, endorsed by the Minister of Foreign Affairs, then submitted to the Ministry of "
+ },
+ {
+  "country": "Niger",
+  "entity": "Association under ordonnance n° 84-06 du 1er mars 1984 and décret n° 84-49/PCMS/MI; ONG sector under décret n° 2022-182/PRN/MAT/DC (agrément protocol "
+ },
+ {
+  "country": "North Korea",
+  "entity": "No independent civil-society registration regime exists; all social organizations are state or party organs (mass organizations within the state syste"
+ },
+ {
+  "country": "Russia",
+  "entity": "NCOs under Federal Law 99-FZ 'On Non-Commercial Organizations': public associations, associations/unions, foundations, institutions, autonomous NCOs; "
+ }
+]

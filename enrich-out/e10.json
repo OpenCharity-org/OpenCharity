@@ -1,0 +1,33 @@
+[
+  {
+    "country": "Kyrgyzstan",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered address (agent address works) and a local bank account required; filings can be done remotely via e-portal",
+    "fee_usd": "~$25",
+    "time_to_register": "2-4 weeks",
+    "deduction": "Flat 10% PIT; special deductions limited, no prominent general charitable deduction cap",
+    "foreign_donor_restriction": "2024 foreign-funded NGO law: registration, onerous financial/governance reporting and monitoring of foreign grants",
+    "corrections": "Confirm prior: single-founder fund, easy, ~2,000 KGS fee, ~5 days registration; add 2024 foreign-NGO compliance law on funding side",
+    "sources": [
+      "https://www.icnl.org/resources/civic-freedom-monitor/kyrgyz",
+      "https://www.legal500.com/en/intelligence/kyrgyzstan/corporate-commercial-law/on-establishing-the-amount-of-fees-for-state-registration",
+      "https://www.rferl.org/a/kyrgyzstan-foreign-agents-chill/32893000.html"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Iran",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Ministry of Interior approval is discretionary; only aligned Iranian national applicants are approved, foreign founder path is not viable",
+    "fee_usd": "none",
+    "time_to_register": "6-12+ months (refusal near-certain)",
+    "deduction": "No general charitable deduction; progressive 5-25% personal income tax",
+    "foreign_donor_restriction": "Foreign-funded organizations need MOI approval; US/EU sanctions block most banking/funding channels for foreign donors",
+    "corrections": "Confirm prior: very hard, near-certain refusal for foreign founder under 2005 NGO law",
+    "sources": [
+      "https://www.icnl.org/resources/research/ijnl/ngo-regulations-in-iran",
+      "https://iranhumanrights.org/2013/08/ministry-interior/"
+    ],
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "country": "South Africa",
+    "annual_compliance": "NPC: CIPC annual return within 30 business days of registration anniversary; audited AFS filed where required; PBO/NPO duties to SARS/DSD; non-compliance -> CIPC can strike NPC off register."
+  },
+  {
+    "country": "Netherlands",
+    "annual_compliance": "Stichting/vereniging: accounts adopted by board within 6 months of year-end, filed with KVK within 8 days of adoption (cap 12 months); micro: bookkeeping only; late filing -> KVK fine, board liability."
+  },
+  {
+    "country": "Belgium",
+    "annual_compliance": "ASBL: accounts approved by GM within 6 months of year-end, deposited at Commercial Court (small/micro) or NBB (large) within 30 days; late filing -> administrative fines, loss of public grants."
+  },
+  {
+    "country": "Luxembourg",
+    "annual_compliance": "Association: annual financial statements filed with RCS within 7 months of fiscal year-end (2023 reform); member list no longer filed; late filing -> automatic penalties under Accounting Law, director fines."
+  },
+  {
+    "country": "France",
+    "annual_compliance": "Loi 1901 association: no registry filing; internal AGM; annual tax return 2087 + 0.1% turnover tax above EUR 76k to DGFiP; audit for large associations (>EUR 15M, >100 staff); no strike-off for non-filing."
+  },
+  {
+    "country": "Germany",
+    "annual_compliance": "e.V.: no filing if small; with bookkeeping duty (turnover > EUR 730k) -> financial statements to court, publication via Bundesanzeiger within 12 months; missed publication -> warning fine up to EUR 25,000."
+  },
+  {
+    "country": "Austria",
+    "annual_compliance": "Verein: no annual registry filing; turnover <= EUR 1M -> cash-basis records only; registry data kept current; deregistration only on voluntary or court grounds, not for missed reports; no audit below HGB thresholds."
+  },
+  {
+    "country": "Switzerland",
+    "annual_compliance": "Foundation: annual report to cantonal supervisory authority; statutory audit (Art. 86a CC); non-compliance -> supervisory measures, board replacement, cantonal fines; strike-off only on dissolution grounds."
+  },
+  {
+    "country": "Liechtenstein",
+    "annual_compliance": "Foundation (STIFA): annual financial statements and activity report filed with the court; breach -> admonition, fines; in serious cases court-ordered measures up to dissolution of the foundation."
+  },
+  {
+    "country": "Monaco",
+    "annual_compliance": "Association (loi 1355): no annual filing; keep member register at seat; foundation: annual activity report to prefecture; breach -> admonition, fines; court can order dissolution for serious misconduct."
+  },
+  {
+    "country": "San Marino",
+    "annual_compliance": "Registered association/foundation: annual declaration of activities and financial statements to the registry; breach of statutory duties -> dissolution ordered by competent authority; no general statutory audit."
+  },
+  {
+    "country": "Andorra",
+    "annual_compliance": "Fundacio/associacio: adopt accounts; keep AML beneficial-owner registry current (UIFAND); breach -> administrative fines approx. EUR 90-6,000; serious breach -> registration review up to revocation."
+  },
+  {
+    "country": "Poland",
+    "annual_compliance": "Fundacja/stowarzyszenie: annual activity report plus financial statements to KRS by 31 March; missed filing -> fines on management; persistent failure -> KRS proceedings up to striking off the register."
+  },
+  {
+    "country": "Czechia",
+    "annual_compliance": "Spolek: no general annual registry return; financial statements and publication due when accounting thresholds met (balance > CZK 8M, revenue > CZK 16M, 10+ staff); failure to publish -> fine up to 3% of assets."
+  },
+  {
+    "country": "Slovakia",
+    "annual_compliance": "NGO: annual report to Ministry of Interior registry, financial statements to the Register of Financial Statements within 1 year; breach -> fines (EUR 1,000-10,000) and termination motion for repeat breach."
+  },
+  {
+    "country": "Hungary",
+    "annual_compliance": "Nonprofit: annual activity/financial report to registry; non-publication -> tax number deleted; second reminder -> default penalty up to HUF 200,000; repeated breach -> deregistration of the organization."
+  },
+  {
+    "country": "Slovenia",
+    "annual_compliance": "Zdruzenje: annual report to AJPES registry (around 31 April); accounting entities file financial statements with AJPES within 3 months of adoption; non-filing -> fines, repeated failure -> deregistration."
+  },
+  {
+    "country": "Croatia",
+    "annual_compliance": "Udruga/zaklada: annual financial report or inactivity statement to court registry by early April; financial statements deposited in FINA registry; missed filing -> fines; persistent failure -> deregistration."
+  },
+  {
+    "country": "Bosnia & Herzegovina",
+    "annual_compliance": "Association registered at competent court: data changes notified within 30 days; annual activity report expected; breach -> fines; persistent failure -> strike-off; no general statutory audit duty."
+  },
+  {
+    "country": "Serbia",
+    "annual_compliance": "Association/foundation at competent state court: annual activity report to court registry; UBO registry kept current (breaches fined RSD 500k-2M); persistent breach -> fines and possible court-ordered deregistration."
+  }
+]

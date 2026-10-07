@@ -1,0 +1,67 @@
+{
+  "country": "Czechia",
+  "gfnp_eligible": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "Spolek (association) for simplicity and zero court fees; nadace (foundation) if an endowment-based structure is required",
+  "entity_types": [
+    "Spolek (association — 3+ founders, common interest; registered in the spolkový rejstřík)",
+    "Nadace (foundation — dataset label 'OUK'; 1 founder, endowment min. 100,000 CZK, notarial deed, Commercial Register)",
+    "z.ú. (zájmové sdružení / interest association — lighter, not a full legal entity)"
+  ],
+  "requirements": {
+    "founders": "Spolek: 3+ founders with a common interest (Civil Code Act 89/2012 Sb., § 226 et seq.); Czech citizenship not required. Nadace: 1 founder (zřizovatel), minimum endowment 100,000 CZK",
+    "local_presence": "Spolek: place of business in Czechia (seats/branches); nadace: registered office (sídlo) in Czechia",
+    "documents": "Spolek: application to the spolkový rejstřík (statute + founders + registered office). Nadace: notarial deed of foundation (listina notářského zápisu) + Commercial Register application"
+  },
+  "forms": [
+    "Spolek: application form for the spolkový rejstřík (paper or e-filing; the registry court is the Městský soud v Praze / regional courts)",
+    "Nadace: notarial deed + Commercial Register application (Obchodní rejstřík)",
+    "No official free online form portal; paper submission at the registry court is the norm for spolek"
+  ],
+  "fees": [
+    {
+      "item": "Spolek registration in the spolkový rejstřík",
+      "amount": "0 CZK (no court fee)",
+      "source_class": "primary",
+      "source": "amended § 11 Act 549/1991 Sb. (fee schedule; association-register entries exempt), full tariff at https://www.zakonyprolidi.cz/cs/1991-549; https://poradna.crdm.cz (free spolkový rejstřík entries)",
+      "note": "Supersedes the v2 note 'spolek court fee is 1,000 CZK (not free)'. The 1,000 CZK figure in epravo.cz articles predates the exemption and must not be cited for current registrations."
+    },
+    {
+      "item": "Spolek notary (optional, e.g. for power of attorney / notarized application)",
+      "amount": "~1,000-2,500 CZK",
+      "source_class": "secondary",
+      "source": "market rate (Czech notary tariff for a simple notarized signature / application)",
+      "note": "Not legally required for a basic paper filing"
+    },
+    {
+      "item": "Nadace first entry, Commercial Register",
+      "amount": "2,700 CZK (notary-filed) / 6,000 CZK (registry court)",
+      "source_class": "secondary",
+      "source": "inferred from the general fee schedule: Act 549/1991 Sb. tariff (https://www.zakonyprolidi.cz/cs/1991-549, https://msp.gov.cz/documents/33609/1046892/Příloha+-+SAZEBNÍK+POPLATKŮ.pdf, https://www.businessinfo.cz/navody/zapis-do-obchodniho-rejstriku-ppbi/5)",
+      "note": "Tier = first entry of a legal person excluding a.s. (8,000/12,000 CZK) and spolek (0 CZK). Not pinned to a nadace-explicit source — labeled as inferred from the general tariff, not a primary nadace fee."
+    },
+    {
+      "item": "Nadace endowment (capital, not a fee)",
+      "amount": "min. 100,000 CZK",
+      "source_class": "primary",
+      "source": "Civil Code Act 89/2012 Sb. (nadace, minimum endowment)",
+      "note": "This is the founding capital, separate from court fees"
+    }
+  ],
+  "timelines": {
+    "spolek": "4-8 weeks (statutory 2-month decision period; legal existence arises on entry into the spolkový rejstřík, Civil Code § 226)",
+    "nadace": "8-16 weeks (notary deed + Commercial Register entry)"
+  },
+  "supersedes": [
+    "Prior v2 'Spolek court fee is 1,000 CZK (not free); total ~2,000-3,500 CZK' corrected: spolek entry is fee-free under amended § 11 Act 549/1991 Sb.",
+    "Prior v2 'Spolek needs 5+ members' corrected: law requires 3+ founders."
+  ],
+  "sources": [
+    "https://www.zakonyprolidi.cz/cs/1991-549",
+    "https://poradna.crdm.cz",
+    "https://msp.gov.cz/documents/33609/1046892/Příloha+-+SAZEBNÍK+POPLATKŮ.pdf",
+    "https://www.businessinfo.cz/navody/zapis-do-obchodniho-rejstriku-ppbi/5",
+    "http://portal.gov.cz/sluzby-vs/zapis-do-obchodniho-rejstriku-S15721"
+  ]
+}

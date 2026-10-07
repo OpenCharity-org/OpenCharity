@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# Backups / scratch
+*.bak
+tmp_pdf/
+research_tmp/
+
+# OS
+.DS_Store
+
+# Environments
+.env

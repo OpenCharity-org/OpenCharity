@@ -1,0 +1,82 @@
+[
+  {
+    "country": "Congo (DRC)",
+    "annual_compliance": "ASBL/EUP regime (Law 004/2001 of 20 July 2001): a foreign ASBL needs presidential authorization to operate; an annual activity report is expected; sanction for non-compliance is withdrawal of the authorization."
+  },
+  {
+    "country": "Gabon",
+    "annual_compliance": "Associations Law 35-62 (1962): one-time declaration to the prefecture with a 15-day receipt; no recurring annual filing regime is published; the administration or courts can order dissolution of the association."
+  },
+  {
+    "country": "Equatorial Guinea",
+    "annual_compliance": "NGO Law 1/1999 (Interior Ministry): cumbersome registration requiring a positive line-ministry report; no recurring annual filing published; the law is used to restrict foreign funding and to dissolve NGOs."
+  },
+  {
+    "country": "Sao Tome & Principe",
+    "annual_compliance": "Under Lei n.º 8/2012 (associations, foundations, non-profit institutions) the entity registers with the ministry; no recurring annual filing regime is published; dissolution is provided by the law."
+  },
+  {
+    "country": "Rwanda",
+    "annual_compliance": "All registered NGOs/INGOs must file an annual audited financial report to the RGB by 31 March (Law 058/2024); non-filing leads to suspension of legal status, loss of donor eligibility and fines; 10-year record retention."
+  },
+  {
+    "country": "Burundi",
+    "annual_compliance": "NPA Law 1/02 (Jan 2017) replaces the 1992 decree-law; associations register with the Interior Ministry; the law provides dissolution as the sanction; no recurring annual filing regime is published."
+  },
+  {
+    "country": "Uganda",
+    "annual_compliance": "NGO Act 2016 (2019 Guidelines): file annual returns with the NGO Bureau within 6 months after year-end; non-filing leads to suspension of the permit/registration; operating unregistered is a criminal offence."
+  },
+  {
+    "country": "Tanzania",
+    "annual_compliance": "NGO Act 2002 s.29: each NGO files an annual public activities report and an annual audited report to the Council/Board; missing 2 consecutive years without reasonable cause presumes cessation - suspension/cancellation."
+  },
+  {
+    "country": "Kenya",
+    "annual_compliance": "PBO Act (in force 14 May 2024): PBOs file audited accounts plus an annual report to PBORA by 31 March; non-filing exposes the PBO to fines and deregistration - PBORA has already cancelled thousands of CSO registrations."
+  },
+  {
+    "country": "Comoros",
+    "annual_compliance": "Loi 86-006/AF: legal capacity by one-time declaration to the prefecture (15-day receipt, JO); no recurring annual filing; officer changes reported within a month; reconstituting after dissolution is criminal."
+  },
+  {
+    "country": "Madagascar",
+    "annual_compliance": "Law 96-030 + Decree 98-711: associations operate under a prefectural authorization (agrement) regime; an annual activity report is expected; sanction is withdrawal of the authorization (deadline per Decree 98-711)."
+  },
+  {
+    "country": "Zambia",
+    "annual_compliance": "NGO Act No. 16 of 2009: NGOs submit annual information on activities and funds to the NGO Board and must re-register every 5 years; non-compliance leads to suspension or revocation of the registration."
+  },
+  {
+    "country": "Malawi",
+    "annual_compliance": "NGO Act s.22: within 6 months of year-end lodge audited accounts, an annual report of activities and an administrative return with the NGORA; non-compliance carries a MK 1m fine and suspension/deregistration."
+  },
+  {
+    "country": "Mozambique",
+    "annual_compliance": "Lei 8/91 (associations), Lei 16/2018 (foundations), Decreto 55/1998 (foreign NGO authorization via MFA): authorization regime with an annual reporting obligation; sanction is withdrawal of the authorization."
+  },
+  {
+    "country": "Angola",
+    "annual_compliance": "Lei 9/10 (civil associations) and Lei 2/26 (NGOs): the entity registers with the competent authority; no recurring annual filing regime is published; sanctions include dissolution/withdrawal of registration."
+  },
+  {
+    "country": "Botswana",
+    "annual_compliance": "Societies Act 2022 (Registrar: Dept. of Civil & National Registration): electronic re-registration was required by a February 2024 deadline; non-compliance leads to de-registration; s.9 provides cancellation."
+  },
+  {
+    "country": "Namibia",
+    "annual_compliance": "Companies Act 2004 ss.181-182: the NPO files an annual return and pays the annual duty to the BIPA Registrar; non-compliance attracts fines and late fees, and deregistration in serious cases."
+  },
+  {
+    "country": "Zimbabwe",
+    "annual_compliance": "PVO Act (Ch 17:05): PVOs submit annual reports and audited financial statements to the Registrar of PVOs; non-filing leads to deregistration - a 2024 directive targeted about 240 non-compliant PVOs for de-registration."
+  },
+  {
+    "country": "Eswatini",
+    "annual_compliance": "Companies Act 2009 Part XIII (ss.317-320): annual return to the Registrar (Ministry of Commerce, Industry and Trade); no separate published NPO filing regime; failure to file attracts penalties and officers' liability."
+  },
+  {
+    "country": "Lesotho",
+    "annual_compliance": "Societies Act 1966: societies are registered with the Commissioner of Societies (min. 10 members); no recurring annual filing regime is published; the Commissioner may deregister the society under s.17(1)."
+  }
+]

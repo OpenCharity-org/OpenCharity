@@ -1,0 +1,52 @@
+[
+  {
+    "country": "Kyrgyzstan",
+    "foreign_no_presence": "yes",
+    "official_entity": "NPO under Law No. 111 of 1999 'On non-profit organizations' (amended by Law No. 72 of 2024); state registration by Ministry of Justice",
+    "fee_usd": "63",
+    "time_to_register": "3 working days",
+    "gfn_ok": "yes",
+    "key_check": "Foreigners can register an NPO without a local partner; 2024 foreign-representatives law targets foreign reps, not founding.",
+    "source": "https://cbd.minjust.gov.kg/4-260/edition/6030/ru"
+  },
+  {
+    "country": "South Africa",
+    "foreign_no_presence": "yes",
+    "official_entity": "Non-profit organisation registered under the Non-Profit Organisations Act No. 71 of 1997 with the Department of Social Development",
+    "fee_usd": "0",
+    "time_to_register": "about 2 months",
+    "gfn_ok": "yes",
+    "key_check": "Registration is voluntary and free; no residency requirement for founders; application filed at the nearest DSD office.",
+    "source": "https://www.gov.za/services/register-nonprofit-organisation"
+  },
+  {
+    "country": "France",
+    "foreign_no_presence": "yes",
+    "official_entity": "Association loi 1901 declared with the prefecture of the siege's department; legal personality from declaration",
+    "fee_usd": "0",
+    "time_to_register": "immediate to a few days; receipt issued on declaration",
+    "gfn_ok": "yes",
+    "key_check": "Any person incl. foreigners may found; a French seat is needed and declaration can be made by a mandated local person.",
+    "source": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1119"
+  },
+  {
+    "country": "Germany",
+    "foreign_no_presence": "yes",
+    "official_entity": "eingetragener Verein (e. V.) entered in the Amtsgericht Vereinsregister (BGB 55-89); legal capacity after entry",
+    "fee_usd": "50",
+    "time_to_register": "typically 2-6 weeks",
+    "gfn_ok": "yes",
+    "key_check": "No residence requirement for board members; German seat needed; notarized application by the Vorstand.",
+    "source": "https://www.bayernportal.de/dokumente/leistung/997646733429"
+  },
+  {
+    "country": "Hungary",
+    "foreign_no_presence": "partial",
+    "official_entity": "Alapitvany (foundation) registered by court under Act V of 2013 (Civil Code) 3:378; CSO Act CLXXV of 2011 applies",
+    "fee_usd": "0",
+    "time_to_register": "no fixed deadline; typically several months",
+    "gfn_ok": "yes",
+    "key_check": "Foreign founders allowed; Hungarian seat (real estate) and a Hungarian-resident curator are required - a local agent.",
+    "source": "https://birosag.hu/ugyfeleknek/birosagi-eljarasok/civil-nyilvantartasi-eljarasok/hasznos-tudnivalok-az-egyes-eljarasokrol/alapitvany"
+  }
+]

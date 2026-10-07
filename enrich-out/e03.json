@@ -1,0 +1,112 @@
+[
+  {
+    "country": "Mongolia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "No direct foreign-NGO route; needs local partner, rep-office permit (~60 days) or ~$100k foreign-invested entity",
+    "fee_usd": "~$50",
+    "time_to_register": "2-8 weeks (local-citizen route); ~60 days for foreign rep office",
+    "deduction": "Charitable donations largely non-deductible in PIT; only narrow statutory exceptions",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: local-citizen route straightforward; pure foreign route requires FIE (~$100k) or rep office; no new NGO-law bar",
+    "sources": [
+      "https://www.icnl.org/resources/civic-freedom-monitor/mongolia",
+      "https://taxsummaries.pwc.com/mongolia/corporate/deductions",
+      "https://immigration.gov.mn/en/non-government/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Japan",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Japanese registered office address (serviced office OK), Japanese-language articles and registered hanko seal required",
+    "fee_usd": "~$300",
+    "time_to_register": "2-4 weeks (general incorporated association); 3-6 months for specified-NPO certification",
+    "deduction": "Specified (teiteki) NPO donations deductible up to 40% of income minus JPY 2,000",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: no nationality bar for founders/directors; fees ~YEN 30k-50k; 2-4 weeks for nonprofit general incorporated association",
+    "sources": [
+      "https://www.jnpoc.ne.jp/en/nonprofits-in-japan/about-npo-law/",
+      "https://cof.org/country-notes/nonprofit-law-japan",
+      "https://isvd.or.jp/en/guides/nonprofit-association-setup-complete-guide"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "South Korea",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local office address, Korean-language articles and foundation endowment rules; paperwork typically via local agent",
+    "fee_usd": "low (a few hundred USD with agent)",
+    "time_to_register": "a few weeks to ~2 months",
+    "deduction": "Donations to foundations: 15% tax credit up to KRW 10m, 30% on excess; ~10% of income cap",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: foreigners may establish foundations and NGOs (KOTRA/Invest Korea FAQ confirms); Korean-language docs main burden",
+    "sources": [
+      "https://www.investkorea.org/upload/kotraexpress/2021/12/images/FAQ.pdf",
+      "https://elaw.klri.re.kr/eng_service/lawView.do?lang=ENG&hseq=18330",
+      "https://taxsummaries.pwc.com/republic-of-korea/individual/deductions"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "China",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Foreign individuals cannot form a foundation directly; needs Chinese supervising unit, RMB 2m/800k fund, Foreign NGO Law",
+    "fee_usd": "low official; $5k-20k+ with agents/legal",
+    "time_to_register": "several months to over a year",
+    "deduction": "Deduction up to 30% of taxable income for donations to qualified domestic nonprofit organizations",
+    "foreign_donor_restriction": "Foreign NGO Law: 2+ yrs track record, MPS registration, supervising authority; foreign-funded ops tightly regulated",
+    "corrections": "confirm prior: direct foreign formation effectively barred; Foreign NGO Law route needs 2+ yrs track record; heavy political supervision",
+    "sources": [
+      "https://www.chinalawtranslate.com/en/foundations-regulations-draft/",
+      "https://www.svcf.org/sites/default/files/documents/csr/SVCF_ChinaForeignNGOLaw_web.pdf",
+      "https://taxsummaries.pwc.com/peoples-republic-of-china/individual/deductions"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Taiwan",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local office, deposited capital (NT$15m local / NT$30m central), Chinese-language docs and local counsel",
+    "fee_usd": "~$1,000-3,000",
+    "time_to_register": "4-12 weeks",
+    "deduction": "Charitable donations deductible within 30% of taxable income (NT$2m cap for individuals)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: foreign founders accepted; NT$15m (local) / NT$30m (central) minimum capital; 4-12 weeks with legal help",
+    "sources": [
+      "https://btlaw.com.tw/h/newsinfo?key=2719736319&cont=414464",
+      "https://startabusinessintaiwan.tw/book/faqs/setting-up-a-business/is-there-a-minimum-capital-requirement-for-setting-up-a-business-in-taiwan/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Hong Kong",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "HK registered office (virtual office OK) and HK company secretary required; no nationality or residency bar",
+    "fee_usd": "~$150",
+    "time_to_register": "3-5 days to incorporate; +1-3 months for HKJC charitable status",
+    "deduction": "Approved charitable donations deductible up to 35% of assessable income",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: most accessible route; full English-language process; HK$155-925 incorporation fees; HKJC charitable status separate",
+    "sources": [
+      "https://www.cr.gov.hk/en/services/fees.htm",
+      "https://www.gov.hk/en/residents/taxes/salaries/allowances/deductions/approveddonation.htm",
+      "https://www.ird.gov.hk/eng/tax/ach.htm"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Macau",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local office, Chinese/Portuguese documents, notary plus DSAJ registration; limited English support",
+    "fee_usd": "~$500",
+    "time_to_register": "a few weeks to 2-3 months",
+    "deduction": "PIT allows capped charitable donation deduction; low-rate system (top rate 15%)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: Law 16/2021 foundation route (in force 2022), single founder with donated endowment; DSAJ name-certificate then registration",
+    "sources": [
+      "https://www.gov.mo/en/services/ps-1069/",
+      "https://www.bo.dsaj.gov.mo/cn/entities/assoc"
+    ],
+    "confidence": "med"
+  }
+]

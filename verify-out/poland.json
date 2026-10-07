@@ -1,0 +1,58 @@
+{
+  "country": "Poland",
+  "gfnp_eligible": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "Fundacja (foundation) for a single foreign founder; stowarzyszenie (association) if 7+ founders are available",
+  "entity_types": [
+    "Fundacja (foundation — 1 founder, foreigners allowed, no local-presence rule for the founder)",
+    "Stowarzyszenie (association — 7+ founders; legal personality only upon KRS entry)",
+    "OPP status (public-benefit organization listing in the register of OPP — separate, needs 2 years of qualifying activity)"
+  ],
+  "requirements": {
+    "founders": "Fundacja: 1 founder (individual or legal person, foreign nationals OK). Stowarzyszenie: 7+ members (Prawo o stowarzyszeniach Art. 9)",
+    "local_presence": "Local registered office (siedziba) in Poland; a virtual address suffices; no residency requirement for founders",
+    "documents": "Fundacja: notarized deed of foundation (statut) + application on KRS-W20 and KRS-WK forms. Stowarzyszenie: statutes + founding members' list, filed in paper or electronic form"
+  },
+  "forms": [
+    "KRS-W20 (fundacja: basic registration form) + KRS-WK (officers: zarząd and organ nadzoru)",
+    "Notarized deed (akt założycielski) for the fundacja — notary cost is the dominant setup cost",
+    "Stowarzyszenie: statutes + 7 founders' names, filed at the KRS court (paper or via Portal Rejestrów Sądowych prs.ms.gov.pl)"
+  ],
+  "fees": [
+    {
+      "item": "Fundacja KRS court fee (first registration)",
+      "amount": "250 PLN",
+      "source_class": "primary",
+      "source": "Art. 53 ust. 1 ustawy o kosztach sądowych (via https://lexlege.pl and poradnik.ngo.pl)",
+      "note": "The 250 PLN is the fundacja/general KRS fee — NOT the stowarzyszenie fee"
+    },
+    {
+      "item": "Stowarzyszenie KRS court fee",
+      "amount": "0 PLN (fee-exempt)",
+      "source_class": "primary",
+      "source": "Art. 17 ust. 3 Prawa o stowarzyszeniach (consolidated text at api.sejm.gov.pl), in force since 20 May 2016",
+      "note": "Supersedes any prior figure implying a court fee for stowarzyszenia; only notarization of founding documents may add cost if desired"
+    },
+    {
+      "item": "Fundacja notarized deed",
+      "amount": "~500-1,500 PLN (notary tariff depends on statute length and number of founders)",
+      "source_class": "secondary",
+      "source": "https://poradnik.ngo.pl/rejestracja-fundacji-formularze-dokumenty (guide) + Polish notary fee schedule (ustawa o opłacie za czynności notarialne: fee per statute up to 10 pages max ~1,100-1,400 PLN + 23% VAT)",
+      "note": "The statutory notary tariff is primary law; the 500-1,500 PLN range is the practical market range"
+    }
+  ],
+  "timelines": {
+    "fundacja": "2-4 weeks (notary appointment + KRS statutory term ~30 days; in practice 2-8 weeks)",
+    "stowarzyszenie": "4-8 weeks (KRS court processing; statutory 30-day term, legal personality arises on entry per Art. 17)"
+  },
+  "supersedes": [
+    "Prior v2 '~500-1,500 PLN notary + small fees' refined: KRS court fee is 250 PLN for fundacja only; stowarzyszenie is court-fee-free (Art. 17 ust. 3, since 20.05.2016)"
+  ],
+  "sources": [
+    "https://poradnik.ngo.pl/rejestracja-fundacji-formularze-dokumenty",
+    "https://lexlege.pl (Art. 53 ustawy o kosztach sądowych — 250 PLN)",
+    "https://api.sejm.gov.pl (consolidated Prawo o stowarzyszeniach — Art. 9, Art. 17 ust. 3)",
+    "https://www.dudkowiak.com/corporate-law-in-poland/ngo-foundation-registration-in-poland.html"
+  ]
+}

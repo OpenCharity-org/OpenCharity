@@ -1,0 +1,82 @@
+[
+ {
+  "country": "Canada",
+  "tax_exemption": "Separate CRA application (Form T2050) after incorporation for charitable purposes. Benefits: charity income tax-exempt, issues official donor receipts. Time: CRA standard ~9 months, commonly 6-9 months."
+ },
+ {
+  "country": "United States",
+  "tax_exemption": "Separate IRS application Form 1023 (1023-EZ for small orgs): organized and operated exclusively for exempt charitable/educational/scientific purposes, no private inurement. Exemption + donor deduction. Time unpublished."
+ },
+ {
+  "country": "Cuba",
+  "tax_exemption": "No separate application: tax law Art. 101 exempts from income tax legally recognized religious/fraternal institutions in the Registro de Asociaciones and international non-profits. No donor-deduction regime."
+ },
+ {
+  "country": "Jamaica",
+  "tax_exemption": "Separate Charities Authority registration (Charities Act 2013); registered charity income exempt (Income Tax Act s.13); Finance Minister gazette approval enables donor deduction, capped at 1/20 of statutory income."
+ },
+ {
+  "country": "Bahamas",
+  "tax_exemption": "Company limited by guarantee (Companies Act 2019) with charitable objects; no separate charitable tax-exempt approval located - status not automatically tax-exempt and no donor-deduction scheme identified in law."
+ },
+ {
+  "country": "Barbados",
+  "tax_exemption": "CAIPO registration with charitable objects; income tax exemption (Income Tax Act Cap.73, amended 2024) only for charities on the First Schedule exemption list; donor deduction for listed charities. Time unpublished."
+ },
+ {
+  "country": "Trinidad & Tobago",
+  "tax_exemption": "Ministry of Finance 'approved charity' status; donors deduct covenanted donations up to 15% of income; charity exempt from income tax (Income Tax Act Ch.79:04). No deduction without approval. Time unpublished."
+ },
+ {
+  "country": "Antigua & Barbuda",
+  "tax_exemption": "Automatic: Income Tax Act Cap.212 s.8(d) exempts income of ecclesiastical, charitable or educational institutions of public character, as far as not from trade. No separate application; no donor-deduction scheme."
+ },
+ {
+  "country": "Grenada",
+  "tax_exemption": "Automatic by category: Income Tax Act Cap.149 s.25(1)(q) exempts religious/charitable/educational institutions of public character not trading for profit; donors deduct donations to Comptroller-approved organizations."
+ },
+ {
+  "country": "St. Kitts & Nevis",
+  "tax_exemption": "Income Tax Act Ch.20.22 s.7 lists category exemptions; donations to charities registered with CAIPO are deductible (PwC); the institution's own income-tax exemption is not confirmed in accessible text. Time unpublished."
+ },
+ {
+  "country": "St. Lucia",
+  "tax_exemption": "Donors deduct contributions under deeds of covenant of at least 3 years to approved religious/charitable/medical/educational institutions (Income Tax Act Cap.15.02), capped at 25% of income; own exemption unconfirmed."
+ },
+ {
+  "country": "St. Vincent & Grenadines",
+  "tax_exemption": "Automatic: Income Tax Act Cap.435 s.44(o) exempts religious/charitable/educational institutions of public character not from profit business; s.58 donor deduction for covenanted donations, capped 5% of assessable income."
+ },
+ {
+  "country": "Dominica",
+  "tax_exemption": "Income Tax Act ch.67:01 s.25 exempts charitable institutions by category; donor deduction only if the institution is on the Cabinet-approved list (last update S.R.O 47 of 2007). Incorporation alone gives no tax status."
+ },
+ {
+  "country": "Dominican Republic",
+  "tax_exemption": "PGR registration (Ley 122-05) then separate DGII exemption application (ASFL regime) for ISR + ITBIS exemption and donor deduction (Ley 112-05 art.35, up to 15% of taxable income). DGII time unpublished."
+ },
+ {
+  "country": "Haiti",
+  "tax_exemption": "ONG registration under the 14 Sept 1989 decree gives legal status only; DGI grants the corporate income tax exclusion by separate decision - statutory basis not confirmed in accessible text; time unpublished."
+ },
+ {
+  "country": "Mexico",
+  "tax_exemption": "SAT 'donataria autorizada' authorization (Ficha 19/ISR, Anexo 2); SAT resolves within max 3 months. Income from authorized activities exempt from ISR; donors deduct 50% of gift, up to 15% of taxable income (LISR art.23)."
+ },
+ {
+  "country": "Guatemala",
+  "tax_exemption": "Automatic by category: Income Tax Law exempts NPOs with charitable/educational/cultural objectives from income tax; donor deductions up to 25% of total income. MINGOB reconocimiento is separate from registration."
+ },
+ {
+  "country": "Belize",
+  "tax_exemption": "Automatic: Income and Business Tax Act Cap.55 exempts earnings of ecclesiastical, charitable and educational institutions; individual donor relief for charitable contributions capped at BZ$250. No separate application."
+ },
+ {
+  "country": "El Salvador",
+  "tax_exemption": "Separate DGII 'calificacion' as public-utility entity required for ISR exemption (LAFSFL art.7); registration alone confers no tax status; donations to such entities deductible. 2025 law: 30% levy on foreign NGO funds."
+ },
+ {
+  "country": "Honduras",
+  "tax_exemption": "No separate published charitable tax-exempt application; incorporation with charitable objects gives legal personality only. Donations to charitable/educational institutions deductible up to 10% of net taxable income."
+ }
+]

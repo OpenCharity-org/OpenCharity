@@ -1,0 +1,114 @@
+[
+  {
+    "country": "Grenada",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office/agent required; GFRC files need notarized police clearance for all foreign directors",
+    "fee_usd": "~$100-200",
+    "time_to_register": "2-4 weeks",
+    "deduction": "charitable gifts deductible up to 20% of taxable income (approved institutions)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: CLBG standard vehicle, agent fees included; little charity-specific legislation; no director residency rule",
+    "sources": [
+      "https://www.gfrc.cc/fees-help-support/",
+      "https://www.gfrc.cc/how-to-register-a-company/learn-what-a-company-is/",
+      "https://www.gfrc.cc/important-information/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "St. Kitts & Nevis",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Must file through licensed corporate service provider; local secretary/agent and registered office mandatory",
+    "fee_usd": "~$100",
+    "time_to_register": "1-3 weeks",
+    "deduction": "charitable gifts deductible up to 20% of net income for approved charities",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: CLBG/ordinary company EC$270 (~US$100) official fee, no resident-director rule, fast with local agent",
+    "sources": [
+      "https://www.efiling.fsrc.kn/2015-11-19-14-16-32/237-company-registry-brochure-1/file",
+      "https://www.prenticeandco.com/guide-part-5",
+      "https://exploreskn.co/downloads/business/ProcedureforIncorporatingaCompany-1.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "St. Lucia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Registered office/agent required and a local attorney must make the statutory declaration; higher official fee",
+    "fee_usd": "~$750",
+    "time_to_register": "2-4 weeks",
+    "deduction": "charitable gifts deductible up to 20% of net income (Income Tax Act)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior structure; official certificate of incorporation fee is EC$750 under Companies Act Part 9, higher than implied",
+    "sources": [
+      "http://attorneygeneralchambers.com/laws-of-saint-lucia/companies-act/part-9-fees",
+      "http://attorneygeneralchambers.com/laws-of-saint-lucia/international-business-companies-act/section-39",
+      "https://esaintlucia.com/pricing"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "St. Vincent & Grenadines",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office/agent and attorney's statutory declaration required to file with CIPO",
+    "fee_usd": "~$1,200",
+    "time_to_register": "2-4 weeks",
+    "deduction": "charitable gifts deductible up to 20% of net income (Income Tax Act)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; CIPO official fees: EC$950 incorporation + EC$190 non-profit fee, so official fee higher than ~$300-800 suggests",
+    "sources": [
+      "https://cipo.gov.vc/index.php/domestic-companies-items/54-incorporation",
+      "https://fsasvg.com/fees/",
+      "https://fsasvg.com/business-companies/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Dominica",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office/agent needed; small registry, filings in person or via agent in English",
+    "fee_usd": "~$100",
+    "time_to_register": "2-4 weeks",
+    "deduction": "charitable gifts deductible up to 20% of net income (Income Tax Act)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: CLBG standard vehicle; official registration fee low (~EC$150), US$300-800 total is mostly agent cost",
+    "sources": [
+      "https://investdominica.com/doing-business/start-a-business/",
+      "https://cipo.gov.dm/businesses-and-companies/companies",
+      "https://www.expanship.com/dm/blog/company-limited-by-guarantee-in-dominica"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Dominican Republic",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Notarial deed requires in-person or apostilled special power of attorney, plus a resident fiscal officer",
+    "fee_usd": "~$500-1,500",
+    "time_to_register": "4-8 weeks",
+    "deduction": "donations to registered non-profit (ASFL) institutions tax-deductible; DGII regime under Law 122-05",
+    "foreign_donor_restriction": "none notable for cash donations; foreign entities must operate via locally registered organization",
+    "corrections": "correct prior: core charitable vehicle is the ASFL (Law 122-05), not the Law 479-08 fundación; notary hurdle confirmed",
+    "sources": [
+      "https://morillosurielabogados.com/en/how-to-establish-a-foundation-in-the-dominican-republic/",
+      "https://mepyd.gob.do/mepyd/wp-content/uploads/archivos/asfl/marco-legal/ley-05122-organizaciones-sin-fines-de-lucro.pdf",
+      "https://mepyd.gob.do/wp-content/uploads/drive/CASFL/Marco%20legal/Reglamento%2040-08.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Haiti",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Notarial deed plus MPCE NGO registration and local legal representative; French documents; local partner needed",
+    "fee_usd": "~$500-2,000",
+    "time_to_register": "4-12 weeks",
+    "deduction": "no practical regime for foreign donors; gifts to registered NGOs, weak enforcement",
+    "foreign_donor_restriction": "foreign NGOs must register with MPCE under 1989 NGO decree; operating without registration is not permitted",
+    "corrections": "confirm prior: Law 30 of 1943 association plus 1989 NGO decree (MPCE) govern; very hard for remote founder, local partner needed",
+    "sources": [
+      "https://mpce.gouv.ht/registre-des-ong_/",
+      "https://centrengo.org/wp-content/uploads/2024/08/1989-Nonprofit-Decree-English-Translation.pdf",
+      "https://centrengo.org/wp-content/uploads/2024/08/Formalites-a-Remplir-pour-lobtention-du-statut-legal-dorganisation-Non-Governmentale-ONG-daide-au-developpement-1.pdf"
+    ],
+    "confidence": "med"
+  }
+]

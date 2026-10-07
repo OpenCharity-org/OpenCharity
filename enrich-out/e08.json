@@ -1,0 +1,80 @@
+[
+  {
+    "country": "United Arab Emirates",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local service provider + UAE office required; associations need 70% UAE nationals, foreign-only boards excluded.",
+    "fee_usd": "AED 2,000-5,000 (~US$550-1,400) DED charity license; private foundation AED 30k-75k all-in",
+    "time_to_register": "4-8 weeks",
+    "deduction": "No personal income tax, so no charitable donation deduction regime.",
+    "foreign_donor_restriction": "Government prior approval required before a charity receives foreign funding (UAE).",
+    "corrections": "Confirm prior: 100% foreign-owned private foundation is the viable route (AED 30k-75k all-in, 4-8 weeks); DCC also registers foreign charities.",
+    "sources": [
+      "https://www.moce.gov.ae/en/w/establish-an-npo",
+      "https://www.uaesupremecouncil.org/en/information-and-services/charity-and-humanitarian-work/ways-of-doing-charity-in-the-uae.html",
+      "https://www.icnl.org/wp-content/uploads/UAE-Philanthropy-Law-Report-May-2023.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Oman",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "40+ Omani-national founders, Omani chair, headquarters in Oman; no pathway for a foreign founder to lead.",
+    "fee_usd": "~$50-200 (low official fees)",
+    "time_to_register": "1-3 months (foreign founders: not feasible)",
+    "deduction": "No personal income tax, so no charitable donation deduction regime.",
+    "foreign_donor_restriction": "Foreign NGO branches require ministry approval/permit; no FCRA-style public donor registration.",
+    "corrections": "Confirm prior: Omani nationality floor on founders/board makes foreign formation impossible; partnership with an existing charity is the practical route.",
+    "sources": [
+      "https://decree.om/2007/rd20070023/",
+      "https://qanoon.om/p/2000/l2000014/",
+      "https://decree.om/2002/rd20020041/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Bahrain",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "20+ Bahraini-citizen founders and 2/3 Bahraini board required; foreigners cannot form an association alone.",
+    "fee_usd": "none (free registration via MoSA e-services)",
+    "time_to_register": "4-8 weeks (foreign-only formation: not feasible)",
+    "deduction": "No personal income tax, so no charitable donation deduction regime.",
+    "foreign_donor_restriction": "Foreign donations to NGOs require prior Ministry of Social Affairs approval; foreign NGOs register branches with MoSA.",
+    "corrections": "Confirm prior: nationality floor (20 Bahraini founders, 2/3 board) keeps foreign formation out of reach; partnership route is standard.",
+    "sources": [
+      "https://www.social.gov.bh/ngo/ngos_regestration_forms?lang=en",
+      "https://services.bahrain.bh/wps/portal/en/BSP/GSX-UI-EServiceDetails?esID=162"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Yemen",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Civil war, fragmented governance, sanctions and funding restrictions; registration not feasible in current conditions.",
+    "fee_usd": "none (unavailable in practice)",
+    "time_to_register": "n/a (impracticable in current conflict conditions)",
+    "deduction": "No functional income tax; no charitable deduction regime in practice.",
+    "foreign_donor_restriction": "All foreign work runs via MOUs with recognized authorities; UN-sanctioned entities and funding channels are restricted.",
+    "corrections": "Confirm prior: NGO Law 73/1991 route nominally 1-3 months but impractical; advise against any direct foreign formation.",
+    "sources": [
+      "https://www.icnl.org/resources/research/ijnl/ngo-laws-in-selected-arab-states",
+      "https://s3.eu-west-1.amazonaws.com/sheltercluster.org/public/docs/mopic_manual_of_procedures_and_organization_of_arab_and_foreign_ngos_work_in_the_republic_of_yemen_-_en.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Palestine",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "In-person registration in Ramallah, local address, 2/3 Palestinian founders; OFAC/banking friction for foreign funds.",
+    "fee_usd": "~$50-150 (minimal official fees)",
+    "time_to_register": "2-6 weeks (normal environment) plus travel/sanctions lead time",
+    "deduction": "PA income tax exists in name; no meaningful charitable donation deduction in practice.",
+    "foreign_donor_restriction": "Foreign associations must register branches with the Ministry of the Interior; US persons face OFAC PSC restrictions.",
+    "corrections": "Correct prior: governing law is Law No. 1 of 2000 (charitable associations & civil society orgs), not a 1996 Societies Law; rest confirms.",
+    "sources": [
+      "https://security-legislation.ps/latest-laws/law-no-1-of-2000-concerning-charitable-associations-and-civil-society-organisations/",
+      "https://www.icnl.org/resources/civic-freedom-monitor/palestine",
+      "https://kurdi.law/establishing-your-international-ngo-in-palestine-a-comprehensive-guide/"
+    ],
+    "confidence": "high"
+  }
+]

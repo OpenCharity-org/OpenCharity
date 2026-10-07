@@ -1,0 +1,129 @@
+[
+  {
+    "country": "India",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "At least one director/trustee resident in India (182+ days) needed; separate 12A/80G and FCRA processes add months.",
+    "fee_usd": "~$150 (trust) to ~$600 (Sec 8), plus stamp duty",
+    "time_to_register": "6-12 weeks (trust faster; 12A/80G adds 1-3 months)",
+    "deduction": "50% (some 100%) deduction of donation to 80G-registered charities; 30% of adjusted gross income cap.",
+    "foreign_donor_restriction": "FCRA 2010 registration with MHA mandatory for foreign funds; 20% admin cap, no sub-granting, renewal every 3 yrs.",
+    "corrections": "confirm prior - Sec 8 needs 1+ director resident in India 182 days; 12A/80G + FCRA are separate follow-ups.",
+    "sources": [
+      "https://taxguru.in/company-law/section-8-companies-formation-regulation-operation.html",
+      "https://www.icnl.org/our-work/asia-pacific-program/india-fcra",
+      "https://beaconfiling.com/services/section-8-company"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Pakistan",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Resident Pakistani director/secretary (Sec 21) or trustee required; FBR tax-exempt status is a separate application.",
+    "fee_usd": "~$100-300 (trust) to ~$600-900 (Sec 21)",
+    "time_to_register": "4-12 weeks (trust 2-8; Sec 21 4-8; FBR exemption separate)",
+    "deduction": "Deductible if FBR-approved; capped at 25% of adjusted taxable income (individuals).",
+    "foreign_donor_restriction": "None notable - no FCRA-style licensing; banks apply standard AML/repatriation compliance.",
+    "corrections": "confirm prior - Sec 42/21 license route via SECP under Companies Act 2017 confirmed; 2018 charitable regulations apply.",
+    "sources": [
+      "https://www.secp.gov.pk/media-center/press-releases/secp-notifies-regulations-for-non-profit-associations/",
+      "https://www.secp.gov.pk/wp-content/uploads/2016/04/GUIDE-OBTAINING-LICENSE-SEC-42.pdf",
+      "https://pcp.org.pk/wp-content/uploads/2022/03/Guide-Book-on-NGO-1-min.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Bangladesh",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "2/3 of NGO board must be Bangladeshi citizens; NGO Affairs Bureau controls foreign-funded NGOs (2016 Act).",
+    "fee_usd": "~$20-100",
+    "time_to_register": "4-12 weeks, if Bangladeshi-citizen board is feasible",
+    "deduction": "Deductible for donations to government-recognized charitable organizations, subject to limits.",
+    "foreign_donor_restriction": "Foreign-funded NGOs must register with NGO Affairs Bureau (2016 Act); foreign currency account permission; cancellable.",
+    "corrections": "confirm prior - NGO Act 1961 s.3 2/3 Bangladeshi-citizen board rule; 2016 Foreign Donations Act replaces 1978 Ordinance.",
+    "sources": [
+      "https://bdlaws.minlaw.gov.bd/act-312.html",
+      "https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-legislativediv/2024/12/07a7375df50e45a38628afb7a45ddd75.pdf",
+      "https://www.jica.go.jp/activities/schemes/partner/ngo_support/japandesk/n_files/ban_15_bangladesh_e.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Sri Lanka",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office + bank account needed; 12B exemption and Approved Charity status are separate IRD steps.",
+    "fee_usd": "~$20-80",
+    "time_to_register": "2-6 weeks (trust); 12B/Approved Charity adds time",
+    "deduction": "Deductible for donations to Minister-listed Approved Charities; capped at assessable income.",
+    "foreign_donor_restriction": "International NGOs must register (ROC/NGO unit) to receive foreign funds; no FCRA-style licensing regime.",
+    "corrections": "confirm prior - trust route via Registrar-General (Trusts (Amend) Act 2018) confirmed; no citizenship requirement for trustees.",
+    "sources": [
+      "https://counselit.com/how-to-register-a-charity-organization-in-sri-lanka/",
+      "https://ngosec.gov.lk/our-services/registration-of-ngos",
+      "https://www.ird.gov.lk/en/publications/sitepages/approved%20charity.aspx?menuid=1408"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Nepal",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Trust needs local address/representative; foreign funding needs Social Welfare Council approval (discretionary).",
+    "fee_usd": "~$15-130",
+    "time_to_register": "1-4 weeks (trust); SWC affiliation adds time",
+    "deduction": "Deductible for donations to registered charitable organizations/associations.",
+    "foreign_donor_restriction": "Foreign NGOs must register with SWC; Foreign Contribution Act governs receipt of foreign funds.",
+    "corrections": "confirm prior - Trust Act 2064 (2007) route confirmed for foreigners; NGO route needs 5 of 7 Nepali-citizen board.",
+    "sources": [
+      "https://lawalpine.com/blog/ngo-registration-in-nepal",
+      "https://www.swc.org.np/pages/436",
+      "https://www.adb.org/sites/default/files/publication/28970/csb-nep.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Bhutan",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "CSOs must be Bhutanese-citizen formed; foreign NGOs need a local host MoU + CSO Authority approval.",
+    "fee_usd": "~$50-200",
+    "time_to_register": "6-16 weeks, if a local sponsor is secured",
+    "deduction": "Deduction for donations to government-recognized charitable organizations; very small tax base.",
+    "foreign_donor_restriction": "Foreign CSOs need CSO Authority registration + MoU with a Bhutanese host organization; government approval required.",
+    "corrections": "confirm prior - governing law is Civil Society Organizations Act 2007 (amended 2022), not 'NGO Act 2008'; no direct foreign formation.",
+    "sources": [
+      "https://oag.gov.bt/wp-content/uploads/2010/05/Civil-Society-Organizations-Act-of-Bhutan-2007English-version.pdf",
+      "https://www.adb.org/sites/default/files/publication/30296/csb-bhu.pdf",
+      "https://oag.gov.bt/wp-content/uploads/2024/08/Civil-Society-Organizations-Amendment-Act-of-Bhutan-2022-.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Afghanistan",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Post-2021 Taliban de-facto NGO licensing (Ministry of Economy + sectoral MoU); sanctions block most funding.",
+    "fee_usd": "nominal (no published fee schedule)",
+    "time_to_register": "months, if possible; not a practical option",
+    "deduction": "No functioning charitable deduction regime.",
+    "foreign_donor_restriction": "De-facto NGO license + MoU required; US/UN sanctions restrict funds to Afghanistan; most donors suspended.",
+    "corrections": "confirm prior - registration now under de-facto Taliban NGO law (2022 procedure), not the 2015 NGO law; not practical.",
+    "sources": [
+      "https://arlo.online/track-download/109/1/en/legislation/file_en_1685855616_094%20The%20DFA%20Procedure%20on%20Coordination%20and%20Regulation%20of%20NGOs%20-%20English.pdf",
+      "https://www.boell.de/en/2021/07/13/limiting-space-civil-society-afghanistan-implications-policies-and-legislations-ngos",
+      "https://ngo.gov.af/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Maldives",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Resident local trustees/representative + Maldivian office required; MIRA tax-exemption approval is a separate step.",
+    "fee_usd": "~$100-300",
+    "time_to_register": "4-10 weeks",
+    "deduction": "Deductible for donations to MIRA-approved charitable organizations under the Income Tax Act.",
+    "foreign_donor_restriction": "None notable - no FCRA-style licensing; registered public trusts may receive foreign funds (banking compliance).",
+    "corrections": "confirm prior - public trust registered with Ministry of Justice; MIRA approval (MIRA 103) is for tax exemption, not registration.",
+    "sources": [
+      "https://www.mira.gov.mv/Pages/View/charitiesapply",
+      "https://www.mira.gov.mv/Forms/View/MIRA-117"
+    ],
+    "confidence": "med"
+  }
+]

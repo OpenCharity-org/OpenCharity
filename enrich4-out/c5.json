@@ -1,0 +1,82 @@
+[
+ {
+  "country": "Congo (DRC)",
+  "tax_exemption": "ASBL/EUP registration (Law 004/2001) makes it a public-utility entity: automatic income-tax exemption on non-commercial activities, customs relief, and donor deduction under DGI rules; no separate application."
+ },
+ {
+  "country": "Gabon",
+  "tax_exemption": "Declaration to the prefecture gives legal personality (Law 35/62); 2022 tax reform auto-exempts associations from CIT on social/educational/cultural/religious member services. No separate application."
+ },
+ {
+  "country": "Equatorial Guinea",
+  "tax_exemption": "ONG registration with the Interior Ministry (Law 1/1999) confers public-utility status; corporate-tax exemption for non-commercial income under the 2004 Tax Law. No published approval time."
+ },
+ {
+  "country": "Sao Tome & Principe",
+  "tax_exemption": "NGO law (Lei 8/2012) registers associations and foundations, but the tax code has no specific charitable-exemption regime; no automatic income-tax exemption, relief is case-by-case; no published time."
+ },
+ {
+  "country": "Rwanda",
+  "tax_exemption": "RGB certificate of legal personality (NNGO) grants tax-exempt status under the 2022 Income Tax Law for public-interest missions; donor gifts deductible up to 1% of company turnover. INGOs need separate RGB authorization."
+ },
+ {
+  "country": "Burundi",
+  "tax_exemption": "ASBL registration with the Interior Ministry (Law 1/02, 2017); tax and customs relief for NGOs granted case-by-case by the OBR under the ONG framework law. No separate exemption status; no published time."
+ },
+ {
+  "country": "Uganda",
+  "tax_exemption": "NGO Bureau registration (NGO Act 2016) first, then URA application for charitable status: exempts income of religious/charitable/educational/public institutions (2024 Amendment Act); donor deduction available."
+ },
+ {
+  "country": "Tanzania",
+  "tax_exemption": "Charitable status is not automatic: NGO registration plus separate TRA approval; Finance Act 2024 added health and environmental protection as qualifying purposes. Donor gifts deductible up to 10% of income."
+ },
+ {
+  "country": "Kenya",
+  "tax_exemption": "PBO status from PBORA, then a separate KRA application for income-tax exemption under Income Tax Act para 10: exempts qualifying receipts; donor deduction (30%). Approval takes several months; no deadline published."
+ },
+ {
+  "country": "Comoros",
+  "tax_exemption": "Associations declared under Law 86-006/AF; international NGOs need ministerial agrément. CGI (2011) corporate tax applies only to commercial activities; no separate charitable-exempt status regime; no published time."
+ },
+ {
+  "country": "Madagascar",
+  "tax_exemption": "Legal personality on declaration (Law 96-030/97, Decree 98-711); approved ONGs get exemptions on import duties and certain taxes under the law's fiscal/customs chapter; no separate donor-deduction regime published."
+ },
+ {
+  "country": "Zambia",
+  "tax_exemption": "NGO Board registration (NGO Act 2009), then ZRA application for public-benefit-organisation status: exempt qualifying charitable income; donors may deduct gifts up to 15% of taxable income. No published processing time."
+ },
+ {
+  "country": "Malawi",
+  "tax_exemption": "NGO Board registration; Taxation Act exempts income of clubs/societies operated for social welfare or civic improvement; donors get deduction for donations to public charitable organisations. No published approval time."
+ },
+ {
+  "country": "Mozambique",
+  "tax_exemption": "Association (Lei 8/91) is automatically IRC-exempt (Art. 10, Law 34/2007) if it pursues public-interest objectives without commercial activity; donors deduct donations as a fiscal benefit."
+ },
+ {
+  "country": "Angola",
+  "tax_exemption": "Law 2/26 (2026) grants registered ONGs tax and customs benefits, incl. duty-free import of project goods; no separate donor-deduction regime; no published processing time."
+ },
+ {
+  "country": "Botswana",
+  "tax_exemption": "Income Tax Act historically exempted charitable/religious/educational institutions; the 2025 Income Tax Bill replaces this with a conditional NPO regime needing approval. Donor gifts to approved institutions deductible."
+ },
+ {
+  "country": "Namibia",
+  "tax_exemption": "Section 21 non-profit company must apply to NamRA for tax-exempt welfare status: qualifying income exempt, donors deduct gifts to approved organisations. No published processing time."
+ },
+ {
+  "country": "Zimbabwe",
+  "tax_exemption": "PVO registration (PVO Act 2005) does not auto-confer tax exemption; ZIMRA application for income-tax exemption of qualifying receipts; donors deduct donations to approved charitable trusts (s15(2)(r))."
+ },
+ {
+  "country": "Eswatini",
+  "tax_exemption": "NPO registered under the Companies Act applies for tax exemption with Eswatini Revenue Services; Tax Order 1975 provides relief on qualifying charitable activities. No published approval time."
+ },
+ {
+  "country": "Lesotho",
+  "tax_exemption": "Automatic under Income Tax Act 1993 s25: income of religious, charitable, amateur sporting and trade-union organisations is exempt; donor deduction for approved institutions; no separate application."
+ }
+]

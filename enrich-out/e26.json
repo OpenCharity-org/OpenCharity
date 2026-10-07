@@ -1,0 +1,65 @@
+[
+  {
+    "country": "Spain",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Requires Spanish registered office and a Spanish-resident legal representative (via local firm/agent).",
+    "fee_usd": "none (registry fee nominal; ~$1,600-3,900 total incl. notary and legal)",
+    "time_to_register": "1-3 months",
+    "deduction": "80% of first EUR 250 then 40% deduction for individuals giving to deductible charities (AEAT-listed).",
+    "foreign_donor_restriction": "none notable - no donor registration or licensing; EU free movement of capital applies.",
+    "corrections": "confirm prior: EUR 30,000 minimum endowment, EUR 1,500-3,500 total, 1-3 months, medium difficulty all accurate.",
+    "sources": [
+      "https://philea.eu/wp-content/uploads/2025/11/Spain-Philea-2025-Legal-Environment-for-Philanthropy-in-Europe.pdf",
+      "https://www.givingwhatwecan.org/get-involved/tax-deductibility/spain",
+      "https://www.leialta.com/en/blog/create-foundation-spain/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Portugal",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Needs Portuguese registered office and locally-based responsible officer; public-interest status approval is discretionary.",
+    "fee_usd": "none (nominal registration; ~$1,100-2,800 total incl. notary and legal)",
+    "time_to_register": "1-2 months",
+    "deduction": "15% income-tax deduction (capped at 15% of taxable income) for gifts to utilidade publica entities.",
+    "foreign_donor_restriction": "none notable - no FCRA-style donor registration; no licensing requirement for foreign donations.",
+    "corrections": "confirm prior: no statutory minimum endowment, EUR 1,000-2,500, 1-2 months, medium difficulty all accurate.",
+    "sources": [
+      "https://www.lvpadvogados.com/public-utility-status-in-portugal-what-it-is-who-can-apply-and-why-it-matters",
+      "https://imperiallegal.com/company-registration-portugal/",
+      "https://www.icnl.org/resources/research/ijnl/a-comparative-overview-of-public-benefit-status-in-europe-2"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Italy",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "EUR 150,000 endowment fully paid at formation plus Italian registered office; foreign founders allowed with no residency rule.",
+    "fee_usd": "none (registry nominal; ~$3,300-6,600 professional fees plus EUR 150,000 endowment)",
+    "time_to_register": "2-4 months",
+    "deduction": "85% of gift up to EUR 30,000/yr for public-interest entities; 75% up to EUR 2,000 for other RUNTS entities.",
+    "foreign_donor_restriction": "none notable - no donor registration, licensing or ban on inbound foreign donations.",
+    "corrections": "confirm prior: EUR 150,000 endowment, EUR 3,000-6,000 professional costs, 2-4 months, medium difficulty all accurate.",
+    "sources": [
+      "https://globaladvisoryexperts.com/how-to-register-a-foundation-in-italy-2026/",
+      "https://givingwhatwecan.org/get-involved/tax-deductibility/italy",
+      "https://italianbusinesslawyers.com/how-to-establish-a-foundation-in-italy/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Vatican City",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "No self-service registry exists; any entity must be erected/recognised by the Holy See at its sole discretion.",
+    "fee_usd": "none",
+    "time_to_register": "n/a - case-by-case, no standard process",
+    "deduction": "none - Vatican City has no income tax and no charitable donation deduction regime.",
+    "foreign_donor_restriction": "none notable - no donor registration, licensing or ban; charitable giving proceeds via pontifical institutions.",
+    "corrections": "confirm prior: no ordinary charity registry, no fixed fee or timeline, very hard difficulty all accurate.",
+    "sources": [
+      "https://www.expanship.com/va/blog/types-of-companies-in-vatican-city",
+      "https://en.wikipedia.org/wiki/Holy_See"
+    ],
+    "confidence": "med"
+  }
+]

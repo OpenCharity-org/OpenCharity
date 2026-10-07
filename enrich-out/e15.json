@@ -1,0 +1,123 @@
+[
+  {
+    "country": "Cameroon",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Pre-authorization by Interior Ministry with heavy discretion, resident legal rep and local office; French filings",
+    "fee_usd": "~$50-200",
+    "time_to_register": "3-6 months",
+    "deduction": "Corporate gifts deductible up to 5% of turnover to accredited bodies; no personal deduction",
+    "foreign_donor_restriction": "No donor licensing found; Interior authorization is discretionary, donations to unauthorized NGOs may be barred",
+    "corrections": "Confirm prior. CGI 2024 confirms the 5%-of-turnover corporate deduction cap for local philanthropic bodies",
+    "sources": [
+      "https://www.impots.cm/en/actualites/general-tax-code-edited-1st-january-2023",
+      "https://taxsummaries.pwc.com/republic-of-cameroon/corporate/deductions",
+      "https://www.icnl.org/research/library/cameroon_ngo/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Central African Republic",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Ministerial agrément (FAOLEX Art. 18), local rep, office; weak administration, conflict, few foreign NGOs legally",
+    "fee_usd": "~$50-150",
+    "time_to_register": "1-3 months, often longer",
+    "deduction": "No general personal deduction regime found; treat as no standard deduction",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior. FAOLEX law text (caf213189) confirms the ONG statut is conferred by ministerial arrêté to authorized associations",
+    "sources": [
+      "https://faolex.fao.org/docs/pdf/caf213189.pdf",
+      "https://freedomhouse.org/country/central-african-republic/freedom-world/2024"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Chad",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Prior Interior authorization for foreign association (withdrawable anytime), resident legal rep, office",
+    "fee_usd": "~$50-150",
+    "time_to_register": "2-6 months",
+    "deduction": "No general personal deduction regime found; treat as no standard deduction",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior. FAOLEX association law plus Amnesty legal review confirm the authorization regime and regular renewal",
+    "sources": [
+      "https://faolex.fao.org/docs/pdf/cha208250.pdf",
+      "https://www.amnesty.org/fr/wp-content/uploads/sites/8/2021/05/AFR2092402018FRENCH.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Republic of the Congo",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Interior accréditation, local rep, office; discretionary; JO 2017 shows active 1901-style association framework",
+    "fee_usd": "~$50-150",
+    "time_to_register": "1-4 months",
+    "deduction": "No general personal deduction regime found; treat as no standard deduction",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior. JO 2017 issuances show active association declaration regime; prior context thin on specific legal citations",
+    "sources": [
+      "https://sgg.cg/JO/2017/congo-jo-2017-37.pdf"
+    ],
+    "confidence": "low"
+  },
+  {
+    "country": "Congo (DRC)",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Congolese-national legal rep mandatory, Justice ministry registration plus line-ministry approval, local office",
+    "fee_usd": "~$100-300",
+    "time_to_register": "3-9 months",
+    "deduction": "No general personal deduction regime found; treat as no standard deduction",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior. ICNL and OHCHR sources confirm Justice-ministry registration under the 2002 NGO law framework",
+    "sources": [
+      "https://www.icnl.org/wp-content/uploads/Democratic-Republic-of-the-Congo_lawcongo.pdf",
+      "https://www.icnl.org/resources/civic-freedom-monitor/democratic-republic-of-the-congo",
+      "https://www.unocha.org/publications/report/democratic-republic-congo/guide-pratique-pour-la-constitution-des-ong-en-republique-democratique-du-congo"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Gabon",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Interior accreditation (loi 001/2011), local rep, office; French filings; post-2023 transition adds uncertainty",
+    "fee_usd": "~$50-200",
+    "time_to_register": "2-6 months",
+    "deduction": "Gabon CGI: gifts to local general-interest bodies deductible up to 1/1000 (0.1%) of turnover",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior. JO confirms loi n°001/2011 governs associations; CGI confirms 0.1%-of-turnover corporate deduction cap",
+    "sources": [
+      "https://www.journal-officiel.ga/19743-00003-msas-cab-m-/",
+      "https://cdn-cms.f-static.com/uploads/2021660/normal_5c93abf2ad8a1.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Equatorial Guinea",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Law 1/1999: national registry registration plus authorization, local rep, office; highly discretionary and slow",
+    "fee_usd": "~$100-300",
+    "time_to_register": "3-12 months",
+    "deduction": "Corporate gifts deductible up to 0.25% of turnover to philanthropic bodies (PWC)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior. Clarence Abogados and ICRC confirm Law 1/1999 NGO regime with Registro Nacional de las ONG",
+    "sources": [
+      "https://clarenceabogados.com/legal-article/registering-ngos-in-equatorial-guinea/",
+      "https://ihl-databases.icrc.org/en/national-practice/law-no-11999-24-february-1999-non-governmental-organisations",
+      "https://taxsummaries.pwc.com/Equatorial-Guinea/Corporate/Deductions"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Sao Tome & Principe",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign NGO authorization plus local rep and office; very small under-resourced administration; Portuguese filings",
+    "fee_usd": "~$50-150",
+    "time_to_register": "2-6 months",
+    "deduction": "No general personal deduction regime found; treat as no standard deduction",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior; few public sources, details thin",
+    "sources": [
+      "https://www.cspps.org/where-we-work/sao-tome-principe"
+    ],
+    "confidence": "low"
+  }
+]

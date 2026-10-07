@@ -1,0 +1,129 @@
+[
+  {
+    "country": "Australia",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "ACNC requires an Australian registered office and at least one Australian-resident governing-body member; ABN needed first.",
+    "fee_usd": "none for ACNC (~$340 if ASIC-incorporated CLBG)",
+    "time_to_register": "1-4 weeks",
+    "deduction": "deductible at donor marginal rate, no cap, for registered charities",
+    "foreign_donor_restriction": "none notable on inbound donations; organisation itself must be established in Australia for charity status",
+    "corrections": "confirm prior: free ACNC registration, A$514 ASIC CLBG, 1-4 weeks, easy",
+    "sources": [
+      "https://www.acnc.gov.au/for-charities/start-charity/you-start-charity",
+      "https://www.acnc.gov.au/factsheet-who-can-register-acnc",
+      "https://www.acnc.gov.au/tools/guides/registration-application-checklist-and-guide"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "New Zealand",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Incorporated societies must have a New Zealand-resident secretary; donee (deductible) status needs NZ-resident board majority.",
+    "fee_usd": "~$70 (NZ$88.89 + GST for society incorporation; charity registration free)",
+    "time_to_register": "1-2 weeks for incorporation, 2-6 weeks with donee status",
+    "deduction": "donee organisations: 30% tax credit plus income tax deduction for donors",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; verified incorporation fee NZ$88.89 (Incorporated Societies Regulations 2023) and free online charity registration",
+    "sources": [
+      "https://www.is-register.companiesoffice.govt.nz/help-centre/starting-an-incorporated-society/applying-to-incorporate-a-society/",
+      "https://www.legislation.govt.nz/regulation/public/2023/0240/latest/LMS891528.html",
+      "https://www.charities.govt.nz/im-a-registered-charity/running-your-charity/tax-information"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Fiji",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Companies Act 2015: CLBG needs 3 directors, 2 ordinarily resident in Fiji - the main remote-founder hurdle.",
+    "fee_usd": "~$130-650 (FJ$100-500)",
+    "time_to_register": "2-6 weeks",
+    "deduction": "deductible for gifts to approved charitable entities, capped at 10% of assessable income",
+    "foreign_donor_restriction": "none notable on inbound donations; charitable CLBGs must meet Companies Act 2015 ongoing duties",
+    "corrections": "confirm prior: 2-of-3 resident-director rule verified against Companies Act 2015 ss 465-466 guidance",
+    "sources": [
+      "https://laws.gov.fj/Acts/DisplayAct/3231",
+      "https://www.sas.com.fj/commercial-law-updates/how-to-incorporate-a-non-profit-entity-as-a-charitable-trust-or-company-limited-by-guarantee-under-fiji-law",
+      "https://www.justice.gov.fj/company/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Papua New Guinea",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Resident PNG officers/company secretary plus local registered office required; IPA registry slow and mostly in-person.",
+    "fee_usd": "~$200-450 (PGK 1,000-3,000)",
+    "time_to_register": "6-12 weeks",
+    "deduction": "deductible for gifts to eligible charitable organisations, capped at 10% of assessable income",
+    "foreign_donor_restriction": "foreign NGOs operating in PNG must register (Associations Incorporation Act 2023 adds 'overseas association' category)",
+    "corrections": "confirm prior; note new Associations Incorporation Act 2023 replaces 1966 Act, regulations commence 1 July 2026",
+    "sources": [
+      "https://www.ipa.gov.pg/public/help.aspx?cn=NewAssociationsAct",
+      "https://www.ipa.gov.pg/corp/index.aspx",
+      "https://www.ipa.gov.pg/Documentation/PG/ActsAndRegulations/Associations%20Incorporation%20Act%202023.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Samoa",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "At least one Samoa-resident director and a local registered office/agent required; payment at MCIL office.",
+    "fee_usd": "~$115 (WST 250)",
+    "time_to_register": "4-8 weeks",
+    "deduction": "deductible for gifts to eligible charitable institutions under Samoa Income Tax Act",
+    "foreign_donor_restriction": "none notable on inbound donations; foreign-owned companies may need Foreign Investment Act approval",
+    "corrections": "confirm prior; verified company registration fee WST 250 from MCIL fee schedule (prior WST 100-500 range plausible)",
+    "sources": [
+      "https://www.businessregistries.gov.ws/companies/fees-help-support/fees-and-penalties/",
+      "https://www.mcil.gov.ws/services/business-registration",
+      "https://www.businessregistries.gov.ws/companies/how-to-register-a-company/the-registration-process/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Tonga",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Must appoint a Tonga-resident person to accept service and a local registered office; small insular registry.",
+    "fee_usd": "~$30-150 (TOP 100-500)",
+    "time_to_register": "4-10 weeks",
+    "deduction": "deductible for gifts to eligible charitable institutions under Income Tax Act",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: resident service agent requirement verified in Companies (Amendment) Regulations 2014",
+    "sources": [
+      "https://businessregistries.gov.to/public/howto.aspx?cn=RegisterCompany&ctk=CompanyHowTo",
+      "https://businessregistries.gov.to/Documentation/TO/CompaniesAmendmentRegulations2014_Eng_final.pdf",
+      "https://www.revenue.gov.to/company-partnership-corporative-society-trust"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Vanuatu",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Companies Act 2012 requires at least one Vanuatu-resident director and a local registered office.",
+    "fee_usd": "~$340 (VUV 35,000)",
+    "time_to_register": "2-6 weeks",
+    "deduction": "no established charitable donation deduction regime of note",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "correct prior: verified registration fee is VUV 35,000 (VFSC fee schedule), not VUV 5,000-20,000; 1+ resident director required",
+    "sources": [
+      "https://www.vfsc.vu/companies-fees-and-penalties/",
+      "https://www.vfsc.vu/registering/",
+      "https://tradeportal.gov.vu/procedure/711/step/224"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Solomon Islands",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Resident Solomon Islands company secretary and local registered office required; fees paid in person at Treasury.",
+    "fee_usd": "~$30-150 (SBD 300-1,500)",
+    "time_to_register": "4-8 weeks",
+    "deduction": "no notable charitable donation tax-deduction regime",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior: Companies Act 2009 regime, online Company Haus registration plus Treasury fee payment",
+    "sources": [
+      "https://www.solomonbusinessregistry.gov.sb/companies/how-to-register-a-company/",
+      "https://www.solomonbusinessregistry.gov.sb/companies/how-to-update-a-company/restore-a-company/companies_act_2009-gazettal-as-an-act-18-mar09-2/"
+    ],
+    "confidence": "med"
+  }
+]

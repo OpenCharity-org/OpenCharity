@@ -1,0 +1,82 @@
+[
+ {
+  "country": "Solomon Islands",
+  "tax_exemption": "Charitable-society income is statutorily exempt under the Income Tax Act (Cap. 123) if applied to charitable purposes - no separate tax application; donations to charities are not deductible; timing unpublished."
+ },
+ {
+  "country": "Kiribati",
+  "tax_exemption": "A company or irrevocable trust applies to the tax Commissioner under the Income Tax Act 2023; approved non-profits have exempt income; donations to them are deductible; no VAT relief; timing unpublished."
+ },
+ {
+  "country": "Nauru",
+  "tax_exemption": "Separate certification by the Finance Secretary under Business Tax Act 2016 s.6 (charitable/educational/sporting/religious purpose, no profit split); certified non-profits are exempt from business tax."
+ },
+ {
+  "country": "Tuvalu",
+  "tax_exemption": "Charitable and benevolent organisation income is exempt under the Income Tax Act 1992 exempt-income schedule (purposive test, no separate tax application); no donor-deduction regime and no VAT; time unpublished."
+ },
+ {
+  "country": "Marshall Islands",
+  "tax_exemption": "Not automatic: the Non-Profit Entities Act 2020 requires a non-profit to apply to the Department of Revenue for exemption from the 3% Net Profit Tax; no donor-deduction regime; timing unpublished."
+ },
+ {
+  "country": "Micronesia",
+  "tax_exemption": "No separate charitable exemption: FSM corporate income tax hits only 'major corporations' ($1M+ equity), so a small non-profit is out of scope; state-level taxes may apply; no donor deduction; timing unpublished."
+ },
+ {
+  "country": "Turkey",
+  "tax_exemption": "Vakif registered with the Foundations Affairs Presidency; foundations are exempt from corporate tax on charitable income; donors deduct gifts up to 10% of taxable profit (uncapped for listed); no VAT exemption."
+ },
+ {
+  "country": "Georgia",
+  "tax_exemption": "Charitable status confirmed by the State Tax Service (charitable purpose, no profit distribution); charitable income exempt; donors deduct gifts up to 10% of taxable income (art. 117); 1-month decision."
+ },
+ {
+  "country": "Armenia",
+  "tax_exemption": "NPOs registered with the Justice Ministry; donations and goods for charity are VAT-exempt and charitable activity is profit-tax-privileged; donor deduction capped at 0.25% of taxable profit."
+ },
+ {
+  "country": "Azerbaijan",
+  "tax_exemption": "No automatic income-tax exemption: NCOs pay 20% profit tax; Tax Code art. 106.1.18 adds a limited donor deduction for supporting social-purpose foundations (2023); no VAT exemption."
+ },
+ {
+  "country": "Kazakhstan",
+  "tax_exemption": "NPOs registered with the Justice Committee under the Tax Code's NPO regime: charitable contributions received are not income and charitable operations are VAT-exempt; donors get a limited deduction (2022)."
+ },
+ {
+  "country": "Uzbekistan",
+  "tax_exemption": "Registered with the Justice Ministry; 'charitable organization' status itself gives no special benefit - registered NNOs are generally income-tax exempt on non-commercial charitable income."
+ },
+ {
+  "country": "Turkmenistan",
+  "tax_exemption": "Associations need Justice Ministry consent plus state registration; a charity foundation can only be created by government decree (5+ citizen founders); law provides tax benefits, detail sparse."
+ },
+ {
+  "country": "Tajikistan",
+  "tax_exemption": "Public associations registered with the Justice Ministry; NPO income from charitable activity and donations is income-tax exempt under the Tax Code (2023 NCO tax guide); no donor deduction."
+ },
+ {
+  "country": "Kyrgyzstan",
+  "tax_exemption": "Charitable funds registered with the State Registration Service; tax status requires charitable purpose and no profit split; charity profits are income-tax exempt (Tax Code art. 212); no donor deduction."
+ },
+ {
+  "country": "Iran",
+  "tax_exemption": "Registered NGOs (Interior Ministry) are exempt on donations, gifts and membership fees under Direct Taxation Act art. 139 if used for charter purposes per National Tax Administration approval."
+ },
+ {
+  "country": "Cameroon",
+  "tax_exemption": "Association declared with the Interior Ministry; ONG status needs a separate 'agrement'; recognised ONGs are exempt from income tax, registration duties and VAT (Law 99/014 art. 18); no donor-deduction regime."
+ },
+ {
+  "country": "Central African Republic",
+  "tax_exemption": "Association declared under the civil code; ONG status requires the state's administrative 'agrement' (ONG law) to act nationally; the CGI grants limited exemptions to recognised ONGs; detail sparse."
+ },
+ {
+  "country": "Chad",
+  "tax_exemption": "Association registered with the Interior Ministry (Ordinance 023/PR/2018); international NGOs need extra authorisation (Law 05/2012); no charitable income-tax exemption - NPO income faces 10% profit tax."
+ },
+ {
+  "country": "Republic of the Congo",
+  "tax_exemption": "Legal personality is automatic by declaration at the prefecture under the 1901 French law; no automatic charitable tax exemption - income taxed under the CGI; 'reconnaissance d'utilite publique' is separate."
+ }
+]

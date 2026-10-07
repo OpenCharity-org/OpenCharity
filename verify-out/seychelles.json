@@ -1,0 +1,53 @@
+{
+  "country": "Seychelles",
+  "gfnp_eligible": true,
+  "microsoft_for_nonprofits": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "Seychelles foundation under the Foundations Act 2009 (consolidated 20 Dec 2021), registered with SIBA (Seychelles Islands Authority / registered-agent framework); local NPOs register under the NPO Act 2013",
+  "entity_types": [
+    "Seychelles foundation (Foundations Act 2009) — separate legal entity upon registration; the practical route for foreign founders",
+    "Local non-profit organisation under the NPO Act 2013 (direct statutory text not obtained this round — snippet-level only)"
+  ],
+  "requirements": {
+    "founders": "Foundation council of 1 or more members (individual or legal person); no residence or citizenship requirement; the founder may be a council member but not the sole member",
+    "local_presence": "A registered agent in Seychelles licensed as an International Foundation Services provider is required (standard SIBA foundation requirement); no physical office required",
+    "documents": "Constitution (trust deed equivalent) with objects, council rules and distribution provisions; council appointment details; registered agent's consent"
+  },
+  "forms": [
+    "SIBA foundation registration application via the licensed registered agent (agent files; no self-service portal confirmed)"
+  ],
+  "fees": [
+    {
+      "item": "SIBA licensing fee",
+      "amount": "US$200/yr",
+      "source_class": "secondary",
+      "source": "https://www.ifcreview.com/articles/2010/february/seychelles-foundations/ ('a competitive fee of USD200 is payable to SIBA')",
+      "note": "2010-dated figure — re-confirm with SIBA/agent before filing. This is the government fee only."
+    },
+    {
+      "item": "Registered agent + filing costs",
+      "amount": "not verified this round; enrich-task estimate US$1,500-3,000 total incl. agent",
+      "source_class": "unverified",
+      "source": "enrich-tasks.json (agent-market estimate), consistent with third-party agent quotes",
+      "note": "The US$1,500-3,000 figure is an all-in agent package, NOT the US$200 government fee — keep the two distinct."
+    }
+  ],
+  "timelines": {
+    "registration": "unverified — typically days to ~2 weeks via agent (not officially confirmed this round)"
+  },
+  "supersedes": [
+    "Prior enrich-task claim 'easy, ~US$1,500-3,000 incl. agent' — consistent with the US$200 gov fee + agent market rates, but the all-in figure is an agent-market estimate, not an official fee; labelled unverified."
+  ],
+  "notes": [
+    "GfNP: Seychelles on the official Google for Nonprofits country list, confirmed in _gfnp_audit.json",
+    "MSfN: Seychelles confirmed in TechSoup's Microsoft-for-Nonprofits available-countries list (techsoup.org/microsoft country list rendered in page)"
+  ],
+  "sources": [
+    "https://www.ifcreview.com/articles/2010/february/seychelles-foundations/",
+    "https://sterlingoffshore.com/knowledge-base/foundations/seychelles-foundation/",
+    "https://en.wikipedia.org/wiki/Seychelles (Foundations Act 2009 consolidation reference, snippet-level)",
+    "https://www.techsoup.org/microsoft",
+    "https://support.google.com/nonprofits"
+  ]
+}

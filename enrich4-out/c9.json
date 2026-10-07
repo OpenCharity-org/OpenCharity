@@ -1,0 +1,82 @@
+[
+  {
+    "country": "Libya",
+    "tax_exemption": "Automatic on NGO registration (NGO Law 19/2001; 50+ local founders, Libyan HQ): state recognition triggers Income Tax Law 7/2010 art.33 income exemption; donor deduction up to 2% net income; no VAT; time unpublished."
+  },
+  {
+    "country": "Algeria",
+    "tax_exemption": "No blanket income-tax exemption: activities taxable (19-26% IS); resident donors get a 40% gift credit (5% taxable-income cap); corporate donors deduct humanitarian gifts to 4M DA; no VAT; UPU separate, time unpublished."
+  },
+  {
+    "country": "Tunisia",
+    "tax_exemption": "Automatic by law: associations under Decret-loi 2011-88 are outside corporate-tax scope (DGELF 133/2013); VAT exemptions for charitable operations; no blanket donor deduction; no separate application, no approval time."
+  },
+  {
+    "country": "Morocco",
+    "tax_exemption": "IS exemption automatic by law (CGI 6 I-1) for bylaws-conform operations; separate RUP decree (SGG, 6-month max) unlocks unlimited corporate donor deduction + VAT gift exemption; foreign bodies need Interior approval."
+  },
+  {
+    "country": "Mauritania",
+    "tax_exemption": "Automatic by law (CGI 4(1)(b)): NGO income exempt from IS except competitive business; corporate donors deduct gifts to UPU bodies to 0.2% of turnover (max 2M Ouguiya); no individual deduction; no VAT; time unpublished."
+  },
+  {
+    "country": "Western Sahara",
+    "tax_exemption": "No independent regime: Moroccan dahir applies in Moroccan-administered areas only. IS exemption automatic (CGI 6 I-1); separate RUP recognition (6-month max) unlocks unlimited corporate donor deduction + VAT exemption."
+  },
+  {
+    "country": "Ethiopia",
+    "tax_exemption": "Automatic by law: ITP art.65(1)(m) exempts registered CSOs' non-business income (donations, grants); business income taxable; no blanket donor deduction; self-asserted at filing, no time; resident founders required."
+  },
+  {
+    "country": "Eritrea",
+    "tax_exemption": "No charitable exemption: Income Tax Proclamation 145/2005 has no charitable carve-out, so associations are ordinary taxpayers; only an ad-hoc ministerial agreement can exempt; donor deduction and VAT relief undocumented."
+  },
+  {
+    "country": "Djibouti",
+    "tax_exemption": "Separate request via Interior Minister: presidential decree of public utility; donations exempt from registration/transfer tax; VAT exemption for nonprofit charitable services; no donor deduction; time unpublished."
+  },
+  {
+    "country": "Somalia",
+    "tax_exemption": "No statutory recognition: tax exemptions are ad-hoc, negotiated individually with the Ministry of Finance; no income-tax exemption, donor deduction, or VAT relief documented; time unpublished."
+  },
+  {
+    "country": "Somaliland",
+    "tax_exemption": "Separate SRA written ruling (not automatic): income-tax exemption for charitable public institutions; no donor-deduction rate/cap or VAT exemption documented; time unpublished."
+  },
+  {
+    "country": "South Sudan",
+    "tax_exemption": "BPT exemption by operation of law on RRC registration with public-benefit status; donor contributions deductible, no cap published; 18% sales tax, no NGO exemption; time unpublished."
+  },
+  {
+    "country": "Seychelles",
+    "tax_exemption": "Separate application via CEPS to Ministry of Finance: business-tax exemption for charitable institutions; no general donor deduction; VAT exempt only on international donations; time unpublished."
+  },
+  {
+    "country": "Mauritius",
+    "tax_exemption": "Separate MRA approval (Director-General, s.49D) after NPO Act registration: income-tax exemption via Second Schedule; donor deduction capped MUR 30,000/yr (s.27DA, e-donations); no VAT exemption; time unpublished."
+  },
+  {
+    "country": "India",
+    "tax_exemption": "Separate Form 10A/10AB application to Income Tax Dept: income-tax exemption + 80G donor deduction 50% (10% AGTI cap); no general VAT/GST exemption; ~1-3 months (time unpublished)."
+  },
+  {
+    "country": "Pakistan",
+    "tax_exemption": "Separate FBR Commissioner approval (ITO 2001 s.2(36)) after registration + NTN: 100% income-tax exemption (s.100C); donor gift tax credit capped 30% taxable income (s.61); no VAT exemption; time unpublished."
+  },
+  {
+    "country": "Bangladesh",
+    "tax_exemption": "Separate Principal/Commissioner of IT application (s.46 ITO 1984): charitable-trust income-tax exemption; 100% donor tax credit (s.50, 10% adjusted-total-income cap); VAT-exempt charitable income; time unpublished."
+  },
+  {
+    "country": "Sri Lanka",
+    "tax_exemption": "Separate Finance Minister application: gazetted 'approved charity' (IR Act 24/2017); 14% preferential IT rate; donor deduction 1/3 taxable income (max Rs 75k individuals); no VAT exemption; time unpublished."
+  },
+  {
+    "country": "Nepal",
+    "tax_exemption": "Separate IRD application for Tax Exemption Certificate: income-tax exemption; donor gifts deductible to 5% cap; no VAT exemption; time unpublished. DAO registration itself automatic on filing."
+  },
+  {
+    "country": "Bhutan",
+    "tax_exemption": "Auto on CSO registration (CSOA 2007 s.38): exempt income tax on endowed-fund gains; donor deduction capped (5% AGI under 2001 rules, 2025 cap unconfirmed); no VAT exemption; time unpublished."
+  }
+]

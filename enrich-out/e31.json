@@ -1,0 +1,66 @@
+[
+  {
+    "country": "Paraguay",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office and resident local representative required; Spanish-only documents; small English-capable legal market.",
+    "fee_usd": "~$70 (Min. Interior Gs 541,000 NGO fee) + notary/lawyer",
+    "time_to_register": "1-3 months",
+    "deduction": "Donations deductible up to 5% of taxable gross income (renta bruta gravada) to qualifying entities.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior; foundation route needs US$400 min. capital in a capital-integration account; NGO route via Min. Interior fee.",
+    "sources": [
+      "https://www.latribuna.com.py/destacado/200761-costo-de-crear-una-ong-en-paraguay-requisitos-y-financiamiento/",
+      "https://www.dnit.gov.py/documents/20123/218007/IRP-RSP-Tratamiento+Impositivo+donaciones_Abril.2021.pdf",
+      "https://informacionpublica.paraguay.gov.py/public/651218-requisitosIPDF-requisitosI.PDF"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Uruguay",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office and resident local representative required; filings in Spanish at Registro Nacional de Personas Jurídicas.",
+    "fee_usd": "low (~US$10-30, DGR registration)",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Donations to qualifying associations/foundations get special tax exemptions/incentives under Ley 18.083 (2006).",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior (association from 3 members; foundation needs local rep; foundations enjoy tax incentives).",
+    "sources": [
+      "https://www.gub.uy/tramites/inscripcion-asociacion-civil-club-fundacion",
+      "https://portal.dgr.gub.uy/requisitos/dgr_personas_juridicas_requisitos_insc_documentos.pdf",
+      "https://www.impo.com.uy/bases/leyes-originales/18083-2006"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Argentina",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office and resident legal representative; province-by-province association registration plus AFIP steps.",
+    "fee_usd": "low (~US$0-100 provincial/registry) + lawyer",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Donations to qualifying entities deductible up to 5% cap (Ley 24.976, AFIP-exempt entities).",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm mostly; foundation basis is now the Commercial Code since the 2019 reform (Ley 27.610) — Ley 27.290 was absorbed into it.",
+    "sources": [
+      "https://portalsocietario.com.ar/blog/cuanto-cuesta-y-cuanto-tarda-crear-una-ong-en-argentina.shtml",
+      "https://www.argentina.gob.ar/agricultura/si-queres-ser-donante",
+      "https://serviciosweb.afip.gob.ar/Publico/Turnos/Requisitos/Pj_Web_Inscripcion.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Chile",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Chilean registered office and resident legal representative required; public deed + Conservador de Bienes Raíces registration.",
+    "fee_usd": "~$100 (notary deed + registry fees)",
+    "time_to_register": "1-3 weeks",
+    "deduction": "Ley 19.885: 35% tax credit + 65% deductible expense for certified qualifying donations.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior (asociación/corporación per Ley 20.500, fundación per Ley 20.839/2015; fast, easy, US$200-500, 1-3 weeks).",
+    "sources": [
+      "https://www.nss.cl/blog/como-crear-una-fundacion",
+      "https://www.midesof.gob.cl/sociedad-civil/donaciones-sociales/beneficios-tributarios-ley-n19-885/",
+      "https://www.chileatiende.gob.cl/fichas/11333-inscripcion-en-el-registro-de-personas-juridicas-sin-fines-de-lucro"
+    ],
+    "confidence": "high"
+  }
+]

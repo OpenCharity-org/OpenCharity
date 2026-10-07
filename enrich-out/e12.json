@@ -1,0 +1,128 @@
+[
+  {
+    "country": "Ethiopia",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Domestic CSOs require Ethiopian-national founders/members; a foreign founder can only register a foreign NGO office, which needs a local entity and CSO Agency approval.",
+    "fee_usd": "~$100-300",
+    "time_to_register": "3-9 months",
+    "deduction": "Charitable gifts deductible up to 10% of taxable income (Ethiopian residents); CSOs exempt on grants/dues.",
+    "foreign_donor_restriction": "2021 reform allows foreign funding of registered CSOs, but funds must flow through the CSO Agency/ACSO channel; no direct foreign donor license.",
+    "corrections": "Confirm prior: 2021 CSO Proclamation (1259/2021) keeps foreign founders out of domestic entities; cost 3-6 months via partner is reasonable.",
+    "sources": [
+      "https://cof.org/country-notes/nonprofit-law-ethiopia",
+      "https://www.primelaw.law/insights/ngo-lawyer-ethiopia-cso-guide",
+      "https://www.icnl.org/resources/civic-freedom-monitor/ethiopia"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Eritrea",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "No functioning independent civil society; all associations are state-controlled and donor funds must pass through government ministries.",
+    "fee_usd": "none",
+    "time_to_register": "not applicable - no legal pathway",
+    "deduction": "No practical charitable deduction regime; tax system minimal and not applied to charitable giving.",
+    "foreign_donor_restriction": "All NGO funding must be channeled through Eritrean government ministries (NGO Proclamation 145/2005); de facto ban on independent foreign charity work.",
+    "corrections": "Confirm prior: no legal pathway for an independent foreign-founded charity; state control confirmed by 2005 NGO Proclamation.",
+    "sources": [
+      "https://www.icnl.org/post/in-the-news/eritrea-new-ngo-law-threatens-existence-of-civil-society",
+      "https://www.refworld.org/legal/legislation/natlegbod/2005/en/95934"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Djibouti",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Associations must be registered with the Ministry of Interior with a local office and Djiboutian leadership; security-driven discretion makes remote foreign founding impractical.",
+    "fee_usd": "~$50-150",
+    "time_to_register": "1-4 months",
+    "deduction": "Charitable gifts to registered associations can be deducted for resident taxpayers under the personal income tax code (modest regime).",
+    "foreign_donor_restriction": "Foreign funding of associations is subject to approval/supervision; no explicit FCRA-style register, but aid actors register through local partners.",
+    "corrections": "Confirm prior: association law requires local involvement; cost ~$100-300 and 1-3 months plausible.",
+    "sources": [
+      "https://www.ecoi.net/en/countries/djibouti/national-laws/",
+      "https://2021-2025.state.gov/reports/2021-report-on-international-religious-freedom/djibouti/",
+      "https://www.womenconnect.org/web/djibouti/business-registration/-/asset_publisher/ObbONgnQXwfM/content/les-principaux-types-de-societe-enregistres-au-guichet-unique"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Somalia",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Fragmented federal state: separate regional NGO laws (Puntland, South West, etc.); foreign NGOs register regionally with local offices, security plan, and embassy channel.",
+    "fee_usd": "~$200-500",
+    "time_to_register": "3-12 months",
+    "deduction": "No developed charitable deduction regime; limited/no formal tax incentives for donations.",
+    "foreign_donor_restriction": "Foreign NGOs need regional government registration and approval of staff; no FCRA-style donor licensing, but registration itself is the gate.",
+    "corrections": "Confirm prior: severe insecurity and fragmented registries; domestic charities need Somali founders; 3-6 months is optimistic, extend to 12.",
+    "sources": [
+      "https://www.icnl.org/resources/civic-freedom-monitor/somalia",
+      "https://www.scribd.com/document/892552069/Puntland-Ngo-Act-English-Version"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Somaliland",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "De facto state: requires local registration with the Planning/Interior ministry and local office; banking and sanctions compliance add friction for a remote founder.",
+    "fee_usd": "~$100-300",
+    "time_to_register": "1-4 months",
+    "deduction": "No formal charitable tax-deduction regime in practice.",
+    "foreign_donor_restriction": "NGOs Law (2010) and I NGO Law regulate foreign NGOs; foreign groups face scrutiny over acting as implementers, but no donor ban.",
+    "corrections": "Confirm prior: 2010 NGO law (not 2005) governs; registry is relatively functional; cost 1-3 months plausible.",
+    "sources": [
+      "https://www.icnl.org/research/library/somalia_ngolaw/",
+      "https://www.icnl.org/research/library/somalia_ingos/",
+      "http://www.somalilandlaw.com/somaliland_ngos_law.html"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "South Sudan",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Foreign NGOs register through the embassy channel with a local office and South Sudanese staff (proposed 80% local staffing); security and weak institutions slow everything.",
+    "fee_usd": "~$300-600",
+    "time_to_register": "6-12 months",
+    "deduction": "Charitable deductions exist in the Income Tax Act for registered donors but are rarely used; no formal public charitable-giving incentive.",
+    "foreign_donor_restriction": "NGO Act 2016 requires registration, local office, and approval of funding; no FCRA-style donor register, registration is the gate.",
+    "corrections": "Confirm prior, update: governing law is NGO Act 2016 (not 2009); 2023 amendment bill adds 80% local staff requirement; 6-12 months realistic.",
+    "sources": [
+      "https://docs.southsudanngoforum.org/sites/default/files/2017-11/NGO%20Act%202016.pdf",
+      "https://www.refworld.org/legal/legislation/natlegbod/2016/151196",
+      "https://www.ohchr.org/en/press-releases/2013/12/ngo-bill-threatens-hinder-civil-societys-work-in-south-sudan-un-rights-experts"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Seychelles",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Requires a licensed local agent and registered office in Seychelles; founders/directors can be 100% foreign, so remote setup is routine for a fee.",
+    "fee_usd": "~$200-500 government",
+    "time_to_register": "2-6 weeks",
+    "deduction": "No domestic charitable deduction regime for offshore foundations; Seychelles foundations are generally tax-neutral, not tax-privileged donors.",
+    "foreign_donor_restriction": "No restrictions on foreign donors; foundations receive no special public-benefit status without local activity.",
+    "corrections": "Confirm prior: NPO Act 2013 for local NPOs; the practical foreign route is the Seychelles Foundation Act 2009 (SIBA, $200 gov fee); prior $1,500-3,000 is agent-inclusive.",
+    "sources": [
+      "https://www.ifcreview.com/articles/2010/february/seychelles-foundations/",
+      "https://sterlingoffshore.com/knowledge-base/foundations/seychelles-foundation/",
+      "https://gsl.org/en/offers/establishing-a-seychelles-foundation/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Mauritius",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Needs a registered office and local registered agent in Mauritius; foreign founders/directors fully permitted, so remote setup is straightforward.",
+    "fee_usd": "~$150-400 government",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Donations to approved public-benefit NPOs/donate trusts are deductible by resident donors; offshore foundations get no local public-benefit status.",
+    "foreign_donor_restriction": "No restrictions on foreign donors; the IFSA foundation route (Foundations Act 2012) is explicitly open to foreign founders with non-resident beneficiaries.",
+    "corrections": "Confirm prior: Foundations Act is 2012 (not 2014); NPO Act 2003 remains for local NPOs; $500-1,500 prior is agent-inclusive, gov fees are far lower.",
+    "sources": [
+      "https://lawsofmauritius.govmu.org/portal/viewlegislationdocument/web/?doctitle=Rm91bmRhdGlvbnMgQWN0IDIwMTI=&docnumber=&doctype=act",
+      "https://www.offshorecompany.com/company/mauritius-foundation/",
+      "https://www.lexology.com/library/detail.aspx?g=7f129550-d012-4b0e-a764-61f0a39eff3c"
+    ],
+    "confidence": "high"
+  }
+]

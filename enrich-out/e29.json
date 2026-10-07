@@ -1,0 +1,130 @@
+[
+  {
+    "country": "Mexico",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Mexican notarial deed plus local legal address; foreign founder acts via notarized power of attorney, no residency needed.",
+    "fee_usd": "~$100 (registry/SAT); notary fees separate, ~$300-800",
+    "time_to_register": "2-6 weeks (AC); donataria autorizada status adds 3-12 months",
+    "deduction": "deductible in MX only with SAT 'donataria autorizada' status (separate multi-month approval)",
+    "foreign_donor_restriction": "none notable; no FCRA-style regime; foreign grants to charities permitted",
+    "corrections": "confirm prior; AC may be formed by 2+ persons (Federal Civil Code), not 3+; DA status remains the key extra step",
+    "sources": [
+      "https://lawzana.com/legal-questions/mexico/what-are-the-steps-to-register-a-nonprofit-civil-association-in-mexico-and-obtain-tax-exempt-status-2692",
+      "https://cof.org/content/nonprofit-law-mexico",
+      "https://clarknuber.com/articles/four-options-for-tax-deductible-international-giving/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Guatemala",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Resident legal representative required; NGO registry filing (MRE) needed if receiving international funds.",
+    "fee_usd": "~$100-200 (government); notary/attorney extra",
+    "time_to_register": "3-8 weeks",
+    "deduction": "deductible for GT donors if entity is SAT-recognized tax-exempt (separate process)",
+    "foreign_donor_restriction": "NGOs receiving international cooperation must register in Registro de ONG; up to 25% of members may be resident foreigners",
+    "corrections": "correct prior: there IS a dedicated NGO registry (Ley 94-95, MRE) and a donor deduction via SAT tax-exempt status",
+    "sources": [
+      "https://cof.org/country-notes/nonprofit-law-guatemala",
+      "https://www.asesoriaglobal.com.gt/blog/civil-association-foundation-ngo-guatemala.html",
+      "https://www.bizlatinhub.com/how-to-form-ngo-guatemala/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Belize",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office and company secretary via Belizean agent; NGO license (AG's Office) for foreign-funded work.",
+    "fee_usd": "~$500-700 (registry + agent fees)",
+    "time_to_register": "1-3 weeks",
+    "deduction": "no broad charitable deduction regime confirmed; treat as limited/uncertain",
+    "foreign_donor_restriction": "NGOs receiving foreign contributions need an Attorney General NGO license (Non-Governmental Organizations Act)",
+    "corrections": "confirm prior; standard vehicle is company limited by guarantee (Companies Act Ch. 250); charity status is a later AG licensing step",
+    "sources": [
+      "https://beltraide.bz/belize-invest/doing-business-in-belize/company-incorporation/",
+      "https://bccar.bz/services/non-governmental-organisations/",
+      "https://www.facebook.com/BelizeCompaniesRegistry/posts/frequently-asked-questionswhat-type-of-legal-vehicle-should-a-not-for-profit-org/191133726554188/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "El Salvador",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Spanish filings + local address; associations need resident members, foundations allow a single foreign founder via local POA.",
+    "fee_usd": "~$100-300 (registry)",
+    "time_to_register": "4-8 weeks",
+    "deduction": "deductible for SV donors (LIR) up to ~5% of taxable income for registered non-profit donations",
+    "foreign_donor_restriction": "pending 'foreign agents' bill would force registration of foreign-funded NGOs; not in force as of 2026 - monitor closely",
+    "corrections": "confirm prior; fundacion (Ley 2011) can be formed by one foreign founder via local counsel; donor donations are deductible, not 'limited'",
+    "sources": [
+      "http://www.oas.org/juridico/spanish/mesicic3_slv_funciones.pdf",
+      "https://www.taiia.gob.sv/wp-content/uploads/2020/11/LAS-ORGANIZACIONES-SIN-FINES-DE-LUCRO-SU-TRATAMIENTO-TRIBUTARIO.pdf",
+      "https://consortiumlegal.com/wp-content/uploads/Tratamiento-fiscal-de-las-donaciones-en-Centroamerica.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Honduras",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Chancilleria legal-personality filing plus local address/representative; all filings in Spanish.",
+    "fee_usd": "~$100-200 (government fees)",
+    "time_to_register": "4-8 weeks",
+    "deduction": "limited: donations to registered OSCs eligible for income-tax credit (LIR); verify current cap",
+    "foreign_donor_restriction": "international ONGDs must register in the Registro Publico de ONGD (DIREF) and report agreements with the State",
+    "corrections": "confirm prior; personality granted by Poder Judicial (Chancilleria) under the 2011 OSC law covering asociaciones and fundaciones",
+    "sources": [
+      "https://www.sgjd.gob.hn/servicios-y-gestiones-web/requisitos/servicios-de-atencion-al-ciudadano/personalidad-juridica/fundaciones",
+      "https://diref.gob.hn/",
+      "https://consortiumlegal.com/2022/09/21/que-se-debe-tener-en-consideracion-si-desea-constituir-o-incorporar-una-ongd-en-honduras/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Nicaragua",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Extreme political risk: 5,700+ NGO legal personalities cancelled since 2018; state controls authorization and registry of OSFLs.",
+    "fee_usd": "~$100-300 (registry fees, if granted)",
+    "time_to_register": "4-8+ weeks with high denial/delay risk",
+    "deduction": "deductible for NI donors to tax-exempt OSFLs (moot if operating)",
+    "foreign_donor_restriction": "Ley 1115 (2022) gives the government broad control, supervision and cancellation power over OSFLs; foreign-funded NGOs systematically targeted",
+    "corrections": "confirm prior 'very hard'; add Ley 1115 (2022) as the controlling OSFL regulation; mass cancellations by Ministry of Governance decrees continue",
+    "sources": [
+      "http://legislacion.asamblea.gob.ni/normaweb.nsf/09cf45d6fc893868062572650059911e/bfed6e3afb3d8fbf06258ae10075cd64",
+      "https://www.icnl.org/wp-content/uploads/Nicaragua_perjurid.pdf",
+      "http://legislacion.asamblea.gob.ni/normaweb.nsf/($All)/1A61F4734310A53406258A5400520EC1?OpenDocument="
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Costa Rica",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Public deed before a CR notary + local office; asociaciones need 5+ members, so a fundacion (single founder) is the practical path.",
+    "fee_usd": "~$1,000-2,500 (notary + registry; government portion modest)",
+    "time_to_register": "4-8 weeks (entity); interes publico decree adds months",
+    "deduction": "donor deduction requires 'interes publico' decree (Consejo de Ministros); entity tax exemption via MINFIN (separate)",
+    "foreign_donor_restriction": "none notable; foreign founders and members permitted; no FCRA-style regime",
+    "corrections": "correct prior: asociacion requires 5+ founders (Ley 218), not 3+; donor deduction needs the interes publico decree, MINFIN covers entity exemption",
+    "sources": [
+      "https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=32764&nValor3=83259&param1=NRTC&strTipM=TC",
+      "https://www.icoder.go.cr/fileadmin/documentos/tramites/caja_de_herramientas/leyes_y_sus_reglamentos/Ley_N__218_Ley_de_Asociaciones.pdf",
+      "https://bufetedecostarica.com/ley-de-asociaciones-de-costa-rica-218/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Panama",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Panamanian registered office plus public deed before a Panama notary; registry work handled by a local firm (remote founder fine).",
+    "fee_usd": "~$200-500 (government/registry); total with counsel ~$2,500-4,500",
+    "time_to_register": "2-6 weeks (FIP is fast)",
+    "deduction": "deductible for PA donors up to ~5% of taxable income for approved charitable entities; entity exemption via MINA (separate)",
+    "foreign_donor_restriction": "none notable; no residency requirement; single foreign founder and foreign board permitted",
+    "corrections": "correct prior: FIP is governed by Ley 25 de 1995 (not 'Ley 8 de 2000'); registered in Registro Publico de la Propiedad, not 'IFPF'",
+    "sources": [
+      "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/CIVIL/ley_25_de_1995_fundaciones_de_interes_privado.pdf",
+      "https://laglex.net/nuestros-servicios/fundaciones-de-interes-privado/",
+      "https://www.rglawfirmpa.com/fundaciones-privadas-en-panama"
+    ],
+    "confidence": "high"
+  }
+]

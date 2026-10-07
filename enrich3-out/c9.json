@@ -1,0 +1,74 @@
+[
+  {
+    "country": "Libya",
+    "annual_compliance": "NGO Law 19/2001: the board prepares an annual budget and final accounts each year (auditor reference per PM Decree 286/2019); strict state supervision, with sanctions and deregistration for non-filing."
+  },
+  {
+    "country": "Algeria",
+    "annual_compliance": "After each general assembly the association must send the minutes plus the moral and financial report to the wilaya authority (Law 12-06 Art. 19); inactivity can ground administrative dissolution."
+  },
+  {
+    "country": "Tunisia",
+    "annual_compliance": "No heavy annual return under Decree-Law 2011-88: periodic activity declarations reach the prefecture, foreign funds received must be disclosed (Art. 41); closure/dissolution by administrative procedure."
+  },
+  {
+    "country": "Morocco",
+    "annual_compliance": "Dahir 1-58-376 is a declaration regime - no formal annual-return filing, but the association must prove its prior declaration (failure risks dissolution) and public-utility bodies must keep true-and-fair accounts."
+  },
+  {
+    "country": "Mauritania",
+    "annual_compliance": "Law 2021-004 Art. 21: annual activity report to the CSO-relations department by 31 March; public-utility associations add an audited financial report (Arts. 36-37); foreign associations face the same controls (Art. 43)."
+  },
+  {
+    "country": "Western Sahara",
+    "annual_compliance": "No independent registry: the Moroccan dahir 1-58-376 declaration regime applies only in Moroccan-administered areas, so annual duties reduce to maintaining the declaration and public-utility accounting."
+  },
+  {
+    "country": "Ethiopia",
+    "annual_compliance": "Proclamation 1113/2019 Arts. 72-73: annual performance and accounting report to the CSO Agency within 3 months of fiscal year-end, with certified audit in the same period; failure can lead to suspension or revocation."
+  },
+  {
+    "country": "Eritrea",
+    "annual_compliance": "Proclamation 145/2005 Art. 6: registration must be renewed annually; registered NGOs file quarterly progress reports plus an annual financial report drawn by an independent audit firm within 4 months of year-end."
+  },
+  {
+    "country": "Djibouti",
+    "annual_compliance": "Associations under Law 51/AN/71 (1971, as amended, with newer CSO law 107/AN/24) file an annual activity report with the Interior ministry; authorities can dissolve for failure to report or unlawful activity."
+  },
+  {
+    "country": "Somalia",
+    "annual_compliance": "NGO Act 2019 Art. 17: annual financial and narrative reports, including the audit report, are due to the NGO Coordination Office by 31 May; the certificate is valid 2 years and must be renewed (Art. 16)."
+  },
+  {
+    "country": "Somaliland",
+    "annual_compliance": "Decree 82/11 (2010): the certificate is renewed annually (fee ~USD 60) and end-of-year NGO reports are assessed by the Consultative Committee; NGOs that suspend or fail to renew are struck off the General Register."
+  },
+  {
+    "country": "South Sudan",
+    "annual_compliance": "NGO Act 2016: the operational license renews on application with performance reports, an audited financial report and next-year budget (Art. 13); unregistered operation is prohibited and the commission can audit."
+  },
+  {
+    "country": "Seychelles",
+    "annual_compliance": "Associations Act 2022: the secretary files a return of officers' names and addresses with the Registrar by 31 January each year, and audited accounts on request; a foundation's registered agent must keep filings current."
+  },
+  {
+    "country": "Mauritius",
+    "annual_compliance": "Associations: s.23 Registration of Associations Act 1978 - annual return of receipts and expenditure goes to the Registrar, public on application; foundations file annual returns and audited accounts to the ROC."
+  },
+  {
+    "country": "India",
+    "annual_compliance": "Section 8 company: AGM and statutory audit each year; AOC-4 filed within 30 days and MGT-7 within 60 days of the AGM, plus ITR-7 for 12A/80G; late or missing filings attract MCA penalties and filing restrictions."
+  },
+  {
+    "country": "Pakistan",
+    "annual_compliance": "SECP: a Section 21 non-profit company files its annual return (Form 29) and audited accounts by the Companies Act 2017 s.130 dates; late or non-filing draws penalties and can trigger suspension of the company."
+  },
+  {
+    "country": "Bangladesh",
+    "annual_compliance": "BIDA: the certificate is valid five years and must be renewed before expiry; the NGO files an annual report on donation receipt and utilisation; non-compliance can lead to suspension or deregistration."
+  },
+  {
+    "country": "Sri Lanka",
+    "annual_compliance": "A registered public charity has no fixed annual return to a registry: the Court and Public Trustee supervise accounts under the Trusts Ordinance; a CLBG under the Companies Act 2007 files annual returns with the DRC."
+  }
+]

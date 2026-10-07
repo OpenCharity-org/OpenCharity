@@ -1,0 +1,125 @@
+[
+  {
+    "country": "Turkey",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Board/officer residency plus Turkish registered office; reciprocity finding needed for a foreign vakıf founder",
+    "fee_usd": "none",
+    "time_to_register": "4-12 weeks (dernek faster, vakıf 1-3 months)",
+    "deduction": "No general personal deduction regime; donations to registered vakıfs tax-exempted in limited cases",
+    "foreign_donor_restriction": "No FCRA-style donor registration; 2006 NGO law removed donor registration, but banks monitor foreign transfers (AML rules)",
+    "corrections": "Confirm entity types and difficulty; state fees are nominal (no US$500-1,500 official fee — that is legal service cost); add dernek 1-3 month timeline",
+    "sources": [
+      "https://lawyer-turkey.com/set-up-a-foundation-in-turkey/",
+      "https://istanbullawyerfirm.com/blog/legal-requirements-foreign-ngos-operating-turkey",
+      "https://a-m.com.tr/non-profit-organization-in-turkey/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Georgia",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "None notable; a Georgian registered address is required and virtual/agent addresses are accepted",
+    "fee_usd": "~$10",
+    "time_to_register": "3-10 business days, fully online",
+    "deduction": "Donations to public benefit organizations eligible for deduction; individual deduction capped (30% of taxable income, PBO portion 20%)",
+    "foreign_donor_restriction": "None notable; no donor registration, no foreign-agency trigger for standard foreign private donations",
+    "corrections": "Confirm prior; fee ~GEL 25 (~$9) state fee confirmed, single foreign founder permitted, online via PSDA portal",
+    "sources": [
+      "https://georgia-assistant.ge/en/our-services/business-registration-in-georgia/registration-of-npos-in-georgia/",
+      "https://www.gegidze.com/post/company-registration-in-tbilisi-step-by-step-for-foreign-fou"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Armenia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Armenian registered office required (agent can provide); docs in Armenian, notarized translations needed",
+    "fee_usd": "~$25",
+    "time_to_register": "2-6 weeks with a local agent handling filings",
+    "deduction": "Donations to registered public-benefit NGOs deductible up to 5% of assessable income (individuals)",
+    "foreign_donor_restriction": "None notable; no donor registration, no foreign-agency regime for ordinary donations",
+    "corrections": "Correct fee: state duty is 10,000 AMD (~$25), not ~600 AMD (<$2); NGOs need 2+ founders, foundation 1; 10-15 business days confirmed",
+    "sources": [
+      "https://armenian-lawyer.com/business-immigration/register-nonprofit-organization-armenia/",
+      "https://www.am.business/foundation",
+      "https://lawzana.com/legal-questions/armenia/how-do-i-register-a-charity-in-armenia-and-legally-accept-foreign-donations-3799"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Azerbaijan",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "2025 amendments ban NGO banking operations with foreign financial sources; local resident control plus prior approvals required",
+    "fee_usd": "~$150",
+    "time_to_register": "1-3+ months with high rejection risk",
+    "deduction": "No meaningful personal charitable deduction regime for foreign founders in practice",
+    "foreign_donor_restriction": "Foreign donor pre-registration/approval required; foreign-funded contracts need justice ministry registration; heavy fines (1,500-2,500 AZN) for breaches",
+    "corrections": "Confirm very hard; 2025 restrictions (foreign funding bans, fines) validated; registration technically possible but functionally blocked for foreign-funded charities",
+    "sources": [
+      "https://www.icnl.org/wp-content/uploads/Article-Guluzade-foreign-funding-in-Azerbaijan-fv.pdf",
+      "https://www.instituteforhumanrights.org/post/azerbaijan-tightens-grip-on-ngos-with-new-laws-and-stiffer-fines",
+      "https://oc-media.org/azerbaijan-restricts-banking-operations-related-to-foreign-financial-sources/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Kazakhstan",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Kazakh registered address plus notarized Kazakh/Russian translations; foreign-funding reporting obligations apply",
+    "fee_usd": "none",
+    "time_to_register": "2-6 weeks with a local agent",
+    "deduction": "Donations to qualifying public-benefit NPOs deductible up to 3% of assessable income (individuals)",
+    "foreign_donor_restriction": "Foreign funding subject to registration/reporting with authorities; 'foreign influence' triggers reporting (foreign-agent-style rules since 2022)",
+    "corrections": "Confirm prior; small/none state fee, 5-10 business days via single window confirmed; foreign natural persons can be founders, foreign legal persons generally cannot",
+    "sources": [
+      "https://www.gov.kz/services/3932?lang=en",
+      "https://crd.org/2023/10/19/kazakhstan-abolish-the-foreign-funding-register/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Uzbekistan",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Registered address in Uzbekistan (agent-provided) plus notarized Uzbek/Russian translations; bank account setup needs local handling",
+    "fee_usd": "none",
+    "time_to_register": "2-6 weeks with a local agent",
+    "deduction": "No general personal charitable deduction regime of practical relevance for donors",
+    "foreign_donor_restriction": "Foreign grants/donations subject to registration/notification with authorities; NGO activity in regulated areas needs ministry approval",
+    "corrections": "Confirm medium difficulty; 2023 reform (Presidential Decree UP-111) streamlined one-stop-shop registration; fee nominal; time 4-10 weeks prior estimate is realistic end-to-end",
+    "sources": [
+      "https://investmentpolicy.unctad.org/investment-policy-monitor/measures/4559/uzbekistan-introduces-one-stop-shop-and-other-services-to-assist-investors-",
+      "https://itpark-uzb.de/en/posts/how-to-register-a-business-in-uzbekistan-a-complete-guide-fo"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Turkmenistan",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "In practice registration of independent civil society organizations by foreigners is not possible; government-only NGO sector",
+    "fee_usd": "unknown",
+    "time_to_register": "Not achievable for a foreign founder",
+    "deduction": "None notable; no practical charitable deduction regime",
+    "foreign_donor_restriction": "Foreign funding effectively blocked; civil society is state-directed and foreign NGOs operate only under official government auspices",
+    "corrections": "Escalate difficulty from medium to very hard: prior context understates the closed nature of Turkmenistan's NGO sector; no realistic foreign registration path",
+    "sources": [
+      "https://www.icnl.org/resources/civic-freedom-monitor/tajikistan"
+    ],
+    "confidence": "low"
+  },
+  {
+    "country": "Tajikistan",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Resident Tajik co-founders/directors expected, Dushanbe office required; foreign funding needs justice ministry registration",
+    "fee_usd": "none",
+    "time_to_register": "4-12 weeks with local support, with rejection risk",
+    "deduction": "No meaningful personal charitable deduction regime for practical donors",
+    "foreign_donor_restriction": "NGOs may implement foreign-government-supported programmes only if funding is registered with the justice ministry; draft legislation further tightens rules",
+    "corrections": "Confirm hard difficulty; state fee nominal, but prior 6-10 week timeline is optimistic — 4-12+ weeks more realistic given co-founder and approval hurdles",
+    "sources": [
+      "https://civicsolidarity.org/article/tajikistan-drop-draft-legislation-restricting-ngo-access-to-funding/",
+      "https://www.icnl.org/resources/civic-freedom-monitor/tajikistan",
+      "https://iwpr.net/global-voices/restrictive-ngo-law-way-tajikistan"
+    ],
+    "confidence": "med"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "country": "Nicaragua",
+    "entity_types": "Asociación (Ley sobre Asociaciones y Registro Central de Personas Jurídicas, 1983); fundación (Ley de Fundaciones); fideicomiso (Ley 395/1998).",
+    "cost_time": "US$300–800; 4–8 weeks if granted. Notary for the public deed adds ~US$100–300; official processing time unpublished; foreigners need no local residence.",
+    "source": "https://nicaragua.justia.com/nacionales/decretos-ley/ley-sobre-asociaciones-y-registro-central-de-personas-juridicas-nov-21-1983/gdoc/"
+  },
+  {
+    "country": "Costa Rica",
+    "entity_types": "Asociación (Ley 218 de 1920); fundación sin fines de lucro; fideicomiso — personalidad via Registro de la Propiedad / Ministerio de Educación y Cultura.",
+    "cost_time": "US$1,000–2,500 incl. notary; 4–8 weeks for registration, tax exemption takes months. Notary fee ~US$300–600; official timelines unpublished.",
+    "source": "https://pgrweb.go.cr/scij/Busqueda/Normativa/Normas/nrm_texto_completo.aspx?nValor1=1&nValor2=32764&nValor3=83259&param1=NRTC&strTipM=TC"
+  },
+  {
+    "country": "Panama",
+    "entity_types": "Fundación de interés privado (Ley 25/1995; min endowment US$10,000); asociación; fideicomiso (Ley 10/1994).",
+    "cost_time": "US$2,500–4,500 incl. notary; ~US$400/yr maintenance; 4–8 weeks. Foreigners may establish a FIP (not barred); official timelines unpublished.",
+    "source": "https://docs.panama.justia.com/federales/leyes/25-de-1995-jun-14-1995.pdf"
+  },
+  {
+    "country": "Colombia",
+    "entity_types": "Fundación (Ley 793/2002); asociación (Código Civil); corporación (personas jurídicas de derecho privado) — registro ante Cámara de Comercio.",
+    "cost_time": "US$300–600 incl. lawyer; 2–6 weeks at Cámara de Comercio. Notary for the deed ~US$50–150; official timelines unpublished.",
+    "source": "https://www.ccb.org.co/processes-and-consultations/about-registrations/registration-non-profit-entities/non-profit-entities-common-regime"
+  },
+  {
+    "country": "Venezuela",
+    "entity_types": "Fundación (Ley Orgánica de Fundaciones, 2001); asociación o sociedad civil (Código de Comercio, arts. 158+).",
+    "cost_time": "US$1,000–3,000 incl. lawyer; 3–6+ months (ministerial approval). Notary extra ~US$100–200; official timelines unpublished; bureaucracy heavy.",
+    "source": "http://www.oas.org/juridico/spanish/mesicic3_slv_funciones.pdf"
+  },
+  {
+    "country": "Ecuador",
+    "entity_types": "Fundación; asociación civil; institución de utilidad pública (IUP) — personalidad otorgada por el gobierno (Reglamento 2018).",
+    "cost_time": "US$500–1,500 incl. lawyer/notary; 2–3 months (Ministerio del Interior). Notary ~US$150–300; official timelines unpublished.",
+    "source": "https://www.gob.ec/sites/default/files/regulations/2018-10/Documento_Reglamento-Otorgamiento-Personalidad-Jur%C3%ADdica-Organizaciones-Sociales.pdf"
+  },
+  {
+    "country": "Peru",
+    "entity_types": "Asociación civil (Ley 27258/2000); fundación (Ley 27907/2003); instituto de promoción de desarrollo local — registro en SUNARP / Ministerio de Justicia.",
+    "cost_time": "US$300–800 incl. lawyer; 2–6 weeks (notary deed + SUNARP registration). Notary ~US$150–250; official timelines unpublished.",
+    "source": "https://peru.iom.int/sites/g/files/tmzbdl951/files/documents/2024-01/guia-practica-asociaciones-sin-fines-de-lucro.pdf"
+  },
+  {
+    "country": "Bolivia",
+    "entity_types": "Fundación; asociación (Ley 351/2013); cooperativa (Ley 2440) — registro de personas jurídicas (Superintendencia de Compañías).",
+    "cost_time": "US$400–1,000 incl. lawyer/notary; 2–4 months. Notary ~US$100–200; official timelines unpublished.",
+    "source": "https://www.lexivox.org/norms/BO-L-N351.html"
+  },
+  {
+    "country": "Guyana",
+    "entity_types": "Non-profit company (Companies Act cap. 89:01); friendly society (Friendly Societies Act cap. 36:04); co-operative (Co-operative Societies Act 1984).",
+    "cost_time": "US$300–800 incl. lawyer; 1–3 months at DCRA. Filing ~US$100–300; official timelines unpublished; foreign nationals may incorporate.",
+    "source": "https://dcra.gov.gy/wp-content/uploads/2017/11/Companies-Act-cap8901.pdf"
+  },
+  {
+    "country": "Suriname",
+    "entity_types": "Stichting (privaat nut, Dutch-style private foundation via notary deed); vereniging (association); coöperatie (co-operative).",
+    "cost_time": "US$500–1,500 incl. notary/lawyer; 1–3 months. Notary ~US$200–500; official timelines unpublished; no residence requirement for a stichting.",
+    "source": "https://www.notariaatmannes.sr/ondernemen-stichtingen-verenigingen/stichting/"
+  },
+  {
+    "country": "Brazil",
+    "entity_types": "Associação (Código Civil); fundação (Código Civil); OSCIP (Lei 9.790/1999) — registro em cartório de registro civil de pessoas jurídicas.",
+    "cost_time": "US$500–1,500 incl. lawyer/notary; 2–4 months (cartório + optional CGJ certification). Official timelines unpublished; foreigners may set up.",
+    "source": "https://www.planalto.gov.br/ccivil_03/leis/l9790.htm"
+  },
+  {
+    "country": "Paraguay",
+    "entity_types": "Asociación civil y fundación (Ley 5833/2017 de OSC); cooperativa (Ley 1984/1999) — Registro Administrativo de Personas y Estructuras Jurídicas (Ley 6446/2019).",
+    "cost_time": "US$300–800 incl. lawyer; 1–3 months (MEF/DGPEJBF). Official timelines unpublished; foreign founders may register with a local representative.",
+    "source": "https://www.mef.gov.py/es/dependencias/direcciones/direccion-general-personas-estructuras-juridicas-beneficiarios-finales/pf"
+  },
+  {
+    "country": "Uruguay",
+    "entity_types": "Asociación civil (Ley 17.296); fundación (Código Civil) — reconocimiento ante la Dirección General de Registro (DGR).",
+    "cost_time": "US$200–600 incl. lawyer/notary; 2–6 weeks at DGR. Notary ~US$100–200; official timelines unpublished; foreigners may found.",
+    "source": "https://www.gub.uy/tramites/asociaciones-civiles-fundaciones-reconocimiento"
+  },
+  {
+    "country": "Argentina",
+    "entity_types": "Asociación civil (Ley 23.851); fundación (Ley 27.290/2016 y CCyC arts. 193–224); cooperativa (Ley 20.337) — registro según Ley 26.047.",
+    "cost_time": "US$200–500 incl. lawyer; 2–6 weeks (registro de personas jurídicas; provincial o federal según jurisdicción). Official timelines unpublished.",
+    "source": "https://www.argentina.gob.ar/normativa/nacional/ley-26047-108436/texto"
+  },
+  {
+    "country": "Chile",
+    "entity_types": "Asociación (Código Civil); corporación (Ley 20.500/2011); fundación de derecho privado (Ley 20.839/2015) — Registro Nacional de Personas Jurídicas.",
+    "cost_time": "US$200–500 incl. lawyer; 1–3 weeks at Registro Civil. Official timelines unpublished; foreigners may found with a Chilean representative.",
+    "source": "https://www.registrosciviles.cl/tramites/inscripcion-al-registro-de-personas-juridicas-sin-fines-de-lucro/"
+  },
+  {
+    "country": "Singapore",
+    "entity_types": "Registered charity (Charities Act 1994, Registrar of Charities) on top of a CLG (ACRA), society (Societies Act) or trust; company limited by guarantee.",
+    "cost_time": "S$315–1,500 (ACRA filing + registered secretary); 1–4 weeks; charity status takes ~1–3 months more. Official timelines published by ACRA/Registrar.",
+    "source": "https://www.charities.gov.sg/Pages/Charities-and-IPCs/Register-as-a-Charity/Criteria-for-Registration-as-a-Charity.aspx"
+  },
+  {
+    "country": "Malaysia",
+    "entity_types": "Society (Societies Act 1966, Act 832); charitable trust (Trustee Act 1949); company limited by guarantee (Companies Act 2016) — SSM or Registrar of Societies.",
+    "cost_time": "RM100–2,000 with agent; 2–8 weeks. Society registration fee ~RM500; official timelines unpublished; foreigners need a local secretary/member.",
+    "source": "https://www.mdi.gov.my/wp-content/uploads/2025/06/Akta-832-Akta-Pertubuhan-1966.pdf"
+  },
+  {
+    "country": "Indonesia",
+    "entity_types": "Yayasan (foundation, UU 16/2001 as amended by UU 28/2004); perkumpulan (association, KUHPerdata) — AHU online at the Ministry of Law.",
+    "cost_time": "IDR 5–20M (~US$400–1,600) incl. notary; 1–3 months (SK Kemenkum HAM). Official timelines unpublished; foreign founders need an Indonesian proxy.",
+    "source": "https://peraturan.go.id/id/uu-no-16-tahun-2001"
+  }
+]

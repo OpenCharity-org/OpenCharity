@@ -1,0 +1,129 @@
+[
+  {
+    "country": "Netherlands",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "Dutch registered office required (virtual-office provider solves it); notary deed needed",
+    "fee_usd": "~$90 (KvK ~EUR 82-85; notary EUR 500-1,500 separate)",
+    "time_to_register": "2-4 weeks; ANBI tax status 4-8 weeks extra",
+    "deduction": "ANBI gifts deductible for income tax, cap 1% of annual income",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; KvK fee ~EUR 82, no residency rule for founder/board, stichting+ANBI standard",
+    "sources": [
+      "https://www.kvk.nl/en/registration/registering-a-stichting/",
+      "https://www.givingwhatwecan.org/get-involved/tax-deductibility/the-netherlands",
+      "https://netherbridge.nl/set-up-dutch-ngo-charity-non-profit/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Belgium",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "Belgian registered office (virtual-office provider solves it); French/Dutch statutes via notary",
+    "fee_usd": "~$200 (Crossroads Bank free; Moniteur belge publication ~EUR 100-200)",
+    "time_to_register": "2-6 weeks",
+    "deduction": "gifts deductible at 45% (60% for self-employed), no explicit income cap for ASBLs",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "mostly confirm prior; foundation needs NO fixed minimum capital (only sufficient); 1 founder enough post-2024 reform",
+    "sources": [
+      "https://www.lexology.com/library/detail.aspx?g=5603c18f-02f9-4b06-b538-a9e49aab19cf",
+      "https://philea.eu/wp-content/uploads/2024/11/Belgium-Philea-2024-Legal-Environment-for-Philanthropy-in-Europe.pdf",
+      "https://www.aam-solutions.com/en/company-formation/asbl/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Luxembourg",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Luxembourg registered office and local management presence; new NPA law 2025 raised foundation endowment",
+    "fee_usd": "~$100 (association filing minimal; notary fees separate)",
+    "time_to_register": "1-4 weeks (association); foundation several months with court authorisation",
+    "deduction": "25% of donation deductible, capped at EUR 75,000 of income",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "mostly confirm; 2025 new NPA law (foundation regime mandatory) keeps EUR 100,000 endowment for new foundations",
+    "sources": [
+      "https://philea.eu/wp-content/uploads/2024/11/Luxembourg-Philea-2024-Legal-Environment-for-Philanthropy-in-Europe.pdf",
+      "https://kleyrgrasso.com/news/new-law-on-non-profit-associations-and-foundations-the-new-npa-law/",
+      "https://molitorlegal.lu/23-september-2025-new-regime-governing-foundations-becomes-mandatory/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "France",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "French registered office + French-language declaration; 2+ named founders",
+    "fee_usd": "none (loi 1901 declaration free)",
+    "time_to_register": "1-2 weeks (association); funds route adds 2-4 weeks",
+    "deduction": "66% tax reduction (75% on first EUR 1,000), cap 20% of taxable income",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; fonds de dotation EUR 15,000 endowment confirmed; association route is free",
+    "sources": [
+      "https://www.service-public.gouv.fr/particuliers/actualites/A18836?lang=en",
+      "https://mieuxdonner.org/tax-reduction-for-donations-to-charities/",
+      "https://www.apuaf.org/wp-content/uploads/2012/04/Association-Loi-1901.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Germany",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "German registered office + German-language articles; 7+ founding members must be named",
+    "fee_usd": "~$40-150 (register court ~EUR 40-100; notary EUR 300-800 separate)",
+    "time_to_register": "4-10 weeks",
+    "deduction": "donations deductible up to 30% of taxable income (EUR 200 deductible without receipt)",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; 7 members per section 56 BGB, no residency requirement, e.V. standard, charity status via Finanzamt",
+    "sources": [
+      "https://balin-legal.de/en/42-leitfaden-zur-gruendung-und-fuehrung-eines-eingetragenen-vereins-e-v/",
+      "https://hor-greifswald.de/wp-content/uploads/2022/03/Guide-to-founding-an-association-English.pdf",
+      "https://www.anwalt.de/rechtstipps/guide-to-founding-and-managing-a-registered-association-e-v-246956.html"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Austria",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "Austrian seat (local address) + German-language articles; 3+ founders",
+    "fee_usd": "~$60-200 (district court filing; notary/attorney separate)",
+    "time_to_register": "2-6 weeks",
+    "deduction": "deduction up to 30% of annual taxable income",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; two-step process (errichtung then Genehmigung), 3 founders, no citizenship rule",
+    "sources": [
+      "https://www.oesterreich.gv.at/en/themen/reisen_und_freizeit/vereine/Seite.220300",
+      "https://coredo.eu/company-registration-in-austria-legal-steps"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Switzerland",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Swiss seat + at least one Swiss-domiciled foundation council member (local agent fills this)",
+    "fee_usd": "CHF 1,000-2,000 (~$1,100-2,200) notary + commercial register; CHF 50,000 endowment",
+    "time_to_register": "6-12 weeks",
+    "deduction": "gifts deductible at 10% (up to CHF 100,000 per year) for recognized charities",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; no nationality/residency rule on founders, Swiss-resident officer is the real hurdle, exemption granted cantonally",
+    "sources": [
+      "https://www.lexology.com/library/detail.aspx?g=de4f8bb2-8782-483a-b381-0da56cec2b8c",
+      "https://globallawexperts.com/how-to-register-a-foundation-in-switzerland",
+      "https://foundations.zuerich/en/starting-a-foundation"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Liechtenstein",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Liechtenstein seat + locally based management; local agent/board needed for a remote founder",
+    "fee_usd": "~$3,500-6,000 (0.2% entry levy + agent/notary; CHF 30,000 endowment)",
+    "time_to_register": "4-12 weeks",
+    "deduction": "deductible up to 25% of annual taxable income for recognized charitable foundations",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; CHF/EUR/USD 30,000 minimum endowment, founder may be any nationality, 0.1% annual charge (min CHF 1,000)",
+    "sources": [
+      "https://www.grantthornton.ch/en/insights/overview-liechtenstein-foundation-stiftung",
+      "https://globallawexperts.com/liechtenstein-foundation-taxation",
+      "https://incorporations.io/liechtenstein/foundation/li1i"
+    ],
+    "confidence": "med"
+  }
+]

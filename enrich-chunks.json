@@ -1,0 +1,360 @@
+[
+ {
+  "region": "AU_OCE",
+  "countries": [
+   "Australia",
+   "New Zealand",
+   "Fiji",
+   "Papua New Guinea",
+   "Samoa",
+   "Tonga",
+   "Vanuatu",
+   "Solomon Islands"
+  ]
+ },
+ {
+  "region": "AU_OCE",
+  "countries": [
+   "Kiribati",
+   "Nauru",
+   "Tuvalu",
+   "Marshall Islands",
+   "Micronesia"
+  ]
+ },
+ {
+  "region": "AS_EAST",
+  "countries": [
+   "Mongolia",
+   "Japan",
+   "South Korea",
+   "China",
+   "Taiwan",
+   "Hong Kong",
+   "Macau"
+  ]
+ },
+ {
+  "region": "AS_SOUTHEAST",
+  "countries": [
+   "Singapore",
+   "Malaysia",
+   "Indonesia",
+   "Thailand",
+   "Vietnam",
+   "Philippines",
+   "Cambodia",
+   "Laos"
+  ]
+ },
+ {
+  "region": "AS_SOUTHEAST",
+  "countries": [
+   "Myanmar",
+   "Brunei",
+   "Timor-Leste"
+  ]
+ },
+ {
+  "region": "SA",
+  "countries": [
+   "India",
+   "Pakistan",
+   "Bangladesh",
+   "Sri Lanka",
+   "Nepal",
+   "Bhutan",
+   "Afghanistan",
+   "Maldives"
+  ]
+ },
+ {
+  "region": "ME",
+  "countries": [
+   "Israel",
+   "Jordan",
+   "Lebanon",
+   "Syria",
+   "Iraq",
+   "Saudi Arabia",
+   "Kuwait",
+   "Qatar"
+  ]
+ },
+ {
+  "region": "ME",
+  "countries": [
+   "United Arab Emirates",
+   "Oman",
+   "Bahrain",
+   "Yemen",
+   "Palestine"
+  ]
+ },
+ {
+  "region": "CA",
+  "countries": [
+   "Turkey",
+   "Georgia",
+   "Armenia",
+   "Azerbaijan",
+   "Kazakhstan",
+   "Uzbekistan",
+   "Turkmenistan",
+   "Tajikistan"
+  ]
+ },
+ {
+  "region": "CA",
+  "countries": [
+   "Kyrgyzstan",
+   "Iran"
+  ]
+ },
+ {
+  "region": "NA",
+  "countries": [
+   "Egypt",
+   "Sudan",
+   "Libya",
+   "Algeria",
+   "Tunisia",
+   "Morocco",
+   "Mauritania",
+   "Western Sahara"
+  ]
+ },
+ {
+  "region": "NA",
+  "countries": [
+   "Ethiopia",
+   "Eritrea",
+   "Djibouti",
+   "Somalia",
+   "Somaliland",
+   "South Sudan",
+   "Seychelles",
+   "Mauritius"
+  ]
+ },
+ {
+  "region": "WA",
+  "countries": [
+   "Nigeria",
+   "Ghana",
+   "C\u00f4te d'Ivoire",
+   "Benin",
+   "Togo",
+   "Burkina Faso",
+   "Mali",
+   "Guinea"
+  ]
+ },
+ {
+  "region": "WA",
+  "countries": [
+   "Guinea-Bissau",
+   "Senegal",
+   "Gambia",
+   "Sierra Leone",
+   "Liberia",
+   "Niger"
+  ]
+ },
+ {
+  "region": "CA2",
+  "countries": [
+   "Cameroon",
+   "Central African Republic",
+   "Chad",
+   "Republic of the Congo",
+   "Congo (DRC)",
+   "Gabon",
+   "Equatorial Guinea",
+   "Sao Tome & Principe"
+  ]
+ },
+ {
+  "region": "CA2",
+  "countries": [
+   "Rwanda",
+   "Burundi",
+   "Uganda",
+   "Tanzania",
+   "Kenya",
+   "Comoros",
+   "Madagascar",
+   "Zambia"
+  ]
+ },
+ {
+  "region": "CA2",
+  "countries": [
+   "Malawi",
+   "Mozambique",
+   "Angola",
+   "Botswana",
+   "Namibia",
+   "Zimbabwe",
+   "Eswatini",
+   "Lesotho"
+  ]
+ },
+ {
+  "region": "CA2",
+  "countries": [
+   "South Africa"
+  ]
+ },
+ {
+  "region": "EU_N",
+  "countries": [
+   "Ireland",
+   "United Kingdom",
+   "Iceland",
+   "Norway",
+   "Finland",
+   "Sweden",
+   "Denmark",
+   "Estonia"
+  ]
+ },
+ {
+  "region": "EU_N",
+  "countries": [
+   "Latvia",
+   "Lithuania"
+  ]
+ },
+ {
+  "region": "EU_B",
+  "countries": [
+   "Netherlands",
+   "Belgium",
+   "Luxembourg",
+   "France",
+   "Germany",
+   "Austria",
+   "Switzerland",
+   "Liechtenstein"
+  ]
+ },
+ {
+  "region": "EU_B",
+  "countries": [
+   "Monaco",
+   "San Marino",
+   "Andorra"
+  ]
+ },
+ {
+  "region": "EU_C",
+  "countries": [
+   "Poland",
+   "Czechia",
+   "Slovakia",
+   "Hungary",
+   "Slovenia",
+   "Croatia",
+   "Bosnia & Herzegovina",
+   "Serbia"
+  ]
+ },
+ {
+  "region": "EU_C",
+  "countries": [
+   "Montenegro",
+   "North Macedonia",
+   "Albania",
+   "Moldova",
+   "Ukraine",
+   "Belarus",
+   "Romania",
+   "Bulgaria"
+  ]
+ },
+ {
+  "region": "EU_C",
+  "countries": [
+   "Greece",
+   "Cyprus",
+   "Malta"
+  ]
+ },
+ {
+  "region": "EU_S",
+  "countries": [
+   "Spain",
+   "Portugal",
+   "Italy",
+   "Vatican City"
+  ]
+ },
+ {
+  "region": "AM_CARIB",
+  "countries": [
+   "Canada",
+   "United States",
+   "Cuba",
+   "Jamaica",
+   "Bahamas",
+   "Barbados",
+   "Trinidad & Tobago",
+   "Antigua & Barbuda"
+  ]
+ },
+ {
+  "region": "AM_CARIB",
+  "countries": [
+   "Grenada",
+   "St. Kitts & Nevis",
+   "St. Lucia",
+   "St. Vincent & Grenadines",
+   "Dominica",
+   "Dominican Republic",
+   "Haiti"
+  ]
+ },
+ {
+  "region": "AM_CENTRAL",
+  "countries": [
+   "Mexico",
+   "Guatemala",
+   "Belize",
+   "El Salvador",
+   "Honduras",
+   "Nicaragua",
+   "Costa Rica",
+   "Panama"
+  ]
+ },
+ {
+  "region": "AM_SOUTH",
+  "countries": [
+   "Colombia",
+   "Venezuela",
+   "Ecuador",
+   "Peru",
+   "Bolivia",
+   "Guyana",
+   "Suriname",
+   "Brazil"
+  ]
+ },
+ {
+  "region": "AM_SOUTH",
+  "countries": [
+   "Paraguay",
+   "Uruguay",
+   "Argentina",
+   "Chile"
+  ]
+ },
+ {
+  "region": "EXTRA",
+  "countries": [
+   "North Korea",
+   "Russia"
+  ]
+ }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "country": "Belize",
+    "foreign_no_presence": "yes",
+    "official_entity": "NGO as a company limited by guarantee, Companies Act 2022 (No. 11 of 2022), registered with BCCAR",
+    "fee_usd": "200",
+    "time_to_register": "2-4 weeks",
+    "gfn_ok": true,
+    "key_check": "NPO status must be separately registered with the Attorney General's Ministry after incorporation",
+    "source": "https://www.belizefsc.org.bz/wp-content/uploads/2025/04/FSC_BCCAR-NPO-Webinar_23-04-2024.pdf"
+  },
+  {
+    "country": "Colombia",
+    "foreign_no_presence": "partial",
+    "official_entity": "Fundacion (ESAL) under Ley 1258 de 2008, registered with the Camera de Comercio",
+    "fee_usd": "150",
+    "time_to_register": "2-4 weeks",
+    "gfn_ok": true,
+    "key_check": "Constitution deed must be signed before a Colombian notary; remote founders need an apostilled poder especial",
+    "source": "https://www.minjusticia.gov.co/programas-co/LegalApp/Paginas/Que-debo-hacer-para-constituir-una-fundacion.aspx"
+  },
+  {
+    "country": "Namibia",
+    "foreign_no_presence": "yes",
+    "official_entity": "Non-Profit Company (NPC) under Companies Act 28 of 2004, registered with BIPA/NamRA",
+    "fee_usd": "25",
+    "time_to_register": "1-4 weeks",
+    "gfn_ok": true,
+    "key_check": "Documents must be notarized by a Namibian notary; non-resident directors allowed, a local agent can sign",
+    "source": "https://www.bipa.na/business-registration/companies/section-21ngo/"
+  },
+  {
+    "country": "Belgium",
+    "foreign_no_presence": "yes",
+    "official_entity": "ASBL under law of 27 June 1921 (amended 28 June 1984), registered with BCE (Bank-Carrefour des Entreprises)",
+    "fee_usd": "215",
+    "time_to_register": "2-6 weeks",
+    "gfn_ok": true,
+    "key_check": "Authentic notarial deed required; remote founders act through an apostilled notarial power of attorney",
+    "source": "https://justice.belgium.be/fr/themes_et_dossiers/societes_associations_et_fondations/associations/asbl"
+  },
+  {
+    "country": "Austria",
+    "foreign_no_presence": "yes",
+    "official_entity": "Verein under the Vereinsrechtsgesetz 2002 (VereinsG), notified to the district Associations Authority (Vereinsbehoerde)",
+    "fee_usd": "40",
+    "time_to_register": "4-6 weeks",
+    "gfn_ok": true,
+    "key_check": "No citizenship or residency requirement; district authority reviews within 4 weeks, extendable to 6",
+    "source": "https://www.oesterreich.gv.at/Seite.220300"
+  }
+]

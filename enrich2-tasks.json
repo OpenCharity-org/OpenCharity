@@ -1,0 +1,1130 @@
+[
+ {
+  "country": "Cuba",
+  "entity_types": "None — no private charitable sector; state-affiliated solidarity funds only",
+  "cost_time": "N/A — not available to foreigners",
+  "key_req": "No charitable registration is open to foreign nationals; all civil-society bodies must be state-sanctioned.",
+  "notes": "Foreign formation is effectively barred; use a Canada/US entity and partner with a local state-linked body instead. | confirm prior - no foreign-accessible registration path; use a Canada/US entity partnering with a state-linked body",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Jamaica",
+  "entity_types": "Company limited by guarantee, charitable trust (deed), nonprofit corporation",
+  "cost_time": "Filing ~US$50–150 + agent US$500–1,500; 2–4 weeks",
+  "key_req": "Jamaican registered office and local company secretary/agent; no citizenship requirement for directors; English.",
+  "notes": "No formal charity status, regulator, or donation tax-deductibility regime; most foreign founders use a company limited by guarantee + local manager. | prior claim of 'no charity regulator/tax-deduction regime' is outdated: Charities Act 2013 registration (RCOs) exists with tax-deductible status",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Bahamas",
+  "entity_types": "Company limited by guarantee (Companies Act, 2019), charitable trust, nonprofit society",
+  "cost_time": "~US$300–1,000 incl. agent; 1–3 weeks",
+  "key_req": "Bahamas registered office and licensed registered agent; no residency requirement for directors; English.",
+  "notes": "Strong offshore-agent ecosystem; no income tax so no tax-exempt registration is needed; donations are not tax-deductible for donors. | confirm prior - Companies Act 2019 CLBG via Corporate Business Registry with licensed agent; no charity tax regime",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Barbados",
+  "entity_types": "Company limited by guarantee (Companies Act, 2016), charitable trust",
+  "cost_time": "~US$300–800 incl. agent; 1–3 weeks",
+  "key_req": "Local registered office + agent; no citizenship requirement for directors; English.",
+  "notes": "No dedicated charity regulator; standard expat path is a company limited by guarantee with a local secretary. | confirm prior - Companies Act 2016 CLBG via Business Barbados (CAIPO) with local agent; standard expat path",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Trinidad & Tobago",
+  "entity_types": "Company limited by guarantee (Companies Act, 2019), charitable trust, society",
+  "cost_time": "~US$300–800 incl. agent; 2–6 weeks",
+  "key_req": "T&T registered office + local agent; no resident-director requirement; English.",
+  "notes": "Gifts to approved charitable organizations are income-tax deductible (T&T Income Tax Act); no formal charity status beyond government approval. | confirm prior - Companies Act 2019 CLBG plus separate charitable-status application under Income Tax Act s.76(3)(d)",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Antigua & Barbuda",
+  "entity_types": "Company limited by guarantee (Companies Act), charitable trust",
+  "cost_time": "~US$300–800 incl. agent; 1–3 weeks",
+  "key_req": "Local registered office + registered agent; no residency requirement for directors; English.",
+  "notes": "Established offshore-agent services make remote formation straightforward; no charity tax regime. | confirm prior - Companies Act 1995 CLBG via ABIPCO with licensed agent; remote formation straightforward",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Grenada",
+  "entity_types": "Company limited by guarantee (Companies Act), charitable trust",
+  "cost_time": "~US$300–800 incl. agent; 1–4 weeks",
+  "key_req": "Local registered office + agent; no residency requirement for directors; English.",
+  "notes": "Agent services in English; little charity-specific legislation; company limited by guarantee is the standard vehicle. | confirm prior: CLBG standard vehicle, agent fees included; little charity-specific legislation; no director residency rule",
+  "difficulty": "medium"
+ },
+ {
+  "country": "St. Kitts & Nevis",
+  "entity_types": "Company limited by guarantee (Companies Act), charitable trust",
+  "cost_time": "~US$300–800 incl. agent; 1–3 weeks",
+  "key_req": "Local registered office + registered agent; no residency requirement for directors; English.",
+  "notes": "Strong offshore-agent infrastructure; remote formation in English is practical. | confirm prior: CLBG/ordinary company EC$270 (~US$100) official fee, no resident-director rule, fast with local agent",
+  "difficulty": "medium"
+ },
+ {
+  "country": "St. Lucia",
+  "entity_types": "Company limited by guarantee (Companies Act, 2015), charitable trust",
+  "cost_time": "~US$300–800 incl. agent; 1–4 weeks",
+  "key_req": "Local registered office + agent; no residency requirement for directors; English.",
+  "notes": "Agent services available; no charity regulator; English-language filings. | confirm prior structure; official certificate of incorporation fee is EC$750 under Companies Act Part 9, higher than implied",
+  "difficulty": "medium"
+ },
+ {
+  "country": "St. Vincent & Grenadines",
+  "entity_types": "Company limited by guarantee (Companies Act), charitable trust",
+  "cost_time": "~US$300–800 incl. agent; 1–4 weeks",
+  "key_req": "Local registered office + agent; no residency requirement for directors; English.",
+  "notes": "Agent services in English; minimal charity-specific legislation; company limited by guarantee is the standard form. | confirm prior; CIPO official fees: EC$950 incorporation + EC$190 non-profit fee, so official fee higher than ~$300-800 suggests",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Dominica",
+  "entity_types": "Company limited by guarantee (Companies Act), charitable trust",
+  "cost_time": "~US$300–800 incl. agent; 1–4 weeks",
+  "key_req": "Local registered office + agent; no residency requirement for directors; English.",
+  "notes": "Offshore-agent ecosystem; English; no formal charity status. | confirm prior: CLBG standard vehicle; official registration fee low (~EC$150), US$300-800 total is mostly agent cost",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Dominican Republic",
+  "entity_types": "Private foundation (fundación, Law 479-08), association (asociación)",
+  "cost_time": "~US$500–1,500 incl. notary/attorney; 4–10 weeks",
+  "key_req": "Notarial deed (acta notarial) — in person or via apostilled special power — local seat and local fiscal; Spanish-language documents.",
+  "notes": "Spanish bureaucracy; the notarial deed (in person or certified power of attorney) is the main hurdle; Chamber of Commerce registration and RNC tax ID required. | correct prior: core charitable vehicle is the ASFL (Law 122-05), not the Law 479-08 fundación; notary hurdle confirmed",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Haiti",
+  "entity_types": "Declared association (association déclarée, Law No. 30 of 1943), NGO branch/representative office",
+  "cost_time": "~US$500–2,000 legal/notary fees; 4–12 weeks",
+  "key_req": "Founding deed before a Haitian notary, physical seat in Haiti, local legal representative/director; French.",
+  "notes": "French-language notarial deed plus registration with the public prosecutor; a local partner is effectively required; high security/political risk. | confirm prior: Law 30 of 1943 association plus 1989 NGO decree (MPCE) govern; very hard for remote founder, local partner needed",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Mexico",
+  "entity_types": "asociación civil (AC); fundación (Civil Code); fideicomiso (trust)",
+  "cost_time": "US$500–1,500, 2–6 weeks (donataria status: months–1+ year)",
+  "key_req": "3+ founders, notarized Spanish-language articles, Mexican legal address; no citizenship requirement, then SAT RFC registration.",
+  "notes": "Donataria autorizada (DA) status with SAT is a separate multi-month step required for tax-deductible donations; English-speaking notary/lawyer services readily available in Mexico City. | confirm prior; AC may be formed by 2+ persons (Federal Civil Code), not 3+; DA status remains the key extra step",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Guatemala",
+  "entity_types": "asociación sin fines de lucro; fundación; fideicomiso (trust)",
+  "cost_time": "US$500–1,200, 3–6 weeks",
+  "key_req": "Notarized Spanish articles, Guatemalan legal address, Registro de Comercio filing; foreign founders permitted.",
+  "notes": "No dedicated charity registry or donor tax-benefit regime; notary and registry processes are slow; everything in Spanish. | correct prior: there IS a dedicated NGO registry (Ley 94-95, MRE) and a donor deduction via SAT tax-exempt status",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Belize",
+  "entity_types": "non-profit company (limited by guarantee); registered charity (Charities Act 2020); trust",
+  "cost_time": "US$300–700, 1–3 weeks",
+  "key_req": "2+ directors (foreigners OK, no residency requirement), local registered office and company secretary via local agent; documents in English.",
+  "notes": "English-speaking, simple Companies Registry; most expats form the non-profit company first and add charity registration later; local service providers handle everything. | confirm prior; standard vehicle is company limited by guarantee (Companies Act Ch. 250); charity status is a later AG licensing step | Verified: NPO status must be separately registered with the Attorney General's Ministry after incorporation",
+  "difficulty": "easy"
+ },
+ {
+  "country": "El Salvador",
+  "entity_types": "asociación sin fines de lucro; fundación (Ley 2011); fideicomiso (trust)",
+  "cost_time": "US$500–1,000, 4–8 weeks",
+  "key_req": "Spanish-language articles, local address, registry filing under the 2011 Associations and Foundations Law; foreign founders permitted.",
+  "notes": "Donor tax benefits are limited; NGOs receiving international funds should also register in the Ministry of Foreign Affairs NGO directory. | confirm prior; fundacion (Ley 2011) can be formed by one foreign founder via local counsel; donor donations are deductible, not 'limited'",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Honduras",
+  "entity_types": "fundación; asociación; ONGD (registered development NGO)",
+  "cost_time": "US$500–1,500, 4–8 weeks",
+  "key_req": "Spanish articles, local registered office, Registro de Personas Morales plus Registro de ONGD (Chancillería) filing for NGOs.",
+  "notes": "International ONGDs must register in the Registro Público de ONGD; moderate bureaucracy; all filings in Spanish. | confirm prior; personality granted by Poder Judicial (Chancilleria) under the 2011 OSC law covering asociaciones and fundaciones",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Nicaragua",
+  "entity_types": "asociación; fundación (Ley de Fundaciones); fideicomiso (trust)",
+  "cost_time": "US$300–800, 4–8 weeks (if granted)",
+  "key_req": "Spanish articles, local address, Registro Nacional filing; formally open to foreign founders.",
+  "notes": "Avoid: government has dissolved 5,700+ NGO legal personalities since 2018, including foreign-funded ones; laws target foreign-financed civil society, so an Australian-founded charity faces extreme cancellation/political risk. | confirm prior 'very hard'; add Ley 1115 (2022) as the controlling OSFL regulation; mass cancellations by Ministry of Governance decrees continue",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Costa Rica",
+  "entity_types": "asociación o fundación sin fines de lucro (single law); fideicomiso (trust)",
+  "cost_time": "US$1,000–2,500, 4–8 weeks (tax exemption: months)",
+  "key_req": "Notarized Spanish articles, local registered office, Registro de Comercio; 3+ members for an asociación, single founder for a fundación.",
+  "notes": "Stable, professional services widely available in English; donor tax exemption requires separate Ministry of Finance (MINFIN) approval. | correct prior: asociacion requires 5+ founders (Ley 218), not 3+; donor deduction needs the interes publico decree, MINFIN covers entity exemption",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Panama",
+  "entity_types": "fundación de interés privado (FIP); asociación; fideicomiso (trust)",
+  "cost_time": "US$2,500–4,500, 4–8 weeks",
+  "key_req": "Spanish articles and name, local registered office, board of 3+ members, IFPF registration; single foreign founder permitted, no local nationals required.",
+  "notes": "The FIP (Ley No. 8 de 2000) is the most popular expat foundation vehicle in Latin America; IFPF is a specialized fast registry; strong English-language support. | correct prior: FIP is governed by Ley 25 de 1995 (not 'Ley 8 de 2000'); registered in Registro Publico de la Propiedad, not 'IFPF' | Verified: Personero legal extranjero debe residir en Panamá; acta protocolizada en notaría y Tasa Única B/.400",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Colombia",
+  "entity_types": "Fundación (private foundation), Asociación (incorporated association), Corporación (2016 hybrid)",
+  "cost_time": "US$300–600 incl. lawyer, 2–6 weeks",
+  "key_req": "No nationality requirement for board; Colombian registered address, Colombian lawyer to execute the public deed and register with the Cámara de Comercio; filings in Spanish.",
+  "notes": "Most expat-friendly in the region; foreigners can be president/directors; Bogotá has strong English-speaking legal market; donation tax deductions require separate DIAN certification; 2023 NGO-law reforms (Ley 2287/2022) added transparency reporting for foreign-funded entities. | Prior context confirmed; deduction is a separate DIAN certification step, not automatic; Ley 2287/2022 adds transparency duties | Verified: Constitution deed must be signed before a Colombian notary; remote founders need an apostilled poder especial",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Venezuela",
+  "entity_types": "Fundación (private foundation), Asociación (incorporated association), Corporación (corporation)",
+  "cost_time": "US$1,000–3,000 incl. lawyer, 3–6+ months",
+  "key_req": "Local (Venezuelan) resident officers and registered office, Venezuelan lawyer, notarized deed; severe currency controls (CADIVI/SICR) on bank accounts and foreign donations.",
+  "notes": "Major political/economic risk; 2010 Ley de ONGs lets the state restrict entities; foreign funding heavily scrutinized; most international NGOs operate through foreign legal entities, not Venezuelan ones. | Prior context confirmed; 2024/2025 law + donor restrictions make it the hardest in the region; most INGOs use foreign entities",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Ecuador",
+  "entity_types": "Fundación (private foundation), Asociación civil (incorporated association), Institución de utilidad pública (IUP, public-benefit institution)",
+  "cost_time": "US$500–1,500 incl. lawyer, 2–3 months",
+  "key_req": "Minimum 3 founders; Ecuadorian resident president/board and local address; Ecuadorian lawyer; 2023 reform (Ley 2023-13 / COEP regime) added registration and foreign-funding reporting obligations.",
+  "notes": "Foreign founders permitted as members/board; Spanish-language documents; IUP status adds time and a public-benefit declaration; banking and tax (SRI) onboarding is slow. | Prior context confirmed; 2025 Social Transparency Organic Law adds registration + foreign-funding controls (30% tax, suspension)",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Peru",
+  "entity_types": "Asociación civil (civil association), Fundación (private foundation), Instituto (non-profit institute)",
+  "cost_time": "US$300–800 incl. lawyer, 2–6 weeks",
+  "key_req": "Public deed registered with SUNARP; local registered office; president/legal rep should be resident in Peru for banking; filings in Spanish.",
+  "notes": "No nationality requirement; foreign founders allowed; tax exemption (exoneración) from SUNAT is separate, discretionary and needs annual reporting; Lima is the practical hub; English not official. | Prior context confirmed; deduction cap is 10% of net taxable income (PwC); SUNAT tax exemption is separate and discretionary",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Bolivia",
+  "entity_types": "Fundación (private foundation), Asociación (social organization), Cooperativa (cooperative)",
+  "cost_time": "US$400–1,000 incl. lawyer, 2–4 months",
+  "key_req": "Resident (Bolivian) officers, local address, notarized deed; 2023 NGO law (Ley 1417, replacing 1993 Ley 1475) requires registration and restricts foreign funding, advocacy and political activity of foreign-funded entities; Spanish only.",
+  "notes": "Foreign NGOs must register with the Ministry of Foreign Affairs (Cancillería); 2023 law caps foreign government funding for certain activities and tightens oversight; heavy Spanish-language bureaucracy; few English speakers. | Prior context confirmed; Ley 1417 (2023) replaces Ley 1475 (1993); foreign NGOs register with Ministry of Foreign Affairs",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Guyana",
+  "entity_types": "Non-profit company (NPC, 2018 Act), Friendly society (Friendly Societies Act), Co-operative society",
+  "cost_time": "US$300–800 incl. lawyer, 1–3 months",
+  "key_req": "Guyanese registered office and resident directors; English is official; no citizenship requirement for board but a local presence is needed; no restrictions on foreign donations.",
+  "notes": "Easiest bureaucracy in the sub-region and English-speaking; non-profits face extra scrutiny at formation and take longer than companies; tax exemption is discretionary (Commissioner of Inland Revenue); friendly societies are the most common non-profit form. | Prior context confirmed; English-speaking, easiest bureaucracy in sub-region; tax exemption discretionary; Companies Act 1991",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Suriname",
+  "entity_types": "Stichting (Dutch-style private foundation), Vereniging (association)",
+  "cost_time": "US$500–1,500 incl. notary/lawyer, 1–3 months",
+  "key_req": "Surinamese notary (deeds in Dutch), local board/office in practice; 2013 Dutch-style Civil Code permits stichting with foreign elements but a local notary and presence are required in practice; Dutch language barrier.",
+  "notes": "Dutch is the working language — the main barrier; small legal market; banking requires a local presence; few English-speaking professionals; new Civil Code (in force 2013) modernized foundation law but practice is conservative. | Prior context confirmed; 2013 Civil Code modernized foundation law; notary deed + local presence required in practice",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Brazil",
+  "entity_types": "Associação (association), Fundação (private foundation), OSC/OSCIP (social organization, Law 9.093/1995)",
+  "cost_time": "US$500–1,500 incl. lawyer, 2–4 months",
+  "key_req": "Minimum 2 members (association) or 1 founder (foundation); Brazilian CNPJ and local address; notarial deed registered with a cartório; foreign founder may join the board; filings in Portuguese.",
+  "notes": "Heavy red tape (famous bureaucracy); main hurdles are getting a CPF and a bank account (foreign-inflow/câmbio rules); OSCIP certification gives donation tax deductions; 'instituição de utilidade pública' (federal/municipal) is a long, discretionary extra step. | Prior context confirmed; deduction is 6% individual / 2% corporate; OSCIP certification required for donor deductions",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Paraguay",
+  "entity_types": "Fundación (private foundation), Asociación civil (civil association), Cooperativa (cooperative)",
+  "cost_time": "US$300–800 incl. lawyer, 1–3 months",
+  "key_req": "Local registered office and a local representative; notarized deed; founder may be foreign; registration with the relevant ministry/civil registry; Spanish documents.",
+  "notes": "Under-regulated and relatively tolerant of foreign founders, but the legal market is small and Spanish-only; tax exemption requires separate certification; fewer English-speaking lawyers than neighboring countries; slower administration than Chile/Argentina. | Confirm prior; foundation route needs US$400 min. capital in a capital-integration account; NGO route via Min. Interior fee.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Uruguay",
+  "entity_types": "Asociación (association), Fundación (private foundation, public or private interest)",
+  "cost_time": "US$200–600 incl. lawyer, 2–6 weeks",
+  "key_req": "Minimum 3 persons (association); local registered office; foundation requires a local representative; registration with the Registro Nacional de Personas Jurídicas; Spanish filings.",
+  "notes": "Very stable, low political risk; foundations enjoy tax incentives (50% exemption on qualifying income); English reasonably available in Montevideo business circles; 'declaración de utilidad pública' optional. | Confirm prior (association from 3 members; foundation needs local rep; foundations enjoy tax incentives).",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Argentina",
+  "entity_types": "Asociación civil (civil association, Ley 23.851), Fundación (private foundation, Ley 27.290/2016), Cooperativa (cooperative)",
+  "cost_time": "US$200–500 incl. lawyer, 2–6 weeks",
+  "key_req": "Local registered office and resident director/legal rep; foreign founder/trustees allowed; notarial deed registered with the commercial registry (personas jurídicas); Spanish filings.",
+  "notes": "Most expat-friendly bureaucracy in South America; English widely spoken in Buenos Aires; foreign founders can serve on boards; donation tax exemption is a separate AFIP step ('Ingreso a Régimen de Entidades Exentas', Ley 24.976); 2016 foundation law made fundaciones cheaper and faster than the old regime. | Confirm mostly; foundation basis is now the Commercial Code since the 2019 reform (Ley 27.610) — Ley 27.290 was absorbed into it. | Verified: Sede social en CABA y patrimonio inicial mínimo de 10 salarios mínimos viales y móviles (Res. IGJ 2/2023)",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Chile",
+  "entity_types": "Asociación (association), Corporación (corporation), Fundación de derecho privado (private foundation, Ley 20.839/2015)",
+  "cost_time": "US$200–500 incl. lawyer, 1–3 weeks",
+  "key_req": "Chilean registered office; board may include foreigners; legal representative should be resident in Chile; public deed registered with the Conservador de Bienes Raíces; Spanish filings.",
+  "notes": "Fast, clean bureaucracy; the de facto hub for LATAM expats and many run foundations/associations there; English widely used in Santiago legal market; donor tax deduction requires 'calificación' from the tax authority; 2015 law modernized foundations. | Confirm prior (asociación/corporación per Ley 20.500, fundación per Ley 20.839/2015; fast, easy, US$200-500, 1-3 weeks). | Verified: Constitución por escritura pública y domicilio en Chile; desde 2023 se inscribe en la Secretaría Municipal",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Singapore",
+  "entity_types": "Registered charity (Registrar of Charities), company incorporated by guarantee, society",
+  "cost_time": "S$315–1,500 (filing + registered agent), 1–4 weeks",
+  "key_req": "At least one director/trustee resident in Singapore, local registered office (agent address OK), English-language constitution.",
+  "notes": "No foreign-formation ban; English-language bureaucracy; most region-friendly setup; separate IRC tax-exempt (s16/s17) and PCDU applications follow incorporation. | Confirm CLG ≥1 resident director; IRC s16 charity registration needs ≥2 of ≥3 board SG citizens/PRs — prior '≥1 trustee' understates",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Malaysia",
+  "entity_types": "Society (Societies Act 1966), charitable trust, company incorporated by guarantee",
+  "cost_time": "RM100–2,000 with agent, 2–8 weeks",
+  "key_req": "Local registered office, at least one local resident officer (company: resident director; society: Malaysian officebearers), English filings accepted.",
+  "notes": "Society is the common expat-charity form; registration in English or Bahasa; straightforward via local secretary/agent. | Confirm Societies Act 1966 (Act 32); ≥7 individual members required; ≥1 local resident officer; RM100–2,000 with agent",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Indonesia",
+  "entity_types": "Yayasan (foundation), perkumpulan (association)",
+  "cost_time": "IDR 5–20M (≈A$400–1,600) with notary, 1–3 months",
+  "key_req": "Individual foreign founder must have resided in Indonesia 5 consecutive years; foreign board members need Ministry of Foreign Affairs recommendation; local notary deed required.",
+  "notes": "Effectively foreigners use an Indonesian corporate (PT) or local individual as founder of record, or partner with an existing yayasan; Bahasa Indonesia dominant. | Confirm 5-consecutive-years residence for foreign founder; foreigner may sit on board (pengurus) without residing; all-Indonesian founders min IDR 100M assets",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Thailand",
+  "entity_types": "Foundation (Foundation Act 2007), registered NGO/society, charitable trust",
+  "cost_time": "THB 30,000–100,000 with local counsel, 1–3 months",
+  "key_req": "Majority of foundation board Thai nationals, local registered office, Thai-language documents, in-person notarisation steps.",
+  "notes": "Most foreigners establish a foundation with all-Thai board and act as funder/advisor; high political sensitivity (NGO rules, lèse-majesté) — avoid politically active purposes. | Confirm foundation min assets THB 500k (250k cash); official fee only ~THB 210 — prior THB 30k–100k figure is counsel cost",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Vietnam",
+  "entity_types": "Social charity organisation (local NGO), INGO representative office",
+  "cost_time": "N/A for individual foreign founder (INGO route: 3–6 months)",
+  "key_req": "Only Vietnamese social organisations can be formed; foreign individuals cannot found a local charity; INGO registration needs MFA/COMINGO approval and foreign funding source.",
+  "notes": "Practical route is partnering with a Vietnamese social organisation or registering in Singapore; strict annual reporting; no local fundraising by INGOs. | Confirm; INGO limited to one rep office (Hanoi, HCMC, Da Nang) and foreign-only funding under Decree 58 (2022)",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Philippines",
+  "entity_types": "Non-stock non-profit corporation (SEC), charitable trust, association",
+  "cost_time": "PHP 60,000–150,000 with counsel, 2–6 months",
+  "key_req": "At least two-thirds of directors of a non-stock corporation must be Filipino citizens resident in the Philippines; trust trustees likewise Filipino; local office address.",
+  "notes": "English is an official language — filings in English; popular expat hub; common structure is a Filipino-majority board with the foreigner as incorporator/trust donor. | Confirm 2/3 resident-Filipino director rule (5–15 directors); trust needs Filipino trustees; branch of foreign NSS not tax-exempt",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Brunei",
+  "entity_types": "Society (Societies Act), charitable trust (registered with Registrar of Societies)",
+  "cost_time": "BND 100–500 + legal fees, 1–3 months",
+  "key_req": "Local registered office, majority of office-bearers Bruneian citizens, in-person registry steps; no online filing.",
+  "notes": "Very small, closed registration culture aimed at locals; English is official so language is fine, but foreign-led charities are rare — most operate through existing local bodies. | confirm prior (very hard, local majority/resident officers, in-person); society is deemed established only if an office-bearer/member resides in Brunei (s.6(1) 2005 gazette).",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Timor-Leste",
+  "entity_types": "Association (2009 Law on Associations), NGO, foundation",
+  "cost_time": "USD 200–500 + legal fees, 2–6 months",
+  "key_req": "Physical local office, registered local address and national contact officer; filings in Tetum/Portuguese/English; slow manual process.",
+  "notes": "Foreign members are permitted under the 2009 law and INGOs do register here; bureaucracy is slow and requires a local agent; less predictable than Singapore/Malaysia. | governing instrument is Decree-Law No. 5/2005 (non-profit corporate bodies), not a 2009 Law on Associations; foreign corporate bodies may register if they prove legal existence and have a permanent local representative.",
+  "difficulty": "hard"
+ },
+ {
+  "country": "New Zealand",
+  "entity_types": "Incorporated society, company limited by guarantee, registered trust",
+  "cost_time": "NZ$120-160, ~1-2 weeks",
+  "key_req": "Charity Commission registration (free, online); NZ-based charity board majority for tax status; no strict local-citizen rule for society incorporation",
+  "notes": "Very straightforward English-language process; foreign founders commonly use an incorporated society with some NZ-resident officers | confirm prior; verified incorporation fee NZ$88.89 (Incorporated Societies Regulations 2023) and free online charity registration | Verified: Oficina de registro en Nueva Zelanda requerida (Companies Act); los oficiales no necesitan residencia",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Fiji",
+  "entity_types": "Charitable trust (registered trust), company limited by guarantee",
+  "cost_time": "FJ$100-500, 2-6 weeks",
+  "key_req": "CLBG: 3 directors, 2 ordinarily resident in Fiji; charitable trust: 2+ trustees + local registered address; English widely used",
+  "notes": "Trusts registered with FRCS/Registrar; CLBG route is the common NGO structure; appointing two resident Fijian directors is the main hurdle | confirm prior: 2-of-3 resident-director rule verified against Companies Act 2015 ss 465-466 guidance",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Papua New Guinea",
+  "entity_types": "Non-commercial company limited by guarantee, registered association (NGO)",
+  "cost_time": "PGK 1,000-3,000, 6-12 weeks",
+  "key_req": "Resident company secretary in PNG; 7+ members with 3+ PNG residents for non-commercial company; local registered office",
+  "notes": "Bureaucracy heavy, English official language but processes slow; most international NGOs register via a PNG partner or use an Australian-registered entity operating cross-border | confirm prior; note new Associations Incorporation Act 2023 replaces 1966 Act, regulations commence 1 July 2026",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Samoa",
+  "entity_types": "Company limited by guarantee, registered trust",
+  "cost_time": "WST 100-500, 4-8 weeks",
+  "key_req": "At least 1 director resident in Samoa; local registered office/agent; 2+ trustees for a trust",
+  "notes": "Small registry, English official; foreign trustees allowed with a local resident officer; SIFA handles international structures (not for local charities) | confirm prior; verified company registration fee WST 250 from MCIL fee schedule (prior WST 100-500 range plausible)",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Tonga",
+  "entity_types": "Registered trust, company (limited)",
+  "cost_time": "TOP 100-500, 4-10 weeks",
+  "key_req": "Resident trustee/director and local office; registration with Ministry of Justice/trust registry",
+  "notes": "Small, insular bureaucracy; limited precedent for foreign-registered charities; political sensitivity around foreign NGOs - community consent often expected | confirm prior: resident service agent requirement verified in Companies (Amendment) Regulations 2014",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Vanuatu",
+  "entity_types": "Company limited by guarantee, registered trust",
+  "cost_time": "VUV 5,000-20,000, 2-6 weeks",
+  "key_req": "CLBG needs local registered office/agent; 1+ resident director recommended; English widely used",
+  "notes": "Relatively permissive offshore-friendly registry; post-2021 coup political risk noted by some aid donors | correct prior: verified registration fee is VUV 35,000 (VFSC fee schedule), not VUV 5,000-20,000; 1+ resident director required",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Solomon Islands",
+  "entity_types": "Charitable trust (registered), company limited by guarantee",
+  "cost_time": "SBD 300-1,500, 4-8 weeks",
+  "key_req": "Charitable trusts must be registered with charitable purpose; local registered office and resident officer recommended; 2+ trustees",
+  "notes": "English official, cooperative registry; foreign charitable trusts common (many Pacific-worker charities registered here); political instability occasional | confirm prior: Companies Act 2009 regime, online Company Haus registration plus Treasury fee payment",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Kiribati",
+  "entity_types": "Registered trust, company (limited)",
+  "cost_time": "AUD 200-600, 6-12 weeks",
+  "key_req": "Local registered office, resident trustee/director; small central registry in Tarawa",
+  "notes": "Very small registry with limited published process; English official but slow administration; few foreign charity registrations on record | confirm prior (hard, AUD 200-600, 6-12 weeks); Companies Act 2021 confirmed via ILO NATLEX; resident officer requirement verified",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Nauru",
+  "entity_types": "Registered trust, company (offshore IBC available)",
+  "cost_time": "AUD 500-1,500 via agent, 2-6 weeks",
+  "key_req": "Minimal corporate framework; no established charitable registration regime; local agent required for any entity",
+  "notes": "No dedicated charity register; foreign founders can only form IBC/trust via offshore service providers; not a practical charity jurisdiction | confirm prior (no charity register; IBC-only via agent); formation often quoted as 2 business days, realistically 2-4 weeks with agent",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Tuvalu",
+  "entity_types": "Registered trust, company",
+  "cost_time": "TVD 100-500 if permitted, 4-12 weeks",
+  "key_req": "Business registration effectively restricted to Tuvaluan citizens or Tuvalu-based businesses (per Ministry of Finance); local officers and office required",
+  "notes": "Explicit non-citizen registration restrictions; no practical foreign charity pathway; use a partner in Fiji/NZ instead | confirm prior (citizen-restricted local registration); adds TVD 100 local fee per Ministry of Finance; 2009 International Companies Act allows offshore IBC",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Marshall Islands",
+  "entity_types": "Registered trust (trust company regime), company, LLC",
+  "cost_time": "USD 300-800, 1-3 weeks",
+  "key_req": "Local registered agent (default: The Trust Company of the Marshall Islands, Inc.) for non-residents; no local directors required for most entities",
+  "notes": "Well-developed English-language trust/registered-agent infrastructure; charitable purposes uncommon but trust structures easy to set up | confirm prior (medium, USD 300-800 incl. agent, 1-3 weeks); registry (IRI) and default registered agent confirmed; agent packages quoted from ~US$2,190",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Micronesia",
+  "entity_types": "Registered trust, corporation/LLC (state-level)",
+  "cost_time": "USD 200-600, 2-6 weeks",
+  "key_req": "Registration in one of 4 states (or federally) with a local registered agent; no local-citizen director requirement",
+  "notes": "Small registries, English official; registered-agent services available; charitable framework informal - trust deed is the usual vehicle | confirm prior (medium, USD 200-600, 2-6 weeks); 100% foreign ownership and state-level LLC regime confirmed",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Turkey",
+  "entity_types": "foundation (vakıf), association (dernek)",
+  "cost_time": "US$500–1,500 with a Turkish lawyer, ~1–3 months",
+  "key_req": "Foreigner may found a vakıf only under legal/actual reciprocity (Australia has no treaty, so practice relies on case-by-case reciprocity finding); majority of foundation board members must be Turkey residents; a local registered office address is required.",
+  "notes": "Vakıflar Genel Müdürlüğü (Foundation Directorate) handles vakıfs; dernek registration is cheaper and simpler (province governor's office, ~1 month). English paperwork accepted with sworn Turkish translation. Political/currency risk (lira volatility) is the main practical concern, not formation law. | Confirm entity types and difficulty; state fees are nominal (no US$500-1,500 official fee — that is legal service cost); add dernek 1-3 month timeline",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Georgia",
+  "entity_types": "public benefit organization (მფარველობითი ორგანიზაცია), charitable foundation (სარგებლობის ფონდი), non-profit organization (NPO)",
+  "cost_time": "~GEL 25 (US$9) state fee, 3–10 business days, fully online",
+  "key_req": "Single founder (any nationality), a Georgian registered address (virtual/agent addresses accepted), no minimum funding.",
+  "notes": "Registration via Public Service Development Agency portal; English-language interface and English filings accepted. Most user-friendly regime on this list; popular with foreigners. Watch 2024–25 political instability — no effect on registration itself, but banks may apply enhanced due diligence to new entities. | Confirm prior; fee ~GEL 25 (~$9) state fee confirmed, single foreign founder permitted, online via PSDA portal",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Turkmenistan",
+  "entity_types": "public organization (köpagalyam birleşigi) — government-established only in practice",
+  "cost_time": "",
+  "key_req": "NGOs can only be created with the explicit approval of the relevant state organ; there is no independent NGO registration path and no mechanism for a foreigner to found one.",
+  "notes": "Turkmenistan effectively has a state monopoly on civil society; no functioning independent charity sector, no English-language process, and no published cost/time. Not a viable jurisdiction for this founder; do not invest time here. | Escalate difficulty from medium to very hard: prior context understates the closed nature of Turkmenistan's NGO sector; no realistic foreign registration path",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Tajikistan",
+  "entity_types": "public organization (jamoiy tashkilot), foundation (jamgarcha)",
+  "cost_time": "Small state fee (~US$50–100), ~30 days, plus travel",
+  "key_req": "Foreign citizens may be founders, but registration is in-person in Dushanbe (Ministry of Justice), requires Tajik/Russian-language documents, a local legal address, and notarized/apostilled paperwork.",
+  "notes": "Bureaucratic, Russian/Tajik-heavy process with no e-filing; NGOs operate under a restrictive environment (post-2024 crackdowns on civil society, 'foreign agent'-style pressure). Realistic only with a local law firm handling the file; political risk is significant. | Confirm hard difficulty; state fee nominal, but prior 6-10 week timeline is optimistic — 4-12+ weeks more realistic given co-founder and approval hurdles",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Cameroon",
+  "entity_types": "association loi (registered association); ONG agréée (accredited NGO)",
+  "cost_time": "~US$50-200, 3-6 months",
+  "key_req": "Foreign NGO requires prior Ministry of Interior authorization, a local legal representative and local office; filings in French.",
+  "notes": "2017 civil-society law; heavy discretionary approval; most expats partner with an existing Cameroonian association instead. | Confirm prior. CGI 2024 confirms the 5%-of-turnover corporate deduction cap for local philanthropic bodies",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Central African Republic",
+  "entity_types": "association déclarée; ONG agréée",
+  "cost_time": "~US$50-150, 1-3 months, often much longer",
+  "key_req": "Government authorization for foreign associations, local representative and local office; filings in French.",
+  "notes": "Conflict-affected with weak administration; security risk for on-ground work; few foreign NGOs operate legally. | Confirm prior. FAOLEX law text (caf213189) confirms the ONG statut is conferred by ministerial arrêté to authorized associations",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Chad",
+  "entity_types": "association loi; ONG agréée (2017 NGO law)",
+  "cost_time": "~US$50-150, 2-6 months",
+  "key_req": "Foreign NGO needs prior Ministry of Interior approval, resident legal representative and local office; filings in French.",
+  "notes": "2017 NGO law replaced the 1967 framework; political instability since 2020; approval is slow and discretionary. | Confirm prior. FAOLEX association law plus Amnesty legal review confirm the authorization regime and regular renewal",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Republic of the Congo",
+  "entity_types": "association déclarée; ONG accréditée",
+  "cost_time": "~US$50-150, 1-4 months",
+  "key_req": "Ministry of Interior accreditation (agrément) plus local legal representative and local office for foreign NGOs; filings in French.",
+  "notes": "French-language bureaucracy; accreditation is discretionary; stable enough for a registered agent/representative to work. | Confirm prior. JO 2017 issuances show active association declaration regime; prior context thin on specific legal citations",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Congo (DRC)",
+  "entity_types": "ONG enregistrée; association; trust",
+  "cost_time": "~US$100-300, 3-9 months",
+  "key_req": "Congolese national legal representative is mandatory; foreign NGO approval from Ministry of Interior; local office.",
+  "notes": "Slow and heavily scrutinized; security risk in the east; most expats work through an established local partner. | Confirm prior. ICNL and OHCHR sources confirm Justice-ministry registration under the 2002 NGO law framework",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Gabon",
+  "entity_types": "association loi; ONG agréée",
+  "cost_time": "~US$50-200, 2-6 months",
+  "key_req": "Ministry of Interior accreditation, local legal representative and local office; filings in French.",
+  "notes": "French-language process; post-2023 political transition adds uncertainty to approvals. | Confirm prior. JO confirms loi n°001/2011 governs associations; CGI confirms 0.1%-of-turnover corporate deduction cap",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Equatorial Guinea",
+  "entity_types": "asociación inscrita; ONG autorizada",
+  "cost_time": "~US$100-300, 3-12 months",
+  "key_req": "Foreign NGO authorization from Ministry of Interior, local representative and local office; filings in Spanish/French.",
+  "notes": "Highly centralized regime; approval is slow and discretionary; narrow civil-society space; Spanish (and French) bureaucracy. | Confirm prior. Clarence Abogados and ICRC confirm Law 1/1999 NGO regime with Registro Nacional de las ONG",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Sao Tome & Principe",
+  "entity_types": "associação registada; ONG autorizada",
+  "cost_time": "~US$50-150, 2-6 months",
+  "key_req": "Foreign NGO authorization, local representative and local office; filings in Portuguese/French.",
+  "notes": "Very small, under-resourced administration; slow processing; few registered foreign NGOs; French/Portuguese required. | Confirm prior; few public sources, details thin",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Rwanda",
+  "entity_types": "NGO registered with MIDRRP (national NGO or foreign NGO)",
+  "cost_time": "RWF ~50,000-150,000 fees, 2-6 months",
+  "key_req": "Foreign NGO needs 2+ years' existence abroad, a local partner and Rwandan legal representative; Rwandan majority board for national NGOs.",
+  "notes": "Strict, well-enforced 2016 NGO Act; English/French/Kinyarwanda; many expats operate through Rwandan partners rather than foreign registration. | Regulator is now Rwanda Governance Board (RGB), successor to MIDRRP; Law 01/2016 governs NGOs; official fee 300,000 RWF (~$24)",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Burundi",
+  "entity_types": "ONG agréée",
+  "cost_time": "~US$50-200, 3-12 months, high refusal risk",
+  "key_req": "Prior approval from the Ministry of State for Humanitarian Affairs, local representative and local office; filings in French.",
+  "notes": "Multiple foreign NGOs have been expelled; very high political risk; approvals are discretionary and often denied. | Governing law is Law 02/2017 on associations (plus 2017 ministerial ordinances); confirms very hard and politically risky",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Uganda",
+  "entity_types": "NGO/CSO (local NGO or foreign NGO, NGO/CSO Act 2016)",
+  "cost_time": "UGX ~1M-5M, 3-9 months",
+  "key_req": "Local NGOs need a Ugandan majority board; foreign NGOs register with Ministry of Internal Affairs with a resident legal representative and must route funds via Ugandan bank accounts.",
+  "notes": "2016 Act tightened foreign-funding rules; expats usually partner with a Ugandan-led CSO instead of foreign registration. | Confirm prior: NGO/CSO Act 2016, National NGO Bureau (ngobureau.go.ug), resident legal rep + local bank account requirements",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Tanzania",
+  "entity_types": "NGO (local/foreign, NGO Act as amended); trust",
+  "cost_time": "TSh ~500,000-2M plus deposit, 3-9 months",
+  "key_req": "Two-thirds Tanzanian directors (2021 amendments); foreign-funded NGOs register with the NGO Commission; local office.",
+  "notes": "2021 amendments tightened foreign-funding thresholds and local-content rules; English/Swahili; NGO Commission is strict. | Core law is NGO Act (No. 22 of 2002, as amended); the 2021 tightening was a draft NGO Bill, not enacted law - earlier '2021 amendments' note overstated",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Kenya",
+  "entity_types": "registered NGO (local organization or foreign organization, NGO Act 2003)",
+  "cost_time": "KES ~10,000-25,000 plus deposit, 1-3 months",
+  "key_req": "Foreign organizations need resident Kenyan directors, a KES 100,000 bank deposit and NGO Commission registration; local office.",
+  "notes": "English-language, well-trodden expat route; many Australians register as foreign organizations; strong NGO infrastructure. | NGO Act 2003 was repealed - current framework is PBO Act, 2013 (Cap 134) under PBORA, not the NGO Commission/NGO Act route",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Comoros",
+  "entity_types": "association déclarée; ONG agréée (2019 NGO law)",
+  "cost_time": "~US$50-200, 2-6 months",
+  "key_req": "Foreign NGO approval from Ministry of Interior, local representative and local office; filings in French.",
+  "notes": "Small islands, limited administrative capacity; political instability (2018 coup, 2024 elections); French required. | Main legal basis is Law 86-006/AF (1986) art. 9 plus Decree 20-101/PR of 31 July 2020 on NGO agrément; prior '2019 NGO law' reference is inaccurate",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Madagascar",
+  "entity_types": "association déclarée; ONG agréée",
+  "cost_time": "~US$100-300, 2-6 months",
+  "key_req": "Foreign NGOs accredited via Ministry of Foreign Affairs with a local legal representative and local office; filings in French.",
+  "notes": "No local-citizenship board rule; political instability since 2023; French-language process, local agent usable. | Confirm prior; core law is Law 96-030 (1996) + Decree 98-711; MFA accord de siege route confirmed by French diplomatic services page",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Zambia",
+  "entity_types": "NGO (local/foreign, NGO Act 2005); trust",
+  "cost_time": "ZMW ~500-2,000, 2-8 weeks",
+  "key_req": "Local NGOs need a Zambian majority on the board; local office; English filings.",
+  "notes": "Open, English, stable; expats commonly register local NGOs with Zambian directors; straightforward process. | Governing law is NGO Act No. 16 of 2009 (not 2005); Registrar sits in Ministry of Community Development and Social Services",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Malawi",
+  "entity_types": "NGO (local/foreign, NGO Act 1997); trust",
+  "cost_time": "MWK ~50,000-200,000, 2-8 weeks",
+  "key_req": "Local NGOs need a Malawian majority (two-thirds) board; local office; English filings.",
+  "notes": "English-language, moderate bureaucracy; receiving foreign funds requires NGO registration. | Corrected: two-thirds Malawian board is not the rule - the Act requires >=2 Malawian-citizen directors/trustees; NGORA fee MK 35k + CONGOMA MK 55k; 2-8 weeks realistic",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Mozambique",
+  "entity_types": "ONG nacional / ONG estrangeira (2005 NGO law)",
+  "cost_time": "MZN ~10,000-50,000, 2-6 months",
+  "key_req": "Foreign NGOs register with the Ministry of Foreign Affairs, with a Mozambican legal representative and local office; filings in Portuguese.",
+  "notes": "Portuguese-language process; a hired local manager can serve as legal representative. | Confirm prior; core law is the NGO law (Lei 31/2002) with foreign-NGO regime via MFA; 2-6 months realistic; fee figure includes agent costs",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Angola",
+  "entity_types": "associação registada; ONG with local representative",
+  "cost_time": "AOA ~100,000-500,000, 3-12 months",
+  "key_req": "Foreign NGO authorization from Ministry of Interior, local legal representative and local office; filings in Portuguese.",
+  "notes": "Slow Portuguese-language bureaucracy; cautious approach needed for sensitive activities; few foreign charities register directly. | Confirm hard/3-12 months; note Lei do Estatuto das ONG (Law 2/26) now requires prior authorization for all NGOs; AOA 100k-500k = ~$100-500",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Botswana",
+  "entity_types": "registered NGO (NGO Act); trust",
+  "cost_time": "P ~500-1,500, 4-8 weeks",
+  "key_req": "Board of at least 3 members, local office and resident secretary; no citizenship restriction; English filings.",
+  "notes": "Stable, English-language; straightforward but small-bureaucracy processing times. | Mostly confirm; common route is Societies Act (20+ members) or company limited by guarantee; resident director needed; P 500-1,500 = ~$25-75; 4-8 weeks",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Namibia",
+  "entity_types": "non-profit society (Societies Act); public benefit trust (Deeds Registry)",
+  "cost_time": "NAD ~300-1,000, 2-6 weeks",
+  "key_req": "No local-director requirement; local registered office/agent and English filings.",
+  "notes": "English, registered agents widely available; a popular route for SADC-based charities; low regulatory burden. | Confirm prior; common route is Section 21 company via BIPA; local office + agent, no local director; NAD 300-1,000 = ~$20-70; 2-6 weeks | Verified: Documents must be notarized by a Namibian notary; non-resident directors allowed, a local agent can sign",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Zimbabwe",
+  "entity_types": "local/foreign NGO (NGO Act 2005); trust",
+  "cost_time": "US$100-500, 1-4 months",
+  "key_req": "Local NGOs need a two-thirds Zimbabwean board; foreign NGOs register with the Ministry of Local Government with a local representative; fees in USD.",
+  "notes": "Political risk and restrictions on donor funding for certain activities; English language; many NGOs operate via local partnerships. | Corrected: governing law is the PVO Act [Ch 17:05], not an 'NGO Act 2005'; 2/3 Zimbabwean board for local PVO; US$100-500 and 1-4 months realistic",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Eswatini",
+  "entity_types": "non-profit society (Societies Act); NGO (foreign-fund registration)",
+  "cost_time": "SZL ~500-2,000, 4-12 weeks",
+  "key_req": "Local office; registration with the Registrar of Societies plus NGO unit registration to receive foreign funds; English filings.",
+  "notes": "Small, English-speaking; no local-director requirement; moderate small-country bureaucracy. | Corrected: NPOs currently registered under s17 Companies Act 8/2009, not a Societies Act; 2024 NPO Bill pending; SZL 500-2,000 = ~$25-90; 4-12 weeks",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Lesotho",
+  "entity_types": "non-profit society (Societies Act); trust",
+  "cost_time": "LSL ~500-2,000, 4-12 weeks",
+  "key_req": "Local office; registration with the Ministry of Justice; English filings.",
+  "notes": "Small, English-speaking; no local-director requirement; slow small-bureaucracy processing. | Confirm prior; routes: Societies Act, Companies Act 18/2011, Trusts Act; practitioners call registration easy; LSL 500-2,000 = ~$25-90",
+  "difficulty": "medium"
+ },
+ {
+  "country": "South Africa",
+  "entity_types": "non-profit company (NPC, Companies Act); trust (Trust Property Control Act); PBO (SARS)",
+  "cost_time": "ZAR ~60-215, 1-4 weeks (PBO 6-12 months)",
+  "key_req": "No foreign restrictions; NCD online registration, local office/registered agent; English filings.",
+  "notes": "Most open route in the region; NPO/NPC + trust + PBO gives donor tax-deductibility; strong expat charity infrastructure and English. | Confirm prior: CIPC NPC fee ZAR 125-175, no residency rule for directors but foreign directors use manual process; SA registered office required | Verified: Registration is voluntary and free; no residency requirement for founders; application filed at the nearest DSD office.",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Germany",
+  "entity_types": "Eingetragener Verein (e.V.), Gemeinnützige gGmbH, Private foundation (Stiftung, state law)",
+  "cost_time": "EUR 300-800 (notary + register court), 4-8 weeks",
+  "key_req": "e.V. needs 7+ founding members, German registered office (Geschäftssitz in Germany), German-language articles; foreign founders/directors allowed without residency proof",
+  "notes": "e.V. is the standard vehicle; charity status (gemeinnützig) confirmed later by Finanzamt; state register courts are slow; foundation endowments vary by state from ~EUR 10,000-25,000 | confirm prior; 7 members per section 56 BGB, no residency requirement, e.V. standard, charity status via Finanzamt | Verified: No residence requirement for board members; German seat needed; notarized application by the Vorstand.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Austria",
+  "entity_types": "Eingetragener Verein (Verein), Private foundation (Stiftung, state-level law)",
+  "cost_time": "EUR 100-250, 2-6 weeks",
+  "key_req": "Verein needs 3+ founders, Austrian seat (local address), Austrian-language articles; no citizenship requirement for founders or board",
+  "notes": "Verein is the practical vehicle; foundation laws are state-by-state (Landesrecht) with endowments from ~EUR 30,000-75,000; German required; charity tax recognition via Finanzamt | confirm prior; two-step process (errichtung then Genehmigung), 3 founders, no citizenship rule | Verified: No citizenship or residency requirement; district authority reviews within 4 weeks, extendable to 6",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Liechtenstein",
+  "entity_types": "Anstiftung (private foundation, 2013 law), Verein (association)",
+  "cost_time": "CHF 30,000 endowment + CHF 2,000-5,000, 4-12 weeks",
+  "key_req": "Foundation requires CHF 30,000 minimum endowment, seat in Liechtenstein, managing board seated locally (local officer/agent needed); German-language filings",
+  "notes": "Small, stable, English-tolerant jurisdiction; local board presence makes it impractical without a local agent; no formal charity register; often paired with Swiss structures | confirm prior; CHF/EUR/USD 30,000 minimum endowment, founder may be any nationality, 0.1% annual charge (min CHF 1,000)",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Monaco",
+  "entity_types": "Fondation (sovereign decree), Association (sovereign declaration)",
+  "cost_time": "EUR 50,000 endowment, 3-12 months (no fixed timeline)",
+  "key_req": "Foundation requires EUR 50,000 minimum endowment and discretionary decree of the Prince on advice of the foundations commission; Monégasque registered office; French-language filings",
+  "notes": "No formal charity category - establishment is discretionary sovereign approval; French required; popular with high-net-worth founders; no corporate income tax; in-person steps common | confirm; 1922 foundation law + 2008 association law (1355) apply; new patrimonial foundation route (FPI ~EUR 30k / FRUP ~EUR 100k) adds a streamlined option vs EUR 50k decree",
+  "difficulty": "hard"
+ },
+ {
+  "country": "San Marino",
+  "entity_types": "Fondazione (foundation), Associazione (association)",
+  "cost_time": "EUR 1,000-3,000, 1-3 months (variable, opaque)",
+  "key_req": "San Marino registered office; Italian-language filings; small opaque bureaucracy with in-person steps; endowment set by founding act for foundations",
+  "notes": "Tiny jurisdiction with few foreign precedents and no English-language service; most foreigners use a neighbouring Italian (Emilia-Romagna) association instead; Italian required | confirm prior; note a dedicated private-foundation law is in legislative draft (2025), so foundations are still mainly set up ad hoc; associations already registrable with CGeG",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Slovakia",
+  "entity_types": "nezisková organizácia (nonprofit organization), verejne prospešná organizácia (VPO), nadácia (foundation)",
+  "cost_time": "~200-600 EUR total; ~1-2 months",
+  "key_req": "Organization needs 2+ founders, local office and Slovak-language charter; foundation via notarized deed, endowment per charter; no citizenship requirement.",
+  "notes": "VPO public-benefit status is a separate Ministry of Interior procedure; Slovak language barrier; paperwork moderate. | confirm prior; court registration fee ~150 EUR plus notary, so total ~200-600 EUR as noted",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Montenegro",
+  "entity_types": "udruženje građana (citizens' association), fundacija (foundation)",
+  "cost_time": "~50-200 EUR; ~1-3 months",
+  "key_req": "Association 3+ founders (foreigners allowed), local office, Montenegrin-language charter; no online registry, in-person/notarized steps.",
+  "notes": "Slow bureaucracy, documents in Montenegrin, minimal English support; EU-candidate so framework is straightforward in principle. | Confirm association/foundation forms and 1-3 months; official gov.me page says registration is free, so prior 50-200 EUR is overestimated.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "North Macedonia",
+  "entity_types": "udruženje (association), fundacija (foundation)",
+  "cost_time": "~100-300 EUR total; ~1-2 months",
+  "key_req": "Association 3+ founders (foreigners allowed), local office, Macedonian-language charter; low fees.",
+  "notes": "EU candidate, cheap and low-bureaucracy; language barrier for a resident-in-Australia founder means using a local agent/lawyer. | Confirm association/foundation and 1-2 months; state registration fee is nominal (~$0-50), prior 100-300 EUR overstates official cost.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Albania",
+  "entity_types": "bashkimi (association), themelimin (foundation)",
+  "cost_time": "~100-300 EUR; ~2-8 weeks (electronic register faster)",
+  "key_req": "Association 3+ founders (foreigners allowed), local office, Albanian-language charter; new 2021 electronic register accepts applications by post/courier.",
+  "notes": "2021 NPO registration law modernized the register; English support limited; foreign-founded NGOs common, often with local partners. | Confirm association/foundation and 2021 electronic register; total all-in cost ~$300-550 incl. notary is consistent with prior.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Moldova",
+  "entity_types": "asociație (association), fundație (foundation)",
+  "cost_time": "~100-300 EUR; ~2-6 weeks",
+  "key_req": "Association 3+ founders (foreigners allowed), local office, Romanian-language charter (Russian widely used in practice); foundation 1 founder, endowment per charter.",
+  "notes": "Cheap; EU candidate; political/economic volatility and weak enforcement; banking for foreign directors can be fiddly. | Confirm association/foundation and 2-6 weeks; no state registration fee (Lex Mundi guide), prior 100-300 EUR was notary/legal only.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Bulgaria",
+  "entity_types": "shtoprofitna asotsiia (public-benefit association), neprofitna pravno lice (nonprofit legal entity), fondatsiya (foundation)",
+  "cost_time": "~100-300 BGN + notary; ~1-2 months (statutory 30 days)",
+  "key_req": "Nonprofit legal entity (NPL) needs only 1 founder (foreigners allowed) + local office; association needs 5+ founders; Bulgarian-language documents.",
+  "notes": "EU member; the 1-founder NPL form is the simplest for a lone foreign founder; good English support in Sofia; cheap to operate. | Confirm 1-founder NPL as simplest route; fees ~150-300 BGN plus notary; 30-day statutory limit as prior.",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Greece",
+  "entity_types": "syndesmos (association, general-benefit status), themelioma (foundation)",
+  "cost_time": "~500-1,500 EUR incl. notary; ~1-3 months",
+  "key_req": "Association needs 5+ founders (foreigners allowed), Greek registered office, Greek-language charter filed with notary and court registry; foundation 1 founder, endowment per charter, notary deed.",
+  "notes": "2019 law modernized foundations, but process is paper/notary-heavy, Greek language required, no meaningful online registry; use a local lawyer. | Association min 7 founders (not 5); general-benefit status is a separate application after court registry filing. Confirm prior fees/timeline.",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Ireland",
+  "entity_types": "Registered charity (Charity Commission for Ireland), company limited by guarantee (CRO), unincorporated charitable trust",
+  "cost_time": "CRO company ~€100 + CCI registration free; ~4–8 weeks",
+  "key_req": "Irish registered office and at least one EU-resident director/trustee; charities with income over €50k/yr must be registered with the Charity Commission for Ireland",
+  "notes": "English-language, common-law system; no nationality requirement for trustees; most overseas founders set up a company limited by guarantee with a local registered-office agent, then register the charity | Confirm prior; regulator is the Charities Regulatory Authority (CRA), not the former 'Charity Commission for Ireland'.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Iceland",
+  "entity_types": "Nonprofit association (félag), foundation (stofnun), branch of foreign nonprofit (no formal 'charity' status)",
+  "cost_time": "Association registration ~ISK 5,000–10,000; ~2–4 weeks",
+  "key_req": "Icelandic registered address and local contact; association needs ~5 members; foundation requires ~ISK 3m endowment and Icelandic management",
+  "notes": "Documents in Icelandic; tax exemption (reykjafrjálsefni) must be applied for separately with the tax office; small bureaucracy but limited English support",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Norway",
+  "entity_types": "Unincorporated nonprofit association (ideell organisasjon), foundation (stiftelse), branch of foreign NGO",
+  "cost_time": "Registration fee ~NOK 1,000–2,500; ~2–6 weeks",
+  "key_req": "Norwegian address for the association (min. 3 adult members, no nationality rules); foundation needs ~NOK 1m capital and Norwegian-resident management",
+  "notes": "Online via Altinn with English available; association is simple but requires a local contact; foundations have strict Norwegian-control rules | Prior cost corrected: initial association registration at Brønnøysund is free (not NOK 1,000-2,500).",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Finland",
+  "entity_types": "Nonprofit association (yhdistys), foundation (säätiö)",
+  "cost_time": "Association fee ~€100–200; ~1–3 months (PRH is slow)",
+  "key_req": "Finnish address; association needs min. 5 adult members; foundation needs €10k minimum capital, Finnish purpose, Finnish/Swedish-language operations and a Finnish-resident board",
+  "notes": "Finnish-language requirement for documents and minutes; PRH bureaucracy is the main burden; foundations are hard for a foreign founder | confirm prior; PRH registration fee is about EUR 100.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Sweden",
+  "entity_types": "Nonprofit association (ideell förening), foundation (stiftelse)",
+  "cost_time": "Registration ~SEK 1,000–2,500; ~4–8 weeks",
+  "key_req": "Swedish registered seat (säte) and min. 3 members for the association, no residency requirement; foundation needs ~SEK 250k+ and a Swedish-resident board",
+  "notes": "Straightforward online registration with Bolagsverket, English widely understood; a Swedish bank account for the entity typically requires a personal/D-number for the signatory",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Denmark",
+  "entity_types": "Nonprofit association (forening), foundation (stiftelse), nonprofit company",
+  "cost_time": "Registration fee ~DKK 0–2,000; ~2–6 weeks",
+  "key_req": "Danish address, min. 2 members, registered in the CVR register; 2023 Foundation Act requires Danish-controlled foundations (Danish-resident board majority)",
+  "notes": "Association name and documents must be in Danish; CVR registration itself is easy; Danish-controlled foundation rules make the foundation route hard for a foreigner",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Latvia",
+  "entity_types": "Nonprofit organization (NVO, unified 2016-law form), foundation (dibinājums), religious organization",
+  "cost_time": "State fee ~€30–100 plus notary costs; ~1–2 months",
+  "key_req": "Latvian address, Latvian-language name/documents, and founding documents notarized by a Latvian notary before registration with the Enterprise Register",
+  "notes": "The 2016 Nonprofit Organizations Law unified the forms; the notary step forces an in-person visit or a local representative, which is the main barrier for a foreign founder | NVO registers electronically via e-portals; no notary step needed. Real barriers: Latvian-resident board requirement plus local address and e-ID",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Israel",
+  "entity_types": "amuta (registered association), nonprofit corporation (amuta atzmit), public-benefit corporation (charitable amuta with DSD status)",
+  "cost_time": "A$150-350 fees + A$500-2,000 attorney, 2-6 weeks",
+  "key_req": "2-3 founders over 18 (Israeli citizenship NOT required), local Israeli registered agent/office, attorney-filed founding declaration and bylaws; English widely accepted",
+  "notes": "One of the most foreign-friendly registration regimes in the region; most foreign founders use an amuta plus a local managing director and registered-agent service; English-language filings routinely accepted; charity tax status (DSD/13-b) is a separate follow-up application | Confirm prior: no Israeli citizenship needed, attorney-filed, 2-6 weeks; ~$250 fee consistent | Verified: Requires 7 members and a registered Israeli office (lease >=1 yr); remote-only founders must secure a local address.",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Lebanon",
+  "entity_types": "association (jama'iyya) under Law 92/1996, private foundation (muassasa khassisa)",
+  "cost_time": "A$100-500 fees, 2-6 weeks administratively",
+  "key_req": "Foreigners CAN be founders and directors (no nationality rule) but need a local registered office, Arabic founding documents, and a local signatory; notification (declaration) regime, not pre-approval",
+  "notes": "Legally one of the easiest for foreigners in the region, but heavy Arabic-only bureaucracy, bank-account opening friction, and macro instability (currency, banking) make practical setup harder; most internationals use a local registered partner or a foundation | Confirm prior: foreigners may found/direct, notification regime, 2-6 weeks; banking is the practical friction",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Iraq",
+  "entity_types": "NGO/association (jam'iyya) under Law 12/2010, private foundation, branch of international NGO",
+  "cost_time": "A$200-1,000 fees, 2-6 months",
+  "key_req": "Founding members must be Iraqi nationals or Iraq-resident; minimum 10 founders; local board, local address; Arabic filings; activity approvals from MoSAL",
+  "notes": "Resident-expat route is the standard workaround (Iraqi-resident staff as founders); foreign funding rules restrict donor channels; English commonly understood in NGO sector but filings in Arabic; security considerations for in-person steps | Confirm prior: Law 12/2010 governs (new draft NGO law with 5 founders approved but 12/2010 still applied)",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Bahrain",
+  "entity_types": "association (NGO) under Law 19/2006, branch of international NGO",
+  "cost_time": "A$200-500 fees, 4-8 weeks (gated by Bahraini board)",
+  "key_req": "Founders must be Bahraini citizens (min. ~20) and board must be at least two-thirds Bahraini; local address; Arabic filings",
+  "notes": "Bahrain is the most English-friendly and transparent NGO administration in the Gulf, but the nationality floor on founders/board keeps foreign formation out of reach; standard route is a partnership with an existing Bahraini NGO; government relations are comparatively accessible | Confirm prior: nationality floor (20 Bahraini founders, 2/3 board) keeps foreign formation out of reach; partnership route is standard.",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Sudan",
+  "entity_types": "Registered association (Jamiyya, 2005 civil society law)",
+  "cost_time": "~US$100–300, 3–6 months, largely suspended due to conflict",
+  "key_req": "Sudanese founders/chair, local office, Ministry of Culture & Information approval.",
+  "notes": "2023 civil war has paralysed registration bodies in most areas; acute security risk for foreign personnel; effectively unworkable right now. | Confirm prior: registration effectively suspended during conflict; Voluntary and Humanitarian Work Act is the restrictive governing law",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Libya",
+  "entity_types": "Registered association (Jam'iyya, Law 12/1989 as amended)",
+  "cost_time": "Nominal fees, 6–12 months, largely suspended",
+  "key_req": "Libyan-national founders/chair, local office, ministry approval; registry split between rival governments in Tripoli and the east.",
+  "notes": "Fragmented dual-government structure, militia influence, no workable foreign-formation path; foreign NGOs operate via UN/embassy channels only. | Confirm prior, with correction: current framework is NGO Law No. 19 of 2001 (and 2013 circulars), not Law 12/1989 as sole basis",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Algeria",
+  "entity_types": "Declared association (Law 12-06/2012 on associations, amended 2020)",
+  "cost_time": "DZD 5,000–15,000 (~US$25–75), 1–3 months",
+  "key_req": "Local registered office, Arabic founding documents, declaration to the wilaya (provincial) authority; foreign founders heavily restricted.",
+  "notes": "Strict regulation with security vetting for any foreign involvement; slow bureaucracy; Arabic required. | Confirm prior; Law 12-06 (2012) in force; 2025 replacement bill maintains prior authorisation and expands state control (not yet in force)",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Tunisia",
+  "entity_types": "Declared association (1959 law, amended 2011)",
+  "cost_time": "TND 50–200 (~US$10–40), 2–4 weeks",
+  "key_req": "Registered office in Tunisia plus a local-resident representative (Tunisian, or foreigner resident in Tunisia); simple declaration to the prefecture.",
+  "notes": "Most open civil-society law in the region; declaration-based, so registration is fast; post-2022 political centralisation adds compliance risk. | Confirm prior; governing text is Decree-Law 59-154 of 1959; only 2 founders needed; members 13+, must accept bylaws in writing",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Morocco",
+  "entity_types": "Association (Law 1956 on association rights), nonprofit company (SPA)",
+  "cost_time": "MAD 500–2,000 (~US$50–200) incl. notary, 1–3 months",
+  "key_req": "Moroccan registered office, Arabic statutes, wilaya/provincial governor approval; foreign founders permitted.",
+  "notes": "Governor discretion can delay approvals; most expats register via a local address agent; Arabic mandatory. | Confirm prior with correction: governing text is Dahir 1-58-376 of 1958 (not 'Law 1956'); foreign founders permitted; 1-3 months realistic",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Mauritania",
+  "entity_types": "Association (1965 Code of Associations)",
+  "cost_time": "~US$100–300, 2–4 months",
+  "key_req": "Local registered office, meaningful local-national involvement, registration with the interior ministry; French/Arabic documents.",
+  "notes": "Very opaque, low-information bureaucracy; few foreign-led charities operate domestically; French-language burden. | Confirm prior: authorization-based regime, registration sometimes denied; 2016 amendment and 2020 draft added reporting and funding controls",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Western Sahara",
+  "entity_types": "None (no independent registry; Moroccan association law applies in Moroccan-administered areas)",
+  "cost_time": "n/a",
+  "key_req": "Not available independently; the practical route is registering an association in Morocco.",
+  "notes": "Contested territory (Morocco vs. Polisario); no functioning independent civil-society registry; register in Morocco instead. | Confirm prior: no functioning independent civil-society registry; practical route is a Moroccan association (Dahir 1-58-376/1958)",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Ethiopia",
+  "entity_types": "Ethiopian charitable organization (2021 NGO Proclamation), foreign NGO office via a local partner",
+  "cost_time": "~US$200–500 via partner, 3–6 months",
+  "key_req": "Ethiopian-national founders for a domestic entity; a foreign founder must work through a partner organization or as a registered foreign NGO.",
+  "notes": "2021 reform liberalised funding and registration, but foreigners cannot directly form a domestic charity; security clearance applies; Amharic/English documents. | Confirm prior: 2021 CSO Proclamation (1259/2021) keeps foreign founders out of domestic entities; cost 3-6 months via partner is reasonable.",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Eritrea",
+  "entity_types": "None (no independent NGO law; state-controlled associations only)",
+  "cost_time": "n/a",
+  "key_req": "No legal pathway for an independent foreign-founded charity.",
+  "notes": "No legal space for independent civil society; all associations are state-controlled; high political risk. | Confirm prior: no legal pathway for an independent foreign-founded charity; state control confirmed by 2005 NGO Proclamation.",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Djibouti",
+  "entity_types": "Association (1971 law, as amended)",
+  "cost_time": "~US$100–300, 1–3 months",
+  "key_req": "Local registered office, Djiboutian-national chair/meaningful involvement, interior-ministry registration; French/Arabic documents.",
+  "notes": "Tight, security-driven regulation in a small country; English sometimes tolerated in practice; foreign aid actors mostly work through local partners. | Confirm prior: association law requires local involvement; cost ~$100-300 and 1-3 months plausible.",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Somalia",
+  "entity_types": "Registered charitable organization/NGO (2013 federal NGO law)",
+  "cost_time": "~US$300–500, 3–6 months, suspended in many areas",
+  "key_req": "Somali founders for a domestic entity; foreign NGOs register through embassy channel; local presence and security plan required.",
+  "notes": "Severe insecurity and fragmented federal registries (Puntland, Somaliland, South West each have their own); foreign staff face high security risk. | Confirm prior: severe insecurity and fragmented registries; domestic charities need Somali founders; 3-6 months is optimistic, extend to 12.",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Somaliland",
+  "entity_types": "Registered association/NGO (2005 NGO law)",
+  "cost_time": "~US$300–500, 1–3 months",
+  "key_req": "Local registered office and local partner involvement, registration with the interior/social-affairs ministry.",
+  "notes": "De facto state without international recognition: banking, sanctions-compliance and repatriation risk; the civil-society registry is relatively functional and stable. | Confirm prior: 2010 NGO law (not 2005) governs; registry is relatively functional; cost 1-3 months plausible.",
+  "difficulty": "hard"
+ },
+ {
+  "country": "South Sudan",
+  "entity_types": "Registered NGO (2009 NGO Act, amended 2018), domestic association",
+  "cost_time": "~US$300–500, 6–12 months, suspended in many areas",
+  "key_req": "South Sudanese founders for a domestic entity; foreign NGOs register via embassy channel; local office required.",
+  "notes": "Post-conflict, high security risk, weak institutions; most international actors work through established partners or missions. | Confirm prior, update: governing law is NGO Act 2016 (not 2009); 2023 amendment bill adds 80% local staff requirement; 6-12 months realistic.",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Seychelles",
+  "entity_types": "Non-profit organization (Non-Profit Organizations Act 2013), public-benefit foundation, non-profit limited company",
+  "cost_time": "~US$1,500–3,000 incl. agent, 2–6 weeks",
+  "key_req": "Local registered office and licensed local agent; foreign directors permitted; registration with the Registrar of Companies.",
+  "notes": "English-language, simple, offshore-friendly regime; popular with foreign founders; a Seychelles charity gains no local tax-exempt status without local operations. | Confirm prior: NPO Act 2013 for local NPOs; the practical foreign route is the Seychelles Foundation Act 2009 (SIBA, $200 gov fee); prior $1,500-3,000 is agent-inclusive. | Verified: No local presence required; foreign founder may be a councillor; FSA registration fee ~US$200 plus ~US$200 annual.",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Mauritius",
+  "entity_types": "Non-profit organization (NPO Act 2003), IFSA non-profit foundation, non-profit limited company",
+  "cost_time": "~US$500–1,500 incl. agent, 2–6 weeks",
+  "key_req": "Mauritian registered office (local agent provides it); foreign founders/directors permitted; NPOs have a local-presence element.",
+  "notes": "English-language with strong professional-services infrastructure; the IFSA foundation is the most foreigner-friendly route; popular expat-charity pathway. | Confirm prior: Foundations Act is 2012 (not 2014); NPO Act 2003 remains for local NPOs; $500-1,500 prior is agent-inclusive, gov fees are far lower.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Bangladesh",
+  "entity_types": "NGO registered under the NGO Act 1961, charitable trust, registered society",
+  "cost_time": "Low fees (~BDT 5,000-20,000), 4-12 weeks",
+  "key_req": "At least two-thirds of the NGO board must be Bangladeshi citizens (NGO Act 1961, s.3); local office and local officers required.",
+  "notes": "Foreign founder cannot form an NGO without enough Bangladeshi citizens to fill 2/3 of the board. The 2016 NGO Ordinance restricts foreign-funded NGOs (derogatory-remarks clause) - ongoing political/legal risk for donor-funded charities. | confirm prior - NGO Act 1961 s.3 2/3 Bangladeshi-citizen board rule; 2016 Foreign Donations Act replaces 1978 Ordinance.",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Sri Lanka",
+  "entity_types": "Public charitable trust (registered with Registrar of Companies), society (Societies Ordinance), non-profit company",
+  "cost_time": "Low (~LKR 5,000-20,000), 2-6 weeks",
+  "key_req": "Trust deed with 2+ registered persons (3 recommended), local registered office; no citizenship requirement for trustees.",
+  "notes": "Most expat-friendly in the region for a foreign founder; English is an official language. 12B tax-exempt status application to IRD follows trust registration. | confirm prior - trust route via Registrar-General (Trusts (Amend) Act 2018) confirmed; no citizenship requirement for trustees. | Verified: All international NGOs must register with the NGO Secretariat; MFA approval and a local address/agent required.",
+  "difficulty": "easy"
+ },
+ {
+  "country": "Nepal",
+  "entity_types": "Trust (Trust Act 2064), NGO (NGO Registration Act 2049, District Administration Office), registered society",
+  "cost_time": "Low (NPR 2,000-10,000), 1-4 weeks",
+  "key_req": "NGO: board of 7 with at least 5 Nepali citizens, registration at the District Administration Office plus Social Welfare Council affiliation; Trust: 1+ settlor, foreign settlor permitted.",
+  "notes": "The trust route is the simplest expat pathway (no citizen-quota for trust deed). Foreign funding requires Social Welfare Council approval, which adds time and discretion. | confirm prior - Trust Act 2064 (2007) route confirmed for foreigners; NGO route needs 5 of 7 Nepali-citizen board.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Bhutan",
+  "entity_types": "NGO (NGO Act 2008 / NGO Trust Act 1997), trust",
+  "cost_time": "Low fees, 2-8 weeks once a local sponsor is secured",
+  "key_req": "Mandatory local Bhutanese sponsor/partner (FDI policy requires local partners; NGO registration requires a sponsoring agency).",
+  "notes": "No direct foreign formation - a Bhutanese sponsor or partner organization is required. Small, tightly controlled NGO ecosystem; English used in official filings. | confirm prior - governing law is Civil Society Organizations Act 2007 (amended 2022), not 'NGO Act 2008'; no direct foreign formation.",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Maldives",
+  "entity_types": "Public charitable trust (Public Trusts Act 1921, as amended, registered with MIRA), society, non-profit company",
+  "cost_time": "Low fees, 4-8 weeks",
+  "key_req": "Trust registered with MIRA (Maldives Investment and Regulatory Authority) with 3+ trustees; practical requirement of resident local trustees and a Maldivian registered office.",
+  "notes": "Most expats use the MIRA-registered public trust with local resident trustees and a local manager. English used in filings; annual returns and audited accounts required by MIRA. | confirm prior - public trust registered with Ministry of Justice; MIRA approval (MIRA 103) is for tax exemption, not registration.",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Nigeria",
+  "entity_types": "company limited by guarantee (CAC), trust (deed), NGO (NCMM-registered)",
+  "cost_time": "US$3k–8k with agents, 3–9 months end-to-end",
+  "key_req": "CAC registration of a company limited by guarantee with local resident directors/office, then registration with the NCMM (Nigerian Committee on Foreign Non-Governmental Organizations) and a Ministry of Interior Operational Readiness Certificate if receiving foreign funds",
+  "notes": "Most structured path in West Africa but multi-layered; NCMM registration and ORC are the foreigner bottlenecks; English language; strong expat NGO sector in Lagos/Abuja",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Ghana",
+  "entity_types": "company limited by guarantee, registered charity (Charities Commission, Act 1035 of 2020), trust",
+  "cost_time": "US$500–1.5k, 4–8 weeks",
+  "key_req": "Charitable purpose with objects meeting the Charities Act test; Ghana Charities Commission registration; Ghana-located principal office (directors may be foreign)",
+  "notes": "Most foreigner-friendly framework in the list: no local-national director requirement under the Companies Act 2019 (Act 992); Charities Commission registration has been operational since ~2021; English language",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Côte d'Ivoire",
+  "entity_types": "association déclarée, fondation, organisation non gouvernementale (ONG)",
+  "cost_time": "US$500–1.5k with local counsel, 4–12 weeks",
+  "key_req": "Associations formed by declaration at the préfecture (Law n° 2022-443 of 15 Aug 2022 on OSCs) with local office; foreign-funded NGOs also need authorization from the Ministry of the Interior",
+  "notes": "2022 OSC law modernized the regime (declaration for associations, authorization for foreign-funded NGOs); French-only bureaucracy; Abidjan has active local law firms that handle expat NGO setups | OSC framework now Ordinance n° 2024-368 (12 June 2024) replacing Law 2022-443; eDA digital declaration portal live",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Benin",
+  "entity_types": "association déclarée, organisation non gouvernementale (ONG)",
+  "cost_time": "US$300–1k, 2–6 weeks",
+  "key_req": "Declaration filed at the Direction de l'Administration Générale et des Cultes (Law n° 2015-04/PRB of 30 Jan 2016 on NGOs); local registered office; no local-national officer requirement",
+  "notes": "One of the more open, stable regimes in francophone West Africa; French-only; Cotonou has NGOs/lawyers familiar with expat filings | New Decree 2025-636 (8 Oct 2025) regulates foreign NGO authorization and compliance declarations via CatIS portal",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Togo",
+  "entity_types": "association, organisation non gouvernementale (ONG)",
+  "cost_time": "US$300–1k, 4–10 weeks",
+  "key_req": "Declaration/authorization of an association under Law n° 2000-17 of 11 Aug 2000 on NGOs; local registered office; French-language documents",
+  "notes": "Administrative practice varies by préfecture; some steps in practice require in-person filing at the Mairie or prefecture in Lomé; French-only",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Burkina Faso",
+  "entity_types": "association (authorized), organisation non gouvernementale (ONG)",
+  "cost_time": "US$500–2k, 2–6 months or refusal",
+  "key_req": "Prior government authorization under Law n° 014/1997-AN on associations; a 2018 constitutional amendment bars NGOs that receive foreign funding above a threshold from operating",
+  "notes": "High political risk: 2018 constitutional ban on foreign-funded NGOs, 2022–2025 military rule, repeated suspensions of international NGOs (e.g. 2023–24 expulsions); effectively impractical for a foreign-funded charity | Association law replaced by Law n° 011-2025/ALT (17 July 2025, promulgated 23 July 2025); prior Law 014/1997 superseded",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Mali",
+  "entity_types": "association (loi 01-019 du 20 juin 2001), organisation non gouvernementale (ONG)",
+  "cost_time": "US$500–2k, 1–4 months",
+  "key_req": "Association registration with the Direction de l'Administration Générale (Law n° 2001-019); local office; French-language filings; authorization regime for foreign-funded NGOs in practice",
+  "notes": "Political instability (2020–2024 coups, ongoing conflict); security situation in many regions makes on-ground operations difficult; Bamako filings are French-only | Current association law is n° 04-038/ANRM (5 Aug 2004), which repealed Law 01-019 (2001) cited in prior context",
+  "difficulty": "hard"
+ },
+ {
+  "country": "Guinea",
+  "entity_types": "association (loi L/2010/004 du 3 janv 2010), organisation non gouvernementale (ONG)",
+  "cost_time": "US$300–1k, 4–10 weeks",
+  "key_req": "Declaration of an association under Law L/2010/004; local registered office in Conakry; French-language documents",
+  "notes": "2010 association law uses a declaration regime (more open than the old authorization system); French-only; military rule since 2021 adds some political risk but NGO sector remains active | Association regime rests on loi 013/05 (2005) + L013 NGO text; prior 'loi L/2010/004 (2010)' not confirmed",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Guinea-Bissau",
+  "entity_types": "associação, organização não governamental (ONG)",
+  "cost_time": "US$500–2k, 1–4 months",
+  "key_req": "Registration of an association under Lei n.º 5/VI/96 de 21 de Dezembro de 1996 (regime de registo); local office; Portuguese-language filings",
+  "notes": "Repeated military coups (7 since independence), fragile state capacity, weak enforcement of registrations; Portuguese (not French) documents; practical operations very difficult | Prior cited Lei n. 5/VI/96 (1996) is superseded: Loi L/005/013/AN (2013) is the operative association law (repealed 1986 NGO decree)",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Senegal",
+  "entity_types": "association déclarée (décret-loi de 1965, modèle 1901), organisation non gouvernementale (ONG)",
+  "cost_time": "US$300–1k, 2–8 weeks",
+  "key_req": "Simple declaration of an association at the Direction de l'Action Sociale (1965 decree, French 1901 model); local registered office; French-language documents",
+  "notes": "Stable, well-established association culture; declaration regime is the easiest in francophone West Africa; 2022/2023 framework on foreign-funded NGOs (OSC law) adds a reporting layer for foreign funders; French-only | Confirm prior: 1965 declaration regime (1901 model) stands; 2023 OSC framework confirmed as reporting layer, not a ban",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Gambia",
+  "entity_types": "society (Societies Act, Cap 303), company limited by guarantee",
+  "cost_time": "US$300–1k, 2–8 weeks",
+  "key_req": "Registration of a society with the Registrar of Societies under the Societies Act 1972 (or Companies Act 1964 for a CLG); local office; English-language filings",
+  "notes": "English language, stable democracy; 2022 NGO Bill has been in draft years without enactment, so the old 1972 Societies Act still applies; Banjul filings manageable with a local agent | Confirm prior: Societies Act 1972 (Act No. 19 of 1972) still operative; NGO Bill still unenacted",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Sierra Leone",
+  "entity_types": "company limited by guarantee (Companies Act 2013), trust, charitable society",
+  "cost_time": "US$300–1.5k, 4–12 weeks",
+  "key_req": "Registration of a non-profit company limited by guarantee with the Companies Registry; local registered office; English-language documents",
+  "notes": "English language; 2022 NGO Bill pending, so existing NGO/charitable-society registration practices continue; Freetown has expat-friendly law firms; registry throughput is slower than Ghana | Confirm prior: Companies Act 2013 CLG route; NGO Bill 2022 still pending",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Liberia",
+  "entity_types": "non-governmental organization (NGO Act 2015), limited liability company (non-profit), trust",
+  "cost_time": "US$500–2k, 4–12 weeks",
+  "key_req": "NGO registration under the NGO Act of 2015 (Act No. 11 of 2015) with a local principal officer, local office, and a US$150 (local) fee; three-year permit renewal cycle",
+  "notes": "English language; the 2015 Act is the operative law (it replaced the older NGO Bill regime); permits must be renewed every 3 years; local principal officer requirement is the main hurdle for a fully foreign board | Confirm prior: NGO Act 2015 operative, US$150 fee, 3-year renewal, local principal officer",
+  "difficulty": "medium"
+ },
+ {
+  "country": "Niger",
+  "entity_types": "association (loi 93-010 du 28 avril 1993), organisation non gouvernementale (ONG)",
+  "cost_time": "US$500–2k, 1–4 months",
+  "key_req": "Registration of an association with the Direction de l'Administration Générale under Law 93-010; local registered office; French-language filings; practical authorization hurdles for foreign-funded NGOs",
+  "notes": "Military rule since 2023; security situation in the north (Sahel conflict); Niamey filings are French-only; some discretionary elements in approvals | Confirm prior: Law 93-010 association regime; 2022-182 decree adds explicit prior-authorization layer; military rule since 2023 confirmed",
+  "difficulty": "hard"
+ },
+ {
+  "country": "North Korea",
+  "entity_types": "state-run public organization (no independent charitable sector)",
+  "cost_time": "n/a",
+  "key_req": "no meaningful independent charity registration; foreign involvement barred in practice",
+  "notes": "No independent charitable pathway; no GfN. Excluded from any practical plan. | confirm prior — state-run only, no independent registration pathway, excluded from any practical plan.",
+  "difficulty": "very hard"
+ },
+ {
+  "country": "Russia",
+  "entity_types": "public organization (NGO) / public foundation registered with Ministry of Justice",
+  "cost_time": "n/a",
+  "key_req": "Russian-language filings, foreign-agent law risks for foreign-linked orgs, sanctions on AU side",
+  "notes": "No GfN. Sanctions + foreign-agent regime make this unsuitable for an Australian founder. | Confirm prior: public organization/foundation via Ministry of Justice, hard difficulty; fee is modest (~$45) but foreign-agent regime makes it unsuitable.",
+  "difficulty": "hard"
+ }
+]

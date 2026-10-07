@@ -1,0 +1,50 @@
+[
+  {
+    "country": "Monaco",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Discretionary sovereign decree; Monaco registered office, local management and bank; French-language in-person steps",
+    "fee_usd": "none (discretionary process, no published fee)",
+    "time_to_register": "3-12 months",
+    "deduction": "no personal income tax; no charitable deduction regime for residents",
+    "foreign_donor_restriction": "none FCRA-style; establishment itself requires discretionary approval by the Prince on advice of the foundations commission",
+    "corrections": "confirm; 1922 foundation law + 2008 association law (1355) apply; new patrimonial foundation route (FPI ~EUR 30k / FRUP ~EUR 100k) adds a streamlined option vs EUR 50k decree",
+    "sources": [
+      "https://monacopratique.com/en/guide/philanthropy-foundations/",
+      "https://www.99avocats.com/en/publications/draft-law-no-268-relating-to-the-monegasque-patrimonial-foundation",
+      "https://journaldemonaco.gouv.mc/en/content/download/215570/5013075/file/FC_JO%208.818_25%20septembre%202026.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "San Marino",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Italian-language filings and in-person steps; San Marino registered office required; almost no English-language service",
+    "fee_usd": "~$200",
+    "time_to_register": "1-3 months",
+    "deduction": "charitable donations to recognised associations/foundations deductible for tax residents, capped",
+    "foreign_donor_restriction": "none notable; no registration/licensing regime for foreign donors",
+    "corrections": "confirm prior; note a dedicated private-foundation law is in legislative draft (2025), so foundations are still mainly set up ad hoc; associations already registrable with CGeG",
+    "sources": [
+      "https://www.consigliograndeegenerale.sm/on-line/documento17076457.html",
+      "https://studiogaeta.com/2025/03/26/san-marino-e-le-fondazioni-private-patrimonio/",
+      "https://www.avvocatobertaggia.org/en/insights/san-marino-company-formation-tax-dividends-2026/"
+    ],
+    "confidence": "low"
+  },
+  {
+    "country": "Andorra",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Founders must be Andorran nationals or legal residents (Law 20/2023); EUR 100k endowment; local seat/management; Catalan/Spanish filings",
+    "fee_usd": "~$500 (registry; notary fees separate)",
+    "time_to_register": "1-3 months (fundacio); 4-8 weeks (associacio)",
+    "deduction": "no broad individual charitable deduction regime; limited deductions only",
+    "foreign_donor_restriction": "none notable; foreign-investment law (10/2012) covers business capital, not donations",
+    "corrections": "confirm prior; Law 20/2023 consolidat (associations) restricts founders to Andorran nationals / legally resident foreigners / Andorran entities; EUR 100k fundacio endowment per Law 14/2003 confirmed",
+    "sources": [
+      "https://www.augelegalfiscal.com/en/the-foundations/",
+      "https://jurisprudencia.ad/lleis-andorra/associacions",
+      "https://www.e-tramits.ad/tramits/inscripcio-al-registre-dassociacions/p/GV000434"
+    ],
+    "confidence": "high"
+  }
+]

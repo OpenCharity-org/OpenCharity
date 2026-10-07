@@ -1,0 +1,110 @@
+[
+  {
+    "country": "Albania",
+    "entity_types": "Non-profit associations (3+ founders, foreigners OK); foundations; NPOs registered under Law 80/2021 via the National Registration Center; public-benefit status available.",
+    "cost_time": "About USD 300-550 including notary and legal fees; registration takes 2-8 weeks. Foreign founders permitted; the electronic register accepts documents by post or courier.",
+    "source": "https://www.partnersalbania.org/wp-content/uploads/2019/01/ligj_nr.802021_24.6.2021.pdf"
+  },
+  {
+    "country": "Moldova",
+    "entity_types": "Public associations (3+ founders); foundations; registered under the 2020 Law on Non-commercial Organisations. Foreigners may found with local involvement.",
+    "cost_time": "No state registration fee (2020 NCO law); about EUR 100-300 for notary and legal support only. Processing 2-6 weeks; no official processing time published.",
+    "source": "https://csometer.info/updates/moldova-new-progressive-law-non-commercial-organisations"
+  },
+  {
+    "country": "Bulgaria",
+    "entity_types": "Non-profit legal entities (NPL) under the Non-Profit Legal Entities Act; associations; foundations; registered at the Agency for Registration. A 1-founder NPL is the simplest route.",
+    "cost_time": "About BGN 150-300 plus notary fees; statutory 30 days. Foreigners can found an NPL; no residency requirement for the founding act itself.",
+    "source": "https://portal.registryagency.bg/en/page/136"
+  },
+  {
+    "country": "Greece",
+    "entity_types": "Associations (min 7 founders, Law 1566/1985); foundations (Law 40/2022); general-benefit status via separate application after court-registry filing.",
+    "cost_time": "About EUR 500-1500 in notary and legal fees; 1-3 months. Foreigners may be founders; general-benefit status is a separate, discretionary step.",
+    "source": "https://fra.europa.eu/sites/default/files/fra_uploads/greece-civil-space_en.pdf"
+  },
+  {
+    "country": "Ireland",
+    "entity_types": "Companies limited by guarantee (most charities); incorporated associations; registered with the CRO and then with the Charities Regulatory Authority (CRA).",
+    "cost_time": "CRO incorporation about EUR 100; charity registration with the CRA is free; 4-8 weeks. Foreign directors permitted if residency rules are met.",
+    "source": "https://www.charitiesregulator.ie/register-with-us/"
+  },
+  {
+    "country": "Iceland",
+    "entity_types": "Associations (felag, 2+ members); foundations (stifting, Act 33/1999); both registered with the Registrator (RSK) under the Directorate of Internal Revenue.",
+    "cost_time": "Association registration about ISK 5,000-10,000; 2-4 weeks. Foundations require a minimum endowment of about ISK 1,000,000; foreigners may found.",
+    "source": "https://www.government.is/library/04-Legislation/Act%20No%2033-1999.pdf"
+  },
+  {
+    "country": "Norway",
+    "entity_types": "Member associations (lag, Act 2020); foundations; both registered with the Brønnøysund Register. No minimum capital; a simple notification regime.",
+    "cost_time": "Association registration at Brønnøysund is FREE; 2-6 weeks. Foreigners may be members and board; no local residency required for registration.",
+    "source": "https://info.altinn.no/en/start-and-run-business/planning-starting/registration-of-the-enterprise/starting-registrering-an-association/"
+  },
+  {
+    "country": "Finland",
+    "entity_types": "Associations (yhdistys, 5+ members); foundations (säätiö); registered with PRH (Patent and Registration Office). Charitable status via the Tax Administration.",
+    "cost_time": "PRH registration fee about EUR 100; 1-3 months. Foreigners may be members; no residency requirement to found an association.",
+    "source": "https://www.prh.fi/en/price-lists/hinnasto/kasittelymaksut.html"
+  },
+  {
+    "country": "Sweden",
+    "entity_types": "Economic associations (ekonomiska föreningar); ideal associations; foundations; registered with Bolagsverket (Swedish Companies Registration Office).",
+    "cost_time": "About SEK 1,000-2,500; 4-8 weeks. A bank account needs a D-number. Foreigners may be members; no residency rule for founding.",
+    "source": "https://www.verksamt.se/en/setting-up/associations/economic-association"
+  },
+  {
+    "country": "Denmark",
+    "entity_types": "Voluntary associations (frivillige foreninger); foundations; associations registered with the CVR register. The 2023 Foundation Act applies to foundations.",
+    "cost_time": "Association registration at CVR is free; DKK 0-2,000 total with legal support; 2-6 weeks. The 2023 Foundation Act requires a Danish-resident board majority.",
+    "source": "https://virk.dk/myndigheder/stat/ERST/selvbetjening/Frivillige_foreninger/"
+  },
+  {
+    "country": "Latvia",
+    "entity_types": "Non-governmental organisations (NVO); associations; foundations; registered in the Enterprise Register under the 2016 NVO law via the e-portal.",
+    "cost_time": "State fee about EUR 11-12; total EUR 30-100; 1-4 weeks. The 2016 NVO law removed the notary step. A Latvian-resident board and local address are required.",
+    "source": "https://latvija.gov.lv/Services/46744"
+  },
+  {
+    "country": "Israel",
+    "entity_types": "Associations (7+ members, Law of Associations 5725-1965); societies; companies limited by guarantee; registered with the Registrar of Associations.",
+    "cost_time": "About USD 150-350 in fees plus USD 500-2000 attorney; 2-6 weeks. A registered Israeli office (lease of 1+ yr) is required; citizenship is not needed.",
+    "source": "https://www.gov.il/BlobFolder/policy/proper_management_guidelines/en/associationen.pdf"
+  },
+  {
+    "country": "Lebanon",
+    "entity_types": "Associations under Law 92/1909 (notification/declaration regime); foundations. Ordinary associations operate on a declaration basis, not full registration.",
+    "cost_time": "About USD 100-500; 2-6 weeks. Foreigners may found and direct associations; the notification regime is less formal than a full registration system.",
+    "source": "https://www.icnl.org/resources/research/ijnl/notification-or-registration-guarantees-of-freedom-of-association-in-non-democratic-environments-case-studies-of-lebanon-and-jordan"
+  },
+  {
+    "country": "Iraq",
+    "entity_types": "Non-governmental organisations under Law 12 of 2010; registered with the NGO Directorate of the Interior Ministry. Associations are the main registered form.",
+    "cost_time": "Fees low, but registration is effectively barred to foreigners: Law 12/2010 requires at least 10 Iraqi-national/resident founders. Official processing times unpublished.",
+    "source": "https://www.icnl.org/research/library/iraq_12-2010-en"
+  },
+  {
+    "country": "Bahrain",
+    "entity_types": "Civil (NGO) organisations under Law 19 of 2006; registered with the Ministry of Social Development (NGO Support Department).",
+    "cost_time": "Registration is effectively out of reach for foreigners: Law 19/2006 requires 20 Bahraini founders and a 2/3 Bahraini board. Official processing time unpublished.",
+    "source": "https://www.social.gov.bh/ngo/ngos_regestration_forms?lang=en"
+  },
+  {
+    "country": "Sudan",
+    "entity_types": "Voluntary and humanitarian organisations under the 2006 Voluntary & Humanitarian Work (Organisation) Act; associations are the main registered form.",
+    "cost_time": "Registration is suspended and unworkable since the 2023 civil war; the 2006 Act makes registration mandatory and the state a gatekeeper. Effectively impossible now.",
+    "source": "https://www.refworld.org/legal/legislation/natlegbod/2006/96272"
+  },
+  {
+    "country": "Libya",
+    "entity_types": "Non-governmental organisations under NGO Law No. 19 of 2001 (plus 2013 circulars); scope limited to social, cultural, sports, charitable and humanitarian work.",
+    "cost_time": "No path to foreign formation; dual authorities and state-gatekept registration. Effectively impossible for a foreign founder with no local presence.",
+    "source": "https://security-legislation.ly/latest-laws/law-no-19-of-2001-on-the-reorganization-of-ngos/"
+  },
+  {
+    "country": "Algeria",
+    "entity_types": "Associations under Law 12-06 of 2012 (amended 2020); associations for utility (d'intérêt général); registered with the wilaya (province) authorities.",
+    "cost_time": "About DZD 5,000-15,000; 1-3 months. Foreign-founded associations require government pre-approval (art.23); a 2025 replacement bill is not in force.",
+    "source": "https://icnl.org/post/in-the-news/algeria-passes-new-law-on-associations"
+  }
+]

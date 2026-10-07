@@ -1,0 +1,129 @@
+[
+  {
+    "country": "Canada",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Books/records must be kept at a Canadian address (registered agent suffices); CRA charity approval takes months.",
+    "fee_usd": "~$230 (C$200 incorporation + C$100 CRA charity registration)",
+    "time_to_register": "6-16 weeks (incorporation 1-2 weeks; CRA registration 35 days to 3+ months)",
+    "deduction": "Canadian donors get a tax credit of ~25-33% of gift (federal + provincial)",
+    "foreign_donor_restriction": "none notable - no foreign donor registration; cross-border gifts to registered charities permitted",
+    "corrections": "confirm prior - C$200 incorporation (C$300 express) plus C$100 charity fee matches the C$300 total and timeline",
+    "sources": [
+      "https://www.canada.ca/en/revenue-agency/services/charities-giving/charities/information-about-a-charity.html",
+      "https://www.xero.com/ca/guides/starting-a-non-profit/",
+      "https://www.canadiancharitylaw.ca/uploads/CRA_Foreign_Activity_Guidance_-Final.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "United States",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Registered agent in state of incorporation required (readily purchasable); IRS determination is the long pole.",
+    "fee_usd": "~$400-700 (state filing ~$90 + IRS user fee $275 (1023-EZ) or $600 (1023))",
+    "time_to_register": "1-2 weeks incorporation; 6-12 months for 501(c)(3) determination",
+    "deduction": "Deductible for US donors, generally up to 60% of AGI for cash gifts to public charities",
+    "foreign_donor_restriction": "none notable - no registration of foreign donors; US persons face OFAC/CFIUS-adjacent limits on giving to sanctioned entities only",
+    "corrections": "confirm prior, update fees: current IRS user fees are $275 (1023-EZ) / $600 (1023), not US$400-600",
+    "sources": [
+      "https://www.irs.gov/charities-non-profits/form-1023-and-1023-ez-amount-of-user-fee",
+      "https://www.irs.gov/charities-non-profits/frequently-asked-questions-about-form-1023",
+      "https://www.501c3.org/incorporate-nonprofit-delaware/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Cuba",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "No private charitable sector exists; foreign nationals cannot register any charitable vehicle",
+    "fee_usd": "none",
+    "time_to_register": "N/A - not available",
+    "deduction": "none - no private charitable deduction regime",
+    "foreign_donor_restriction": "US OFAC embargo blocks most US-person giving; Cuba only accepts state-sanctioned solidarity programs (MESA-style)",
+    "corrections": "confirm prior - no foreign-accessible registration path; use a Canada/US entity partnering with a state-linked body",
+    "sources": [
+      "https://ofac.treasury.gov/faqs/topic/1541",
+      "https://2021-2025.state.gov/fact-sheet-provision-of-humanitarian-assistance-to-cuba/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Jamaica",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office + agent required; deductible status needs Charities Act registration beyond company incorporation.",
+    "fee_usd": "~$150 (J$25,000 Companies Office filing; agent fees separate)",
+    "time_to_register": "2-4 weeks for company; additional months for charity registration",
+    "deduction": "Deductible for Jamaican donors if registered as a charity under the Charities Act (ITA s.13(1)(q))",
+    "foreign_donor_restriction": "none notable - foreign gifts permitted; registered charities also get customs/GCT relief",
+    "corrections": "prior claim of 'no charity regulator/tax-deduction regime' is outdated: Charities Act 2013 registration (RCOs) exists with tax-deductible status",
+    "sources": [
+      "https://www.jamaicatax.gov.jm/charitable-donations",
+      "https://www.orcjamaica.com/Services.aspx",
+      "https://dcfs.gov.jm/docs/Charities/DCFS_CharitiesPolicy.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Bahamas",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Licensed Bahamian registered agent must provide the registered office (readily available for hire).",
+    "fee_usd": "~$300-800 incl. agent",
+    "time_to_register": "1-3 weeks",
+    "deduction": "none - no income tax, so no charitable deduction regime",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior - Companies Act 2019 CLBG via Corporate Business Registry with licensed agent; no charity tax regime",
+    "sources": [
+      "https://rgd.gov.bs/service/foreign-registration-of-companies",
+      "https://www.bahamas.gov.bs/corporate-registry",
+      "https://www.expanship.com/bs/blog/how-much-does-it-cost-to-incorporate-a-company-in-bahamas"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Barbados",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office + agent required; no dedicated charity regulator, so deductible status is limited.",
+    "fee_usd": "~$300-800 incl. agent",
+    "time_to_register": "1-3 weeks",
+    "deduction": "limited charitable donation relief under the Income Tax Act for approved donees",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior - Companies Act 2016 CLBG via Business Barbados (CAIPO) with local agent; standard expat path",
+    "sources": [
+      "https://caipo.gov.bb/corporate-affairs/incorporation/",
+      "https://caipo.gov.bb/corporate-affairs/registered-agent/",
+      "https://www.expanship.com/bb/blog/how-much-does-it-cost-to-incorporate-a-company-in-barbados"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Trinidad & Tobago",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local registered office + agent required; charitable status needs discretionary Ministry of Finance approval.",
+    "fee_usd": "~$300-800 incl. agent",
+    "time_to_register": "2-6 weeks for company; months more for charitable status approval",
+    "deduction": "Covenanted donations to approved charities deductible, capped at 15% of total income",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior - Companies Act 2019 CLBG plus separate charitable-status application under Income Tax Act s.76(3)(d)",
+    "sources": [
+      "https://www.finance.gov.tt/services/licenses/application-for-charitable-status/",
+      "https://www.ird.gov.tt/approvals-deeds-of-covenants",
+      "https://rgd.legalaffairs.gov.tt/laws2/Alphabetical_List/lawspdfs/75.01.pdf"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Antigua & Barbuda",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Licensed local registered agent required (readily available; strong offshore-agent ecosystem).",
+    "fee_usd": "~$300-800 incl. agent",
+    "time_to_register": "1-3 weeks",
+    "deduction": "no significant charitable deduction regime",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior - Companies Act 1995 CLBG via ABIPCO with licensed agent; remote formation straightforward",
+    "sources": [
+      "https://abipco.gov.ag/companies/",
+      "https://laws.gov.ag/wp-content/uploads/2018/08/a1995-18.pdf",
+      "https://www.expanship.com/ag/blog/incorporation-requirements-in-antigua-and-barbuda"
+    ],
+    "confidence": "med"
+  }
+]

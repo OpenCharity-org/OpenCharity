@@ -1,0 +1,124 @@
+[
+  {
+    "country": "Ireland",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Irish registered office + management and control in Ireland; a local registered-office agent is typical.",
+    "fee_usd": "~$110",
+    "time_to_register": "4-8 weeks",
+    "deduction": "Tax-deductible at donor's marginal rate; 25% tax credit for corporate donors.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior; regulator is the Charities Regulatory Authority (CRA), not the former 'Charity Commission for Ireland'.",
+    "sources": [
+      "https://www.charitiesregulatory.ie/",
+      "https://www.lexology.com/library/detail.aspx?g=68355ef2-1d01-4b55-8bee-7b145fb9cb5c",
+      "https://www.cro.ie/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "United Kingdom",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Charity must be established and managed in the UK: UK address and UK-based trustees/management in practice.",
+    "fee_usd": "~$15",
+    "time_to_register": "8-12 weeks",
+    "deduction": "Gift Aid: UK taxpayers reclaim basic-rate tax on gifts to registered charities.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior",
+    "sources": [
+      "https://www.gov.uk/how-to-register-charity",
+      "https://www.gov.uk/government/organisations/charity-commission",
+      "https://register-of-charities.charitycommission.gov.uk/en/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Iceland",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Icelandic registered address, Icelandic-language documents, ~5 members; tax exemption is a separate application.",
+    "fee_usd": "~$50",
+    "time_to_register": "2-4 weeks",
+    "deduction": "Deductible if the org is tax-exempt (reykjafrjálst), plus ~10% surtax deduction on the gift.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior",
+    "sources": [
+      "https://island.is/en/registration-of-a-philosophical-organisation",
+      "https://vlolawfirm.com/guides/how-to-register-a-company-in-iceland"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Norway",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Norwegian address and resident board contact; registration is online via Altinn (English available).",
+    "fee_usd": "none",
+    "time_to_register": "2-6 weeks",
+    "deduction": "Deductible via gavefradrag, capped at NOK 30,000/yr, if the organisation qualifies.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Prior cost corrected: initial association registration at Brønnøysund is free (not NOK 1,000-2,500).",
+    "sources": [
+      "https://www.brreg.no/en/how-can-we-help-you/fees-for-registration/",
+      "https://info.altinn.no/en/start-and-run-business/planning-starting/registration-of-the-enterprise/starting-registrering-an-association/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Finland",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Finnish registered address + local service recipient; Finnish/Swedish-language statutes; PRH processing slow.",
+    "fee_usd": "~$115",
+    "time_to_register": "4-12 weeks",
+    "deduction": "Deductible if the association holds a gift-deduction (lahjoitusvähennys) certificate.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; PRH registration fee is about EUR 100.",
+    "sources": [
+      "https://yhdistysrekisteri.prh.fi/?userLang=en",
+      "https://en.wikipedia.org/wiki/Registered_association_(Finland)"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Sweden",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Swedish registered seat (säte) required; board residency not required; Bolagsverket online registration.",
+    "fee_usd": "~$55",
+    "time_to_register": "4-8 weeks",
+    "deduction": "Deductible if the association qualifies as tax-exempt (skattefri) under the tax-exemption rules.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior",
+    "sources": [
+      "https://bolagsverket.se/en/foretag/aktiebolag/startaaktiebolag.479.html",
+      "https://membly.app/en/blog/how-to-start-an-association"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Denmark",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Danish registered address required; CVR registration is needed to receive 30A deductible donations.",
+    "fee_usd": "~$20",
+    "time_to_register": "2-6 weeks",
+    "deduction": "30A scheme: donor's gift is tax-deductible; 19% of the gift (income tax) goes to the state.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior",
+    "sources": [
+      "https://erhvervsstyrelsen.dk/vejledning-om-foreninger",
+      "https://businessindenmark.virk.dk/guidance/services-contact-point/Establish-a-business-in-Denmark/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Estonia",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "none notable - fully online via e-Business Register; virtual registered address suffices.",
+    "fee_usd": "~$35",
+    "time_to_register": "1-4 weeks",
+    "deduction": "Deductible for individuals up to 300% of statutory minimum wage; no foreign-donor restrictions.",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; state fee EUR 30, fully online, board may be 100% foreign/e-resident.",
+    "sources": [
+      "https://www.eesti.ee/eraisik/en/artikkel/doing-business/establishing-a-company/founding-a-nonprofit-association",
+      "https://www.e-resident.gov.ee/blog/posts/how-to-start-a-non-profit-organisation-in-estonia/"
+    ],
+    "confidence": "high"
+  }
+]

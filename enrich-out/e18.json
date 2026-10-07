@@ -1,0 +1,18 @@
+[
+  {
+    "country": "South Africa",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "SA registered office/agent required; foreign directors use slower manual CIPC process; PBO/18A status takes 6-12 months",
+    "fee_usd": "~$10 (ZAR 125-175, CIPC NPC incl. name reservation)",
+    "time_to_register": "2-6 weeks for NPC (PBO/18A status separately 6-12 months)",
+    "deduction": "Donations to S18A-approved PBOs deductible up to 10% of donor's taxable income",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "Confirm prior: CIPC NPC fee ZAR 125-175, no residency rule for directors but foreign directors use manual process; SA registered office required",
+    "sources": [
+      "https://www.gov.za/services/register-business-or-organisation/register-non-profit-company",
+      "https://www.sars.gov.za/businesses-and-employers/tax-exempt-institutions/public-benefit-organisations/",
+      "https://www.cipc.co.za/wp-content/uploads/Step_by_step_Guide/Step_by_step_guide_Non_Profit_companyCOR_15.1C_without_members_with_a_Short_Standard_MOI_registration_v0.1.pdf"
+    ],
+    "confidence": "high"
+  }
+]

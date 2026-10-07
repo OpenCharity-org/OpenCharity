@@ -1,0 +1,75 @@
+{
+  "country": "Estonia",
+  "gfnp_eligible": true,
+  "as_of": "2026-10",
+  "verified": true,
+  "recommended_path": "MTÜ (non-profit association) via the e-Business Register for the low-cost, fully-remote route; sihtasutus (foundation) if a no-member endowment structure is needed",
+  "entity_types": [
+    "MTÜ (mittekasumihandlusühing, non-profit association — 2+ members; the unified 2016 form replacing selts/ühing)",
+    "Sihtasutus (foundation — no members, mandatory management board (juhtkogu) + supervisory board (järelevaldekogu))",
+    "Sihtasutus via e-Residency (online registration possible)"
+  ],
+  "requirements": {
+    "founders": "MTÜ: min. 2 founding members (foreign nationals allowed). Sihtasutus: 1+ founder; boards must be appointed (management + supervisory)",
+    "local_presence": "Registered office in Estonia (a virtual office / e-residency address suffices)",
+    "documents": "MTÜ: articles of association + founding decision, filed online in the e-Business Register (ariregister.rik.ee) with Smart-ID/mobile-ID, or notarized for e-residents. Sihtasutus: foundation deed (notarial) + application; online filing via e-Residency possible"
+  },
+  "forms": [
+    "e-Business Register online application (ariregister.rik.ee) for MTÜ",
+    "Sihtasutus: foundation deed (notarized) + e-Business Register application",
+    "Official MTÜ guide: https://e-resident.gov.ee (quasi-primary, government e-Residency portal)"
+  ],
+  "fees": [
+    {
+      "item": "MTÜ registration state fee",
+      "amount": "30 EUR",
+      "source_class": "primary",
+      "source": "https://abiinfo.rik.ee/en/uudised/state-fees-will-change-01012022 — official state-fee table effective 01.01.2022: 'Non-profit association | 30 EUR | 10 EUR' (registration | amendment)",
+      "note": "Verified verbatim in the official Center of Registers and Information Systems table; links to the State Fees Act (riigiteataja.ee/eli/ee/506122021002)"
+    },
+    {
+      "item": "Sihtasutus registration state fee",
+      "amount": "80 EUR",
+      "source_class": "primary",
+      "source": "https://abiinfo.rik.ee/en/uudised/state-fees-will-change-01012022 — same table: 'Foundation | 80 EUR | 10 EUR'; corroborated by eesti.ee sihtasutus article",
+      "note": "Supersedes the stale historical ~2,600-kron (≈€330) figure — that figure is unverified and dropped"
+    },
+    {
+      "item": "Sihtasutus notary fee",
+      "amount": "~40-50 EUR (notary for the foundation deed)",
+      "source_class": "secondary",
+      "source": "https://www.mtyabi.ee/en/ (notary rate)",
+      "note": "Market rate; the state fee does not include notarization"
+    },
+    {
+      "item": "e-Residency card (optional, for online signing by non-residents)",
+      "amount": "150 EUR",
+      "source_class": "secondary",
+      "source": "https://e-resident.gov.ee",
+      "note": "Only needed if founders will not use Estonian ID/Smart-ID in person"
+    },
+    {
+      "item": "Service-provider packages (optional)",
+      "amount": "e.g. eestifirma.ee €375-1,200 packages; mtyabi.ee service ~349 EUR incl. the 30 EUR state fee; legal address €149-298/yr",
+      "source_class": "secondary",
+      "source": "https://eestifirma.ee, https://e-resident.store, https://mtyabi.ee",
+      "note": "Commercial convenience, not a legal requirement"
+    }
+  ],
+  "timelines": {
+    "mty": "1-3 business days (online e-Business Register filing)",
+    "sihtasutus": "5 business days (per eesti.ee, incl. notary step)"
+  },
+  "supersedes": [
+    "Prior v2 'association needs min. 5 members' corrected: MTÜ needs 2+ members under the Non-profit Associations Act (the 5-member rule applied to the old ühing form, now absorbed into MTÜ).",
+    "Prior v2 'Registration fee ~€10-50' refined to exact primary figures: MTÜ 30 EUR, sihtasutus 80 EUR (official 01.01.2022 state-fee table, abiinfo.rik.ee).",
+    "Prior v2 'foundation needs a small endowment (~€2,600+)' dropped: no statutory minimum endowment found in the Estonian Foundations Act; the kron figure was unverified."
+  ],
+  "sources": [
+    "https://abiinfo.rik.ee/en/uudised/state-fees-will-change-01012022",
+    "https://www.riigiteataja.ee/en/eli/ee/506122021002/consolide/current",
+    "https://e-resident.gov.ee",
+    "https://eesti.ee (MTÜ and sihtasutus articles)",
+    "https://www.mtyabi.ee/en/"
+  ]
+}

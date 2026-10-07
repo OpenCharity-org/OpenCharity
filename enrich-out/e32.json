@@ -1,0 +1,33 @@
+[
+  {
+    "country": "North Korea",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "No independent charitable sector exists; only state-run bodies, and foreign NGO involvement is barred in practice.",
+    "fee_usd": "n/a",
+    "time_to_register": "n/a",
+    "deduction": "n/a — no independent charitable tax regime for a foreign founder.",
+    "foreign_donor_restriction": "Foreign NGOs not permitted to register or operate; contact only via state channels (Red Cross); total ban in practice.",
+    "corrections": "confirm prior — state-run only, no independent registration pathway, excluded from any practical plan.",
+    "sources": [
+      "https://freedomhouse.org/country/north-korea/freedom-world/2024",
+      "https://www.38north.org/2026/03/the-case-for-enabling-nongovernmental-engagement-with-north-korea/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Russia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Needs a Russian legal address and locally-present leadership; remote founders rely on a local agent (notarized documents).",
+    "fee_usd": "~$45 (RUB 4,000 state duty)",
+    "time_to_register": "4-8 weeks (MoJ decision within 30 days plus document notarization/translation)",
+    "deduction": "Charitable donations deductible from personal income tax up to 25% of taxable income (Tax Code Art. 219).",
+    "foreign_donor_restriction": "Foreign agent label if >10% foreign funding/support; 'undesirable organization' designation possible; AU sanctions risk.",
+    "corrections": "Confirm prior: public organization/foundation via Ministry of Justice, hard difficulty; fee is modest (~$45) but foreign-agent regime makes it unsuitable.",
+    "sources": [
+      "https://pareto-group.com/en/legal-services/registration-of-companies-individual-entrepreneurs/registration-of-nonprofit-organization/",
+      "https://cof.org/country-notes/nonprofit-law-russia",
+      "https://en.wikipedia.org/wiki/Russian_undesirable_organizations_law"
+    ],
+    "confidence": "high"
+  }
+]

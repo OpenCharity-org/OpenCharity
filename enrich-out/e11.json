@@ -1,0 +1,124 @@
+[
+  {
+    "country": "Egypt",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Egyptian-national chair in practice, local office, Arabic docs, security vetting by ministries",
+    "fee_usd": "~$20-100 (EGP 1,000-5,000) plus agent/legal fees",
+    "time_to_register": "3-6 months incl. security vetting",
+    "deduction": "deductible for registered bodies; 10% of net taxable income cap",
+    "foreign_donor_restriction": "Prior government approval required for foreign funding under 2019 law; foreign entities need ministry permits",
+    "corrections": "Confirm prior; 2019 law forces all NGOs to re-register; foreigners must be legal residents in Egypt to be founders/members",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Egyptian_NGO_Law",
+      "https://timep.org/2018/11/14/timep-brief-ngo-law/",
+      "https://www.amnesty.org/en/latest/news/2025/11/egypt-reverse-sweeping-controls-over-independent-civil-society-organizations/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Sudan",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Civil war paralysed registration bodies; Humanitarian Aid Commission cancels registrations; Sudanese founders only",
+    "fee_usd": "~$100-300 (nominal, when functional)",
+    "time_to_register": "3-6 months when functional; effectively suspended",
+    "deduction": "deductible for registered bodies; ~5% of taxable income cap",
+    "foreign_donor_restriction": "Mandatory Humanitarian Aid Commission registration; funding tightly controlled; unregistered orgs shut down",
+    "corrections": "Confirm prior: registration effectively suspended during conflict; Voluntary and Humanitarian Work Act is the restrictive governing law",
+    "sources": [
+      "https://www.icnl.org/resources/civic-freedom-monitor/sudan",
+      "https://reliefweb.int/report/sudan/sudan-govt-cracks-down-civil-society-groups-entire-country"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Libya",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Split governments, militia influence; foreign orgs register with Foreign Organizations Registry; no workable path",
+    "fee_usd": "nominal (no published fee)",
+    "time_to_register": "6-12 months when functional; largely suspended",
+    "deduction": "deductible for registered bodies; ~5% of taxable income cap",
+    "foreign_donor_restriction": "Foreign orgs must register with Ministry of Culture registry; ongoing crackdowns under Law 19/2001",
+    "corrections": "Confirm prior, with correction: current framework is NGO Law No. 19 of 2001 (and 2013 circulars), not Law 12/1989 as sole basis",
+    "sources": [
+      "https://security-legislation.ly/latest-laws/law-no-19-of-2001-on-the-reorganization-of-ngos/",
+      "https://www.icnl.org/wp-content/uploads/Libya_foreign-org-control-en.pdf",
+      "https://www.hrw.org/news/2023/04/18/libya-crackdown-nongovernmental-groups"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Algeria",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Local office, Arabic docs, wilaya declaration; foreign members need state agreements; foreign ties scrutinised",
+    "fee_usd": "~$25-75 (DZD 5,000-15,000)",
+    "time_to_register": "1-3 months",
+    "deduction": "deductible for registered bodies; 10% of net taxable income cap (50% for education/health)",
+    "foreign_donor_restriction": "Prior authorisation for foreign cooperation; foreign members need state agreements",
+    "corrections": "Confirm prior; Law 12-06 (2012) in force; 2025 replacement bill maintains prior authorisation and expands state control (not yet in force)",
+    "sources": [
+      "https://www.hrw.org/news/2025/09/25/algeria-lift-undue-restrictions-on-associations",
+      "https://www.icnl.org/post/in-the-news/algeria-passes-new-law-on-associations"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Tunisia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Founders must be Tunisians or foreigners legally resident in Tunisia; local office and resident representative required",
+    "fee_usd": "~$10-40 (TND 50-200)",
+    "time_to_register": "2-4 weeks",
+    "deduction": "deductible; 50% of donation value, capped at 10% of taxable income",
+    "foreign_donor_restriction": "Foreign associations need branch registration + resident rep; 2023 draft adds Foreign Ministry authorisation",
+    "corrections": "Confirm prior; governing text is Decree-Law 59-154 of 1959; only 2 founders needed; members 13+, must accept bylaws in writing",
+    "sources": [
+      "https://www.icnl.org/resources/civic-freedom-monitor/tunisia",
+      "https://global.ecovis.com/how-to-register-a-foreign-association-in-tunisia-which-obligations-must-be-met/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Morocco",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Registered office + Arabic statutes; governor discretion can delay; local address agent usually needed",
+    "fee_usd": "~$50-200 incl. notary/agent",
+    "time_to_register": "1-3 months",
+    "deduction": "deductible; up to 15% of net taxable income for approved charitable associations",
+    "foreign_donor_restriction": "Foreign associations may not operate without registration; foreign funding subject to declaration/approval rules",
+    "corrections": "Confirm prior with correction: governing text is Dahir 1-58-376 of 1958 (not 'Law 1956'); foreign founders permitted; 1-3 months realistic",
+    "sources": [
+      "https://9anonai.com/en/blog/ngo-establishment-law-morocco",
+      "https://www.lexmundi.com/guides/social-enterprise-law-surveys/jurisdictions/africa/morocco/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Mauritania",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Express government authorisation required; local office, French/Arabic docs, heavy national involvement; denials common",
+    "fee_usd": "~$100-300",
+    "time_to_register": "2-4 months",
+    "deduction": "limited deductions for approved charities; regime opaque, limited public detail",
+    "foreign_donor_restriction": "Government authorisation for foreign funding; crackdown on unregistered orgs; annual reporting mandated",
+    "corrections": "Confirm prior: authorization-based regime, registration sometimes denied; 2016 amendment and 2020 draft added reporting and funding controls",
+    "sources": [
+      "https://closingspaces.org/incident/mauritania-barriers-to-ngo-registration-and-crackdown-on-unregistered-organizations/",
+      "https://monitor.civicus.org/explore/association-mauritania/",
+      "https://www.hrw.org/news/2020/11/23/mauritania-revise-draft-associations-law"
+    ],
+    "confidence": "low"
+  },
+  {
+    "country": "Western Sahara",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "No independent registry; contested territory - Moroccan law applies in Moroccan-administered areas",
+    "fee_usd": "n/a",
+    "time_to_register": "n/a (register in Morocco instead)",
+    "deduction": "n/a - no independent tax regime; Moroccan rules apply in Moroccan-administered areas",
+    "foreign_donor_restriction": "n/a - no independent regime; Moroccan registration required for any association in Moroccan-administered areas",
+    "corrections": "Confirm prior: no functioning independent civil-society registry; practical route is a Moroccan association (Dahir 1-58-376/1958)",
+    "sources": [
+      "https://www.lexmundi.com/guides/social-enterprise-law-surveys/jurisdictions/africa/morocco/"
+    ],
+    "confidence": "high"
+  }
+]

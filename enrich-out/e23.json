@@ -1,0 +1,127 @@
+[
+  {
+    "country": "Poland",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "Local registered office needed; full OPP status requires 2 yrs operation plus listing; notarized deed of founding",
+    "fee_usd": "~$170",
+    "time_to_register": "4-8 weeks",
+    "deduction": "14% of personal income tax earmarkable to registered OPP; 1.5% budget transfer to OPPs",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; add court fee on top of notary (deed ~500-1500 PLN); foreigners may found a fundacja with no local presence",
+    "sources": [
+      "https://www.ngo.pl/english/how-do-ngos-work-in-poland/is-a-non-governmental-organization-and-a-public-benefit-organization-opp-the-same-thing",
+      "https://www.dudkowiak.com/corporate-law-in-poland/ngo-foundation-registration-in-poland.html",
+      "https://cof.org/country-notes/nonprofit-law-poland"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Czechia",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "Czech-language statute and local office required; public-benefit tax status needs separate Ministry approval",
+    "fee_usd": "~$25",
+    "time_to_register": "4-8 weeks",
+    "deduction": "2% of personal income tax earmarkable to public-benefit organizations",
+    "foreign_donor_restriction": "none notable; foreign donations reportable only at material levels",
+    "corrections": "spolek court fee is 1,000 CZK (not free): total ~2,000-3,500 CZK with notary; OUK ~100,000 CZK endowment",
+    "sources": [
+      "http://www.juristi.cz/association-incorporation/",
+      "https://cof.org/country-notes/nonprofit-law-czech-republic",
+      "https://www.icnl.org/wp-content/uploads/Czech-Republic_2010pbc.pdf"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Slovakia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Slovak-language charter, 2+ founders and local office; foreign founders need apostilled docs and certified translations",
+    "fee_usd": "~$150",
+    "time_to_register": "1-2 months",
+    "deduction": "0.5% of personal income tax earmarkable to registered VPO (public-benefit orgs)",
+    "foreign_donor_restriction": "none notable; large public funding may trigger register obligations",
+    "corrections": "confirm prior; court registration fee ~150 EUR plus notary, so total ~200-600 EUR as noted",
+    "sources": [
+      "https://cof.org/country-notes/nonprofit-law-slovakia",
+      "https://www.slovensko.sk/en/life-situation/life-situation/_setting-up-a-company",
+      "https://www.lexmundi.com/guides/social-enterprise-law-surveys/jurisdictions/europe/slovak-republic/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Hungary",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "Local office and Hungarian-lawyer involvement typical; foreign-funded NGOs face government authorization regime",
+    "fee_usd": "~$20",
+    "time_to_register": "2-4 weeks",
+    "deduction": "1% of personal income tax allocable to registered nonprofit foundations and organizations",
+    "foreign_donor_restriction": "Stop-Soros Act: NGOs with >7.2M HUF/yr foreign funding need Ministry of Interior authorization",
+    "corrections": "foreign-funding authorization threshold is 7.2M HUF (~25k EUR) per year, not ~300M HUF; kft capital 3,000,000 HUF",
+    "sources": [
+      "https://cof.org/country-notes/nonprofit-law-hungary",
+      "https://europa.eu/rapid/press-release_IP-17-1982_en.htm",
+      "https://gsl.org/en/offshore/offshore-zones/eastern-europe/hungary/"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Slovenia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "3+ members, Slovenian name and local registered office; e-registration available but local signatory usually needed",
+    "fee_usd": "~$300",
+    "time_to_register": "1-2 months",
+    "deduction": "0.5% of personal income tax earmarkable to public-benefit associations and foundations",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; association ~200-500 EUR and foundation ~1,000-3,000 EUR incl. notary; javno koristno status separate",
+    "sources": [
+      "https://e-uprava.gov.si/en/podrocja/state-and-society/societies-public-events-and-gatherings/registration-of-a-society-branch-of-foreign-society-and-associations-of-societies.html",
+      "https://companyformationslovenia.com/open-foundation-in-slovenia/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Croatia",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "3+ founding members, local office, Croatian-language statutes and notarized application; postal filing",
+    "fee_usd": "~$25",
+    "time_to_register": "1-3 months",
+    "deduction": "0.25% of personal income tax earmarkable to public-benefit organizations",
+    "foreign_donor_restriction": "none notable; foreign associations operating locally need a separate register entry",
+    "corrections": "confirm prior; foreign nationals can be founders; state fee minimal, notary ~500-1,500 HRK; javno korisna status separate step",
+    "sources": [
+      "https://gov.hr/en/establishment-and-registration-of-associations/568",
+      "https://www.expatincroatia.com/how-to-open-close-non-profit-udruga-croatia/",
+      "https://cof.org/country-notes/nonprofit-law-croatia"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Bosnia & Herzegovina",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Multi-tier state/entity registration, local office, local-language charter, no online registry; often needs local agent",
+    "fee_usd": "~$100",
+    "time_to_register": "2-12 weeks",
+    "deduction": "no charitable income-tax deduction regime; corporate donation caps apply in some entities",
+    "foreign_donor_restriction": "none in force; 2025 draft bill on a foreign-funded NGO register in the Federation would add oversight",
+    "corrections": "confirm prior; fees ~100-300 BAM per tier; timeline can stretch to months in practice due to duplicated paperwork",
+    "sources": [
+      "https://www.ohchr.org/en/press-releases/2025/02/bosnia-and-herzegovina-bill-registering-ngos-will-increase-government",
+      "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/664631468743400463/how-to-establish-and-register-business-association-in-bosnia-and-herzegovina"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Serbia",
+    "foreign_no_presence": "yes",
+    "local_bottleneck": "3+ founders, local office, Serbian-language charter; apostilled/translated foreign documents; diaspora routine",
+    "fee_usd": "~$30",
+    "time_to_register": "1-2 months",
+    "deduction": "0.25% of personal income tax allocable to public-benefit organizations",
+    "foreign_donor_restriction": "none notable",
+    "corrections": "confirm prior; difficulty better rated medium (not easy) given translation/apostille work; fees ~2,000-5,000 RSD plus docs",
+    "sources": [
+      "https://welcometoserbia.gov.rs/initiate-the-registration-process",
+      "https://globallawexperts.com/how-to-register-a-company-in-serbia-step-by-step-tier-2-guide/"
+    ],
+    "confidence": "med"
+  }
+]

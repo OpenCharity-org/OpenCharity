@@ -1,0 +1,82 @@
+[
+  {
+    "country": "Lithuania",
+    "tax_exemption": "Public-benefit institutions (viešoji įstaiga) get income-tax exemption automatically on registration; corporate donors deduct 1% of profit tax on donations to them — no separate VMI application."
+  },
+  {
+    "country": "Spain",
+    "tax_exemption": "Foundations with charitable purposes automatically enter Law 49/2002's special regime: profits exempt, donors get a 40% IRPF deduction on the first €15,000 (30% above). No separate AEAT application required."
+  },
+  {
+    "country": "Portugal",
+    "tax_exemption": "Private foundations are exempt from IRC only after obtaining utilidade pública status (Ministry decree); without it, taxed at 21%. IUP status entitles donors to a 15% deduction; processing time unpublished."
+  },
+  {
+    "country": "Italy",
+    "tax_exemption": "Automatic: charitable income of non-commercial entities is exempt from income tax (art. 72 TUIR); RUNTS registration entitles donors to a 19% tax credit up to €30,000 plus 5xmille; no separate application."
+  },
+  {
+    "country": "Vatican City",
+    "tax_exemption": "No ordinary income-tax regime: charitable activity runs through pontifical institutions or canonically erected bodies; the Holy See levies no income tax, so no separate tax-exemption application exists."
+  },
+  {
+    "country": "Israel",
+    "tax_exemption": "Separate application to the Israel Tax Authority: section 120 profit-exemption certificate plus section 46 public-institution status for donors; not automatic; a 2025 green-track accelerates section 46 grants."
+  },
+  {
+    "country": "Jordan",
+    "tax_exemption": "Registration with the Ministry of Social Affairs confers legal personality; the income-tax law exempts income of registered associations/foundations pursuing public-benefit purposes, and donations to them are deductible."
+  },
+  {
+    "country": "Lebanon",
+    "tax_exemption": "Associations are valid by declaration to the local court (Law 92/1909); the income-tax code exempts income of public-benefit associations and institutions — no separate application; no donor-deduction regime."
+  },
+  {
+    "country": "Syria",
+    "tax_exemption": "Associations register with the Ministry of Social Affairs & Labor; the Income Tax Law 24/2003 treats income of registered charitable associations as exempt — no separate tax application; donor rules unpublished."
+  },
+  {
+    "country": "Iraq",
+    "tax_exemption": "NGOs registered with the NGO Directorate, Interior Ministry: if classified as public utility, art. 17 of Law 12/2010 automatically exempts income tax, VAT, customs and sales tax; no separate application."
+  },
+  {
+    "country": "Saudi Arabia",
+    "tax_exemption": "No personal income tax; registered civil society associations are exempt from zakat (ministerial decision 61600/1444) and their charitable supplies are VAT-exempt; no donor-deduction regime."
+  },
+  {
+    "country": "Kuwait",
+    "tax_exemption": "No charitable tax-exemption regime: Kuwait levies no income tax, so associations registered under the 1962 Public Welfare Societies law gain no tax benefits and there is no donor-deduction scheme."
+  },
+  {
+    "country": "Qatar",
+    "tax_exemption": "Income Tax Law 24/2018, as amended by Law 11/2022, exempts entities operating exclusively for charitable, religious or educational purposes (registered, non-distribution); no donor-deduction regime."
+  },
+  {
+    "country": "United Arab Emirates",
+    "tax_exemption": "DED-licensed charities qualify as Qualifying Public Benefit Entities (FDL 47/2022 art. 9): 0% corporate-tax rate if 100% of income is charitable and non-distributed; no donor-deduction regime."
+  },
+  {
+    "country": "Oman",
+    "tax_exemption": "Registered charitable associations are exempt from Oman's 15% corporate income tax, and donations to them are deductible from donors' taxable income (executive reg. art. 33); no separate application."
+  },
+  {
+    "country": "Bahrain",
+    "tax_exemption": "No charitable tax-exemption regime: Bahrain levies no general income/corporate tax (only banking/insurance), so registered NGOs gain no tax benefits and there is no donor-deduction scheme."
+  },
+  {
+    "country": "Yemen",
+    "tax_exemption": "Automatic: art. 40 of the associations law (Law 73/1991, amended by Law 1/2001) exempts registered associations and foundations from all forms of taxes; no separate application to a tax authority."
+  },
+  {
+    "country": "Palestine",
+    "tax_exemption": "Art. 14 of Law 1/2000 exempts registered charitable associations from taxes and customs duties on property used for their objectives; general income tax (Law 17/2004) otherwise applies; no donor deduction."
+  },
+  {
+    "country": "Egypt",
+    "tax_exemption": "Registration automatically grants income-tax exemption under art. 47 of the Income Tax Law 91/2005 on revenue from charitable activities; donors deduct 10% (individuals) / 15% (legal persons)."
+  },
+  {
+    "country": "Sudan",
+    "tax_exemption": "Not automatic: art. 25 of the 2006 Act lets the Finance Minister, on the minister's recommendation, exempt registered CSOs from customs duties and taxes; no codified general charitable tax-exemption regime."
+  }
+]

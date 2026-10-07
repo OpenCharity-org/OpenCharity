@@ -1,0 +1,91 @@
+[
+  {
+    "country": "Guinea-Bissau",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "In-person Portuguese-language registration in Bissau; local office and local representative; fragile state capacity",
+    "fee_usd": "~$500-2k with local agent",
+    "time_to_register": "1-4 months",
+    "deduction": "No established published donation tax-deduction regime for charitable gifts; donations largely untaxed",
+    "foreign_donor_restriction": "Foreign NGOs face weak but real administrative control; no FCRA-style registration known; operations hard to sustain in practice",
+    "corrections": "Prior cited Lei n. 5/VI/96 (1996) is superseded: Loi L/005/013/AN (2013) is the operative association law (repealed 1986 NGO decree)",
+    "sources": [
+      "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=73216",
+      "https://rimap.unhcr.org/node/61431"
+    ],
+    "confidence": "low"
+  },
+  {
+    "country": "Senegal",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Local registered office, local signatory and French-language filings required; association declaration must be lodged in person",
+    "fee_usd": "~$300-1k incl. agent; government fee minimal",
+    "time_to_register": "2-8 weeks",
+    "deduction": "Deductible: 10% of income, capped at 10% of taxable income (15,000 F minimum gift)",
+    "foreign_donor_restriction": "2023 OSC law (loi 2023-13) adds registration/reporting layer for foreign-funded NGOs; no ban, no FCRA-style licensing",
+    "corrections": "Confirm prior: 1965 declaration regime (1901 model) stands; 2023 OSC framework confirmed as reporting layer, not a ban",
+    "sources": [
+      "https://www.icnl.org/resources/civic-freedom-monitor/senegal",
+      "https://www.service-public.gouv.fr/particuliers/vosdroits/F426"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Gambia",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Local office and local representative needed; Societies Act filings in person in Banjul; NGO Bill not yet enacted",
+    "fee_usd": "~$300-1k incl. agent; registry fee low (tens of USD)",
+    "time_to_register": "2-8 weeks",
+    "deduction": "Deductible: 10% of gross income for gifts to approved charities (min GMD 100, no max, 5-yr carry-forward)",
+    "foreign_donor_restriction": "No FCRA-style licensing; 2022 NGO Bill pending, so 1972 Societies Act regime applies; no ban on foreign donations",
+    "corrections": "Confirm prior: Societies Act 1972 (Act No. 19 of 1972) still operative; NGO Bill still unenacted",
+    "sources": [
+      "https://www.wipo.int/wipolex/en/legislation/details/10617"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Sierra Leone",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Local registered office and local agent needed; CLG route standard; NGO Bill 2022 pending so no single NGO register",
+    "fee_usd": "~$300-1.5k incl. agent",
+    "time_to_register": "4-12 weeks",
+    "deduction": "Deductible: gifts to registered public utility charities deductible under Income Tax Act (commonly 30% of assessable income cap)",
+    "foreign_donor_restriction": "No FCRA-style registration; NGO Bill 2022 pending; no ban on foreign donations; practical scrutiny low",
+    "corrections": "Confirm prior: Companies Act 2013 CLG route; NGO Bill 2022 still pending",
+    "sources": [
+      "https://nib.gov.sl/business-registration-corporate-affairs/",
+      "https://manwaadvocates.com/why-more-non-profits-are-choosing-companies-limited-by-guarantee-instead-of-ngos/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Liberia",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Liberian-national principal officer required to sign filings; local office; 3-year permit renewal cycle",
+    "fee_usd": "US$150 local fee; ~$500-2k total with agent",
+    "time_to_register": "4-12 weeks",
+    "deduction": "Deductible: gifts to qualifying charitable organizations deductible under Liberia Revenue Law (income tax)",
+    "foreign_donor_restriction": "NGO Act 2015 (Act No. 11 of 2015): registration + permit, local principal officer, annual reporting; no FCRA-style ban",
+    "corrections": "Confirm prior: NGO Act 2015 operative, US$150 fee, 3-year renewal, local principal officer",
+    "sources": [
+      "https://www.icnl.org/resources/research/ijnl/liberia",
+      "https://reliefweb.int/report/liberia/faq-document-ngo-humanitarian-community-liberia"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Niger",
+    "foreign_no_presence": "no",
+    "local_bottleneck": "Prior Interior Ministry authorization (décret 2022-182), local office, French filings; heavy state control post-2023 coup",
+    "fee_usd": "~$500-2k incl. agent; government fee low",
+    "time_to_register": "1-4 months",
+    "deduction": "Deductible: 10% of income, capped at 10% of taxable income for gifts to qualified associations",
+    "foreign_donor_restriction": "Décret n° 2022-182/PRN/MAT/DC: NGO activity requires prior authorization/agrément of Interior Minister; NGOs not publishing financials suspended (2025)",
+    "corrections": "Confirm prior: Law 93-010 association regime; 2022-182 decree adds explicit prior-authorization layer; military rule since 2023 confirmed",
+    "sources": [
+      "https://wacsi.org/wp-content/uploads/2022/06/DECRET-2022-182-SECTEUR-DES-ONG-3-1-1.pdf",
+      "https://www.omct.org/fr/ressources/appels-urgents/niger-suspension-des-activit%C3%A9s-des-ong-nayant-pas-publi%C3%A9-leurs-%C3%A9tats-financiers-au-journal-officiel-de-la-r%C3%A9publique-du-niger"
+    ],
+    "confidence": "med"
+  }
+]

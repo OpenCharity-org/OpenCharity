@@ -1,0 +1,121 @@
+[
+  {
+    "country": "Rwanda",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "INGO registration needs a partnering line-ministry MoU, a Rwandan office structure and a named local representative",
+    "fee_usd": "~$24 (300,000 RWF non-refundable)",
+    "time_to_register": "3-6 months (statutory feedback within 90 days)",
+    "deduction": "Donations to registered/qualified institutions deductible; modest cap (30% of tax base)",
+    "foreign_donor_restriction": "No FCRA-style ban, but INGOs need funding-commitment proof, ministry MoU and RGB monitoring/revocation powers",
+    "corrections": "Regulator is now Rwanda Governance Board (RGB), successor to MIDRRP; Law 01/2016 governs NGOs; official fee 300,000 RWF (~$24)",
+    "sources": [
+      "https://www.rgb.rw/1/civil-society-faith-based-and-political-organisations/non-governmental-organisations"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Burundi",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign associations need prior government approval (Ministry of Interior/Humanitarian Affairs), local representative and office; high refusal/suspension risk",
+    "fee_usd": "~$50-200 (discretionary, not well published)",
+    "time_to_register": "3-12 months, high refusal risk",
+    "deduction": "Limited/donor incentives not well established for foreign donors",
+    "foreign_donor_restriction": "Foreign NGOs periodically suspended by security council (e.g. 2021) and required to re-register; approvals discretionary and political",
+    "corrections": "Governing law is Law 02/2017 on associations (plus 2017 ministerial ordinances); confirms very hard and politically risky",
+    "sources": [
+      "https://presidence.gov.bi/wp-content/uploads/2017/04/loi-02-2017.pdf",
+      "https://www.iwacu-burundi.org/englishnews/over-eighty-foreign-ngos-re-registered/"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Uganda",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign NGO must have a Ugandan-resident legal representative, local office and route funds via Ugandan bank accounts",
+    "fee_usd": "~$500-1,400 (UGX 1-5M per NGO Fees Regulations 2017)",
+    "time_to_register": "3-9 months",
+    "deduction": "Donations to registered NGOs deductible, capped at 10% of tax base",
+    "foreign_donor_restriction": "No ban, but NGO/CSO Act 2016 ties foreign funding to registration, bank-account reporting and source-of-funds disclosure",
+    "corrections": "Confirm prior: NGO/CSO Act 2016, National NGO Bureau (ngobureau.go.ug), resident legal rep + local bank account requirements",
+    "sources": [
+      "https://www.ngobureau.go.ug/en/fees-regulations",
+      "https://www.ngobureau.go.ug/en/services/registration-of-a-foreign-ngo"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Tanzania",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "NGO Commission registration requires local office and international NGOs need 5+ members incl. at least 2 Tanzanians",
+    "fee_usd": "~$200-400 (TZS 500k-2M plus security deposit)",
+    "time_to_register": "3-9 months",
+    "deduction": "Donor tax deductions limited; registered NGOs largely tax-exempt on revenue",
+    "foreign_donor_restriction": "Foreign-funded NGOs register with NGO Commission; funding thresholds and reporting monitored; no outright ban",
+    "corrections": "Core law is NGO Act (No. 22 of 2002, as amended); the 2021 tightening was a draft NGO Bill, not enacted law - earlier '2021 amendments' note overstated",
+    "sources": [
+      "https://www.jamii.go.tz/services/ngos-registration",
+      "https://www.icnl.org/post/tools/legal-and-reporting-requirements-toolkit-tanzania"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Kenya",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign PBOs need Kenyan-resident officers and a Kenya office; PBORA registration via eCitizen",
+    "fee_usd": "~$40-100 (PBORA registration, name reservation KES 1,000; old NGO Act KES 100,000 deposit no longer the route)",
+    "time_to_register": "1-3 months",
+    "deduction": "Donations to registered PBOs deductible; 30% of tax base cap",
+    "foreign_donor_restriction": "No FCRA-style ban; foreign PBOs must register with PBORA, keep Kenya office and file annual reports",
+    "corrections": "NGO Act 2003 was repealed - current framework is PBO Act, 2013 (Cap 134) under PBORA, not the NGO Commission/NGO Act route",
+    "sources": [
+      "https://www.pbora.go.ke/register-pbo",
+      "https://pbora.go.ke/faqs"
+    ],
+    "confidence": "high"
+  },
+  {
+    "country": "Comoros",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign associations need prior government authorization (Art. 9, Law 86-006/AF) and 2020 agrément decree with local representative and office",
+    "fee_usd": "~$50-200 (not well published)",
+    "time_to_register": "2-6 months",
+    "deduction": "No meaningful donor deduction regime established",
+    "foreign_donor_restriction": "Prior authorization mandatory; agrément (decret 20-101/PR, 2020) granted by Ministry of Foreign Affairs; civil-society space restricted",
+    "corrections": "Main legal basis is Law 86-006/AF (1986) art. 9 plus Decree 20-101/PR of 31 July 2020 on NGO agrément; prior '2019 NGO law' reference is inaccurate",
+    "sources": [
+      "https://justice.gouv.km/texte/loi-n86-006-af-du-30-mai-1986-relative-au-contrat-dassociation/",
+      "https://alwatwan.net/politique/coop%C3%A9ration-internationale-i-les-ong-%C3%A9trang%C3%A8res-sensibilis%C3%A9es-sur-les-nouvelles-modalit%C3%A9s-doctroi-des-agr%C3%A9ments.html"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Madagascar",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Foreign NGOs need an 'accord de siege' (headquarters authorization) from the Ministry of Foreign Affairs plus local representative/office",
+    "fee_usd": "~$100-300",
+    "time_to_register": "2-6 months (agrément decision target 2 months per Decree 98-711)",
+    "deduction": "Donor deductions limited; registered NGOs can be tax-exempted",
+    "foreign_donor_restriction": "No FCRA-style ban; foreign NGOs accredited (agrément) under Law 96-030 with MFA involvement; no local-citizenship board rule",
+    "corrections": "Confirm prior; core law is Law 96-030 (1996) + Decree 98-711; MFA accord de siege route confirmed by French diplomatic services page",
+    "sources": [
+      "https://www.diplomatie.gov.mg/images/ppd/loi-n-96-030.pdf",
+      "https://mg.diplomatie.gouv.fr/informations-administratives-et-documents-telecharger"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Zambia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "International NGOs must register with the NGO Registrar and have a Zambian office and local representative",
+    "fee_usd": "~$25-100 (ZMW 500-2,000)",
+    "time_to_register": "2-8 weeks",
+    "deduction": "Donations to registered charitable institutions deductible; ~30% of tax base cap",
+    "foreign_donor_restriction": "No FCRA-style restriction; international NGOs register under the Act with standard reporting",
+    "corrections": "Governing law is NGO Act No. 16 of 2009 (not 2005); Registrar sits in Ministry of Community Development and Social Services",
+    "sources": [
+      "https://www.mcdss.gov.zm/?page_id=1990",
+      "https://www.parliament.gov.zm/sites/default/files/documents/acts/Non-Governmental%20Organisations'%20Act.PDF"
+    ],
+    "confidence": "high"
+  }
+]

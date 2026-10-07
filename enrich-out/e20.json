@@ -1,0 +1,34 @@
+[
+  {
+    "country": "Latvia",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Latvian address, Latvian-resident board, and Latvian e-ID for filing — a local representative is mandatory",
+    "fee_usd": "~$33",
+    "time_to_register": "3-6 weeks",
+    "deduction": "Donations to public-benefit organizations (PBOs) deductible from personal income, within statutory caps",
+    "foreign_donor_restriction": "2022 law: NVOs receiving funds from foreign states/state-controlled sources must register with the Prosecutor General",
+    "corrections": "NVO registers electronically via e-portals; no notary step needed. Real barriers: Latvian-resident board requirement plus local address and e-ID",
+    "sources": [
+      "https://uronline.lv/en/membership/",
+      "https://cms.law/en/int/expert-guides/cms-expert-guide-on-taxation-of-charity-donations-for-eu/latvia",
+      "https://lexfinance.lv/en/blogs/company-registration-in-latvia-types-of-companies-registration-process-required-documents-"
+    ],
+    "confidence": "med"
+  },
+  {
+    "country": "Lithuania",
+    "foreign_no_presence": "partial",
+    "local_bottleneck": "Lithuanian address, Lithuanian-language documents, and a Lithuanian e-signature for online filing — a local notary is typical",
+    "fee_usd": "~$28",
+    "time_to_register": "1-3 weeks",
+    "deduction": "Donations to public-benefit orgs deductible: individuals 10% cap; corporates 2x up to 40% of profit",
+    "foreign_donor_restriction": "none notable — no FCRA-style foreign-donor registration; public-benefit (VLO) status is an optional separate registration",
+    "corrections": "confirm prior: state fee ~€25.65, registry completes in ~7 working days; online route needs Lithuanian e-signature, so a local notary/agent is usual",
+    "sources": [
+      "https://www.registrucentras.lt/jar/e-gidas_en/index.php?l=2&tipas=lpf",
+      "https://cms.law/en/int/expert-guides/cms-expert-guide-on-taxation-of-charity-donations-for-eu/lithuania",
+      "https://taxsummaries.pwc.com/lithuania/corporate/deductions"
+    ],
+    "confidence": "high"
+  }
+]

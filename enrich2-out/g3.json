@@ -1,0 +1,110 @@
+[
+  {
+    "country": "Thailand",
+    "entity_types": "Foundation (yutthathikam) under the Foundation Act B.E. 2550, registered with the Ministry of Justice; registered association under the Civil and Commercial Code Part 2, with a board of at least 3 members.",
+    "cost_time": "Registry fee ~USD 11 for a foundation (THB 210) and ~USD 68 for an association (THB 2,005); processing a few weeks, unpublished; tax status filed separately with the Revenue Department.",
+    "source": "https://www.thailawonline.com/setting-up-a-foundation-in-thailand/"
+  },
+  {
+    "country": "Vietnam",
+    "entity_types": "Non-governmental organization under Decree 125/2020; charitable fund under Decree 03/2026 with citizen founders; foreign NGOs may operate only via a Representative Office under Decree 58/2022.",
+    "cost_time": "Foreigners cannot found a local charity; foreign NGOs only via a Representative Office with the Ministry of Foreign Affairs; domestic fundraising needs a separate permit - effectively barred.",
+    "source": "https://cof.org/country-notes/nonprofit-law-vietnam"
+  },
+  {
+    "country": "Philippines",
+    "entity_types": "Non-stock non-profit corporation under the Revised Corporation Code, filed with the Securities and Exchange Commission via eSPARC; registered foundation as a variant; DOLE registration for some associations.",
+    "cost_time": "SEC filing plus notarization roughly USD 100-150, several weeks for the certificate; foreign persons may be members or officers, but the secretary must be a Filipino citizen and resident.",
+    "source": "https://esparc.sec.gov.ph/application/overview"
+  },
+  {
+    "country": "Brunei",
+    "entity_types": "Registered society under the Societies Act, Chap. 203, with the Registrar of Societies (Royal Brunei Police, Gadong); charitable societies must adopt a constitution per the Act's Second Schedule.",
+    "cost_time": "Registry fee payable in cash after approval but unpublished; weeks to register; foreigners may join but a society must be Brunei-centric in character, limiting practical non-resident access.",
+    "source": "https://www.polis.gov.bn/pendaftar-pertubuhan/"
+  },
+  {
+    "country": "Timor-Leste",
+    "entity_types": "Non-profit associations and foundations under Decree-Law 5/2005; an association gains juridical personality on registration with the Ministry of Justice, effective against third parties after gazette publication.",
+    "cost_time": "Registration fee unpublished; gazette publication adds weeks; a foreign NGO must appoint a local permanent representative with full powers to represent it - a hard practical barrier for non-residents.",
+    "source": "https://www.migracao.gov.tl/pdf/%5b0503-13%5dDLei.Association(english).pdf"
+  },
+  {
+    "country": "New Zealand",
+    "entity_types": "Incorporated society under the Incorporated Societies Act 2022 (in force from 6 April 2026) registered with the Companies Office; charitable status is a separate registration with the Charities Commission.",
+    "cost_time": "Registration fee NZ$88.89 plus GST (~USD 75) under the Incorporated Societies Regulations 2023 s7; processing usually a few days to weeks; foreign founders welcome, residency not required.",
+    "source": "https://is-register.companiesoffice.govt.nz/help-centre/starting-an-incorporated-society/applying-to-incorporate-a-society/"
+  },
+  {
+    "country": "Fiji",
+    "entity_types": "Company limited by guarantee under the Companies Act 2015 - the standard charitable form - registered with the Registrar of Companies; a registered club as a lighter alternative.",
+    "cost_time": "Prescribed fee FJD$45 (~USD 62); a few weeks for the certificate; an officeholder must be an ordinary resident of Fiji, so a non-resident founder needs a local nominee director.",
+    "source": "https://laws.gov.fj/Acts/DisplayAct/3231"
+  },
+  {
+    "country": "Papua New Guinea",
+    "entity_types": "Company limited by guarantee under the Companies Act 1997 via the IPA registry; associations under the Associations Incorporation Act 2023, whose supporting regulations commence 1 July 2026, replacing the 1966 Act.",
+    "cost_time": "Incorporation fees in the low hundreds of USD (in PNGK); a few weeks; an associations pathway arrives mid-2026; foreign participation in charities is restricted in practice.",
+    "source": "https://www.ipa.gov.pg/corp/index.aspx"
+  },
+  {
+    "country": "Samoa",
+    "entity_types": "Company limited by guarantee under the Companies Act 2001, registered with the Ministry of Commerce, Industry and Labour, the standard form for charities and NGOs; trusts under separate trustee rules.",
+    "cost_time": "Filing fee roughly USD 50-100 (amount unpublished); processing a few weeks; a company must have a Samoan-resident registered office, so non-resident founders need a local agent or resident director.",
+    "source": "https://www.mcil.gov.ws/services/business-registration"
+  },
+  {
+    "country": "Tonga",
+    "entity_types": "Registered charitable trust under the Charitable Trusts Act 1993 with the Registrar of Charitable Trusts, incorporated as a Board; company limited by guarantee under the Companies Act.",
+    "cost_time": "Trustee fee unpublished; a few weeks for incorporation; a trust must have a Tongan-resident trustee and a local office, so non-resident founders need a local co-trustee - a hard practical barrier.",
+    "source": "https://ago.gov.to/cms/images/LEGISLATION/PRINCIPAL/1993/1993-0014/CharitableTrustsAct1993_2.pdf"
+  },
+  {
+    "country": "Vanuatu",
+    "entity_types": "Company limited by guarantee under the Companies Act 2012, registered with the Financial Services Commission, the main charitable form; trusts registered under trustee regulations.",
+    "cost_time": "Registration fee VT35,000 (~USD 330) via the online registry; processing a few days to weeks; a Vanuatu resident officeholder is required, so a non-resident founder must appoint a local director.",
+    "source": "https://www.vfsc.vu/companies-fees-and-penalties/"
+  },
+  {
+    "country": "Solomon Islands",
+    "entity_types": "Company limited by guarantee under the Companies Act 2009 with the Solomon Islands Business Registry; charitable trusts under trustee rules; a company limited by guarantee is the standard NGO form.",
+    "cost_time": "Incorporation fee roughly USD 50-150, paid at the Treasury counter after online application; a few weeks; a resident company secretary is required, so a local agent is needed.",
+    "source": "https://www.solomonbusinessregistry.gov.sb/companies/how-to-register-a-company/"
+  },
+  {
+    "country": "Kiribati",
+    "entity_types": "Company under the Companies Ordinance 1979 as amended, registered by the Business and Companies Regulatory Division in Tarawa; associations and trusts under registration rules.",
+    "cost_time": "Fees unpublished; a few weeks; a Foreign Investment Certificate from the Ministry of Commerce, Industry and Cooperatives is required for foreign incorporation, making non-resident setup hard.",
+    "source": "https://mcic.gov.ki/business-and-companies-regulatory-division-bcrd/"
+  },
+  {
+    "country": "Nauru",
+    "entity_types": "Trusts under the Trusts Act, corporations under the Corporations Act 1972, both registered by the Department of Justice and Border Control; no dedicated charitable registration regime exists.",
+    "cost_time": "Trust registration fee unpublished; processing a few weeks; there is no established charitable registration regime and a local agent on the island is required, making foreign incorporation very hard.",
+    "source": "https://justice.gov.nr/corporations-partnerships-associations-and-trust-registration-division/"
+  },
+  {
+    "country": "Tuvalu",
+    "entity_types": "Company under the Companies Act (Cap 40.08) and the Companies and Business Registration Act, administered by the Ministry of Finance; international companies under a 2009 Act.",
+    "cost_time": "Fees are set by regulation and unpublished; registration is effectively reserved to Tuvaluan nationals and local business - practically barred for a foreign founder without a resident partner.",
+    "source": "https://finance.gov.tv/business/"
+  },
+  {
+    "country": "Marshall Islands",
+    "entity_types": "Non-resident domestic corporation under the Business Corporations Act 1981, with The Trust Company of the Marshall Islands as registered agent; trusts under the Trusts Act 1994.",
+    "cost_time": "Registry fees plus agent fees, roughly USD 500-1000 in year one; incorporation within a few days to a week; the non-resident domestic route is explicitly designed for foreign founders.",
+    "source": "https://www.register-iri.com/corporate/corporate-faqs/"
+  },
+  {
+    "country": "Micronesia",
+    "entity_types": "Corporations and non-profit associations under the FSM Corporations Act (FSMC Title 36), registered with the FSM Registrar of Corporations; state-level registration for local business.",
+    "cost_time": "Filing fee roughly USD 50-200, unpublished in detail; a few weeks; foreign founders may incorporate without local presence, with a registered agent in Pohnpei serving filings.",
+    "source": "https://roc.doj.gov.fm/"
+  },
+  {
+    "country": "Turkey",
+    "entity_types": "Foundation (vakif) under the Foundations Law No. 5737, requiring legal and factual reciprocity for foreigners; association (dernek) under the Associations Law No. 2860, registered with the provincial governor.",
+    "cost_time": "Foundation registration fee around USD 70-140 plus notary and translation, a few weeks to months; an association costs little; foreign founders are allowed for vakif where reciprocity applies.",
+    "source": "https://www.vgm.gov.tr/foundations-in-turkiye/foundations-in-turkiye/how-foreigners-establish-foundation-in-turkiye"
+  }
+]

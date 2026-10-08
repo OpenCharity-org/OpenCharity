@@ -42,8 +42,8 @@ Australia with no ties to the target country.
 
 ## Current Top-10 (score-ranked, full-remote friendly)
 
-Czechia, Estonia, Kyrgyzstan, Netherlands, Poland, Seychelles, South Africa,
-United Kingdom, United States, Belize.
+Australia, Czechia, Estonia, Kyrgyzstan, Netherlands, Poland, Seychelles,
+South Africa, United Kingdom, United States.
 
 ## How it was built
 

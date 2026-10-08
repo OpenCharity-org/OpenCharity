@@ -1,0 +1,10 @@
+{
+  "country": "Poland",
+  "verified": false,
+  "law_current": true,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "Governing laws are current: fundacja under ustawa o fundacjach of 6 April 1984 (consolidated text Dz.U. 2023 poz. 166, amended by the 23 January 2026 act, Dz.U. 2026 poz. 316) and stowarzyszenie under Prawo o stowarzyszeniach (consolidated text Dz.U. 2017 poz. 210), whose Art. 17 ust. 3 (in force since 20 May 2016) confirms KRS registration is free of court fees. The 'Registration fee (USD)' column is wrong: the KRS registration fee for a fundacja is 250 PLN per Art. 53 ust. 1 of the court costs law (confirmed on the official MS BIP schedule), not the '~2,500 PLN' claimed there — a tenfold overstatement contradicting the row's own 'Est. cost & time' column. The charitable-deduction regime is doubly wrong: the PIT earmark to OPPs is 1.5% (raised from 1% by the 2019 Niskie Podatki act, per podatki.gov.pl and KAS guidance), never 14%, and the '1.5% budget transfer to OPPs' no longer exists — the 1.5% state-budget transfer was abolished by the 10 February 2017 amending act (Dz.U. 2017 poz. 573). Also a typo: 'pożytk pożyteczna organizacja' should be 'organizacja pożytku publicznego (OPP)'. Time figures (statutory 30 days for fundacja, 2-4 weeks practice; 1-3 months total) and the 'no local presence needed' verdict (foreign founders allowed, only a local registered-office address and notarized deed required) are supported.",
+  "new_source": "https://api.sejm.gov.pl/eli/acts/DU/2017/210/text.html"
+}

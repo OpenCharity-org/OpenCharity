@@ -1,0 +1,10 @@
+{
+  "country": "South Africa",
+  "verified": true,
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "NPO Act number is wrong: it is the Nonprofit Organisations Act 71 of 1997, not 60/1997; NPO registration with DSD is free (row implies a fee, though the R175 CIPC NPC fee + R50 name reservation and 25-working-day NPC / ~2-month NPO / 3-12-month PBO figures all match gov.za and CIPC official pages); local-presence verdict (registered SA office, foreign directors via certified passports/manual CIPC channel, in-person bank KYC) is confirmed by gov.za and SARS requiring entities to be incorporated/established in South Africa for PBO status.",
+  "new_source": "https://www.gov.za/services/register-business-or-organisation/register-non-profit-company"
+}

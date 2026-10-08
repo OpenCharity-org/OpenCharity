@@ -1,0 +1,10 @@
+{
+  "country": "Poland",
+  "verified": false,
+  "law_current": "true - fundacja under the Law of 6 April 1984 on Foundations (current consolidated text Dz.U. 2023 poz. 166, t.j.) and stowarzyszenie under the Association Law of 7 April 1989 (t.j. Dz.U. 2020 poz. 2261, amended through 2026; the fee-exempting amendment of 20 May 2016 is still in force, and the further amendments in Dz.U. 2026 poz. 316/346 only add a model-statute fast track effective 30 Sept 2028)",
+  "fee_plausible": "true with a typo - KRS court fee for a foundation is 250 PLN (Art. 53 ust. 1, court-costs law, consolidated Dz.U. 2025 poz. 1228), notary deed ~500-1,500 PLN, so ~$150-650 for fundacja holds; the row's 'KRS fee ~2,500 PLN' in the fee column is a tenfold typo; association entry is fee-free (0 PLN per the official ngo.pl cost table and Art. 17 ust. 3 of the Association Law)",
+  "time_plausible": "true - statutory 30-day KRS registration term with the 7-day application deadline (Art. 22 KRS law) supports the row's 2-4 weeks for fundacja; 4-8 weeks for stowarzyszenie is reasonable",
+  "presence_supported": "true - foundations may be established by a single founder, foreigners included, with only a Polish registered office and notarized deed required, so 'yes' for a remote foreign founder is supported; full OPP/PBO status does require 2 years of public-benefit activity (Law on Public Benefit Activity and Volunteerism, Art. 22 ust. 1), as the row notes",
+  "corrections": "1. Deduction regime: registered OPP/PBO receive 1.5% of the donor's personal income tax due (PIT-OP form/Twój e-PIT, per KAS podatki.gov.pl), not '14% of personal income tax'; the 1.5% state-budget transfer to OPPs is a separate mechanism and both figures in the row are conflated/misstated. 2. 'KRS fee ~2,500 PLN' should be 250 PLN (tenfold typo). 3. Entity name garbled: the correct Polish term is 'organizacja pożytku publicznego' (OPP), English abbreviation PBO — not 'pożytk pożyteczna organizacja, POUS'.",
+  "new_source": "https://eli.gov.pl/api/acts/DU/2025/1228/text.html"
+}

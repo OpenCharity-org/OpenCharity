@@ -1,0 +1,10 @@
+{
+  "country": "Australia",
+  "verified": false,
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": false,
+  "presence_supported": true,
+  "corrections": "The '1-4 weeks' time figure is outdated: the ACNC's own application FAQs now state applications may take up to 12 weeks to be allocated, plus ~15 business days once the application is complete. | The A$0 ACNC registration fee is confirmed by the ACNC apply page ('the ACNC does not charge a fee for organisations to register as a charity'); the A$514 ASIC CLBG figure is at the top of the plausible range - the statutory fee (Corporations (Fees) Regulations 2001, Sch 1 item 1) is A$403 for a company without share capital in the 1 Jan 2025 compilation, indexed annually, so A$514/US$340 is slightly high but directionally right. | The stated bottleneck ('ACNC requires an Australian registered office + at least one Australian-resident governing-body member') is not found in the current ACNC Act 2012 s 25-5 (not-for-profit, charitable purposes, governance/external conduct standards, ABN, not terrorist-listed), the ACNC Regulations 2022, or any current ACNC guidance; the 'yes' verdict itself is supported because no such ACNC residency requirement exists - any 2-resident-director rule for a CLBG would come from the Corporations Act, not the ACNC.",
+  "new_source": "https://www.acnc.gov.au/for-charities/start-charity/apply/common-questions-about-application-process"
+}

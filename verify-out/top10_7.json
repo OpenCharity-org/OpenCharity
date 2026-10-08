@@ -1,0 +1,10 @@
+{
+  "country": "Seychelles",
+  "verified": true,
+  "law_current": "Yes, current — Foundations Act 2009 (Act 32 of 2009) is in force but was amended by the Foundations (Amendment) Act, 2021 (Act 33 of 2021, in force 6 Aug 2021, following the 2020 amendment); the Associations Act 2022 (Act 8 of 2022) named in the row is also current, itself amended by the Associations (Amendment) Act 2023.",
+  "fee_plausible": "Yes — the official FSA 'Licensing and Registration Fees' schedule (v. 5 July 2022) lists Foundation registration fee US$200 with US$200 annual fee, matching the row's ~US$200 + ~US$200 annual; the row's US$500-1,000 registered-agent figure is market-rate, and association registration carries no fee (only an annual levy of max 0.5% of profits under the Associations Act 2022).",
+  "time_plausible": "Yes — the 1-3 week registration window is consistent with registered-agent providers (e.g. GSL: 'from 1 week depending on structure and complexity').",
+  "presence_supported": "Yes — foundations require only a licensed local registered agent and registered office in Seychelles; founders/councillors may be 100% foreign, so remote setup by an AU-resident founder is routine for a fee (post-2021-amendment regime relaxed national-presence requirements).",
+  "corrections": "None material — the law names are accurate though both Acts were later amended (2021/2023), and a minor gap: the row omits that associations pay a small annual levy (up to 0.5% of profits) on top of the no registration fee.",
+  "new_source": "https://fsaseychelles.sc/images/licensing-registration-fees.pdf"
+}

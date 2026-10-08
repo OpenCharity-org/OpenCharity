@@ -1,0 +1,10 @@
+{
+  "country": "Netherlands",
+  "verified": true,
+  "law_current": "Yes — the governing entity type (stichting) is governed by the Dutch Civil Code Book 2 (Burgerlijk Wetboek Boek 2), Art. 2:286 BW (foundation must be created by notarial deed / notariële akte), which is current with no material recent amendment.",
+  "fee_plausible": "Yes — the official KvK registration fee is a one-off €85.15 (confirmed on kvk.nl; indexation confirmed in the 19 Dec 2025 KVK press release for 1 Jan 2026), and the notary range EUR 500–1,500 is plausible though KVK's own stichting page states €500–1,000, so the row's upper bound is a bit high.",
+  "time_plausible": "Yes — 2–4 weeks for the notarial deed / registration is consistent with practice, and the ANBI tax-status decision (2–8 weeks, no statutory deadline) is reasonable.",
+  "presence_supported": "Yes — the 'yes (no local presence)' verdict is supported: there is no citizenship/residency requirement for founder or board, a non-resident board is allowed, and the required Dutch registered address can be met via a virtual-office provider.",
+  "corrections": "The '30% donor deduction' in the tax-exempt column is wrong — ANBI gifts are income-tax deductible up to the greater of ~€100 or 1% of total taxable income, not 30% of any base. The notary-fee upper bound (EUR 1,500) exceeds KVK's stated range (€500–1,000), making the row's total ceiling of ~EUR 1,585 somewhat overstated.",
+  "new_source": "https://www.kvk.nl/en/registration/registration-fee"
+}

@@ -1,0 +1,10 @@
+{
+  "country": "United States",
+  "verified": true,
+  "law_current": "Current: no single federal charter law — state nonprofit corporation law (e.g. Delaware General Corporation Law ch. 15, Cal. Corp. Code div. 2) + IRC 501(c)(3); no amendment changing the pathway found",
+  "fee_plausible": "Yes: IRS official page confirms $275 (Form 1023-EZ) and $600 (Form 1023) per Rev. Proc. 2026-5, paid via Pay.gov; Delaware non-stock incorporation fee $109 fits the $50-300 state range",
+  "time_plausible": "Yes: Delaware incorporation same-day(expedited) to ~2 weeks; IRS 80th-percentile determinations ~22 days (1023-EZ) to ~191 days (1023), consistent with 3-12 months",
+  "presence_supported": "Yes: no residency requirement for incorporators/directors; in-state registered agent is purchasable; EIN, incorporation and Form 1023 all completable remotely (long pole is IRS determination; bank account separately needs in-person KYC)",
+  "corrections": "none — row's fees, times, and remote-feasibility verdict all match current official schedules (minor nuance: median 1023 processing is ~6 months, so '6-12 months' is the upper half of the typical range)",
+  "new_source": "https://www.irs.gov/charities-non-profits/form-1023-and-1023-ez-amount-of-user-fee"
+}

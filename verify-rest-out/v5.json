@@ -1,0 +1,191 @@
+[
+ {
+  "country": "Kyrgyzstan",
+  "law_current": true,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Fee claim of 3,500 KGS (~US$40) is unsupported: Cabinet of Ministers Resolution No. 470 of 23 Aug 2022 as amended by No. 560 of 7 Oct 2022 sets state registration fee for non-commercial organizations at 100 KGS (~US$1-2); general legal entities 200 KGS; expedited registration costs more. 2. Governing law is the Law on Non-Commercial Organizations (1999) as amended by the 2 Apr 2024 'Foreign Representatives' law (foreign-funded NCOs doing 'political activity' must register as foreign representatives; INGO grants via registered branches).",
+  "new_source": "https://gratanet.com/news/on-reducing-the-amount-of-fees-for-state-registration-re-registration-of-legal-entities"
+ },
+ {
+  "country": "Republic of the Congo",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.unicongo.cg/document/loi-du-1er-juillet-1901-relative-au-contrat-d_association/"
+ },
+ {
+  "country": "Congo (DRC)",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.droitcongolais.info/files/211.07.01-Arrete-du-20-juillet-2001_ASBL.pdf"
+ },
+ {
+  "country": "Gabon",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Associations remain governed by Law 35/62 of 10 Dec 1962; no evidence that a 'loi n°001/2011' governs associations (notes' claim unsupported). 2. A dedicated NGO law (creation/organisation/functioning of NGOs; NGO status only after 3 years as declared association) was adopted by the transitional National Assembly on 16 May 2025 but no Senate vote/promulgation found - pending.",
+  "new_source": "https://gabonmediatime.com/gabon-que-prevoit-la-loi-sur-les-ong-portee-par-foumboula/"
+ },
+ {
+  "country": "Equatorial Guinea",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://faolex.fao.org/docs/pdf/eqg127478.pdf"
+ },
+ {
+  "country": "Sao Tome & Principe",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.cipstp.st/wp-content/uploads/2015/04/lei-das-ONG-STP.pdf"
+ },
+ {
+  "country": "Rwanda",
+  "law_current": false,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. There is no 'Law 01/2016' on NGOs: national NGOs are governed by Law N°04/2012 of 17/02/2012 and international NGOs by Law N°05/2012 (RGB's founding law is separate); a single new NGO law was tabled in Parliament 18 Apr 2024 - verify whether enacted (RGB now cites a 'Law governing non-governmental organisations'). 2. RGB fee is 300,000 RWF non-refundable for both national and international NGOs, which is ~US$200-210, not ~$24. 3. 'MIDRRP' as predecessor regulator is wrong (NGO registration moved from MINALOC to RGB).",
+  "new_source": "https://www.rgb.rw/1/civil-society-faith-based-and-political-organisations/non-governmental-organisations"
+ },
+ {
+  "country": "Burundi",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Domestic ASBLs: Law n°1/02 of 27 Jan 2017 (Ministry of Interior). Foreign NGOs are governed separately by Law n°1/01 of 23 Jan 2017 (amending Law 1/011 of 23 June 1999 on cooperation with foreign NGOs), which should be cited for the foreign-founder route.",
+  "new_source": "https://presidence.gov.bi/wp-content/uploads/2017/04/loi-02-2017.pdf"
+ },
+ {
+  "country": "Uganda",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.ngobureau.go.ug/en/fees-regulations"
+ },
+ {
+  "country": "Tanzania",
+  "law_current": false,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. NGO Act is No. 24 of 2002 (Cap. 56), not No. 22; it was actually amended by the Written Laws (Miscellaneous Amendments) (No. 3) Act No. 9 of 2019 (not '2021 amendments'). 2. Official fees (jamii.go.tz): local NGO TZS 115,000 national / 100,000 regional / 80,000 district + TZS 1,500 stamp duty; international NGO USD 350 + TZS 4,500 stamp duty (not ~$267). 3. Founders: local NGO needs >=5 founders, all Tanzanian; international NGO >=5 founders with at least 2 Tanzanians (replace 'two-thirds Tanzanian directors'). Registrar is the NGO Registrar/National NGO Coordination Board, not an 'NGO Commission'.",
+  "new_source": "https://www.jamii.go.tz/services/ngos-registration"
+ },
+ {
+  "country": "Kenya",
+  "law_current": false,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Repealed statute is the NGO Co-ordination Act 1990 (not an 'NGO Act 2003'); PBO Act 2013 commenced 14 May 2024 (LN 78 of 2024), regulator PBORA; Main entity types/Key requirements text still describing NGO Board/KES 100,000 deposit route is obsolete. 2. PBO Regulations 2026 (gazetted 18 Mar 2026) set registration fees of KES 25,000 (~US$195) national PBO and KES 45,000 (~US$350) international PBO - not ~$40-100. 3. Requirements: one-third of directors must be Kenyan nationals resident in Kenya; international PBOs need an authorised agent who is a Kenyan resident citizen and a Kenyan office.",
+  "new_source": "https://cms.law/en/ken/news-information/salient-provisions-of-the-public-benefits-organizations-regulations-2026"
+ },
+ {
+  "country": "Comoros",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://justice.gouv.km/texte/loi-n86-006-af-du-30-mai-1986-relative-au-contrat-dassociation/"
+ },
+ {
+  "country": "Madagascar",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.diplomatie.gov.mg/images/ppd/loi-n-96-030.pdf"
+ },
+ {
+  "country": "Zambia",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://zambialii.org/akn/zm/act/2009/16/eng@2009-08-28"
+ },
+ {
+  "country": "Malawi",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://ngora.mw/registration/"
+ },
+ {
+  "country": "Mozambique",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Notes' reference to an 'NGO law (Lei 31/2002)' is unsupported: the operative regime is Lei 8/91 of 18 July (associations) plus Decreto 55/98 of 13 Oct (foreign NGOs, MINEC); the 2022 OSFL bill (which would repeal both) was dropped from Parliament's agenda in April 2023 and no enactment found. 2. Remove irrelevant source (HRW Zimbabwe backgrounder).",
+  "new_source": "https://www.dlapiperafrica.com/pt/mozambique/insights/legislation-series/associations-and-ngos/associations-and-ngos.html"
+ },
+ {
+  "country": "Angola",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Lei 14/91 (Associações) was replaced by Lei n.º 6/12 de 18 de Janeiro (Lei das Associações Privadas). 2. Lei n.º 2/26 (NGO statute) was published 2 March 2026, replacing Presidential Decree 74/15; mandatory prior administrative authorisation, oversight body designated by the President; existing NGOs must adapt by Sept 2026; it does not apply to private associative entities.",
+  "new_source": "https://www.plmj.com/en/knowledge/informative-notes/New-NGO-law-Key-changes/34394/"
+ },
+ {
+  "country": "Botswana",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Societies Act 2022 (re-enactment of 1972 Act, FATF-driven) requires at least two-thirds of office bearers to reside in Botswana, with security clearance under the amendment regulations; replace 'no citizenship restriction... resident secretary' with this residency rule. Existing societies had to re-register by 22 Feb 2023.",
+  "new_source": "https://www.dlapiperafrica.com/en/botswana/insights/2023/new-societies-act-2022-of-botswana.html"
+ },
+ {
+  "country": "Namibia",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Trusts are not registered under the Deeds Registries Act 2015: they are registered with the Master of the High Court under the Trust Administration Act 11 of 2023 (in force 3 Aug 2023, replacing the Trust Moneys Protection Act 34 of 1934).",
+  "new_source": "https://www.lac.org.na/laws/annoSTAT/Trust%20Administration%20Act%2011%20of%202023.pdf"
+ },
+ {
+  "country": "Zimbabwe",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. PVO (General) Regulations 2026 (SI 97 of 2026) fix registration fees at US$150 (local PVO) and US$250 (international PVO); Registrar must give provisional decision within 90 days (deemed provisional registration otherwise). International PVOs must name an authorised local agent; regulations gazetted by the Minister of Public Service, Labour and Social Welfare.",
+  "new_source": "https://www.mmmlawfirm.co.zw/the-private-voluntary-organisations-board-and-general-regulations-2026-a-guide-to-registration-governance-and-regulatory-oversight/"
+ },
+ {
+  "country": "Eswatini",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://eswatinilii.org/akn/sz/act/2009/8/eng@1998-12-01"
+ }
+]

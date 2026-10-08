@@ -1,0 +1,182 @@
+[
+ {
+  "country": "Taiwan",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Foundation minimum endowment is set per competent authority/locality, not a uniform NT$15m local tier: e.g. Taipei City social-welfare/charity foundations require at least NT$10 million in cash (Taipei supplementary rules); verify the figure for the relevant authority. Governing law is the Foundations Act (財團法人法, 2018); after authority permission, registration is filed with the local District Court.",
+  "new_source": "https://laws.gov.taipei/Law/LawSearch/LawArticleContent/FL043047"
+ },
+ {
+  "country": "Hong Kong",
+  "law_current": true,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Tax-exempt charity status is granted by the Inland Revenue Department under s.88 Inland Revenue Ordinance, not by the HK Jockey Club; HKJC is a grant-maker, not a regulator. 2. Companies Registry incorporation fee for a company limited by guarantee is HK$155 (electronic)/HK$170 (paper) for <=25 members (HK$340 for 26-100; max HK$1,025), i.e. ~US$20-22, not US$198 (HK$1,545 is the share-company fee). 3. Under Companies Ordinance Cap. 622 an individual company secretary must ordinarily reside in HK (or a corporate secretary must have an HK registered office/place of business).",
+  "new_source": "https://www.cr.gov.hk/en/services/fees.htm"
+ },
+ {
+  "country": "Macau",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Associations and foundations are governed by Law 2/99/M (right of association) and Civil Code arts. 140-172 (legal persons; DSI cites arts. 101-200), not arts. 1642-1667. 2. The procedure runs through the Identification Services Bureau (DSI): name-availability certificate from DSI, notarised deed of establishment at a Public Notary Office, publication of the constitution in the Boletim Oficial, then DSI issues the registration number; it is not a DSAJ/Civil Affairs Bureau process.",
+  "new_source": "https://www.gov.mo/en/services/ps-1069/"
+ },
+ {
+  "country": "Singapore",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Charity registration requires at least 3 governing board members, of whom at least 2 must be Singapore citizens or permanent residents (Charities Act/Regulations; IPC status requires at least half of the board to be Singapore citizens); the CLG itself additionally needs at least 1 ordinarily resident director. Thus a foreign founder needs at least 2 local citizen/PR board members, not just one resident director.",
+  "new_source": "https://ask.gov.sg/mccy-cu/questions/clpq9t4w3001i1xxmfdxxczl4"
+ },
+ {
+  "country": "Malaysia",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.mdi.gov.my/wp-content/uploads/2025/06/Akta-832-Akta-Pertubuhan-1966.pdf"
+ },
+ {
+  "country": "Indonesia",
+  "law_current": true,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Official government fee (AHU PNBP for approval of a yayasan deed under PP 28/2019) is ~IDR 250,000 (~US$15); the IDR 5-20M range is mostly notary fees, not a government fee. 2. Foreign-founded yayasan are governed by PP 63/2008 as amended by PP 2/2013 (at least one of chair/secretary/treasurer must be an Indonesian citizen; foreign officers need KITAS); note PNBP tariffs were revised by PP 30/2026 effective 1 Aug 2026.",
+  "new_source": "https://portal.ahu.go.id/uploads/324489_Matriks%20Jenis%20dan%20Tarif%20PNBP%20Ditjen%20AHU%20PP%2028%202019.pdf"
+ },
+ {
+  "country": "Thailand",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. There is no 'Foundation Act B.E. 2550'; foundations are governed by the Civil and Commercial Code ss.110-136 (associations ss.78-109). 2. Foundations are registered with the Ministry of Interior registrar (district office in Bangkok / Provincial Governor in provinces), not the Ministry of Justice. 3. A Thai-majority board is Interior Ministry practice/vetting rather than an express statutory quota; foreign directors are vetted (passport, visa, work permit, embassy certificates). Minimum endowment ~THB 200,000-500,000 applies.",
+  "new_source": "https://www.thailawonline.com/glossary/foundation-and-association/"
+ },
+ {
+  "country": "Vietnam",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Decree 125/2020 concerns tax/invoice administrative penalties, not NGOs; associations are governed by Decree 126/2024/ND-CP (effective 26 Nov 2024, replacing Decree 45/2010 and 33/2012). 2. Decree 03/2026/ND-CP (effective 1 Mar 2026) on social and charity funds is correct (replaces Decree 93/2019 and 136/2024). Decree 58/2022 on foreign NGOs is correct.",
+  "new_source": "https://english.luatvietnam.vn/co-cau-to-chuc/decree-126-2024-nd-cp-on-the-organization-operation-and-management-of-associations-367881-d1.html"
+ },
+ {
+  "country": "Philippines",
+  "law_current": true,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. There is no general rule that two-thirds of non-stock corporation trustees be Filipino citizens; the Revised Corporation Code (RA 11232) imposes nationality limits only in nationalised sectors (e.g. education, media). The binding local requirement is that the corporate secretary be a Filipino citizen and resident (and treasurer a resident). 2. SEC filing fee for articles of incorporation of a non-stock corporation is PHP 1,000 (SEC MC No. 3 s.2017) plus legal research fee (~US$20); PHP 60k-150k is counsel cost, not a government fee.",
+  "new_source": "https://appointment.sec.gov.ph/wp-content/uploads/2020/01/2017MCno03-new2.pdf"
+ },
+ {
+  "country": "Cambodia",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. The governing law is the Law on Associations and Non-Governmental Organizations (LANGO) of 2015, not 2003. 2. Under LANGO art. 5, a domestic association needs at least 3 founding members aged 18+; the Khmer-nationality requirement (3 natural-person founders) applies to domestic NGOs. Registration is with the Ministry of Interior; foreign NGOs sign an MoU with MOFAIC.",
+  "new_source": "https://www.sithi.org/medias/files/projects/sithi/law/Unofficial-Translation-LANGO.pdf"
+ },
+ {
+  "country": "Laos",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. There is no 'Law on Social Organisations and NGOs'; local associations are governed by Decree on Associations No. 238/GOV (2017, in force 15 Nov 2017, replacing Decree 115/2009), foundations by a separate foundations decree. 2. INGOs are now governed by Decree No. 126/GOV of 25 May 2026 (in force 15 July 2026), replacing PM Decree 013/2010; INGO cooperation with local associations needs prior MOFA approval.",
+  "new_source": "https://www.rajahtannasia.com/viewpoints/ingos-regulations-amended/"
+ },
+ {
+  "country": "Myanmar",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Registration is under the Organization Registration Law 2022 (SAC Law No. 46/2022, enacted 28 Oct 2022, repealing the Association Registration Law 2014), via the Union Registration Board chaired by the Minister of Home Affairs (GAD Director General as secretary) and subordinate region/state/district/township boards - not a 'National Registration Bureau'. 2. INGOs need at least 40% Myanmar citizens on the executive committee; new registrations have reportedly been largely suspended pending implementing rules.",
+  "new_source": "https://www.dfdl.com/insights/legal-and-tax-updates/myanmar-new-organization-registration-law-enacted/"
+ },
+ {
+  "country": "Brunei",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.agc.gov.bn/wp-content/uploads/2026/07/CAP-203-2010-ED-SOCIETIES-ACT.pdf"
+ },
+ {
+  "country": "Timor-Leste",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Registration is handled by the National Directorate for Registration and Notarial Services (DNRN) under the Ministry of Justice.",
+  "new_source": "https://lpr.adb.org/resource/decree-law-no-52005-non-profit-corporate-bodies-timor-leste"
+ },
+ {
+  "country": "Australia",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.acnc.gov.au/for-charities/start-charity/you-start-charity"
+ },
+ {
+  "country": "New Zealand",
+  "law_current": false,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. The Incorporated Societies Act 2022 came into force on 5 October 2023 (with the Incorporated Societies Regulations 2023); 5 April 2026 was the re-registration deadline for existing societies, after which the 1908 Act regime ended. 2. Incorporation application fee is NZ$88.89 + GST = NZ$102.22 (~US$60), not 25. 3. Charities registration is with Charities Services (Department of Internal Affairs)/Charities Registration Board; the Charities Commission was disestablished in 2012. 4. A society needs at least 1 contact person ordinarily resident in NZ (s.114); officers have no residency requirement.",
+  "new_source": "https://is-register.companiesoffice.govt.nz/help-centre/forms-and-fees/fees/"
+ },
+ {
+  "country": "Fiji",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.laws.gov.fj/"
+ },
+ {
+  "country": "Papua New Guinea",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. The Associations Incorporation Act 2023 itself commenced on 1 July 2026 (replacing the 1966 Act); existing incorporated associations must re-register by 30 June 2027.",
+  "new_source": "https://www.ipa.gov.pg/public/help.aspx?cn=NewAssociationsAct"
+ },
+ {
+  "country": "Samoa",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.mcil.gov.ws/services/business-registration"
+ },
+ {
+  "country": "Tonga",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Note: amendments to the Charitable Trusts Act 1993 are under consultation (MCCTIL memo of 21 July 2026), including trustee disclosure/identification requirements.",
+  "new_source": "https://businessregistries.gov.to/Documentation/TO/Consultation_Memo_Proposed_Amendments_CharitableTrustsAct_July_21_2026.pdf"
+ }
+]

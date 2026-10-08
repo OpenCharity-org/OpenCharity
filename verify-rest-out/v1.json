@@ -1,0 +1,173 @@
+[
+ {
+  "country": "Canada",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": false,
+  "presence_supported": true,
+  "corrections": "1. CRA charity registration takes ~6-9 months (official 2025-26 service standard: final decision within 9 months on a complete application), not '35 days to 3+ months'; incorporation is ~2-4 weeks.",
+  "new_source": "https://canada.ca/en/revenue-agency/services/charities-giving/charities/about-charities-directorate/report-on-charities-program/report-on-charities-program-2025-2026.html"
+ },
+ {
+  "country": "United States",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://file.business/nonprofit-formation-delaware.html"
+ },
+ {
+  "country": "Cuba",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "n/a",
+  "new_source": "n/a"
+ },
+ {
+  "country": "Jamaica",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://bjdc.mfaft.gov.jm/pdf/COMP_OF_JAM.pdf"
+ },
+ {
+  "country": "Bahamas",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://capital-lawassociates.com/law-articles/general-information-on-company-formation"
+ },
+ {
+  "country": "Barbados",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://caipo.gov.bb/fees/"
+ },
+ {
+  "country": "Trinidad & Tobago",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. The current law is the Companies Act Chap. 81:01 (not Ch. 74:01) and the Income Tax Act Chap. 75:01 (not Ch. 79:04); there is no 'Charities Act' - charitable/tax-exempt status is by discretionary approval under the Income Tax Act and NPO registration under the Non-Profit Organisations Act 2019 (Act No. 7 of 2019, in force 14 June 2019).",
+  "new_source": "https://fiu.gov.tt/wp-content/uploads/Non-Profit-Organisations-Act-2019.pdf"
+ },
+ {
+  "country": "Antigua & Barbuda",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://abipco.gov.ag/commerce/fees"
+ },
+ {
+  "country": "Grenada",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.gfrc.cc/fees-help-support/charitable-trusts-fees-and-penalties/"
+ },
+ {
+  "country": "St. Kitts & Nevis",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.prenticeandco.com/guide-part-5"
+ },
+ {
+  "country": "St. Lucia",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. IBCs are NOT prohibited - the International Business Companies Act (Cap. 12.14) is in force and IBCs are incorporated there (since 1 July 2021 IBCs are resident, tax-exempt companies); the domestic Companies Act is Cap. 13.01 as stated.",
+  "new_source": "https://saintluciaifc.com/legislative-update-july-2021"
+ },
+ {
+  "country": "St. Vincent & Grenadines",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://cipo.gov.vc/index.php/domestic-companies-items/54-incorporation"
+ },
+ {
+  "country": "Dominica",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://cipo.gov.dm/fees/companies"
+ },
+ {
+  "country": "Dominican Republic",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://pgr.gob.do/servicios/incorporacion-de-una-asociacion-sin-fines-de-lucro/"
+ },
+ {
+  "country": "Haiti",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://www.haitidocs.org/doc/ht-decret-1989-ong-modifiant-loi-1982?lang=fr"
+ },
+ {
+  "country": "Mexico",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://sat.gob.mx/terceros_autorizados/donatarias_donaciones/Paginas/autorizacion_donativos.aspx"
+ },
+ {
+  "country": "Guatemala",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://repeju.gob.gt/requisitos-y-documentacion/asociacion-civil/"
+ },
+ {
+  "country": "Belize",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://bccar.bz/library/fees-schedule/"
+ },
+ {
+  "country": "El Salvador",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "http://www.oas.org/juridico/spanish/mesicic3_slv_funciones.pdf"
+ }
+]

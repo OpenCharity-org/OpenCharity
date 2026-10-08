@@ -59,6 +59,11 @@ South Africa, United Kingdom, United States.
 5. **Pass 4** — 10 agents added the tax-exemption dimension.
 6. **Pass 5** — 10 agents added bank-account remote-feasibility (KYC/AML
    constraints for foreign founders).
+7. **Verification passes** — citation check of every entity-type law (51
+   fixes), dead-link replacement, fee/time normalisation, and a full
+   198-row re-verification of law currency, fee, time and presence claims
+   against official sources (131 rows corrected; see `verify-rest-out/` and
+   `verify_rest_patches.py`, applied with `python3 apply_verify_rest.py`).
 
 GfN eligibility is computed by exact longest-match tokenization against the
 186-name authoritative Google for Nonprofits program list (183 of 198

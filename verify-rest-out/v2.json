@@ -1,0 +1,182 @@
+[
+ {
+  "country": "Honduras",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Legal personality for asociaciones/fundaciones is granted by the Secretaria de Gobernacion, Justicia y Descentralizacion (SGJD) through DIRRSAC, not by the Poder Judicial/Chancilleria and not a 'Secretaria de Justicia y Derechos Humanos'; ONGDs register in DIRRSAC's registry under the Ley Especial de Fomento para las ONGD (Decreto 32-2011). Remove the 'Registro de ONGD (Chancilleria)' / 'Poder Judicial' references.",
+  "new_source": "https://www.sgjd.gob.hn/institucion/dependencias/subsecretaria-de-justicia/direccion-de-regulacion-registro-y-seguimiento-de-asociaciones-civiles-dirrsac"
+ },
+ {
+  "country": "Nicaragua",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Ley 147/1992 (Ley General sobre Personas Juridicas sin Fines de Lucro) was replaced by Ley 1115 (Ley General de Regulacion y Control de Organismos sin Fines de Lucro, La Gaceta No. 66, 6 Apr 2022), reformed by Ley 1127 (2022) and Ley 1212 (2024); cite Ley 1115 as the controlling law rather than DL 1346/1983 + Ley 147. 2. Legal personality is now granted/cancelled directly by the Ministerio de Gobernacion (Direccion General de Registro y Control de OSFL), no longer by the Asamblea Nacional. 3. Ley 1040/2020 (Agentes Extranjeros) also applies to foreign-funded entities.",
+  "new_source": "https://www.ey.com/es_ce/technical/tax/tax-alerts/nicaragua-entran-en-vigencia-reformas-al-marco-normativo-sobre-organismos"
+ },
+ {
+  "country": "Costa Rica",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Fundaciones are governed by the Ley de Fundaciones No. 5338 (1973), not a generic 'fundacion sin fines de lucro'; the Junta Administrativa must include two members appointed by the Poder Ejecutivo (Ministerio de Justicia y Paz) and the cantonal municipality. 2. Asociaciones and fundaciones register with the Registro de Personas Juridicas of the Registro Nacional, not the 'Registro de Comercio' or the Ministerio de Educacion y Cultura.",
+  "new_source": "https://costa-rica.justia.com/nacionales/leyes/ley-5338/gdoc"
+ },
+ {
+  "country": "Panama",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. The trust (fideicomiso) law is Ley 21 of 10 May 2017, which replaced Ley 1/1984. 2. A fundacion de interes privado needs a Consejo de Fundacion of at least 3 natural persons or 1 legal entity and a Panamanian resident agent (lawyer/law firm); non-profit asociaciones obtain personeria juridica from the Ministerio de Gobierno before Registro Publico inscription.",
+  "new_source": "https://www.registro-publico.gob.pa/"
+ },
+ {
+  "country": "Colombia",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. The Codigo Civil provisions on personas juridicas sin animo de lucro are arts. 633-652 (not arts. 88-97); ESAL registration with the Camara de Comercio is under Decreto 2150/1995 (arts. 40-45) and Decreto 427/1996. 2. A public deed/lawyer is not mandatory: ESAL can be constituted by private document (documento privado) with recognized signatures and registered directly at the Camara de Comercio.",
+  "new_source": "https://www.ccb.org.co/servicios/registros-publicos/registro-de-entidades-sin-animo-de-lucro"
+ },
+ {
+  "country": "Venezuela",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. There is no 'Ley Organica de Fundaciones 1961'; fundaciones and asociaciones civiles are civil-law persons under Codigo Civil arts. 19-20, registered at the Registro Publico (SAREN), not the Codigo de Comercio. 2. Add the Ley de Fiscalizacion, Regularizacion, Actuacion y Financiamiento de las ONG y afines (sanctioned 15 Aug 2024, promulgated Nov 2024), requiring SAREN registration, declaration of foreign funding and donor identification, with dissolution powers. 3. CADIVI was abolished in 2014; replace 'CADIVI/SICR' with current exchange-control/banking restrictions.",
+  "new_source": "https://www.prensa-latina.cu/2024/08/15/sancionan-en-venezuela-ley-sobre-regularizacion-y-actuacion-de-ong/"
+ },
+ {
+  "country": "Ecuador",
+  "law_current": false,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. The governing regulation is Decreto Ejecutivo 193 (Reglamento para el Otorgamiento de Personalidad Juridica a las Organizaciones Sociales, R.O. Supl. 109, 27 Oct 2017), with registration in SUIOS via the competent ministry; 'Ley 2023-13 / COEP regime' could not be verified and should be removed. 2. Under Decreto 193 a fundacion may be formed by one or more founders, while corporaciones need at least 5 members; 'Institucion de utilidad publica' is not a separate registrable type. 3. The ministerial grant of personalidad juridica carries no government fee (cost is lawyer/notarization only), so ~$150-400 is not a government fee.",
+  "new_source": "https://www.gob.ec/regulaciones/193-expidese-reglamento-otorgamiento-personalidad-juridica-organizaciones-sociales"
+ },
+ {
+  "country": "Peru",
+  "law_current": false,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Wrong Codigo Civil articles: asociaciones are arts. 80-98, fundaciones arts. 99-110, comites arts. 111-123 (not arts. 109-119, 200-211). 2. Fundaciones must also register with the Consejo de Supervigilancia de Fundaciones (Ministerio de Justicia). 3. SUNARP registration fees are modest (tens of USD); ~$300-800 reflects notary/lawyer costs, not the government fee.",
+  "new_source": "https://www.gob.pe/institucion/sunarp"
+ },
+ {
+  "country": "Bolivia",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Ley 351/2013 (Otorgacion de Personalidades Juridicas) and its reglamento DS 1597/2013 govern ONGs, fundaciones and entidades civiles sin fines de lucro; personality is granted by the Ministerio de la Presidencia/Viceministerio de Autonomias for multi-department entities (departmental Gobernaciones otherwise), not a 'Superintendencia de Companias' (an Ecuadorian body). 2. 'Ley 1417 (2023) replacing Ley 1475 (1993)' could not be verified and should be removed. 3. Foreign-constituted NGOs must instead sign a framework cooperation agreement with the Ministerio de Relaciones Exteriores (Ley 351 art. 13).",
+  "new_source": "https://va.presidencia.gob.bo/images/personalidadesJuridicas/Normativa/1-ley-351_de_otorgacion_de_personalidades_jurdicas.pdf"
+ },
+ {
+  "country": "Guyana",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "n/a"
+ },
+ {
+  "country": "Suriname",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "n/a"
+ },
+ {
+  "country": "Brazil",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "n/a"
+ },
+ {
+  "country": "Paraguay",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. 'Ley 5833/2017 de OSC' could not be verified; asociaciones and fundaciones are governed by the Codigo Civil (Ley 1183/1985). 2. Add Ley 7363/2024 (control, transparencia y rendicion de cuentas de las OSFL, promulgated 15 Nov 2024; regulated by Decreto 4806/2025), which creates a National Registry of Non-Profit Organizations under the Ministerio de Economia y Finanzas with funding/beneficiary reporting duties.",
+  "new_source": "https://www.lanacion.com.py/politica/2024/11/15/pena-promulgo-ley-de-control-y-transparencia-de-ong/"
+ },
+ {
+  "country": "Uruguay",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Ley 17.163/1999 is principally the foundations law (with provisions on asociaciones civiles); fundaciones are governed by Ley 17.163, not the Codigo Civil. 2. Legal personality for asociaciones civiles and fundaciones is recognized by the Ministerio de Educacion y Cultura (MEC), not the Direccion General de Registros (DGR).",
+  "new_source": "https://www.gub.uy/ministerio-educacion-cultura/institucional/normativa/ley-n-17163-fecha-01091999-asociaciones-civiles-fundaciones"
+ },
+ {
+  "country": "Argentina",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Asociaciones civiles are governed by CCyC arts. 168-192 and fundaciones by CCyC arts. 193-224 plus Ley 19.836 (Ley de Fundaciones); 'Ley 23.851' and 'Ley 26.047' as the registration basis could not be verified. 2. Registration is with the Inspeccion General de Justicia (CABA) or provincial Direccion de Personas Juridicas, not the commercial registry; IGJ RG 1/2020 allows constitution without escritura and waives IGJ fees for first-degree associations. 3. Fideicomiso is regulated by CCyC arts. 1666-1707, not 'Ley 27.290'.",
+  "new_source": "https://abogados.com.ar/sobre-la-nueva-resolucion-12020-de-la-igj-y-el-modo-de-alivianar-cargas-en-la-constitucion-de-asociaciones-civiles/25290"
+ },
+ {
+  "country": "Chile",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": false,
+  "presence_supported": true,
+  "corrections": "1. Asociaciones/corporaciones and fundaciones are both governed by Codigo Civil Titulo XXXIII as amended by Ley 20.500 (2011); 'Ley 20.839/2015' is not the foundations law. 2. The constitutive act is deposited at the Secretaria Municipal (not the Conservador de Bienes Raices), which has 30 days to object before forwarding to the Registro Civil's Registro Nacional de Personas Juridicas sin Fines de Lucro (CC art. 548), so realistic time is ~1-2 months, not 1-3 weeks.",
+  "new_source": "https://iura.cl/cc/548"
+ },
+ {
+  "country": "Mongolia",
+  "law_current": true,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "none",
+  "new_source": "https://legalinfo.mn/mn/edtl/16532189545471"
+ },
+ {
+  "country": "Japan",
+  "law_current": true,
+  "fee_plausible": false,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Government cost for a general incorporated association is the registration license tax of JPY 60,000 (~US$400) plus notary certification of articles (~JPY 50,000), i.e. roughly US$700+, not ~$300. Specified NPO certification itself is free.",
+  "new_source": "https://www.moj.go.jp/MINJI/minji06_00106.html"
+ },
+ {
+  "country": "South Korea",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Non-profit associations/foundations are formed under Civil Act arts. 32-33 (permission of the competent ministry/agency) and the Act on the Establishment and Operation of Public Interest Corporations; there is no 'Act on Incorporation of Associations and Foundations', and the entity must be registered at the court registry office (within 3 weeks of permission), not a district/city office. 2. No statutory minimum endowment; the KRW 100 million figure is an administrative guideline varying by ministry.",
+  "new_source": "https://www.law.go.kr/"
+ },
+ {
+  "country": "China",
+  "law_current": false,
+  "fee_plausible": true,
+  "time_plausible": true,
+  "presence_supported": true,
+  "corrections": "1. Under the Regulations on the Management of Foundations (2004) art. 8, minimum original funds are RMB 8 million (national public-fundraising foundation), RMB 4 million (local public-fundraising) and RMB 2 million (non-public), not 2 million/800,000. 2. 'Private non-enterprise unit' is now termed 'social service organization' (社会服务机构) under the Charity Law (2016, amended 2023).",
+  "new_source": "http://www.mca.gov.cn/"
+ }
+]

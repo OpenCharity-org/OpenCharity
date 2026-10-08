@@ -781,3 +781,192 @@ P["Nepal"] = {
     "_note": "verify-rest 2026-10: no general 'Trust Act 2000' — Civil Code 2017 governs trusts; foreign-settlor trust carries a US$1M threshold; NGO needs 7 Nepali founders",
     "_source": "https://nepallaws.com/Laws/the-national-civil-code-act-2074/part-4-laws-relating-to-property/chapter-6-provisions-relating-to-trusts/section-316-application-to-be-made-for-establishment-of-trust/",
 }
+
+
+# ==== consistency sweep: purge claims superseded above from other columns ====
+def fix(country, cells):
+    P.setdefault(country, {}).update(cells)
+
+CA, TX, BN, FD, NT = ("Annual compliance & reporting", "Tax-exempt status & benefits",
+                      "Main bottleneck (remote foreign founder)", "Foreign donor / donation restrictions", "_drop")
+
+fix("Trinidad & Tobago", {
+    CA: "Companies Act Chap. 81:01: annual return to the Companies Registry within 30 days of incorporation anniversary (directors, office, officers); NPOs also file under the NPO Act 2019. Late default: penalties. Accounts kept; audit where required. Non-filing: strike-off.",
+    TX: "Ministry of Finance 'approved charity' status; donors deduct covenanted donations up to 15% of income; charity exempt from income tax (Income Tax Act Chap. 75:01). No deduction without approval. Time unpublished.",
+})
+fix("Cameroon", {NT: ["2017 civil-society law"], "_note2": None})
+fix("Afghanistan", {
+    CA: "NGOs file annual activity and financial reports to the Ministry of Economy (NGO Directorate); non-filing risks sanctions or deregistration.",
+    TX: "NGO registered with the Ministry of Economy; NOT automatic - apply to the Revenue Authority for a tax-exemption certificate (income tax + business receipt tax); no donor deduction; ~30-90 days.",
+})
+fix("Nigeria", {
+    NT: ["NCMM"],
+    BN: "CAC incorporation (incorporated trustees or CLG), then SCUML registration before banking; international NGOs also register with the National Planning Commission",
+    FD: "SCUML (EFCC) registration mandatory; international NGOs register with the National Planning Commission; a Foreign Aid Regulation Bill (2026) is pending",
+    CA: "CAC annual returns + annual report for incorporated trustees (CAMA 2020) due within 6 months of fiscal year end; SCUML reporting; non-compliance risks fines and deregistration.",
+    TX: "Incorporated trustee registered with CAC; tax exemption under CITA (non-profit organization) via separate FIRS application; no general donor income-tax deduction; time unpublished.",
+})
+fix("Ghana", {
+    NT: ["Charities Commission registration has been operational"],
+    "Est. cost & time": "ORC statutory fee ~GHS 490 (~$40, 2025) plus non-refundable licensing fee to the NPO Secretariat; provisional licence 3 months, official time unpublished.",
+    BN: "Two-stage: ORC incorporation under Companies Act 992, then NPO Secretariat operating licence (NPOs Policy/Directive 2020)",
+})
+fix("Côte d'Ivoire", {})
+fix("Benin", {FD: "Foreign NGOs need authorization under Loi 2025-19 + Decree 2025-636 (Oct 2025) to establish or act in Benin"})
+fix("Burkina Faso", {
+    NT: ["2018 constitutional ban"],
+    CA: "Associations under Loi 011-2025/ALT; ONGs need ministry authorization; ongoing oversight, non-compliance risks administrative dissolution (118 organisations dissolved, 1,056 suspended in Apr 2026).",
+    TX: "Association registered under Loi 011-2025/ALT; public-utility recognition by decree adds full tax benefits; association income tax-exempt when applied to its purposes; no donor deduction; time unpublished.",
+})
+fix("Guinea-Bissau", {NT: ["Prior cited Lei n. 5/VI/96"]})
+fix("Senegal", {TX: "Association declared to the administrative authority (COCC arts. 811 ff.); income tax exemption automatic under CGI art.5(7) (since 2019) for non-profit entities without commercial activity; donors deduct gifts to public-utility orgs, cap 0.5%."})
+fix("Gambia", {NT: ["Societies Act 1972"]})
+fix("Sierra Leone", {NT: ["Companies Act 2013 CLG route"]})
+fix("Liberia", {
+    NT: ["NGO Act 2015 operative"],
+    BN: "Liberian principal officer required to sign filings; local office; MFA endorsement plus MFDP NGO Unit accreditation with annual fees",
+})
+fix("Niger", {NT: ["Law 93-010"]})
+fix("Honduras", {
+    NT: ["Poder Judicial (Chancilleria)"],
+    BN: "SGJD/DIRRSAC legal-personality filing plus local address/representative; all filings in Spanish.",
+})
+fix("Nicaragua", {CA: "Legal personality is granted and cancelled by the Ministerio de Gobernación (Ley 1115); entities file financial statements, donor lists and activity reports with Gobernación; non-compliance leads to cancellation."})
+fix("Bolivia", {
+    NT: ["Ley 1417"],
+    BN: "Resident officers + local address, notarized deed; foreign-constituted NGOs need a framework agreement with the Foreign Ministry (Ley 351 art. 13)",
+    FD: "Foreign-constituted NGOs must sign a framework cooperation agreement with the Ministerio de Relaciones Exteriores (Ley 351/2013) and report foreign funding",
+})
+fix("Paraguay", {CA: "Registration in the National Registry of Non-Profit Organizations (MEF) under Ley 7363/2024 and Decreto 4806/2025 with funding/beneficiary reporting; entities receiving state funds must publish accounts to the Contraloría."})
+fix("Uruguay", {
+    "Registration fee (USD)": "low (~US$10-30, MEC recognition + registry)",
+    CA: "Associations and foundations are recognised and supervised by the MEC; foundations file annual accounts with the MEC; no published annual return deadline for associations.",
+})
+fix("Argentina", {NT: ["Ley 27.290 was absorbed"]})
+fix("Chile", {
+    NT: ["Ley 20.839/2015"],
+    BN: "Chilean registered office and resident legal representative required; constitutive act deposited at the Secretaría Municipal (30-day review) then Registro Civil.",
+})
+fix("Latvia", {
+    NT: ["2016 Nonprofit Organizations Law"],
+    "Est. cost & time": "State fee EUR 11.38 (10% less online); total EUR 30-100; 1-4 weeks. E-filing with an e-signature avoids the notary step. A Latvian address is required.",
+    TX: "Registration automatic; PBO status is a separate VID application (Public Benefit Organisation Law) - PBOs exempt from income tax. Donors: individuals 25.5% tax refund; corporate 5% of prior profit or CIT reduction.",
+})
+fix("Saudi Arabia", {
+    NT: ["M/111"],
+    FD: "Foreign funding only via approved partnership with Saudi entity; Law of Associations and Foundations (RD M/8, 2016) requires approval and oversight",
+})
+fix("Qatar", {NT: ["2023 philanthropy law"]})
+fix("United Arab Emirates", {
+    NT: ["association route is blocked for all-foreign boards"],
+    BN: "Local service provider + UAE office required; federal NPOs subject to FDL 50/2023 nationality and approval rules, so foreign founders typically use a DIFC/ADGM foundation.",
+})
+fix("Oman", {CA: "Civil Society Institutions Law (RD 64/2026): ministry supervision includes inspection of annual audited accounts and verification of compliance with the constitution; executive regulations pending."})
+fix("Syria", {NT: ["post-2025 regime unstable"]})
+fix("Iraq", {
+    CA: "NGO Law 12/2010 Art. 15: each NGO sends the NGOs Department (Council of Ministers Secretariat) a financial report on fund sources and transactions plus an activity report, for the prior year by 31 March; the Department can sanction.",
+    TX: "NGOs registered with the NGOs Department: if classified as public utility, art. 17 of Law 12/2010 automatically exempts income tax, VAT, customs and sales tax; no separate application.",
+})
+fix("Egypt", {CA: "Law 149/2019: associations file an annual activity report and financial statements with the Ministry of Social Solidarity; larger ones must have accounts audited; risks suspension."})
+fix("Bahrain", {
+    NT: ["20 Bahraini founders"],
+    CA: "Decree-Law 21/1989: each association keeps an annual budget; where revenues or expenses exceed BHD 10,000 the board must present final accounts audited by a licensed firm; the Ministry supervises and can sanction.",
+})
+fix("Jordan", {
+    "Est. cost & time": "A$100-500 fees, 1-3 months (gated by finding 7+ Jordanian founders)",
+    FD: "Foreign funding routed via registered local society; prior Council of Ministers approval + detailed reporting to the Ministry of Social Development",
+    TX: "Registration with the Ministry of Social Development confers legal personality; the income-tax law exempts income of registered societies pursuing public-benefit purposes, and donations to them are deductible.",
+})
+fix("Italy", {
+    NT: ["EUR 150,000 endowment", "€150,000"],
+    BN: "EUR 30,000 patrimony for a fondazione (EUR 15,000 associazione) plus Italian registered office; foreign founders allowed with no residency rule.",
+})
+fix("Belgium", {NT: ["1 founder enough post-2024"]})
+fix("Czechia", {NT: ["OUK min. endowment"]})
+fix("Slovakia", {
+    "Est. cost & time": "Civic association: EUR 66 Ministry of Interior fee (EUR 33 online), ~10-15 days; foundation: notary EUR 500-1,500 + registry; 1-2 months; foreign founders OK, Slovak charter + local address needed",
+    BN: "Slovak-language charter, 3+ founders and local office; foreign founders need apostilled docs and certified translations",
+})
+fix("Hungary", {NT: ["Stop-Soros", "7.2M HUF"]})
+fix("Croatia", {NT: ["500-1,500 HRK"]})
+fix("Hong Kong", {
+    NT: ["then HKJC charitable status", "HKJC charitable status separate"],
+    "_note3": None,
+})
+fix("Macau", {
+    NT: ["arts. 1642-1667", "DSAJ name-certificate"],
+    BN: "Local office, Chinese/Portuguese documents, notarised deed, Boletim Oficial publication and DSI registration; limited English support",
+    CA: "Private foundations and associations (Civil Code / Law 2/99/M): no routine financial-statement filing with the DSF and no published general annual-return requirement; registry updates with the DSI.",
+})
+fix("Cambodia", {NT: ["LANGO 2003"]})
+fix("Myanmar", {CA: "Organisations registered with the Union Registration Board (Organization Registration Law 2022) must submit annual activity and audited financial reports; the Board may suspend or deregister for non-compliance."})
+fix("Rwanda", {NT: ["Law 01/2016 governs"]})
+fix("Tanzania", {
+    NT: ["2021 amendments tightened", "No. 22 of 2002"],
+    BN: "NGO Registrar registration requires a local office; international NGOs need 5+ founders incl. at least 2 Tanzanians",
+    FD: "Foreign-funded NGOs disclose funding to the NGO Registrar/Board; funding and reporting monitored; no outright ban",
+})
+fix("Kenya", {
+    NT: ["NGO Act 2003 was repealed"],
+    "Bank account (remote feasibility)": "In-person at branch under CBK AML/KYC rules; PBO accounts require at least one Kenyan-resident director as signatory plus the PBORA registration certificate, so a local representative is needed.",
+})
+fix("Mozambique", {NT: ["Lei 31/2002"]})
+fix("Angola", {CA: "Lei 6/12 (private associations) and Lei 2/26 (NGOs): the entity registers with the competent authority; NGOs face prior authorisation and oversight; no recurring annual filing regime is published; sanctions include dissolution/withdrawal of registration."})
+fix("Gabon", {
+    NT: ["loi n°001/2011 governs"],
+    BN: "Interior accreditation (Law 35/62 declaration + ONG agrément), local rep, office; French filings; post-2023 transition adds uncertainty",
+})
+fix("Ukraine", {NT: ["state duty ~2,000 UAH"]})
+fix("Greece", {
+    NT: ["2019 law modernized foundations", "Association min 7 founders"],
+    "Time to register": "2-4 months (notary + Magistrates' Court registration; slower for remote founders)",
+})
+fix("Cyprus", {
+    NT: ["s.250 Companies Law"],
+    "Est. cost & time": "Trust: ~500-2,000 EUR via solicitor, days; society/institution: ~100-500 EUR, up to ~3 months (Registrar review)",
+})
+fix("Iceland", {
+    NT: ["reykjafrjálsefni"],
+    "Charitable deduction regime": "Deductible if the organisation is on Skatturinn's public-benefit register (almannaheillaskrá); individuals deduct ISK 10,000-350,000/yr, companies up to 1.5% of income.",
+})
+fix("Libya", {NT: ["2013 circulars"]})
+fix("Tunisia", {NT: ["Decree-Law 59-154"]})
+fix("Ethiopia", {NT: ["1259/2021"]})
+fix("Somalia", {CA: "Federal registration (MoPIED) requires annual financial and narrative reports including audit; registration renewal periodically; draft federal NGO Bill (2019) would formalise duties."})
+fix("Somaliland", {CA: "Law 43/2010: the certificate is renewed periodically with the Ministry of National Planning and Development and annual NGO reports are assessed; NGOs that fail to renew are struck off the register."})
+fix("Seychelles", {NT: ["NPO Act 2013", "Cap. 741"]})
+fix("Pakistan", {BN: "Resident Pakistani director/secretary (Section 42 company) or trustee required; SECP licence then FBR tax-exempt status as separate steps."})
+fix("Bangladesh", {CA: "NGO Affairs Bureau: registration valid ten years under FDRA 2016 and must be renewed; foreign-funded projects need prior approval; annual reports on donation receipt and utilisation; non-compliance can lead to suspension or deregistration."})
+fix("Nepal", {NT: ["5 of 7 Nepali"]})
+fix("Portugal", {NT: ["no statutory minimum endowment"]})
+fix("Lebanon", {
+    CA: "Ottoman Law of Associations (1909) declaration regime; detailed annual filing duties are unpublished, but undeclared associations are prohibited and the government can dissolve one.",
+    TX: "Associations are valid by declaration to the Ministry of Interior (1909 Law); the income-tax code exempts income of public-benefit associations and institutions — no separate application; no donor-deduction regime.",
+})
+fix("Indonesia", {BN: "At least one of chair/secretary/treasurer must be an Indonesian citizen and foreign officers need a KITAS (PP 63/2008, PP 2/2013); in practice a local individual/PT is founder of record"})
+fix("Germany", {"Est. cost & time": "e.V.: EUR 75 court fee + notary signature certification (~USD 100-150 total); gGmbH: capital USD 27,500 + notary/registry USD 700-1,200; Stiftung: endowment typically USD 55k+; registration 4-8 weeks; charity status timing unpublished"})
+fix("Zimbabwe", {"Key local requirements": "Local PVOs register with the PVO Registrar (Ministry of Public Service, Labour and Social Welfare); international PVOs must name an authorised local agent; fees in USD."})
+fix("Papua New Guinea", {NT: ["regulations commence 1 July 2026"]})
+for _c in list(P):
+    for _k in ("_note2", "_note3"):
+        P[_c].pop(_k, None)
+
+# corrected rewrites of lead notes dropped above
+for _c, _t in {
+    "Cameroon": "Heavy discretionary approval for ONG status; most expats partner with an existing Cameroonian association instead.",
+    "Nigeria": "Most structured path in West Africa but multi-layered; CAC incorporation, SCUML and (for INGOs) National Planning Commission registration are the foreigner bottlenecks; English language; strong expat NGO sector in Lagos/Abuja",
+    "Ghana": "Most foreigner-friendly framework in the region: no local-national director requirement under the Companies Act 2019 (Act 992); NPO licensing by the NPO Secretariat (NPO Bill pending); English language",
+    "Burkina Faso": "High political risk: military rule since 2022, repeated suspensions of international NGOs (e.g. 2023–24 expulsions) and mass dissolutions under Loi 011-2025/ALT; effectively impractical for a foreign-funded charity",
+    "Latvia": "Associations and foundations share one law (2003); e-filing with an EU e-signature avoids the notary, otherwise notarised signatures force an in-person visit or a local representative",
+    "Italy": "Foreign (including Australian) founders can legally establish a fondazione — explicitly no nationality or residency requirement — with a minimum EUR 30,000 patrimony (EUR 15,000 for associations) for legal personality via RUNTS (Registro Unico Nazionale del Terzo Settore); the procedure is document-based and can be handled by a local notary/lawyer with a representative, avoiding in-person steps. Italian-language filings are mandatory.",
+    "Saudi Arabia": "The 2016 Law of Associations and Foundations (RD M/8) keeps a Saudi-citizenship floor; the only realistic foreign route is a program partnership with a Saudi charity or a representative office for an existing foreign NGO; English widely used in government dealings",
+    "Qatar": "State oversight of foreign-funded charitable work runs through RACA (Law 15/2014); standard foreign route is a partnership with Qatar Charity or an established Doha NGO, or a representative office approved by the relevant ministry",
+    "United Arab Emirates": "Most accessible Gulf option for a foreign founder: a DIFC/ADGM foundation can be 100% foreign-held and run charitable activities; Dubai's IACAD/DCC also registers existing international charities; federal NPOs follow FDL 50/2023 approval rules; strong English-language support",
+    "Hungary": "Foreign-funded NGOs face State Audit Office scrutiny (Act XLIX of 2021) and the 2023 Sovereignty Protection Act — politically sensitive; public-benefit (közhasznú) status is a separate, stricter regime; kft capital 3,000,000 HUF",
+    "Hong Kong": "The most accessible route in this list; full English-language process; popular expat pathway is the company limited by guarantee, then IRD s.88 tax-exempt charity status; low political risk.",
+    "Macau": "Formation under Law 2/99/M and the Civil Code (arts. 140-172) via DSI registration; a new associations law was in public consultation in 2026; documents in Chinese or Portuguese — English support is limited.",
+    "Tanzania": "Foreign-funding disclosure and local-content expectations apply; English/Swahili; NGO Registrar oversight is strict.",
+    "Greece": "Paper/notary-heavy process, Greek language required, no meaningful online registry; foundations now under Law 5259/2025; use a local lawyer.",
+    "Iceland": "Documents in Icelandic; tax-deductible status requires registration on Skatturinn's public-benefit register; small bureaucracy but limited English support",
+}.items():
+    P[_c]["_prose"] = _t

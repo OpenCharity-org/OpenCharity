@@ -19,7 +19,19 @@ changed = 0
 for country, patch in P.items():
     r = by_name[country]
     for col, val in patch.items():
-        if col == "_note":
+        if col == "_drop":
+            # remove superseded " | "-separated Notes segments containing any of these substrings
+            segs = r["Notes"].split(" | ")
+            kept = [s for s in segs if s.startswith("verify-rest") or not any(sub in s for sub in val)]
+            if len(kept) != len(segs):
+                r["Notes"] = " | ".join(kept)
+                changed += 1
+        elif col == "_prose":
+            # corrected rewrite of a dropped lead note, placed first
+            if val not in r["Notes"]:
+                r["Notes"] = f"{val} | {r['Notes']}" if r["Notes"] else val
+                changed += 1
+        elif col == "_note":
             if val not in r["Notes"]:
                 r["Notes"] = f"{r['Notes']} | {val}" if r["Notes"] else val
                 changed += 1

@@ -1,0 +1,21 @@
+[
+  {"country": "Republic of the Congo", "law_ok": true, "correction": "ok"},
+  {"country": "Congo (DRC)", "law_ok": true, "correction": "ok"},
+  {"country": "Gabon", "law_ok": true, "correction": "ok"},
+  {"country": "Equatorial Guinea", "law_ok": true, "correction": "ok"},
+  {"country": "Sao Tome & Principe", "law_ok": true, "correction": "ok"},
+  {"country": "Rwanda", "law_ok": true, "correction": "ok"},
+  {"country": "Burundi", "law_ok": true, "correction": "ok"},
+  {"country": "Uganda", "law_ok": true, "correction": "ok"},
+  {"country": "Tanzania", "law_ok": true, "correction": "ok"},
+  {"country": "Kenya", "law_ok": true, "correction": "ok"},
+  {"country": "Comoros", "law_ok": true, "correction": "ok"},
+  {"country": "Madagascar", "law_ok": true, "correction": "ok"},
+  {"country": "Zambia", "law_ok": true, "correction": "ok"},
+  {"country": "Malawi", "law_ok": true, "correction": "ok"},
+  {"country": "Mozambique", "law_ok": true, "correction": "ok"},
+  {"country": "Angola", "law_ok": false, "correction": "The civil-association law cited as 'Lei 9/10' is wrong — Lei n.º 9/10 of 30 June 2010 only abolished the Assembleia Nacional's Constitutional Commission; the governing private-associations law is Lei n.º 14/91 of 11 May 1991 (Lei das Associações Privadas)."},
+  {"country": "Botswana", "law_ok": true, "correction": "ok"},
+  {"country": "Namibia", "law_ok": true, "correction": "ok"},
+  {"country": "Zimbabwe", "law_ok": true, "correction": "ok"}
+]

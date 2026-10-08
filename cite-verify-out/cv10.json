@@ -1,0 +1,19 @@
+[
+{"country":"Maldives","law_ok":false,"correction":"No Maldivian 'Public Trusts Act' (2022) exists; charitable trusts are governed by the Income Tax Act (Law 25/2019) charitable-organization approval and general trust arrangements, while private companies fall under the Companies Act (Law 7/2023) — the named 'Companies Act 2023' matches only the year, not a 2023 statute number."},
+{"country":"Nigeria","law_ok":true,"correction":"ok"},
+{"country":"Ghana","law_ok":true,"correction":"ok"},
+{"country":"Côte d'Ivoire","law_ok":true,"correction":"ok"},
+{"country":"Benin","law_ok":true,"correction":"ok"},
+{"country":"Togo","law_ok":false,"correction":"Décret n° 92-130/PMRT of 27 May 1992 on NGO-government cooperation was abrogated by décret n° 2022-002/PR of 5 January 2022 (art. 30), so it is outdated; the 1901 association law itself is correct."},
+{"country":"Burkina Faso","law_ok":true,"correction":"ok"},
+{"country":"Mali","law_ok":true,"correction":"ok"},
+{"country":"Guinea","law_ok":false,"correction":"Loi L/2005/014/AN of 4 July 2005 governs cooperatives and non-financial mutuals (groupements économiques à caractère coopératif), not NGOs; ONGs in Guinea are regulated under Loi L/2005/013/AN (associations) plus government approval decrees."},
+{"country":"Guinea-Bissau","law_ok":true,"correction":"ok"},
+{"country":"Senegal","law_ok":true,"correction":"ok"},
+{"country":"Gambia","law_ok":true,"correction":"ok"},
+{"country":"Sierra Leone","law_ok":true,"correction":"ok"},
+{"country":"Liberia","law_ok":true,"correction":"ok"},
+{"country":"Niger","law_ok":true,"correction":"ok"},
+{"country":"North Korea","law_ok":true,"correction":"ok"},
+{"country":"Russia","law_ok":false,"correction":"The governing law is Federal Law No. 7-FZ of 12 January 1996 'On Non-Commercial Organizations' — '99-FZ' is a typo (99-FZ of 2011 is the licensing law)."}
+]

@@ -1,0 +1,21 @@
+[
+  {"country":"Algeria","law_ok":true,"correction":"ok"},
+  {"country":"Tunisia","law_ok":true,"correction":"ok"},
+  {"country":"Morocco","law_ok":true,"correction":"ok"},
+  {"country":"Mauritania","law_ok":true,"correction":"ok"},
+  {"country":"Western Sahara","law_ok":true,"correction":"ok"},
+  {"country":"Ethiopia","law_ok":true,"correction":"ok"},
+  {"country":"Eritrea","law_ok":true,"correction":"ok"},
+  {"country":"Djibouti","law_ok":false,"correction":"No \"Law No. 51/AN/71 of 1971\" exists (Djibouti's legislature began only after 1977 independence); associations are formed under the inherited French Law of 1901 on Associations."},
+  {"country":"Somalia","law_ok":true,"correction":"ok"},
+  {"country":"Somaliland","law_ok":true,"correction":"ok"},
+  {"country":"South Sudan","law_ok":true,"correction":"ok"},
+  {"country":"Mauritius","law_ok":false,"correction":"There is no \"NPO Act 2003\" (and the Companies Act is 2001, not 2015); NPOs/associations register under the Registration of Associations Act 1978 (Act 35 of 1978)."},
+  {"country":"India","law_ok":true,"correction":"ok"},
+  {"country":"Pakistan","law_ok":false,"correction":"Non-profit companies in Pakistan are incorporated under Section 42, not Section 21, of the Companies Act 2017."},
+  {"country":"Bangladesh","law_ok":false,"correction":"There is no \"NGO Regulatory Authority Act 2008\"; the governing NGO law is the Foreign Donations (Voluntary Activities) Regulation Ordinance 1978, with registration through the NGO Affairs Bureau."},
+  {"country":"Sri Lanka","law_ok":false,"correction":"There is no \"Public Trusts Act 1950\" in Sri Lanka (that is an Indian/Bombay statute); charitable trusts are governed by the Trusts Ordinance (Cap. 72)."},
+  {"country":"Nepal","law_ok":true,"correction":"ok"},
+  {"country":"Bhutan","law_ok":false,"correction":"The NGO law is the NGO Act 2001, not an \"NGO Trust Act 1997\"; registration is handled by the Department of Employment & Workplace Safety (not a \"Department of Social Services\")."},
+  {"country":"Afghanistan","law_ok":false,"correction":"The main NGO law is the Law on Non-Governmental Organizations (NGOs) of 2005, not an \"NGO Law 2015\" (the NGO Registration Committee is real)."}
+]

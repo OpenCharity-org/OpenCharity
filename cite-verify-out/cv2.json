@@ -1,0 +1,21 @@
+[
+  {"country":"Nicaragua","law_ok":false,"correction":"The 1983 associations law (Decreto-Ley 1346) is correct, but the fideicomiso is governed by Ley 741 (2010), not 'Ley 395/1998' (Ley 395 is an unrelated 2001 interpretive law), and there is no standalone 'Ley de Fundaciones' — foundations fall under Decreto-Ley 1346/1983 and Ley 147/1992."},
+  {"country":"Costa Rica","law_ok":false,"correction":"Ley 218 is the Ley de Asociaciones of 8 August 1939, not 1920."},
+  {"country":"Panama","law_ok":false,"correction":"The fideicomiso is governed by Ley 1 de 1984 (Por la cual se regula el Fideicomiso en Panamá), not 'Ley 10/1994'; Ley 25/1995 on fundaciones de interés privado is correct."},
+  {"country":"Colombia","law_ok":false,"correction":"Fundaciones are governed by the Civil Code (arts. 88-97) with Cámara de Comercio registration, not Ley 793 de 2002, which is a derogated extinción de dominio law."},
+  {"country":"Venezuela","law_ok":false,"correction":"The Ley Orgánica de Fundaciones dates from 1961 (with 1985 amendments), not 2001."},
+  {"country":"Ecuador","law_ok":true,"correction":"ok"},
+  {"country":"Peru","law_ok":false,"correction":"Asociaciones and fundaciones are both governed by the Civil Code (arts. 109-119, 200-211); Ley 27258/2000 only created a district in Huánuco and Ley 27907 is a tax treaty with Canada, so both law numbers are misattributed."},
+  {"country":"Bolivia","law_ok":false,"correction":"Ley 351/2013 (Otorgación de Personalidades Jurídicas) is real, but the co-operative law is Ley 356/2013 (Ley General de Cooperativas), not 'Ley 2440'."},
+  {"country":"Guyana","law_ok":false,"correction":"Co-operatives are governed by the Co-operative Societies Act Cap. 88:01 (1948, as amended), not a 'Co-operative Societies Act 1984'; Companies Act cap. 89:01 and Friendly Societies Act cap. 36:04 are correct."},
+  {"country":"Suriname","law_ok":true,"correction":"ok"},
+  {"country":"Brazil","law_ok":true,"correction":"ok"},
+  {"country":"Paraguay","law_ok":false,"correction":"Ley 1984 is the 1929 Ley de Sociedades Cooperativas, not '1999'; Ley 5833/2017 (OSC) and Ley 6446/2019 (registry) are correct."},
+  {"country":"Uruguay","law_ok":false,"correction":"Asociaciones civiles and fundaciones are governed by Ley 17.163 de 1999, not Ley 17.296, which is the 2001 national budget law."},
+  {"country":"Argentina","law_ok":false,"correction":"Ley 27.290/2016 is the fideicomisos (trusts) law, not a foundations law; foundations are governed by Ley 23.851 and CCyC arts. 193-224."},
+  {"country":"Chile","law_ok":true,"correction":"ok"},
+  {"country":"Mongolia","law_ok":false,"correction":"Mongolia has no '2013 NGO law'; the governing statute is the Law on Associations (1997), alongside the Civil Code (2002) and the 2015 Law on State Registration of Legal Entities."},
+  {"country":"Japan","law_ok":true,"correction":"ok"},
+  {"country":"South Korea","law_ok":true,"correction":"ok"},
+  {"country":"China","law_ok":true,"correction":"ok"}
+]

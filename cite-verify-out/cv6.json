@@ -1,0 +1,97 @@
+[
+  {
+    "country": "Eswatini",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Lesotho",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Belgium",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Luxembourg",
+    "law_ok": false,
+    "correction": "No Luxembourg '1912 law' on associations exists - ASBLs are governed by the loi du 21 avril 1928 sur les associations et les fondations sans but lucratif (now abrogated/replaced by the loi du 7 aout 2023), and foundations fall under the same 1928/2023 laws, not a '2003 law'."
+  },
+  {
+    "country": "France",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Germany",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Austria",
+    "law_ok": false,
+    "correction": "Since 2015 private foundations (Privatstiftungen) are governed by the federal Bundes-Privatstiftungsgesetz (BGBl. I 15/2015), not state-level Stiftungslandesgesetze, and the charitable tax status of a nonprofit GmbH rests on KStG para 7 (donations: EStG para 18), not 'EStG para 7'."
+  },
+  {
+    "country": "Switzerland",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Liechtenstein",
+    "law_ok": false,
+    "correction": "There is no 'PGR 2013 Stiftungsgesetz' and the article numbers are wrong: foundations are PGR (20 Jan 1926) Art. 552-570 (revised 2002), Vereine are PGR Art. 246 ff., and the Anstalt is PGR Art. 534-551 - not Art. 1031 ff. or Art. 55 ff."
+  },
+  {
+    "country": "Monaco",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "San Marino",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Andorra",
+    "law_ok": false,
+    "correction": "Andorra has no 'Law 14/2003' on foundations - fundacions are governed by the Llei 11/2008 de fundacions (since 2023 the consolidated Llei 17/2023), and associations by the Llei qualificada d'associacions of 29 December 2000."
+  },
+  {
+    "country": "Slovakia",
+    "law_ok": false,
+    "correction": "Associations (zdruzenia) are governed by Act 83/1990 Coll. o zdruzeni obcanov, not 'Act 85/1985', and VPO public-benefit status is granted under Act 213/1997 Coll. (neziskove organizacie poskytujuce vseobecne prospejne sluzby), not 'Act 65/2018' (which amends the surveyors/appraisers law); the nadacia cite (Act 34/2002) is correct."
+  },
+  {
+    "country": "Hungary",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Slovenia",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Croatia",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Bosnia & Herzegovina",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Serbia",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Montenegro",
+    "law_ok": true,
+    "correction": "ok - NGO Law Sl. list CG 39/2011 (amended 37/2017, 84/2024) confirmed, with 3+ founders at Art. 10; note foundation establishment is also Art. 10, while Arts 25-27 govern foundation organs."
+  }
+]

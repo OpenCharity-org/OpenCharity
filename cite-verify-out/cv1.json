@@ -1,0 +1,21 @@
+[
+  {"country":"Canada","law_ok":true,"correction":"ok"},
+  {"country":"Cuba","law_ok":true,"correction":"ok"},
+  {"country":"Jamaica","law_ok":true,"correction":"ok"},
+  {"country":"Bahamas","law_ok":false,"correction":"There is no Companies Act 2019 in the Bahamas; the governing statute is the Companies Act, Chapter 308 (Act No. 18 of 1992, as amended through 2025)."},
+  {"country":"Barbados","law_ok":false,"correction":"There is no Companies Act 2016 in Barbados; the governing statute is the Companies Act, Cap. 308 (originally 1982, as amended through 2020)."},
+  {"country":"Trinidad & Tobago","law_ok":true,"correction":"ok"},
+  {"country":"Antigua & Barbuda","law_ok":false,"correction":"There is no Companies Act 2016 in Antigua and Barbuda; the governing statute is the Companies Act, 1995 (Act No. 18 of 1995, as amended through 2024)."},
+  {"country":"Grenada","law_ok":false,"correction":"There is no Companies Act 2012 in Grenada; the governing statute is the Companies Act, Cap. 58A (Act No. 35 of 1994, as amended through 2022)."},
+  {"country":"St. Kitts & Nevis","law_ok":true,"correction":"ok"},
+  {"country":"St. Lucia","law_ok":false,"correction":"The Companies Act in St. Lucia is Chapter 13.01 (1996), not Cap. 8.01; Chapter 8.01 is the Companies and Intellectual Property (Registry) Act."},
+  {"country":"St. Vincent & Grenadines","law_ok":true,"correction":"ok"},
+  {"country":"Dominica","law_ok":false,"correction":"The governing statute in Dominica is the Companies Act, Act No. 10 of 1995 (CIPO), which the row cites only generically with no year; the IBC regime (not companies) was discontinued in 2022."},
+  {"country":"Dominican Republic","law_ok":true,"correction":"ok"},
+  {"country":"Haiti","law_ok":true,"correction":"ok"},
+  {"country":"Mexico","law_ok":true,"correction":"ok"},
+  {"country":"Guatemala","law_ok":false,"correction":"Asociaciones civiles in Guatemala are governed by the Código Civil, not the Código de Comercio, as the row states; REPEJU registration with the Ministerio de Gobernación is correct."},
+  {"country":"Belize","law_ok":true,"correction":"ok"},
+  {"country":"El Salvador","law_ok":true,"correction":"ok"},
+  {"country":"Honduras","law_ok":true,"correction":"ok"}
+]

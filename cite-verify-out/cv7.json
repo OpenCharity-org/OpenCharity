@@ -1,0 +1,97 @@
+[
+ {
+  "country": "North Macedonia",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Albania",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Moldova",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Ukraine",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Belarus",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Romania",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Bulgaria",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Greece",
+  "law_ok": false,
+  "correction": "Neither named law is right: Law 1566/1985 is an education law (associations are governed by the Civil Code arts. 59/78), and no foundations 'Law 40/2022' exists; foundations fall under Civil Code arts. 144-162 and the new public-benefit-foundation framework Law 5259/2025 (replacing Law 4182/2013)."
+ },
+ {
+  "country": "Cyprus",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Malta",
+  "law_ok": false,
+  "correction": "There is no 'Non-Not-For-Profit Organisations Act' of 2021; voluntary organisations (associations, foundations, trusts) are governed by the Voluntary Organisations Act (Chapter 492), enacted 2007 and amended since."
+ },
+ {
+  "country": "Ireland",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Iceland",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Norway",
+  "law_ok": false,
+  "correction": "Norway has no national associations act; the 2020-21 draft 'lov om foreninger' was never enacted, so member associations remain unregulated (selvstendig forening) and are simply registered at Brønnøysund."
+ },
+ {
+  "country": "Finland",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Sweden",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Denmark",
+  "law_ok": false,
+  "correction": "There is no '2023 Foundation Act'; Danish foundations are governed by the Foundations Act (lov om fonde og visse foreninger, LB 938/2012) - Law no. 753/2023 is an unrelated social-law omnibus."
+ },
+ {
+  "country": "Latvia",
+  "law_ok": false,
+  "correction": "There is no 2016 NVO law; NVOs are registered in the Enterprise Register as associations/foundations under the Law on Associations and Foundations (Biedrību un nodibinājumu likums, 2014, in force 2015), the old 1995 NVO registration law having been repealed."
+ },
+ {
+  "country": "Lithuania",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Spain",
+  "law_ok": true,
+  "correction": "ok"
+ }
+]

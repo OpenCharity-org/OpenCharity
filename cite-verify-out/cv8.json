@@ -1,0 +1,97 @@
+[
+  {
+    "country": "Portugal",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Italy",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Vatican City",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Israel",
+    "law_ok": false,
+    "correction": "Israel's governing statute is the Associations Law 5740-1980; '5725-1965' is the Succession Law, so the cited number is wrong."
+  },
+  {
+    "country": "Jordan",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Lebanon",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Syria",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Iraq",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Saudi Arabia",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Kuwait",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Qatar",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "United Arab Emirates",
+    "law_ok": false,
+    "correction": "UAE has no Federal Decree-Law 11/2018 private-foundations act nor FDL 2/2019 associations act (11/2018 relates to civil service/antiquities, 2/2019 is the ICT Health Law); charitable associations are governed by Federal Law 2/2008 on Public Benefit Associations, as amended by Federal Decree-Law 50/2023, with foundation regimes only at emirate/free-zone level (DIFC, ADGM)."
+  },
+  {
+    "country": "Oman",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Bahrain",
+    "law_ok": false,
+    "correction": "Law 19 of 2006 is Bahrain's Labour Market Regulation Act; NGO/civil organizations are governed by Law No. 21/1989 regulating social associations, clubs and private institutions."
+  },
+  {
+    "country": "Yemen",
+    "law_ok": false,
+    "correction": "Yemen's NGO framework is Law No. 1 of 2001 concerning associations, foundations and NGOs under the Ministry of Social Affairs and Labour, not a '73/1991' NGO law."
+  },
+  {
+    "country": "Palestine",
+    "law_ok": false,
+    "correction": "Palestinian societies register under Law No. 1 of 2000 on Charitable Societies, Social Bodies and Private Institutions; no '1996 Societies Law' exists (Law No. 1/1996 is the Condominium Law)."
+  },
+  {
+    "country": "Egypt",
+    "law_ok": false,
+    "correction": "Egypt's civil-society regime is Law 70/2017 on associations and foundations (with Law 149/2019 introducing the notification regime); neither 'Law 84/2014' nor 'Law 149/2014' exists."
+  },
+  {
+    "country": "Sudan",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Libya",
+    "law_ok": true,
+    "correction": "ok"
+  }
+]

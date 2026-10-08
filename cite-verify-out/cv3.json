@@ -1,0 +1,97 @@
+[
+  {
+    "country": "Taiwan",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Hong Kong",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Macau",
+    "law_ok": false,
+    "correction": "Law 16/2021 is Macau's immigration (entry/exit control and residence) law, not a foundations law — private foundations are governed by the Civil Code (arts. 1642-1667) and no new foundations/associations law was in force at verification (the associations regime law was still in public consultation in 2026, replacing Civil Code provisions and Law 2/99/M)."
+  },
+  {
+    "country": "Singapore",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Malaysia",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Indonesia",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Thailand",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Vietnam",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Philippines",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Cambodia",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Laos",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Myanmar",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Brunei",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Timor-Leste",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "New Zealand",
+    "law_ok": true,
+    "correction": "Law name is correct, but the Incorporated Societies Act 2022 came into force on 5 October 2023; 6 April 2026 is the date the old 1908 Act ceased to apply and reregistration became compulsory."
+  },
+  {
+    "country": "Fiji",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Papua New Guinea",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Samoa",
+    "law_ok": true,
+    "correction": "ok"
+  },
+  {
+    "country": "Tonga",
+    "law_ok": true,
+    "correction": "ok"
+  }
+]

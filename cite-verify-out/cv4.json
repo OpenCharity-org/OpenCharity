@@ -1,0 +1,97 @@
+[
+ {
+  "country": "Vanuatu",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Solomon Islands",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Kiribati",
+  "law_ok": false,
+  "correction": "Companies Ordinance 1979 was repealed and replaced by the Companies Act 2021 (in force from 2021), so it is no longer the current governing law for companies."
+ },
+ {
+  "country": "Nauru",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Tuvalu",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Marshall Islands",
+  "law_ok": false,
+  "correction": "The Business Corporations Act is 1990 (P.L. 1990-91, 52 MIRC Part I), not 1981; the Trust Act of 1994 is correct."
+ },
+ {
+  "country": "Micronesia",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Turkey",
+  "law_ok": false,
+  "correction": "The Foundations Law is No. 5736 (20 Feb 2008), not 5737; the current associations law is No. 5253 (2004), which replaced the 1984 Law No. 2860."
+ },
+ {
+  "country": "Georgia",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Armenia",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Azerbaijan",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Kazakhstan",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Uzbekistan",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Turkmenistan",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Tajikistan",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Iran",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Cameroon",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Central African Republic",
+  "law_ok": true,
+  "correction": "ok"
+ },
+ {
+  "country": "Chad",
+  "law_ok": true,
+  "correction": "ok"
+ }
+]

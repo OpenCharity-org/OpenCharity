@@ -1,0 +1,55 @@
+[
+ {
+  "id": "A1",
+  "country": "Rwanda",
+  "verdict": "corrected",
+  "finding": "The bill tabled 18 April 2024 was enacted as Law N°058/2024 of 20/06/2024 governing Non-Governmental Organisations, gazetted 17 July 2024; it repeals and consolidates Law N°04/2012 (national NGOs) and Law N°05/2012 (international NGOs) and moves INGO registration fully to RGB. RGB's NGO page and Art. 20 (per ICNL) confirm a non-refundable 300,000 RWF fee for both national and international NGOs, paid via e-imiryango (INGO one-year renewal 200,000 RWF).",
+  "source": "https://www.mondaq.com/corporate-and-company-law/1534440/ens-rwanda-in-brief ; https://www.rgb.rw/1/civil-society-faith-based-and-political-organisations/non-governmental-organisations ; https://www.icnl.org/resources/civic-freedom-monitor/rwanda",
+  "cell_edits": {
+   "Main charitable entity types": "National NGO or international NGO under Law N°058/2024 of 20/06/2024 governing Non-Governmental Organisations (gazetted 17/07/2024; repealed Laws N°04/2012 and N°05/2012), registered with the Rwanda Governance Board (RGB) - certificate of legal personality."
+  }
+ },
+ {
+  "id": "A2",
+  "country": "Nicaragua",
+  "verdict": "corrected",
+  "finding": "Ley 1115 (approved 31 Mar 2022, La Gaceta No. 66 of 6 Apr 2022) expressly repeals Ley 147/1992 in Art. 54. Art. 12 caps foreign members of an asociación at 25% and requires them to hold current residence in Nicaragua; foundations need 3+ founders and foreign founders must supply apostilled criminal records, and the regulation/practice requires a valid Nicaraguan residence card, while foreign OSFLs need a resident Apoderado Generalísimo. Since Ley 1212 (2024) and Decreto 13-2024, OSFLs can only run programmes via state 'alianzas'; registration/cancellation now sits with the Ministerio del Interior (DGRC-OSFL), which kept issuing mass cancellation agreements through 2025. A non-resident foreigner therefore cannot realistically found or control an OSFL: 'no' is warranted.",
+  "source": "https://www.leybook.com/doc/27738 ; https://www.gchnicaragua.com/constitucion-y-operacion-de-osfl-en-nicaragua-ley-1115/ ; https://www.leybook.com/doc/33754/pdf",
+  "cell_edits": {
+   "Foreign founder (no local presence)": "no",
+   "Main charitable entity types": "Asociación or fundación under Ley 1115 (Ley General de Regulación y Control de Organismos sin Fines de Lucro, 2022, which repealed Ley 147/1992; reformed by Ley 1127/2022 and Ley 1212/2024), registered with the Dirección General de Registro y Control de OSFL (now under the Ministerio del Interior, formerly Gobernación); fideicomiso (Ley 741/2010).",
+   "Key local requirements": "Spanish articles, local address, registration with the Dirección General de Registro y Control de OSFL (Ministerio del Interior, formerly Gobernación), which grants and cancels legal status directly; foreign members of an asociación capped at 25% and must hold current Nicaraguan residence (Ley 1115 art. 12); foreign founders must file apostilled criminal records and a residence card; foreign OSFLs need a resident Apoderado Generalísimo; programmes only via state 'alianzas' (Ley 1212/2024, Decreto 13-2024); Ley 1040/2020 (Agentes Extranjeros) applies to foreign-funded entities.",
+   "Main bottleneck (remote foreign founder)": "Effectively closed: foreign members/founders must hold Nicaraguan residence (Ley 1115 art. 12, 25% cap on foreign members of associations), programmes require a state alliance, and 5,700+ NGO legal personalities have been cancelled since 2018 (cancellations continuing in 2025)."
+  }
+ },
+ {
+  "id": "A3",
+  "country": "Honduras",
+  "verdict": "confirmed",
+  "finding": "Government acuerdos published in La Gaceta (incl. Acuerdo 168-2023) state that the Secretaría de Estado en los Despachos de Gobernación, Justicia y Descentralización (SGJD) is responsible for granting, registering, regulating, supervising and cancelling the legal personality of civil associations, under art. 29 (2.15) of the Ley General de la Administración Pública. Filings and registry updates go through DIRRSAC (Dirección de Regulación, Registro y Seguimiento de Asociaciones Civiles); the judiciary is not the granting body. Current cell text is accurate.",
+  "source": "https://portalunico.iaip.gob.hn/ver_archivo/MTY2MTM1NA== ; https://www.leybook.com/doc/29461/pdf",
+  "cell_edits": {}
+ },
+ {
+  "id": "A4",
+  "country": "Kuwait",
+  "verdict": "corrected",
+  "finding": "Both exist per Kuwait Times (KUNA): Decree-Law No. 87 of 2026 (announced by the Social Affairs Minister on 13 Sep 2026; 96 articles in 7 chapters) creates the National Center for Charitable and Humanitarian Work and a Kuwaiti Fund for Humanitarian Work, requires prior ministry approval for fundraising, and the Ministry of Social Affairs exercises the Center's functions until it is formed. Ministerial Decision No. 90 (reported 3 Aug 2025) replaced the 2015 framework, cutting the founder minimum from 50 to 10 and requiring board members aged 30+ with a university degree; the article does not restate founder nationality, and no KWD 10,000 deposit was confirmed. Official gazette text (Kuwait Al-Youm) not seen.",
+  "source": "https://kuwaittimes.com/article/49666/kuwait/social-affairs-min-new-charity-law-boosts-governance-transparency/ ; https://kuwaittimes.com/article/31446/kuwait/other-news/new-law-makes-it-harder-to-mismanage-charity-organizations-in-kuwait/",
+  "cell_edits": {
+   "Main charitable entity types": "Association (jam'iyya) under Law 24/1962 on Clubs and Public Welfare Societies (Ministry of Social Affairs; 2025 Ministerial Decision 90 cut charitable-association founders from 50 to 10, board members 30+ with a degree); charitable sector now also governed by Decree-Law No. 87 of 2026 (National Center for Charitable and Humanitarian Work; fundraising needs prior ministry approval); representative office of foreign NGO"
+  }
+ },
+ {
+  "id": "A5",
+  "country": "Bahrain",
+  "verdict": "corrected",
+  "finding": "The official LLOC English consolidated text of Legislative Decree 21/1989 (published May 2024) sets the minimum at ten founders where founders are natural persons (Art. 4; clubs need 20, Art. 62); founders' nationality must be stated in the articles (Art. 5(b)) but the statute contains no Bahraini-nationality quota for founders and no two-thirds Bahraini board rule. The 2018 amendment concerned Art. 43 (board candidates may not belong to political associations), not nationality. Art. 20 bars associations from receiving money from foreigners/foreign bodies without ministry clearance. Any nationality requirement would come from Ministry practice, which I could not confirm from an official source.",
+  "source": "https://www.lloc.gov.bh/FullEn/L2189.docx",
+  "cell_edits": {
+   "Main bottleneck (remote foreign founder)": "At least 10 natural-person founders (Decree-Law 21/1989 Art. 4) with the association's seat in Bahrain and Ministry approval; statute sets no nationality quota but founders' nationality must be declared and in practice a foreign non-resident cannot form an association alone.",
+   "Key local requirements": "Min. 10 adult natural-person founders (Decree-Law 21/1989 Art. 4; nationality declared in the articles, no statutory Bahraini quota found); main seat in Bahrain; Ministry of Social Development registration with publication in the Official Gazette; Arabic filings",
+   "Est. cost & time": "Registration is effectively out of reach for a remote foreigner: Decree-Law 21/1989 requires at least 10 founders, a seat in Bahrain and ministry approval. Official processing time unpublished."
+  }
+ }
+]

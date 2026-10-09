@@ -1,0 +1,60 @@
+[
+ {
+  "id": "C1",
+  "country": "Colombia",
+  "verdict": "corrected",
+  "finding": "Código Civil Libro I Título XXXVI 'De las personas jurídicas' runs from art. 633 (definition) to art. 652 (termination of foundations), so the 633-652 citation is correct. Decreto 2150/1995 art. 40 provides that ESAL 'se constituirán por escritura pública o documento privado reconocido' and acquire legal personality on registration at the Cámara de Comercio of their domicile; Decreto 427/1996 regulates that registration (same terms and fees as the mercantile registry). The 'Main bottleneck' and 'Est. cost & time' cells still implied a mandatory public deed, contradicting this; they are aligned below.",
+  "source": "https://encolombia.com/derecho/codigos/civil-colombiano/codcivillibro1-t36/ ; https://normas.cra.gov.co/Gestor/Docs/decreto_0427_1996.htm",
+  "cell_edits": {
+   "Main bottleneck (remote foreign founder)": "Colombian registered address + local lawyer for Cámara de Comercio registration; constitution by escritura pública or documento privado reconocido (signatures recognized before a notary, or via apostilled poder); Spanish filings",
+   "Est. cost & time": "US$300–600 incl. lawyer; 2–6 weeks at Cámara de Comercio. Notary signature recognition (or optional public deed) ~US$50–150; official timelines unpublished."
+  }
+ },
+ {
+  "id": "C2",
+  "country": "Peru",
+  "verdict": "confirmed",
+  "finding": "The Código Civil (Libro I, Sección Segunda) places Asociación in Título II (arts. 80-98), Fundación in Título III (arts. 99-110) and Comité in Título IV (arts. 111-123). Art. 103 makes the Consejo de Supervigilancia de Fundaciones the administrative body controlling foundations, and art. 104(12) charges it with keeping the administrative registry of foundations; Decreto Supremo 03-94-JUS (its Reglamento) gives it national competence and the national administrative registry. Foundations are constituted by public deed or will (art. 100) and inscribed in SUNARP's registry of legal persons, with the Consejo's registry alongside, so the current cell is accurate.",
+  "source": "https://www.icnl.org/research/library/peru_civil/ ; https://cdn.www.gob.pe/uploads/document/file/1532870/DECRETO%20SUPREMO%20N%C2%B0%2003-94-JUS%20REGLAMENTO%20DEL%20CONSEJO%20DE%20SUPERVIGILANCIA%20DE%20FUNDACIONES.pdf.pdf",
+  "cell_edits": {}
+ },
+ {
+  "id": "C3",
+  "country": "Panama",
+  "verdict": "corrected",
+  "finding": "Ley 21 of 10 May 2017 (Gaceta Oficial 28277 of 12 May 2017) sets the rules for regulating and supervising trustees (fiduciarios) and the trust business. It amends certain articles of Ley 1 of 5 January 1984 and repeals Decreto Ejecutivo 16 of 3 October 1984. It does not replace Ley 1/1984, which remains the substantive fideicomiso law as amended. The row's 'replacing Ley 1/1984' wording is therefore wrong.",
+  "source": "https://www.superbancos.gob.pa/documentos/leyes_y_regulaciones/circulares/2017/circular-068-2017.pdf ; https://morimor.com/es/?p=24509",
+  "cell_edits": {
+   "Main charitable entity types": "Fundación de interés privado (Ley 25/1995; min endowment US$10,000); asociación sin fines de lucro (personería jurídica from the Ministerio de Gobierno); fideicomiso (Ley 1 of 5 January 1984, as amended by Ley 21 of 10 May 2017, which regulates trustees and repealed Decreto Ejecutivo 16/1984)."
+  }
+ },
+ {
+  "id": "C4",
+  "country": "China",
+  "verdict": "corrected",
+  "finding": "Art. 8 of the 2004 Regulations on the Management of Foundations (State Council Decree 400) requires minimum original funds of RMB 8M for a national public-fundraising foundation, RMB 4M for a local public-fundraising foundation and RMB 2M for a non-public foundation, all paid-in cash. No adopted revision of the Regulations was found (the MCA's 2016 revision draft was never promulgated). The 29 Dec 2023 Charity Law amendment, in force since 5 Sep 2024, cut the wait before a charity can apply for public-fundraising qualification from 2 years to 1 year after registration, and the MCA revised its Public Fundraising Measures to match on 5 Sep 2024. The 'Main bottleneck' cell's 'RMB 2m/800k' and the 'Est. cost & time' cell's '2-year' wording are corrected below.",
+  "source": "https://www.gov.cn/zhengce/content/2008-03/28/content_6434.htm ; https://www.gov.cn/zhengce/202409/content_6972648.htm",
+  "cell_edits": {
+   "Main bottleneck (remote foreign founder)": "Foreign individuals cannot form a foundation directly; needs Chinese supervising unit, RMB 2M–8M paid-in original fund (2004 Foundation Regulations art. 8), Foreign NGO Law",
+   "Est. cost & time": "Several months to over a year for approvals; public-fundraising qualification only after 1 year of registration (cut from 2 years by the 2023 Charity Law amendment, in force 5 Sep 2024); official fees low, agent/legal costs significant."
+  }
+ },
+ {
+  "id": "C5",
+  "country": "South Korea",
+  "verdict": "corrected",
+  "finding": "Civil Act art. 32 requires competent-authority permission for a non-profit corporation. Art. 33 makes registration at the principal office the condition for incorporation. The 3-week deadline comes from art. 49(1) ('법인설립의 허가가 있는 때에는 3주간내에 주된 사무소소재지에서 설립등기'), counted from the day the permit arrives (art. 53). No statute sets a minimum endowment, and the Supreme Court has held there is no concrete statutory standard. Ministry and agency guidelines differ by field and are often far above KRW 100M for foundations: commonly KRW 300M–1B+, e.g. KRW 1B for Seoul education-office scholarship foundations in 2026 (secondary source).",
+  "source": "https://korea.legal/wiki/%eb%af%bc%eb%b2%95-%ec%a0%9c49%ec%a1%b0/ ; https://www.botoai.co/posts/재단법인-설립-자본금",
+  "cell_edits": {
+   "Key local requirements": "Foreigners may establish non-profit corporations (Civil Act art. 32 permission of the competent ministry; art. 33), then register at the court registry within 3 weeks of the permit arriving (arts. 49, 53); needs a local office address and Korean-language constitution; no statutory minimum endowment, but foundations face ministry/agency guideline endowments that vary by field (often several hundred million KRW or more)."
+  }
+ },
+ {
+  "id": "C6",
+  "country": "Japan",
+  "verdict": "confirmed",
+  "finding": "Under Registration and Licence Tax Act Appended Table 1 item 24, incorporation registration of a general incorporated association (一般社団法人) carries a flat registration licence tax of JPY 60,000. The notary fee for certifying its articles stays a flat JPY 50,000 (Notary Fee Ordinance art. 35). The January 2022 reduction to JPY 30,000/40,000 applied only to stock companies with capital under JPY 3M, not to general incorporated associations. Total statutory cost is about JPY 110,000-112,000 plus certified-copy fees, matching the current cells.",
+  "source": "https://biz.moneyforward.com/establish/basic/86338/ ; https://shiodome.co.jp/js/blog/13252 ; https://www.zeiken.co.jp/yougo/",
+  "cell_edits": {}
+ }
+]

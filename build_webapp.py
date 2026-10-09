@@ -18,18 +18,18 @@ OUT = BASE / "webapp" / "index.html"
 DATA_JSON = BASE / "webapp" / "data.json"
 
 REGION = {
-    "AU & Oceania": ["Australia","New Zealand","Fiji","Papua New Guinea","Samoa","Tonga","Vanuatu","Solomon Islands","Kiribati","Nauru","Tuvalu","Marshall Islands","Micronesia"],
+    "AU & Oceania": ["Australia","New Zealand","Fiji","Papua New Guinea","Samoa","Tonga","Vanuatu","Solomon Islands","Kiribati","Nauru","Tuvalu","Marshall Islands","Micronesia","Palau"],
     "East Asia": ["Mongolia","Japan","South Korea","China","Taiwan","Hong Kong","Macau"],
     "Southeast Asia": ["Singapore","Malaysia","Indonesia","Thailand","Vietnam","Philippines","Cambodia","Laos","Myanmar","Brunei","Timor-Leste"],
     "South Asia": ["India","Pakistan","Bangladesh","Sri Lanka","Nepal","Bhutan","Afghanistan","Maldives"],
     "Middle East": ["Israel","Jordan","Lebanon","Syria","Iraq","Saudi Arabia","Kuwait","Qatar","United Arab Emirates","Oman","Bahrain","Yemen","Palestine"],
     "Central Asia & Caucasus": ["Turkey","Georgia","Armenia","Azerbaijan","Kazakhstan","Uzbekistan","Turkmenistan","Tajikistan","Kyrgyzstan","Iran"],
     "North Africa": ["Egypt","Sudan","Libya","Algeria","Tunisia","Morocco","Mauritania","Western Sahara","Ethiopia","Eritrea","Djibouti","Somalia","Somaliland","South Sudan","Seychelles","Mauritius"],
-    "West Africa": ["Nigeria","Ghana","Côte d'Ivoire","Benin","Togo","Burkina Faso","Mali","Guinea","Guinea-Bissau","Senegal","Gambia","Sierra Leone","Liberia","Niger"],
+    "West Africa": ["Nigeria","Ghana","Côte d'Ivoire","Benin","Togo","Burkina Faso","Mali","Guinea","Guinea-Bissau","Senegal","Gambia","Sierra Leone","Liberia","Niger","Cabo Verde"],
     "Central & S. Africa": ["Cameroon","Central African Republic","Chad","Republic of the Congo","Congo (DRC)","Gabon","Equatorial Guinea","Sao Tome & Principe","Rwanda","Burundi","Uganda","Tanzania","Kenya","Comoros","Madagascar","Zambia","Malawi","Mozambique","Angola","Botswana","Namibia","Zimbabwe","Eswatini","Lesotho","South Africa"],
-    "Northern Europe": ["Ireland","United Kingdom","Iceland","Norway","Finland","Sweden","Denmark","Estonia","Latvia","Lithuania"],
+    "Northern Europe": ["Ireland","United Kingdom","Iceland","Greenland","Norway","Finland","Sweden","Denmark","Estonia","Latvia","Lithuania"],
     "Western Europe": ["Netherlands","Belgium","Luxembourg","France","Germany","Austria","Switzerland","Liechtenstein","Monaco","San Marino","Andorra"],
-    "Central & E. Europe": ["Poland","Czechia","Slovakia","Hungary","Slovenia","Croatia","Bosnia & Herzegovina","Serbia","Montenegro","North Macedonia","Albania","Moldova","Ukraine","Belarus","Romania","Bulgaria","Greece","Cyprus","Malta"],
+    "Central & E. Europe": ["Poland","Czechia","Slovakia","Hungary","Slovenia","Croatia","Bosnia & Herzegovina","Serbia","Montenegro","North Macedonia","Albania","Kosovo","Moldova","Ukraine","Belarus","Romania","Bulgaria","Greece","Cyprus","Malta"],
     "Southern Europe": ["Spain","Portugal","Italy","Vatican City"],
     "Caribbean & N. America": ["Canada","United States","Cuba","Jamaica","Bahamas","Barbados","Trinidad & Tobago","Antigua & Barbuda","Grenada","St. Kitts & Nevis","St. Lucia","St. Vincent & Grenadines","Dominica","Dominican Republic","Haiti"],
     "Central America": ["Mexico","Guatemala","Belize","El Salvador","Honduras","Nicaragua","Costa Rica","Panama"],
@@ -77,7 +77,7 @@ def main():
     DATA_JSON.parent.mkdir(parents=True, exist_ok=True)
     DATA_JSON.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
     html = TEMPLATE.replace("__DATA__", json.dumps(data, ensure_ascii=False))
-    html = html.replace("__SRC__", src_name)
+    html = html.replace("__SRC__", src_name).replace("__N__", str(len(data)))
     html = html.replace("__HAS_ENRICH__", "1" if has_enrich else "0")
     OUT.write_text(html, encoding="utf-8")
     n = len(data)
@@ -87,7 +87,7 @@ def main():
 TEMPLATE = r"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Charity Registration Atlas — 198 Countries</title>
+<title>Charity Registration Atlas — __N__ Countries</title>
 <style>
 :root{
   --canvas:#010102;--surface-1:#0f1011;--surface-2:#141516;--surface-3:#18191a;--surface-4:#191a1b;
@@ -185,7 +185,7 @@ main{min-width:0}
 </style></head>
 <body>
 <div class="topbar"><div class="tb-in">
-  <div class="brand"><span class="dot"></span><span class="mark">Charity Registration Atlas</span><span class="sub">198 jurisdictions · AU-resident foreign founder</span></div>
+  <div class="brand"><span class="dot"></span><span class="mark">Charity Registration Atlas</span><span class="sub">__N__ jurisdictions · AU-resident foreign founder</span></div>
   <div class="search"><input id="q" placeholder="Search countries, entity types, requirements, notes…"></div>
   <div class="stats" id="stats"></div>
 </div></div>

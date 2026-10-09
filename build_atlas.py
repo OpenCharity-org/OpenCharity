@@ -1,0 +1,883 @@
+#!/usr/bin/env python3
+"""Build webapp/atlas.html: a world-map view of the charity registration dataset.
+
+Reads  charities_by_country_v2.csv  and  webapp/geo/countries-50m.json
+       (world-atlas@2.0.2 TopoJSON, Natural Earth 1:50m).
+Writes webapp/atlas.html — one self-contained page (and docs/index.html, the same
+page as a full HTML document for GitHub Pages) (data + map geometry
+embedded; d3 and topojson-client load from cdnjs).
+
+Map: choropleth coloured by difficulty / remote founding / fee / time / bank
+access / foreign-funding rules / Google for Nonprofits / confidence;
+micro-states drawn as dots. Click a country for its full dossier.
+Ranking: overall, custom weights, easiest, cheapest, fastest, most remote-friendly,
+easiest banking, fewest funding restrictions (and reverses). Multi-select facets
+(OR within a facet, AND across facets) plus fee/time ceilings filter both the map
+and the list. Up to 6 countries can be benchmarked side by side against the
+median of the filtered set. View state persists in localStorage.
+
+Fee and time are parsed from free text: the fee is the lowest US$ figure in
+the fee cell ("none"/"free" = 0), the time is the first duration in the time
+cell, in days. Unparseable cells rank last.
+"""
+import json
+import re
+from pathlib import Path
+
+from build_webapp import build_data
+
+BASE = Path(__file__).parent
+GEO = BASE / "webapp" / "geo" / "countries-50m.json"
+OUT = BASE / "webapp" / "atlas.html"
+DOCS = BASE / "docs" / "index.html"  # GitHub Pages copy (full HTML document)
+
+# dataset name -> Natural Earth feature name
+ALIAS = {
+    "United States": "United States of America",
+    "Trinidad & Tobago": "Trinidad and Tobago",
+    "Antigua & Barbuda": "Antigua and Barb.",
+    "St. Kitts & Nevis": "St. Kitts and Nevis",
+    "St. Lucia": "Saint Lucia",
+    "St. Vincent & Grenadines": "St. Vin. and Gren.",
+    "Dominican Republic": "Dominican Rep.",
+    "Macau": "Macao",
+    "Solomon Islands": "Solomon Is.",
+    "Marshall Islands": "Marshall Is.",
+    "Central African Republic": "Central African Rep.",
+    "Republic of the Congo": "Congo",
+    "Congo (DRC)": "Dem. Rep. Congo",
+    "Equatorial Guinea": "Eq. Guinea",
+    "Sao Tome & Principe": "São Tomé and Principe",
+    "Eswatini": "eSwatini",
+    "Bosnia & Herzegovina": "Bosnia and Herz.",
+    "North Macedonia": "Macedonia",
+    "Vatican City": "Vatican",
+    "Western Sahara": "W. Sahara",
+    "South Sudan": "S. Sudan",
+}
+# jurisdictions with no 1:50m polygon: [lon, lat]
+POINTS = {"Tuvalu": [179.2, -8.5]}
+
+# same weights as build_xlsx.score (lower = better)
+DIFF_SCORE = {"easy": 0, "medium": 1, "hard": 2, "very hard": 3}
+PRES_SCORE = {"yes": 0, "partial": 1, "no": 3}
+
+
+def _num(s):
+    return float(s.replace(",", ""))
+
+
+def parse_fee(text):
+    """Lowest and highest US$ figure in the fee cell, or (None, None)."""
+    t = text.lower().strip()
+    if not t or re.search(r"not permitted|not available|^n/?a\b|unpublished|not published", t):
+        return None, None
+    if re.match(r"^(none|free|nil|no fee|us\$\s?0\b|\$\s?0\b|0\b)", t):
+        return 0.0, 0.0
+    m = re.search(r"(?:us)?\$\s?(\d[\d,]*(?:\.\d+)?)\s*(k)?(?:\s*[-–]\s*(?:us)?\$?\s?(\d[\d,]*(?:\.\d+)?)\s*(k)?)?", t)
+    if not m:
+        m2 = re.match(r"^~?\s*(\d[\d,]*(?:\.\d+)?)\s*(?:usd)?\s*$", t)
+        if m2:
+            v = _num(m2.group(1))
+            return v, v
+        return None, None
+    lo = _num(m.group(1)) * (1000 if m.group(2) else 1)
+    if not m.group(3):
+        return lo, lo
+    hi_raw = _num(m.group(3))
+    hi = hi_raw * (1000 if (m.group(4) or m.group(2)) else 1)
+    if m.group(4) and not m.group(2) and _num(m.group(1)) < hi_raw:
+        lo *= 1000  # "$1-2k" means 1,000-2,000
+    return lo, max(lo, hi)
+
+
+UNIT = r"(business days?|working days?|days?|weeks?|months?|years?)"
+DAYS = {"day": 1, "week": 7, "month": 30, "year": 365}
+
+
+def _days(n, unit):
+    return round(_num(n) * DAYS[re.sub(r"s$", "", unit.split()[-1])])
+
+
+def parse_time(text):
+    """First duration in the time cell as (low_days, high_days), or (None, None)."""
+    t = text.lower()
+    if re.match(r"^\s*n/?a\b|not available|not feasible\W*$", t):
+        return None, None
+    m = re.search(rf"(\d+(?:\.\d+)?)\s*{UNIT}\s*[-–]\s*(\d+(?:\.\d+)?)\s*{UNIT}", t)
+    if m:
+        return _days(m.group(1), m.group(2)), _days(m.group(3), m.group(4))
+    m = re.search(rf"(\d+(?:\.\d+)?)\s*(?:[-–]|to)\s*(\d+(?:\.\d+)?)\+?\s*{UNIT}", t)
+    if m:
+        return _days(m.group(1), m.group(3)), _days(m.group(2), m.group(3))
+    m = re.search(rf"(\d+(?:\.\d+)?)\s*{UNIT}", t)
+    if m:
+        v = _days(m.group(1), m.group(2))
+        return v, v
+    return None, None
+
+
+def bank_cat(text):
+    t = text.lower()
+    if t.startswith(("effectively blocked", "blocked")) or "effectively blocked" in t[:90]:
+        return "blocked"
+    if re.search(r"fully online|possible online|online (?:opening|onboarding|application)s? (?:is |are )?(?:possible|available)"
+                 r"|\bemis?\b|\bwise\b|roshan|remote(?:ly)? open\w* (?:is )?possible|start online|partially online|via ekyc"
+                 r"|onboards non-residents fully online", t) \
+            and not re.search(r"no fully online|online (?:onboarding )?(?:is )?unavailable|no online", t):
+        return "remote"
+    return "visit"
+
+
+def fee_bin(lo):
+    if lo is None:
+        return "unknown"
+    return "free" if lo == 0 else "low" if lo <= 100 else "mid" if lo <= 500 else "high"
+
+
+def time_bin(lo):
+    if lo is None:
+        return "unknown"
+    return "fast" if lo <= 14 else "month" if lo <= 31 else "quarter" if lo <= 92 else "slow"
+
+
+def enrich(d):
+    d["fee_lo"], d["fee_hi"] = parse_fee(d["fee_usd"])
+    d["days_lo"], d["days_hi"] = parse_time(d["time_to_reg"])
+    d["fee_bin"] = fee_bin(d["fee_lo"])
+    d["time_bin"] = time_bin(d["days_lo"])
+    d["bank_cat"] = bank_cat(d["bank_access"])
+    d["funding_cat"] = "open" if d["donor_restr"].lower().startswith(("none", "no restriction", "no fcra")) else "restricted"
+    d["score"] = (DIFF_SCORE.get(d["difficulty"].lower(), 2) * 2 + PRES_SCORE.get(d["no_presence"].lower(), 2) * 2
+                  + (0 if d["gfn"] == "Yes" else 3) + {"high": 0, "med": 1}.get(d["confidence"].lower(), 2))
+    return d
+
+
+def main():
+    data, src_name = build_data()
+    data = [enrich(d) for d in data]
+    geo = json.loads(GEO.read_text(encoding="utf-8"))
+    geo["objects"]["countries"]["geometries"] = [
+        g for g in geo["objects"]["countries"]["geometries"]
+        if g["properties"]["name"] != "Antarctica"
+    ]
+    names = {g["properties"]["name"] for g in geo["objects"]["countries"]["geometries"]}
+    missing = [d["country"] for d in data
+               if ALIAS.get(d["country"], d["country"]) not in names and d["country"] not in POINTS]
+    if missing:
+        raise SystemExit(f"no map shape for: {missing}")
+
+    def js(obj):
+        return json.dumps(obj, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+
+    html = (TEMPLATE.replace("__DATA__", js(data))
+            .replace("__GEO__", js(geo))
+            .replace("__ALIAS__", js(ALIAS))
+            .replace("__POINTS__", js(POINTS))
+            .replace("__COUNT__", str(len(data)))
+            .replace("__SRC__", src_name))
+    OUT.write_text(html, encoding="utf-8")
+    # GitHub Pages: same page wrapped in a full document (the artifact host adds this skeleton itself)
+    head, body = html.split('<div class="wrap"', 1)
+    DOCS.parent.mkdir(exist_ok=True)
+    DOCS.write_text('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+                    '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
+                    '<meta name="description" content="How hard it is for an Australia-based founder to register a charity in every country: '
+                    'rules, fees, timelines and sources.">\n'
+                    + head + '</head>\n<body style="margin:0">\n<div class="wrap"' + body + '\n</body>\n</html>\n', encoding="utf-8")
+    (DOCS.parent / ".nojekyll").write_text("", encoding="utf-8")
+    nf = sum(d["fee_lo"] is None for d in data)
+    nt = sum(d["days_lo"] is None for d in data)
+    print(f"wrote {OUT} ({len(data)} jurisdictions, {len(html) // 1024} KB; "
+          f"fee unparsed {nf}, time unparsed {nt})")
+
+
+TEMPLATE = r"""<title>Charity Registration Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Public+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: map-first atlas. Facet panel drives map + ranked list; dossier beside the map; comparison table benchmarks picked countries against the filtered median. */
+:root {
+  --bg: #eef2f3; --surface: #ffffff; --ink: #15212a; --muted: #566773; --line: #d3dce0;
+  --sea: #dde7ec; --land-none: #c9d1d5; --accent: #1d5d86; --accent-soft: #dbe9f2; --focus: #1d5d86;
+  --d1: #2c8a68; --d2: #c79a1e; --d3: #cf6529; --d4: #8a2840; --d0: #9aa7ae;
+  --best: #e0f1e9; --chip-ink: #ffffff;
+  --f-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Public Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e151a; --surface: #152027; --ink: #e3ebef; --muted: #8fa1ac; --line: #26343d;
+  --sea: #111c23; --land-none: #2c3942; --accent: #74b4de; --accent-soft: #1b3445; --focus: #74b4de;
+  --d1: #3aa982; --d2: #d8ad35; --d3: #e27a3e; --d4: #c0485f; --d0: #5d6d77;
+  --best: #17362b; --chip-ink: #0e151a;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0e151a; --surface: #152027; --ink: #e3ebef; --muted: #8fa1ac; --line: #26343d;
+  --sea: #111c23; --land-none: #2c3942; --accent: #74b4de; --accent-soft: #1b3445; --focus: #74b4de;
+  --d1: #3aa982; --d2: #d8ad35; --d3: #e27a3e; --d4: #c0485f; --d0: #5d6d77;
+  --best: #17362b; --chip-ink: #0e151a;
+  color-scheme: dark; }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--f-body); }
+.wrap { max-width: 1440px; margin: 0 auto; padding-inline: 20px; padding-block: 20px 48px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.wrap.has-tray { padding-bottom: 110px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.lbl { font: 500 11px var(--f-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+
+header.top h1 { font-size: clamp(26px, 4vw, 40px); font-weight: 700; line-height: 1.05; }
+header.top p { margin: 6px 0 0; color: var(--muted); max-width: 72ch; }
+
+/* controls */
+.controls { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; display: grid; gap: 14px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px 12px; align-items: end; }
+.field { display: grid; gap: 4px; min-width: 0; }
+.field > span { font: 500 11px var(--f-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
+.field input, .field select { font: 14px var(--f-body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; min-width: 0; max-width: 100%; }
+.field.rank select { font-weight: 600; border-color: var(--ink); background: var(--surface); }
+.field.grow { flex: 1 1 220px; } .field.grow input { width: 100%; }
+.field.numf input { width: 120px; }
+.btn { font: 600 13px var(--f-body); color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 7px 12px; cursor: pointer; }
+.btn.primary { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn.link { background: none; border: 0; color: var(--accent); text-decoration: underline; text-underline-offset: 3px; padding-inline: 4px; }
+.count { font: 12px var(--f-mono); color: var(--muted); margin-left: auto; align-self: center; }
+
+.facets { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px 18px; }
+.facet { border: 0; margin: 0; padding: 0; min-width: 0; display: grid; gap: 6px; align-content: start; }
+.facet legend { padding: 0; margin-bottom: 6px; }
+.facet.wide { grid-column: 1 / -1; }
+.opts { display: flex; flex-wrap: wrap; gap: 5px; }
+.opt { display: inline-flex; align-items: center; gap: 6px; font: 600 12.5px var(--f-body); color: var(--ink); background: var(--bg); border: 1px solid var(--line);
+  border-radius: 999px; padding: 4px 10px 4px 7px; cursor: pointer; }
+.opt .sw { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.opt .n { font: 400 11.5px var(--f-mono); color: var(--muted); }
+.opt[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
+.opt.zero:not([aria-pressed="true"]) { opacity: .45; }
+details.more summary { cursor: pointer; font: 600 13px var(--f-body); color: var(--accent); list-style: none; }
+details.more summary::-webkit-details-marker { display: none; }
+details.more summary::before { content: "+ "; } details.more[open] summary::before { content: "− "; }
+details.more[open] summary { margin-bottom: 12px; }
+
+.active { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; min-height: 28px; }
+.active .tag { display: inline-flex; align-items: center; gap: 6px; font: 600 12px var(--f-body); background: var(--accent-soft); color: var(--ink); border: 1px solid var(--accent); border-radius: 6px; padding: 3px 4px 3px 8px; }
+.active .tag button { all: unset; cursor: pointer; width: 18px; height: 18px; display: grid; place-items: center; border-radius: 4px; font-size: 14px; line-height: 1; }
+.active .tag button:hover { background: var(--surface); }
+.active .tag button:focus-visible { outline: 2px solid var(--focus); }
+.active .none { color: var(--muted); font-size: 13px; }
+
+.weights { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px 18px; padding: 12px 14px; background: var(--bg); border: 1px solid var(--line); border-radius: 10px; }
+.weights .whead { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; justify-content: space-between; }
+.weights .whead p { margin: 0; font-size: 13px; color: var(--muted); }
+.wrow { display: grid; gap: 2px; }
+.wrow label { display: flex; justify-content: space-between; font: 600 13px var(--f-body); }
+.wrow output { font: 500 12px var(--f-mono); color: var(--muted); }
+.wrow input { width: 100%; accent-color: var(--accent); }
+
+.modes { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.modes button { font: 600 12.5px var(--f-body); color: var(--muted); background: none; border: 0; padding: 6px 10px; border-radius: 7px; cursor: pointer; }
+.modes button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+
+.main { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 16px; align-items: start; }
+@media (max-width: 980px) { .main { grid-template-columns: minmax(0, 1fr); } }
+.mapcol { display: grid; gap: 10px; min-width: 0; }
+
+.mapcard { background: var(--sea); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; position: relative; min-width: 0; }
+#map { display: block; width: 100%; height: auto; touch-action: none; cursor: grab; }
+#map:active { cursor: grabbing; }
+.country { stroke: var(--sea); stroke-width: 0.5; vector-effect: non-scaling-stroke; cursor: pointer; transition: opacity .15s; }
+.country.nodata { fill: var(--land-none); cursor: default; }
+.country.dim, .dot.dim { opacity: 0.16; }
+.country:hover:not(.nodata) { stroke: var(--ink); stroke-width: 1; }
+.country.sel, .dot.sel { stroke: var(--ink); stroke-width: 2; }
+.country.cmp, .dot.cmp { stroke: var(--accent); stroke-width: 2; }
+.dot { stroke: var(--sea); stroke-width: 1; vector-effect: non-scaling-stroke; cursor: pointer; }
+.c-d1 { fill: var(--d1); background: var(--d1); } .c-d2 { fill: var(--d2); background: var(--d2); }
+.c-d3 { fill: var(--d3); background: var(--d3); } .c-d4 { fill: var(--d4); background: var(--d4); }
+.c-d0 { fill: var(--d0); background: var(--d0); }
+
+.legend { position: absolute; left: 12px; bottom: 12px; right: 56px; display: flex; flex-wrap: wrap; gap: 6px; pointer-events: none; }
+.legend button { pointer-events: auto; display: inline-flex; align-items: center; gap: 7px; font: 600 12px var(--f-body); color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px 4px 6px; cursor: pointer; }
+.legend button[aria-pressed="false"] { opacity: .45; text-decoration: line-through; }
+.legend .sw { width: 12px; height: 12px; border-radius: 50%; }
+.legend .n { font-family: var(--f-mono); color: var(--muted); font-weight: 400; }
+.zoom { position: absolute; right: 12px; top: 12px; display: grid; gap: 4px; }
+.zoom button { width: 32px; height: 32px; font: 600 16px var(--f-body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; cursor: pointer; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: 12.5px; padding: 6px 9px; border-radius: 7px; max-width: 260px; line-height: 1.35; }
+.tip b { font-weight: 600; }
+@media (max-width: 640px) { .legend { position: static; padding: 0 12px 12px; } }
+
+aside.dossier { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px; display: grid; gap: 16px; min-width: 0; }
+@media (min-width: 981px) { aside.dossier { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); max-height: calc(100vh - 32px); overflow-y: auto; } }
+.dossier .eyebrow { font: 500 11px var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.dossier .dh { display: flex; gap: 12px; align-items: start; justify-content: space-between; }
+.dossier h2 { font-size: 28px; line-height: 1.1; margin-top: 2px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 600 12px var(--f-body); padding: 3px 9px; border-radius: 999px; color: var(--chip-ink); }
+.chip.plain { color: var(--ink); background: transparent; border: 1px solid var(--line); }
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; margin: 0; }
+.facts div { background: var(--surface); padding: 10px 12px; min-width: 0; }
+.facts dt { font: 500 11px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.facts dd { margin: 2px 0 0; font-size: 13.5px; overflow-wrap: anywhere; }
+.facts .big { font: 600 18px var(--f-display); }
+.sec h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+.sec p { margin: 0; font-size: 14px; overflow-wrap: anywhere; }
+.sec + .sec { border-top: 1px solid var(--line); padding-top: 14px; }
+.sec ul { margin: 4px 0 0; padding-left: 18px; font-size: 13px; color: var(--muted); display: grid; gap: 5px; overflow-wrap: anywhere; }
+.sec .src a { word-break: break-all; }
+.empty { color: var(--muted); }
+
+section.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; gap: 12px; min-width: 0; }
+.phead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 16px; justify-content: space-between; }
+.phead h2 { font-size: 22px; }
+.phead p { margin: 0; color: var(--muted); font-size: 13px; }
+.tablewrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+#tbl { min-width: 980px; }
+th { text-align: left; font: 500 11px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th button { all: unset; cursor: pointer; }
+th button:focus-visible { outline: 2px solid var(--focus); }
+th[aria-sort="ascending"] button::after { content: " ↑"; } th[aria-sort="descending"] button::after { content: " ↓"; }
+td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+#tbl tbody tr { cursor: pointer; }
+#tbl tbody tr:hover, #tbl tbody tr.sel { background: var(--bg); }
+td.ck { width: 34px; } td.ck input { width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer; }
+td.rank { font: 500 13px var(--f-mono); color: var(--muted); width: 3.5em; }
+td.name { font-weight: 600; white-space: nowrap; }
+td .sub { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+td .pill { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+td .pill i { width: 9px; height: 9px; border-radius: 50%; display: inline-block; flex: none; }
+td.num { font-family: var(--f-mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.fit b { font: 600 13px var(--f-mono); }
+.bar { display: block; height: 4px; border-radius: 2px; background: var(--line); margin-top: 4px; width: 64px; }
+.bar i { display: block; height: 100%; border-radius: 2px; background: var(--accent); }
+
+/* comparison */
+#cmpTbl { min-width: 640px; table-layout: fixed; }
+#cmpTbl th.attr, #cmpTbl td.attr { width: 170px; }
+#cmpTbl thead th { vertical-align: bottom; white-space: normal; }
+#cmpTbl thead th .cn { display: flex; align-items: start; justify-content: space-between; gap: 6px; font: 700 15px var(--f-display); letter-spacing: 0; text-transform: none; color: var(--ink); }
+#cmpTbl thead th .cn button { all: unset; cursor: pointer; color: var(--muted); font-size: 16px; line-height: 1; padding: 0 2px; }
+#cmpTbl thead th .cn a { color: inherit; text-decoration: none; cursor: pointer; }
+#cmpTbl thead th.bench .cn { color: var(--muted); font-style: italic; }
+#cmpTbl td { font-size: 13px; overflow-wrap: anywhere; }
+#cmpTbl td.best { background: var(--best); }
+#cmpTbl td.bench { color: var(--muted); background: var(--bg); }
+#cmpTbl td.attr { font: 500 11px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+#cmpTbl tr.text td:not(.attr) { color: var(--ink); font-size: 12.5px; }
+.cmpnote { font-size: 12.5px; color: var(--muted); margin: 0; }
+.cmpnote .key { display: inline-block; width: 10px; height: 10px; background: var(--best); border: 1px solid var(--line); vertical-align: -1px; margin-right: 4px; }
+
+/* compare tray */
+.tray { position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; background: var(--surface); border-top: 1px solid var(--line);
+  padding: 10px 20px calc(10px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 -6px 20px rgba(0, 0, 0, .12); }
+.tray .in { max-width: 1440px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; }
+.tray .names { display: flex; flex-wrap: wrap; gap: 6px; flex: 1 1 300px; min-width: 0; }
+.tray .tag { display: inline-flex; align-items: center; gap: 4px; font: 600 12.5px var(--f-body); border: 1px solid var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 3px 4px 3px 8px; }
+.tray .tag button { all: unset; cursor: pointer; padding: 0 4px; font-size: 14px; }
+.tray .tag button:focus-visible { outline: 2px solid var(--focus); }
+
+footer { color: var(--muted); font-size: 12.5px; max-width: 95ch; display: grid; gap: 6px; }
+footer p { margin: 0; }
+@media (max-width: 520px) { .wrap { padding-inline: 16px; } .facts { grid-template-columns: 1fr; } .dossier h2 { font-size: 24px; } .count { margin-left: 0; } .tray { padding-inline: 16px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+
+<div class="wrap" id="wrap">
+  <header class="top">
+    <h1>Charity Registration Atlas</h1>
+    <p>How hard it is to register a charity in __COUNT__ jurisdictions, judged for a founder living in Australia with no ties to the country. Stack as many filters as you like, rank by what matters to you, and tick countries to benchmark them side by side.</p>
+  </header>
+
+  <form class="controls" id="controls" aria-label="Rank and filter">
+    <div class="row">
+      <label class="field rank"><span>Rank by</span><select id="rankby"></select></label>
+      <label class="field grow"><span>Search</span><input id="q" type="search" placeholder="Country, law, entity type…"></label>
+      <label class="field numf"><span>Max fee (US$)</span><input id="maxfee" type="number" min="0" step="10" inputmode="numeric" placeholder="No limit"></label>
+      <label class="field numf"><span>Max time (days)</span><input id="maxdays" type="number" min="0" step="1" inputmode="numeric" placeholder="No limit"></label>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="weights" id="weights" hidden></div>
+    <div class="facets" id="facets"></div>
+    <details class="more" id="moreFacets"><summary>Region, Google for Nonprofits and confidence</summary><div class="facets" id="facets2"></div></details>
+    <div class="row">
+      <div class="active" id="active" aria-live="polite"></div>
+      <button type="button" class="btn link" id="reset">Clear all filters</button>
+    </div>
+  </form>
+
+  <div class="main">
+    <div class="mapcol">
+      <div class="modes" role="group" aria-label="Colour the map by" id="modes"></div>
+      <div class="mapcard">
+        <svg id="map" viewBox="0 0 960 500" role="img" aria-label="World map of charity registration conditions"></svg>
+        <div class="zoom"><button type="button" id="zin" aria-label="Zoom in">+</button><button type="button" id="zout" aria-label="Zoom out">−</button><button type="button" id="zreset" aria-label="Reset view">⟲</button></div>
+        <div class="legend" id="legend"></div>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+    </div>
+    <aside class="dossier" id="dossier" aria-live="polite"></aside>
+  </div>
+
+  <section class="panel" id="compare" hidden>
+    <div class="phead">
+      <h2>Benchmark</h2>
+      <p class="cmpnote"><span class="key"></span>best among the countries you picked. The grey column is the median of the <span id="benchN"></span> countries your filters match.</p>
+    </div>
+    <div class="tablewrap"><table id="cmpTbl"></table></div>
+  </section>
+
+  <section class="panel">
+    <div class="phead">
+      <h2 id="rankTitle">Ranking</h2>
+      <p id="rankNote"></p>
+    </div>
+    <div class="tablewrap"><table id="tbl">
+      <thead><tr>
+        <th><span class="lbl" title="Tick to benchmark">Cmp</span></th>
+        <th data-k="rank"><button type="button">#</button></th>
+        <th data-k="country"><button type="button">Country</button></th>
+        <th data-k="fit" id="fitTh" hidden><button type="button">Fit</button></th>
+        <th data-k="difficulty"><button type="button">Difficulty</button></th>
+        <th data-k="no_presence"><button type="button">Remote founding</button></th>
+        <th data-k="fee_lo"><button type="button">Fee (US$)</button></th>
+        <th data-k="days_lo"><button type="button">Time</button></th>
+        <th data-k="bank_cat"><button type="button">Bank account</button></th>
+        <th data-k="funding_cat"><button type="button">Foreign funding</button></th>
+        <th data-k="gfn"><button type="button">Google NP</button></th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <footer>
+    <p>Source: <span class="mono">__SRC__</span>, researched against registries, gazettes and NGO-law texts, re-verified October 2026. Difficulty and remote founding are judged for an Australian-resident founder with no local presence.</p>
+    <p>Filters: options inside one group widen the match (any of them); separate groups narrow it (all must hold). The number on each option is how many countries you would get by adding it. Fee uses the lowest US$ figure in each country's fee note; a few notes include agent or notary costs, so read the full note. Time uses the shortest stated duration. Countries with no published fee or time fail a fee or time limit and rank last. "Best overall" weighs difficulty, remote founding, Google for Nonprofits eligibility and research confidence; "Your weights" uses the sliders. Bank-account groups are read from the research notes: "remote option" means at least one bank or licensed e-money provider onboards non-residents without a visit.</p>
+    <p>This is research, not legal advice. Confirm with the registry before filing. Grey areas on the map are dependent territories (Puerto Rico, New Caledonia, the Faroe Islands and others); charities there register under the parent country's law, so use that country's entry.</p>
+  </footer>
+</div>
+
+<div class="tray" id="tray" hidden>
+  <div class="in">
+    <span class="lbl">Benchmark</span>
+    <div class="names" id="trayNames"></div>
+    <button type="button" class="btn primary" id="trayGo">Compare</button>
+    <button type="button" class="btn link" id="trayClear">Clear</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js"></script>
+<script>
+const DATA = __DATA__;
+const GEO = __GEO__;
+const ALIAS = __ALIAS__;
+const POINTS = __POINTS__;
+
+/* ---------- vocabularies ---------- */
+const MODES = {
+  difficulty: { label: "Difficulty", key: "difficulty", cats: [["easy", "Easy", "d1"], ["medium", "Medium", "d2"], ["hard", "Hard", "d3"], ["very hard", "Very hard", "d4"]] },
+  remote: { label: "Remote founding", key: "no_presence", cats: [["yes", "Fully remote", "d1"], ["partial", "Partly remote", "d2"], ["no", "Must be present", "d4"]] },
+  fee: { label: "Fee", key: "fee_bin", cats: [["free", "Free", "d1"], ["low", "$1–100", "d2"], ["mid", "$101–500", "d3"], ["high", "Over $500", "d4"], ["unknown", "Not published", "d0"]] },
+  time: { label: "Time", key: "time_bin", cats: [["fast", "Up to 2 weeks", "d1"], ["month", "Up to a month", "d2"], ["quarter", "1–3 months", "d3"], ["slow", "Over 3 months", "d4"], ["unknown", "Not stated", "d0"]] },
+  bank: { label: "Bank account", key: "bank_cat", cats: [["remote", "Remote option", "d1"], ["visit", "Branch visit", "d2"], ["blocked", "Effectively blocked", "d4"]] },
+  funding: { label: "Foreign funding", key: "funding_cat", cats: [["open", "No notable limits", "d1"], ["restricted", "Restricted", "d3"]] },
+  gfn: { label: "Google for Nonprofits", key: "gfn", cats: [["Yes", "Eligible", "d1"], ["No", "Not eligible", "d4"]] },
+  confidence: { label: "Confidence", key: "confidence", cats: [["high", "High", "d1"], ["med", "Medium", "d2"]] },
+};
+const REGIONS = [...new Set(DATA.map(d => d.region))].sort();
+// facet key -> {label, cats}; the first six show up front, the rest under "more"
+const FACETS = {};
+for (const m of Object.values(MODES)) FACETS[m.key] = { label: m.label, cats: m.cats };
+FACETS.region = { label: "Region", cats: REGIONS.map(r => [r, r, null]) };
+const FRONT = ["difficulty", "no_presence", "fee_bin", "time_bin", "bank_cat", "funding_cat"];
+const MORE = ["region", "gfn", "confidence"];
+
+const LABEL = {}; for (const [k, f] of Object.entries(FACETS)) for (const [v, l, c] of f.cats) LABEL[k + ":" + v] = [l, c];
+const ORDER = { difficulty: ["easy", "medium", "hard", "very hard"], no_presence: ["yes", "partial", "no"], gfn: ["Yes", "No"],
+  confidence: ["high", "med"], bank_cat: ["remote", "visit", "blocked"], funding_cat: ["open", "restricted"] };
+const DIFF_N = { easy: 0, medium: 1, hard: 2, "very hard": 3 };
+
+const BIG = 1e12;
+const ord = (k, d) => { const i = ORDER[k].indexOf(d[k]); return i < 0 ? 99 : i; };
+const num = (v, desc) => v == null ? BIG : (desc ? -v : v);   // missing values always rank last
+
+/* ---------- custom weights ---------- */
+const WEIGHTS = [
+  ["difficulty", "Ease of registering"], ["remote", "Remote founding"], ["fee", "Low fee"], ["time", "Speed"],
+  ["bank", "Bank account access"], ["funding", "Open foreign funding"], ["gfn", "Google for Nonprofits"], ["conf", "Research confidence"],
+];
+const W_DEFAULT = { difficulty: 3, remote: 3, fee: 2, time: 2, bank: 2, funding: 1, gfn: 1, conf: 1 };
+const pct = key => { const v = DATA.filter(d => d[key] != null).map(d => d[key]).sort((a, b) => a - b);
+  return x => { if (x == null) return 1; let i = 0; while (i < v.length && v[i] < x) i++; return v.length > 1 ? i / (v.length - 1) : 0; }; };
+const feePct = pct("fee_lo"), dayPct = pct("days_lo");
+// penalty 0 (best) .. 1 (worst) per factor
+const PEN = {
+  difficulty: d => (DIFF_N[d.difficulty] ?? 3) / 3,
+  remote: d => ({ yes: 0, partial: .5, no: 1 })[d.no_presence] ?? 1,
+  fee: d => feePct(d.fee_lo),
+  time: d => dayPct(d.days_lo),
+  bank: d => ({ remote: 0, visit: .5, blocked: 1 })[d.bank_cat] ?? 1,
+  funding: d => d.funding_cat === "open" ? 0 : 1,
+  gfn: d => d.gfn === "Yes" ? 0 : 1,
+  conf: d => d.confidence === "high" ? 0 : .5,
+};
+let W = { ...W_DEFAULT };
+const fit = d => { let s = 0, t = 0; for (const k in W) { s += W[k] * PEN[k](d); t += W[k]; } return t ? Math.round(100 * (1 - s / t)) : 0; };
+
+const RANKS = {
+  overall:   { label: "Best overall", mode: "difficulty", note: "Easiest, most remote-friendly first; ties broken by fee, then time.", key: d => [d.score, num(d.fee_lo), num(d.days_lo)] },
+  custom:    { label: "Your weights", mode: null, note: "Fit score 0–100 from the sliders: each factor scores a country from best to worst, weighted by how much it matters to you.", key: d => [-fit(d), d.score] },
+  easiest:   { label: "Easiest first", mode: "difficulty", note: "Easy → very hard; ties broken by remote founding, then fee.", key: d => [ord("difficulty", d), ord("no_presence", d), num(d.fee_lo)] },
+  hardest:   { label: "Hardest first", mode: "difficulty", note: "Very hard → easy.", key: d => [-ord("difficulty", d), -ord("no_presence", d), d.country] },
+  cheapest:  { label: "Cheapest to register", mode: "fee", note: "Lowest stated fee first (usually the government fee; some notes include agent or notary costs); unpublished fees last.", key: d => [num(d.fee_lo), num(d.fee_hi), ord("difficulty", d)] },
+  priciest:  { label: "Most expensive fee", mode: "fee", note: "Highest stated fee first; unpublished fees last.", key: d => [num(d.fee_hi, true), num(d.fee_lo, true)] },
+  fastest:   { label: "Fastest to register", mode: "time", note: "Shortest stated registration time first.", key: d => [num(d.days_lo), num(d.days_hi), ord("difficulty", d)] },
+  slowest:   { label: "Slowest to register", mode: "time", note: "Longest stated registration time first.", key: d => [num(d.days_hi, true), num(d.days_lo, true)] },
+  remote:    { label: "Most remote-friendly", mode: "remote", note: "Fully remote founding first, then easiest banking, then difficulty.", key: d => [ord("no_presence", d), ord("bank_cat", d), ord("difficulty", d)] },
+  bank:      { label: "Easiest bank account", mode: "bank", note: "Remote opening possible → branch visit → effectively blocked.", key: d => [ord("bank_cat", d), ord("difficulty", d)] },
+  funding:   { label: "Fewest funding limits", mode: "funding", note: "No notable foreign-funding restrictions first.", key: d => [ord("funding_cat", d), ord("difficulty", d)] },
+  cheapfast: { label: "Cheap and fast", mode: "fee", note: "Sum of fee rank and time rank; both must be stated.", key: null },
+  alpha:     { label: "A–Z", mode: null, note: "Alphabetical.", key: d => [d.country] },
+};
+(() => {
+  const pos = f => { const s = DATA.filter(d => f(d) != null).sort((a, b) => f(a) - f(b)); const m = new Map(); s.forEach((d, i) => m.set(d.country, i)); return m; };
+  const pf = pos(d => d.fee_lo), pt = pos(d => d.days_lo);
+  RANKS.cheapfast.key = d => (pf.has(d.country) && pt.has(d.country)) ? [pf.get(d.country) + pt.get(d.country), ord("difficulty", d)] : [BIG];
+})();
+
+/* ---------- helpers ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const slug = s => s.toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const byName = new Map(DATA.map(d => [d.country, d]));
+const geoName = new Map(DATA.map(d => [ALIAS[d.country] || d.country, d.country]));
+const bySlug = new Map(DATA.map(d => [slug(d.country), d.country]));
+const fmtUSD = v => v >= 1000 ? "$" + (v / 1000).toFixed(v % 1000 ? 1 : 0) + "k" : "$" + Math.round(v);
+const feeTxt = d => d.fee_lo == null ? "—" : d.fee_hi === 0 ? "Free" : d.fee_lo === d.fee_hi ? fmtUSD(d.fee_lo) : `${fmtUSD(d.fee_lo)}–${fmtUSD(d.fee_hi)}`;
+const dur = n => n < 14 ? `${n} d` : n < 60 ? `${Math.round(n / 7)} wk` : n < 365 ? `${Math.round(n / 30)} mo` : `${(n / 365).toFixed(n % 365 ? 1 : 0)} yr`;
+const timeTxt = d => { if (d.days_lo == null) return "—"; if (d.days_lo === d.days_hi) return dur(d.days_lo);
+  const a = dur(d.days_lo).split(" "), b = dur(d.days_hi).split(" "); return a[1] === b[1] ? `${a[0]}–${b[0]} ${b[1]}` : `${a.join(" ")} – ${b.join(" ")}`; };
+const store = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+const load = k => { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } };
+const pill = (key, v) => { const l = LABEL[key + ":" + v]; return l ? `<span class="pill"><i class="c-${l[1]}"></i>${esc(l[0])}</span>` : esc(v); };
+
+/* ---------- state ---------- */
+let mode = "difficulty", selected = null, rankBy = "overall", colSort = null;
+const F = Object.fromEntries(Object.keys(FACETS).map(k => [k, new Set()]));
+let CMP = [];
+{
+  const s = load("atlas-state") || {};
+  if (MODES[s.mode]) mode = s.mode;
+  if (RANKS[s.rankBy]) rankBy = s.rankBy;
+  if (s.F) for (const k in s.F) if (F[k]) s.F[k].forEach(v => F[k].add(v));
+  if (Array.isArray(s.cmp)) CMP = s.cmp.filter(c => byName.has(c)).slice(0, 6);
+  if (s.W) for (const k in W) if (typeof s.W[k] === "number") W[k] = s.W[k];
+  if (s.q) $("q").value = s.q;
+  if (s.maxfee != null) $("maxfee").value = s.maxfee;
+  if (s.maxdays != null) $("maxdays").value = s.maxdays;
+}
+const save = () => store("atlas-state", { mode, rankBy, cmp: CMP, W, q: $("q").value, maxfee: $("maxfee").value, maxdays: $("maxdays").value,
+  F: Object.fromEntries(Object.entries(F).map(([k, s]) => [k, [...s]])) });
+
+$("rankby").innerHTML = Object.entries(RANKS).map(([k, r]) => `<option value="${k}">${esc(r.label)}</option>`).join("");
+$("rankby").value = rankBy;
+
+/* ---------- filtering ---------- */
+const HAY = new Map(DATA.map(d => [d.country, [d.country, d.region, d.entity, d.requirements, d.bottleneck, d.notes, d.cost_time, d.tax_exempt, d.deduction, d.donor_restr, d.compliance, d.bank_access].join(" ").toLowerCase()]));
+function passes(d, skip) {
+  for (const k in F) if (k !== skip && F[k].size && !F[k].has(d[k])) return false;
+  const t = $("q").value.trim().toLowerCase();
+  if (t && !HAY.get(d.country).includes(t)) return false;
+  const mf = $("maxfee").value, md = $("maxdays").value;
+  if (mf !== "" && (d.fee_lo == null || d.fee_lo > +mf)) return false;
+  if (md !== "" && (d.days_lo == null || d.days_lo > +md)) return false;
+  return true;
+}
+const matches = d => passes(d);
+
+function renderFacets() {
+  const draw = keys => keys.map(k => {
+    const f = FACETS[k];
+    const opts = f.cats.map(([v, l, c]) => {
+      const n = DATA.filter(d => d[k] === v && passes(d, k)).length, on = F[k].has(v);
+      return `<button type="button" class="opt${n ? "" : " zero"}" data-f="${k}" data-v="${esc(v)}" aria-pressed="${on}">${c ? `<i class="sw c-${c}"></i>` : ""}${esc(l)} <span class="n">${n}</span></button>`;
+    }).join("");
+    return `<fieldset class="facet${k === "region" ? " wide" : ""}"><legend class="lbl">${esc(f.label)}${F[k].size ? ` · ${F[k].size} selected` : ""}</legend><div class="opts">${opts}</div></fieldset>`;
+  }).join("");
+  $("facets").innerHTML = draw(FRONT);
+  $("facets2").innerHTML = draw(MORE);
+  if (MORE.some(k => F[k].size)) $("moreFacets").open = true;
+}
+
+function renderActive() {
+  const tags = [];
+  for (const k in F) for (const v of F[k]) tags.push([`${FACETS[k].label}: ${LABEL[k + ":" + v]?.[0] ?? v}`, `f|${k}|${v}`]);
+  if ($("q").value.trim()) tags.push([`Search: “${$("q").value.trim()}”`, "q"]);
+  if ($("maxfee").value !== "") tags.push([`Fee ≤ $${$("maxfee").value}`, "maxfee"]);
+  if ($("maxdays").value !== "") tags.push([`Time ≤ ${$("maxdays").value} days`, "maxdays"]);
+  $("active").innerHTML = tags.length
+    ? `<span class="lbl">Active</span>` + tags.map(([t, id]) => `<span class="tag">${esc(t)}<button type="button" data-rm="${esc(id)}" aria-label="Remove ${esc(t)}">×</button></span>`).join("")
+    : `<span class="none">No filters. Pick options above; they stack.</span>`;
+  $("reset").hidden = !tags.length;
+}
+
+function renderWeights() {
+  const show = rankBy === "custom";
+  $("weights").hidden = !show;
+  if (!show) return;
+  $("weights").innerHTML = `<div class="whead"><span class="lbl">How much does each factor matter? (0 = ignore, 5 = critical)</span>
+      <button type="button" class="btn link" id="wreset">Reset weights</button></div>` +
+    WEIGHTS.map(([k, l]) => `<div class="wrow"><label for="w-${k}">${esc(l)} <output id="wo-${k}">${W[k]}</output></label>
+      <input type="range" id="w-${k}" data-w="${k}" min="0" max="5" step="1" value="${W[k]}"></div>`).join("");
+}
+
+/* ---------- ranking ---------- */
+const cmp = (a, b) => { for (let i = 0; i < Math.max(a.length, b.length); i++) { const x = a[i], y = b[i]; if (x === y) continue; if (x === undefined) return -1; if (y === undefined) return 1;
+  if (typeof x === "string" || typeof y === "string") return String(x).localeCompare(String(y)); return x - y; } return 0; };
+const ranked = () => { const kf = RANKS[rankBy].key; return [...DATA].sort((a, b) => cmp(kf(a), kf(b)) || a.country.localeCompare(b.country)); };
+function colVal(d, k) {
+  if (k === "rank") return rankPos.get(d.country);
+  if (k === "fit") return -fit(d);
+  if (ORDER[k]) return ord(k, d);
+  if (k === "fee_lo" || k === "days_lo") return d[k] == null ? BIG : d[k];
+  return d[k].toLowerCase();
+}
+
+/* ---------- map ---------- */
+const svg = d3.select("#map"), MW = 960, MH = 500;
+const g = svg.append("g");
+const feats = topojson.feature(GEO, GEO.objects.countries).features;
+const proj = d3.geoNaturalEarth1().fitExtent([[6, 6], [MW - 6, MH - 6]], { type: "FeatureCollection", features: feats });
+const path = d3.geoPath(proj);
+const countries = g.append("g").selectAll("path").data(feats).join("path").attr("d", path);
+const featOf = new Map(); feats.forEach(f => { const c = geoName.get(f.properties.name); if (c) featOf.set(c, f); });
+const dotData = DATA.filter(d => POINTS[d.country] || path.area(featOf.get(d.country)) < 6).map(d => {
+  const xy = POINTS[d.country] ? proj(POINTS[d.country]) : path.centroid(featOf.get(d.country));
+  return { d, x: xy[0], y: xy[1] };
+});
+const dots = g.append("g").selectAll("circle").data(dotData).join("circle").attr("class", "dot").attr("cx", p => p.x).attr("cy", p => p.y).attr("r", 3.2);
+
+let rankPos = new Map();
+const tip = $("tip"), card = document.querySelector(".mapcard");
+function showTip(ev, name) {
+  const d = byName.get(name), r = card.getBoundingClientRect();
+  tip.innerHTML = d ? `<b>${esc(d.country)}</b> · #${rankPos.get(d.country)} ${esc(RANKS[rankBy].label.toLowerCase())}${rankBy === "custom" ? ` (fit ${fit(d)})` : ""}<br>${esc(LABEL["difficulty:" + d.difficulty]?.[0] || d.difficulty)} · ${esc(LABEL["no_presence:" + d.no_presence]?.[0] || "")}<br>Fee ${esc(feeTxt(d))} · Time ${esc(timeTxt(d))}`
+                    : `<b>${esc(name)}</b><br>Not in dataset`;
+  tip.hidden = false;
+  const x = Math.max(8, Math.min(ev.clientX - r.left + 14, r.width - tip.offsetWidth - 8)), y = Math.max(ev.clientY - r.top - tip.offsetHeight - 10, 8);
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+countries.on("mousemove", (ev, f) => showTip(ev, geoName.get(f.properties.name) || f.properties.name))
+  .on("mouseleave", () => tip.hidden = true)
+  .on("click", (ev, f) => { const c = geoName.get(f.properties.name); if (c) select(c, true); });
+dots.on("mousemove", (ev, p) => showTip(ev, p.d.country)).on("mouseleave", () => tip.hidden = true)
+  .on("click", (ev, p) => select(p.d.country, true));
+const zoom = d3.zoom().scaleExtent([1, 14]).translateExtent([[0, 0], [MW, MH]]).on("zoom", ev => {
+  g.attr("transform", ev.transform); dots.attr("r", 3.2 / Math.sqrt(ev.transform.k));
+});
+svg.call(zoom).on("dblclick.zoom", null);
+$("zin").onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1.6);
+$("zout").onclick = () => svg.transition().duration(250).call(zoom.scaleBy, 1 / 1.6);
+$("zreset").onclick = () => svg.transition().duration(300).call(zoom.transform, d3.zoomIdentity);
+
+/* ---------- render ---------- */
+const cls = d => { const m = MODES[mode]; const c = m.cats.find(x => x[0] === d[m.key]); return c ? "c-" + c[2] : ""; };
+function paint() {
+  const list = ranked();
+  rankPos = new Map(list.map((d, i) => [d.country, i + 1]));
+  const cmpSet = new Set(CMP);
+  countries.attr("class", f => { const c = geoName.get(f.properties.name); if (!c) return "country nodata";
+    const d = byName.get(c); return `country ${cls(d)}${matches(d) ? "" : " dim"}${cmpSet.has(c) ? " cmp" : ""}${c === selected ? " sel" : ""}`; });
+  dots.attr("class", p => `dot ${cls(p.d)}${matches(p.d) ? "" : " dim"}${cmpSet.has(p.d.country) ? " cmp" : ""}${p.d.country === selected ? " sel" : ""}`);
+  dots.filter(p => p.d.country === selected || cmpSet.has(p.d.country)).raise();
+  const m = MODES[mode], fs = F[m.key];
+  $("legend").innerHTML = m.cats.map(([v, l, c]) =>
+    `<button type="button" data-v="${esc(v)}" aria-pressed="${!fs.size || fs.has(v)}" title="Show or hide ${esc(l)}"><span class="sw c-${c}"></span>${esc(l)} <span class="n">${DATA.filter(d => d[m.key] === v).length}</span></button>`).join("");
+  $("modes").innerHTML = Object.entries(MODES).map(([k, mm]) =>
+    `<button type="button" data-m="${k}" aria-pressed="${k === mode}">${esc(mm.label)}</button>`).join("");
+  renderFacets(); renderActive(); renderTable(list); renderCompare(); renderTray();
+  save();
+}
+
+const tbody = document.querySelector("#tbl tbody");
+function renderTable(list) {
+  let rows = list.filter(matches);
+  if (colSort) rows = [...rows].sort((a, b) => { const x = colVal(a, colSort.k), y = colVal(b, colSort.k);
+    return (x < y ? -1 : x > y ? 1 : 0) * colSort.dir || rankPos.get(a.country) - rankPos.get(b.country); });
+  const custom = rankBy === "custom";
+  $("fitTh").hidden = !custom;
+  $("count").textContent = `${rows.length} of ${DATA.length} match`;
+  $("rankTitle").textContent = `Ranked: ${RANKS[rankBy].label}`;
+  $("rankNote").textContent = RANKS[rankBy].note + (colSort ? " Re-sorted by column; click the # header to restore." : "");
+  const cmpSet = new Set(CMP);
+  tbody.innerHTML = rows.map(d => { const f = custom ? fit(d) : 0; return `<tr tabindex="0" data-c="${esc(d.country)}"${d.country === selected ? ' class="sel"' : ""}>
+    <td class="ck"><input type="checkbox" data-cmp="${esc(d.country)}" aria-label="Benchmark ${esc(d.country)}"${cmpSet.has(d.country) ? " checked" : ""}${!cmpSet.has(d.country) && CMP.length >= 6 ? " disabled" : ""}></td>
+    <td class="rank">${rankPos.get(d.country)}</td>
+    <td class="name">${esc(d.country)}<span class="sub">${esc(d.region)}</span></td>
+    ${custom ? `<td class="fit"><b>${f}</b><span class="bar"><i style="width:${f}%"></i></span></td>` : ""}
+    <td>${pill("difficulty", d.difficulty)}</td>
+    <td>${pill("no_presence", d.no_presence)}</td>
+    <td class="num" title="${esc(d.fee_usd)}">${esc(feeTxt(d))}</td>
+    <td class="num" title="${esc(d.time_to_reg)}">${esc(timeTxt(d))}</td>
+    <td>${pill("bank_cat", d.bank_cat)}</td>
+    <td>${pill("funding_cat", d.funding_cat)}</td>
+    <td>${pill("gfn", d.gfn)}</td></tr>`; }).join("")
+    || `<tr><td colspan="11" class="empty">No jurisdictions match all these filters. Remove one of the active filters above.</td></tr>`;
+  document.querySelectorAll("#tbl th[data-k]").forEach(th => th.setAttribute("aria-sort",
+    colSort ? (th.dataset.k === colSort.k ? (colSort.dir > 0 ? "ascending" : "descending") : "none") : (th.dataset.k === "rank" ? "ascending" : "none")));
+}
+
+/* ---------- benchmark ---------- */
+const median = a => { if (!a.length) return null; const s = [...a].sort((x, y) => x - y), m = s.length >> 1; return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+const mostCommon = (rows, k) => { const c = {}; rows.forEach(d => c[d[k]] = (c[d[k]] || 0) + 1); return Object.entries(c).sort((a, b) => b[1] - a[1])[0]?.[0]; };
+function renderCompare() {
+  const sec = $("compare");
+  sec.hidden = !CMP.length;
+  if (!CMP.length) return;
+  const cs = CMP.map(c => byName.get(c)), pool = DATA.filter(matches);
+  $("benchN").textContent = pool.length;
+  const bench = { fee_lo: median(pool.map(d => d.fee_lo).filter(v => v != null)), days_lo: median(pool.map(d => d.days_lo).filter(v => v != null)) };
+  // rows: [label, cell(d), sortValue(d) for "best" (lower is better) or null for text, bench text]
+  const R = [
+    ["Rank", d => `#${rankPos.get(d.country)} <span class="sub">${esc(RANKS[rankBy].label)}</span>`, d => rankPos.get(d.country), "—"],
+    ...(rankBy === "custom" ? [["Fit score", d => `<b>${fit(d)}</b>`, d => -fit(d), String(median(pool.map(fit)) ?? "—")]] : []),
+    ["Difficulty", d => pill("difficulty", d.difficulty), d => ord("difficulty", d), pill("difficulty", mostCommon(pool, "difficulty"))],
+    ["Remote founding", d => pill("no_presence", d.no_presence), d => ord("no_presence", d), pill("no_presence", mostCommon(pool, "no_presence"))],
+    ["Fee", d => esc(feeTxt(d)), d => num(d.fee_lo), bench.fee_lo == null ? "—" : fmtUSD(bench.fee_lo)],
+    ["Time", d => esc(timeTxt(d)), d => num(d.days_lo), bench.days_lo == null ? "—" : dur(Math.round(bench.days_lo))],
+    ["Bank account", d => pill("bank_cat", d.bank_cat), d => ord("bank_cat", d), pill("bank_cat", mostCommon(pool, "bank_cat"))],
+    ["Foreign funding", d => pill("funding_cat", d.funding_cat), d => ord("funding_cat", d), pill("funding_cat", mostCommon(pool, "funding_cat"))],
+    ["Google for Nonprofits", d => pill("gfn", d.gfn), d => ord("gfn", d), pill("gfn", mostCommon(pool, "gfn"))],
+    ["Confidence", d => pill("confidence", d.confidence), d => ord("confidence", d), pill("confidence", mostCommon(pool, "confidence"))],
+    ["Entity", d => esc(d.entity), null, ""],
+    ["Main bottleneck", d => esc(d.bottleneck), null, ""],
+    ["Local requirements", d => esc(d.requirements), null, ""],
+    ["Fee note", d => esc(d.fee_usd), null, ""],
+    ["Time note", d => esc(d.time_to_reg), null, ""],
+    ["Bank account note", d => esc(d.bank_access), null, ""],
+    ["Tax-exempt status", d => esc(d.tax_exempt), null, ""],
+    ["Annual compliance", d => esc(d.compliance), null, ""],
+  ];
+  const head = `<thead><tr><th class="attr"></th>${cs.map(d => `<th><span class="cn"><a data-go="${esc(d.country)}">${esc(d.country)}</a><button type="button" data-uncmp="${esc(d.country)}" aria-label="Remove ${esc(d.country)} from benchmark">×</button></span></th>`).join("")}
+    <th class="bench"><span class="cn">Filtered median</span></th></tr></thead>`;
+  const body = R.map(([label, cell, sv, b]) => {
+    let best = null;
+    if (sv && cs.length > 1) { const vals = cs.map(sv); const mn = Math.min(...vals); if (mn < BIG && vals.some(v => v !== mn)) best = mn; }
+    return `<tr class="${sv ? "" : "text"}"><td class="attr">${esc(label)}</td>${cs.map(d => `<td class="${best != null && sv(d) === best ? "best" : ""}">${cell(d) || "—"}</td>`).join("")}<td class="bench">${b}</td></tr>`;
+  }).join("");
+  $("cmpTbl").innerHTML = head + `<tbody>${body}</tbody>`;
+}
+function renderTray() {
+  $("tray").hidden = !CMP.length;
+  $("wrap").classList.toggle("has-tray", CMP.length > 0);
+  $("trayNames").innerHTML = CMP.map(c => `<span class="tag">${esc(c)}<button type="button" data-uncmp="${esc(c)}" aria-label="Remove ${esc(c)}">×</button></span>`).join("")
+    + (CMP.length < 6 ? `<span class="lbl" style="align-self:center">${6 - CMP.length} more allowed</span>` : "");
+}
+function toggleCmp(c, on) {
+  const has = CMP.includes(c);
+  if (on === undefined) on = !has;
+  if (on && !has && CMP.length < 6) CMP.push(c);
+  if (!on && has) CMP = CMP.filter(x => x !== c);
+  const refocus = document.activeElement?.dataset?.cmp;
+  paint(); if (selected) renderDossier();
+  if (refocus) tbody.querySelector(`input[data-cmp="${CSS.escape(refocus)}"]`)?.focus();
+}
+
+/* ---------- events ---------- */
+function toggleFacet(k, v) { F[k].has(v) ? F[k].delete(v) : F[k].add(v); if (F[k].size === FACETS[k].cats.length) F[k].clear(); paint(); }
+$("controls").addEventListener("click", e => {
+  const o = e.target.closest(".opt"); if (o) return toggleFacet(o.dataset.f, o.dataset.v);
+  const rm = e.target.closest("[data-rm]"); if (rm) {
+    const id = rm.dataset.rm;
+    if (id.startsWith("f|")) { const [, k, v] = id.split("|"); F[k].delete(v); } else $(id).value = "";
+    return paint();
+  }
+  if (e.target.id === "wreset") { W = { ...W_DEFAULT }; renderWeights(); paint(); }
+});
+$("legend").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return;
+  const k = MODES[mode].key, v = b.dataset.v, s = F[k];
+  if (!s.size) { FACETS[k].cats.forEach(([x]) => x !== v && s.add(x)); paint(); } else toggleFacet(k, v); });
+$("modes").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; mode = b.dataset.m; paint(); });
+$("rankby").addEventListener("change", () => { rankBy = $("rankby").value; colSort = null;
+  const m = RANKS[rankBy].mode; if (m) mode = m; renderWeights(); paint(); if (selected) renderDossier(); });
+$("controls").addEventListener("input", e => {
+  if (e.target.dataset.w) { W[e.target.dataset.w] = +e.target.value; $("wo-" + e.target.dataset.w).textContent = e.target.value; }
+  if (e.target.id !== "rankby") { paint(); if (selected && e.target.dataset.w) renderDossier(); }
+});
+$("controls").addEventListener("submit", e => e.preventDefault());
+$("reset").addEventListener("click", () => { for (const k in F) F[k].clear(); ["q", "maxfee", "maxdays"].forEach(id => $(id).value = ""); paint(); });
+document.querySelector("#tbl thead").addEventListener("click", e => { const th = e.target.closest("th[data-k]"); if (!th) return;
+  const k = th.dataset.k;
+  if (k === "rank") colSort = null;
+  else colSort = colSort && colSort.k === k ? { k, dir: -colSort.dir } : { k, dir: 1 };
+  renderTable(ranked()); });
+tbody.addEventListener("click", e => {
+  const ck = e.target.closest("input[data-cmp]"); if (ck) { toggleCmp(ck.dataset.cmp, ck.checked); return; }
+  const tr = e.target.closest("tr[data-c]"); if (tr) select(tr.dataset.c, true, true); });
+tbody.addEventListener("keydown", e => { if (e.key === "Enter" && !e.target.matches("input")) { const tr = e.target.closest("tr[data-c]"); if (tr) select(tr.dataset.c, true, true); } });
+document.addEventListener("click", e => {
+  const u = e.target.closest("[data-uncmp]"); if (u) { toggleCmp(u.dataset.uncmp, false); return; }
+  const go = e.target.closest("[data-go]"); if (go) { select(go.dataset.go, true); return; }
+  const add = e.target.closest("[data-addcmp]"); if (add) toggleCmp(add.dataset.addcmp);
+});
+$("trayGo").addEventListener("click", () => $("compare").scrollIntoView({ behavior: "smooth", block: "start" }));
+$("trayClear").addEventListener("click", () => { CMP = []; paint(); if (selected) renderDossier(); });
+
+/* ---------- dossier ---------- */
+const sec = (title, body) => body ? `<div class="sec"><h3>${esc(title)}</h3><p>${esc(body)}</p></div>` : "";
+function renderDossier() {
+  const d = byName.get(selected); if (!d) return;
+  const notes = (d.notes || "").split(/\s+\|\s+/).filter(Boolean);
+  const srcs = (d.sources || "").split(/\s*;\s*/).filter(s => /^https?:\/\//.test(s));
+  const chip = (key, v) => { const l = LABEL[key + ":" + v]; return l ? `<span class="chip c-${l[1]}">${esc(l[0])}</span>` : ""; };
+  const inCmp = CMP.includes(d.country);
+  $("dossier").innerHTML = `
+    <div class="dh"><div><div class="eyebrow">${esc(d.region)} · #${rankPos.get(d.country)} of ${DATA.length}, ${esc(RANKS[rankBy].label.toLowerCase())}${rankBy === "custom" ? ` · fit ${fit(d)}` : ""}</div><h2>${esc(d.country)}</h2></div>
+      <button type="button" class="btn${inCmp ? "" : " primary"}" data-addcmp="${esc(d.country)}"${!inCmp && CMP.length >= 6 ? " disabled" : ""}>${inCmp ? "Remove from benchmark" : "Benchmark"}</button></div>
+    <div class="chips">${chip("difficulty", d.difficulty)}${chip("no_presence", d.no_presence)}
+      <span class="chip plain">Google for Nonprofits: ${d.gfn === "Yes" ? "eligible" : "not eligible"}</span>
+      <span class="chip plain">Bank: ${esc(LABEL["bank_cat:" + d.bank_cat][0].toLowerCase())}</span>
+      <span class="chip plain">Confidence: ${esc(d.confidence === "med" ? "medium" : d.confidence)}</span></div>
+    <dl class="facts">
+      <div><dt>Registration fee</dt><dd class="big">${esc(feeTxt(d))}</dd><dd>${esc(d.fee_usd || "—")}</dd></div>
+      <div><dt>Time to register</dt><dd class="big">${esc(timeTxt(d))}</dd><dd>${esc(d.time_to_reg || "—")}</dd></div>
+    </dl>
+    ${sec("Entity to register", d.entity)}
+    ${sec("Main bottleneck", d.bottleneck)}
+    ${sec("Local requirements", d.requirements)}
+    ${sec("Cost and time in practice", d.cost_time)}
+    ${sec("Bank account", d.bank_access)}
+    ${sec("Tax-exempt status", d.tax_exempt)}
+    ${sec("Donor tax deductions", d.deduction)}
+    ${sec("Foreign funding rules", d.donor_restr)}
+    ${sec("Annual compliance", d.compliance)}
+    ${notes.length ? `<div class="sec"><h3>Research notes</h3><ul>${notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : ""}
+    ${srcs.length ? `<div class="sec src"><h3>Sources</h3><ul>${srcs.map(s => `<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/, ""))}</a></li>`).join("")}</ul></div>` : ""}`;
+}
+function select(name, user, fromTable) {
+  if (!byName.has(name)) return;
+  selected = name;
+  paint(); renderDossier();
+  $("dossier").scrollTop = 0;
+  if (user) {
+    try { history.replaceState(null, "", "#" + slug(name)); } catch (e) {}
+    const narrow = window.matchMedia("(max-width: 980px)").matches;
+    if (fromTable || narrow) $(narrow ? "dossier" : "map").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
+
+renderWeights();
+const start = bySlug.get((location.hash || "").slice(1)) || ranked().filter(matches)[0]?.country || ranked()[0].country;
+select(start, false);
+</script>
+"""
+
+if __name__ == "__main__":
+    main()

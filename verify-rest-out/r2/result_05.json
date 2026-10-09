@@ -1,0 +1,111 @@
+[
+ {
+  "id": "R205-1",
+  "Country": "Chad",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://faolex.fao.org/docs/pdf/cha208250.pdf; https://itie-chad.org/ordonnance-n023-pr-2018-portant-regime-des-associations/",
+  "finding": "Ordinance 023/PR/2018 verified in full official text (FAOLEX) as the governing association law: authorization regime, 3-month ministerial decision (art. 8), and foreign associations get only limited-term, renewable authorization (arts. 23-24). No successor law found; fees unpublished as claimed."
+ },
+ {
+  "id": "R205-2",
+  "Country": "Republic of the Congo",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://sgg.cg/JO/2017/congo-jo-2017-37.pdf; https://www.unicongo.cg/document/loi-du-1er-juillet-1901-relative-au-contrat-d_association/",
+  "finding": "Official 2017 Journal Officiel shows the Interior Ministry citing the 1 July 1901 law as in force (with loi 19-60/1960 declaration regime) and confirms the fee schedule: 15,000 FCFA per association declaration. All claims verified."
+ },
+ {
+  "id": "R205-3",
+  "Country": "Congo (DRC)",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Registration fee (USD)": "500 CDF filing + 250 CDF publication (~$1); notary costs extra",
+   "Key local requirements": "Foreign NGO: presidential authorization (decree) motioned by Justice Ministry, line-ministry approval, local representation in DRC, framework agreement with Planning Ministry; local office.",
+   "Main bottleneck (remote foreign founder)": "Presidential decree authorization for foreign NGO, local representation, framework agreement with Planning Ministry, local office"
+  },
+  "source": "https://www.icnl.org/wp-content/uploads/Democratic-Republic-of-the-Congo_lawcongo.pdf",
+  "finding": "Law 004/2001 (official text) sets the statutory fee at 500 CDF lodging + 250 CDF publication (~$1), not $100-300, and foreign NGOs need presidential authorization (decree) motioned by the Justice Ministry plus a framework agreement with the Planning Ministry, not 'Interior Ministry approval'."
+ },
+ {
+  "id": "R205-4",
+  "Country": "Gabon",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.clientearth.fr/media/ud2pbmtp/1962-12-10-loi-n-35-62-du-10-decembre-1962-relative-aux-associations-gabon-ext-fr.pdf; https://gabonmediatime.com/gabon-que-prevoit-la-loi-sur-les-ong-portee-par-foumboula/",
+  "finding": "Law 35/62 full text confirms the declaration regime and that foreign associations require presidential authorization on the report of the Interior Minister (arts. 25-27), null if unrequested (art. 26). The specific ONG law was adopted by the National Assembly 16 May 2025 and remained pending before the Senate as of the latest accessible source."
+ },
+ {
+  "id": "R205-5",
+  "Country": "Sao Tome & Principe",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www2.camara.leg.br/saotomeeprincipe/diarios-da-an/ix-legislatura/ii-serie/4.-a-sessao/DAN05-IIS.pdf/at_download/file",
+  "finding": "Full text of Lei 8/2012 (National Assembly gazette, 28 May 2012) confirms every cited article: escritura pública (art. 3.1), registry requiring 2 years existence and 10 members (art. 9.2), home-country gazette extract (art. 9.3-9.4), 15-day Justice Ministry decision (art. 9.5-9.6), and foreign-NGO partnership duty (art. 13)."
+ },
+ {
+  "id": "R205-6",
+  "Country": "Burundi",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://presidence.gov.bi/wp-content/uploads/2017/04/loi-02-2017.pdf; https://www.icnl.org/research/library/burundi_burundi/",
+  "finding": "The official presidential website hosts the 2017 associations law (loi-02-2017, 23 pages) and ICNL's legal library holds the separate 2017 law regulating foreign NGOs in Burundi, confirming the 2017 dual framework; fees and decision times remain unpublished as claimed."
+ },
+ {
+  "id": "R205-7",
+  "Country": "Tanzania",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.icnl.org/post/tools/legal-and-reporting-requirements-toolkit-tanzania; https://www.jamii.go.tz/services/ngos-registration",
+  "finding": "NGO Act No 24 of 2002 (revised 2005, 2019) confirmed as governing law; the TANGO/ICNL toolkit lists the exact current fees (national TZS 115,000 + TZS 1,500 stamp duty; INGO USD 350 + TZS 4,500) and founder rules (local: 5+ all Tanzanians; INGO: 5+ incl. 2 Tanzanians) via the NIS portal."
+ },
+ {
+  "id": "R205-8",
+  "Country": "Comoros",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://justice.gouv.km/texte/loi-n86-006-af-du-30-mai-1986-relative-au-contrat-dassociation/; https://alwatwan.net/politique/coop%C3%A9ration-internationale-i-les-ong-%C3%A9trang%C3%A8res-sensibilis%C3%A9es-sur-les-nouvelles-modalit%C3%A9s-doctroi-des-agr%C3%A9ments.html",
+  "finding": "Law 86-006/AF of 30 May 1986 verified in full on the official Ministry of Justice site: declaration with 15-day récépissé (art. 3) and prior Interior-Ministry authorization for foreign associations (art. 9-13). Decree 20-101/PR of 31 July 2020 on NGO agrément (accord de siège, local office, Comorian staff) confirmed."
+ },
+ {
+  "id": "R205-9",
+  "Country": "Madagascar",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Key local requirements": "Foreign ONG: prior Interior Ministry authorization after MFA opinion (art. 37, Law 96-030); local legal representative and office; filings in French.",
+   "Main bottleneck (remote foreign founder)": "Prior Interior-Ministry authorization (after MFA opinion) for foreign ONG plus local representative/office; discretionary"
+  },
+  "source": "https://www.diplomatie.gov.mg/images/ppd/loi-n-96-030.pdf",
+  "finding": "Law 96-030 (official MFA text) shows foreign ONGs need prior authorization from the Minister of the Interior after opinion of the Minister of Foreign Affairs (art. 37), not 'MFA accreditation'; the declaration + agrément regime (arts. 6-12) is as claimed."
+ },
+ {
+  "id": "R205-10",
+  "Country": "Malawi",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Key local requirements": ">=2 Malawian-citizen directors/trustees (s.20(2) NGO Act); local office; English filings; int'l NGOs need line-ministry approval letter/MoU.",
+   "Registration fee (USD)": "MK 250,000 (~$145) one-off NGORA fee + incorporation costs",
+   "Main bottleneck (remote foreign founder)": ">=2 Malawian-citizen directors/trustees; mandatory partnership with a local NGO for international NGOs (2024 Regulations, NGORA guidelines 2026); line-ministry MoU"
+  },
+  "source": "https://ngora.mw/registration/; https://www.icnl.org/resources/civic-freedom-monitor/malawi",
+  "finding": "NGORA's official site confirms the NGO (Amendment) Act 2022, the one-off MK 250,000 registration fee (~$145, not $50-100) and the >=2 Malawian-citizen directors/trustees rule (s.20(2)); the 'two-thirds Malawian board' claim is wrong, and international NGOs now face mandatory partnerships with local NGOs under the 2024 Regulations."
+ },
+ {
+  "id": "R205-11",
+  "Country": "Mozambique",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Associations (Lei 8/91); Foundations (Lei 16/2018); Foreign NGO authorization (Decreto 55/98 via Ministry of Foreign Affairs); 2022 NGO law (OSFL) dropped from Parliament's agenda Apr 2023"
+  },
+  "source": "https://www.dlapiperafrica.com/pt/mozambique/insights/legislation-series/associations-and-ngos/associations-and-ngos.html; https://disasterlaw.ifrc.org/sites/default/files/media/disaster_law/2021-08/moz20459.pdf",
+  "finding": "Lei 8/91, Lei 16/2018 and Decreto 55/98 (13 Oct, foreign-NGO authorization framework under Lei 8/91 art. 20) confirmed in current legislation lists; the 2022 OSFL NGO bill was dropped from Parliament's agenda in Apr 2023, so 'still pending' is outdated."
+ },
+ {
+  "id": "R205-12",
+  "Country": "Angola",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://angolex.com/paginas/leis/lei-das-organizacoes-nao-governamentais-2a-26a.html",
+  "finding": "Lei 2/26 (NGO law, approved 22 Jan 2026, promulgated 19 Feb 2026, D.R. n.º 38 of 02/03/2026) verified in full: mandatory prior habilitação (art. 6), foreign-NGO registration documents (art. 8.4), and 180-day conformity deadline for existing NGOs (art. 35, i.e. by ~Sept 2026). Lei 6/12 remains the private-associations law."
+ }
+]

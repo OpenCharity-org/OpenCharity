@@ -1,0 +1,67 @@
+[
+ {
+  "Country": "Guinea-Bissau",
+  "Main charitable entity types": "Associations (associações) via public deed (escritura pública) at Serviços Notariais under the Código Civil (10+ founders); registry number via Conservatória de Registo Comercial, Predial e Automóvel; Decree 23/92 NGO route inoperative (SOLIDAMI abolished).",
+  "Est. cost & time": "Fees (2021 IMVF study, Despacho 04/2002): name check 7,500 CFA; deed 12,650-113,496 CFA; registry number to 57,500 CFA; publication 15,000 CFA + 10,000 CFA/pg; total ~93k-300k CFA (~$150-500). Time: name check ~7 days, deed ~5 days; full duration unpublished.",
+  "Registration fee (USD)": "~$100-250 (gov deed/registry); ~$500-2k all-in w/ local agent",
+  "Time to register": "1-4 months",
+  "Foreign founder (no local presence)": "no",
+  "Key local requirements": "Notarial public deed under the Código Civil (10+ founders) plus registry at the Conservatória; local office; Portuguese-language filings",
+  "Main bottleneck (remote foreign founder)": "In-person Portuguese-language registration in Bissau; local office and local representative; fragile state capacity",
+  "Confidence": "med",
+  "Sources": "https://natlex.ilo.org/dyn/natlex2/r/natlex/fe/details?p3_isn=73216; https://rimap.unhcr.org/node/61431; https://www.imvf.org/wp-content/uploads/2021/09/estudo-Quadro-legal-osc-guine-bissau-ianda-djuntu.pdf; https://www.imvf.org/wp-content/uploads/2021/09/estudo-quadro-legal-osc-guine-bissau-ianda-djuntu.pdf",
+  "Notes": "Repeated military coups (7 since independence), fragile state capacity, weak enforcement of registrations; Portuguese (not French) documents; practical operations very difficult | [verified] Requires a physical public deed in Portuguese at the Serviços Notariais (Bissau only) plus 10+ founding members; no remote channel for foreign founders (Constitution art. 44d grants the right to citizens; IMVF 2021 study s4.2, s4.2.4). | Correction: Mechanism: notarial registration under the Código Civil (Decreto 23/92 opinion route inoperative); cited 2013 law unverified; fees per 2021 IMVF study (~93k-300k CFA). | verify-rest 2026-10: misattributed 'Lei 5/VI/96' (Cape Verde numbering) and Guinea-Conakry 'L/005/013/AN' references removed"
+ },
+ {
+  "Country": "Senegal",
+  "Main charitable entity types": "Association under the Code des obligations civiles et commerciales arts. 811 ff. (Loi 68-08 of 26 Mar 1968, am. Loi 79-02) and Décret 76-040 of 16 Jan 1976 (declaration + récépissé); ONG under décret n° 96-103 du 8 février 1996 as modified by décret n° 2010-1490 du 10 novembre 2010.",
+  "Est. cost & time": "No official fee for declaration, time unpublished. Foreigners may join associations, but ONG status requires a local base and a signed accord-cadre with the state.",
+  "Registration fee (USD)": "~$300-1k incl. agent; government fee minimal",
+  "Time to register": "2-8 weeks",
+  "Foreign founder (no local presence)": "no",
+  "Key local requirements": "Declaration to the administrative authority (Ministry of Interior/préfecture), refusable only on legality grounds (COCC art. 812); local registered office; French-language documents",
+  "Main bottleneck (remote foreign founder)": "Local registered office, local signatory and French-language filings required; association declaration must be lodged in person",
+  "Confidence": "med",
+  "Sources": "https://www.icnl.org/resources/civic-freedom-monitor/senegal; https://www.service-public.gouv.fr/particuliers/vosdroits/F426; https://dgsfc.gouv.sn/sites/default/files/2021-03/guide_pour_la%20constitution_ASSOCIATION_et_ONG.pdf; https://www.sports.gouv.sn/wp-content/uploads/2022/02/DECLARATION-ET-ENREGISTREMENT-DES-ASSOCIATIONS-SPORTIVES.pdf",
+  "Notes": "Stable, well-established association culture; declaration regime is the easiest in francophone West Africa; 2022/2023 framework on foreign-funded NGOs (OSC law) adds a reporting layer for foreign funders; French-only | Confirm prior: 1965 declaration regime (1901 model) stands; 2023 OSC framework confirmed as reporting layer, not a ban | verify-rest 2026-10: 'Loi 71-604' is not the associations law — COCC arts. 811 ff. + Décret 76-040 govern"
+ },
+ {
+  "Country": "Gambia",
+  "Main charitable entity types": "Company limited by guarantee or registered association with the Registrar of Companies (Companies Act 2013); NGOs need clearance from the NGO Affairs Agency created by NGO Decree No. 81 of 1996; TIN certificate required.",
+  "Est. cost & time": "MoJ fees: business name 20,000 GMD, company 80,000-90,000 GMD (~$300-350); NGO annual fee ~$5; time unpublished. Non-residents need a resident agent or representative.",
+  "Registration fee (USD)": "~$300-1k incl. agent; registry fee low (tens of USD)",
+  "Time to register": "2-8 weeks",
+  "Foreign founder (no local presence)": "no",
+  "Key local requirements": "NGO Affairs Agency clearance certificate before incorporation; registration with the Registrar of Companies under the Companies Act 2013; local office; English-language filings",
+  "Main bottleneck (remote foreign founder)": "Local office and local representative needed; Societies Act filings in person in Banjul; NGO Bill not yet enacted",
+  "Confidence": "med",
+  "Sources": "https://www.wipo.int/wipolex/en/legislation/details/10617; https://www.moj.gm/companies-division; https://www.icnl.org/research/library/gambia_ngodec",
+  "Notes": "English language, stable democracy; 2022 NGO Bill has been in draft years without enactment, so the old 1972 Societies Act still applies; Banjul filings manageable with a local agent | verify-rest 2026-10: NGO Decree is No. 81 of 1996 (not 1993); Companies Act 2013 replaced the 1955 Act"
+ },
+ {
+  "Country": "Sierra Leone",
+  "Main charitable entity types": "Company limited by guarantee under Companies Act 2009 (Act No. 5 of 2009) registered at the CAC; charities/NGOs registered as non-profit companies (no separate societies act in force).",
+  "Est. cost & time": "CAC fee schedule starts around $20 USD, higher bands for companies limited by guarantee; time unpublished. Foreign directors allowed; no registration bar for foreign founders.",
+  "Registration fee (USD)": "~$20+ CAC fee plus ~$500 NGO registration (annual renewal); ~$800-2k all-in w/ agent",
+  "Time to register": "4-12 weeks",
+  "Foreign founder (no local presence)": "no",
+  "Key local requirements": "Non-profit company limited by guarantee at the CAC, then annual NGO registration with the Ministry of Planning & Economic Development under the NGO Regulations (~US$500 + SLANGO membership); local registered office; English-language documents",
+  "Main bottleneck (remote foreign founder)": "Local registered office and local agent needed; CLG route standard; NGO Bill 2022 pending so no single NGO register",
+  "Confidence": "med",
+  "Sources": "https://nib.gov.sl/business-registration-corporate-affairs/; https://manwaadvocates.com/why-more-non-profits-are-choosing-companies-limited-by-guarantee-instead-of-ngos/; https://www.wipo.int/wipolex/en/legislation/details/9820; https://www.jica.go.jp/sierraleone/office/others/ngo.html",
+  "Notes": "English language; 2022 NGO Bill pending, so existing NGO/charitable-society registration practices continue; Freetown has expat-friendly law firms; registry throughput is slower than Ghana | verify-rest 2026-10: Companies Act is 2009 (Act No. 5, am. 2014), not 2013; separate NGO registration (~US$500/yr) added"
+ },
+ {
+  "Country": "Niger",
+  "Main charitable entity types": "Association under ordonnance n° 84-06 du 1er mars 1984 and décret n° 84-49/PCMS/MI; ONG sector under décret n° 2022-182/PRN/MAT/DC (agrément protocol regime, financial statements published in the JO).",
+  "Est. cost & time": "Nominal registration, fee and time unpublished. Since 2022 ONGs need an agrément protocol; ~100 associations were suspended in Feb 2022; foreign founders require a state accord-cadre.",
+  "Registration fee (USD)": "~$500-2k incl. agent; government fee low",
+  "Time to register": "1-4 months",
+  "Foreign founder (no local presence)": "no",
+  "Key local requirements": "Declaration and prior authorization under Ordonnance 84-06 of 1 Mar 1984 (am. Ord. 84-50, Loi 91-006); local registered office; French-language filings; ~2,900 NGOs/associations suspended in 2025 and many dissolved by arrêté of 7 Jan 2026 (~1,809 remain authorised)",
+  "Main bottleneck (remote foreign founder)": "Prior Interior Ministry authorization (décret 2022-182), local office, French filings; heavy state control post-2023 coup",
+  "Confidence": "med",
+  "Sources": "https://wacsi.org/wp-content/uploads/2022/06/DECRET-2022-182-SECTEUR-DES-ONG-3-1-1.pdf; https://www.omct.org/fr/ressources/appels-urgents/niger-suspension-des-activit%C3%A9s-des-ong-nayant-pas-publi%C3%A9-leurs-%C3%A9tats-financiers-au-journal-officiel-de-la-r%C3%A9publique-du-niger; https://www.icnl.org/resources/library/ordonnance-no-84-06-portant-regime-des-associations",
+  "Notes": "Military rule since 2023; security situation in the north (Sahel conflict); Niamey filings are French-only; some discretionary elements in approvals | verify-rest 2026-10: unverifiable 'Law 93-010' removed; 2025-26 crackdown added"
+ }
+]

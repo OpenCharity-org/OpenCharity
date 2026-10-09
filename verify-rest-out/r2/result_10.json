@@ -1,0 +1,48 @@
+[
+ {
+  "id": "R210-1",
+  "country": "Guinea-Bissau",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://monitor.civicus.org/explore/association-GuineaBissau/; https://capacity4dev.europa.eu/media/32664/download/a9cd4339-c5f9-4241-8847-d8769a420b05_en; https://www.imvf.org/wp-content/uploads/2021/09/estudo-quadro-legal-osc-guine-bissau-ianda-djuntu.pdf",
+  "finding": "No 2024-2026 reform of Guinea-Bissau's association or NGO framework was found; associations still form under the Civil Code (arts. 157 ff.) with Decree-Law 23/92 as the nominal NGO text. EU civil-society roadmaps describe the same Civil Code/Decree 23/92 regime and flag it as outdated, consistent with the current cells; fees remain per the 2021 IMVF study."
+ },
+ {
+  "id": "R210-2",
+  "country": "Senegal",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Association under the Code des obligations civiles et commerciales arts. 811 ff. (Loi 68-08 of 26 Mar 1968, am. Loi 79-02) and Décret 76-040 of 16 Jan 1976 (declaration + récépissé); ONG under décret n° 96-103 du 8 février 1996 as modified by décret n° 2010-1490 du 10 novembre 2010 and décret n° 2015-145 du 4 février 2015.",
+   "Key local requirements": "Declaration to the administrative authority (regional governor/préfet, forwarded to the Ministry of Interior), refusable only on legality grounds (COCC art. 812); local registered office; French-language documents"
+  },
+  "source": "https://www.icnl.org/resources/civic-freedom-monitor/senegal; https://www.vie-publique.sn/documents/1467/JO-6842-du-04-avril-2015",
+  "finding": "ICNL's Civic Freedom Monitor (updated Sept 2026) lists Senegal's NGO regime as Décret 96-103, amended by Décret 2010-1490 and further by Décret 2015-145 of 4 Feb 2015 (investment programmes, funding control), published in JO n°6842. Association declarations go to the regional governor, who forwards them to the Ministry of Interior; ICNL reports no 2024-2026 changes to association/NGO registration rules and NGO status requires two years as an association."
+ },
+ {
+  "id": "R210-3",
+  "country": "Gambia",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "MoJ fees: name reservation D500, business registration D1,000, company limited by guarantee D5,000 (~$90-100 total); NGO annual fee ~$5; time unpublished. Non-residents need a resident agent or representative.",
+   "Main bottleneck (remote foreign founder)": "Local office and local representative needed; NGO Affairs Agency clearance and Registrar General filings in Banjul; NGO Bill not yet enacted"
+  },
+  "source": "https://www.moj.gm/company-registration; https://www.icnl.org/research/library/gambia_ngodec; https://thepoint.gm/africa/gambia/article/non-governmental-affairs-agency-clears-the-air",
+  "finding": "The Ministry of Justice company-registration page lists D5,000 for a company limited by guarantee plus D500 name reservation and D1,000 business registration, and requires particulars of a Gambian agent for non-resident directors; the 80,000-90,000 GMD figure is not supported. The NGO Decree 1996 makes NGO Affairs Agency clearance a prerequisite to incorporation under the Companies Act, so the Societies Act reference in the bottleneck was inconsistent; no enacted replacement NGO law was found."
+ },
+ {
+  "id": "R210-4",
+  "country": "Sierra Leone",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://old.sierralii.org/node/5047; https://www.parliament.gov.sl/uploads/acts/COMPANIES AMENDMNET ACT 2014.pdf; https://eusee.hivos.org/alert/ministry-of-planning-and-economic-development-moped-bans-ngos-over-regulatory-compliance/",
+  "finding": "Sierra Leone's Companies Act 2009 (amended 2014, including s.22 on companies limited by guarantee) remains the CAC's governing law; no enacted 2024 replacement was found. NGOs additionally register with the Ministry of Planning and Economic Development under the NGO Policy Framework 2023, which in 2026 revoked registrations of NGOs lacking identifiable offices, supporting the local-office requirement; the ~US$500 fee is not in an official published schedule."
+ },
+ {
+  "id": "R210-5",
+  "country": "Niger",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://lanouvelletribune.info/2026/01/le-niger-dissout-pres-de-la-moitie-des-ong-operant-sur-son-territoire/; https://fr.allafrica.com/stories/202511180173.html; https://www.afrique-sur7.fr/niger-pres-de-3-000-ong-suspendues-en-2025",
+  "finding": "Press reports confirm Niger's Interior Ministry suspended NGOs lacking 2024 financial statements in the Journal officiel in Nov 2025 and dissolved non-compliant ones by arrêté of 7 Jan 2026, leaving 1,809 authorised (1,684 national, 125 international). The Interior Minister cited ~2,900 suspended in 2025, matching the current cells; the Ordonnance 84-06 / Décret 2022-182 framework is unchanged."
+ }
+]

@@ -1,0 +1,118 @@
+[
+ {
+  "id": "R202-1",
+  "country": "Belize",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "NGO = company limited by guarantee (Belize Companies Act 2022) registered as an NGO under NGO Act Cap. 315 RE 2020 and as an NPO under the NPO Act No. 14 of 2023; both registers are kept by the FSC Registrar via BCCAR.",
+   "Est. cost & time": "Company incorporation ~US$292 (BZ$584) at BCCAR; NGO registration (Cap. 315) via BCCAR OBRS has no fee; NPO registration BZ$100 (~USD 50); 1-4 weeks; a licensed local registered agent is required - agent fees add ~USD 750-1,500/year.",
+   "Registration fee (USD)": "~340 (incorporation ~US$292 + NPO BZ$100)",
+   "Main bottleneck (remote foreign founder)": "Licensed Belizean registered agent/registered office required (Companies Act 2022); NGO/NPO registration with the FSC Registrar via BCCAR (not the AG's Office), with ongoing AML-style NPO reporting."
+  },
+  "source": "https://www.belizefsc.org.bz/wp-content/uploads/2024/10/Webinar-Presentation-Mastering-NGOs-and-NPOs-Final.pdf; https://www.belizefsc.org.bz/wp-content/uploads/2023/05/Act-No-14-of-2023-Non-Profit-Organization.pdf; https://beltraide.bz/?p=5380",
+  "finding": "The Belize FSC's 2024 NGO/NPO webinar states that the FSC Director General is Registrar of both NGOs (NGO Act Cap. 315) and NPOs (NPO Act 2023), with the BCCAR Deputy Registrar processing applications; NGO registration via OBRS carries no fee, while NPO registration costs $100 (BZ$). The Companies Act 2022 requires every company to keep a licensed registered agent; BELTRAIDE lists company (incl. guarantee) registration at US$292/BZ$584, so the prior BZ$-to-USD conversions and the AG's Office reference were wrong."
+ },
+ {
+  "id": "R202-2",
+  "country": "El Salvador",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Asociación or fundación sin fines de lucro (Ley de Asociaciones y Fundaciones sin Fines de Lucro, D.L. 894/1996 + Reglamento D.E. 78/1997), Registro de Asociaciones y Fundaciones, Ministerio de Gobernación y Desarrollo Territorial; tax benefits via the Ministerio de Hacienda.",
+   "Key local requirements": "Spanish-language articles, local address, registry filing under the 1996 Associations and Foundations Law (D.L. 894); foreign-funded entities must also register in the RAEX (2025 Foreign Agents Law); foreign founders permitted.",
+   "Main bottleneck (remote foreign founder)": "Spanish filings + local address; foundations allow a single foreign founder via local POA; foreign-funded NPOs must register with RAEX and face a 30% levy on foreign funds (Ley de Agentes Extranjeros 2025) unless exempted."
+  },
+  "source": "https://www.icnl.org/research/library/el-salvador_found/; https://diario.elmundo.sv/politica/asamblea-aprueba-ley-de-agentes-extranjeros-que-crea-un-registro-de-ong-y-un-impuesto-del-30; https://lexlatin.com/opinion/ley-agentes-extranjeros-el-salvador-efectos-un-ano-vigencia",
+  "finding": "El Salvador's non-profit law is the Ley de Asociaciones y Fundaciones sin Fines de Lucro, Decreto Legislativo 894 of 21 Nov 1996 (regulated by D.E. 78/1997), not a 2011 law; the registry sits in the Ministerio de Gobernación y Desarrollo Territorial and tax matters fall to the Ministerio de Hacienda (there is no MEF). The Ley de Agentes Extranjeros (approved 20 May 2025, in force June 2025) requires foreign-funded associations and foundations to register in the RAEX and imposes a 30% levy on foreign-sourced funds, with discretionary one-year exemptions."
+ },
+ {
+  "id": "R202-3",
+  "country": "Honduras",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.icnl.org/research/library/honduras_national/; https://portalunico.iaip.gob.hn/ver_archivo/MTY2MTM1NA==; https://www.icnl.org/wp-content/uploads/Honduras_leyong.pdf",
+  "finding": "A January 2023 acuerdo in La Gaceta confirms the Secretaría de Gobernación, Justicia y Descentralización grants, registers and supervises legal personality of civil associations through DIRRSAC, citing the ONGD law (Decreto 32-2011). No repeal or replacement of Decreto 32-2011 was found; official fees remain unpublished."
+ },
+ {
+  "id": "R202-4",
+  "country": "Costa Rica",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Key local requirements": "Notarized Spanish articles, local registered office, Registro de Personas Jurídicas; 10+ founders for an asociación (Ley 218 art. 18) with a 5+ member board (art. 10); a fundación's Junta Administrativa must include one member appointed by the Executive and one by the cantonal municipality.",
+   "Main bottleneck (remote foreign founder)": "Public deed before a CR notary + local office; asociaciones need 10+ founders, so a fundacion (single founder) is the practical path."
+  },
+  "source": "https://bufetedecostarica.com/ley-de-asociaciones-de-costa-rica-218/; https://www.icoder.go.cr/fileadmin/documentos/tramites/caja_de_herramientas/leyes_y_sus_reglamentos/Ley_N__218_Ley_de_Asociaciones.pdf",
+  "finding": "Ley de Asociaciones No. 218 art. 18 provides that every association is constituted by no fewer than ten persons of legal age, while art. 10 requires a directive body of at least five members. The prior cells' 3+ and 5+ founder figures were therefore wrong; the rest (Ley 5338 foundations, Registro de Personas Jurídicas) is consistent."
+ },
+ {
+  "id": "R202-5",
+  "country": "Colombia",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.ccb.org.co/servicios/registros-publicos/registro-de-entidades-sin-animo-de-lucro; https://cccartagena.org.co/sites/default/files/media/tarifas/1231-Cf-Memorando-Interno-Tablas-de-Tarifas-Registros-Publicos-2026.pdf",
+  "finding": "Chambers of Commerce still administer the Registro de Entidades sin Ánimo de Lucro under Decreto 2150/1995 and Decreto 427/1996, with 2026 registry fees set in UVB (COP 12,110 per UVB) by the same tariff table as the Registro Mercantil. No contradiction with the current cells was found; the USD 150 figure remains an estimate."
+ },
+ {
+  "id": "R202-6",
+  "country": "Ecuador",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Fundación or corporación under the Ley Orgánica de Transparencia Social (R.O. 3S-112, 28 Aug 2025) and its Reglamento General (Decreto Ejecutivo 191, Oct 2025, which repealed Decreto 193/2017); legal personality via the competent ministry and registration in the unified OSSFL information system"
+  },
+  "source": "https://www.primicias.ec/politica/noboa-decreto191-reglamento-ley-transparencia-social-fundaciones-108206/; https://www.gob.ec/regulaciones/reglamento-general-ley-organica-transparencia-social; https://www.icnl.org/post/analysis/five-things-to-know-ecuadors-2025-organic-law-on-social-transparency",
+  "finding": "Decreto Ejecutivo 191 (Registro Oficial Supl. 153, 28 Oct 2025) issued the Reglamento General a la Ley Orgánica de Transparencia Social and repealed the 2017 Reglamento para el Otorgamiento de Personalidad Jurídica (Decreto 193). It now governs constitution, legal personality and dissolution of non-profit social organizations, which must register in the unified OSSFL information system; 2026 ministerial resolutions cite Decreto 193 only as historical."
+ },
+ {
+  "id": "R202-7",
+  "country": "Peru",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.gob.pe/institucion/sunarp; https://www.icnl.org/research/library/peru_civil/",
+  "finding": "The Peruvian Civil Code (arts. 80-123) still governs asociaciones, fundaciones and comités, registered with SUNARP after a public deed, with foundations supervised by the Consejo de Supervigilancia de Fundaciones. No contradiction with the current cells was found."
+ },
+ {
+  "id": "R202-8",
+  "country": "Bolivia",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://va.presidencia.gob.bo/images/personalidadesJuridicas/Normativa/2-ds_1597_reglamentacion_parcial_a_la_ley_351.pdf; https://bolivia.infoleyes.com/norma/4373/ley-de-otorgaci%C3%B3n-de-personalidades-jur%C3%ADdicas-351",
+  "finding": "Ley 351/2013 and DS 1597/2013 remain the framework for NGOs, foundations and civil non-profits operating in more than one department, processed by the Viceministerio de Autonomías under the Ministerio de la Presidencia, while single-department entities go to departmental governments (e.g., Tarija Ley Departamental 482/2024). No repeal or amendment was found."
+ },
+ {
+  "id": "R202-9",
+  "country": "Guyana",
+  "verdict": "unverifiable",
+  "cell_edits": {},
+  "source": "https://dcra.gov.gy/wp-content/uploads/2017/11/Companies-Act-cap8901.pdf; https://www.expanship.com/gy/blog/types-of-companies-in-guyana",
+  "finding": "Guyana's Companies Act Cap. 89:01 still provides for incorporation with a registered office in Guyana and an attorney's statutory declaration, but no official source was found for non-profit incorporation fees or for a director-residency rule. Cited acts (Friendly Societies Act Cap. 36:04, Co-operative Societies Act Cap. 88:01) appear current; cost and residency claims could not be confirmed."
+ },
+ {
+  "id": "R202-10",
+  "country": "Suriname",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Stichting — foundation under Book 2 of the new Burgerlijk Wetboek (S.B. 2024 no. 164, in force 1 May 2025, replacing the Stichtingenwet 1968); also vereniging (association) and coöperatie.",
+   "Est. cost & time": "Official fees unpublished (as of 2026); registration in the KKF Handelsregister (new Handelsregisterwet in force 1 May 2025). KKF excerpt SRD 300. Notary ~US$200–500, total ~US$500–1,500; 1–3 months (unofficial estimates).",
+   "Key local requirements": "Surinamese notary (deeds in Dutch), local board/office in practice; new Civil Code Book 2 (in force 1 May 2025) also allows a government model deed with KKF-legalized signatures, though none issued yet; Dutch language barrier."
+  },
+  "source": "https://www.curacao-law.com/wp-content/uploads/2026/07/Frielink-Nieuw-Boek-2-BW-Suriname-MvO-april-2026.pdf; https://www.dna.sr/media/avzdei43/s-b-_2024_no-_164__boek_2.pdf; https://sris.sr/wp-content/uploads/2025/01/S.B.-2024-no.-165-Overgangswet-aanpassingswetgeving-nieuw-Burgerlijk-Wetboek.pdf",
+  "finding": "Suriname's new Burgerlijk Wetboek (S.B. 2024 no. 164) entered into force on 1 May 2025 together with a new Handelsregisterwet, and Book 2 now governs the stichting in place of the 1968 Wet op Stichtingen; there was no 2013 Civil Code. Book 2 allows formation by notarial deed or by a government model deed with KKF-legalized signatures, but as of April 2026 no model deeds had been issued."
+ },
+ {
+  "id": "R202-11",
+  "country": "Brazil",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Key local requirements": "Association: founding minutes + lawyer-signed statutes registered at the RCPJ cartório (no notarial deed needed); foundation: escritura pública or will (CC art. 62) + Ministério Público statute approval; CNPJ and local address; foreign founder may join the board; Portuguese filings."
+  },
+  "source": "https://www.ufmg.br/proex/cpinfo/saberesplurais/wp-content/uploads/2015/09/9-Documentação-Necessária-Registro-Associação-Estatuto.pdf; https://modeloinicial.com.br/lei/CC/fundacoes-@_GERAL_I_II_III; https://www.planalto.gov.br/ccivil_03/leis/l9790.htm",
+  "finding": "Under Código Civil art. 45 an association acquires personality on registering its founding minutes and lawyer-endorsed statutes (Lei 8.906/94 art. 1 §2) at the Registro Civil de Pessoas Jurídicas; no notarial deed is required. Foundations, by contrast, require an escritura pública or will (CC art. 62) and Ministério Público approval of the statutes (arts. 65-67) before RCPJ registration."
+ },
+ {
+  "id": "R202-12",
+  "country": "Paraguay",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://impuestospy.com/impuestos/decreto-n-4806-2025/; https://eusee.hivos.org/?p=3518; https://www.icnl.org/post/news/paraguay-non-profit-checklist",
+  "finding": "Decreto 4806/2025 (23 Oct 2025) regulates Ley 7363/2024 on control, transparency and accountability of non-profits, with the MEF running the mandatory registry (SIARA) and semi-annual reporting. The Gs 541,000 fee could not be confirmed against an official tariff but no source contradicts it."
+ }
+]

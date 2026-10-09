@@ -1,0 +1,100 @@
+[
+ {
+  "id": "R209-1",
+  "country": "Djibouti",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://2021-2025.state.gov/reports/2021-report-on-international-religious-freedom/djibouti/; https://www.eci.net/world/ngos/journals/202105-djibouti.html",
+  "finding": "US State Dept 2021 report confirms registration of foreign organizations sits with the Ministry of Interior, with extensive background checks and restrictions on foreign groups. The claimed local-base and approval bottleneck is consistent with the sources consulted; no material inaccuracy found."
+ },
+ {
+  "id": "R209-2",
+  "country": "Somalia",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "NGOs registered with the Ministry of Interior, Federal Affairs and Reconciliation (federal, Mogadishu); 2019 federal NGO Bill (cabinet-passed Dec 2019) still not enacted as of 2026; international NGOs; domestic associations under regional law (Puntland Law 3/2016, Somaliland Law 43/2010)"
+  },
+  "source": "https://www.icnl.org/resources/civic-freedom-monitor/somalia",
+  "finding": "ICNL Civic Freedom Monitor (2026) shows NGO registration in Somalia is handled by the Ministry of Interior, Federal Affairs and Reconciliation, not the Ministry of Planning, Investment and Economic Development. The 2019 federal NGO Bill, passed by cabinet in December 2019, remains unenacted as of 2026."
+ },
+ {
+  "id": "R209-3",
+  "country": "Somaliland",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.icnl.org/resources/civic-freedom-monitor/somalia",
+  "finding": "ICNL confirms Somaliland's NGO Law No. 43/2010 is in force, with registration overseen by the Ministry of Planning and National Development at a fee of US$110 initial and US$60 renewal. No material inaccuracy found in the claim set."
+ },
+ {
+  "id": "R209-4",
+  "country": "South Sudan",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://docs.southsudanngoforum.org/index.php/coordination/faqs/how-register-ngo-south-sudan; https://www.radiotamazuj.org/en/news/article/south-sudan-government-exempts-aid-agencies-from-registration-fees",
+  "finding": "The NGO Forum coordination FAQ confirms the NGO Act 2016 and the RRC as the registration body. Radio Tamazuj confirms the 2018 waiver that cut renewal fees to US$200 (national NGOs) and US$1,000 (international NGOs) from US$500/US$3,500, matching the claimed fee structure."
+ },
+ {
+  "id": "R209-5",
+  "country": "Nepal",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.swc.org.np/pages/436; https://lawalpine.com/blog/ngo-registration-in-nepal; https://nepallaws.com",
+  "finding": "The SWC's official page confirms Social Welfare Council affiliation under the Social Welfare Act 2049 for INGOs. A September 2026 review confirms the Association Registration Act 2034 remains the governing law for domestic NGOs (the 7-founder minimum is commonly cited but not a settled universal requirement) and trusts sit in the National Civil Code 2074."
+ },
+ {
+  "id": "R209-6",
+  "country": "Maldives",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.ctlstrategies.com/latest/associations-act/",
+  "finding": "Associations Act No. 3/2022, which replaced Act No. 1/2003, took effect on 9 November 2022 with a 30-day registrar decision window. Foreign associations must fill the top two executive positions and the financial officer role with Maldivian nationals, as claimed."
+ },
+ {
+  "id": "R209-7",
+  "country": "Nigeria",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://nnngo.org/wp-content/uploads/2024/03/2018-Updated-Compliance-Manual-for-NGOs-1.pdf",
+  "finding": "The 2018 updated compliance manual for NGOs confirms CAC registration of incorporated trustees under the Companies and Allied Matters Act and states explicitly that SCUML registration is free. The NPC requirement for INGOs is consistent with the manual's compliance chapters."
+ },
+ {
+  "id": "R209-8",
+  "country": "Côte d'Ivoire",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://droit-et-politique-en-afrique.info/wp-content/uploads/2024/07/ORDONNANCE-n%C2%B0-2024-368-du-12-juin-2024-relative-a-lOrganisation-de-la-societe-civile.pdf",
+  "finding": "The official Journal Officiel text of Ordonnance n° 2024-368 du 12 juin 2024 confirms the declaration regime, filing at the Ministry of Territorial Administration/prefecture, a 2-month stand-down before activity, and the Foreign Affairs minister's opinion for multinational organizations. All claimed mechanics match the ordinance."
+ },
+ {
+  "id": "R209-9",
+  "country": "Benin",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://sgg.gouv.bj/doc/loi-2025-19/; https://beninwebtv.bj/en/benin-the-register-of-associations-and-foundations-takes-effect-on-december-19/",
+  "finding": "Benin's official government gazette confirms Law No. 2025-19 du 22 juillet 2025 relative aux associations et aux fondations, replacing the 2001 law. The new register took effect 19 December 2025 with online declaration via the national single portal."
+ },
+ {
+  "id": "R209-10",
+  "country": "Togo",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://fr.apanews.net/news/togo-nouvelles-regles-pour-les-ong-etrangeres/; https://www.togofirst.com/fr/associations-organisations/0810-8648-comment-declarer-une-association-etrangere-au-togo",
+  "finding": "Décret 2022-002/PR (5 January 2022) and the 7 October 2024 circular are confirmed, with recognition now required before foreign associations can sign partnership agreements. The guichet guide lists a declaration fee of 150,000 FCFA plus a 500 FCFA stamp and processing of 31-61 days, matching the claimed figures."
+ },
+ {
+  "id": "R209-11",
+  "country": "Mali",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.icnl.org/research/library/mali_malien2011/",
+  "finding": "ICNL confirms Loi n° 04-038/AN-RM du 5 août 2004 governs associations with a declaration regime, foreign associations require prior authorization from the Ministry of Local Government, and an accord-cadre (Arts. 37-40) is needed for tax benefits. The claim set is consistent with the law as documented."
+ },
+ {
+  "id": "R209-12",
+  "country": "Guinea",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://matd.gov.gn/dnarproma-ouverture-des-ateliers-regionaux-sur-lactualisation-de-la-loi-013-05-a-kindia-et-kankan/; https://guineenews.org/2024-09-02/guinee-le-gouvernement-suspend-la-delivrance-des-agrements-aux-ongs-et-mouvements-associatifs-decision/",
+  "finding": "MATD's official site confirms loi 013/05 remains the law governing the association regime, with regional modernization workshops running in late 2025. The September 2024 suspension of agréments by MATD for four months, conditional on DNARPROMA evaluation, is confirmed."
+ }
+]

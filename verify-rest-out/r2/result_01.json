@@ -1,0 +1,132 @@
+[
+ {
+  "id": "R201-1",
+  "country": "Jamaica",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Company limited by guarantee (Companies Act 2004, Form 1B, Companies Office of Jamaica); charitable status via registration as a charitable organisation under the Charities Act 2013 with the DCFS (Charities Authority).",
+   "Est. cost & time": "Incorporation ~J$27,500 (~USD 175) + optional name search J$500 / reservation J$3,000; ~1-2 weeks; a local registered office and agent are required, adding ~USD 1,000-2,000 agent fees.",
+   "Registration fee (USD)": "~$175 (J$27,500 Companies Office filing; agent fees separate)"
+  },
+  "source": "https://jis.gov.jm/charities-must-register-benefit-tax-exemptions/; https://jamaicaobserver.com/2024/05/01/minding-business-start-company; https://bjdc.mfaft.gov.jm/pdf/COMP_OF_JAM.pdf",
+  "finding": "Under the Charities Act 2013 the Department of Co-operatives and Friendly Societies (DCFS) is the Charities Authority with which organisations register to obtain charitable status, separate from Companies Office incorporation. COJ material lists Form 1B at J$24,500 and a 2024 Observer guide gives a J$27,500 incorporation fee, plus optional J$500 name search / J$3,000 reservation; the row's J$25,000 vs J$27,000 figures were inconsistent."
+ },
+ {
+  "id": "R201-2",
+  "country": "Bahamas",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Company limited by guarantee (Companies Act, Chapter 308 (1992, as am.)) incorporated at the Registrar General's Department; must also register as an NPO under the Non-Profit Organisations Act 2019 (no income tax, so no deduction status).",
+   "Key local requirements": "Bahamas registered office and licensed registered agent; NPO Act 2019 registration (controller ID, board structure, KYC); no residency requirement for directors; English."
+  },
+  "source": "https://webiis10.mondaq.com/financial-services/980182/the-non-profit-organisations-act-2019-act-no-25-of-2019-the-non-profit-organisations-amendment-act-2019-act-no-28-of-2019-the-npo-act; https://thenassauguardian.com/non-profits-have-two-week-grace-period-before-facing-hefty-fines/",
+  "finding": "The Bahamas Non-Profit Organisations Act 2019 (Act No. 25 of 2019, amended by Act No. 28 of 2019) bars any NPO, incorporated or not, from operating unless registered with the Registrar of NPOs, with disclosure of controllers, board and KYC procedures. The Bahamas levies no income tax, so the row's reference to applying to IRD for charitable deduction status was inconsistent; official incorporation fees for guarantee companies were not found online."
+ },
+ {
+  "id": "R201-3",
+  "country": "Barbados",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Non-profit company (Companies Act, Cap. 308, Part III; Minister's prior approval of articles, min. 3 directors; CAIPO); charity registration under the Charities Act, Cap. 243 (Registrar of Charities, CAIPO); foreign entities register as external companies.",
+   "Est. cost & time": "Non-profit company filing BDS 150 + name reservation BDS 30 (~USD 90); charity registration nil fee; 2-4 weeks at CAIPO plus ministerial approval; a local registered office is required - all-in with agent ~USD 2,500-3,000 first year.",
+   "Registration fee (USD)": "~$90 (gov, BDS 180 incl. name); agent/attorney fees extra",
+   "Main bottleneck (remote foreign founder)": "Ministerial approval of non-profit articles and local registered office/agent required; separate Charities Act registration needed for charitable status."
+  },
+  "source": "https://caipo.gov.bb/corporate-affairs/incorporation-non-profit/; https://caipo.gov.bb/fees/; https://caipo.gov.bb/corporate-affairs/registration-charity/; https://caipo.gov.bb/wp-content/uploads/2021/09/11.-CharitiesCAP243.pdf",
+  "finding": "CAIPO (Business Barbados) incorporates non-profit companies on Form 2 for BDS 150 (plus BDS 30 name reservation), with articles pre-approved by the Minister under s.314(1) and at least three directors. Barbados does have a charity regulator: the Registrar of Charities at CAIPO registers charities under the Charities Act, Cap. 243, with a nil filing fee, contradicting the row's 'no dedicated charity regulator' claim."
+ },
+ {
+  "id": "R201-4",
+  "country": "Trinidad & Tobago",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Non-profit company (Companies Act Chap. 81:01, Companies Registry); NPO registration under the Non-Profit Organisations Act 2019 (Act No. 7 of 2019); charitable/tax-exempt status by Ministry of Finance approval under the Income Tax Act Chap. 75:01."
+  },
+  "source": "https://ttconnect.gov.tt/?p=558; https://fiu.gov.tt/wp-content/uploads/Non-Profit-Organisations-Act-2019.pdf; https://www.finance.gov.tt/services/licenses/application-for-charitable-status/",
+  "finding": "The T&T government portal lists incorporation of a 'Profit or Non-Profit Company' under the Companies Act Chap. 81:01 and, separately, NPO registration under the NPO Act 2019, so the charitable vehicle is the statutory non-profit company rather than a company limited by guarantee. Official non-profit incorporation fees were not found online; the TT$520-560 figure is unconfirmed."
+ },
+ {
+  "id": "R201-5",
+  "country": "Antigua & Barbuda",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Non-profit company (Companies Act 1995 (Act 18/1995), ABIPCO); domestic company; no separate charity registry - charitable purpose stated in the objects; IBCs only via a licensed agent."
+  },
+  "source": "https://abipco.gov.ag/companies/; https://bizlatinhub.com/how-to-form-a-company-in-antigua-barbuda",
+  "finding": "Antigua's Companies Act 1995 (amended most recently in 2025) provides a distinct non-profit company category for patriotic, religious, philanthropic, charitable, educational and similar objects, registered at ABIPCO, which is the charitable vehicle rather than a company limited by guarantee. No separate NPO/charity statute or official non-profit fee schedule was found."
+ },
+ {
+  "id": "R201-6",
+  "country": "Grenada",
+  "verdict": "unverifiable",
+  "cell_edits": {},
+  "source": "https://www.gfrc.cc/fees-help-support/; https://nowgrenada.com/2023/03/incorporating-new-business-reduced-to-ec600/; https://www.gfrc.cc/learn-about-charitable-associations/",
+  "finding": "No official Grenada fee schedule for non-profit or guarantee company incorporation could be retrieved; a 2023 report says the company incorporation fee was cut to EC$600, consistent with the row's ~US$222 figure but not with its ~$100-200 fee cell. The cited gfrc.cc site also offers incorporation of charitable association committees (Charitable Associations (Incorporation) Act Cap. 140) as an alternative route, but its fee amounts could not be confirmed."
+ },
+ {
+  "id": "R201-7",
+  "country": "St. Kitts & Nevis",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://vlex.com/vid/st-kitts-international-financial-centre-29350567; https://exploreskn.co/downloads/business/ProcedureforIncorporatingaCompany-1.pdf",
+  "finding": "The St Kitts Companies Act 1996 (Cap. 21.03) replaced the old domestic and IBC statutes and permits companies limited by shares, by guarantee, or both, so a company limited by guarantee is available. The EC$270 ordinary-company fee comes from the government procedure document; no contrary official figure was found."
+ },
+ {
+  "id": "R201-8",
+  "country": "St. Lucia",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Non-profit company (Companies Act, Chapter 13.01 (1996), Part III; Attorney General's prior approval; Commercial Registry Agency); charitable status via Inland Revenue. (IBCs exist under the International Business Companies Act Cap. 12.14, but are not a charity vehicle.)",
+   "Est. cost & time": "Non-profit certificate of incorporation EC$150 (~US$55) + name reservation EC$25; AG approval adds time; a local registered office and licensed agent are required - all-in with agent ~USD 1,500-2,500 first year.",
+   "Registration fee (USD)": "~$55 (gov, EC$150 non-profit); ~$1,500-2,500 all-in w/ local agent",
+   "Main bottleneck (remote foreign founder)": "Attorney General's prior approval of non-profit articles; registered office/agent required and a local attorney must make the statutory declaration"
+  },
+  "source": "https://www.attorneygeneralchambers.com/laws-of-saint-lucia/companies-act/part-9-fees; https://www.attorneygeneralchambers.com/laws-of-saint-lucia/companies-act/section-328; https://www.govt.lc/media.govt.lc/www/resources/forms/CompanyArticlesNonProfit.pdf",
+  "finding": "Saint Lucia's Companies Regulations (Part 9 fees) set the certificate of incorporation at EC$150 for a non-profit company versus EC$750 for a profit company, with EC$25 for name search/reservation. Section 328 of the Companies Act bars filing non-profit articles without the Attorney General's prior approval."
+ },
+ {
+  "id": "R201-9",
+  "country": "St. Vincent & Grenadines",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Domestic non-profit company (Companies Act No. 8 of 1994, CIPO; Attorney General's written approval under s.328(1), min. 3 directors); business companies only via a licensed VFA agent; charitable status via Inland Revenue.",
+   "Est. cost & time": "Non-profit fees are 20% of profit-company fees (incorporation ~EC$190, ~US$70; name reservation EC$5); ~2-5 days after AG approval; a local registered office and agent are mandatory - agent fees add ~USD 1,500-2,000/year.",
+   "Registration fee (USD)": "~$70 (gov, EC$190 non-profit); ~$1,500+ all-in w/ agent",
+   "Main bottleneck (remote foreign founder)": "Attorney General approval of non-profit articles; local registered office/agent and attorney's statutory declaration required to file with CIPO"
+  },
+  "source": "https://cipo.gov.vc/images/pdf/brochures/non-profit.pdf; https://cipo.gov.vc/images/pdf/brochures/companies_formalities_forms_fees.pdf",
+  "finding": "CIPO's non-profit company guide requires written Attorney General approval under s.328(1) of the Companies Act and at least three directors, and states that all non-profit company fees are 20% of profit-company fees. Against the EC$950 profit incorporation fee this gives about EC$190, so the row's EC$950 figure applied to the wrong company type."
+ },
+ {
+  "id": "R201-10",
+  "country": "Dominica",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Non-profit company (Companies Act, Act No. 10 of 1995 (CIPO); Minister's prior approval); IBC registration prohibited since 1 Jan 2022; charitable status via Inland Revenue.",
+   "Est. cost & time": "Non-profit incorporation fee EC$150 (~US$55) + name reservation EC$25 at CIPO; Minister's prior approval adds time; annual government fee ~US$550; a local registered office and licensed agent are required - agent fees ~USD 1,500-2,500/year.",
+   "Registration fee (USD)": "~$55 (gov, EC$150 non-profit)",
+   "Main bottleneck (remote foreign founder)": "Minister's prior approval for non-profit company; local registered office/agent needed; filings in person or via agent in English"
+  },
+  "source": "https://cipo.gov.dm/businesses-and-companies/companies; https://cipo.gov.dm/fees/companies",
+  "finding": "Dominica's CIPO fee schedule sets the certificate of incorporation at EC$150 for a non-profit company (EC$750 for an ordinary company) and EC$25 for name reservation. CIPO states that non-profit companies (no share capital, no dividends) require the Minister's prior approval before incorporation."
+ },
+ {
+  "id": "R201-11",
+  "country": "Haiti",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://cliohaiti.net/media/documents/decret-du-14-septembre-1989-modifiant-la-loi-du-13-decembre-1982-regissant-les-ong.pdf; https://mpce.gouv.ht/registre-des-ong_/",
+  "finding": "The decree of 14 September 1989 (amending the law of 13 December 1982) remains the governing NGO framework, with recognition as an 'ONG d'aide au développement' processed by the MPCE's UCAONG and inscribed in its register. No official fee or processing time is published, and a revision of the CSO legal framework has been announced by the MPCE but not enacted."
+ },
+ {
+  "id": "R201-12",
+  "country": "Guatemala",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Registration fee (USD)": "~$20 (REPEJU arancel Q150); notary/attorney extra",
+   "Key local requirements": "Notarized Spanish deed (escritura pública), Guatemalan seat (utility bill), local bank account in the entity's name, REPEJU registration; foreign founders permitted."
+  },
+  "source": "https://mingob.gob.gt/mingobsites/repeju/wp-content/uploads/sites/2/2024/05/Requisitos-de-inscripcion-de-Organizaciones-no-Gubernamentales-ONG.pdf; https://www.deloitte.com/content/dam/Deloitte/gt/Documents/tax/notas-fiscales/280220%20-Tax%20Alert%2003.pdf; https://www.icnl.org/wp-content/uploads/ListasVerificacion_Guatemala.pdf",
+  "finding": "MINGOB's REPEJU checklist sets the NGO registration arancel at Q150 and requires a public deed, a utility bill proving the Guatemalan seat, and a bank account in the NGO's name; registration is at REPEJU, not the Registro Mercantil. Under Decreto 4-2020 foreign-constituted entities must also register with the Ministry of Foreign Affairs, and donations must be reported to MINEX within 30 days."
+ }
+]

@@ -1,0 +1,128 @@
+[
+ {
+  "id": "R204-1",
+  "country": "Vanuatu",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Charitable association (committee incorporated under the Charitable Associations (Incorporation) Act [Cap 140]) or community company under the Companies Act 2012, both registered with the Vanuatu Financial Services Commission; the 2012 Act has no company-limited-by-guarantee form.",
+   "Est. cost & time": "Company registration fee VT35,000 (~USD 300) via the VFSC online registry; processing a few days to weeks; the Companies Act 2012 sets no resident-director rule, but a registered office and postal address in Vanuatu are mandatory.",
+   "Key local requirements": "Registered office and postal address in Vanuatu required (Companies Act 2012 s17); no statutory resident-director requirement; community-company shareholders must be members of the community served",
+   "Main bottleneck (remote foreign founder)": "Mandatory Vanuatu registered office and postal address (s17), usually via a local agent; community-company shareholders must belong to the community, so local participants are needed."
+  },
+  "source": "https://www.vfsc.vu/companies-fees-and-penalties/; https://tradeportal.gov.vu/media/Companies-Act-2012-Official-Gazetted-Version.pdf; https://www.vfsc.vu/wp-content/uploads/2015/08/140-Charitable-Associations-Incorporation-Act.pdf",
+  "finding": "The VFSC fee schedule confirms a VT35,000 fee to register a company under s6 of the Companies Act 2012. The gazetted Act provides private, public and community companies (Part 12) but no company limited by guarantee, s82 sets director qualifications with no residency rule, and s17 requires a registered office and postal address in Vanuatu. Charitable bodies can also incorporate under the Charitable Associations (Incorporation) Act [Cap 140], administered by the VFSC."
+ },
+ {
+  "id": "R204-2",
+  "country": "Solomon Islands",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Charitable trust board incorporated under the Charitable Trusts Act (Cap 55) by the Registrar of Companies (Company Haus); community company under the Companies Act 2009 (no limited-by-guarantee form).",
+   "Est. cost & time": "No fee to incorporate a charitable trust board or register a community company at Company Haus; a local private company costs SBD 1,250 (published schedule), paid at the Treasury counter; trust incorporation is described as quite fast.",
+   "Registration fee (USD)": "none (charitable trust/community company); ~$150 (SBD 1,250) local company"
+  },
+  "source": "https://www.solomonbusinessregistry.gov.sb/companies/how-to-register-a-company/what-are-community-companies/additional-important-information/; https://www.solomonbusinessregistry.gov.sb/wp-content/uploads/2016/11/Schedule-of-fees-and-penalties-for-the-Company-Haus-and-InvestSolomons.pdf; https://pacliirms.austlii.edu.au/sb/legis/consol_act/cta201",
+  "finding": "The Solomon Islands Business Registry states there is no fee to set up a charitable trust and that it is quite fast, and that community companies register free at Company Haus. Charitable trust boards are incorporated by the Registrar of Companies under the Charitable Trusts Act (Cap 55), and the Companies Act 2009 provides private, public and community companies rather than guarantee companies. The published Company Haus schedule lists SBD 1,250 for a local company; the resident-secretary claim could not be confirmed or refuted from official text."
+ },
+ {
+  "id": "R204-3",
+  "country": "Kiribati",
+  "verdict": "unverifiable",
+  "cell_edits": {},
+  "source": "https://pacificpsdi.org/news-and-insights/news/read/new-psdi-supported-laws-make-it-easier-to-start-operate-and-grow-businesses-in-kiribati; https://pacliirms.austlii.edu.au/ki/legis/num_act/isa2002242.pdf",
+  "finding": "PSDI confirms Kiribati's Companies Act passed in May 2021, replacing the Companies Ordinance 1979, allowing single-director companies and removing the company-secretary and accounts-filing requirements. The Act text (NATLEX) was not retrievable, so the resident-director, Foreign Investment Certificate and fee claims could not be checked against official text. Non-profit groups of 15+ persons can alternatively incorporate under the Incorporated Societies Act 2002."
+ },
+ {
+  "id": "R204-4",
+  "country": "Tuvalu",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "Company registration fee $100 (AUD/TVD) paid at the Government Cashier under the Companies Act 2008, plus a Kaupule operating licence; non-citizens/foreign-based applicants must first contact business@gov.tv; a few weeks.",
+   "Main bottleneck (remote foreign founder)": "Non-citizen/foreign-based registrations handled case by case via the Ministry of Finance (business@gov.tv); no NGO/charity incorporation statute, so a company plus Kaupule licence is the main local vehicle"
+  },
+  "source": "https://finance.gov.tv/business/; https://www.icnl.org/resources/research/ijnl/consultations-toward-legal-reform-in-tuvalu",
+  "finding": "The Ministry of Finance business page sets a $100 company registration fee under the Companies Act 2008, payable at the Government Cashier, followed by a Kaupule operating licence, and directs non-citizens or businesses based outside Tuvalu to contact business@gov.tv. It does not state that registration is reserved to citizens, so the 'practically barred'/'effectively restricted' wording contradicts the official page. ICNL notes Tuvalu has historically lacked a legal-personality route for charitable bodies."
+ },
+ {
+  "id": "R204-5",
+  "country": "Micronesia",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Non-profit corporation under FSM Code Title 36 ch. 7 (P.L. 23-130, Nov 2024), registered with the FSM Registrar of Corporations (DOJ, Palikir); state-level corporations/registration for local business.",
+   "Est. cost & time": "Filing fees set under the P.L. 23-130 fee structure, amounts not published online; a few weeks; foreign founders may incorporate without local presence, with a registered agent in Pohnpei serving filings.",
+   "Registration fee (USD)": "unpublished (P.L. 23-130 fee schedule)",
+   "Main bottleneck (remote foreign founder)": "New national non-profit corporation regime (P.L. 23-130, 2024) with fees and implementing rules not yet published online; local registered agent needed in practice; annual reports to the Registrar"
+  },
+  "source": "https://habeleinstitute.org/wiki/Zotero_reference:L6T4AK7A; https://www.cfsm.gov.fm/?p=16379; https://fsmlaw.org/fsm/code/title36/T36_Ch01_2014.html",
+  "finding": "FSM Public Law 23-130 (Congressional Act 23-135, signed November 2024) added a new Chapter 7 to Title 36 establishing incorporation requirements, a filing-fee structure, record-keeping and annual reporting to the Registrar of Corporations for non-profit corporations. This supersedes the row's claim that there is no charitable/non-profit register. The fee amounts were not available online."
+ },
+ {
+  "id": "R204-6",
+  "country": "Turkey",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Main charitable entity types": "Foundation (vakif) under the Foundations Law No. 5737 (2008), requiring legal and factual reciprocity for foreigners; association (dernek) under the Associations Law No. 5253 (2004), registered with the provincial governor.",
+   "Est. cost & time": "Vakif needs a minimum endowment of TRY 5,000,000 (~USD 115k) for 2026 (Foundations Council decision 819/790), registered by the civil court; a few weeks to months; a dernek costs little but foreign founders need Turkish residence."
+  },
+  "source": "https://www.vgm.gov.tr/foundations-in-turkiye/foundations-in-turkiye/how-foreigners-establish-foundation-in-turkiye; https://www.ffkpartnerhukuk.com.tr/turkiyede-vakif-kurmak-isteyen-yabancilar-icin-hukuki-rehber-2026-guncel-rehber/; https://www.tahanci.av.tr/vakif-nedir-nasil-kurulur/",
+  "finding": "Turkey's Foundations Law is No. 5737 of 2008, not 5736; the VGM confirms foreigners may found foundations subject to legal and actual reciprocity and that most management-body members must reside in Turkey. Turkish law firms report the Foundations Council (decision 819/790 of 22.12.2025) set the 2026 minimum founding endowment at TRY 5,000,000, deposited in a Turkish bank before court registration. Under Associations Law 5253, foreign natural persons need a right to reside in Turkey to found a dernek."
+ },
+ {
+  "id": "R204-7",
+  "country": "Armenia",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "State duty 10,000 AMD (~US$25) for a public organization or foundation; ~10–15 business days"
+  },
+  "source": "https://armenian-lawyer.com/business-immigration/register-nonprofit-organization-armenia/; https://www.e-register.am/en/docs/213",
+  "finding": "Armenian legal guidance states the state registration duty is 10,000 AMD (~USD 25) for both public organizations and foundations under the Law on State Duty, matching the fee column but contradicting the ~600 AMD figure in the cost cell. Registration is by the State Register Agency of Legal Entities (Ministry of Justice); public organizations need at least two founders and foundations one."
+ },
+ {
+  "id": "R204-8",
+  "country": "Kazakhstan",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.icnl.org/resources/civic-freedom-monitor/kazakhstan; https://finratings.kz/news/10442-skolko-mrp-v-2026-godu-v-kazakhstane-novyi-raschet-nalogov-shtrafov-i-posobii/",
+  "finding": "The 2026 MCI is KZT 4,325, so a 6.5 MCI state fee is about KZT 28,100 (~USD 55), consistent with the row. Secondary sources indicate public-association founders must be Kazakh citizens, while foreign natural persons may found other NPO forms such as foundations; the exact 6.5 MCI rate under the new 2026 Tax Code was not confirmed from the code text."
+ },
+ {
+  "id": "R204-9",
+  "country": "Uzbekistan",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "State fee 1 BCV (regional NNO) to 3 BCV (republican), territorial NNOs 50% since 2021; Ministry of Justice review within one month by law, often extended by 'expert evaluation'.",
+   "Registration fee (USD)": "~$15-110 (0.5-3 BCV)",
+   "Time to register": "1-3 months (one-month legal term, often extended)"
+  },
+  "source": "https://www.icnl.org/resources/civic-freedom-monitor/uzbekistan; https://www.uzbekembassy.in/?p=27650",
+  "finding": "ICNL reports NNOs register with the Ministry of Justice (also via e-ngo.uz) under the 1999 NNO Law, with a one-month legal review period that is often extended by referral for 'expert evaluation', not a ~5-day one-stop window. From 2020 the state fee is 3 BCV for republican and 1 BCV for regional NNOs, with territorial NNOs paying 50% since March 2021. ICNL also notes public associations are for citizens, while public funds may be founded by natural and/or legal persons; August 2025 amendments added foreign-funding reporting duties."
+ },
+ {
+  "id": "R204-10",
+  "country": "Turkmenistan",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://www.icnl.org/resources/civic-freedom-monitor/turkmenistan; https://civicspacebarometer.org/profile/turkmenistan/",
+  "finding": "ICNL confirms the Law on Public Associations of 3 May 2014, registration by the Ministry of Adalat (Justice), and fees of about USD 86/143/571 for local/national/international associations, with a 25-day decision deadline. February 2017 amendments limit founders to Turkmen citizens and bar foreigners and stateless persons, supporting the 'no' answer; ICNL's report is archived as of 2018."
+ },
+ {
+  "id": "R204-11",
+  "country": "Tajikistan",
+  "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "State fee 10 calculation units (~USD 80) for a local PA, 20 (~USD 160) republican, 200 (~USD 1,600) international since late 2025; Ministry of Justice processing is bureaucratic and its timeline unpublished.",
+   "Registration fee (USD)": "~$80 (10 calc. units, local PA)",
+   "Key local requirements": "Foreign citizens may be PA founders only with a valid residence permit/legal domicile in Tajikistan; in-person MoJ registration in Dushanbe with Tajik/Russian documents, a local legal address and notarized/apostilled paperwork."
+  },
+  "source": "https://www.icnl.org/resources/civic-freedom-monitor/tajikistan",
+  "finding": "ICNL reports Tajik public associations register with the Ministry of Justice under the 2003 Law on Public Associations (amended 2022), with fees raised in late 2025 to 10/20/200 calculation units (78 somoni each) for local/republican/international PAs. Foreigners and stateless persons may be founders only with a valid residence permit or legal domicile, and PAs must notify the MoJ of any foreign grant within 10 days. Foundations register with the Tax Committee, which rarely does so in practice."
+ },
+ {
+  "id": "R204-12",
+  "country": "Central African Republic",
+  "verdict": "confirmed",
+  "cell_edits": {},
+  "source": "https://leap.unep.org/en/countries/cf/national-legislation/loi-regissant-les-organisations-non-gouvernementales-ong-en; https://institut.ifjd.org/wp-content/uploads/2025/09/25.09.09_GK_Brochure_4.1_Cadre-legal_SQ.pdf",
+  "finding": "The FAOLEX/LEAP text is the CAR law governing national and international ONGs (Loi n°19.002 of 16 January 2019), supplemented by implementing Décret n°24.098 of 23 April 2024; it defines an international ONG as one created abroad and approved (agréée) in CAR. Agrément and collaboration agreements are issued by the planning/cooperation ministry (MEPCI) with Interior recognition, consistent with the row; fees and time limits are not published."
+ }
+]

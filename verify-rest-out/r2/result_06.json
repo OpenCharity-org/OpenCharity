@@ -1,0 +1,59 @@
+[
+ {"id": "R206-1", "country": "Botswana", "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "USD ~18-37 (society, P250-500) to ~190 (CLG, P4,600); no official processing time (unpublished), plan 4-8 weeks; foreigners may register but 2/3 of society office-bearers must reside in Botswana",
+   "Registration fee (USD)": "~$18-37 (BWP 250-500 society fee)"},
+  "source": "https://www.gov.bw/labour-administration/societies-registration; https://botswanalaws.com/consolidated-statutes/principle-legislation/societies-act; https://www.dlapiperafrica.com/en/botswana/insights/2023/new-societies-act-2022-of-botswana.html",
+  "finding": "The Government of Botswana societies-registration service page sets a non-refundable fee of BWP 500 for associations and churches and BWP 250 for all other societies (20+ members), not P500-1,500. The consolidated Societies Act keeps the rule that two-thirds of office bearers must reside in Botswana, now also requiring them to hold critical day-to-day roles (Act 5 of 2025), with security clearance under the 2022 regulations."},
+ {"id": "R206-2", "country": "Namibia", "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "BIPA statutory fees ~N$150-225 (~USD 10-15: name reservation N$50-75 + CM4 N$100-150) plus Namibian notary for MOI; local office + registered agent required, no local-director rule, foreigners OK; 2-4 weeks to incorporate",
+   "Registration fee (USD)": "~$10-15"},
+  "source": "https://www.bipa.na/business-registration/application-fees/; https://globallawexperts.com/section-21-company-namibia/",
+  "finding": "BIPA's published fee schedule lists N$50-75 for name reservation (CM5) and N$100-150 for registering the memorandum and articles of a company without share capital (CM4), i.e. about N$150-225 total rather than N$500-1,000. Section 21 companies register with BIPA and seek welfare-organisation status separately from NamRA; a draft Corporate Laws Bill 2025 would replace the Companies Act 2004 but is not yet in force."},
+ {"id": "R206-3", "country": "Zimbabwe", "verdict": "confirmed", "cell_edits": {},
+  "source": "https://eusee.hivos.org/alert/zimbabwe-gazettes-new-registration-fees-for-private-voluntary-organisations/; https://www.icnl.org/post/tools/practical-guide-to-zimbabwes-pvo-act-2025-amendments",
+  "finding": "Statutory Instrument 82 of 2025 (gazetted 29 Aug 2025) set PVO registration fees at US$250 for international and US$150 for local organisations, matching the current cells. The PVO Act [Ch 17:05] as amended in 2025 remains the governing law, and SI 97/98 of 2026 further adjusted the regulations (e.g. minimum executive committee cut from seven to five)."},
+ {"id": "R206-4", "country": "Eswatini", "verdict": "corrected",
+  "cell_edits": {
+   "Key local requirements": "Local office; registration with the Registrar of Companies (s17 Companies Act 2009) plus NGO unit registration to receive foreign funds; English filings."},
+  "source": "https://www.icj.org/wp-content/uploads/2025/02/ANALYSIS-OF-THE-NGO-BILL-Prepared-for-CANGO.pdf; https://www.gov.sz/index.php/services-sp-310196855/60-business/business/377-company-registration",
+  "finding": "The September 2024 analysis of the Non-Profit Organisations Bill for CANGO states that non-profits are currently registered under section 17 of the Companies Act 8 of 2009 with the Registrar of Companies, so the reference to a Registrar of Societies was inconsistent with the row's own entity-type cell. No source found confirms the 2024 NPO Bill has been enacted; fees for associations not for gain are not published online."},
+ {"id": "R206-5", "country": "Lesotho", "verdict": "corrected",
+  "cell_edits": {
+   "Key local requirements": "Registered office in Lesotho; non-profit company (2+ members, 2+ directors) registers via OBFC/Registrar of Companies, societies with the Law Office; business permit if foreign members hold 30%+; English filings."},
+  "source": "https://businessregistrations.gov.ls/non-profit-company/; https://africanphilanthropy.org/wp-content/uploads/2023/06/Understanding-the-Legal-Framework-for-Philanthropy-in-Southern-Africa-Lesotho-Report-Jan-2023.pdf",
+  "finding": "Lesotho's official business-registration portal shows non-profit companies are registered online through the One-Stop Business Facilitation Centre under the Companies Act 2011, requiring at least 2 members, 2 directors and a registered office in Lesotho, not via the Ministry of Justice. The portal also states a business permit is required where foreign members hold 30% or more; it publishes no fee amounts or processing time."},
+ {"id": "R206-6", "country": "Belgium", "verdict": "confirmed", "cell_edits": {},
+  "source": "https://ejustice.just.fgov.be/img_2024/pdf/2024_asbl.pdf; https://www.xerius.be/fr-be/devenir-independant/se-lancer/constituer-asbl",
+  "finding": "The official Moniteur belge tariff for publishing an ASBL constitution was EUR 168.31 incl. VAT by electronic filing (EUR 233.05 on paper) for March 2024-February 2025, with tariffs indexed each 1 March, consistent with the EUR 200-400 / ~$215 cells. No minimum capital applies and the ASBL may be formed by private deed with at least two founders under the CSA."},
+ {"id": "R206-7", "country": "Luxembourg", "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "EUR 200-600 for association, 1-4 weeks; foundation several months (Ministry of Justice authorisation)",
+   "Main bottleneck (remote foreign founder)": "Luxembourg registered office and local management presence; foundation needs EUR 100,000 endowment and ministerial authorisation (2023 law)"},
+  "source": "https://kleyrgrasso.com/news/new-law-on-non-profit-associations-and-foundations-the-new-npa-law/; https://gouvernement.lu/en/dossiers.gouv2024_mj%2Ben%2Bdossiers%2B2021%2Breforme-asbl-fondations.html",
+  "finding": "The Law of 7 August 2023 (in force 23 Sept 2023) set a EUR 100,000 initial foundation endowment (reduced from EUR 250,000 in the bill, net assets to stay above EUR 50,000), with applications processed by the Ministry of Justice after an opinion from the Minister of Finance, not by a tribunal. 23 Sept 2025 was only the end of the 24-month transition for existing entities, not a new law raising the endowment."},
+ {"id": "R206-8", "country": "Austria", "verdict": "corrected",
+  "cell_edits": {
+   "Key local requirements": "Verein needs 2+ founders, Austrian seat (local address), German-language statutes; no citizenship requirement for founders or board",
+   "Main bottleneck (remote foreign founder)": "Austrian seat (local address) + German-language statutes; 2+ founders"},
+  "source": "https://www.oesterreich.gv.at/de/themen/reisen_und_freizeit/vereine/Seite.220300",
+  "finding": "The official oesterreich.gv.at Verein page states at least two (natural or legal) persons are needed to found a Verein, statutes must be in German, and founders need not be Austrian citizens. Fees are EUR 21 for the Errichtungsanzeige plus EUR 6 per statute sheet (max EUR 36), and the authority has four weeks to respond, extendable to six."},
+ {"id": "R206-9", "country": "Liechtenstein", "verdict": "confirmed", "cell_edits": {},
+  "source": "https://www.mondaq.com/contracts-and-commercial-law/1353206/establishment-of-a-foundation-respectively-filing-of-a-notice-of-formation-in-liechtenstein; https://www.liechtenstein-business.li/en/economic-area/Founding-a-company/Legal-forms/Foundations",
+  "finding": "Practitioner guidance confirms a CHF 30,000 (or EUR/USD equivalent) minimum foundation capital certified by a Liechtenstein bank, a CHF 700 commercial-register entry fee for common-benefit foundations, and confirmation of the filing by a Liechtenstein-licensed lawyer, trustee or Art. 180a PGR holder. Common-benefit foundations are entered in the commercial register and supervised by STIFA; the 0.2% entry levy in the fee cell could not be independently confirmed."},
+ {"id": "R206-10", "country": "Slovakia", "verdict": "confirmed", "cell_edits": {},
+  "source": "https://minv.sk/swift_data/source/miestna_statna_sprava/okres_zilina/ovvs/spravne/ZZPO.pdf; https://www.podnikajte.sk/zdruzenie/obcianske-zdruzenie-zalozenie-a-podnikanie",
+  "finding": "Ministry of Interior guidance confirms a EUR 66 administrative fee for registering a civic association, halved to EUR 33 for electronic filing. The Ministry registers a compliant application within about 10-15 days, consistent with the current cells."},
+ {"id": "R206-11", "country": "Slovenia", "verdict": "corrected",
+  "cell_edits": {
+   "Est. cost & time": "Association: EUR 31.72 admin fee at upravna enota, ~1-2 months; foundation ~1,000-3,000 EUR incl. notary, ~1-3 months",
+   "Registration fee (USD)": "~$37 (EUR 31.72 association admin fee)"},
+  "source": "https://spot.gov.si/sl/teme/drustvo; https://e-uprava.gov.si/en/podrocja/state-and-society/societies-public-events-and-gatherings/registration-of-a-society-branch-of-foreign-society-and-associations-of-societies.html",
+  "finding": "The official SPOT portal states a društvo is founded by at least three legally capable persons and registered at the upravna enota of its seat for an administrative fee (upravna taksa) of EUR 31.72, far below the ~EUR 200-500 / ~$300 in the cells. A representative without permanent Slovenian residence must give a temporary residence address in Slovenia."},
+ {"id": "R206-12", "country": "Bosnia & Herzegovina", "verdict": "corrected",
+  "cell_edits": {
+   "Key local requirements": "3+ founders (state-level law limits association founders to BiH citizens/residents or BiH-registered entities; RS law treats foreigners equally), local office, local-language charter; register at state level (BiH Ministry of Justice) or entity level (FBiH, RS, Brcko), so structure depends on scope and office location."},
+  "source": "https://mpr.gov.ba/en/registracija-pravnih-lica-koje-osnivaju-institucije-bosne-i-hercegovine; https://philea.eu/wp-content/uploads/2021/12/BosniaAndHerzegovina_2020LegalEnvironmentPhilanthropy.pdf; https://www.icnl.org/post/in-the-news/republic-of-srpska-adopts-a-new-law-on-associations-and-foundations",
+  "finding": "The BiH Ministry of Justice registers associations and foundations at state level under the Law on Associations and Foundations of BiH (OG 32/01, amended 2003, 2008, 2011), alongside separate FBiH, RS and Brcko registers, so registration is not only entity/municipal level. The state law requires 3+ founders who are BiH citizens/residents or BiH-registered legal persons (foundations may have foreign founders), while the RS law puts domestic and foreign founders on an equal footing."}
+]

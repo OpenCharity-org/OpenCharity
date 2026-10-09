@@ -184,6 +184,11 @@ def main():
                     '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
                     '<meta name="description" content="How hard it is for an Australia-based founder to register a charity in every country: '
                     'rules, fees, timelines and sources.">\n'
+                    '<meta property="og:title" content="Charity Registration Atlas">\n'
+                    f'<meta property="og:description" content="Rank and compare {len(data)} jurisdictions by how easy, cheap and fast it is to register a charity from Australia.">\n'
+                    '<meta property="og:image" content="https://raw.githubusercontent.com/OpenCharity-org/OpenCharity/main/docs/screenshots/desktop-light.png">\n'
+                    '<meta property="og:url" content="https://opencharity-org.github.io/OpenCharity/">\n'
+                    '<meta name="twitter:card" content="summary_large_image">\n'
                     + head + '</head>\n<body style="margin:0">\n<div class="wrap"' + body + '\n</body>\n</html>\n', encoding="utf-8")
     (DOCS.parent / ".nojekyll").write_text("", encoding="utf-8")
     nf = sum(d["fee_lo"] is None for d in data)
@@ -231,6 +236,15 @@ a { color: var(--accent); }
 .mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
 .lbl { font: 500 11px var(--f-mono); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
 
+.titlebar { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; justify-content: space-between; }
+.hlinks { display: flex; flex-wrap: wrap; gap: 6px; }
+.btn.ghost { background: transparent; text-decoration: none; display: inline-flex; align-items: center; font-size: 12.5px; padding: 5px 10px; }
+.ftoggle { display: none; }
+details.dmore { display: grid; gap: 14px; }
+details.dmore > summary { cursor: pointer; font: 600 13px var(--f-body); color: var(--accent); list-style: none; border-top: 1px solid var(--line); padding-top: 12px; }
+details.dmore > summary::-webkit-details-marker { display: none; }
+details.dmore > summary::before { content: "+ "; } details.dmore[open] > summary::before { content: "− "; }
+details.dmore[open] > summary { margin-bottom: 12px; }
 header.top h1 { font-size: clamp(26px, 4vw, 40px); font-weight: 700; line-height: 1.05; }
 header.top p { margin: 6px 0 0; color: var(--muted); max-width: 72ch; }
 
@@ -386,12 +400,58 @@ td.fit b { font: 600 13px var(--f-mono); }
 footer { color: var(--muted); font-size: 12.5px; max-width: 95ch; display: grid; gap: 6px; }
 footer p { margin: 0; }
 @media (max-width: 520px) { .wrap { padding-inline: 16px; } .facts { grid-template-columns: 1fr; } .dossier h2 { font-size: 24px; } .count { margin-left: 0; } .tray { padding-inline: 16px; } }
+/* phones */
+@media (max-width: 760px) {
+  .ftoggle { display: inline-flex; margin-left: auto; }
+  .controls:not(.open) .fbody { display: none; }
+  .controls { gap: 10px; padding: 12px; }
+  .field.rank { flex: 1 1 100%; } .field.rank select { width: 100%; }
+  .field.numf { flex: 1 1 40%; } .field.numf input { width: 100%; }
+  .count { margin-left: 0; }
+  .facets { grid-template-columns: minmax(0, 1fr); }
+  .modes { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .modes::-webkit-scrollbar { display: none; }
+  .modes button { flex: none; }
+  .mapcard { display: flex; flex-direction: column; }
+  .zoom { position: static; display: flex; order: 3; padding: 0 12px 12px; gap: 6px; }
+  .zoom button { width: 36px; height: 32px; }
+  .hlinks .btn { font-size: 12px; padding: 4px 8px; }
+  #tbl { min-width: 0; }
+  #tbl thead { display: none; }
+  #tbl tbody tr { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 12px 2px; border-bottom: 1px solid var(--line); }
+  #tbl td { border: 0; padding: 0; }
+  #tbl td.ck { width: auto; order: 0; }
+  #tbl td.rank { order: 1; width: auto; }
+  #tbl td.name { order: 2; flex: 1 1 calc(100% - 110px); white-space: normal; }
+  #tbl td.name .sub { display: inline; margin-left: 6px; }
+  #tbl td.fit { order: 3; display: flex; align-items: center; gap: 6px; }
+  #tbl td.fit .bar { margin: 0; }
+  #tbl td.pc, #tbl td.num { order: 4; font-size: 12.5px; }
+  #tbl td.num[data-l]::before { content: attr(data-l) " "; font: 500 10.5px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  #tbl td.gfn { display: none; }
+  #cmpTbl th.attr, #cmpTbl td.attr { width: 104px; position: sticky; left: 0; z-index: 1; background: var(--surface); }
+  .tray { padding-block: 8px; }
+  .tray .names { flex-wrap: nowrap; overflow-x: auto; flex-basis: 100%; order: 1; }
+  .tray .in > .lbl { display: none; }
+  .tray .btn { order: 2; }
+  .wrap.has-tray { padding-bottom: 130px; }
+  section.panel { padding: 14px; }
+  aside.dossier { padding: 16px; }
+}
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 </style>
 
 <div class="wrap" id="wrap">
   <header class="top">
-    <h1>Charity Registration Atlas</h1>
+    <div class="titlebar">
+      <h1>Charity Registration Atlas</h1>
+      <div class="hlinks">
+        <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity/raw/main/charities_by_country_v2.csv" target="_blank" rel="noopener">CSV</a>
+        <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity/raw/main/charities_by_country_v2.xlsx" target="_blank" rel="noopener">Excel</a>
+        <button type="button" class="btn ghost" id="theme" aria-label="Switch colour theme">Theme</button>
+      </div>
+    </div>
     <p>How hard it is to register a charity in __COUNT__ jurisdictions, judged for a founder living in Australia with no ties to the country. Stack as many filters as you like, rank by what matters to you, and tick countries to benchmark them side by side.</p>
   </header>
 
@@ -402,10 +462,13 @@ footer p { margin: 0; }
       <label class="field numf"><span>Max fee (US$)</span><input id="maxfee" type="number" min="0" step="10" inputmode="numeric" placeholder="No limit"></label>
       <label class="field numf"><span>Max time (days)</span><input id="maxdays" type="number" min="0" step="1" inputmode="numeric" placeholder="No limit"></label>
       <span class="count" id="count"></span>
+      <button type="button" class="btn ftoggle" id="ftoggle" aria-expanded="false" aria-controls="fbody">Filters</button>
     </div>
     <div class="weights" id="weights" hidden></div>
-    <div class="facets" id="facets"></div>
-    <details class="more" id="moreFacets"><summary>Region, Google for Nonprofits and confidence</summary><div class="facets" id="facets2"></div></details>
+    <div class="fbody" id="fbody">
+      <div class="facets" id="facets"></div>
+      <details class="more" id="moreFacets"><summary>Region, Google for Nonprofits and confidence</summary><div class="facets" id="facets2"></div></details>
+    </div>
     <div class="row">
       <div class="active" id="active" aria-live="polite"></div>
       <button type="button" class="btn link" id="reset">Clear all filters</button>
@@ -624,8 +687,9 @@ function renderActive() {
   if ($("maxdays").value !== "") tags.push([`Time ≤ ${$("maxdays").value} days`, "maxdays"]);
   $("active").innerHTML = tags.length
     ? `<span class="lbl">Active</span>` + tags.map(([t, id]) => `<span class="tag">${esc(t)}<button type="button" data-rm="${esc(id)}" aria-label="Remove ${esc(t)}">×</button></span>`).join("")
-    : `<span class="none">No filters. Pick options above; they stack.</span>`;
+    : `<span class="none">No filters yet. Options stack: pick as many as you like.</span>`;
   $("reset").hidden = !tags.length;
+  $("ftoggle").textContent = tags.length ? `Filters · ${tags.length}` : "Filters";
 }
 
 function renderWeights() {
@@ -719,16 +783,16 @@ function renderTable(list) {
   const cmpSet = new Set(CMP);
   tbody.innerHTML = rows.map(d => { const f = custom ? fit(d) : 0; return `<tr tabindex="0" data-c="${esc(d.country)}"${d.country === selected ? ' class="sel"' : ""}>
     <td class="ck"><input type="checkbox" data-cmp="${esc(d.country)}" aria-label="Benchmark ${esc(d.country)}"${cmpSet.has(d.country) ? " checked" : ""}${!cmpSet.has(d.country) && CMP.length >= 6 ? " disabled" : ""}></td>
-    <td class="rank">${rankPos.get(d.country)}</td>
+    <td class="rank">#${rankPos.get(d.country)}</td>
     <td class="name">${esc(d.country)}<span class="sub">${esc(d.region)}</span></td>
     ${custom ? `<td class="fit"><b>${f}</b><span class="bar"><i style="width:${f}%"></i></span></td>` : ""}
-    <td>${pill("difficulty", d.difficulty)}</td>
-    <td>${pill("no_presence", d.no_presence)}</td>
-    <td class="num" title="${esc(d.fee_usd)}">${esc(feeTxt(d))}</td>
-    <td class="num" title="${esc(d.time_to_reg)}">${esc(timeTxt(d))}</td>
-    <td>${pill("bank_cat", d.bank_cat)}</td>
-    <td>${pill("funding_cat", d.funding_cat)}</td>
-    <td>${pill("gfn", d.gfn)}</td></tr>`; }).join("")
+    <td class="pc">${pill("difficulty", d.difficulty)}</td>
+    <td class="pc">${pill("no_presence", d.no_presence)}</td>
+    <td class="num" data-l="Fee" title="${esc(d.fee_usd)}">${esc(feeTxt(d))}</td>
+    <td class="num" data-l="Time" title="${esc(d.time_to_reg)}">${esc(timeTxt(d))}</td>
+    <td class="pc">${pill("bank_cat", d.bank_cat)}</td>
+    <td class="pc">${pill("funding_cat", d.funding_cat)}</td>
+    <td class="pc gfn">${pill("gfn", d.gfn)}</td></tr>`; }).join("")
     || `<tr><td colspan="11" class="empty">No jurisdictions match all these filters. Remove one of the active filters above.</td></tr>`;
   document.querySelectorAll("#tbl th[data-k]").forEach(th => th.setAttribute("aria-sort",
     colSort ? (th.dataset.k === colSort.k ? (colSort.dir > 0 ? "ascending" : "descending") : "none") : (th.dataset.k === "rank" ? "ascending" : "none")));
@@ -831,6 +895,7 @@ $("trayGo").addEventListener("click", () => $("compare").scrollIntoView({ behavi
 $("trayClear").addEventListener("click", () => { CMP = []; paint(); if (selected) renderDossier(); });
 
 /* ---------- dossier ---------- */
+let dossierOpen = window.matchMedia("(min-width: 981px)").matches;
 const sec = (title, body) => body ? `<div class="sec"><h3>${esc(title)}</h3><p>${esc(body)}</p></div>` : "";
 function renderDossier() {
   const d = byName.get(selected); if (!d) return;
@@ -851,6 +916,7 @@ function renderDossier() {
     </dl>
     ${sec("Entity to register", d.entity)}
     ${sec("Main bottleneck", d.bottleneck)}
+    <details class="dmore" id="dmore"${dossierOpen ? " open" : ""}><summary>Requirements, banking, tax, compliance and sources</summary>
     ${sec("Local requirements", d.requirements)}
     ${sec("Cost and time in practice", d.cost_time)}
     ${sec("Bank account", d.bank_access)}
@@ -859,7 +925,9 @@ function renderDossier() {
     ${sec("Foreign funding rules", d.donor_restr)}
     ${sec("Annual compliance", d.compliance)}
     ${notes.length ? `<div class="sec"><h3>Research notes</h3><ul>${notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : ""}
-    ${srcs.length ? `<div class="sec src"><h3>Sources</h3><ul>${srcs.map(s => `<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/, ""))}</a></li>`).join("")}</ul></div>` : ""}`;
+    ${srcs.length ? `<div class="sec src"><h3>Sources</h3><ul>${srcs.map(s => `<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/, ""))}</a></li>`).join("")}</ul></div>` : ""}
+    </details>`;
+  $("dmore").addEventListener("toggle", e => { dossierOpen = e.target.open; });
 }
 function select(name, user, fromTable) {
   if (!byName.has(name)) return;
@@ -872,6 +940,19 @@ function select(name, user, fromTable) {
     if (fromTable || narrow) $(narrow ? "dossier" : "map").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
+
+$("ftoggle").addEventListener("click", () => {
+  const open = !$("controls").classList.contains("open");
+  $("controls").classList.toggle("open", open); $("ftoggle").setAttribute("aria-expanded", open);
+});
+const THEMES = ["system", "light", "dark"];
+let theme = load("atlas-theme"); if (!THEMES.includes(theme)) theme = "system";
+function applyTheme() {
+  if (theme === "system") document.documentElement.removeAttribute("data-theme"); else document.documentElement.setAttribute("data-theme", theme);
+  $("theme").textContent = { system: "Theme: auto", light: "Theme: light", dark: "Theme: dark" }[theme];
+}
+$("theme").addEventListener("click", () => { theme = THEMES[(THEMES.indexOf(theme) + 1) % 3]; store("atlas-theme", theme); applyTheme(); });
+applyTheme();
 
 renderWeights();
 const start = bySlug.get((location.hash || "").slice(1)) || ranked().filter(matches)[0]?.country || ranked()[0].country;

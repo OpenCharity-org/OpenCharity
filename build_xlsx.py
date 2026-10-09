@@ -30,7 +30,7 @@ THIN = Border(*[Side(style="thin", color="D0D0D0")]*4)
 
 REGION = {
     "AU_OCE": ["Australia","New Zealand","Fiji","Papua New Guinea","Samoa","Tonga","Vanuatu","Solomon Islands","Kiribati","Nauru","Tuvalu","Marshall Islands","Micronesia","Palau"],
-    "AS_EAST": ["Mongolia","Japan","South Korea","China","Taiwan","Hong Kong","Macau"],
+    "AS_EAST": ["Mongolia","Japan","South Korea","North Korea","China","Taiwan","Hong Kong","Macau"],
     "AS_SOUTHEAST": ["Singapore","Malaysia","Indonesia","Thailand","Vietnam","Philippines","Cambodia","Laos","Myanmar","Brunei","Timor-Leste"],
     "SA": ["India","Pakistan","Bangladesh","Sri Lanka","Nepal","Bhutan","Afghanistan","Maldives"],
     "ME": ["Israel","Jordan","Lebanon","Syria","Iraq","Saudi Arabia","Kuwait","Qatar","United Arab Emirates","Oman","Bahrain","Yemen","Palestine"],
@@ -40,12 +40,11 @@ REGION = {
     "CA2": ["Cameroon","Central African Republic","Chad","Republic of the Congo","Congo (DRC)","Gabon","Equatorial Guinea","Sao Tome & Principe","Rwanda","Burundi","Uganda","Tanzania","Kenya","Comoros","Madagascar","Zambia","Malawi","Mozambique","Angola","Botswana","Namibia","Zimbabwe","Eswatini","Lesotho","South Africa"],
     "EU_N": ["Ireland","United Kingdom","Iceland","Greenland","Norway","Finland","Sweden","Denmark","Estonia","Latvia","Lithuania"],
     "EU_B": ["Netherlands","Belgium","Luxembourg","France","Germany","Austria","Switzerland","Liechtenstein","Monaco","San Marino","Andorra"],
-    "EU_C": ["Poland","Czechia","Slovakia","Hungary","Slovenia","Croatia","Bosnia & Herzegovina","Serbia","Montenegro","North Macedonia","Albania","Kosovo","Moldova","Ukraine","Belarus","Romania","Bulgaria","Greece","Cyprus","Malta"],
+    "EU_C": ["Poland","Czechia","Slovakia","Hungary","Slovenia","Croatia","Bosnia & Herzegovina","Serbia","Montenegro","North Macedonia","Albania","Kosovo","Moldova","Ukraine","Belarus","Russia","Romania","Bulgaria","Greece","Cyprus","Malta"],
     "EU_S": ["Spain","Portugal","Italy","Vatican City"],
     "AM_CARIB": ["Canada","United States","Cuba","Jamaica","Bahamas","Barbados","Trinidad & Tobago","Antigua & Barbuda","Grenada","St. Kitts & Nevis","St. Lucia","St. Vincent & Grenadines","Dominica","Dominican Republic","Haiti"],
     "AM_CENTRAL": ["Mexico","Guatemala","Belize","El Salvador","Honduras","Nicaragua","Costa Rica","Panama"],
     "AM_SOUTH": ["Colombia","Venezuela","Ecuador","Peru","Bolivia","Guyana","Suriname","Brazil","Paraguay","Uruguay","Argentina","Chile"],
-    "EXTRA": ["North Korea","Russia"],
 }
 COUNTRY_REGION = {c: r for r, cs in REGION.items() for c in cs}
 

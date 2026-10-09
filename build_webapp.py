@@ -19,7 +19,7 @@ DATA_JSON = BASE / "webapp" / "data.json"
 
 REGION = {
     "AU & Oceania": ["Australia","New Zealand","Fiji","Papua New Guinea","Samoa","Tonga","Vanuatu","Solomon Islands","Kiribati","Nauru","Tuvalu","Marshall Islands","Micronesia","Palau"],
-    "East Asia": ["Mongolia","Japan","South Korea","China","Taiwan","Hong Kong","Macau"],
+    "East Asia": ["Mongolia","Japan","South Korea","North Korea","China","Taiwan","Hong Kong","Macau"],
     "Southeast Asia": ["Singapore","Malaysia","Indonesia","Thailand","Vietnam","Philippines","Cambodia","Laos","Myanmar","Brunei","Timor-Leste"],
     "South Asia": ["India","Pakistan","Bangladesh","Sri Lanka","Nepal","Bhutan","Afghanistan","Maldives"],
     "Middle East": ["Israel","Jordan","Lebanon","Syria","Iraq","Saudi Arabia","Kuwait","Qatar","United Arab Emirates","Oman","Bahrain","Yemen","Palestine"],
@@ -29,12 +29,11 @@ REGION = {
     "Central & S. Africa": ["Cameroon","Central African Republic","Chad","Republic of the Congo","Congo (DRC)","Gabon","Equatorial Guinea","Sao Tome & Principe","Rwanda","Burundi","Uganda","Tanzania","Kenya","Comoros","Madagascar","Zambia","Malawi","Mozambique","Angola","Botswana","Namibia","Zimbabwe","Eswatini","Lesotho","South Africa"],
     "Northern Europe": ["Ireland","United Kingdom","Iceland","Greenland","Norway","Finland","Sweden","Denmark","Estonia","Latvia","Lithuania"],
     "Western Europe": ["Netherlands","Belgium","Luxembourg","France","Germany","Austria","Switzerland","Liechtenstein","Monaco","San Marino","Andorra"],
-    "Central & E. Europe": ["Poland","Czechia","Slovakia","Hungary","Slovenia","Croatia","Bosnia & Herzegovina","Serbia","Montenegro","North Macedonia","Albania","Kosovo","Moldova","Ukraine","Belarus","Romania","Bulgaria","Greece","Cyprus","Malta"],
+    "Central & E. Europe": ["Poland","Czechia","Slovakia","Hungary","Slovenia","Croatia","Bosnia & Herzegovina","Serbia","Montenegro","North Macedonia","Albania","Kosovo","Moldova","Ukraine","Belarus","Russia","Romania","Bulgaria","Greece","Cyprus","Malta"],
     "Southern Europe": ["Spain","Portugal","Italy","Vatican City"],
     "Caribbean & N. America": ["Canada","United States","Cuba","Jamaica","Bahamas","Barbados","Trinidad & Tobago","Antigua & Barbuda","Grenada","St. Kitts & Nevis","St. Lucia","St. Vincent & Grenadines","Dominica","Dominican Republic","Haiti"],
     "Central America": ["Mexico","Guatemala","Belize","El Salvador","Honduras","Nicaragua","Costa Rica","Panama"],
     "South America": ["Colombia","Venezuela","Ecuador","Peru","Bolivia","Guyana","Suriname","Brazil","Paraguay","Uruguay","Argentina","Chile"],
-    "Other": ["North Korea","Russia"],
 }
 COUNTRY_REGION = {c: r for r, cs in REGION.items() for c in cs}
 

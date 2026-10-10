@@ -84,7 +84,11 @@ header.top p { margin: 6px 0 0; color: var(--muted); max-width: 72ch; }
 .opt .sw { width: 10px; height: 10px; border-radius: 50%; flex: none; }
 .opt .n { font: 400 11.5px var(--f-mono); color: var(--muted); }
 .opt[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); box-shadow: inset 0 0 0 1px var(--accent); }
-.opt.zero:not([aria-pressed="true"]) { opacity: .45; }
+.opt.zero:not([aria-pressed="true"]):not(.exc) { opacity: .45; }
+#active .summary { flex-basis: 100%; margin: 4px 0 0; font-size: 13.5px; color: var(--muted); }
+#active .summary b { color: var(--ink); }
+.opt.exc { border-color: var(--d4); background: var(--surface); box-shadow: inset 0 0 0 1px var(--d4); color: var(--muted); }
+.opt.exc::before { content: "not"; font: 700 10.5px var(--f-mono); text-transform: uppercase; color: var(--d4); text-decoration: none; display: inline-block; }
 details.more summary { cursor: pointer; font: 600 13px var(--f-body); color: var(--accent); list-style: none; }
 details.more summary::-webkit-details-marker { display: none; }
 details.more summary::before { content: "+ "; } details.more[open] summary::before { content: "− "; }
@@ -348,7 +352,7 @@ footer p { margin: 0; }
 
   <footer>
     <p>Source: <span class="mono">charities_by_country_v2.csv</span>, researched against registries, gazettes and NGO-law texts, re-verified October 2026. Difficulty and remote founding are judged for an Australian-resident founder with no local presence.</p>
-    <p>Filters: options inside one group widen the match (any of them); separate groups narrow it (all must hold). The number on each option is how many countries you would get by adding it. Fee uses the lowest US$ figure in each country's fee note; a few notes include agent or notary costs, so read the full note. Time uses the shortest stated duration. Countries with no published fee or time fail a fee or time limit and rank last. "Best overall" weighs difficulty, remote founding, Google for Nonprofits eligibility and research confidence; "Your weights" uses the sliders. Bank-account groups are read from the research notes: "remote option" means at least one bank or licensed e-money provider onboards non-residents without a visit. "Personal account" is a separate question: whether a non-resident foreign individual (no local visa or address) can open a personal account at a licensed local bank; fintech options are listed in each dossier but don't count.</p>
+    <p>Filters: click an option once to include it, twice to exclude it, and a third time to clear it. Included options inside one group widen the match (any of them); separate groups narrow it (all must hold); excluded options are always left out. The number on each option is how many countries you would get by adding it. Fee uses the lowest US$ figure in each country's fee note; a few notes include agent or notary costs, so read the full note. Time uses the shortest stated duration. Countries with no published fee or time fail a fee or time limit and rank last. "Best overall" weighs difficulty, remote founding, Google for Nonprofits eligibility and research confidence; "Your weights" uses the sliders. Bank-account groups are read from the research notes: "remote option" means at least one bank or licensed e-money provider onboards non-residents without a visit. "Personal account" is a separate question: whether a non-resident foreign individual (no local visa or address) can open a personal account at a licensed local bank; fintech options are listed in each dossier but don't count.</p>
     <p>This is research, not legal advice. Confirm with the registry before filing. Grey areas on the map are dependent territories (Puerto Rico, New Caledonia, the Faroe Islands and others); charities there register under the parent country's law, so use that country's entry.</p>
   </footer>
 </div>
@@ -476,13 +480,15 @@ const pill = (key, v) => { const l = LABEL[key + ":" + v]; return l ? `<span cla
 
 /* ---------- state ---------- */
 let mode = "difficulty", selected = null, rankBy = "overall", colSort = null;
-const F = Object.fromEntries(Object.keys(FACETS).map(k => [k, new Set()]));
+const F = Object.fromEntries(Object.keys(FACETS).map(k => [k, new Set()]));   // included options (any of them)
+const X = Object.fromEntries(Object.keys(FACETS).map(k => [k, new Set()]));   // excluded options (none of them)
 let CMP = [];
 {
   const s = load("atlas-state") || {};
   if (MODES[s.mode]) mode = s.mode;
   if (RANKS[s.rankBy]) rankBy = s.rankBy;
   if (s.F) for (const k in s.F) if (F[k]) s.F[k].forEach(v => F[k].add(v));
+  if (s.X) for (const k in s.X) if (X[k]) s.X[k].forEach(v => { if (!F[k].has(v)) X[k].add(v); });
   if (Array.isArray(s.cmp)) CMP = s.cmp.filter(c => byName.has(c)).slice(0, 6);
   if (s.W) for (const k in W) if (typeof s.W[k] === "number") W[k] = s.W[k];
   if (s.q) $("q").value = s.q;
@@ -490,7 +496,7 @@ let CMP = [];
   if (s.maxdays != null) $("maxdays").value = s.maxdays;
 }
 const save = () => store("atlas-state", { mode, rankBy, cmp: CMP, W, q: $("q").value, maxfee: $("maxfee").value, maxdays: $("maxdays").value,
-  F: Object.fromEntries(Object.entries(F).map(([k, s]) => [k, [...s]])) });
+  F: Object.fromEntries(Object.entries(F).map(([k, s]) => [k, [...s]])), X: Object.fromEntries(Object.entries(X).map(([k, s]) => [k, [...s]])) });
 
 $("rankby").innerHTML = Object.entries(RANKS).map(([k, r]) => `<option value="${k}">${esc(r.label)}</option>`).join("");
 $("rankby").value = rankBy;
@@ -498,7 +504,7 @@ $("rankby").value = rankBy;
 /* ---------- filtering ---------- */
 const HAY = new Map(DATA.map(d => [d.country, [d.country, d.region, d.entity, d.requirements, d.bottleneck, d.notes, d.cost_time, d.tax_exempt, d.deduction, d.donor_restr, d.compliance, d.bank_access, d.pb_docs, d.pb_banks, d.pb_restr, d.pb_alt, d.pb_dep].join(" ").toLowerCase()]));
 function passes(d, skip) {
-  for (const k in F) if (k !== skip && F[k].size && !F[k].has(d[k])) return false;
+  for (const k in F) if (k !== skip && ((F[k].size && !F[k].has(d[k])) || X[k].has(d[k]))) return false;
   const t = $("q").value.trim().toLowerCase();
   if (t && !HAY.get(d.country).includes(t)) return false;
   const mf = $("maxfee").value, md = $("maxdays").value;
@@ -512,25 +518,37 @@ function renderFacets() {
   const draw = keys => keys.map(k => {
     const f = FACETS[k];
     const opts = f.cats.map(([v, l, c]) => {
-      const n = DATA.filter(d => d[k] === v && passes(d, k)).length, on = F[k].has(v);
-      return `<button type="button" class="opt${n ? "" : " zero"}" data-f="${k}" data-v="${esc(v)}" aria-pressed="${on}">${c ? `<i class="sw c-${c}"></i>` : ""}${esc(l)} <span class="n">${n}</span></button>`;
+      const n = DATA.filter(d => d[k] === v && passes(d, k)).length, on = F[k].has(v), off = X[k].has(v);
+      const tip = on ? "Showing only these (with any others ticked). Click to exclude instead" : off ? "Excluded. Click to clear this filter" : "Click to show only these; click again to exclude; a third time to clear";
+      return `<button type="button" class="opt${n ? "" : " zero"}${off ? " exc" : ""}" data-f="${k}" data-v="${esc(v)}" aria-pressed="${on ? "true" : off ? "mixed" : "false"}" title="${tip}" aria-label="${esc(l)}: ${on ? "included" : off ? "excluded" : "not filtered"}, ${n} countries">${c ? `<i class="sw c-${c}"></i>` : ""}${esc(l)} <span class="n">${n}</span></button>`;
     }).join("");
-    return `<fieldset class="facet${k === "region" ? " wide" : ""}"><legend class="lbl">${esc(f.label)}${F[k].size ? ` · ${F[k].size} selected` : ""}</legend><div class="opts">${opts}</div></fieldset>`;
+    return `<fieldset class="facet${k === "region" ? " wide" : ""}"><legend class="lbl">${esc(f.label)}${F[k].size ? ` · ${F[k].size} included` : ""}${X[k].size ? ` · ${X[k].size} excluded` : ""}</legend><div class="opts">${opts}</div></fieldset>`;
   }).join("");
   $("facets").innerHTML = draw(FRONT);
   $("facets2").innerHTML = draw(MORE);
-  if (MORE.some(k => F[k].size)) $("moreFacets").open = true;
+  if (MORE.some(k => F[k].size || X[k].size)) $("moreFacets").open = true;
 }
 
 function renderActive() {
   const tags = [];
   for (const k in F) for (const v of F[k]) tags.push([`${FACETS[k].label}: ${LABEL[k + ":" + v]?.[0] ?? v}`, `f|${k}|${v}`]);
+  for (const k in X) for (const v of X[k]) tags.push([`${FACETS[k].label}: not ${LABEL[k + ":" + v]?.[0] ?? v}`, `x|${k}|${v}`]);
   if ($("q").value.trim()) tags.push([`Search: “${$("q").value.trim()}”`, "q"]);
   if ($("maxfee").value !== "") tags.push([`Fee ≤ $${$("maxfee").value}`, "maxfee"]);
   if ($("maxdays").value !== "") tags.push([`Time ≤ ${$("maxdays").value} days`, "maxdays"]);
+  // plain-language summary: every group applies at once
+  const L = (k, v) => LABEL[k + ":" + v]?.[0] ?? v, parts = [];
+  for (const k in F) { const inc = [...F[k]].map(v => L(k, v)), exc = [...X[k]].map(v => L(k, v));
+    if (inc.length) parts.push(`${FACETS[k].label.toLowerCase()} is ${inc.join(" or ")}`);
+    if (exc.length) parts.push(`${FACETS[k].label.toLowerCase()} is not ${exc.join(" or ")}`); }
+  if ($("q").value.trim()) parts.push(`mentions “${$("q").value.trim()}”`);
+  if ($("maxfee").value !== "") parts.push(`fee is at most $${$("maxfee").value}`);
+  if ($("maxdays").value !== "") parts.push(`time is at most ${$("maxdays").value} days`);
+  const n = DATA.filter(matches).length;
   $("active").innerHTML = tags.length
     ? `<span class="lbl">Active</span>` + tags.map(([t, id]) => `<span class="tag">${esc(t)}<button type="button" data-rm="${esc(id)}" aria-label="Remove ${esc(t)}">×</button></span>`).join("")
-    : `<span class="none">No filters yet. Options stack: pick as many as you like.</span>`;
+      + `<p class="summary">Showing <b>${n}</b> ${n === 1 ? "country" : "countries"} where ${parts.map(esc).join(" <b>and</b> ")}.</p>`
+    : `<span class="none">No filters yet. Pick as many as you like: they all apply together. Click an option once to include it, twice to exclude it, three times to clear it.</span>`;
   $("reset").hidden = !tags.length;
   $("ftoggle").textContent = tags.length ? `Filters · ${tags.length}` : "Filters";
 }
@@ -606,7 +624,7 @@ function paint() {
   dots.filter(p => p.d.country === selected || cmpSet.has(p.d.country)).raise();
   const m = MODES[mode], fs = F[m.key];
   $("legend").innerHTML = m.cats.map(([v, l, c]) =>
-    `<button type="button" data-v="${esc(v)}" aria-pressed="${!fs.size || fs.has(v)}" title="Show or hide ${esc(l)}"><span class="sw c-${c}"></span>${esc(l)} <span class="n">${DATA.filter(d => d[m.key] === v).length}</span></button>`).join("");
+    `<button type="button" data-v="${esc(v)}" aria-pressed="${(!fs.size || fs.has(v)) && !X[m.key].has(v)}" title="Click to hide or show ${esc(l)}"><span class="sw c-${c}"></span>${esc(l)} <span class="n">${DATA.filter(d => d[m.key] === v).length}</span></button>`).join("");
   $("modes").innerHTML = Object.entries(MODES).map(([k, mm]) =>
     `<button type="button" data-m="${k}" aria-pressed="${k === mode}">${esc(mm.label)}</button>`).join("");
   renderFacets(); renderActive(); renderTable(list); renderCompare(); renderTray();
@@ -711,19 +729,26 @@ function toggleCmp(c, on) {
 }
 
 /* ---------- events ---------- */
-function toggleFacet(k, v) { F[k].has(v) ? F[k].delete(v) : F[k].add(v); if (F[k].size === FACETS[k].cats.length) F[k].clear(); paint(); }
+// each option cycles: off -> include -> exclude -> off
+function toggleFacet(k, v) {
+  if (F[k].has(v)) { F[k].delete(v); X[k].add(v); }
+  else if (X[k].has(v)) X[k].delete(v);
+  else F[k].add(v);
+  paint();
+}
 $("controls").addEventListener("click", e => {
   const o = e.target.closest(".opt"); if (o) return toggleFacet(o.dataset.f, o.dataset.v);
   const rm = e.target.closest("[data-rm]"); if (rm) {
     const id = rm.dataset.rm;
-    if (id.startsWith("f|")) { const [, k, v] = id.split("|"); F[k].delete(v); } else $(id).value = "";
+    if (id.startsWith("f|") || id.startsWith("x|")) { const [t, k, v] = id.split("|"); (t === "f" ? F : X)[k].delete(v); } else $(id).value = "";
     return paint();
   }
   if (e.target.id === "wreset") { W = { ...W_DEFAULT }; renderWeights(); paint(); }
 });
 $("legend").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return;
-  const k = MODES[mode].key, v = b.dataset.v, s = F[k];
-  if (!s.size) { FACETS[k].cats.forEach(([x]) => x !== v && s.add(x)); paint(); } else toggleFacet(k, v); });
+  const k = MODES[mode].key, v = b.dataset.v, shown = (!F[k].size || F[k].has(v)) && !X[k].has(v);
+  if (shown) { F[k].delete(v); X[k].add(v); } else { X[k].delete(v); if (F[k].size) F[k].add(v); }
+  paint(); });
 $("modes").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; mode = b.dataset.m; paint(); });
 $("rankby").addEventListener("change", () => { rankBy = $("rankby").value; colSort = null;
   const m = RANKS[rankBy].mode; if (m) mode = m; renderWeights(); paint(); if (selected) renderDossier(); });
@@ -732,7 +757,7 @@ $("controls").addEventListener("input", e => {
   if (e.target.id !== "rankby") { paint(); if (selected && e.target.dataset.w) renderDossier(); }
 });
 $("controls").addEventListener("submit", e => e.preventDefault());
-$("reset").addEventListener("click", () => { for (const k in F) F[k].clear(); ["q", "maxfee", "maxdays"].forEach(id => $(id).value = ""); paint(); });
+$("reset").addEventListener("click", () => { for (const k in F) { F[k].clear(); X[k].clear(); } ["q", "maxfee", "maxdays"].forEach(id => $(id).value = ""); paint(); });
 document.querySelector("#tbl thead").addEventListener("click", e => { const th = e.target.closest("th[data-k]"); if (!th) return;
   const k = th.dataset.k;
   if (k === "rank") colSort = null;

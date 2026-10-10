@@ -20,8 +20,9 @@
   --bg: #121212; --bar: #000000; --surface: #1a1a1a; --surface-2: #222222; --line: #2b2b2b;
   --ink: #f1f1f1; --muted: #8e8e8e; --gold: #d29e68; --gold-ink: #1a1208; --gold-soft: #3a2c1e;
   --cta: #2a0f3d; --cta-line: #8a5bc4;
-  --ok: #2e8b3e; --mid: #3566b4; --warn: #e09f0b; --bad: #a42323; --na: #3b3b3b; --cell-ink: #ffffff;
-  --s1: #d29e68; --s2: #a77d55; --s3: #7a5a3e; --s4: #6d1515;
+  --ok: #1f9e48; --mid: #2b6fdc; --warn: #ec840b; --bad: #d12f35; --na: #4f4f4f; --cell-ink: #ffffff;
+  --s1: #4a8df8; --s2: #1fb37c; --s3: #f2a42f; --s4: #b46ae3;
+  --b5: #1a9850; --b4: #66bd63; --b3: #b8df6a; --b2: #fee08b; --b1: #fc8d59; --b0: #d73027;
   --map-lo: #3a2f26; --map-hi: #dba873; --map-none: #262626;
   --f-ui: "Outfit", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --f-serif: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -39,7 +40,8 @@
   --bg: #f4f1ec; --bar: #ffffff; --surface: #ffffff; --surface-2: #f0ebe4; --line: #e0d8cd;
   --ink: #1d1a16; --muted: #6d655b; --gold: #9c6a36; --gold-ink: #ffffff; --gold-soft: #f1e4d4;
   --cta: #f3ecfb; --cta-line: #7b4bb5;
-  --map-lo: #efe3d3; --map-hi: #a36d36; --map-none: #e3ddd5; color-scheme: light; }
+  --map-lo: #efe3d3; --map-hi: #a36d36; --map-none: #e3ddd5; color-scheme: light;
+  --b3: #a6d96a; --b2: #fdd257; --s3: #e8951c; }
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -121,7 +123,8 @@ path.cty { stroke: var(--bg); stroke-width: .4; cursor: pointer; transition: opa
 path.cty.nodata { fill: var(--map-none); cursor: default; }
 path.cty.dim, circle.dot.dim { opacity: .18; }
 path.cty:hover { stroke: var(--ink); stroke-width: .8; }
-path.cty.sel, circle.dot.sel { stroke: var(--ink); stroke-width: 1.4; }
+path.cty.sel, circle.dot.sel { stroke: var(--ink); stroke-width: 1.6; }
+#dMap path.cty.sel, #dMap circle.dot.sel { stroke: var(--gold); stroke-width: 2.4; }
 circle.dot { stroke: var(--bg); stroke-width: .6; cursor: pointer; }
 .stats { display: flex; gap: 26px; flex-wrap: wrap; border: 1px solid var(--line); background: var(--bar); padding: 10px 16px; margin-top: 8px; }
 .stats div b { display: block; font-size: 30px; font-weight: 700; line-height: 1.05; }
@@ -132,7 +135,7 @@ circle.dot { stroke: var(--bg); stroke-width: .6; cursor: pointer; }
 .rlist .ttl { text-align: left; padding-bottom: 8px; display: flex; gap: 12px; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; }
 .rlist .ttl h1 { font-size: 26px; }
 .rankby { background: var(--surface); border: 1px solid var(--line); color: var(--ink); padding: 7px 10px; border-radius: 6px; max-width: 100%; }
-.rhead { display: grid; grid-template-columns: minmax(0, 270px) var(--mw, 60px) minmax(0, 1fr); gap: 14px; align-items: center; position: sticky; top: 64px; z-index: 4; background: var(--bg); padding: 10px 0 0; }
+.rhead { display: grid; grid-template-columns: minmax(0, 270px) var(--mw, 64px) minmax(0, 1fr); gap: 14px; align-items: center; position: sticky; top: 64px; z-index: 4; background: var(--bg); padding: 10px 0 0; }
 .rhead .h { color: var(--muted); text-transform: uppercase; font-size: 13px; border-bottom: 1px solid var(--line); padding: 8px 0; }
 .rhead .h b { color: var(--ink); margin-right: 6px; }
 .rfilter { display: flex; gap: 8px; align-items: center; background: var(--bar); padding: 6px 8px; }
@@ -153,13 +156,13 @@ circle.dot { stroke: var(--bg); stroke-width: .6; cursor: pointer; }
 .active { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 0; }
 .tag { display: inline-flex; align-items: center; gap: 4px; background: var(--gold-soft); color: var(--ink); border-radius: 999px; padding: 2px 4px 2px 10px; font-size: 12.5px; }
 .tag button { background: none; border: 0; color: var(--gold); cursor: pointer; font-size: 15px; line-height: 1; padding: 0 4px; }
-.rgrp { color: var(--muted); text-transform: uppercase; font-size: 13px; padding: 22px 0 8px; border-bottom: 1px solid var(--line); max-width: 270px; }
+.rgrp { color: var(--muted); text-transform: uppercase; font-size: 13px; padding: 18px 0 6px; border-bottom: 1px solid var(--line); max-width: 270px; }
 .rgrp b { color: var(--ink); margin-right: 6px; }
-.rrow { display: grid; grid-template-columns: minmax(0, 270px) var(--mw, 60px) minmax(0, 1fr) 28px; gap: 14px; align-items: center; padding: 10px 0; text-decoration: none; color: var(--ink); }
+.rrow { display: grid; grid-template-columns: minmax(0, 270px) var(--mw, 64px) minmax(0, 1fr) 28px; gap: 14px; align-items: center; padding: 10px 0; text-decoration: none; color: var(--ink); }
 .rrow:hover .rn { color: var(--gold); }
 .rrow .who { display: flex; align-items: center; gap: 12px; min-width: 0; }
 .rrow .cover { --w: 44px; }
-.rn { text-transform: uppercase; font-size: 14.5px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+.rn { text-transform: uppercase; font-size: 14.5px; font-weight: 500; min-width: 0; }
 .rn small { display: block; text-transform: none; color: var(--muted); font-size: 12px; font-weight: 400; }
 .rm { font-size: 21px; font-weight: 700; text-align: right; white-space: nowrap; }
 .rm.txt { font-size: 15px; }
@@ -167,7 +170,7 @@ circle.dot { stroke: var(--bg); stroke-width: .6; cursor: pointer; }
 .rm .mp.ok { background: var(--ok); } .rm .mp.mid { background: var(--mid); } .rm .mp.warn { background: var(--warn); } .rm .mp.bad { background: var(--bad); } .rm .mp.na { background: var(--na); }
 .rlist.catm { --mw: 130px; }
 .sbar { display: flex; height: 28px; background: var(--surface-2); border-radius: 1px; overflow: hidden; }
-.sbar span { display: flex; align-items: center; padding-left: 4px; font-size: 12px; color: #fff; white-space: nowrap; overflow: hidden; }
+.sbar span { display: flex; align-items: center; padding-left: 4px; font-size: 12px; font-weight: 700; color: #0d0d0d; white-space: nowrap; overflow: hidden; }
 .sbar .g0 { background: var(--s1); } .sbar .g1 { background: var(--s2); } .sbar .g2 { background: var(--s3); } .sbar .g3 { background: var(--s4); }
 .addc { width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid var(--gold); background: none; color: var(--gold); font-weight: 700; cursor: pointer; line-height: 1; padding: 0; }
 .addc[aria-pressed="true"] { background: var(--gold); color: var(--gold-ink); }
@@ -175,6 +178,25 @@ circle.dot { stroke: var(--bg); stroke-width: .6; cursor: pointer; }
 .seglg { display: flex; flex-wrap: wrap; gap: 12px; font-size: 12.5px; color: var(--muted); margin: 2px 0 0; }
 .seglg i { display: inline-block; width: 11px; height: 11px; margin-right: 5px; vertical-align: -1px; }
 .empty { padding: 30px 0; color: var(--muted); }
+/* score bands + status chips */
+.sb { display: inline-block; min-width: 46px; text-align: center; border-radius: 6px; padding: 2px 6px; font-weight: 800; color: #111; }
+.sb.b5, .sb.b0 { color: #fff; }
+.bg-b5 { background: var(--b5); } .bg-b4 { background: var(--b4); } .bg-b3 { background: var(--b3); } .bg-b2 { background: var(--b2); } .bg-b1 { background: var(--b1); } .bg-b0 { background: var(--b0); }
+.minis { display: flex; flex-wrap: wrap; gap: 3px; margin-top: 4px; }
+.mini { font-size: 10.5px; line-height: 1.35; padding: 0 6px; border-radius: 4px; color: #fff; font-weight: 600; text-transform: none; white-space: nowrap; }
+.mini.ok { background: var(--ok); } .mini.mid { background: var(--mid); } .mini.warn { background: var(--warn); } .mini.bad { background: var(--bad); } .mini.na { background: var(--na); }
+.modes { display: flex; gap: 8px; align-items: center; padding-top: 12px; }
+.modes .rankby { padding: 5px 8px; font-size: 14px; }
+.modes .lbl { font-size: 11px; text-transform: uppercase; letter-spacing: .06em; color: var(--gold); margin-right: 4px; }
+.legbtn { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px 3px 6px; font-size: 12.5px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; color: var(--ink); }
+.legbtn i { width: 14px; height: 14px; border-radius: 3px; }
+.legbtn .n { color: var(--muted); font-size: 11.5px; }
+.legbtn[aria-pressed="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.legend { display: flex; flex-wrap: wrap; gap: 5px; padding: 10px 0 4px; }
+.howto { font-size: 13px; color: var(--muted); margin: 4px 0 0; }
+.howto b { color: var(--ink); }
+.wall a .band { display: block; margin-top: 3px; text-align: center; border-radius: 3px; font-size: 11px; font-weight: 800; color: #111; line-height: 1.5; }
+.wall a .band.b5, .wall a .band.b0 { color: #fff; }
 
 /* ---------- compare ---------- */
 .cmpwrap { overflow-x: auto; border-top: 1px solid var(--line); }
@@ -203,6 +225,7 @@ td.cell.ok { background: var(--ok); } td.cell.mid { background: var(--mid); } td
 td.cell.blank { background: transparent; }
 .pill { display: inline-block; border: 1.2px solid rgba(255,255,255,.85); border-radius: 999px; padding: 1px 10px; font-size: 11px; text-transform: uppercase; font-weight: 600; letter-spacing: .02em; margin: 2px 2px; white-space: nowrap; }
 .pill.x { padding: 1px 7px; }
+.sym { font-weight: 800; margin-right: 4px; }
 .info { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; border-radius: 50%; background: #fff; color: #1a1a1a; border: 0; font: 700 13px var(--f-serif); font-style: italic; cursor: pointer; display: grid; place-items: center; }
 td.txt { font-size: 13px; padding: 8px 12px !important; vertical-align: top; color: var(--ink); background: var(--surface); text-align: left; }
 td.txt .clamp { display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
@@ -361,6 +384,7 @@ footer.bot p { margin: 0; }
       <button type="button" class="goldbtn" id="findBtn">Find</button>
     </div>
     <div class="extools" id="exTools" role="group" aria-label="Region"></div>
+    <div class="extools" id="exLegend" aria-label="Charity score colours"></div>
     <div class="wall" id="wall"></div>
   </section>
 
@@ -368,7 +392,8 @@ footer.bot p { margin: 0; }
   <section id="v-rank" hidden>
     <div class="rank">
       <div class="rmap">
-        <div class="mapleg" id="rLegend"></div>
+        <div class="modes" id="rModes" role="group" aria-label="Colour the map by"></div>
+        <div class="legend" id="rLegend"></div>
         <div class="mapbox" id="rMapBox">
           <div class="zoom"><button type="button" data-z="in" aria-label="Zoom in">+</button><button type="button" data-z="out" aria-label="Zoom out">−</button></div>
           <svg id="rMap" viewBox="0 0 960 500" role="img" aria-label="World map coloured by the current ranking"></svg>
@@ -382,6 +407,7 @@ footer.bot p { margin: 0; }
           <select class="rankby" id="rankBy" aria-label="Rank by"></select>
         </div>
         <div class="seglg" id="segLegend"></div>
+
         <div class="rhead">
           <div class="h"><b>#</b><span id="rHeadLbl">Charity power rank</span></div>
           <div class="h" id="rMetric" style="text-align:right">Score</div>
@@ -496,6 +522,11 @@ for (const d of DATA) {
   d.grp = GROUPS.map(([, ks]) => ks.reduce((s, k) => s + d.pts[k], 0));
   d.cs = Math.round(d.grp.reduce((a, b) => a + b, 0));
 }
+const BANDS = [[85, "Excellent 85+", "b5"], [70, "Very good 70–84", "b4"], [55, "Good 55–69", "b3"], [40, "Fair 40–54", "b2"], [25, "Hard 25–39", "b1"], [0, "Very hard 0–24", "b0"]];
+for (const d of DATA) d.band = BANDS.find(([m]) => d.cs >= m)[2];
+CAT.band = Object.fromEntries(BANDS.map(([, l, c]) => [c, [l, c]]));
+const SYM = { ok: "✓", mid: "•", warn: "!", bad: "✕", na: "?" };
+const badge = d => `<span class="sb bg-${d.band} ${d.band}" title="Charity score ${d.cs}/100 · ${esc(CAT.band[d.band][0])}">${d.cs}</span>`;
 const sbar = d => `<span class="sbar" aria-label="Score breakdown: ${GROUPS.map(([g], i) => `${g} ${Math.round(d.grp[i])}`).join(", ")}">${d.grp.map((v, i) =>
   `<span class="g${i}" style="width:${v}%" title="${esc(GROUPS[i][0])}: ${Math.round(v)}">${v >= 5 ? Math.round(v) : ""}</span>`).join("")}</span>`;
 
@@ -543,11 +574,15 @@ const FACETS = [
   ["pb_status", "Personal account"], ["pb_method", "Personal account opening"], ["pb_cost_bin", "Personal account fees"],
   ["pb_dep_bin", "Minimum deposit"], ["pb_res", "Residence for account"], ["confidence", "Research confidence"], ["region", "Region"],
 ];
+FACETS.unshift(["band", "Charity score"]);
+const MODES = [["band", "Charity score"], ["difficulty", "Difficulty"], ["no_presence", "Remote founding"], ["fee_bin", "Fee"], ["time_bin", "Time"],
+  ["bank_cat", "Charity bank"], ["pb_status", "Personal account"], ["pb_method", "Account opening"], ["pb_cost_bin", "Account fees"],
+  ["funding_cat", "Foreign funding"], ["gfn", "Google for Nonprofits"], ["confidence", "Confidence"]];
 const FLABEL = Object.fromEntries(FACETS);
 const optsOf = k => k === "region" ? REGIONS.map(r => [r, r, null]) : Object.entries(CAT[k]).map(([v, [l, c]]) => [v, l, c]);
 
 /* ---------- state ---------- */
-const S = { rankBy: "power", bankBy: "pbank", F: Object.fromEntries(FACETS.map(([k]) => [k, new Set()])), cmp: [], region: "", theme: "dark", diffOnly: false, hide: new Set() };
+const S = { mode: "band", rankBy: "power", bankBy: "pbank", F: Object.fromEntries(FACETS.map(([k]) => [k, new Set()])), cmp: [], region: "", theme: "dark", diffOnly: false, hide: new Set() };
 { const s = load("oci-state") || {};
   if (RANKS[s.rankBy] && !BANK_RANKS.includes(s.rankBy)) S.rankBy = s.rankBy;
   if (BANK_RANKS.includes(s.bankBy)) S.bankBy = s.bankBy;
@@ -606,9 +641,7 @@ function makeMap(svgEl, tipEl, onPick) {
   };
 }
 const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-const scoreFill = () => { const lo = css("--map-lo"), hi = css("--map-hi"), mx = d3.max(DATA, d => d.cs), mn = d3.min(DATA, d => d.cs);
-  const sc = d3.scaleLinear().domain([mn, mx]).range([0, 1]); return d => d3.interpolateRgb(lo, hi)(sc(d.cs)); };
-const catFill = k => { const m = Object.fromEntries(["ok", "mid", "warn", "bad", "na"].map(c => [c, css("--" + c)])); return d => m[cat(k, d)[1]]; };
+const catFill = k => { const m = {}; return d => { const c = cat(k, d)[1]; return m[c] ??= css("--" + c); }; };
 
 /* ---------- views ---------- */
 let view = "explore", country = null, rMap = null, dMap = null;
@@ -640,7 +673,9 @@ window.addEventListener("hashchange", route);
 function renderExplore() {
   $("exTools").innerHTML = [["", "All"], ...REGIONS.map(r => [r, r])].map(([v, l]) => `<button type="button" class="chipbtn" data-r="${esc(v)}" aria-pressed="${S.region === v}">${esc(l)}</button>`).join("");
   const list = DATA.filter(d => !S.region || d.region === S.region).sort((a, b) => a.country.localeCompare(b.country));
-  $("wall").innerHTML = list.map(d => `<a href="#/country/${slug(d.country)}" title="${esc(d.country)} · score ${d.cs} · rank ${powerRank(d)}">${cover(d)}<span class="sc">${d.cs}</span></a>`).join("");
+  $("exLegend").innerHTML = `<span class="howto" style="margin:0 6px 0 0;align-self:center">Charity score:</span>` + BANDS.map(([, l, c]) =>
+    `<span class="legbtn" style="cursor:default"><i class="bg-${c}"></i>${esc(l)} <span class="n">${list.filter(d => d.band === c).length}</span></span>`).join("");
+  $("wall").innerHTML = list.map(d => `<a href="#/country/${slug(d.country)}" title="${esc(d.country)} · score ${d.cs} · rank ${powerRank(d)}">${cover(d)}<span class="band bg-${d.band} ${d.band}">${d.cs}</span></a>`).join("");
 }
 $("exTools").addEventListener("click", e => { const b = e.target.closest("[data-r]"); if (b) { S.region = b.dataset.r; renderExplore(); } });
 $("findBtn").addEventListener("click", () => openFind());
@@ -666,17 +701,16 @@ function renderRank() {
     if (p !== last) { html += `<div class="rgrp"><b>${p ?? "—"}</b>${p == null ? "Not ranked (no data)" : esc(R.head)}</div>`; last = p; }
     const m = R.show(d), inC = S.cmp.includes(d.country), mk = R.show.catKey;
     html += `<a class="rrow" href="#/country/${slug(d.country)}"><span class="who">${cover(d)}<span class="rn">${esc(d.country)}<small>${esc(d.region)}</small></span></span>
-      <span class="rm${typeof m === "number" ? "" : " txt"}">${mk ? `<span class="mp ${cat(mk, d)[1]}">${esc(m)}</span>` : esc(m)}</span>${sbar(d)}
+      <span class="rm${typeof m === "number" ? "" : " txt"}">${mk ? `<span class="mp ${cat(mk, d)[1]}">${SYM[cat(mk, d)[1]]} ${esc(m)}</span>` : key === "power" ? badge(d) : esc(m)}</span>${sbar(d)}
       <button type="button" class="addc" data-add="${esc(d.country)}" aria-pressed="${inC}" aria-label="${inC ? "Remove" : "Add"} ${esc(d.country)} ${inC ? "from" : "to"} compare" title="Compare"${!inC && S.cmp.length >= 5 ? " disabled" : ""}>${inC ? "✓" : "+"}</button></a>`;
   }
   $("rRows").innerHTML = html || `<p class="empty">No countries match all these filters. Remove one above.</p>`;
   // map
   if (!rMap) rMap = makeMap($("rMap"), $("rTip"), c => go("#/country/" + slug(c)));
   rMap.tip(d => `<b>${esc(d.country)}</b><br>#${pos.get(d.country) ?? "—"} ${esc(R.head.toLowerCase())} · ${esc(R.show(d))}<br>Charity score ${d.cs}`);
-  rMap.paint(R.map ? catFill(R.map) : scoreFill(), d => !passes(d));
-  $("rLegend").innerHTML = R.map
-    ? `<span class="catleg">${Object.values(CAT[R.map]).map(([l, c]) => `<span><i style="background:var(--${c})"></i>${esc(l)}</span>`).join("")}</span>`
-    : `<span class="grad"><span>Easiest</span><span>Hardest</span></span>`;
+  rMap.paint(catFill(S.mode), d => !passes(d));
+  $("rModes").innerHTML = `<label class="lbl" for="modeSel">Colour map by</label><select class="rankby" id="modeSel">${MODES.map(([k, l]) => `<option value="${k}"${S.mode === k ? " selected" : ""}>${esc(l)}</option>`).join("")}</select>`;
+  $("rLegend").innerHTML = Object.entries(CAT[S.mode]).map(([v, [l, c]]) => `<button type="button" class="legbtn" data-f="${S.mode}" data-v="${esc(v)}" aria-pressed="${S.F[S.mode].has(v)}" title="Show only ${esc(l)} (click again to undo)"><i style="background:var(--${c})"></i>${esc(l)} <span class="n">${DATA.filter(d => d[S.mode] === v && passes(d, S.mode)).length}</span></button>`).join("");
   const sc = rows.map(d => d.cs);
   $("rStats").innerHTML = `<div><b>${sc.length ? Math.round(sc.reduce((a, b) => a + b, 0) / sc.length) : "—"}</b><span>Average score</span></div>
     <div><b>${sc.length ? Math.round(median(sc)) : "—"}</b><span>Median score</span></div>
@@ -695,11 +729,12 @@ function renderDrawer() {
   for (const [k] of FACETS) for (const v of S.F[k]) tags.push(`<span class="tag">${esc(FLABEL[k])}: ${esc(k === "region" ? v : CAT[k][v]?.[0] ?? v)}<button type="button" data-rm="${k}|${esc(v)}" aria-label="Remove filter">×</button></span>`);
   $("active").innerHTML = tags.join("");
 }
-$("rankBy").addEventListener("change", e => { if (view === "banking") S.bankBy = e.target.value; else S.rankBy = e.target.value; renderRank(); save(); });
+$("rankBy").addEventListener("change", e => { if (view === "banking") S.bankBy = e.target.value; else S.rankBy = e.target.value; S.mode = RANKS[e.target.value].map || "band"; renderRank(); save(); });
+$("rModes").addEventListener("change", e => { if (e.target.id === "modeSel") { S.mode = e.target.value; renderRank(); save(); } });
 $("q").addEventListener("input", () => renderRank());
 $("fBtn").addEventListener("click", () => { const open = $("drawer").hidden; $("drawer").hidden = !open; $("fBtn").setAttribute("aria-expanded", open); });
 document.addEventListener("click", e => {
-  const o = e.target.closest(".opt"); if (o) { const s = S.F[o.dataset.f]; s.has(o.dataset.v) ? s.delete(o.dataset.v) : s.add(o.dataset.v);
+  const o = e.target.closest(".opt, .legbtn[data-f]"); if (o) { const s = S.F[o.dataset.f]; s.has(o.dataset.v) ? s.delete(o.dataset.v) : s.add(o.dataset.v);
     if (s.size === optsOf(o.dataset.f).length) s.clear(); renderRank(); save(); return; }
   const rm = e.target.closest("[data-rm]"); if (rm) { const [k, v] = rm.dataset.rm.split("|"); S.F[k].delete(v); renderRank(); save(); return; }
   if (e.target.id === "fClear") { for (const k in S.F) S.F[k].clear(); renderRank(); save(); return; }
@@ -738,7 +773,7 @@ const TEXTS = [["entity", "Entity to register"], ["bottleneck", "Main bottleneck
 const NOTES = [];
 const cellHTML = (a, d) => { const [l] = cat(a.k, d), x = a.x?.(d), n = a.note?.(d);
   let i = -1; if (n) { i = NOTES.length; NOTES.push([`${d.country}: ${a.label}`, n]); }
-  return `<span class="pill">${esc(l)}</span>${x && x !== "—" && x !== l ? `<span class="pill x">${esc(x)}</span>` : ""}${i >= 0 ? `<button type="button" class="info" data-note="${i}" aria-label="Details">i</button>` : ""}`; };
+  return `<span class="pill"><span class="sym">${SYM[cat(a.k, d)[1]]}</span>${esc(l)}</span>${x && x !== "—" && x !== l ? `<span class="pill x">${esc(x)}</span>` : ""}${i >= 0 ? `<button type="button" class="info" data-note="${i}" aria-label="Details">i</button>` : ""}`; };
 function renderCompare() {
   NOTES.length = 0;
   const cs = S.cmp.map(c => byName.get(c)), slots = [...cs, ...Array(5 - cs.length).fill(null)];
@@ -751,7 +786,7 @@ function renderCompare() {
     return true; };
   let h = `<colgroup><col class="lab">${slots.map(() => "<col>").join("")}</colgroup><thead><tr><th class="lab"><div class="colordots">${COLORS.map(c =>
       `<button type="button" data-hide="${c}" style="background:var(--${c})" aria-pressed="${!S.hide.has(c)}" aria-label="Show ${c} rows"></button>`).join("")}<button type="button" class="diff" data-diff aria-pressed="${S.diffOnly}" aria-label="Show differences only" title="Differences only"></button></div></th>`
-    + slots.map(d => `<th>${d ? `<div class="hscore">${cover(d)}<div><b>${d.cs}</b><div class="dots">${counts(d).map((n, i) => `<span><i style="background:var(--${COLORS[i]})"></i>${n}</span>`).join("")}</div></div></div>`
+    + slots.map(d => `<th>${d ? `<div class="hscore">${cover(d)}<div><b><span class="sb bg-${d.band} ${d.band}" style="font-weight:600">${d.cs}</span></b><div class="dots">${counts(d).map((n, i) => `<span><i style="background:var(--${COLORS[i]})"></i>${n}</span>`).join("")}</div></div></div>`
       : `<div class="hscore"><div><span class="ph">Charity score</span><div class="dots">${COLORS.map(() => `<span><i class="ph"></i></span>`).join("")}</div></div></div>`}</th>`).join("") + `</tr><tr><th class="lab" style="padding:0"><div class="cfilt">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="color:var(--muted)" aria-hidden="true"><path d="M3 4h18l-7 8.5V19l-4 2v-8.5z"/></svg><input id="cmpFind" type="search" placeholder="Filter rows…" aria-label="Filter rows" value="${esc(t)}"></div></th>`
     + slots.map((d, i) => `<th><div class="cname">${d ? `<a href="#/country/${slug(d.country)}" style="color:inherit;text-decoration:none">${esc(d.country)}</a><button type="button" data-add="${esc(d.country)}" aria-label="Remove ${esc(d.country)}">×</button>`
@@ -810,7 +845,7 @@ function renderCountry(keepMap) {
     <div class="dleft">${cover(d)}
       <div class="acts"><button type="button" data-add="${esc(d.country)}">${inC ? "Remove" : "Compare"}</button><button type="button" id="goCmp">View compare</button></div>
       <dl class="kv">
-        <div><dt>Charity score</dt><dd>${d.cs}</dd></div>
+        <div><dt>Charity score</dt><dd>${badge(d)}</dd></div>
         <div><dt>Charity power rank</dt><dd>${powerRank(d)}</dd></div>
         <div><dt>Banking rank</dt><dd>${rankOf("pbank").pos.get(d.country) ?? "—"}</dd></div>
         <div><dt>Registration fee</dt><dd>${esc(feeTxt(d))}</dd></div>
@@ -828,7 +863,7 @@ function renderCountry(keepMap) {
         <svg id="dMap" viewBox="0 0 960 500" role="img" aria-label="Map highlighting ${esc(d.country)}"></svg><div class="tip" id="dTip" hidden></div></div>
       ${sbar(d)}
       <div class="seglg">${GROUPS.map(([g], i) => `<span><i style="background:var(--s${i + 1})"></i>${esc(g)} ${Math.round(d.grp[i])}</span>`).join("")}</div>
-      <div class="bk"><h2>Score breakdown · ${d.cs} / 100</h2>${FACTORS.map(([k, l, mx]) => `<div class="bkrow"><span>${esc(l)}</span><span class="tr"><i style="width:${100 * d.pts[k] / mx}%"></i></span><b>${Math.round(d.pts[k] * 10) / 10}/${mx}</b></div>`).join("")}</div>
+      <div class="bk"><h2>Score breakdown · ${d.cs} / 100</h2>${FACTORS.map(([k, l, mx]) => `<div class="bkrow"><span>${esc(l)}</span><span class="tr"><i style="width:${100 * d.pts[k] / mx}%;background:var(--s${GROUPS.findIndex(([, ks]) => ks.includes(k)) + 1})"></i></span><b>${Math.round(d.pts[k] * 10) / 10}/${mx}</b></div>`).join("")}</div>
       <div class="dsec"><h2>Registering a charity</h2>
         ${sec("Entity to register", d.entity)}${sec("Main bottleneck", d.bottleneck)}${sec("Local requirements", d.requirements)}${sec("Cost and time in practice", d.cost_time)}
         ${sec("Charity bank account", d.bank_access)}${sec("Tax-exempt status", d.tax_exempt)}${sec("Donor tax deductions", d.deduction)}${sec("Foreign funding rules", d.donor_restr)}${sec("Annual compliance", d.compliance)}
@@ -851,9 +886,8 @@ function renderCountry(keepMap) {
     </div>`;
   dMap = makeMap($("dMap"), $("dTip"), c => go("#/country/" + slug(c)));
   dMap.tip(x => `<b>${esc(x.country)}</b><br>Charity score ${x.cs} · rank ${powerRank(x)}`);
-  const sf = scoreFill(), hi = css("--ink");
-  dMap.paint(x => x.country === d.country ? css("--gold") : sf(x), x => x.country !== d.country && false, d.country);
-  $("dMap").querySelectorAll("path.cty:not(.sel), circle.dot:not(.sel)").forEach(p => p.style.opacity = .55);
+  dMap.paint(catFill("band"), () => false, d.country);
+  $("dMap").querySelectorAll("path.cty:not(.sel), circle.dot:not(.sel)").forEach(p => p.style.opacity = .7);
   dMap.focus(d.country);
 }
 $("dash").addEventListener("click", e => {

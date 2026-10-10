@@ -20,6 +20,7 @@ Fee and time are parsed from free text: the fee is the lowest US$ figure in
 the fee cell ("none"/"free" = 0), the time is the first duration in the time
 cell, in days. Unparseable cells rank last.
 """
+import csv
 import json
 import re
 from pathlib import Path
@@ -28,6 +29,7 @@ from build_webapp import build_data
 
 BASE = Path(__file__).parent
 GEO = BASE / "webapp" / "geo" / "countries-50m.json"
+BANKING = BASE / "banking_by_country.csv"  # merge_banking.py: personal accounts for non-residents
 OUT = BASE / "webapp" / "atlas.html"
 DOCS = BASE / "docs" / "index.html"  # GitHub Pages copy (full HTML document)
 
@@ -153,9 +155,30 @@ def enrich(d):
     return d
 
 
+# banking_by_country.csv column -> record key
+PB_COLS = {
+    "Non-resident personal account": "pb_status", "Opening method": "pb_method",
+    "Local residence required": "pb_res", "Banking difficulty": "pb_diff",
+    "Documents required": "pb_docs", "Minimum deposit & fees": "pb_dep",
+    "Banks accepting non-residents": "pb_banks", "Restrictions": "pb_restr",
+    "Alternatives (fintech / regional)": "pb_alt", "Confidence": "pb_conf", "Sources": "pb_src",
+}
+
+
+def add_banking(data):
+    rows = {r["Country"]: r for r in csv.DictReader(open(BANKING, encoding="utf-8"))}
+    missing = [d["country"] for d in data if d["country"] not in rows]
+    if missing:
+        raise SystemExit(f"{BANKING.name} has no row for: {missing}")
+    for d in data:
+        for col, key in PB_COLS.items():
+            d[key] = rows[d["country"]][col]
+
+
 def main():
     data, src_name = build_data()
     data = [enrich(d) for d in data]
+    add_banking(data)
     geo = json.loads(GEO.read_text(encoding="utf-8"))
     geo["objects"]["countries"]["geometries"] = [
         g for g in geo["objects"]["countries"]["geometries"]
@@ -342,6 +365,13 @@ aside.dossier { background: var(--surface); border: 1px solid var(--line); borde
 .facts .big { font: 600 18px var(--f-display); }
 .sec h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
 .sec p { margin: 0; font-size: 14px; overflow-wrap: anywhere; }
+.sec.pb { background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+.sec.pb .chips { margin: 6px 0 10px; }
+.pbl { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 12px; margin: 0; font-size: 14px; }
+.pbl dt { font: 500 11px var(--f-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
+.pbl dd { margin: 0; overflow-wrap: anywhere; }
+.pbsrc { margin: 8px 0 0; font-size: 13px; }
+@media (max-width: 520px) { .pbl { grid-template-columns: minmax(0, 1fr); } .pbl dd { margin-bottom: 6px; } }
 .sec + .sec { border-top: 1px solid var(--line); padding-top: 14px; }
 .sec ul { margin: 4px 0 0; padding-left: 18px; font-size: 13px; color: var(--muted); display: grid; gap: 5px; overflow-wrap: anywhere; }
 .sec .src a { word-break: break-all; }
@@ -452,7 +482,7 @@ footer p { margin: 0; }
         <button type="button" class="btn ghost" id="theme" aria-label="Switch colour theme">Theme</button>
       </div>
     </div>
-    <p>How hard it is to register a charity in __COUNT__ jurisdictions, judged for a founder living in Australia with no ties to the country. Stack as many filters as you like, rank by what matters to you, and tick countries to benchmark them side by side.</p>
+    <p>How hard it is to register a charity in __COUNT__ jurisdictions, judged for a founder living in Australia with no ties to the country, plus whether you can open a personal bank account there as a non-resident. Stack as many filters as you like, rank by what matters to you, and tick countries to benchmark them side by side.</p>
   </header>
 
   <form class="controls" id="controls" aria-label="Rank and filter">
@@ -511,7 +541,8 @@ footer p { margin: 0; }
         <th data-k="no_presence"><button type="button">Remote founding</button></th>
         <th data-k="fee_lo"><button type="button">Fee (US$)</button></th>
         <th data-k="days_lo"><button type="button">Time</button></th>
-        <th data-k="bank_cat"><button type="button">Bank account</button></th>
+        <th data-k="bank_cat"><button type="button">Charity bank</button></th>
+        <th data-k="pb_status"><button type="button">Personal acct</button></th>
         <th data-k="funding_cat"><button type="button">Foreign funding</button></th>
         <th data-k="gfn"><button type="button">Google NP</button></th>
       </tr></thead>
@@ -521,7 +552,7 @@ footer p { margin: 0; }
 
   <footer>
     <p>Source: <span class="mono">__SRC__</span>, researched against registries, gazettes and NGO-law texts, re-verified October 2026. Difficulty and remote founding are judged for an Australian-resident founder with no local presence.</p>
-    <p>Filters: options inside one group widen the match (any of them); separate groups narrow it (all must hold). The number on each option is how many countries you would get by adding it. Fee uses the lowest US$ figure in each country's fee note; a few notes include agent or notary costs, so read the full note. Time uses the shortest stated duration. Countries with no published fee or time fail a fee or time limit and rank last. "Best overall" weighs difficulty, remote founding, Google for Nonprofits eligibility and research confidence; "Your weights" uses the sliders. Bank-account groups are read from the research notes: "remote option" means at least one bank or licensed e-money provider onboards non-residents without a visit.</p>
+    <p>Filters: options inside one group widen the match (any of them); separate groups narrow it (all must hold). The number on each option is how many countries you would get by adding it. Fee uses the lowest US$ figure in each country's fee note; a few notes include agent or notary costs, so read the full note. Time uses the shortest stated duration. Countries with no published fee or time fail a fee or time limit and rank last. "Best overall" weighs difficulty, remote founding, Google for Nonprofits eligibility and research confidence; "Your weights" uses the sliders. Bank-account groups are read from the research notes: "remote option" means at least one bank or licensed e-money provider onboards non-residents without a visit. "Personal account" is a separate question: whether a non-resident foreign individual (no local visa or address) can open a personal account at a licensed local bank; fintech options are listed in each dossier but don't count.</p>
     <p>This is research, not legal advice. Confirm with the registry before filing. Grey areas on the map are dependent territories (Puerto Rico, New Caledonia, the Faroe Islands and others); charities there register under the parent country's law, so use that country's entry.</p>
   </footer>
 </div>
@@ -549,7 +580,9 @@ const MODES = {
   remote: { label: "Remote founding", key: "no_presence", cats: [["yes", "Fully remote", "d1"], ["partial", "Partly remote", "d2"], ["no", "Must be present", "d4"]] },
   fee: { label: "Fee", key: "fee_bin", cats: [["free", "Free", "d1"], ["low", "$1–100", "d2"], ["mid", "$101–500", "d3"], ["high", "Over $500", "d4"], ["unknown", "Not published", "d0"]] },
   time: { label: "Time", key: "time_bin", cats: [["fast", "Up to 2 weeks", "d1"], ["month", "Up to a month", "d2"], ["quarter", "1–3 months", "d3"], ["slow", "Over 3 months", "d4"], ["unknown", "Not stated", "d0"]] },
-  bank: { label: "Bank account", key: "bank_cat", cats: [["remote", "Remote option", "d1"], ["visit", "Branch visit", "d2"], ["blocked", "Effectively blocked", "d4"]] },
+  bank: { label: "Charity bank account", key: "bank_cat", cats: [["remote", "Remote option", "d1"], ["visit", "Branch visit", "d2"], ["blocked", "Effectively blocked", "d4"]] },
+  pbank: { label: "Personal account (non-resident)", key: "pb_status", cats: [["yes", "Open to non-residents", "d1"], ["limited", "Limited", "d3"], ["no", "Residents only", "d4"]] },
+  pbopen: { label: "Personal account opening", key: "pb_method", cats: [["remote", "Remote", "d1"], ["in-person", "In person", "d2"], ["not available", "Not available", "d4"]] },
   funding: { label: "Foreign funding", key: "funding_cat", cats: [["open", "No notable limits", "d1"], ["restricted", "Restricted", "d3"]] },
   gfn: { label: "Google for Nonprofits", key: "gfn", cats: [["Yes", "Eligible", "d1"], ["No", "Not eligible", "d4"]] },
   confidence: { label: "Confidence", key: "confidence", cats: [["high", "High", "d1"], ["med", "Medium", "d2"]] },
@@ -558,13 +591,17 @@ const REGIONS = [...new Set(DATA.map(d => d.region))].sort();
 // facet key -> {label, cats}; the first six show up front, the rest under "more"
 const FACETS = {};
 for (const m of Object.values(MODES)) FACETS[m.key] = { label: m.label, cats: m.cats };
+FACETS.pb_res = { label: "Local residence needed (personal account)", cats: [["no", "No", "d1"], ["often", "Often", "d2"], ["yes", "Yes", "d4"]] };
+FACETS.pb_diff = { label: "Personal banking difficulty", cats: MODES.difficulty.cats };
 FACETS.region = { label: "Region", cats: REGIONS.map(r => [r, r, null]) };
-const FRONT = ["difficulty", "no_presence", "fee_bin", "time_bin", "bank_cat", "funding_cat"];
-const MORE = ["region", "gfn", "confidence"];
+const FRONT = ["difficulty", "no_presence", "fee_bin", "time_bin", "bank_cat", "funding_cat", "pb_status", "pb_method"];
+const MORE = ["pb_res", "pb_diff", "region", "gfn", "confidence"];
 
 const LABEL = {}; for (const [k, f] of Object.entries(FACETS)) for (const [v, l, c] of f.cats) LABEL[k + ":" + v] = [l, c];
 const ORDER = { difficulty: ["easy", "medium", "hard", "very hard"], no_presence: ["yes", "partial", "no"], gfn: ["Yes", "No"],
-  confidence: ["high", "med"], bank_cat: ["remote", "visit", "blocked"], funding_cat: ["open", "restricted"] };
+  confidence: ["high", "med"], bank_cat: ["remote", "visit", "blocked"], funding_cat: ["open", "restricted"],
+  pb_status: ["yes", "limited", "no"], pb_method: ["remote", "in-person", "not available"], pb_res: ["no", "often", "yes"],
+  pb_diff: ["easy", "medium", "hard", "very hard"] };
 const DIFF_N = { easy: 0, medium: 1, hard: 2, "very hard": 3 };
 
 const BIG = 1e12;
@@ -574,9 +611,10 @@ const num = (v, desc) => v == null ? BIG : (desc ? -v : v);   // missing values 
 /* ---------- custom weights ---------- */
 const WEIGHTS = [
   ["difficulty", "Ease of registering"], ["remote", "Remote founding"], ["fee", "Low fee"], ["time", "Speed"],
-  ["bank", "Bank account access"], ["funding", "Open foreign funding"], ["gfn", "Google for Nonprofits"], ["conf", "Research confidence"],
+  ["bank", "Charity bank account"], ["pbank", "Personal account as non-resident"], ["funding", "Open foreign funding"],
+  ["gfn", "Google for Nonprofits"], ["conf", "Research confidence"],
 ];
-const W_DEFAULT = { difficulty: 3, remote: 3, fee: 2, time: 2, bank: 2, funding: 1, gfn: 1, conf: 1 };
+const W_DEFAULT = { difficulty: 3, remote: 3, fee: 2, time: 2, bank: 2, pbank: 1, funding: 1, gfn: 1, conf: 1 };
 const pct = key => { const v = DATA.filter(d => d[key] != null).map(d => d[key]).sort((a, b) => a - b);
   return x => { if (x == null) return 1; let i = 0; while (i < v.length && v[i] < x) i++; return v.length > 1 ? i / (v.length - 1) : 0; }; };
 const feePct = pct("fee_lo"), dayPct = pct("days_lo");
@@ -587,6 +625,7 @@ const PEN = {
   fee: d => feePct(d.fee_lo),
   time: d => dayPct(d.days_lo),
   bank: d => ({ remote: 0, visit: .5, blocked: 1 })[d.bank_cat] ?? 1,
+  pbank: d => (({ yes: 0, limited: .5, no: 1 })[d.pb_status] ?? 1) * .7 + (({ remote: 0, "in-person": .5, "not available": 1 })[d.pb_method] ?? 1) * .3,
   funding: d => d.funding_cat === "open" ? 0 : 1,
   gfn: d => d.gfn === "Yes" ? 0 : 1,
   conf: d => d.confidence === "high" ? 0 : .5,
@@ -605,6 +644,8 @@ const RANKS = {
   slowest:   { label: "Slowest to register", mode: "time", note: "Longest stated registration time first.", key: d => [num(d.days_hi, true), num(d.days_lo, true)] },
   remote:    { label: "Most remote-friendly", mode: "remote", note: "Fully remote founding first, then easiest banking, then difficulty.", key: d => [ord("no_presence", d), ord("bank_cat", d), ord("difficulty", d)] },
   bank:      { label: "Easiest bank account", mode: "bank", note: "Remote opening possible → branch visit → effectively blocked.", key: d => [ord("bank_cat", d), ord("difficulty", d)] },
+  pbank:     { label: "Easiest personal account (non-resident)", mode: "pbank", note: "Open to non-residents → limited → residents only; then remote opening first, then banking difficulty.", key: d => [ord("pb_status", d), ord("pb_method", d), ord("pb_diff", d), ord("pb_res", d)] },
+  pbhard:    { label: "Hardest personal account", mode: "pbank", note: "Residents-only and closed banking systems first.", key: d => [-ord("pb_status", d), -ord("pb_diff", d), -ord("pb_method", d)] },
   funding:   { label: "Fewest funding limits", mode: "funding", note: "No notable foreign-funding restrictions first.", key: d => [ord("funding_cat", d), ord("difficulty", d)] },
   cheapfast: { label: "Cheap and fast", mode: "fee", note: "Sum of fee rank and time rank; both must be stated.", key: null },
   alpha:     { label: "A–Z", mode: null, note: "Alphabetical.", key: d => [d.country] },
@@ -653,7 +694,7 @@ $("rankby").innerHTML = Object.entries(RANKS).map(([k, r]) => `<option value="${
 $("rankby").value = rankBy;
 
 /* ---------- filtering ---------- */
-const HAY = new Map(DATA.map(d => [d.country, [d.country, d.region, d.entity, d.requirements, d.bottleneck, d.notes, d.cost_time, d.tax_exempt, d.deduction, d.donor_restr, d.compliance, d.bank_access].join(" ").toLowerCase()]));
+const HAY = new Map(DATA.map(d => [d.country, [d.country, d.region, d.entity, d.requirements, d.bottleneck, d.notes, d.cost_time, d.tax_exempt, d.deduction, d.donor_restr, d.compliance, d.bank_access, d.pb_docs, d.pb_banks, d.pb_restr, d.pb_alt, d.pb_dep].join(" ").toLowerCase()]));
 function passes(d, skip) {
   for (const k in F) if (k !== skip && F[k].size && !F[k].has(d[k])) return false;
   const t = $("q").value.trim().toLowerCase();
@@ -791,9 +832,10 @@ function renderTable(list) {
     <td class="num" data-l="Fee" title="${esc(d.fee_usd)}">${esc(feeTxt(d))}</td>
     <td class="num" data-l="Time" title="${esc(d.time_to_reg)}">${esc(timeTxt(d))}</td>
     <td class="pc">${pill("bank_cat", d.bank_cat)}</td>
+    <td class="pc" title="${esc(LABEL["pb_method:" + d.pb_method]?.[0] ?? "")} opening · ${esc(d.pb_diff)}">${pill("pb_status", d.pb_status)}</td>
     <td class="pc">${pill("funding_cat", d.funding_cat)}</td>
     <td class="pc gfn">${pill("gfn", d.gfn)}</td></tr>`; }).join("")
-    || `<tr><td colspan="11" class="empty">No jurisdictions match all these filters. Remove one of the active filters above.</td></tr>`;
+    || `<tr><td colspan="12" class="empty">No jurisdictions match all these filters. Remove one of the active filters above.</td></tr>`;
   document.querySelectorAll("#tbl th[data-k]").forEach(th => th.setAttribute("aria-sort",
     colSort ? (th.dataset.k === colSort.k ? (colSort.dir > 0 ? "ascending" : "descending") : "none") : (th.dataset.k === "rank" ? "ascending" : "none")));
 }
@@ -816,7 +858,10 @@ function renderCompare() {
     ["Remote founding", d => pill("no_presence", d.no_presence), d => ord("no_presence", d), pill("no_presence", mostCommon(pool, "no_presence"))],
     ["Fee", d => esc(feeTxt(d)), d => num(d.fee_lo), bench.fee_lo == null ? "—" : fmtUSD(bench.fee_lo)],
     ["Time", d => esc(timeTxt(d)), d => num(d.days_lo), bench.days_lo == null ? "—" : dur(Math.round(bench.days_lo))],
-    ["Bank account", d => pill("bank_cat", d.bank_cat), d => ord("bank_cat", d), pill("bank_cat", mostCommon(pool, "bank_cat"))],
+    ["Charity bank account", d => pill("bank_cat", d.bank_cat), d => ord("bank_cat", d), pill("bank_cat", mostCommon(pool, "bank_cat"))],
+    ["Personal account (non-resident)", d => pill("pb_status", d.pb_status), d => ord("pb_status", d), pill("pb_status", mostCommon(pool, "pb_status"))],
+    ["Personal account opening", d => pill("pb_method", d.pb_method), d => ord("pb_method", d), pill("pb_method", mostCommon(pool, "pb_method"))],
+    ["Personal banking difficulty", d => pill("pb_diff", d.pb_diff), d => ord("pb_diff", d), pill("pb_diff", mostCommon(pool, "pb_diff"))],
     ["Foreign funding", d => pill("funding_cat", d.funding_cat), d => ord("funding_cat", d), pill("funding_cat", mostCommon(pool, "funding_cat"))],
     ["Google for Nonprofits", d => pill("gfn", d.gfn), d => ord("gfn", d), pill("gfn", mostCommon(pool, "gfn"))],
     ["Confidence", d => pill("confidence", d.confidence), d => ord("confidence", d), pill("confidence", mostCommon(pool, "confidence"))],
@@ -825,7 +870,10 @@ function renderCompare() {
     ["Local requirements", d => esc(d.requirements), null, ""],
     ["Fee note", d => esc(d.fee_usd), null, ""],
     ["Time note", d => esc(d.time_to_reg), null, ""],
-    ["Bank account note", d => esc(d.bank_access), null, ""],
+    ["Charity bank note", d => esc(d.bank_access), null, ""],
+    ["Personal account: documents", d => esc(d.pb_docs), null, ""],
+    ["Personal account: deposit & fees", d => esc(d.pb_dep), null, ""],
+    ["Personal account: banks", d => esc(d.pb_banks), null, ""],
     ["Tax-exempt status", d => esc(d.tax_exempt), null, ""],
     ["Annual compliance", d => esc(d.compliance), null, ""],
   ];
@@ -901,6 +949,7 @@ function renderDossier() {
   const d = byName.get(selected); if (!d) return;
   const notes = (d.notes || "").split(/\s+\|\s+/).filter(Boolean);
   const srcs = (d.sources || "").split(/\s*;\s*/).filter(s => /^https?:\/\//.test(s));
+  const pbs = (d.pb_src || "").split(/\s*;\s*/).filter(s => /^https?:\/\//.test(s));
   const chip = (key, v) => { const l = LABEL[key + ":" + v]; return l ? `<span class="chip c-${l[1]}">${esc(l[0])}</span>` : ""; };
   const inCmp = CMP.includes(d.country);
   $("dossier").innerHTML = `
@@ -908,7 +957,8 @@ function renderDossier() {
       <button type="button" class="btn${inCmp ? "" : " primary"}" data-addcmp="${esc(d.country)}"${!inCmp && CMP.length >= 6 ? " disabled" : ""}>${inCmp ? "Remove from benchmark" : "Benchmark"}</button></div>
     <div class="chips">${chip("difficulty", d.difficulty)}${chip("no_presence", d.no_presence)}
       <span class="chip plain">Google for Nonprofits: ${d.gfn === "Yes" ? "eligible" : "not eligible"}</span>
-      <span class="chip plain">Bank: ${esc(LABEL["bank_cat:" + d.bank_cat][0].toLowerCase())}</span>
+      <span class="chip plain">Charity bank: ${esc(LABEL["bank_cat:" + d.bank_cat][0].toLowerCase())}</span>
+      <span class="chip plain">Personal account: ${esc(LABEL["pb_status:" + d.pb_status]?.[0].toLowerCase() ?? "—")}</span>
       <span class="chip plain">Confidence: ${esc(d.confidence === "med" ? "medium" : d.confidence)}</span></div>
     <dl class="facts">
       <div><dt>Registration fee</dt><dd class="big">${esc(feeTxt(d))}</dd><dd>${esc(d.fee_usd || "—")}</dd></div>
@@ -916,14 +966,21 @@ function renderDossier() {
     </dl>
     ${sec("Entity to register", d.entity)}
     ${sec("Main bottleneck", d.bottleneck)}
-    <details class="dmore" id="dmore"${dossierOpen ? " open" : ""}><summary>Requirements, banking, tax, compliance and sources</summary>
+    <details class="dmore" id="dmore"${dossierOpen ? " open" : ""}><summary>Requirements, banking (charity and personal), tax, compliance and sources</summary>
     ${sec("Local requirements", d.requirements)}
     ${sec("Cost and time in practice", d.cost_time)}
-    ${sec("Bank account", d.bank_access)}
+    ${sec("Charity bank account", d.bank_access)}
     ${sec("Tax-exempt status", d.tax_exempt)}
     ${sec("Donor tax deductions", d.deduction)}
     ${sec("Foreign funding rules", d.donor_restr)}
     ${sec("Annual compliance", d.compliance)}
+    <div class="sec pb"><h3>Personal bank account as a non-resident</h3>
+      <div class="chips">${chip("pb_status", d.pb_status)}${chip("pb_method", d.pb_method)}
+        <span class="chip plain">Residence needed: ${esc(d.pb_res)}</span><span class="chip plain">Difficulty: ${esc(d.pb_diff)}</span>
+        <span class="chip plain">Confidence: ${esc(d.pb_conf)}</span></div>
+      <dl class="pbl"><dt>Documents</dt><dd>${esc(d.pb_docs)}</dd><dt>Deposit &amp; fees</dt><dd>${esc(d.pb_dep)}</dd>
+        <dt>Banks</dt><dd>${esc(d.pb_banks)}</dd><dt>Restrictions</dt><dd>${esc(d.pb_restr)}</dd><dt>Alternatives</dt><dd>${esc(d.pb_alt)}</dd></dl>
+      ${pbs.length ? `<p class="pbsrc">${pbs.map((s, i) => `<a href="${esc(s)}" target="_blank" rel="noopener">source ${i + 1}</a>`).join(" · ")}</p>` : ""}</div>
     ${notes.length ? `<div class="sec"><h3>Research notes</h3><ul>${notes.map(n => `<li>${esc(n)}</li>`).join("")}</ul></div>` : ""}
     ${srcs.length ? `<div class="sec src"><h3>Sources</h3><ul>${srcs.map(s => `<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s.replace(/^https?:\/\/(www\.)?/, ""))}</a></li>`).join("")}</ul></div>` : ""}
     </details>`;

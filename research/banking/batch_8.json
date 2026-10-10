@@ -1,0 +1,379 @@
+[
+ {
+  "country": "Grenada",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "often",
+  "difficulty": "hard",
+  "documents": "Passport plus second ID, proof of foreign address, bank reference letter, proof of income and source-of-funds documentation; banks may ask for a Grenada visa or residence.",
+  "min_deposit_fees": "Not published by banks; guides cite opening deposits from zero to about USD 10,000.",
+  "banks": "Republic Bank (Grenada), ACB Grenada, CIBC FirstCaribbean, Grenada Co-operative Bank (case-by-case for non-residents).",
+  "restrictions": "Banks generally decline short-stay tourists; enhanced KYC, FATCA/CRS reporting and Caribbean correspondent-bank de-risking limit non-resident onboarding.",
+  "alternatives": "Wise or Revolut for multi-currency needs; Grenada citizenship-by-investment holders get easier access.",
+  "confidence": "low",
+  "sources": [
+   "https://goldenharbors.com/articles/a-step-by-step-guide-to-open-a-bank-account-in-grenada",
+   "https://goldenharbors.com/articles/banks-in-grenada"
+  ]
+ },
+ {
+  "country": "Belize",
+  "nonresident_personal": "yes",
+  "opening_method": "remote",
+  "residence_required": "no",
+  "difficulty": "medium",
+  "documents": "Passport, proof of foreign address, bank reference, proof of income and source of wealth, CRS/FATCA self-certification; onboarding by video call and email.",
+  "min_deposit_fees": "Guides cite minimum deposits around USD 1,000-5,000; fees not published.",
+  "banks": "Offshore/international banks such as Belize Bank International and Heritage International Bank accept non-residents; domestic banks vary.",
+  "restrictions": "Offshore (international) banks hold foreign-currency accounts only; domestic BZD accounts usually need residency; strict source-of-funds checks and CRS reporting.",
+  "alternatives": "Wise, Revolut for everyday use.",
+  "confidence": "medium",
+  "sources": [
+   "https://globalbanks.com/belize-banking-requirements/",
+   "https://www.block3finance.com/how-to-open-an-offshore-bank-account-in-belize-a-comprehensive-guide"
+  ]
+ },
+ {
+  "country": "Peru",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "often",
+  "difficulty": "hard",
+  "documents": "Passport (at least 6 months validity); most banks want a Carné de Extranjería, Peruvian address proof (rental contract, utility bill) and local phone.",
+  "min_deposit_fees": "Not published for non-residents; basic accounts typically have no minimum deposit.",
+  "banks": "BCP, Interbank, BBVA Peru, Scotiabank Peru (mostly residents; passport-only basic accounts case-by-case).",
+  "restrictions": "Most banks require residency in practice; a 2025 SBS rule reportedly allows passport-only basic accounts but with limits; physical presence needed.",
+  "alternatives": "Wise, Revolut; local wallets Yape/Plin need a Peruvian bank account.",
+  "confidence": "medium",
+  "sources": [
+   "https://wise.com/au/blog/opening-a-bank-account-in-peru",
+   "https://www.riotimesonline.com/moving-to-peru/"
+  ]
+ },
+ {
+  "country": "Mongolia",
+  "nonresident_personal": "yes",
+  "opening_method": "remote",
+  "residence_required": "no",
+  "difficulty": "medium",
+  "documents": "Passport (notarised, apostilled copy for remote opening), proof of foreign address, bank reference letter, photo; in-branch opening needs passport only at many banks.",
+  "min_deposit_fees": "Not published.",
+  "banks": "Golomt Bank (remote savings account for people abroad), Khan Bank, TDB (Trade and Development Bank), XacBank (in-branch).",
+  "restrictions": "No legal bar on non-residents; remote opening limited to specific products and slow; FATF grey-list exit in 2023 but enhanced due diligence remains.",
+  "alternatives": "Wise for MNT transfers; QPay/SocialPay need a local account.",
+  "confidence": "medium",
+  "sources": [
+   "https://www.golomtbank.com/en/savings/9033",
+   "https://wheretoemigrate.io/blog/banking-in-mongolia-expat-guide-2026"
+  ]
+ },
+ {
+  "country": "Indonesia",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "often",
+  "difficulty": "hard",
+  "documents": "Passport with valid visa; KITAS/KITAP, local address, NPWP tax number and Indonesian phone usually required for full accounts.",
+  "min_deposit_fees": "Tourist-type accounts reportedly require USD 2,000-50,000 balance with higher fees under USD 10,000; otherwise not published.",
+  "banks": "BCA, Bank Mandiri, BNI, BRI, CIMB Niaga (passport-only accounts case-by-case at branches).",
+  "restrictions": "Without KITAS most banks refuse; tourist accounts are savings-only with limits; remote opening from abroad not permitted.",
+  "alternatives": "Wise, Revolut; Jenius/digital banks need KTP or KITAS.",
+  "confidence": "medium",
+  "sources": [
+   "https://www.cekindo.com/blog/opening-a-bank-account-in-indonesia",
+   "https://www.rukita.co/stories/how-to-open-a-bank-account-in-indonesia"
+  ]
+ },
+ {
+  "country": "Australia",
+  "nonresident_personal": "yes",
+  "opening_method": "remote",
+  "residence_required": "no",
+  "difficulty": "easy",
+  "documents": "Passport, visa grant and expected arrival date for migrant accounts; ID verified in branch after arrival; TFN recommended (founder's home country, so this is the inbound-migrant view).",
+  "min_deposit_fees": "Everyday accounts generally have no minimum deposit and no monthly fee for new migrants; interest without TFN taxed at 47%.",
+  "banks": "Commonwealth Bank (apply up to 14 days pre-arrival), Westpac (up to 12 months), ANZ; NAB generally in-branch.",
+  "restrictions": "Pre-arrival accounts are deposit-only until in-person ID check in Australia; non-visa-holding non-residents without arrival plans generally cannot open everyday accounts.",
+  "alternatives": "Wise or Revolut Australia offer AUD details; founder's home country, so domestic accounts already available.",
+  "confidence": "high",
+  "sources": [
+   "https://wise.com/au/blog/opening-a-bank-account-in-australia",
+   "https://blog.orbitremit.com/how-to-open-bank-account-australia-migrant/"
+  ]
+ },
+ {
+  "country": "Nauru",
+  "nonresident_personal": "no",
+  "opening_method": "not available",
+  "residence_required": "yes",
+  "difficulty": "very hard",
+  "documents": "No published non-resident process; CBA accounts opened via e-form for Nauruans and residents.",
+  "min_deposit_fees": "Not published.",
+  "banks": "Commonwealth Bank of Australia (in-country service since August 2025, replacing the Bendigo Bank agency); no domestic bank.",
+  "restrictions": "Nauru uses AUD and has no locally licensed bank; CBA service targets Nauruan residents; realistic option for non-residents is an Australian account.",
+  "alternatives": "An Australian bank account (AUD is legal tender); Wise.",
+  "confidence": "low",
+  "sources": [
+   "https://pina.com.fj/2025/08/12/bendigo-bank-cease-operations-in-nauru-commonwealth-bank-of-australia-opens-today/",
+   "https://www.bendigobank.com.au/media-centre/response-to-our-banks-presence-in-nauru/"
+  ]
+ },
+ {
+  "country": "Uzbekistan",
+  "nonresident_personal": "yes",
+  "opening_method": "in-person",
+  "residence_required": "no",
+  "difficulty": "medium",
+  "documents": "Passport, temporary registration (hotel or passport office), PINFL personal ID number, Uzbek mobile number; some banks ask non-resident questionnaire and source of funds.",
+  "min_deposit_fees": "Not published; cards often free or low cost.",
+  "banks": "TBC Bank Uzbekistan (app plus courier in Tashkent), Ipak Yo'li Bank, KDB Bank Uzbekistan, Asia Alliance Bank, Kapitalbank.",
+  "restrictions": "Must be physically in Uzbekistan with temporary registration; currency conversion controls largely liberalised but non-resident account rules apply.",
+  "alternatives": "Wise to UZS cards; local wallets Payme/Click once a card is held.",
+  "confidence": "high",
+  "sources": [
+   "https://tbcbank.uz/ru/landing/non-residents-eng",
+   "https://en.ipakyulibank.uz/news/how-can-a-non-resident-become-a-client-of-ipak-yoli-banki-i2409",
+   "https://kdb.uz/en/individuals/account-opening"
+  ]
+ },
+ {
+  "country": "Congo (DRC)",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "often",
+  "difficulty": "hard",
+  "documents": "Passport with visa, proof of address (foreign and often local host attestation), completed opening forms including FATCA/CRS self-certification; residence card often requested.",
+  "min_deposit_fees": "No opening fee typically, but banks require a minimum balance; amounts not published.",
+  "banks": "Rawbank, Equity BCDC, Ecobank RDC, Access Bank RDC, TMB (in-branch identity check required).",
+  "restrictions": "Economy heavily dollarised (USD and CDF accounts); conflict in the east, enhanced AML scrutiny (FATF grey list) and correspondent de-risking; no remote opening for non-residents found.",
+  "alternatives": "Mobile money (M-Pesa Vodacom, Orange Money, Airtel Money) with local SIM and ID; Wise does not pay out locally.",
+  "confidence": "low",
+  "sources": [
+   "https://wheretoemigrate.io/blog/banking-in-democratic-republic-of-the-congo-expat-guide-2026",
+   "https://expatarrivals.com/node/12924"
+  ]
+ },
+ {
+  "country": "Comoros",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "often",
+  "difficulty": "very hard",
+  "documents": "Passport, proof of address, proof of source of funds, sometimes a professional reference letter; residence permit if applicable.",
+  "min_deposit_fees": "Reportedly around KMF 10,000 for some local accounts; otherwise not published.",
+  "banks": "BIC Comores (Banque pour l'Industrie et le Commerce), Exim Bank Comores, Banque de Développement des Comores (case-by-case, in person).",
+  "restrictions": "Small cash-based banking system with scarce ATMs; KMF pegged to the euro under French Treasury arrangement; no published non-resident process.",
+  "alternatives": "Wise or Revolut held abroad; local mobile money requires a Comorian SIM and ID.",
+  "confidence": "low",
+  "sources": [
+   "https://wheretoemigrate.io/blog/banking-in-comoros-expat-guide-2026",
+   "https://www.jarniascyril.com/expatriation/moving-to-comoros-as-an-expat-practical-guide/"
+  ]
+ },
+ {
+  "country": "Eswatini",
+  "nonresident_personal": "no",
+  "opening_method": "not available",
+  "residence_required": "yes",
+  "difficulty": "very hard",
+  "documents": "Passport, proof of local residence, residence or work permit, tax number; in-branch verification.",
+  "min_deposit_fees": "Not published.",
+  "banks": "None known for non-residents; Standard Bank Eswatini, FNB Eswatini, Nedbank Eswatini and Eswatini Bank serve residents and permit holders.",
+  "restrictions": "Common Monetary Area exchange controls classify non-CMA persons as non-residents; banks require permits; practical workaround is a South African non-resident account usable across the CMA.",
+  "alternatives": "Standard Bank South Africa non-resident account (opened remotely, ZAR usable in Eswatini); Wise; MTN MoMo with local SIM.",
+  "confidence": "low",
+  "sources": [
+   "https://www.gov.uk/guidance/living-in-eswatini",
+   "https://www.standardbank.co.za/southafrica/personal/products-and-services/bank-with-us/foreign-nationals/non-residents/frequently-asked-question"
+  ]
+ },
+ {
+  "country": "Switzerland",
+  "nonresident_personal": "limited",
+  "opening_method": "remote",
+  "residence_required": "no",
+  "difficulty": "medium",
+  "documents": "Passport, proof of foreign address, foreign tax ID (CRS), source-of-wealth and income evidence; video identification accepted by Swiss regulation.",
+  "min_deposit_fees": "Swissquote reportedly requires a first deposit of about CHF/EUR 500; private banks often require CHF 100,000+; non-resident account fees generally higher.",
+  "banks": "Swissquote and Dukascopy Bank (remote onboarding for many countries); UBS and cantonal/private banks for higher-balance clients.",
+  "restrictions": "No banking secrecy for tax (CRS/AEOI with Australia); many retail banks refuse foreign domiciles or US persons; bank-specific excluded-country lists.",
+  "alternatives": "Wise, Revolut; Yuh and Neon are limited to Swiss/EU residents.",
+  "confidence": "medium",
+  "sources": [
+   "https://globalbanks.com/open-a-swiss-bank-account-online/",
+   "https://www.libertymundo.com/swiss-bank-account/"
+  ]
+ },
+ {
+  "country": "Slovenia",
+  "nonresident_personal": "yes",
+  "opening_method": "in-person",
+  "residence_required": "no",
+  "difficulty": "medium",
+  "documents": "Passport, Slovenian tax number (davčna številka, obtained via form DR-02 from FURS, by mail or in person), foreign tax number and proof of foreign address.",
+  "min_deposit_fees": "Not published; standard account fees typically a few euros per month.",
+  "banks": "NLB, OTP banka, Intesa Sanpaolo Bank (Slovenia), Addiko Bank, Sparkasse (branch opening).",
+  "restrictions": "Some banks cap deposits/withdrawals on non-resident accounts; EU AML and CRS reporting apply; online opening generally needs Slovenian e-ID.",
+  "alternatives": "Wise, Revolut, N26 (EU IBANs, for EEA residents).",
+  "confidence": "medium",
+  "sources": [
+   "https://wise.com/gb/blog/opening-a-bank-account-in-slovenia",
+   "https://www.expat.com/en/guide/europe/slovenia/15858-banking-in-slovenia.html"
+  ]
+ },
+ {
+  "country": "Belarus",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "no",
+  "difficulty": "hard",
+  "documents": "Passport with notarised Russian or Belarusian translation, proof of legal stay (visa/registration) at some banks, local phone number for SMS codes.",
+  "min_deposit_fees": "Reported large frozen minimum balances for non-resident foreign-currency accounts at some banks (e.g. Priorbank); not officially published.",
+  "banks": "Priorbank, Belarusbank, Belagroprombank (in person or via notarised power of attorney).",
+  "restrictions": "Currency law allows non-resident accounts but banks may refuse; Australian, EU and US sanctions on Belarus and several state banks; restricted SWIFT and foreign-card access.",
+  "alternatives": "None practical for an Australian; Wise and Revolut do not support BYN.",
+  "confidence": "low",
+  "sources": [
+   "https://gratanet.com/news/opening-of-a-bank-account-by-a-non-resident-in-belarus",
+   "https://en.lsl.by/account-opening-by-a-non-resident-with-a-bank-of-belarus/"
+  ]
+ },
+ {
+  "country": "Norway",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "often",
+  "difficulty": "hard",
+  "documents": "Passport, D-number or Norwegian national ID number (needed for BankID), proof of foreign address and purpose; some banks order a D-number for the client.",
+  "min_deposit_fees": "Non-resident accounts often require a large deposit; amounts not published.",
+  "banks": "Some SpareBank 1 banks and local savings banks case-by-case; DNB reportedly stopped non-resident onboarding.",
+  "restrictions": "Without a D-number access is often savings-only; BankID needed for online banking; strict AML/CRS checks.",
+  "alternatives": "Wise, Revolut; Vipps requires a Norwegian bank account.",
+  "confidence": "medium",
+  "sources": [
+   "https://wise.com/us/blog/opening-a-bank-account-in-norway",
+   "https://www.thelocal.no/20221118/the-key-things-you-need-to-know-about-opening-a-bank-account-in-norway"
+  ]
+ },
+ {
+  "country": "Italy",
+  "nonresident_personal": "yes",
+  "opening_method": "in-person",
+  "residence_required": "no",
+  "difficulty": "medium",
+  "documents": "Passport, codice fiscale (free from Agenzia delle Entrate or an Italian consulate abroad), proof of foreign address and foreign tax ID.",
+  "min_deposit_fees": "Not published; conto non residenti fees vary by bank, often a monthly fee plus imposta di bollo.",
+  "banks": "Intesa Sanpaolo, UniCredit, BNL BNP Paribas, Banco BPM (conto corrente non residenti, branch visit typically required).",
+  "restrictions": "Non-resident accounts may have limited services; EU AML and CRS reporting; requirements vary between branches.",
+  "alternatives": "Wise, Revolut, N26 (EU IBANs, for EEA residents).",
+  "confidence": "medium",
+  "sources": [
+   "https://www.spotahome.com/blog/how-to-open-a-bank-account-in-italy/",
+   "https://globalinvestments.net/banking/guides/banking-for-italy-based-expats"
+  ]
+ },
+ {
+  "country": "Qatar",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "often",
+  "difficulty": "hard",
+  "documents": "Passport, entry visa, recent bank statements, source of wealth declaration; most banks require a Qatar ID (QID) and salary certificate.",
+  "min_deposit_fees": "Not published.",
+  "banks": "QNB (non-resident accounts by direct enquiry), other banks case-by-case.",
+  "restrictions": "Standard retail accounts are tied to the QID; reported pre-arrival accounts require a QID within 90 days under QCB rules.",
+  "alternatives": "Wise, Revolut.",
+  "confidence": "low",
+  "sources": [
+   "https://qnb.bank.in/sites/qnb/qnbfs/page/en/enaccountopeningrequirements.html",
+   "https://www.ykgglobal.com/local-page/bank-account-opening-in-qatar"
+  ]
+ },
+ {
+  "country": "Algeria",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "no",
+  "difficulty": "hard",
+  "documents": "Passport, proof of foreign residence; banks may ask for further KYC.",
+  "min_deposit_fees": "Not published; press reports cite DZD 50,000 deposits at some banks for clients without salary domiciliation.",
+  "banks": "Not published; state banks (e.g. BNA, CPA, BEA) and foreign-owned banks such as Société Générale Algérie and BNP Paribas El Djazair offer foreign-currency accounts.",
+  "restrictions": "Bank of Algeria Regulation 09-01 allows non-resident foreigners to hold foreign-currency accounts; strict exchange controls, dinar non-convertible, official rate only.",
+  "alternatives": "None practical locally; Wise does not pay out in DZD.",
+  "confidence": "low",
+  "sources": [
+   "https://algerie-eco.com/note022018",
+   "https://www.algerie360.com/algerie-les-banques-etrangeres-autorisees-a-ouvrir-des-comptes-en-devises/"
+  ]
+ },
+ {
+  "country": "Somaliland",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "often",
+  "difficulty": "very hard",
+  "documents": "Passport or other ID approved by the Central Bank of Somaliland, physical address, source of funds and purpose of account declaration.",
+  "min_deposit_fees": "Not published.",
+  "banks": "Dahabshil Bank International, Premier Bank, IBS Bank (products mainly target residents and Somali diaspora).",
+  "restrictions": "Unrecognised territory with limited correspondent banking and heavy de-risking; economy runs largely on USD mobile money; no published non-resident foreigner process.",
+  "alternatives": "Zaad mobile money (Telesom) and eDahab with local SIM; Dahabshiil money transfer.",
+  "confidence": "low",
+  "sources": [
+   "https://en.wikipedia.org/wiki/List_of_banks_in_Somaliland",
+   "https://dahabshilbank.com/sole-proprietor-business"
+  ]
+ },
+ {
+  "country": "Bhutan",
+  "nonresident_personal": "no",
+  "opening_method": "not available",
+  "residence_required": "yes",
+  "difficulty": "very hard",
+  "documents": "Foreign nationals must reside in Bhutan long-term (with work permit) for a foreign currency account; remote Remit Bhutan route is for non-resident Bhutanese only.",
+  "min_deposit_fees": "Not published.",
+  "banks": "None known; Bank of Bhutan and Bhutan National Bank serve residents and Bhutanese nationals.",
+  "restrictions": "Royal Monetary Authority circular (2012) barred banks from opening deposit accounts for non-resident foreigners; tourist payments go through licensed tour operators.",
+  "alternatives": "None; pay via tour operator or international cards.",
+  "confidence": "medium",
+  "sources": [
+   "https://thebhutanese.bt/non-resident-foreigners-bank-accounts-in-country-is-money-laundering-rma-governor/",
+   "https://www.bob.bt/?p=1827",
+   "https://www.thimphutech.com/2012/03/important-rma-circular-is-offline-only.html"
+  ]
+ },
+ {
+  "country": "Mali",
+  "nonresident_personal": "no",
+  "opening_method": "not available",
+  "residence_required": "yes",
+  "difficulty": "very hard",
+  "documents": "Passport, Malian residence certificate and in-branch opening.",
+  "min_deposit_fees": "Not published.",
+  "banks": "None known for non-residents; BDM (Banque de Développement du Mali) and Ecobank Mali serve residents.",
+  "restrictions": "UEMOA exchange control (BCEAO instruction 09/07/2025/RFE on non-resident accounts effective August 2025); security crisis and travel warnings make in-person opening impractical.",
+  "alternatives": "Orange Money Mali or Moov Money with local SIM and ID; Wise does not support Mali payouts.",
+  "confidence": "low",
+  "sources": [
+   "https://wheretoemigrate.io/blog/banking-in-mali-expat-guide-2026",
+   "https://www.labase-lextenso.fr/l-essentiel-droits-africains-des-affaires/2025-n9/reforme-du-controle-des-changes-au-sein-de-l-uemoa-des-precisions-sur-l-ouverture-des-comptes-en-devises-DAA203g8"
+  ]
+ },
+ {
+  "country": "Russia",
+  "nonresident_personal": "limited",
+  "opening_method": "in-person",
+  "residence_required": "no",
+  "difficulty": "hard",
+  "documents": "Passport, valid visa or proof of legal entry, migration card, Russian phone number; INN sometimes requested.",
+  "min_deposit_fees": "Not published; MIR debit cards typically free to issue.",
+  "banks": "T-Bank (formerly Tinkoff) issues accounts and MIR cards to any foreigner legally present; Sberbank and others case-by-case.",
+  "restrictions": "Australia is an unfriendly state: Central Bank restrictions on transfers abroad, Western sanctions on major banks (including Australian sanctions), no Visa/Mastercard international use; dealing may breach Australian sanctions law.",
+  "alternatives": "None from abroad; Wise and Revolut do not support RUB transfers.",
+  "confidence": "medium",
+  "sources": [
+   "https://www.tinkoff.ru/cards/debit-cards/tinkoff-black/form/foreign/eng/",
+   "https://russiable.com/open-bank-account-russia/",
+   "https://www.cbr.ru/eng/press/event/?id=26827"
+  ]
+ }
+]

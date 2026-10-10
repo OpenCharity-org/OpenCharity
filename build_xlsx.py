@@ -16,6 +16,7 @@ from openpyxl.utils import get_column_letter
 BASE = Path(__file__).parent
 SRC = BASE / "charities_by_country_v2.csv"
 OUT = BASE / "charities_by_country_v2.xlsx"
+BANKING = BASE / "banking_by_country.csv"  # merge_banking.py
 
 DIFF_FILL = {
     "easy":      PatternFill("solid", start_color="C6EFCE"),
@@ -159,10 +160,40 @@ def main():
     put(rr, "Caveats", "Fees/times are official-fee approximations and exclude agent/lawyer costs (remote registration usually adds 1-3x). Confidence reflects source quality: 'low' = background knowledge, official registry not located. Verify against the cited sources before committing. Not legal advice."); rr += 2
     _non = sorted(r["Country"] for r in rows if r.get("Google for Nonprofits eligible") != "Yes")
     put(rr, "GfN list", f"186 authoritative names tokenized from the Google for Nonprofits program list; {len(rows) - len(_non)} of {len(rows)} countries qualify. The {len(_non)} not on the list: {', '.join(_non)}."); rr += 2
+    put(rr, "Foreigner banking sheet", "Separate question from charity registration: can a NON-RESIDENT foreign individual (Australian resident, no local visa, address or job) open a PERSONAL account at a licensed local bank? Non-resident personal account = yes (several mainstream banks) / limited (few banks, premium tiers, big deposits, case-by-case) / no (residence permit needed or banking closed); opening method = remote / in-person / not available; residence required = no / often / yes; documents, deposits, named banks, restrictions (sanctions, capital controls, FATCA/CRS) and fintech alternatives, with sources. Researched Oct 2026; merge_banking.py builds banking_by_country.csv from research/banking/batch_*.json."); rr += 2
     put(rr, "Reproducibility", "merge.py regenerates v1; merge_enrich.py folds enrich-out/e*.json into charities_by_country_v2.csv; this script builds the XLSX. Run in order after any data change.")
 
+    # ---------- Sheet 5: Foreigner banking ----------
+    nsheets = 4
+    if BANKING.exists():
+        brows = list(csv.DictReader(open(BANKING, encoding="utf-8")))
+        bh = list(brows[0].keys())
+        ws5 = wb.create_sheet("Foreigner banking")
+        ws5.append(bh)
+        for r in brows:
+            ws5.append([r[c] for c in bh])
+        for cell in ws5[1]:
+            cell.fill = HEADER_FILL
+            cell.font = HEADER_FONT
+            cell.alignment = Alignment(vertical="center", wrap_text=True)
+        status_fill = {"yes": DIFF_FILL["easy"], "limited": DIFF_FILL["hard"], "no": DIFF_FILL["very hard"]}
+        st_i, df_i = bh.index("Non-resident personal account"), bh.index("Banking difficulty")
+        for row in ws5.iter_rows(min_row=2):
+            for cell in row:
+                cell.border = THIN
+                cell.alignment = Alignment(vertical="top", wrap_text=True)
+            if row[st_i].value in status_fill:
+                row[st_i].fill = status_fill[row[st_i].value]
+            if row[df_i].value in DIFF_FILL:
+                row[df_i].fill = DIFF_FILL[row[df_i].value]
+        for i, w in enumerate([24, 14, 14, 13, 12, 44, 32, 40, 44, 40, 11, 50]):
+            ws5.column_dimensions[get_column_letter(i + 1)].width = w
+        ws5.freeze_panes = "B2"
+        ws5.auto_filter.ref = ws5.dimensions
+        nsheets = 5
+
     wb.save(OUT)
-    print(f"wrote {OUT}: 4 sheets, master {len(rows)} rows x {len(header)} cols")
+    print(f"wrote {OUT}: {nsheets} sheets, master {len(rows)} rows x {len(header)} cols")
     print("top-10:", [r["Country"] for r in top])
 
 if __name__ == "__main__":

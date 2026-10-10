@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render README screenshots of the atlas (docs/index.html) with headless Chrome.
 
-Writes docs/screenshots/{desktop-light,desktop-dark,benchmark,mobile}.png.
+Writes docs/screenshots/{desktop-light,desktop-dark,benchmark,banking,mobile}.png.
 macOS: uses Google Chrome from /Applications and `sips` to crop the phone shot
 (Chrome's headless window cannot be narrower than 500px, so the phone view is
 rendered in a 390px iframe and cropped).
@@ -21,6 +21,11 @@ PRE = '<script>try{localStorage.clear();localStorage.setItem("atlas-theme",JSON.
 # runs after the page script
 POST = {
     "plain": "",
+    "banking": """<script>
+document.querySelector('#modes [data-m="pbank"]').click();
+const r = document.querySelector("#rankby"); r.value = "pbank"; r.dispatchEvent(new Event("change"));
+select("Georgia", false); window.scrollTo(0, 0);
+</script>""",
     "benchmark": """<script>
 const q = s => document.querySelector(s);
 ["easy", "medium"].forEach(v => q(`.opt[data-f="difficulty"][data-v="${v}"]`).click());
@@ -60,4 +65,5 @@ if __name__ == "__main__":
     shot("desktop-light", "light", "plain", (1440, 960))
     shot("desktop-dark", "dark", "plain", (1440, 960))
     shot("benchmark", "light", "benchmark", (1440, 1200))
+    shot("banking", "light", "banking", (1440, 960))
     shot("mobile", "light", "plain", (600, 1400), crop=(390, 1400))

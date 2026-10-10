@@ -30,8 +30,8 @@ from build_webapp import build_data
 BASE = Path(__file__).parent
 GEO = BASE / "webapp" / "geo" / "countries-50m.json"
 BANKING = BASE / "banking_by_country.csv"  # merge_banking.py: personal accounts for non-residents
-OUT = BASE / "webapp" / "atlas.html"
-DOCS = BASE / "docs" / "index.html"  # GitHub Pages copy (full HTML document)
+OUT = BASE / "webapp" / "legacy" / "atlas-v1.html"  # archived design; build_site.py builds the live site
+DOCS = BASE / "webapp" / "legacy" / "atlas-v1-page.html"  # archived full-document copy
 
 # dataset name -> Natural Earth feature name
 ALIAS = {

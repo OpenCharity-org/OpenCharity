@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Render README screenshots of the atlas (docs/index.html) with headless Chrome.
+"""Render README screenshots of the site (docs/index.html) with headless Chrome.
 
-Writes docs/screenshots/{desktop-light,desktop-dark,benchmark,banking,mobile}.png for the map atlas
-(docs/index.html) and {rank,compare,country}.png for the rank-and-compare page (docs/rank.html).
+Writes docs/screenshots/{home,map,rankings,compare,banking,country,dark,mobile}.png.
 macOS: uses Google Chrome from /Applications and `sips` to crop the phone shot
 (Chrome's headless window cannot be narrower than 500px, so the phone view is
 rendered in a 390px iframe and cropped).
 """
+import json
 import shutil
 import subprocess
 import tempfile
@@ -16,74 +16,37 @@ BASE = Path(__file__).parent
 PAGE = BASE / "docs" / "index.html"
 OUT = BASE / "docs" / "screenshots"
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-
 # runs before the page script: clean state, fixed theme
-PRE = '<script>try{localStorage.clear();localStorage.setItem("atlas-theme",JSON.stringify("%s"))}catch(e){}</script>'
-# runs after the page script
-POST = {
-    "plain": "",
-    "banking": """<script>
-document.querySelector('#modes [data-m="pbank"]').click();
-const r = document.querySelector("#rankby"); r.value = "pbank"; r.dispatchEvent(new Event("change"));
-select("Georgia", false); window.scrollTo(0, 0);
-</script>""",
-    "benchmark": """<script>
-const q = s => document.querySelector(s);
-["easy", "medium"].forEach(v => q(`.opt[data-f="difficulty"][data-v="${v}"]`).click());
-q('.opt[data-f="no_presence"][data-v="yes"]').click();
-const r = q("#rankby"); r.value = "custom"; r.dispatchEvent(new Event("change"));
-for (const c of ["Estonia", "Georgia", "United Kingdom", "Kyrgyzstan"]) q(`#tbl input[data-cmp="${c}"]`).click();
-q(".main").style.display = "none"; q("header.top").style.display = "none";
-</script>""",
-}
+PRE = '<script>try{localStorage.clear();localStorage.setItem("oc-site",%s)}catch(e){}</script>'
 
 
-def shot(name, theme, post, size, crop=None):
+def shot(name, route, size, theme="light", crop=None):
     with tempfile.TemporaryDirectory() as tmp:
-        html = PAGE.read_text(encoding="utf-8")
-        html = html.replace("<head>", "<head>\n" + PRE % theme, 1).replace("</body>", POST[post] + "</body>", 1)
+        state = json.dumps(json.dumps({"theme": theme}))
         page = Path(tmp) / "page.html"
-        page.write_text(html, encoding="utf-8")
-        target = page
+        page.write_text(PAGE.read_text(encoding="utf-8").replace("<head>", "<head>\n" + PRE % state, 1), encoding="utf-8")
+        target, frag = page.as_uri(), "#" + route
         if crop:  # phone: 390px iframe
-            target = Path(tmp) / "phone.html"
-            target.write_text(f'<!doctype html><body style="margin:0"><iframe src="page.html" '
-                              f'style="width:{crop[0]}px;height:{crop[1]}px;border:0;display:block;margin:0 auto"></iframe></body>')
+            phone = Path(tmp) / "phone.html"
+            phone.write_text(f'<!doctype html><body style="margin:0"><iframe src="page.html#{route}" '
+                             f'style="width:{crop[0]}px;height:{crop[1]}px;border:0;display:block;margin:0 auto"></iframe></body>')
+            target, frag = phone.as_uri(), ""
         png = Path(tmp) / "out.png"
         subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", f"--window-size={size[0]},{size[1]}",
-                        "--virtual-time-budget=10000", f"--screenshot={png}", target.as_uri()],
-                       check=True, capture_output=True, timeout=120)
-        if crop:
-            # sips crops around the centre, where the iframe sits
-            subprocess.run(["sips", "--cropToHeightWidth", str(crop[1]), str(crop[0]), str(png)],
-                           check=True, capture_output=True)
+                        "--virtual-time-budget=10000", f"--screenshot={png}", target + frag], check=True, capture_output=True, timeout=120)
+        if crop:  # sips crops around the centre, where the iframe sits
+            subprocess.run(["sips", "--cropToHeightWidth", str(crop[1]), str(crop[0]), str(png)], check=True, capture_output=True)
         OUT.mkdir(parents=True, exist_ok=True)
         shutil.copy(png, OUT / f"{name}.png")
         print("wrote", OUT / f"{name}.png")
 
 
-RANK_PAGE = BASE / "docs" / "rank.html"
-RANK_PRE = '<script>try{localStorage.clear();localStorage.setItem("oci-state",JSON.stringify({theme:"dark"}))}catch(e){}</script>'
-
-
-def rank_shot(name, route, size):
-    with tempfile.TemporaryDirectory() as tmp:
-        page = Path(tmp) / "page.html"
-        page.write_text(RANK_PAGE.read_text(encoding="utf-8").replace("<head>", "<head>\n" + RANK_PRE, 1), encoding="utf-8")
-        png = Path(tmp) / "out.png"
-        subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--hide-scrollbars", f"--window-size={size[0]},{size[1]}",
-                        "--virtual-time-budget=10000", f"--screenshot={png}", page.as_uri() + route],
-                       check=True, capture_output=True, timeout=120)
-        shutil.copy(png, OUT / f"{name}.png")
-        print("wrote", OUT / f"{name}.png")
-
-
 if __name__ == "__main__":
-    shot("desktop-light", "light", "plain", (1440, 960))
-    shot("desktop-dark", "dark", "plain", (1440, 960))
-    shot("benchmark", "light", "benchmark", (1440, 1200))
-    shot("banking", "light", "banking", (1440, 960))
-    shot("mobile", "light", "plain", (600, 1400), crop=(390, 1400))
-    rank_shot("rank", "#/rank", (1440, 900))
-    rank_shot("compare", "#/compare/australia,estonia,georgia,united-kingdom,japan", (1440, 1100))
-    rank_shot("country", "#/country/georgia", (1440, 1000))
+    shot("home", "/", (1440, 900))
+    shot("map", "/map/estonia", (1440, 900))
+    shot("rankings", "/rankings/overall", (1440, 900))
+    shot("compare", "/compare/estonia,georgia,united-kingdom", (1440, 900))
+    shot("banking", "/banking", (1440, 900))
+    shot("country", "/country/georgia", (1440, 800))
+    shot("dark", "/map", (1440, 900), theme="dark")
+    shot("mobile", "/map/portugal", (600, 844), crop=(390, 844))

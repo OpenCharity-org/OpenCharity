@@ -27,8 +27,8 @@ from iso2 import ISO2, SOMALILAND_SVG
 
 BASE = Path(__file__).parent
 FLAGS = BASE / "webapp" / "flags"
-OUT = BASE / "webapp" / "rank.html"
-DOCS = BASE / "docs" / "rank.html"  # secondary page; build_atlas.py writes the main map atlas
+OUT = BASE / "webapp" / "legacy" / "index-v2.html"  # archived design; build_site.py builds the live site
+DOCS = BASE / "webapp" / "legacy" / "index-v2-page.html"  # archived full-document copy
 REPO = "https://github.com/OpenCharity-org/OpenCharity"
 
 # fields the page never shows

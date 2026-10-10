@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the OpenCharity Index: webapp/atlas.html (artifact fragment) and docs/index.html (GitHub Pages).
+"""Build the OpenCharity Index: webapp/rank.html (fragment) and docs/rank.html (GitHub Pages, secondary page).
 
 A rank-and-compare site for the charity dataset, laid out like a passport index:
   #/explore          wall of country "covers"; FIND searches
@@ -27,8 +27,8 @@ from iso2 import ISO2, SOMALILAND_SVG
 
 BASE = Path(__file__).parent
 FLAGS = BASE / "webapp" / "flags"
-OUT = BASE / "webapp" / "atlas.html"
-DOCS = BASE / "docs" / "index.html"
+OUT = BASE / "webapp" / "rank.html"
+DOCS = BASE / "docs" / "rank.html"  # secondary page; build_atlas.py writes the main map atlas
 REPO = "https://github.com/OpenCharity-org/OpenCharity"
 
 # fields the page never shows
@@ -72,7 +72,7 @@ def main():
                     f'<meta property="og:description" content="Global Charity Power Rank: {len(data)} jurisdictions ranked by how easy, '
                     'cheap and fast it is to register a charity from Australia.">\n'
                     '<meta property="og:image" content="https://raw.githubusercontent.com/OpenCharity-org/OpenCharity/main/docs/screenshots/rank.png">\n'
-                    '<meta property="og:url" content="https://opencharity-org.github.io/OpenCharity/">\n'
+                    '<meta property="og:url" content="https://opencharity-org.github.io/OpenCharity/rank.html">\n'
                     '<meta name="twitter:card" content="summary_large_image">\n'
                     + head + '</head>\n<body>\n<header class="top"' + body + '\n</body>\n</html>\n', encoding="utf-8")
     (DOCS.parent / ".nojekyll").write_text("", encoding="utf-8")
@@ -435,7 +435,7 @@ footer.bot p { margin: 0; }
           <a href="__REPO__/raw/main/charities_by_country_v2.csv" target="_blank" rel="noopener">Download charity data (CSV)</a>
           <a href="__REPO__/raw/main/banking_by_country.csv" target="_blank" rel="noopener">Download banking data (CSV)</a>
           <a href="__REPO__/raw/main/charities_by_country_v2.xlsx" target="_blank" rel="noopener">Download workbook (Excel)</a>
-          <a href="https://opencharity-org.github.io/OpenCharity/classic.html" target="_blank" rel="noopener">Classic atlas</a>
+          <a href="https://opencharity-org.github.io/OpenCharity/" target="_blank" rel="noopener">Map atlas</a>
           <a href="__REPO__" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
@@ -508,7 +508,7 @@ footer.bot p { margin: 0; }
 
 <footer class="bot"><div class="in">
   <p><b>Open data</b> for charity founders · Built by <a href="__REPO__" target="_blank" rel="noopener">OpenCharity</a></p>
-  <p><a href="__REPO__" target="_blank" rel="noopener">GitHub</a> · <a href="https://opencharity-org.github.io/OpenCharity/classic.html" target="_blank" rel="noopener">Classic atlas</a> · © 2026 OpenCharity · CC BY 4.0 data</p>
+  <p><a href="__REPO__" target="_blank" rel="noopener">GitHub</a> · <a href="https://opencharity-org.github.io/OpenCharity/" target="_blank" rel="noopener">Map atlas</a> · © 2026 OpenCharity · CC BY 4.0 data</p>
 </div></footer>
 
 <div class="modal" id="modal" hidden role="dialog" aria-modal="true" aria-labelledby="mTitle"><div class="mbox" id="mbox"></div></div>

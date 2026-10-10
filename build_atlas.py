@@ -30,8 +30,8 @@ from build_webapp import build_data
 BASE = Path(__file__).parent
 GEO = BASE / "webapp" / "geo" / "countries-50m.json"
 BANKING = BASE / "banking_by_country.csv"  # merge_banking.py: personal accounts for non-residents
-OUT = BASE / "webapp" / "atlas-classic.html"  # build_index.py writes the main page
-DOCS = BASE / "docs" / "classic.html"  # GitHub Pages copy (full HTML document)
+OUT = BASE / "webapp" / "atlas.html"
+DOCS = BASE / "docs" / "index.html"  # GitHub Pages copy (full HTML document)
 
 # dataset name -> Natural Earth feature name
 ALIAS = {
@@ -231,7 +231,7 @@ def main():
                     '<meta property="og:title" content="Charity Registration Atlas">\n'
                     f'<meta property="og:description" content="Rank and compare {len(data)} jurisdictions by how easy, cheap and fast it is to register a charity from Australia.">\n'
                     '<meta property="og:image" content="https://raw.githubusercontent.com/OpenCharity-org/OpenCharity/main/docs/screenshots/desktop-light.png">\n'
-                    '<meta property="og:url" content="https://opencharity-org.github.io/OpenCharity/classic.html">\n'
+                    '<meta property="og:url" content="https://opencharity-org.github.io/OpenCharity/">\n'
                     '<meta name="twitter:card" content="summary_large_image">\n'
                     + head + '</head>\n<body style="margin:0">\n<div class="wrap"' + body + '\n</body>\n</html>\n', encoding="utf-8")
     (DOCS.parent / ".nojekyll").write_text("", encoding="utf-8")
@@ -500,6 +500,7 @@ footer p { margin: 0; }
     <div class="titlebar">
       <h1>Charity Registration Atlas</h1>
       <div class="hlinks">
+        <a class="btn ghost" href="https://opencharity-org.github.io/OpenCharity/rank.html" target="_blank" rel="noopener">Rank &amp; compare</a>
         <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity" target="_blank" rel="noopener">GitHub</a>
         <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity/raw/main/charities_by_country_v2.csv" target="_blank" rel="noopener">CSV</a>
         <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity/raw/main/charities_by_country_v2.xlsx" target="_blank" rel="noopener">Excel</a>

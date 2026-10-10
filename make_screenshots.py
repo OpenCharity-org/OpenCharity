@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render README screenshots of the site (docs/index.html) with headless Chrome.
 
-Writes docs/screenshots/{home,map,rankings,compare,banking,country,dark,mobile}.png.
+Writes docs/screenshots/{explorer,home,map,rankings,compare,banking,country,dark,mobile}.png.
 macOS: uses Google Chrome from /Applications and `sips` to crop the phone shot
 (Chrome's headless window cannot be narrower than 500px, so the phone view is
 rendered in a 390px iframe and cropped).
@@ -42,7 +42,8 @@ def shot(name, route, size, theme="light", crop=None):
 
 
 if __name__ == "__main__":
-    shot("home", "/", (1440, 900))
+    shot("explorer", "/explore/estonia?f=difficulty:easy,medium", (1440, 1500))
+    shot("home", "/start", (1440, 900))
     shot("map", "/map/estonia", (1440, 900))
     shot("rankings", "/rankings/overall", (1440, 900))
     shot("compare", "/compare/estonia,georgia,united-kingdom", (1440, 900))

@@ -327,6 +327,48 @@ footer.site p { margin: 0; max-width: 80ch; }
   table.cmp .l { font-size: 12.5px; padding: 8px; }
   .modal { padding-top: 20px; }
 }
+/* ---------- explorer (everything on one page) ---------- */
+.xgrid { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 16px; align-items: start; }
+.xside { position: sticky; top: 72px; max-height: calc(100vh - 88px); overflow-y: auto; padding: 4px 14px 14px; }
+.xside > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 10px 0; position: sticky; top: 0; background: var(--surface); z-index: 2; border-bottom: 1px solid var(--line); }
+.xside > summary::-webkit-details-marker { display: none; }
+.xside > summary h2 { font-size: 19px; }
+.xside .fgroup > summary { cursor: pointer; font: 700 12.5px var(--f-body); text-transform: uppercase; letter-spacing: .05em; color: var(--accent); padding: 4px 0; }
+.xside .facet legend { font-size: 13px; }
+.xside .opt { font-size: 12px; padding: 2px 9px 2px 7px; min-height: 28px; }
+.xside .fgroup { padding: 8px 0; }
+.xmain { min-width: 0; }
+.xtop { display: grid; grid-template-columns: minmax(0, 1fr) 390px; gap: 12px; align-items: start; }
+.xdet { max-height: 560px; overflow-y: auto; position: relative; }
+.xdet .close { position: sticky; top: 8px; float: right; margin: 8px 8px 0 0; z-index: 2; }
+.xhint { padding: 16px 18px; }
+.xhint h2 { font-size: 18px; margin-bottom: 6px; }
+.xstats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+.xstats div { background: var(--surface-2); border-radius: 10px; padding: 8px 10px; }
+.xstats b { display: block; font: 700 19px var(--f-display); }
+.xstats span { font-size: 12px; color: var(--muted); }
+.xblock { margin-top: 14px; }
+.xblock > .xbh { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.xblock > .xbh h2 { font-size: 19px; }
+.xscroll { overflow: auto; max-height: 660px; }
+table.xt { border-collapse: separate; border-spacing: 0; font-size: 12.5px; min-width: 100%; }
+table.xt th { position: sticky; top: 0; background: var(--surface); z-index: 2; border-bottom: 1px solid var(--line); text-align: left; padding: 0; white-space: nowrap; vertical-align: bottom; }
+table.xt th button { background: none; border: 0; padding: 8px; font-weight: 700; font-size: 11.5px; cursor: pointer; color: var(--muted); text-align: left; }
+table.xt th[aria-sort="ascending"] button, table.xt th[aria-sort="descending"] button { color: var(--ink); }
+table.xt th[aria-sort="ascending"] button::after { content: " ▲"; } table.xt th[aria-sort="descending"] button::after { content: " ▼"; }
+table.xt td { padding: 5px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+table.xt .stk { position: sticky; left: 0; background: var(--surface); z-index: 1; }
+table.xt th.stk { z-index: 3; }
+table.xt tr[data-x] { cursor: pointer; }
+table.xt tr[data-x]:hover td, table.xt tr[data-x]:focus-visible td { background: var(--surface-2); }
+table.xt tr.on td { background: var(--accent-soft); }
+table.xt input[type="checkbox"] { width: 17px; height: 17px; accent-color: var(--accent); cursor: pointer; }
+.mc { display: inline-flex; align-items: center; gap: 4px; border-radius: 5px; padding: 0 6px; color: #fff; font-weight: 600; font-size: 11.5px; line-height: 1.65; }
+.c-b5 { background: var(--b5); } .c-b4 { background: var(--b4); color: #14202a; } .c-b3 { background: var(--b3); color: #14202a; } .c-b2 { background: var(--b2); color: #14202a; } .c-b1 { background: var(--b1); color: #14202a; } .c-b0 { background: var(--b0); }
+td.cell.med { background: var(--surface-2); color: var(--ink); font-weight: 500; }
+th.medh { background: var(--surface-2); }
+@media (max-width: 1250px) { .xtop { grid-template-columns: minmax(0, 1fr); } .xdet { max-height: none; } }
+@media (max-width: 980px) { .xgrid { grid-template-columns: minmax(0, 1fr); } .xside { position: static; max-height: none; } }
 .rkm { display: none; font: 500 12px var(--f-mono); color: var(--muted); margin-right: 4px; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }
 </style>
@@ -336,7 +378,7 @@ footer.site p { margin: 0; max-width: 80ch; }
   <div class="topin">
     <a class="brand" href="#/" aria-label="OpenCharity home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3.2 3 15.8 0 19M12 2.5c-3 3.2-3 15.8 0 19"/></svg>OpenCharity</a>
     <nav class="sections" aria-label="Sections">
-      <a href="#/" data-v="home">Home</a><a href="#/map" data-v="map">Map</a><a href="#/rankings" data-v="rankings">Rankings</a><a href="#/compare" data-v="compare">Compare</a><a href="#/banking" data-v="banking">Banking</a>
+      <a href="#/" data-v="explore">Explorer</a><a href="#/map" data-v="map">Map</a><a href="#/rankings" data-v="rankings">Rankings</a><a href="#/compare" data-v="compare">Compare</a><a href="#/banking" data-v="banking">Banking</a>
     </nav>
     <div class="search" role="search">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
@@ -351,6 +393,7 @@ footer.site p { margin: 0; max-width: 80ch; }
 </header>
 
 <main id="main" tabindex="-1">
+  <section id="v-explore" hidden></section>
   <section id="v-home" hidden></section>
   <section id="v-map" hidden></section>
   <section id="v-rankings" hidden></section>
@@ -368,7 +411,7 @@ footer.site p { margin: 0; max-width: 80ch; }
 <div class="tray" id="tray" hidden><span class="lbl">Compare</span><div class="names" id="trayNames"></div><a class="btn primary" id="trayGo" href="#/compare">Compare <span class="n" id="trayN">0</span></a><button type="button" class="btn link" id="trayClear">Clear</button></div>
 
 <nav class="tabbar" aria-label="Sections">
-  <a href="#/" data-v="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Home</a>
+  <a href="#/" data-v="explore"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="18" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="14" width="8" height="7" rx="1.5"/></svg>Explorer</a>
   <a href="#/map" data-v="map"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>Map</a>
   <a href="#/rankings" data-v="rankings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 20V10M12 20V4M19 20v-7"/></svg>Rankings</a>
   <a href="#/compare" data-v="compare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="7" height="16" rx="1.5"/><rect x="14" y="4" width="7" height="16" rx="1.5"/></svg>Compare</a>
@@ -474,6 +517,54 @@ for (const d of DATA) {
   d.band = BANDS.find(([m]) => d.cs >= m)[2];
 }
 CAT.band = Object.fromEntries(BANDS.map(([m, l, c], i) => [c, [`${l} ${m}${i ? "–" + (BANDS[i - 1][0] - 1) : "+"}`, c, `Charity score ${m}${i ? "–" + (BANDS[i - 1][0] - 1) : "–100"}`]]));
+// derived from the research text (heuristic; labelled as such in the filters)
+{ const T = (d, ...ks) => ks.map(k => d[k] || "").join(" ").toLowerCase();
+  const NUMW = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, ten: 10 };
+  const ENT = [["foundation", /foundation|fundaci|fondation|stiftung|fundação|fondazione|stichting/], ["association", /association|asociaci|associação|verein|vereniging|society|club/],
+    ["trust", /trust/], ["company", /company|corporation|clg|guarantee/], ["ngo", /\bngos?\b|non-?governmental/]];
+  for (const d of DATA) {
+    const c = (d.compliance || "").toLowerCase();
+    d.f_audit = /no (statutory )?audit|audit (is )?not (required|mandatory)|no audit requirement/.test(c) ? "no"
+      : /audit/.test(c) ? (/(above|over|exceed|threshold|if (annual )?(income|revenue|turnover|receipts|expenditure)|where|larger|large)/.test(c) ? "threshold" : "yes") : "unclear";
+    const tx = (d.tax_exempt || "").toLowerCase();
+    d.f_tax = /^(none|no )|no (tax[- ])?exempt|not available/.test(tx) ? "none" : /automatic/.test(tx) ? "auto" : "apply";
+    d.f_deduct = /^(none|no\b|n\/a)|no (tax )?(deduction|relief|incentive|credit)|not deductible/.test((d.deduction || "").toLowerCase()) ? "no" : "yes";
+    d.f_notary = /notar/.test(T(d, "requirements", "cost_time", "bottleneck", "notes")) ? "yes" : "no";
+    const rq = T(d, "requirements", "bottleneck");
+    d.f_local = /no (residency|residence|citizenship|nationality) requirement|any nationality|no requirement for (local|resident)/.test(rq) ? "no"
+      : /(resident|national|citizen|local)\w*.{0,40}(director|board|officer|member|trustee|founder|representative|manager)|(director|board|officer|trustee|representative|manager)\w*.{0,40}(resident|national|citizen)/.test(rq) ? "yes" : "no";
+    d.f_addr = /registered (office|address)|local address|\w+n address/.test(rq) ? "yes" : "no";
+    d.f_online = /online|e-?regist|electronic|digital/.test(T(d, "cost_time", "time_to_reg", "requirements", "bottleneck", "notes")) ? "yes" : "no";
+    const cp = T(d, "requirements", "cost_time", "entity");
+    d.f_cap = /no minimum (capital|funding|endowment|assets)/.test(cp) ? "no" : /(minimum|initial|start-?up|founding) (capital|endowment|assets|fund|property)|endowment of|capital of|patrimon/.test(cp) ? "yes" : "no";
+    const m = T(d, "requirements", "bottleneck", "notes").match(/(?:at least|minimum(?: of)?|min\.?|requires?)\s*(\d+|one|two|three|four|five|six|seven|ten)\s*(?:\w+\s){0,2}(founders?|members?|persons?|people|individuals?|trustees?|directors?|founding)/);
+    const n = m ? (/\d/.test(m[1]) ? +m[1] : NUMW[m[1]]) : null;
+    d.f_founders = n == null ? "unstated" : n <= 1 ? "1" : n === 2 ? "2" : n <= 4 ? "3-4" : "5+";
+    const e = (d.entity || "").toLowerCase(); d.f_ent = ENT.filter(([, r]) => r.test(e)).map(([k]) => k);
+  } }
+Object.assign(CAT, {
+  f_ent: { foundation: ["Foundation", null, "A foundation form is available"], association: ["Association or society", null, "An association or society form is available"], trust: ["Trust", null, "A charitable trust form is available"],
+    company: ["Company or corporation", null, "A non-profit company or corporation form is available"], ngo: ["NGO registration", null, "A specific NGO registration exists"] },
+  f_audit: { no: ["No audit", "ok", "The notes say no statutory audit is required"], threshold: ["Audit above a size", "mid", "An audit is needed only above an income or size threshold"],
+    yes: ["Audit required", "warn", "Audited annual accounts are required"], unclear: ["Audit not mentioned", "na", "The research notes don't mention an audit"] },
+  f_tax: { auto: ["Tax-exempt automatically", "ok", "Registration brings tax exemption without a separate application"], apply: ["Apply for tax exemption", "mid", "Tax exemption needs a separate application or recognition"],
+    none: ["No tax exemption", "bad", "No tax exemption for charities"] },
+  f_deduct: { yes: ["Donors get tax relief", "ok", "Local donors can deduct or get credit for gifts"], no: ["No donor tax relief", "warn", "No tax relief for local donors"] },
+  f_notary: { no: ["No notary mentioned", "ok", "The notes don't mention a notary"], yes: ["Notary needed", "warn", "Documents must be notarised"] },
+  f_local: { no: ["No local officer needed", "ok", "No resident or national officer mentioned"], yes: ["Local officer needed", "warn", "A resident or national director, trustee or representative is mentioned"] },
+  f_addr: { no: ["No local address mentioned", "ok", "The notes don't mention a local address"], yes: ["Local address needed", "mid", "A registered local office or address is needed"] },
+  f_online: { yes: ["Online filing", "ok", "Registration can be filed online"], no: ["Online filing not mentioned", "na", "The notes don't mention online filing"] },
+  f_cap: { no: ["No minimum capital", "ok", "No minimum capital or endowment mentioned"], yes: ["Minimum capital or endowment", "warn", "A minimum capital, endowment or assets is required"] },
+  f_founders: { "1": ["1 founder", "ok", "One founder is enough"], "2": ["2 founders", "mid", "At least two founders"], "3-4": ["3–4 founders", "warn", "At least three or four founders"],
+    "5+": ["5 or more founders", "bad", "Five or more founders"], unstated: ["Founders not stated", "na", "No minimum number stated"] },
+  pb_conf: { high: ["Banking research: high", "ok", "Bank or regulator pages"], medium: ["Banking research: medium", "mid", "Mixed official and secondary sources"], low: ["Banking research: low", "warn", "Secondary sources only"] },
+});
+const SHORT = { no_presence: { yes: "Remote", partial: "Local agent", no: "Travel" }, funding_cat: { open: "Open", restricted: "Rules" }, gfn: { Yes: "Yes", No: "No" },
+  bank_cat: { remote: "Remote", visit: "Visit", blocked: "Blocked" }, pb_status: { yes: "Open", limited: "Limited", no: "Residents" }, pb_method: { remote: "Remote", "in-person": "Branch", "not available": "None" },
+  pb_res: { no: "No", often: "Often", yes: "Yes" }, f_audit: { no: "No", threshold: "Above size", yes: "Yes", unclear: "?" }, f_tax: { auto: "Automatic", apply: "Apply", none: "None" },
+  f_deduct: { yes: "Yes", no: "No" }, f_notary: { no: "No", yes: "Yes" }, f_local: { no: "No", yes: "Yes" }, f_addr: { no: "No", yes: "Yes" }, f_online: { yes: "Yes", no: "?" },
+  f_cap: { no: "No", yes: "Yes" }, f_founders: { "1": "1", "2": "2", "3-4": "3–4", "5+": "5+", unstated: "?" }, confidence: { high: "High", med: "Medium" }, pb_conf: { high: "High", medium: "Medium", low: "Low" } };
+const has = (d, k, v) => { const x = d[k]; return Array.isArray(x) ? x.includes(v) : x === v; };
 const bandLabel = d => BANDS.find(b => b[2] === d.band)[1];
 const badge = (d, lg) => `<span class="badge bg-${d.band}${lg ? " lg" : ""}" title="Charity score ${d.cs} out of 100: ${esc(bandLabel(d))}">${d.cs}<span class="sr"> out of 100</span></span>`;
 const parts = d => `<span class="parts" aria-hidden="true">${d.grp.map((v, i) => `<i class="p${i}" style="width:${v}%"></i>`).join("")}</span>`;
@@ -482,9 +573,16 @@ const parts = d => `<span class="parts" aria-hidden="true">${d.grp.map((v, i) =>
 const FACETS = {
   Registering: [["difficulty", "Difficulty"], ["no_presence", "Setting up"], ["fee_bin", "Registration fee"], ["time_bin", "Time to register"], ["funding_cat", "Foreign donations"], ["gfn", "Google for Nonprofits"]],
   Banking: [["bank_cat", "Charity bank account"], ["pb_status", "Personal account"], ["pb_method", "Opening a personal account"], ["pb_cost_bin", "Personal account fees"], ["pb_dep_bin", "Minimum deposit"], ["pb_res", "Local residence"]],
-  "Score and research": [["band", "Charity score"], ["confidence", "Research confidence"]],
+  "From the research text": [["f_ent", "Entity types available"], ["f_founders", "Minimum founders"], ["f_local", "Local officer"], ["f_addr", "Local address"], ["f_notary", "Notary"],
+    ["f_cap", "Minimum capital"], ["f_online", "Online filing"], ["f_audit", "Annual audit"], ["f_tax", "Tax exemption"], ["f_deduct", "Donor tax relief"]],
+  "Score and research": [["band", "Charity score"], ["confidence", "Charity research confidence"], ["pb_conf", "Banking research confidence"]],
   Region: [["region", "Region"]],
 };
+// numeric limits: [state key, label, group, compare]
+const RANGES = [["fee", "Fee up to (US$)", "Registering", "max"], ["days", "Time up to (days)", "Registering", "max"], ["maxAcct", "Account fees up to (US$ a year)", "Banking", "max"],
+  ["maxDep", "Minimum deposit up to (US$)", "Banking", "max"], ["minScore", "Charity score at least", "Score and research", "min"]];
+const RANGE_FIELD = { fee: "fee_lo", days: "days_lo", maxAcct: "pb_year", maxDep: "pb_mindep", minScore: "cs" };
+const RANGE_TAG = { fee: v => `Fee up to $${v}`, days: v => `Up to ${v} days`, maxAcct: v => `Account fees up to $${v}/yr`, maxDep: v => `Deposit up to $${v}`, minScore: v => `Score ${v}+` };
 const FKEYS = Object.values(FACETS).flat().map(([k]) => k);
 const FLABEL = Object.fromEntries(Object.values(FACETS).flat());
 const REGIONS = [...new Set(DATA.map(d => d.region))].sort();
@@ -493,19 +591,19 @@ const MODES = [["band", "Charity score"], ["difficulty", "Difficulty"], ["no_pre
   ["bank_cat", "Charity bank account"], ["pb_status", "Personal account"], ["pb_method", "Opening a personal account"], ["pb_cost_bin", "Personal account fees"],
   ["funding_cat", "Foreign donations"], ["gfn", "Google for Nonprofits"], ["confidence", "Research confidence"]];
 const W_DEFAULT = { ease: 3, remote: 3, fee: 2, speed: 2, cbank: 2, pbank: 1, funding: 1, gfn: 1 };
-const S = { F: Object.fromEntries(FKEYS.map(k => [k, new Set()])), q: "", fee: "", days: "", mode: "band", rank: "overall", bank: "pbank", cmp: [], W: { ...W_DEFAULT }, theme: "system", diff: null, list: false };
+const S = { F: Object.fromEntries(FKEYS.map(k => [k, new Set()])), q: "", fee: "", days: "", maxAcct: "", maxDep: "", minScore: "", xrank: "overall", xsel: null, mode: "band", rank: "overall", bank: "pbank", cmp: [], W: { ...W_DEFAULT }, theme: "system", diff: null, list: false };
 { const s = load("oc-site") || {};
   if (s.F) for (const k in s.F) if (S.F[k]) s.F[k].forEach(v => S.F[k].add(v));
-  for (const k of ["q", "fee", "days"]) if (typeof s[k] === "string") S[k] = s[k];
+  for (const k of ["q", ...RANGES.map(r => r[0])]) if (typeof s[k] === "string") S[k] = s[k];
   if (MODES.some(([m]) => m === s.mode)) S.mode = s.mode;
   if (Array.isArray(s.cmp)) S.cmp = s.cmp.filter(c => byName.has(c)).slice(0, 5);
   if (s.W) for (const k in S.W) if (typeof s.W[k] === "number") S.W[k] = s.W[k];
   if (["system", "light", "dark"].includes(s.theme)) S.theme = s.theme; }
-const save = () => store("oc-site", { F: Object.fromEntries(Object.entries(S.F).map(([k, v]) => [k, [...v]])), q: S.q, fee: S.fee, days: S.days, mode: S.mode, cmp: S.cmp, W: S.W, theme: S.theme });
-const nFilters = () => Object.values(S.F).reduce((s, x) => s + x.size, 0) + (S.q ? 1 : 0) + (S.fee !== "" ? 1 : 0) + (S.days !== "" ? 1 : 0);
+const save = () => store("oc-site", { F: Object.fromEntries(Object.entries(S.F).map(([k, v]) => [k, [...v]])), q: S.q, ...Object.fromEntries(RANGES.map(([k]) => [k, S[k]])), mode: S.mode, cmp: S.cmp, W: S.W, theme: S.theme });
+const nFilters = () => Object.values(S.F).reduce((s, x) => s + x.size, 0) + (S.q ? 1 : 0) + RANGES.filter(([k]) => S[k] !== "").length;
 function query(withMode) {
   const p = new URLSearchParams(), f = Object.entries(S.F).filter(([, s]) => s.size).map(([k, s]) => k + ":" + [...s].join(",")).join(";");
-  if (f) p.set("f", f); if (S.q) p.set("q", S.q); if (S.fee !== "") p.set("fee", S.fee); if (S.days !== "") p.set("days", S.days);
+  if (f) p.set("f", f); if (S.q) p.set("q", S.q); for (const [k] of RANGES) if (S[k] !== "") p.set(k, S[k]);
   if (withMode && S.mode !== "band") p.set("mode", S.mode);
   const s = p.toString(); return s ? "?" + s : "";
 }
@@ -513,15 +611,15 @@ function readQuery(p) {
   if (![...p.keys()].length) return;
   for (const k in S.F) S.F[k].clear();
   for (const part of (p.get("f") || "").split(";").filter(Boolean)) { const [k, vs] = part.split(":"); if (S.F[k]) vs.split(",").forEach(v => S.F[k].add(v)); }
-  S.q = p.get("q") || ""; S.fee = p.get("fee") || ""; S.days = p.get("days") || "";
+  S.q = p.get("q") || ""; for (const [k] of RANGES) S[k] = p.get(k) || "";
   if (MODES.some(([m]) => m === p.get("mode"))) S.mode = p.get("mode");
 }
 const HAY = new Map(DATA.map(d => [d.country, [d.country, d.region, d.entity, d.requirements, d.bottleneck, d.notes, d.tax_exempt, d.donor_restr, d.bank_access, d.pb_banks, d.pb_docs, d.pb_restr, d.pb_alt].join(" ").toLowerCase()]));
 function passes(d, skip) {
-  for (const k in S.F) if (k !== skip && S.F[k].size && !S.F[k].has(d[k])) return false;
+  for (const k in S.F) if (k !== skip && S.F[k].size && ![...S.F[k]].some(v => has(d, k, v))) return false;
   if (S.q && !HAY.get(d.country).includes(S.q.toLowerCase())) return false;
-  if (S.fee !== "" && (d.fee_lo == null || d.fee_lo > +S.fee)) return false;
-  if (S.days !== "" && (d.days_lo == null || d.days_lo > +S.days)) return false;
+  for (const [k, , , dir] of RANGES) { if (S[k] === "" || isNaN(+S[k])) continue; const x = d[RANGE_FIELD[k]];
+    if (x == null || (dir === "max" ? x > +S[k] : x < +S[k])) return false; }
   return true;
 }
 const announce = t => { $("live").textContent = t; };
@@ -600,17 +698,19 @@ function makeMap(host, onPick) {
 
 /* ================= router ================= */
 let view = "home", arg = null, prevView = null;
-const SECTIONS = ["home", "map", "rankings", "compare", "banking", "country", "about"];
+const SECTIONS = ["explore", "home", "map", "rankings", "compare", "banking", "country", "about"];
 function go(h) { if (location.hash !== h) location.hash = h; else route(); }
 function route() {
   const raw = location.hash.replace(/^#\/?/, ""), [p, qs] = raw.split("?"), parts = decodeURIComponent(p || "").split("/").filter(Boolean);
   readQuery(new URLSearchParams(qs || ""));
   closeNote(); closeResults();
   const was = view;
-  let v = parts[0] || "home"; arg = parts[1] || null;
+  let v = parts[0] || "explore"; arg = parts[1] || null;
+  if (v === "start") v = "home";
   if (bySlug.has(v)) { arg = v; v = "country"; }                           // legacy #estonia links
   if (v === "country" && !bySlug.has(arg)) v = "map";
-  if (!SECTIONS.includes(v)) v = "home";
+  if (!SECTIONS.includes(v)) v = "explore";
+  if (v === "explore" && arg && bySlug.has(arg)) S.xsel = bySlug.get(arg).country;
   if (v === "rankings" && RANKS[arg] && !RANKS[arg].bank) S.rank = arg;
   if (v === "banking" && RANKS[arg]?.bank) S.bank = arg;
   if (v === "compare" && arg) { const cs = arg.split(",").map(s => bySlug.get(s)?.country).filter(Boolean); if (cs.length) S.cmp = [...new Set(cs)].slice(0, 5); }
@@ -618,13 +718,13 @@ function route() {
   view = v;
   SECTIONS.forEach(x => $("v-" + x).hidden = x !== v);
   document.querySelectorAll("nav.sections a, .tabbar a").forEach(a => a.dataset.v === (v === "country" ? prevView : v) ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
-  ({ home: renderHome, map: renderMap, rankings: renderRankings, compare: renderCompare, banking: renderBanking, country: renderCountryPage, about: renderAbout })[v]();
+  ({ explore: renderExplore, home: renderHome, map: renderMap, rankings: renderRankings, compare: renderCompare, banking: renderBanking, country: renderCountryPage, about: renderAbout })[v]();
   renderTray(); save();
-  document.title = (v === "country" ? bySlug.get(arg).country + " · " : v === "home" ? "" : $("v-" + v).querySelector("h1")?.textContent + " · ") + "OpenCharity";
+  document.title = (v === "country" ? bySlug.get(arg).country + " · " : v === "explore" ? "" : $("v-" + v).querySelector("h1")?.textContent + " · ") + "OpenCharity";
   if (v !== was || v === "country") { window.scrollTo(0, 0); }
 }
 function syncURL() {   // keep the address in step with filters without a history entry
-  const base = location.hash.split("?")[0] || "#/", h = base + (["map", "rankings", "banking"].includes(view) ? query(view === "map") : "");
+  const base = location.hash.split("?")[0] || "#/", h = base + (["map", "rankings", "banking", "explore"].includes(view) ? query(view === "map" || view === "explore") : "");
   if (location.hash !== h) history.replaceState(null, "", h);
 }
 addEventListener("hashchange", route);
@@ -633,7 +733,7 @@ addEventListener("hashchange", route);
 function toolbar(n, total) {
   const k = nFilters(), tags = [];
   for (const [key, set] of Object.entries(S.F)) for (const v of set) tags.push([`${FLABEL[key]}: ${key === "region" ? v : CAT[key][v]?.[0] ?? v}`, `f|${key}|${v}`]);
-  if (S.q) tags.push([`Contains “${S.q}”`, "q"]); if (S.fee !== "") tags.push([`Fee up to $${S.fee}`, "fee"]); if (S.days !== "") tags.push([`Up to ${S.days} days`, "days"]);
+  if (S.q) tags.push([`Contains “${S.q}”`, "q"]); for (const [k] of RANGES) if (S[k] !== "") tags.push([RANGE_TAG[k](S[k]), k]);
   return `<div class="toolbar"><button type="button" class="btn" data-open-filters aria-haspopup="dialog"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M3 5h18M6 12h12M10 19h4"/></svg>Filters${k ? ` <span class="n">${k}</span>` : ""}</button>
     <span class="count">${n} of ${total} countries</span><div class="tags">${tags.map(([t, id]) => `<span class="tag">${esc(t)}<button type="button" data-rm="${esc(id)}" aria-label="Remove ${esc(t)}">×</button></span>`).join("")}</div>
     ${k ? `<button type="button" class="btn link" data-clear>Clear all</button>` : ""}</div>`;
@@ -648,7 +748,7 @@ const rowsHTML = (list, pos, R, opts = {}) => list.map(d => {
     <button type="button" class="addc" data-add="${esc(d.country)}" aria-pressed="${inC}" aria-label="${inC ? "Remove" : "Add"} ${esc(d.country)} ${inC ? "from" : "to"} compare" title="${inC ? "Remove from" : "Add to"} compare"${!inC && S.cmp.length >= 5 ? " disabled" : ""}>${inC ? "✓" : "+"}</button></li>`;
 }).join("");
 const legendHTML = mode => `<div class="legend" role="group" aria-label="Map colours (click to filter)">${Object.entries(CAT[mode]).map(([v, [l, c, def]]) =>
-  `<button type="button" class="leg" data-f="${mode}" data-v="${esc(v)}" aria-pressed="${S.F[mode].has(v)}" title="${esc(def)}. Click to show only these."><i style="background:var(--${c})"></i>${esc(l)} <span class="n">${DATA.filter(d => d[mode] === v && passes(d, mode)).length}</span></button>`).join("")}</div>`;
+  `<button type="button" class="leg" data-f="${mode}" data-v="${esc(v)}" aria-pressed="${S.F[mode].has(v)}" title="${esc(def)}. Click to show only these."><i style="background:var(--${c})"></i>${esc(l)} <span class="n">${DATA.filter(d => has(d, mode, v) && passes(d, mode)).length}</span></button>`).join("")}</div>`;
 
 /* ================= HOME ================= */
 function renderHome() {
@@ -722,7 +822,14 @@ function rankView(host, key, bankMode) {
 }
 const renderRankings = () => rankView($("v-rankings"), S.rank, false);
 const renderBanking = () => rankView($("v-banking"), S.bank, true);
-function rerender() { if (view === "map") renderMap(); else if (view === "rankings") renderRankings(); else if (view === "banking") renderBanking(); save(); }
+function rerender() {
+  const a = document.activeElement, id = a?.id, sel = a?.dataset?.f ? `[data-f="${a.dataset.f}"][data-v="${CSS.escape(a.dataset.v)}"]` : null, host = a?.closest?.("[data-fhost]")?.id;
+  let pos = null; try { pos = a.selectionStart; } catch (e) {}
+  if (view === "map") renderMap(); else if (view === "rankings") renderRankings(); else if (view === "banking") renderBanking(); else if (view === "explore") renderExplore();
+  save();
+  const el = (id && $(id)) || (sel && host && $(host)?.querySelector(sel));
+  if (el && el !== document.activeElement) { el.focus(); try { if (pos != null) el.setSelectionRange(pos, pos); } catch (e) {} }
+}
 
 /* ================= COUNTRY (panel + page) ================= */
 const ctab = {};
@@ -766,8 +873,8 @@ function bindTabs(root) {
 }
 function renderCountryPage() {
   const d = bySlug.get(arg), back = prevView && prevView !== "country" ? prevView : "map";
-  const backLbl = { home: "Home", map: "Map", rankings: "Rankings", compare: "Compare", banking: "Banking", about: "How it works" }[back];
-  $("v-country").innerHTML = `<nav class="crumbs" aria-label="Breadcrumb"><a href="#/${back === "home" ? "" : back}" id="crumbBack">${backLbl}</a> › <a href="#/map?f=${encodeURIComponent("region:" + d.region)}">${esc(d.region)}</a> › <span aria-current="page">${esc(d.country)}</span></nav>
+  const backLbl = { explore: "Explorer", home: "Start", map: "Map", rankings: "Rankings", compare: "Compare", banking: "Banking", about: "How it works" }[back];
+  $("v-country").innerHTML = `<nav class="crumbs" aria-label="Breadcrumb"><a href="#/${back === "explore" ? "" : back === "home" ? "start" : back}" id="crumbBack">${backLbl}</a> › <a href="#/map?f=${encodeURIComponent("region:" + d.region)}">${esc(d.region)}</a> › <span aria-current="page">${esc(d.country)}</span></nav>
     <div class="cgrid"><div class="card" id="cpageL"></div><div class="card" id="cpageR"></div></div>`;
   const html = countryHTML(d, "page"), i = html.indexOf('<div class="ctabs"');
   $("cpageL").innerHTML = html.slice(0, i); $("cpageR").innerHTML = html.slice(i); bindTabs($("cpageR"));
@@ -790,35 +897,53 @@ const ATTRS = [
   { k: "pb_res", label: "Local residence", note: d => d.pb_restr },
   { k: "pb_cost_bin", label: "Account fees", x: d => d.pb_year ? usd(d.pb_year) + " a year" : null, note: d => d.pb_costnote },
   { k: "pb_dep_bin", label: "Minimum deposit", x: d => d.pb_mindep ? dep(d.pb_mindep) : null, note: d => d.pb_dep },
-  { g: "Research" },
-  { k: "confidence", label: "Research confidence" },
+  { g: "From the research text" },
+  { k: "f_founders", label: "Minimum founders" }, { k: "f_local", label: "Local officer" }, { k: "f_addr", label: "Local address" }, { k: "f_notary", label: "Notary" },
+  { k: "f_cap", label: "Minimum capital" }, { k: "f_online", label: "Online filing" }, { k: "f_audit", label: "Annual audit", note: d => d.compliance }, { k: "f_tax", label: "Tax exemption", note: d => d.tax_exempt },
+  { k: "f_deduct", label: "Donor tax relief", note: d => d.deduction },
+  { g: "Score and research" },
+  { k: "band", label: "Charity score", x: d => d.cs + " / 100" },
+  { k: "confidence", label: "Charity research" }, { k: "pb_conf", label: "Banking research" },
 ];
-const TEXTS = [["bottleneck", "Main bottleneck"], ["entity", "Entity to register"], ["requirements", "Local requirements"], ["tax_exempt", "Tax-exempt status"], ["compliance", "Annual compliance"], ["pb_alt", "Banking alternatives"]];
-const NOTES = [];
-function renderCompare() {
+const MED_NUM = { fee_bin: ["fee_lo", usd], time_bin: ["days_lo", v => dur(Math.round(v))], pb_cost_bin: ["pb_year", v => usd(v) + " a year"], pb_dep_bin: ["pb_mindep", dep], band: ["cs", v => Math.round(v) + " / 100"] };
+function cmpTable(cs, pool, withMedian) {
   NOTES.length = 0;
-  const cs = S.cmp.map(c => byName.get(c)), slots = [...cs, ...Array(Math.max(0, Math.min(5, cs.length + 1) - cs.length)).fill(null)];
-  if (S.diff == null) S.diff = cs.length >= 3;
+  const slots = [...cs, ...Array(Math.max(0, Math.min(5, cs.length + 1) - cs.length)).fill(null)];
   const differs = a => cs.length > 1 && new Set(cs.map(d => d[a.k])).size > 1;
   const cellHTML = (a, d) => { const [l, c] = cat(a.k, d), x = a.x?.(d), n = a.note?.(d); let i = -1; if (n) { i = NOTES.length; NOTES.push([`${d.country}: ${a.label}`, n]); }
-    return `<td class="cell c-${c}${low(a.k, d) ? " hatch" : ""}"><span aria-hidden="true">${SYM[c]}</span> ${esc(l)}${x && x !== l && x !== "—" ? `<span class="v">${esc(x)}</span>` : ""}${i >= 0 ? `<button type="button" class="info" data-note="${i}" aria-label="Details: ${esc(a.label)}">i</button>` : ""}</td>`; };
-  let h = `<colgroup><col class="l">${slots.map(() => "<col>").join("")}</colgroup><thead><tr><th class="l"><span class="lbl">${cs.length} of 5 picked</span></th>`
+    return `<td class="cell c-${c}${low(a.k, d) ? " hatch" : ""}"><span aria-hidden="true">${SYM[c] || ""}</span> ${esc(l)}${x && x !== l && x !== "—" ? `<span class="v">${esc(x)}</span>` : ""}${i >= 0 ? `<button type="button" class="info" data-note="${i}" aria-label="Details: ${esc(a.label)}">i</button>` : ""}</td>`; };
+  const medCell = a => { if (!pool.length) return `<td class="cell med">—</td>`;
+    if (MED_NUM[a.k]) { const [f, fmt] = MED_NUM[a.k], v = median(pool.map(d => d[f]).filter(x => x != null)); return `<td class="cell med">${v == null ? "—" : esc(fmt(v))}</td>`; }
+    const cnt = {}; pool.forEach(d => cnt[d[a.k]] = (cnt[d[a.k]] || 0) + 1); const [v, n] = Object.entries(cnt).sort((x, y) => y[1] - x[1])[0];
+    return `<td class="cell med">${esc(CAT[a.k][v]?.[0] ?? v)}<span class="v">${Math.round(100 * n / pool.length)}% of ${pool.length}</span></td>`; };
+  const mcol = withMedian ? 1 : 0;
+  let h = `<colgroup><col class="l">${slots.map(() => "<col>").join("")}${mcol ? "<col>" : ""}</colgroup><thead><tr><th class="l"><span class="lbl">${cs.length} of 5 picked</span></th>`
     + slots.map(d => `<th>${d ? `<div class="chead">${flag(d, 1)}<a href="#/country/${slug(d.country)}">${esc(d.country)}</a>${badge(d)} <span class="lbl">#${POWER.pos.get(d.country)}</span><br><button type="button" class="rm" data-add="${esc(d.country)}">Remove</button></div>`
-      : `<div class="chead"><label class="sr" for="addCountry">Add a country</label><input id="addCountry" list="allC" placeholder="+ Add a country"></div>`}</th>`).join("") + `</tr></thead><tbody>`;
+      : `<div class="chead"><label class="sr" for="addCountry">Add a country</label><input id="addCountry" list="allC" placeholder="+ Add a country"></div>`}</th>`).join("")
+    + (mcol ? `<th class="medh"><div class="chead"><b>Filtered median</b><br><span class="lbl">${pool.length} countries match your filters</span></div></th>` : "") + `</tr></thead><tbody>`;
   let grp = null, shown = 0;
   for (const a of ATTRS) {
     if (a.g) { grp = a.g; continue; }
     if (S.diff && cs.length > 1 && !differs(a)) continue;
-    if (grp) { h += `<tr class="grp"><td class="l">${esc(grp)}</td>${slots.map(() => "<td></td>").join("")}</tr>`; grp = null; }
-    h += `<tr><td class="l">${esc(a.label)}</td>${slots.map(d => d ? cellHTML(a, d) : `<td class="cell blank"></td>`).join("")}</tr>`; shown++;
+    if (grp) { h += `<tr class="grp"><td class="l">${esc(grp)}</td>${slots.map(() => "<td></td>").join("")}${mcol ? "<td></td>" : ""}</tr>`; grp = null; }
+    h += `<tr><td class="l">${esc(a.label)}</td>${slots.map(d => d ? cellHTML(a, d) : `<td class="cell blank"></td>`).join("")}${mcol ? medCell(a) : ""}</tr>`; shown++;
   }
-  h += `<tr class="grp"><td class="l">Details (click a row to expand)</td>${slots.map(() => "<td></td>").join("")}</tr>`
-    + TEXTS.map(([k, l]) => `<tr class="textrow"><td class="l">${esc(l)}</td>${slots.map(d => d ? `<td class="txt"><div class="clamp">${esc(d[k] || "—")}</div></td>` : "<td></td>").join("")}</tr>`).join("");
+  h += `<tr class="grp"><td class="l">Details (click a row to expand)</td>${slots.map(() => "<td></td>").join("")}${mcol ? "<td></td>" : ""}</tr>`
+    + TEXTS.map(([k, l]) => `<tr class="textrow"><td class="l">${esc(l)}</td>${slots.map(d => d ? `<td class="txt"><div class="clamp">${esc(d[k] || "—")}</div></td>` : "<td></td>").join("")}${mcol ? "<td></td>" : ""}</tr>`).join("");
+  return { html: `<table class="cmp">${h}</tbody></table>`, shown };
+}
+const CMP_KEY = `<span class="key">${["ok", "mid", "warn", "bad", "na"].map(c => `<span><i class="c-${c}"></i>${SYM[c]} ${{ ok: "best", mid: "good", warn: "caution", bad: "hardest", na: "no data" }[c]}</span>`).join("")}<span><i class="c-mid hatch"></i>low confidence</span></span>`;
+const TEXTS = [["bottleneck", "Main bottleneck"], ["entity", "Entity to register"], ["requirements", "Local requirements"], ["tax_exempt", "Tax-exempt status"], ["compliance", "Annual compliance"], ["pb_alt", "Banking alternatives"]];
+const NOTES = [];
+function renderCompare() {
+  const cs = S.cmp.map(c => byName.get(c));
+  if (S.diff == null) S.diff = cs.length >= 3;
+  const { html: tbl, shown } = cmpTable(cs, DATA.filter(d => passes(d)), cs.length > 0);
   $("v-compare").innerHTML = `<div class="shead"><div><h1>Compare</h1><p>Two to five countries side by side. Tap <b>i</b> in a cell for the research note behind it.</p></div></div>
     ${cs.length ? `<div class="cmptools"><label class="switch"><input type="checkbox" id="diffOnly"${S.diff ? " checked" : ""}> Show differences only</label>
-      <span class="key">${["ok", "mid", "warn", "bad", "na"].map(c => `<span><i class="c-${c}"></i>${SYM[c]} ${{ ok: "best", mid: "good", warn: "caution", bad: "hardest", na: "no data" }[c]}</span>`).join("")}<span><i class="c-mid hatch"></i>low confidence</span></span>
+      ${CMP_KEY}
       <button type="button" class="btn link" id="cmpClear">Clear all</button></div>
-      <div class="cmpwrap"><table class="cmp">${h}</tbody></table></div>${S.diff && cs.length > 1 && !shown ? `<p class="empty">These countries match on every rated row. Turn off "Show differences only" to see them.</p>` : ""}`
+      <div class="cmpwrap">${tbl}</div>${S.diff && cs.length > 1 && !shown ? `<p class="empty">These countries match on every rated row. Turn off "Show differences only" to see them.</p>` : ""}`
     : `<div class="card empty"><p style="font-size:16px;color:var(--ink)">Pick countries to compare.</p><p>Use <b>+</b> on any ranking row or <b>Add to compare</b> on a country, or type one here.</p>
        <p><input list="allC" id="addCountry" class="sel" style="max-width:320px;width:100%" placeholder="+ Add a country" aria-label="Add a country"></p>
        <p>Or try <a href="#/compare/estonia,georgia,united-kingdom">Estonia, Georgia and the UK</a>.</p></div>`}
@@ -828,9 +953,88 @@ function renderCompare() {
 }
 document.addEventListener("change", e => {
   if (e.target.id === "addCountry" && byName.has(e.target.value)) toggleCmp(e.target.value);
-  if (e.target.id === "diffOnly") { S.diff = e.target.checked; renderCompare(); }
+  if (e.target.id === "diffOnly") { S.diff = e.target.checked; view === "explore" ? renderExplore() : renderCompare(); }
+  if (e.target.id === "xRank") { S.xrank = e.target.value; S.mode = RANKS[S.xrank].mode; xSort = null; renderExplore(); save(); }
+  if (e.target.id === "xMode") { S.mode = e.target.value; renderExplore(); save(); }
 });
 document.addEventListener("input", e => { if (e.target.id === "addCountry" && byName.has(e.target.value)) toggleCmp(e.target.value); });
+
+/* ================= EXPLORER (everything on one page) ================= */
+let xSort = null, xMap = null;
+const XCOLS = [
+  ["cs", "Score", d => badge(d), d => -d.cs], ["difficulty", "Difficulty"], ["no_presence", "Setting up"],
+  ["fee_lo", "Fee", d => `<span class="mc c-${cat("fee_bin", d)[1]}">${esc(feeTxt(d))}</span>`, d => d.fee_lo], ["days_lo", "Time", d => `<span class="mc c-${cat("time_bin", d)[1]}">${esc(timeTxt(d))}</span>`, d => d.days_lo],
+  ["funding_cat", "Foreign money"], ["gfn", "Google"], ["bank_cat", "Charity bank"], ["pb_status", "Personal acct"], ["pb_method", "Opening"],
+  ["pb_year", "Acct fees/yr", d => `<span class="mc c-${cat("pb_cost_bin", d)[1]}${low("pb_cost_bin", d) ? " hatch" : ""}">${esc(d.pb_year == null ? "?" : usd(d.pb_year))}</span>`, d => d.pb_year],
+  ["pb_mindep", "Min deposit", d => `<span class="mc c-${cat("pb_dep_bin", d)[1]}${low("pb_dep_bin", d) ? " hatch" : ""}">${esc(d.pb_mindep == null ? "?" : dep(d.pb_mindep))}</span>`, d => d.pb_mindep],
+  ["pb_res", "Residence"], ["f_founders", "Founders"], ["f_local", "Local officer"], ["f_addr", "Local address"], ["f_notary", "Notary"], ["f_cap", "Min capital"],
+  ["f_online", "Online"], ["f_audit", "Audit"], ["f_tax", "Tax exempt"], ["f_deduct", "Donor relief"],
+  ["f_ent", "Entity types", d => esc(d.f_ent.map(k => CAT.f_ent[k][0]).join(", ") || "—"), d => -d.f_ent.length], ["confidence", "Research"], ["pb_conf", "Bank research"], ["region", "Region", d => esc(d.region), d => d.region],
+];
+const mc = (k, d) => { const [l, c, def] = cat(k, d); return `<span class="mc c-${c}${low(k, d) ? " hatch" : ""}" title="${esc(l)}: ${esc(def)}"><span aria-hidden="true">${SYM[c]}</span>${esc(SHORT[k]?.[d[k]] ?? l)}</span>`; };
+function renderExplore() {
+  if (!$("xMap")) {
+    $("v-explore").innerHTML = `<div class="shead"><div><h1>Explorer</h1><p>Every filter, the map, the full table and your comparison on one page. <a href="#/start">New here? Start with three questions.</a></p></div>
+        <div class="toolbar" style="margin:0"><label class="modesel"><span class="lbl">Rank by</span><select class="sel" id="xRank">${Object.entries(RANKS).map(([k, r]) => `<option value="${k}">${esc(r.label)}${r.bank ? " (banking)" : ""}</option>`).join("")}</select></label>
+          <label class="modesel"><span class="lbl">Colour map by</span><select class="sel" id="xMode">${MODES.map(([k, l]) => `<option value="${k}">${esc(l)}</option>`).join("")}</select></label></div></div>
+      <div class="xgrid">
+        <details class="xside card" id="xSide" data-fhost open><summary><h2>Filters</h2><span class="count" id="xCount" style="margin-left:auto"></span></summary><div id="xFilters"></div>
+          <p style="margin:10px 0 0"><button type="button" class="btn" data-clear>Clear all filters</button></p></details>
+        <div class="xmain">
+          <div id="xTags"></div>
+          <div class="xtop"><div><div class="mapcard" id="xMap"></div><div id="xLegend"></div></div><aside class="card xdet" id="xDet" tabindex="-1" aria-label="Country details"></aside></div>
+          <div class="card xblock" id="xTableBox"></div>
+          <div class="card xblock" id="xCmp"></div>
+        </div>
+      </div>`;
+    if (narrow()) $("xSide").open = false;
+    xMap = makeMap($("xMap"), c => { S.xsel = c; renderExplore(); if (matchMedia("(max-width: 1250px)").matches) $("xDet").scrollIntoView({ behavior: "smooth", block: "start" }); });
+  }
+  const R = RANKS[S.xrank] || RANKS.overall, { list, pos } = ranked(S.xrank in RANKS ? S.xrank : "overall"), pool = list.filter(d => passes(d));
+  $("xRank").value = S.xrank; $("xMode").value = S.mode;
+  $("xCount").textContent = `${pool.length} of ${DATA.length} countries`;
+  $("xFilters").innerHTML = filterGroupsHTML("x", true);
+  $("xTags").innerHTML = nFilters() ? toolbar(pool.length, DATA.length).replace(/<button type="button" class="btn" data-open-filters[\s\S]*?<\/button>/, "") : "";
+  // map
+  xMap.tip(d => `${flag(d)} <b>${esc(d.country)}</b> ${badge(d)}<br>${S.mode === "band" ? esc(bandLabel(d)) : esc(cat(S.mode, d)[0])}<br><span style="color:var(--muted)">#${pos.get(d.country) ?? "—"} ${esc(R.label.toLowerCase())} · click for details</span>`);
+  xMap.paint(fillFor(S.mode), d => !passes(d), S.xsel);
+  $("xLegend").innerHTML = legendHTML(S.mode);
+  // details or filtered summary
+  const sel = S.xsel && byName.get(S.xsel);
+  if (sel) { $("xDet").innerHTML = `<button type="button" class="iconbtn close" data-xclose aria-label="Close ${esc(sel.country)}">✕</button>` + countryHTML(sel, "panel"); bindTabs($("xDet")); }
+  else { const med = f => median(pool.map(d => d[f]).filter(v => v != null)), share = f => pool.length ? Math.round(100 * pool.filter(f).length / pool.length) + "%" : "—";
+    $("xDet").innerHTML = `<div class="xhint"><h2>Your filtered set</h2><p style="margin:0;color:var(--muted);font-size:14px">Click a country on the map or in the table to see its details here.</p>
+      <div class="xstats"><div><b>${pool.length}</b><span>countries match</span></div><div><b>${pool.length ? Math.round(med("cs")) : "—"}</b><span>median charity score</span></div>
+      <div><b>${med("fee_lo") == null ? "—" : usd(med("fee_lo"))}</b><span>median registration fee</span></div><div><b>${med("days_lo") == null ? "—" : dur(Math.round(med("days_lo")))}</b><span>median time</span></div>
+      <div><b>${share(d => d.no_presence === "yes")}</b><span>set up without visiting</span></div><div><b>${share(d => d.bank_cat === "remote")}</b><span>charity bank without a visit</span></div>
+      <div><b>${share(d => d.pb_status === "yes")}</b><span>banks accept non-residents</span></div><div><b>${share(d => d.gfn === "Yes")}</b><span>Google for Nonprofits</span></div></div>
+      ${pool.length ? `<p style="margin:12px 0 0;font-size:13.5px"><b>Top match:</b> ${pool.slice(0, 3).map(d => `<a href="#/country/${slug(d.country)}">${esc(d.country)}</a>`).join(", ")}</p>` : ""}</div>`; }
+  // table
+  let rows = pool;
+  if (xSort) { const col = XCOLS.find(c => c[0] === xSort.k), val = col[3] || (d => ordOf(col[0], d));
+    rows = [...pool].sort((a, b) => { let x = val(a), y = val(b); x = x == null ? Infinity : x; y = y == null ? Infinity : y; return (x < y ? -1 : x > y ? 1 : 0) * xSort.dir || (pos.get(a.country) ?? 1e9) - (pos.get(b.country) ?? 1e9); }); }
+  const sortAttr = k => xSort?.k === k ? ` aria-sort="${xSort.dir > 0 ? "ascending" : "descending"}"` : "";
+  $("xTableBox").innerHTML = `<div class="xbh"><h2>All countries</h2><span class="count">${pool.length} shown · ranked by ${esc(R.label.toLowerCase())}${xSort ? ", re-sorted by column" : ""}</span>
+      ${xSort ? `<button type="button" class="btn link" id="xUnsort">Back to ranking order</button>` : ""}${CMP_KEY}</div>
+    <div class="xscroll"><table class="xt"><thead><tr><th><span class="sr">Compare</span></th><th${xSort ? "" : ' aria-sort="ascending"'}><button type="button" id="xRankHead">#</button></th><th class="stk"><button type="button" disabled>Country</button></th>
+      ${XCOLS.map(([k, l]) => `<th data-xs="${k}"${sortAttr(k)}><button type="button">${esc(l)}</button></th>`).join("")}</tr></thead><tbody>
+      ${rows.map(d => { const inC = S.cmp.includes(d.country); return `<tr data-x="${esc(d.country)}" tabindex="0"${d.country === S.xsel ? ' class="on"' : ""}>
+        <td><input type="checkbox" data-add="${esc(d.country)}" aria-label="Compare ${esc(d.country)}"${inC ? " checked" : ""}${!inC && S.cmp.length >= 5 ? " disabled" : ""}></td><td>${pos.get(d.country) ? "#" + pos.get(d.country) : "—"}</td>
+        <td class="stk">${flag(d)} <b>${esc(d.country)}</b></td>${XCOLS.map(([k, , f]) => `<td>${f ? f(d) : mc(k, d)}</td>`).join("")}</tr>`; }).join("") || `<tr><td colspan="${XCOLS.length + 3}" class="empty">No countries match all these filters.</td></tr>`}
+    </tbody></table></div>`;
+  $("xUnsort")?.addEventListener("click", () => { xSort = null; renderExplore(); });
+  $("xRankHead").onclick = () => { xSort = null; renderExplore(); };
+  // compare
+  const cs = S.cmp.map(c => byName.get(c)); if (S.diff == null) S.diff = cs.length >= 3;
+  const { html: tbl, shown } = cmpTable(cs, pool, true);
+  $("xCmp").innerHTML = `<div class="xbh"><h2>Compare</h2><span class="count">${cs.length} of 5 picked · tick countries in the table</span>
+      ${cs.length ? `<label class="switch"><input type="checkbox" id="diffOnly"${S.diff ? " checked" : ""}> Differences only</label><button type="button" class="btn link" id="cmpClear">Clear</button>` : ""}</div>
+    ${cs.length ? `<div class="cmpwrap" style="padding:10px">${tbl}</div>${S.diff && cs.length > 1 && !shown ? `<p class="empty">These countries match on every rated row.</p>` : ""}`
+      : `<p class="empty">Tick up to 5 countries in the table (or press <b>c</b> on a focused row) to compare them here, beside the median of everything your filters match.</p>`}
+    <datalist id="allC">${DATA.filter(d => !S.cmp.includes(d.country)).sort((a, b) => a.country.localeCompare(b.country)).map(d => `<option value="${esc(d.country)}">`).join("")}</datalist>`;
+  announce(`${pool.length} countries match`);
+  syncURL();
+}
 
 /* ================= ABOUT ================= */
 function renderAbout() {
@@ -850,24 +1054,30 @@ function renderAbout() {
 
 /* ================= filters panel ================= */
 let lastFocus = null;
+function filterGroupsHTML(px, collapsible) {
+  return Object.entries(FACETS).map(([g, fs]) => {
+    const inner = fs.map(([k, l]) => `<fieldset class="facet"><legend>${esc(l)}</legend><div class="opts">${optsOf(k).map(([v, lb, c, def]) => {
+      const cnt = DATA.filter(d => has(d, k, v) && passes(d, k)).length;
+      return `<button type="button" class="opt${cnt ? "" : " zero"}" data-f="${k}" data-v="${esc(v)}" aria-pressed="${S.F[k].has(v)}"${def ? ` title="${esc(def)}"` : ""}>${c ? `<i style="background:var(--${c})"></i>` : ""}${esc(lb)} <span class="n">${cnt}</span></button>`; }).join("")}</div></fieldset>`).join("")
+      + (RANGES.some(r => r[2] === g) ? `<div class="limits">${RANGES.filter(r => r[2] === g).map(([k, l]) => `<div><label for="${px}-${k}">${esc(l)}</label><input id="${px}-${k}" data-range="${k}" type="number" min="0" inputmode="numeric" placeholder="Any" value="${esc(S[k])}"></div>`).join("")}</div>` : "")
+      + (g === "From the research text" ? `<p style="font-size:12px;color:var(--muted);margin:2px 0 0">Read from the research notes by keyword, so treat these as a guide and check the country page.</p>` : "");
+    return collapsible ? `<details class="fgroup" open><summary>${esc(g)}</summary>${inner}</details>` : `<div class="fgroup"><h3>${esc(g)}</h3>${inner}</div>`;
+  }).join("") + `<div class="fgroup ftext"><label for="${px}-q">Contains text</label><input id="${px}-q" data-range="q" type="search" placeholder="e.g. foundation, notary" value="${esc(S.q)}"></div>`;
+}
 function renderFilterBody() {
   const n = DATA.filter(d => passes(d)).length;
-  $("fbody").innerHTML = Object.entries(FACETS).map(([g, fs]) => `<div class="fgroup"><h3>${esc(g)}</h3>${fs.map(([k, l]) => `<fieldset class="facet"><legend>${esc(l)}</legend><div class="opts">${optsOf(k).map(([v, lb, c, def]) => {
-      const cnt = DATA.filter(d => d[k] === v && passes(d, k)).length;
-      return `<button type="button" class="opt${cnt ? "" : " zero"}" data-f="${k}" data-v="${esc(v)}" aria-pressed="${S.F[k].has(v)}"${def ? ` title="${esc(def)}"` : ""}>${c ? `<i style="background:var(--${c})"></i>` : ""}${esc(lb)} <span class="n">${cnt}</span></button>`; }).join("")}</div></fieldset>`).join("")}
-      ${g === "Registering" ? `<div class="limits"><div><label for="fFee">Fee up to (US$)</label><input id="fFee" type="number" min="0" inputmode="numeric" placeholder="Any" value="${esc(S.fee)}"></div><div><label for="fDays">Time up to (days)</label><input id="fDays" type="number" min="0" inputmode="numeric" placeholder="Any" value="${esc(S.days)}"></div></div>` : ""}</div>`).join("")
-    + `<div class="fgroup ftext"><label for="fText">Contains text</label><input id="fText" type="search" placeholder="e.g. foundation, notary" value="${esc(S.q)}"></div>`;
+  $("fbody").innerHTML = filterGroupsHTML("p", false);
   $("fShow").textContent = `Show ${n} ${n === 1 ? "country" : "countries"}`;
 }
 function openFilters() { lastFocus = document.activeElement; renderFilterBody(); $("fpanel").hidden = false; $("scrim").hidden = false; $("fClose").focus(); }
 function closeFilters() { $("fpanel").hidden = true; $("scrim").hidden = true; lastFocus?.focus?.(); }
 $("fClose").onclick = closeFilters; $("scrim").onclick = closeFilters; $("fShow").onclick = closeFilters;
 $("fClear").onclick = () => { clearAll(); renderFilterBody(); };
-function clearAll() { for (const k in S.F) S.F[k].clear(); S.q = S.fee = S.days = ""; rerender(); }
-$("fbody").addEventListener("input", e => {
-  const id = e.target.id; if (!["fFee", "fDays", "fText"].includes(id)) return;
-  S[{ fFee: "fee", fDays: "days", fText: "q" }[id]] = e.target.value.trim(); rerender();
-  const n = DATA.filter(d => passes(d)).length; $("fShow").textContent = `Show ${n} ${n === 1 ? "country" : "countries"}`;
+function clearAll() { for (const k in S.F) S.F[k].clear(); S.q = ""; for (const [k] of RANGES) S[k] = ""; rerender(); if (!$("fpanel").hidden) renderFilterBody(); }
+document.addEventListener("input", e => {
+  const k = e.target.dataset?.range; if (k === undefined) return;
+  S[k] = e.target.value.trim(); rerender();
+  if (!$("fpanel").hidden) { const n = DATA.filter(d => passes(d)).length; $("fShow").textContent = `Show ${n} ${n === 1 ? "country" : "countries"}`; }
 });
 $("fpanel").addEventListener("keydown", e => { if (e.key !== "Tab") return; const f = [...$("fpanel").querySelectorAll("button, input")].filter(x => !x.disabled);
   if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f.at(-1).focus(); } else if (!e.shiftKey && document.activeElement === f.at(-1)) { e.preventDefault(); f[0].focus(); } });
@@ -878,11 +1088,12 @@ function toggleCmp(c) {
   save(); renderTray();
   const f = document.activeElement?.dataset?.add;
   if (view === "compare") renderCompare(); else if (view === "country") renderCountryPage(); else rerender();
+  if (view === "explore") document.querySelector(`#xTableBox input[data-add="${CSS.escape(c)}"]`)?.focus();
   if (f) document.querySelector(`[data-add="${CSS.escape(f)}"]`)?.focus();
   announce(S.cmp.includes(c) ? `${c} added to compare` : `${c} removed from compare`);
 }
 function renderTray() {
-  $("tray").hidden = !S.cmp.length || view === "compare";
+  $("tray").hidden = !S.cmp.length || view === "compare" || view === "explore";
   $("trayN").textContent = S.cmp.length;
   $("trayGo").href = "#/compare/" + S.cmp.map(slug).join(",");
   $("trayNames").innerHTML = S.cmp.map(c => `<span class="tag">${esc(c)}<button type="button" data-add="${esc(c)}" aria-label="Remove ${esc(c)}">×</button></span>`).join("");
@@ -895,12 +1106,15 @@ document.addEventListener("click", e => {
   if (t.closest("[data-open-filters]")) return openFilters();
   if (t.closest("[data-clear]")) return clearAll();
   if (t.closest("[data-closepanel]")) return go("#/map" + query(true));
-  if (t.id === "cmpClear") { S.cmp = []; save(); return renderCompare(); }
+  if (t.id === "cmpClear") { S.cmp = []; save(); renderTray(); return view === "explore" ? renderExplore() : renderCompare(); }
   if (t.id === "wReset") { S.W = { ...W_DEFAULT }; return rerender(); }
   const add = t.closest("[data-add]"); if (add) { e.preventDefault(); e.stopPropagation(); return toggleCmp(add.dataset.add); }
   const o = t.closest(".opt, .leg"); if (o) { const s = S.F[o.dataset.f]; s.has(o.dataset.v) ? s.delete(o.dataset.v) : s.add(o.dataset.v);
     if (s.size === optsOf(o.dataset.f).length) s.clear(); rerender(); if (!$("fpanel").hidden) { renderFilterBody(); $("fbody").querySelector(`[data-f="${o.dataset.f}"][data-v="${CSS.escape(o.dataset.v)}"]`)?.focus(); } return; }
-  const rm = t.closest("[data-rm]"); if (rm) { const id = rm.dataset.rm; if (id.startsWith("f|")) { const [, k, v] = id.split("|"); S.F[k].delete(v); } else S[id] = ""; return rerender(); }
+  const xr = t.closest("tr[data-x]"); if (xr && !t.closest("input")) { S.xsel = xr.dataset.x === S.xsel ? null : xr.dataset.x; return renderExplore(); }
+  const xs = t.closest("th[data-xs] button"); if (xs) { const k = xs.parentElement.dataset.xs; xSort = xSort?.k === k ? { k, dir: -xSort.dir } : { k, dir: 1 }; return renderExplore(); }
+  if (t.closest("[data-xclose]")) { S.xsel = null; return renderExplore(); }
+  const rm = t.closest("[data-rm]"); if (rm) { const id = rm.dataset.rm; if (id.startsWith("f|")) { const [, k, v] = id.split("|"); S.F[k].delete(v); } else S[id] = ""; rerender(); if (!$("fpanel").hidden) renderFilterBody(); return; }
   const tr = t.closest("tr.textrow"); if (tr) return tr.querySelectorAll("td.txt").forEach(td => td.classList.toggle("open"));
   const row = t.closest(".rrow"); if (row) return go("#/country/" + slug(row.dataset.c));
 });
@@ -908,12 +1122,18 @@ document.addEventListener("input", e => { const w = e.target.dataset?.w; if (w) 
 document.addEventListener("keydown", e => {
   const typing = /INPUT|SELECT|TEXTAREA/.test(document.activeElement?.tagName);
   if (e.key === "/" && !typing) { e.preventDefault(); narrow() ? openMobileSearch() : $("search").focus(); return; }
-  if (e.key === "Escape") { if (!$("modal").hidden) return closeModal(); if (!$("fpanel").hidden) return closeFilters(); if (!$("results").hidden) return closeResults(); if (!$("note").hidden) return closeNote(); if (view === "map" && arg) return go("#/map" + query(true)); }
+  if (e.key === "Escape") { if (!$("modal").hidden) return closeModal(); if (!$("fpanel").hidden) return closeFilters(); if (!$("results").hidden) return closeResults(); if (!$("note").hidden) return closeNote(); if (view === "map" && arg) return go("#/map" + query(true)); if (view === "explore" && S.xsel) { S.xsel = null; return renderExplore(); } }
   const row = document.activeElement?.closest?.(".rrow");
   if (row && !typing) {
     if (e.key === "Enter") return go("#/country/" + slug(row.dataset.c));
     if (e.key === "c") return toggleCmp(row.dataset.c);
     if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); (e.key === "ArrowDown" ? row.nextElementSibling : row.previousElementSibling)?.focus(); }
+  }
+  const xr = document.activeElement?.closest?.("tr[data-x]");
+  if (xr && !typing) {
+    if (e.key === "Enter") { S.xsel = xr.dataset.x; renderExplore(); $("xDet")?.focus(); }
+    if (e.key === "c") toggleCmp(xr.dataset.x);
+    if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); (e.key === "ArrowDown" ? xr.nextElementSibling : xr.previousElementSibling)?.focus(); }
   }
 });
 
@@ -990,8 +1210,9 @@ function applyTheme() {
   $("themeBtn").setAttribute("aria-label", { system: "Theme: follows your system (click for light)", light: "Theme: light (click for dark)", dark: "Theme: dark (click to follow system)" }[S.theme]);
   $("themeBtn").title = $("themeBtn").getAttribute("aria-label");
 }
-$("themeBtn").onclick = () => { S.theme = THEMES[(THEMES.indexOf(S.theme) + 1) % 3]; applyTheme(); save(); mapObj = null; if (view === "map") $("v-map").innerHTML = ""; route(); };
-matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { if (S.theme === "system") { mapObj = null; $("v-map").innerHTML = ""; route(); } });
+const resetMaps = () => { mapObj = null; xMap = null; $("v-map").innerHTML = ""; $("v-explore").innerHTML = ""; };
+$("themeBtn").onclick = () => { S.theme = THEMES[(THEMES.indexOf(S.theme) + 1) % 3]; applyTheme(); save(); resetMaps(); route(); };
+matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { if (S.theme === "system") { resetMaps(); route(); } });
 applyTheme();
 route();
 </script>

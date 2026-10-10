@@ -29,7 +29,7 @@
 
 <br>
 
-<a href="https://opencharity-org.github.io/OpenCharity/"><img src="docs/screenshots/map.png" alt="OpenCharity map: countries coloured by charity score, with Estonia's details open in a side panel" width="100%"></a>
+<a href="https://opencharity-org.github.io/OpenCharity/"><img src="docs/screenshots/explorer.png" alt="OpenCharity Explorer: every filter in a sidebar, the map with Estonia's details, and the full country table" width="100%"></a>
 
 </div>
 
@@ -60,7 +60,8 @@ One site, five sections, one country page, built to a UI and navigation plan: ev
 
 | | Section | What it answers |
 |---|---|---|
-| 🏠 | **Home** | *Where do I start?* Three entry questions (Where is easiest? · Compare countries · Can I bank there?), the top 5 and a one-line method note. |
+| 🧭 | **Explorer** (landing page) | *Everything on one page.* All **26 filter groups** and 6 number limits always visible in a sidebar, the map with the selected country's full details beside it, a **sortable table of all 202 countries × 27 columns**, and a compare grid with a **filtered-median** column, all updating together. |
+| 🏠 | **Start** | *Where do I start?* Three entry questions (Where is easiest? · Compare countries · Can I bank there?), the top 5 and a one-line method note. |
 | 🗺️ | **Map** | *Where is it easy?* Countries coloured by **charity score** (or any of 12 measures via *Colour by*). Click a country for its page in a side panel; the legend shows counts and filters on click; *List view* gives a keyboard-friendly list. |
 | 🏅 | **Rankings** | *Who is best for my priority?* Five tabs (Best overall, Easiest, Cheapest, Fastest, Most remote) plus *More ways to rank*: hardest, most expensive, slowest, foreign money welcome, cheap and fast, **your own weights**, A–Z. Ties share a rank. |
 | ⚖️ | **Compare** | *Which of these should I pick?* Up to 5 countries in colour-coded cells with symbols, an **i** note behind every cell, *show differences only* (on by default for 3+), expandable text rows and shareable links. |
@@ -68,7 +69,7 @@ One site, five sections, one country page, built to a UI and navigation plan: ev
 | 📄 | **Country page** | Summary card (score, fee, time, six plain-words verdicts, *Add to compare*) and four tabs: Registering · Banking · Tax and compliance · Sources. |
 | ✅ | **Charity Checker** | *Yes or no for one country*: eight verdict rows and the main bottleneck. |
 | 🔎 | **Search** | Top bar (press <kbd>/</kbd>): countries, regions, then matches in the research text. |
-| 🎛️ | **Filters** | A slide-in panel grouped as Registering · Banking · Score and research · Region, with live counts, fee and time limits and text search. Options in one group widen the match; groups narrow it. Active filters show as removable tags and **live in the URL**, so links reproduce the view. |
+| 🎛️ | **Filters** | Always open in the Explorer, a slide-in panel elsewhere. Grouped as Registering · Banking · From the research text (entity types, founders, local officer, local address, notary, minimum capital, online filing, audit, tax exemption, donor relief) · Score and research · Region, plus fee, time, account-fee, deposit and minimum-score limits, with live counts, fee and time limits and text search. Options in one group widen the match; groups narrow it. Active filters show as removable tags and **live in the URL**, so links reproduce the view. |
 | 🎨 | **One colour language** | A 6-step charity-score scale and a 4-step status scale (✓ best · • good · ! caution · ✕ hardest · ? no data), the same everywhere; low-confidence banking research is **hatched**. |
 | 📱 | **Phones** | Bottom tab bar, a preview sheet when you tap the map, ranking cards with chips, full-screen filters, sideways-scrolling compare. |
 | ♿ | **Accessible** | Keyboard paths for everything (<kbd>/</kbd> search, <kbd>Esc</kbd> close, <kbd>↑</kbd><kbd>↓</kbd> move through rankings, <kbd>c</kbd> add to compare), focus trapping in panels, live result counts, reduced motion, light/dark themes. |

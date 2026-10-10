@@ -408,7 +408,7 @@ footer.site p { margin: 0; max-width: 80ch; }
 }
 /* ---------- explorer (everything on one page) ---------- */
 .xgrid { display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 16px; align-items: start; }
-.xside { position: sticky; top: 72px; max-height: calc(100vh - 88px); overflow-y: auto; padding: 4px 14px 14px; }
+.xside { max-height: min(calc(100vh - 88px), 660px); overflow-y: auto; padding: 4px 14px 14px; }
 .xside > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 8px; padding: 10px 0; position: sticky; top: 0; background: var(--surface); z-index: 2; border-bottom: 1px solid var(--line); }
 .xside > summary::-webkit-details-marker { display: none; }
 .xside > summary h2 { font-size: 19px; }
@@ -418,7 +418,7 @@ footer.site p { margin: 0; max-width: 80ch; }
 .xside .fgroup { padding: 8px 0; }
 .xmain { min-width: 0; }
 .xtop { display: grid; grid-template-columns: minmax(0, 1fr) 390px; gap: 12px; align-items: start; }
-.xdet { max-height: 560px; overflow-y: auto; position: relative; }
+.xdet { max-height: 660px; overflow-y: auto; position: relative; }
 .xdet .close { position: sticky; top: 8px; float: right; margin: 8px 8px 0 0; z-index: 2; }
 .xhint { padding: 16px 18px; }
 .xhint h2 { font-size: 18px; margin-bottom: 6px; }
@@ -429,20 +429,25 @@ footer.site p { margin: 0; max-width: 80ch; }
 .xblock { margin-top: 14px; }
 .xblock > .xbh { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
 .xblock > .xbh h2 { font-size: 19px; }
-.xscroll { overflow: auto; max-height: 660px; }
-table.xt { border-collapse: separate; border-spacing: 0; font-size: 12.5px; min-width: 100%; }
+.xwide { margin-top: 18px; }
+.xwide > .xbh { padding: 16px 18px; }
+.xwide > .xbh h2 { font-size: 24px; }
+.xscroll { overflow: auto; max-height: calc(100vh - 80px); min-height: 480px; }
+table.xt { border-collapse: separate; border-spacing: 0; font-size: 14.5px; min-width: 100%; }
 table.xt th { position: sticky; top: 0; background: var(--surface); z-index: 2; border-bottom: 1px solid var(--line); text-align: left; padding: 0; white-space: nowrap; vertical-align: bottom; }
-table.xt th button { background: none; border: 0; padding: 8px; font-weight: 700; font-size: 11.5px; cursor: pointer; color: var(--muted); text-align: left; }
+table.xt th button { background: none; border: 0; padding: 12px 10px; font-weight: 700; font-size: 13px; cursor: pointer; color: var(--muted); text-align: left; }
 table.xt th[aria-sort="ascending"] button, table.xt th[aria-sort="descending"] button { color: var(--ink); }
 table.xt th[aria-sort="ascending"] button::after { content: " ▲"; } table.xt th[aria-sort="descending"] button::after { content: " ▼"; }
-table.xt td { padding: 5px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+table.xt td { padding: 10px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+table.xt td.stk b { font-size: 15.5px; }
+table.xt .flag { width: 28px; }
 table.xt .stk { position: sticky; left: 0; background: var(--surface); z-index: 1; }
 table.xt th.stk { z-index: 3; }
 table.xt tr[data-x] { cursor: pointer; }
 table.xt tr[data-x]:hover td, table.xt tr[data-x]:focus-visible td { background: var(--surface-2); }
 table.xt tr.on td { background: var(--accent-soft); }
-table.xt input[type="checkbox"] { width: 17px; height: 17px; accent-color: var(--accent); cursor: pointer; }
-.mc { display: inline-flex; align-items: center; gap: 4px; border-radius: 5px; padding: 0 6px; color: #fff; font-weight: 600; font-size: 11.5px; line-height: 1.65; }
+table.xt input[type="checkbox"] { width: 20px; height: 20px; accent-color: var(--accent); cursor: pointer; }
+.mc { display: inline-flex; align-items: center; gap: 5px; border-radius: 6px; padding: 2px 9px; color: #fff; font-weight: 600; font-size: 13px; line-height: 1.6; }
 .c-b5 { background: var(--b5); } .c-b4 { background: var(--b4); color: #14202a; } .c-b3 { background: var(--b3); color: #14202a; } .c-b2 { background: var(--b2); color: #14202a; } .c-b1 { background: var(--b1); color: #14202a; } .c-b0 { background: var(--b0); }
 td.cell.med { background: var(--surface-2); color: var(--ink); font-weight: 500; }
 th.medh { background: var(--surface-2); }
@@ -1062,10 +1067,10 @@ function renderExplore() {
         <div class="xmain">
           <div id="xTags"></div>
           <div class="xtop"><div><div class="mapcard" id="xMap"></div><div id="xLegend"></div></div><aside class="card xdet" id="xDet" tabindex="-1" aria-label="Country details"></aside></div>
-          <div class="card xblock" id="xTableBox"></div>
-          <div class="card xblock" id="xCmp"></div>
         </div>
-      </div>`;
+      </div>
+      <div class="card xblock xwide" id="xTableBox"></div>
+      <div class="card xblock xwide" id="xCmp"></div>`;
     if (narrow()) $("xSide").open = false;
     xMap = makeMap($("xMap"), c => { S.xsel = c; renderExplore(); if (matchMedia("(max-width: 1250px)").matches) $("xDet").scrollIntoView({ behavior: "smooth", block: "start" }); });
   }
@@ -1108,7 +1113,7 @@ function renderExplore() {
   const { html: tbl, shown } = cmpTable(cs, pool, true);
   $("xCmp").innerHTML = `<div class="xbh"><h2>Compare</h2><span class="count">${cs.length} of 5 picked · tick countries in the table</span>
       ${cs.length ? `<label class="switch"><input type="checkbox" id="diffOnly"${S.diff ? " checked" : ""}> Differences only</label><button type="button" class="btn link" id="cmpClear">Clear</button>` : ""}</div>
-    ${cs.length ? `<div class="cmpwrap" style="padding:10px">${tbl}</div>${S.diff && cs.length > 1 && !shown ? `<p class="empty">These countries match on every rated row.</p>` : ""}`
+    ${cs.length ? `<div class="cmpwrap" style="padding:14px">${tbl}</div>${S.diff && cs.length > 1 && !shown ? `<p class="empty">These countries match on every rated row.</p>` : ""}`
       : `<p class="empty">Tick up to 5 countries in the table (or press <b>c</b> on a focused row) to compare them here, beside the median of everything your filters match.</p>`}
     <datalist id="allC">${DATA.filter(d => !S.cmp.includes(d.country)).sort((a, b) => a.country.localeCompare(b.country)).map(d => `<option value="${esc(d.country)}">`).join("")}</datalist>`;
   announce(`${pool.length} countries match`);

@@ -30,8 +30,8 @@ from build_webapp import build_data
 BASE = Path(__file__).parent
 GEO = BASE / "webapp" / "geo" / "countries-50m.json"
 BANKING = BASE / "banking_by_country.csv"  # merge_banking.py: personal accounts for non-residents
-OUT = BASE / "webapp" / "legacy" / "atlas-v1.html"  # archived design; build_site.py builds the live site
-DOCS = BASE / "webapp" / "legacy" / "atlas-v1-page.html"  # archived full-document copy
+OUT = BASE / "webapp" / "atlas.html"
+DOCS = BASE / "docs" / "index.html"  # GitHub Pages copy (full HTML document)
 
 # dataset name -> Natural Earth feature name
 ALIAS = {
@@ -500,7 +500,6 @@ footer p { margin: 0; }
     <div class="titlebar">
       <h1>Charity Registration Atlas</h1>
       <div class="hlinks">
-        <a class="btn ghost" href="https://opencharity-org.github.io/OpenCharity/rank.html" target="_blank" rel="noopener">Rank &amp; compare</a>
         <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity" target="_blank" rel="noopener">GitHub</a>
         <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity/raw/main/charities_by_country_v2.csv" target="_blank" rel="noopener">CSV</a>
         <a class="btn ghost" href="https://github.com/OpenCharity-org/OpenCharity/raw/main/charities_by_country_v2.xlsx" target="_blank" rel="noopener">Excel</a>

@@ -12,6 +12,3 @@ research_tmp/
 
 # Environments
 .env
-
-# Archived page designs (rebuilt by build_atlas.py / build_index.py)
-webapp/legacy/

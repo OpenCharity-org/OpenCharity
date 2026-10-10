@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌍 OpenCharity
+# 🌍 OpenCharity · Charity Registration Atlas
 
 ### How hard is it to register a charity in every country on Earth, from Australia?
 
@@ -29,7 +29,7 @@
 
 <br>
 
-<a href="https://opencharity-org.github.io/OpenCharity/"><img src="docs/screenshots/explorer.png" alt="OpenCharity Explorer: every filter in a sidebar, the map with Estonia's details, and the full country table" width="100%"></a>
+<a href="https://opencharity-org.github.io/OpenCharity/"><img src="docs/screenshots/desktop-light.png" alt="Charity Registration Atlas: world map coloured by registration difficulty, with filters and a country dossier" width="100%"></a>
 
 </div>
 
@@ -42,7 +42,7 @@
 - [📈 At a glance](#-at-a-glance)
 - [🏆 Top 10 for an Australian founder](#-top-10-for-an-australian-founder)
 - [⚡ Quick answers](#-quick-answers)
-- [🧭 Using the site](#-using-the-site)
+- [🧭 Using the atlas](#-using-the-atlas)
 - [🗂️ What's in the dataset](#%EF%B8%8F-whats-in-the-dataset)
 - [🧮 How rankings are calculated](#-how-rankings-are-calculated)
 - [🔬 How it was researched](#-how-it-was-researched)
@@ -56,23 +56,17 @@
 
 ## ✨ What you can do
 
-One site, five sections, one country page, built to a UI and navigation plan: every screen answers one question first, and filters, details and extra rankings sit one click away.
-
-| | Section | What it answers |
+| | Feature | Details |
 |---|---|---|
-| 🧭 | **Explorer** (landing page) | *Everything on one page.* All **26 filter groups** and 6 number limits always visible in a sidebar, the map with the selected country's full details beside it, a **sortable table of all 202 countries × 27 columns**, and a compare grid with a **filtered-median** column, all updating together. |
-| 🏠 | **Start** | *Where do I start?* Three entry questions (Where is easiest? · Compare countries · Can I bank there?), the top 5 and a one-line method note. |
-| 🗺️ | **Map** | *Where is it easy?* Countries coloured by **charity score** (or any of 12 measures via *Colour by*). Click a country for its page in a side panel; the legend shows counts and filters on click; *List view* gives a keyboard-friendly list. |
-| 🏅 | **Rankings** | *Who is best for my priority?* Five tabs (Best overall, Easiest, Cheapest, Fastest, Most remote) plus *More ways to rank*: hardest, most expensive, slowest, foreign money welcome, cheap and fast, **your own weights**, A–Z. Ties share a rank. |
-| ⚖️ | **Compare** | *Which of these should I pick?* Up to 5 countries in colour-coded cells with symbols, an **i** note behind every cell, *show differences only* (on by default for 3+), expandable text rows and shareable links. |
-| 🏦 | **Banking** | *Can I bank there?* Personal accounts for a non-resident: easiest account, without visiting, cheapest first-year fees, on a map and a list. |
-| 📄 | **Country page** | Summary card (score, fee, time, six plain-words verdicts, *Add to compare*) and four tabs: Registering · Banking · Tax and compliance · Sources. |
-| ✅ | **Charity Checker** | *Yes or no for one country*: eight verdict rows and the main bottleneck. |
-| 🔎 | **Search** | Top bar (press <kbd>/</kbd>): countries, regions, then matches in the research text. |
-| 🎛️ | **Filters** | Always open in the Explorer, a slide-in panel elsewhere. Grouped as Registering · Banking · From the research text (entity types, founders, local officer, local address, notary, minimum capital, online filing, audit, tax exemption, donor relief) · Score and research · Region, plus fee, time, account-fee, deposit and minimum-score limits, with live counts, fee and time limits and text search. Options in one group widen the match; groups narrow it. Active filters show as removable tags and **live in the URL**, so links reproduce the view. |
-| 🎨 | **One colour language** | A 6-step charity-score scale and a 4-step status scale (✓ best · • good · ! caution · ✕ hardest · ? no data), the same everywhere; low-confidence banking research is **hatched**. |
-| 📱 | **Phones** | Bottom tab bar, a preview sheet when you tap the map, ranking cards with chips, full-screen filters, sideways-scrolling compare. |
-| ♿ | **Accessible** | Keyboard paths for everything (<kbd>/</kbd> search, <kbd>Esc</kbd> close, <kbd>↑</kbd><kbd>↓</kbd> move through rankings, <kbd>c</kbd> add to compare), focus trapping in panels, live result counts, reduced motion, light/dark themes. |
+| 🗺️ | **World map** | Every country coloured by difficulty, remote founding, fee, time, charity bank access, **personal bank account for non-residents**, foreign-funding rules, Google for Nonprofits eligibility or research confidence. Micro-states (Tuvalu, Nauru, Monaco…) are shown as dots. Zoom, pan and tap any country. |
+| 🏅 | **16 rankings** | Best overall · **your own weights** · easiest / hardest · cheapest / most expensive · fastest / slowest · most remote-friendly · easiest charity bank account · easiest / hardest / cheapest **personal account as a non-resident** · fewest funding limits · cheap *and* fast · A–Z |
+| 🎛️ | **Stackable filters** | Multi-select every facet: options in one group widen the match (Easy **or** Medium), groups narrow it (… **and** fully remote **and** fee ≤ $100). Each option shows a live count of what you would get. Plus free-text search and exact fee/time ceilings. |
+| ⚖️ | **Custom weights** | Ten sliders (ease, remote founding, fee, speed, charity bank access, personal bank access, cheap personal account, open foreign funding, Google for Nonprofits, confidence) produce a 0–100 **fit score** for every country. |
+| 📊 | **Benchmark** | Tick up to 6 countries to compare side by side. The best value in each row is highlighted, and a **filtered median** column shows how they stack up against the countries your filters match. |
+| 📄 | **Country dossier** | Entity type and governing law, main bottleneck, local requirements, cost and time in practice, bank account, tax exemption, donor deductions, foreign-funding rules, annual compliance, research notes and every source link. |
+| 🏦 | **Foreigner banking** | A separate 202-country survey: can a non-resident foreigner (no visa, address or job there) open a **personal** bank account? Open / limited / residents only, **remote or branch-visit opening**, **opening fee, monthly fee and minimum deposit in US$**, residence rules, documents, named banks, restrictions and fintech alternatives, all with sources. |
+| 📱 | **Works on phones** | Filters fold away, the ranking becomes cards, and details collapse until you need them. |
+| 🌗 | **Light & dark** | Follows your system, or switch with the Theme button. Your filters, picks and weights are remembered in your browser. |
 
 ---
 
@@ -80,19 +74,15 @@ One site, five sections, one country page, built to a UI and navigation plan: ev
 
 <table>
 <tr>
-<td width="62%"><b>🏠 Home</b><br><img src="docs/screenshots/home.png" alt="Home: three entry questions, the top 5 and key numbers"></td>
-<td width="38%" rowspan="3"><b>📱 On a phone</b><br><img src="docs/screenshots/mobile.png" alt="Phone: map with Portugal's preview sheet and the bottom tab bar"></td>
+<td width="62%"><b>🌙 Dark mode</b><br><img src="docs/screenshots/desktop-dark.png" alt="Atlas in dark mode"></td>
+<td width="38%" rowspan="2"><b>📱 On a phone</b><br><img src="docs/screenshots/mobile.png" alt="Atlas on a 390px-wide phone screen"></td>
 </tr>
-<tr><td><b>🏅 Rankings</b><br><img src="docs/screenshots/rankings.png" alt="Rankings: five tabs and a ranked list with score badges and plain-words chips"></td></tr>
-<tr><td><b>⚖️ Compare</b><br><img src="docs/screenshots/compare.png" alt="Estonia, Georgia and the UK compared, differences only"></td></tr>
+<tr>
+<td><b>⚖️ Stacked filters, custom weights & benchmark</b><br><img src="docs/screenshots/benchmark.png" alt="Filters for easy or medium and fully remote, custom weights, and a benchmark of Estonia, Georgia, the UK and Kyrgyzstan"></td>
+</tr>
 </table>
 
-<table><tr>
-<td><b>📄 Country page</b><br><img src="docs/screenshots/country.png" alt="Georgia: summary card and the Registering tab"></td>
-<td><b>🏦 Banking</b><br><img src="docs/screenshots/banking.png" alt="Banking: map of personal-account access for non-residents"></td>
-</tr><tr>
-<td colspan="2"><b>🌙 Dark theme</b><br><img src="docs/screenshots/dark.png" alt="The map in the dark theme"></td>
-</tr></table>
+<b>🏦 Personal bank account for non-residents</b><br><img src="docs/screenshots/banking.png" alt="Map coloured by whether a non-resident can open a personal bank account, with Georgia's banking dossier">
 
 > 🔁 Screenshots are generated by `python3 make_screenshots.py`.
 
@@ -209,16 +199,16 @@ Ranked by the atlas's **Best overall** score (difficulty, remote founding, Googl
 
 ---
 
-## 🧭 Using the site
+## 🧭 Using the atlas
 
-1. 🔗 **Open** <https://opencharity-org.github.io/OpenCharity/> and pick one of the three questions on Home, or go straight to **Map**.
-2. 🗺️ **Click a country** to open its page; *Open full page* shows everything with tabs.
-3. 🎛️ **Filters** narrow the map, rankings and banking at once; remove any tag with ×.
-4. 🏅 **Rankings**: choose a tab; *More ways to rank → Your weights* gives sliders.
-5. ⚖️ **Compare**: press **+** on any row or *Add to compare* on a country, then the tray's **Compare** button.
-6. ✅ **Charity Checker** (top right, or the tab bar on a phone) for a quick verdict.
+1. 🔗 **Open** <https://opencharity-org.github.io/OpenCharity/>.
+2. 🎯 **Pick a ranking** in *Rank by*. The map recolours to match (e.g. *Cheapest* → fee colours).
+3. 🎛️ **Stack filters**: tick as many chips as you like. Watch the counts on each chip and the *Active* tags; remove any tag with ×. On a phone, tap **Filters**.
+4. 🗺️ **Click a country** on the map or in the list to open its dossier, including every source link.
+5. ⚖️ **Benchmark**: tick the box beside up to 6 countries (or press *Benchmark* in a dossier), then **Compare**.
+6. 🎚️ **Tune your weights**: *Rank by → Your weights* shows sliders; the fit score updates live.
 
-> 🔗 Links: a country [`#/country/estonia`](https://opencharity-org.github.io/OpenCharity/#/country/estonia) (old `#estonia` links still work) · a filtered ranking [`#/rankings/cheapest?f=difficulty:easy`](https://opencharity-org.github.io/OpenCharity/#/rankings/cheapest?f=difficulty:easy) · a comparison [`#/compare/estonia,georgia,united-kingdom`](https://opencharity-org.github.io/OpenCharity/#/compare/estonia,georgia,united-kingdom).
+> 🔗 Link straight to a country with its name as the anchor, e.g. [`#estonia`](https://opencharity-org.github.io/OpenCharity/#estonia) or [`#greenland`](https://opencharity-org.github.io/OpenCharity/#greenland).
 
 ---
 
@@ -275,12 +265,11 @@ Eligibility is computed by exact longest-match tokenisation against Google's 186
 
 | Ranking | Formula |
 |---|---|
-| 🏆 **Best overall (charity score)** | Out of 100: registration ease 25 (easy 25 · medium 17 · hard 8 · very hard 0) + set up without visiting 20 (yes 20 · local agent 10) + low fee 10 + speed 10 (both by percentile among countries with a stated value) + charity bank account 10 (remote 10 · visit 5) + personal account 10 (open 7 · limited 3.5, plus remote opening 3 · branch 1.5) + foreign money welcome 5 + Google for Nonprofits 10. Bands: Excellent 85+ · Very good 70–84 · Good 55–69 · Fair 40–54 · Hard 25–39 · Very hard 0–24. |
-| 📗 **Excel Top-10** | Penalty score, lower is better: `2×difficulty (0–3) + 2×remote (yes 0 · partial 1 · no 3) + 3 if not on Google for Nonprofits + confidence (high 0 · med 1)`. |
-| 🎚️ **Your weights** | `fit = 100 × Σ wᵢ·(pointsᵢ / maxᵢ) / Σ wᵢ` over the eight charity-score factors, each weight 0–5. |
+| 🏆 **Best overall** | Penalty score, lower is better: `2×difficulty (0–3) + 2×remote (yes 0 · partial 1 · no 3) + 3 if not on Google for Nonprofits + confidence (high 0 · med 1)`; ties broken by fee, then time. The same score drives the Excel *Top-10*. |
+| 🎚️ **Your weights** | `fit = 100 × (1 − Σ wᵢ·penaltyᵢ / Σ wᵢ)` with each factor scaled 0 (best) … 1 (worst); fee and time use percentile rank among countries with a stated value. |
 | 💸 **Fee** | The lowest US$ figure in the fee cell (`none`/`free` = 0). A few cells include agent or notary costs; the full text is always shown beside the number. |
 | ⏱️ **Time** | The first duration in the time cell, converted to days. |
-| 💳 **Personal account** | `open → limited → residents only`, then opening without a visit. |
+| 💳 **Personal account** | `open → limited → residents only`, then remote opening, then banking difficulty and residence rule. In *Your weights* it scores `0.7 × access + 0.3 × opening method`. |
 | 💵 **Cheapest personal account** | First-year fees = `12 × monthly fee + opening fee` (an unpublished opening fee counts as 0), then minimum deposit; countries with no published monthly fee rank last. |
 | 🏦 **Charity bank access** | Classified from the research note: *remote option* = at least one bank or licensed e-money provider onboards non-residents without a visit. |
 | ⚪ **Missing values** | Countries with no published fee or time always rank last and fail a fee or time ceiling. |
@@ -330,7 +319,7 @@ python3 apply_followups.py   # ✅ apply verification results (followup_*.json, 
 python3 merge_banking.py     # 🏦 research/banking/batch_*.json → banking_by_country.csv
 python3 build_xlsx.py        # 📗 styled Excel workbook
 python3 build_webapp.py      # 🧾 simple list explorer → webapp/index.html
-python3 build_site.py        # 🌍 the site → webapp/atlas.html + docs/index.html (GitHub Pages)
+python3 build_atlas.py       # 🗺️ map atlas → webapp/atlas.html + docs/index.html (GitHub Pages)
 python3 make_screenshots.py  # 📸 README screenshots (macOS + Google Chrome)
 ```
 
@@ -345,7 +334,7 @@ python3 apply_verify_rest.py # apply verify_rest_patches.py (round-1 re-verifica
 
 </details>
 
-🚀 **Deploying:** GitHub Pages serves `docs/` from `main`. Rebuild with `build_site.py`, commit and push, and the site updates in about a minute.
+🚀 **Deploying:** GitHub Pages serves `docs/` from `main`. Rebuild with `build_atlas.py`, commit and push, and the site updates in about a minute.
 
 ---
 
@@ -357,17 +346,14 @@ OpenCharity/
 ├── 🏦 banking_by_country.csv          # personal accounts for non-residents (202 × 16)
 ├── 📗 charities_by_country_v2.xlsx    # styled workbook (incl. Foreigner banking sheet)
 ├── 🌐 docs/
-│   ├── index.html                     # the live site (GitHub Pages)
-│   ├── rank.html · classic.html       # redirects from earlier page addresses
+│   ├── index.html                     # live atlas (GitHub Pages)
 │   └── screenshots/                   # README images
 ├── 🗺️ webapp/
-│   ├── atlas.html                     # the site (embeddable fragment)
-│   ├── flags/                         # SVG flags (country-flag-icons, MIT)
+│   ├── atlas.html                     # atlas (same page, embeddable fragment)
 │   ├── index.html                     # simple list explorer
 │   ├── data.json                      # dataset as JSON
 │   └── geo/countries-50m.json         # Natural Earth 1:50m (world-atlas@2.0.2)
-├── 🐍 build_site.py · build_webapp.py · build_xlsx.py · make_screenshots.py · iso2.py
-├── 🐍 build_atlas.py · build_index.py # data helpers + archived page designs (→ webapp/legacy/, not committed)
+├── 🐍 build_atlas.py · build_webapp.py · build_xlsx.py · make_screenshots.py
 ├── 🐍 add_countries.py · apply_followups.py · apply_verify_rest.py · verify_rest_patches.py
 ├── 🔬 research/new_countries/         # Palau, Kosovo, Cabo Verde, Greenland rows
 ├── 🏦 research/banking/               # SCHEMA.md + batch_0…8.json (foreigner banking)
@@ -389,7 +375,7 @@ Found an outdated fee, a repealed law or a better source? 🙌
     "cell_edits": {"Registration fee (USD)": "~$35 (MTÜ 30 EUR)"},
     "source": "https://…", "finding": "What the official source says."}
    ```
-   then run `python3 apply_followups.py && python3 build_xlsx.py && python3 build_site.py`.
+   then run `python3 apply_followups.py && python3 build_xlsx.py && python3 build_atlas.py`.
 3. ➕ **New jurisdiction?** Add an 18-key JSON file to `research/new_countries/` and run `python3 add_countries.py`.
 
 ---
@@ -404,8 +390,7 @@ Found an outdated fee, a repealed law or a better source? 🙌
 
 - 📜 Code: [MIT](LICENSE). Data: CC BY 4.0 where the underlying sources allow.
 - 🗺️ Map geometry: [Natural Earth](https://www.naturalearthdata.com/) via [world-atlas](https://github.com/topojson/world-atlas) · 📈 [D3](https://d3js.org/) · 🧩 [TopoJSON](https://github.com/topojson/topojson-client)
-- 🏳️ Flags: [country-flag-icons](https://gitlab.com/catamphetamine/country-flag-icons) (MIT), vendored in `webapp/flags/`
-- 🔤 Type: Bricolage Grotesque, Public Sans and JetBrains Mono (atlas); Outfit and Source Serif 4 (rank page), all Google Fonts
+- 🔤 Type: Bricolage Grotesque, Public Sans and JetBrains Mono (Google Fonts)
 
 <div align="center">
 

@@ -411,7 +411,14 @@ section.panel { background: var(--surface); border: 1px solid var(--line); borde
 .phead p { margin: 0; color: var(--muted); font-size: 13px; }
 .tablewrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
-#tbl { min-width: 980px; }
+/* the ranking table always fits the panel width: columns wrap instead of scrolling sideways */
+#tbl { width: 100%; table-layout: auto; }
+#tbl th, #tbl td { padding: 8px 6px; }
+#tbl th { white-space: normal; line-height: 1.3; vertical-align: bottom; letter-spacing: .03em; }
+#tbl td .pill { white-space: normal; align-items: flex-start; line-height: 1.3; }
+#tbl td .pill i { margin-top: 4px; }
+#tbl td.name { white-space: normal; min-width: 8em; }
+#tbl td.num { white-space: normal; }
 th { text-align: left; font: 500 11px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--line); white-space: nowrap; }
 th button { all: unset; cursor: pointer; }
 th button:focus-visible { outline: 2px solid var(--focus); }
@@ -460,6 +467,21 @@ footer { color: var(--muted); font-size: 12.5px; max-width: 95ch; display: grid;
 footer p { margin: 0; }
 @media (max-width: 520px) { .wrap { padding-inline: 16px; } .facts { grid-template-columns: 1fr; } .dossier h2 { font-size: 24px; } .count { margin-left: 0; } .tray { padding-inline: 16px; } }
 /* phones */
+@media (max-width: 1040px) {
+  #tbl { min-width: 0; }
+  #tbl thead { display: none; }
+  #tbl tbody tr { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 12px 2px; border-bottom: 1px solid var(--line); }
+  #tbl td { border: 0; padding: 0; }
+  #tbl td.ck { width: auto; order: 0; }
+  #tbl td.rank { order: 1; width: auto; }
+  #tbl td.name { order: 2; flex: 1 1 calc(100% - 110px); white-space: normal; }
+  #tbl td.name .sub { display: inline; margin-left: 6px; }
+  #tbl td.fit { order: 3; display: flex; align-items: center; gap: 6px; }
+  #tbl td.fit .bar { margin: 0; }
+  #tbl td.pc, #tbl td.num { order: 4; font-size: 12.5px; }
+  #tbl td.num[data-l]::before { content: attr(data-l) " "; font: 500 10.5px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  #tbl td.gfn { display: none; }
+}
 @media (max-width: 760px) {
   .ftoggle { display: inline-flex; margin-left: auto; }
   .controls:not(.open) .fbody { display: none; }

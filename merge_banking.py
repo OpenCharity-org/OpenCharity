@@ -23,7 +23,8 @@ ENUMS = {
     "difficulty": ["easy", "medium", "hard", "very hard"],
     "confidence": ["high", "medium", "low"],
 }
-TEXT = ["documents", "min_deposit_fees", "banks", "restrictions", "alternatives"]
+TEXT = ["documents", "min_deposit_fees", "banks", "restrictions", "alternatives", "cost_note"]
+NUMS = ["opening_fee_usd", "min_deposit_usd", "monthly_fee_usd"]  # number or null
 # json key -> csv column
 COLS = [
     ("country", "Country"),
@@ -36,6 +37,10 @@ COLS = [
     ("banks", "Banks accepting non-residents"),
     ("restrictions", "Restrictions"),
     ("alternatives", "Alternatives (fintech / regional)"),
+    ("opening_fee_usd", "Opening fee (USD)"),
+    ("min_deposit_usd", "Minimum deposit (USD)"),
+    ("monthly_fee_usd", "Monthly fee (USD)"),
+    ("cost_note", "Cost note"),
     ("confidence", "Confidence"),
     ("sources", "Sources"),
 ]
@@ -60,6 +65,10 @@ def main():
             for k in TEXT:
                 if not str(o.get(k) or "").strip():
                     errs.append(f"{where}: empty {k}")
+            for k in NUMS:
+                v = o.get(k, "missing")
+                if v is not None and (isinstance(v, bool) or not isinstance(v, (int, float)) or v < 0):
+                    errs.append(f"{where}: {k}={v!r}")
             src = o.get("sources") or []
             if isinstance(src, str):
                 src = [s.strip() for s in src.split(";")]
@@ -79,9 +88,10 @@ def main():
         w.writerow([col for _, col in COLS])
         for c in countries:
             o = got[c]
-            w.writerow([" ".join(str(o[k]).split()) for k, _ in COLS])
+            w.writerow(["" if o[k] is None else f"{o[k]:g}" if k in NUMS else " ".join(str(o[k]).split()) for k, _ in COLS])
     tally = {v: sum(o["nonresident_personal"] == v for o in got.values()) for v in ENUMS["nonresident_personal"]}
-    print(f"wrote {OUT.name}: {len(countries)} rows; non-resident personal account {tally}")
+    known = {k: sum(o[k] is not None for o in got.values()) for k in NUMS}
+    print(f"wrote {OUT.name}: {len(countries)} rows; non-resident personal account {tally}; costs known {known}")
 
 
 if __name__ == "__main__":

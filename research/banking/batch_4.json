@@ -14,7 +14,11 @@
   "sources": [
    "https://globalbanks.com/personal-bank-account-Bahamas/",
    "https://www.block3finance.com/banking-in-the-bahamas-the-ultimate-guide"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": 10000,
+  "monthly_fee_usd": null,
+  "cost_note": "Guides cite USD 10,000-250,000 minimum for non-resident/offshore accounts at international/private banks (low end used, already USD); opening and monthly fees are not published."
  },
  {
   "country": "Dominican Republic",
@@ -31,7 +35,11 @@
   "sources": [
    "https://www.riotimesonline.com/banking-dominican-republic-foreigners-2026/",
    "https://www.drlistings.com/blog/dominican-republic-bank-account-foreigner/"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": 300,
+  "monthly_fee_usd": null,
+  "cost_note": "Banreservas USD account reported at about USD 300 opening deposit (guides cite USD 100-500, already USD); opening and monthly fees are not published for non-residents."
  },
  {
   "country": "Panama",
@@ -48,7 +56,11 @@
   "sources": [
    "https://globalbanks.com/panama-bank-account-for-foreigners/",
    "https://goldenharbors.com/articles/bank-account-in-panama"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": 1000,
+  "monthly_fee_usd": null,
+  "cost_note": "Guides cite USD 1,000-10,000 (some banks up to USD 250,000) minimum for non-residents, low end used and already in USD; opening and monthly fees are not published."
  },
  {
   "country": "Paraguay",
@@ -65,7 +77,11 @@
   "sources": [
    "https://www.riotimesonline.com/bank-account-paraguay-foreigners-2026/",
    "https://wheretoemigrate.io/blog/banking-in-paraguay-expat-guide-2026"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not applicable: passport-only non-residents cannot open personal accounts (Banco Atlas and Banco Continental require a cedula), so no costs apply."
  },
  {
   "country": "Hong Kong",
@@ -82,7 +98,11 @@
   "sources": [
    "https://www.personal.hsbc.com.hk/international/banking-in-hong-kong",
    "https://www.easyglobalbanking.com/alternative-banking-hubs/hong-kong-banking-risks-and-opportunities-2025/"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": 12.8,
+  "cost_note": "HSBC One charges non-HKID holders HKD 100/month when the balance is below HKD 10,000 (about USD 1,280) at roughly 0.128 USD/HKD; no opening fee or opening minimum is published."
  },
  {
   "country": "Laos",
@@ -100,7 +120,11 @@
    "https://wheretoemigrate.io/blog/banking-in-laos-expat-guide-2026",
    "https://ftp.laotradeportal.gov.la/upload/files/BoL_01_2010_E.pdf",
    "https://aseanbriefing.com/news/laos-implements-mandatory-bank-accounts-for-foreign-investors"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not published: BCEL personal-account opening fees, minimum deposit and monthly fees for non-residents are unpublished (the USD 10,000 figure applies only to some foreign-investor accounts)."
  },
  {
   "country": "Tonga",
@@ -117,7 +141,11 @@
   "sources": [
    "https://www.confiduss.com/en/jurisdictions/tonga/business/bank-account-opening/",
    "https://www.jarniascyril.com/?p=15541"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": 42,
+  "monthly_fee_usd": null,
+  "cost_note": "Guides cite about TOP 100-300 opening deposit for a standard account at ANZ/BSP Tonga, low end TOP 100 at about 0.42 USD/TOP; opening and monthly fees are not published."
  },
  {
   "country": "Georgia",
@@ -135,7 +163,11 @@
    "https://pbservices.ge/blog/georgias-ten-best-banks/",
    "https://www.gegidze.com/post/remote-bank-account-opening-in-georgia-what-s-actually-possi",
    "https://wheretoemigrate.io/blog/banking-in-georgia-expat-guide-2026"
-  ]
+  ],
+  "opening_fee_usd": 0,
+  "min_deposit_usd": 0,
+  "monthly_fee_usd": 1.85,
+  "cost_note": "Bank of Georgia Basic package: free current-account opening, no stated minimum balance, GEL 5/month for non-residents (GEL 2 for residents) at about 0.37 USD/GEL."
  },
  {
   "country": "Cameroon",
@@ -152,7 +184,11 @@
   "sources": [
    "https://kinsmenadvocates.com/uncategorized/open-a-bank-account-as-a-foreigner-in-cameroon",
    "https://www.businessincameroon.com/bank/2803-8989-beac-tightens-conditions-for-opening-a-foreign-currency-account-in-and-out-of-the-cemac-region"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not applicable: no known bank opens personal accounts for non-resident individuals, so no costs apply."
  },
  {
   "country": "Burundi",
@@ -169,7 +205,11 @@
   "sources": [
    "https://wheretoemigrate.io/blog/banking-in-burundi-expat-guide-2026",
    "https://www.jarniascyril.com/?p=18506"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not applicable: non-residents cannot open accounts remotely (branch KYC required at CRDB, BANCOBU, BCB, KCB), and initial deposits are not published."
  },
  {
   "country": "Angola",
@@ -186,7 +226,11 @@
   "sources": [
    "https://mondaq.co.uk/financial-services/1287550/new-rules-on-opening-maintaining-operating-and-closing-bank-accounts",
    "https://www.mirandalawfirm.com/en/insights-knowledge/publications/alerts/rules-for-exchange-operations-by-individuals-amended"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not applicable: ordinary non-resident individuals cannot open personal accounts, and no fees are published."
  },
  {
   "country": "Luxembourg",
@@ -203,7 +247,11 @@
   "sources": [
    "https://www.spuerkeess.lu/en/private-customers/information-help/can-i-open-an-account-as-a-non-resident/",
    "https://luxtoday.lu/en/knowledge/how-to-open-a-bank-account-in-luxembourg"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": 4.0,
+  "cost_note": "Spuerkeess Zebra package is EUR 3.50/month (EUR 42/year, fee information document dated April 2024) at about 1.15 USD/EUR; no opening fee or minimum deposit is published there."
  },
  {
   "country": "Poland",
@@ -220,7 +268,11 @@
   "sources": [
    "https://www.worldfirst.com/uk/blog/international-transactions/open-bank-account-in-poland-non-resident/",
    "https://www.expat.com/en/guide/europe/poland/14148-opening-a-bank-account-in-poland.html"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not published for non-residents: basic personal accounts at PKO BP, mBank and others run about PLN 0-10/month (about USD 0-2.7 at 0.27 USD/PLN), but no bank publishes a specific non-resident tariff."
  },
  {
   "country": "North Macedonia",
@@ -237,7 +289,11 @@
   "sources": [
    "https://kb.com.mk/content/General-conditions-non-residents.pdf",
    "https://kb.com.mk/content/Documents-required-for-opening-of-non-reresident-account.pdf"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not published: Komercijalna Banka's non-resident general conditions refer to its tariff without giving opening, minimum-balance or monthly amounts."
  },
  {
   "country": "Malta",
@@ -254,7 +310,11 @@
   "sources": [
    "https://www.wise.com/gb/blog/opening-a-bank-account-in-malta",
    "https://www.block3finance.com/how-to-open-a-bank-account-in-malta"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not published: Bank of Valletta and HSBC Malta do not publish non-resident opening fees, minimum deposits or monthly fees."
  },
  {
   "country": "Latvia",
@@ -272,7 +332,11 @@
    "https://www.swedbank.lv/private/d2d/accounts/openNewAccount?language=E",
    "https://wise.com/gb/blog/opening-a-bank-account-in-latvia",
    "https://www.globalcitizensolutions.com/pt/banks-in-latvia/"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not published: Swedbank, SEB and Citadele levy higher non-resident fees but the specific amounts are not published."
  },
  {
   "country": "Syria",
@@ -290,7 +354,11 @@
    "https://wheretoemigrate.io/blog/banking-in-syria-expat-guide-2026",
    "https://english.enabbaladi.net/archives/2025/11/syrian-central-bank-drafts-regulatory-framework-for-swifts-return/",
    "https://chambank.com/en/services/personal-facility-services/finance-accounts/current-account"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not applicable: remote non-residents cannot open accounts; Cham Bank's in-person current-account minimum is SYP 10,000 or FX equivalent, a negligible amount at current rates."
  },
  {
   "country": "Palestine",
@@ -307,7 +375,11 @@
   "sources": [
    "https://wheretoemigrate.io/blog/banking-in-palestine-expat-guide-2026",
    "https://regalert.today/document/e6b51a56-a801-4915-86de-a2c43fac27e4"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not applicable: Bank of Palestine reportedly requires a Palestinian/Jerusalem ID, so non-residents cannot open accounts and no costs apply."
  },
  {
   "country": "Ethiopia",
@@ -324,7 +396,11 @@
   "sources": [
    "https://nbe.gov.et/wp-content/uploads/2023/04/fxd-68-2020.pdf",
    "https://www.combanketh.et/cbeapi/uploads/Diaspora_Account_English_6044b9cc67.pdf"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not applicable: non-resident foreigners without Ethiopian origin cannot open accounts; diaspora accounts (USD 100 minimum, USD 5,000 fixed deposit) do not apply."
  },
  {
   "country": "Pakistan",
@@ -341,7 +417,11 @@
   "sources": [
    "https://www.sbp.org.pk/RDA/index.html",
    "https://www.hbl.com/personal/rda/ebanc-roshan-digital-account/hbl-nran-non-resident-rupee-account-non-repatriable"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not published: Roshan Digital Accounts (e.g. HBL) are described as having no or low minimum balance, but opening and monthly fees for foreign nationals are not published."
  },
  {
   "country": "Côte d'Ivoire",
@@ -358,7 +438,11 @@
   "sources": [
    "https://www.ecofinagency.com/news-finances/2303-53987-west-africa-targets-diaspora-funds-with-new-banking-access-rules",
    "https://tresor.gouv.ci/tres/wp-content/uploads/2018/03/PRESTATION-COMPTE-EN-DEVISE.pdf"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not published: no known option for non-WAEMU non-residents, and no bank publishes non-resident fees."
  },
  {
   "country": "Sierra Leone",
@@ -375,6 +459,10 @@
   "sources": [
    "https://www.visitsierraleone.org/bccsl-lunch-and-learn-foreign-currency-accounts-acceptable-to-all-ik-lamin-2/",
    "https://wheretoemigrate.io/blog/banking-in-sierra-leone-expat-guide-2026"
-  ]
+  ],
+  "opening_fee_usd": null,
+  "min_deposit_usd": null,
+  "monthly_fee_usd": null,
+  "cost_note": "Not published: Rokel Commercial Bank and others require a branch visit, and initial deposits and fees are not published."
  }
 ]

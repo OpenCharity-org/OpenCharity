@@ -59,12 +59,12 @@
 | | Feature | Details |
 |---|---|---|
 | 🗺️ | **World map** | Every country coloured by difficulty, remote founding, fee, time, charity bank access, **personal bank account for non-residents**, foreign-funding rules, Google for Nonprofits eligibility or research confidence. Micro-states (Tuvalu, Nauru, Monaco…) are shown as dots. Zoom, pan and tap any country. |
-| 🏅 | **15 rankings** | Best overall · **your own weights** · easiest / hardest · cheapest / most expensive · fastest / slowest · most remote-friendly · easiest charity bank account · easiest / hardest **personal account as a non-resident** · fewest funding limits · cheap *and* fast · A–Z |
+| 🏅 | **16 rankings** | Best overall · **your own weights** · easiest / hardest · cheapest / most expensive · fastest / slowest · most remote-friendly · easiest charity bank account · easiest / hardest / cheapest **personal account as a non-resident** · fewest funding limits · cheap *and* fast · A–Z |
 | 🎛️ | **Stackable filters** | Multi-select every facet: options in one group widen the match (Easy **or** Medium), groups narrow it (… **and** fully remote **and** fee ≤ $100). Each option shows a live count of what you would get. Plus free-text search and exact fee/time ceilings. |
-| ⚖️ | **Custom weights** | Nine sliders (ease, remote founding, fee, speed, charity bank access, personal bank access, open foreign funding, Google for Nonprofits, confidence) produce a 0–100 **fit score** for every country. |
+| ⚖️ | **Custom weights** | Ten sliders (ease, remote founding, fee, speed, charity bank access, personal bank access, cheap personal account, open foreign funding, Google for Nonprofits, confidence) produce a 0–100 **fit score** for every country. |
 | 📊 | **Benchmark** | Tick up to 6 countries to compare side by side. The best value in each row is highlighted, and a **filtered median** column shows how they stack up against the countries your filters match. |
 | 📄 | **Country dossier** | Entity type and governing law, main bottleneck, local requirements, cost and time in practice, bank account, tax exemption, donor deductions, foreign-funding rules, annual compliance, research notes and every source link. |
-| 🏦 | **Foreigner banking** | A separate 202-country survey: can a non-resident foreigner (no visa, address or job there) open a **personal** bank account? Open / limited / residents only, remote or in-person opening, residence rules, documents, deposits, named banks, restrictions and fintech alternatives, all with sources. |
+| 🏦 | **Foreigner banking** | A separate 202-country survey: can a non-resident foreigner (no visa, address or job there) open a **personal** bank account? Open / limited / residents only, **remote or branch-visit opening**, **opening fee, monthly fee and minimum deposit in US$**, residence rules, documents, named banks, restrictions and fintech alternatives, all with sources. |
 | 📱 | **Works on phones** | Filters fold away, the ranking becomes cards, and details collapse until you need them. |
 | 🌗 | **Light & dark** | Follows your system, or switch with the Theme button. Your filters, picks and weights are remembered in your browser. |
 
@@ -241,7 +241,7 @@ Ranked by the atlas's **Best overall** score (difficulty, remote founding, Googl
 
 ### 🏦 Foreigner banking (`banking_by_country.csv`)
 
-**202 rows × 12 columns**, a separate question from charity registration: can a **non-resident foreign individual** (Australian resident, no local visa, address or job) open a **personal** account at a licensed local bank? Researched October 2026 by 9 parallel agents (`research/banking/`), merged and validated by `merge_banking.py`, and shown in the atlas and in the workbook's *Foreigner banking* sheet.
+**202 rows × 16 columns**, a separate question from charity registration: can a **non-resident foreign individual** (Australian resident, no local visa, address or job) open a **personal** account at a licensed local bank? Researched October 2026 by 9 parallel agents (`research/banking/`), merged and validated by `merge_banking.py`, and shown in the atlas and in the workbook's *Foreigner banking* sheet.
 
 | Column | Values |
 |---|---|
@@ -249,6 +249,7 @@ Ranked by the atlas's **Best overall** score (difficulty, remote founding, Googl
 | 🖥️ Opening method | remote 31 · in-person 147 · not available 24 |
 | 🏠 Local residence required | no 58 · often 106 · yes 38 |
 | 🎯 Banking difficulty | easy 4 · medium 59 · hard 82 · very hard 57 |
+| 💵 Opening fee · Monthly fee · Minimum deposit (USD) | Numbers for the cheapest realistic non-resident option, converted at Oct-2026 rates; the *Cost note* names the bank and the original amount. Known for 18 / 32 / 53 countries, blank where unpublished. |
 | 📄 Documents · 💰 Minimum deposit & fees · 🏛️ Banks accepting non-residents · ⛔ Restrictions · 📲 Alternatives (fintech / regional) | free text |
 | ✅ Confidence · 🔗 Sources | high 7 · medium 107 · low 88; 1–4 URLs per country |
 
@@ -269,6 +270,7 @@ Eligibility is computed by exact longest-match tokenisation against Google's 186
 | 💸 **Fee** | The lowest US$ figure in the fee cell (`none`/`free` = 0). A few cells include agent or notary costs; the full text is always shown beside the number. |
 | ⏱️ **Time** | The first duration in the time cell, converted to days. |
 | 💳 **Personal account** | `open → limited → residents only`, then remote opening, then banking difficulty and residence rule. In *Your weights* it scores `0.7 × access + 0.3 × opening method`. |
+| 💵 **Cheapest personal account** | First-year fees = `12 × monthly fee + opening fee` (an unpublished opening fee counts as 0), then minimum deposit; countries with no published monthly fee rank last. |
 | 🏦 **Charity bank access** | Classified from the research note: *remote option* = at least one bank or licensed e-money provider onboards non-residents without a visit. |
 | ⚪ **Missing values** | Countries with no published fee or time always rank last and fail a fee or time ceiling. |
 
@@ -341,7 +343,7 @@ python3 apply_verify_rest.py # apply verify_rest_patches.py (round-1 re-verifica
 ```text
 OpenCharity/
 ├── 📊 charities_by_country_v2.csv     # master dataset (202 × 18)
-├── 🏦 banking_by_country.csv          # personal accounts for non-residents (202 × 12)
+├── 🏦 banking_by_country.csv          # personal accounts for non-residents (202 × 16)
 ├── 📗 charities_by_country_v2.xlsx    # styled workbook (incl. Foreigner banking sheet)
 ├── 🌐 docs/
 │   ├── index.html                     # live atlas (GitHub Pages)

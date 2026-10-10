@@ -22,3 +22,14 @@ As of 2026. Banks only (licensed local banks); fintech/EMI options go in "altern
   "confidence": "high" | "medium" | "low",
   "sources": ["https://...", "..."]   // 1-4 URLs actually consulted, prefer bank or regulator pages
 }
+
+## Cost fields (pass 2, added to every object)
+
+  "opening_fee_usd": <number or null>,   // one-off fee to open a basic personal account as a non-resident (0 if free)
+  "min_deposit_usd": <number or null>,   // minimum opening deposit / balance required (your money, not a fee; 0 if none)
+  "monthly_fee_usd": <number or null>,   // typical monthly maintenance fee for that account (0 if free / waived by default)
+  "cost_note": "<one sentence: which bank/account the figures are for, the original local-currency amounts, and the FX rate used>"
+
+Figures are for the cheapest realistic non-resident option at a bank named in "banks". Convert to USD at
+approximate Oct-2026 rates and round sensibly. null = genuinely not published (say so in cost_note). Where
+non-residents cannot open accounts at all ("no" / "not available"), use null for all three and explain in cost_note.

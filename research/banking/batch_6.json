@@ -15,7 +15,11 @@
       "https://firstcitizenstt.com/personal-banking/savings/Customer-Agreement.html",
       "https://www.republictt.com/node/113",
       "https://wheretoemigrate.io/blog/banking-in-trinidad-and-tobago-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "First Citizens and Republic Bank require an opening deposit for non-residents but publish no amount, opening fee or monthly fee, so all three are null as unpublished."
   },
   {
     "country": "Mexico",
@@ -32,7 +36,11 @@
     "sources": [
       "https://globalbanks.com/how-to-open-a-bank-account-in-mexico/",
       "https://www.photonpay.com/hk/blog/article/how-to-open-a-bank-account-in-mexico?lang=en"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "No bank named publishes a non-resident personal tariff (BBVA Mexico, Banamex and Banorte open non-resident accounts case-by-case with unpublished minimum balances), so all three figures are left null as unpublished."
   },
   {
     "country": "Venezuela",
@@ -50,7 +58,11 @@
       "https://wheretoemigrate.io/blog/banking-in-venezuela-expat-guide-2026",
       "https://www.bossrevolution.com/en-us/blog/account-in-the-banco-de-venezuela",
       "https://ofac.treasury.gov/faqs/1247"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Non-residents cannot realistically open a personal account here, so no opening fee, minimum deposit or monthly fee applies or is published."
   },
   {
     "country": "Argentina",
@@ -67,7 +79,11 @@
     "sources": [
       "https://www.riotimesonline.com/banking-argentina-foreigners-2026/",
       "https://buenosairesherald.com/argentina-101/need-to-open-up-a-bank-account-in-argentina-without-a-dni-heres-how"
-    ]
+    ],
+    "opening_fee_usd": 0,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": 0,
+    "cost_note": "Banco de la Nacion Argentina basic savings account (caja de ahorros) is free to open and maintain under BCRA basic-account rules (ARS 0); no minimum deposit figure is published for non-residents, so that field is null."
   },
   {
     "country": "Singapore",
@@ -84,7 +100,11 @@
     "sources": [
       "https://wise.com/sg/blog/foreigner-open-bank-account-in-singapore",
       "https://www.singsaver.com.sg/banking/blog/can-a-foreigner-open-a-bank-account-in-singapore"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 0,
+    "monthly_fee_usd": 3.85,
+    "cost_note": "DBS Multiplier: no initial deposit required, S$5 monthly fall-below fee if average daily balance is under S$3,000 (about USD 2,310) at ~1.30 SGD/USD; no opening fee is published, and non-resident approval is case-by-case."
   },
   {
     "country": "Brunei",
@@ -102,7 +122,11 @@
       "https://www.trade.gov/country-commercial-guides/brunei-trade-financing",
       "https://www.baiduri.com.bn/personal/banking/savings-account",
       "https://wheretoemigrate.io/blog/banking-in-brunei-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 77,
+    "monthly_fee_usd": null,
+    "cost_note": "Baiduri Bank savings account minimum opening deposit BND 100 at ~1.30 BND/USD (about USD 77); opening and monthly fees for non-residents are not published."
   },
   {
     "country": "Solomon Islands",
@@ -119,7 +143,11 @@
     "sources": [
       "https://runningmybusiness.anz.com/content/dam/solomon-islands/pdf/ANZ-business-investor-guide.pdf",
       "https://www.sibconline.com.sb/?p=56381"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "No bank named publishes a non-resident personal tariff (ANZ and BSP Solomon Islands handle non-residents case-by-case), so all three figures are left null as unpublished."
   },
   {
     "country": "Azerbaijan",
@@ -137,7 +165,11 @@
       "https://birbank.az/en/news/customerbank-en",
       "https://norma.kulis.az/en/news/how-to-open-a-bank-account-in-azerbaijan-as-a-foreigner-110",
       "https://uploads.cbar.az/assets/Regulations%20on%20currency%20operations%20of%20residents%20of%20the%20Republic%20of%20Azerbaijan%20in%20foreign%20currency,%20and%20non-residents%20in%20national%20and%20foreign%20currencies.pdf"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "No bank named publishes a non-resident personal tariff (Kapital Bank and ABB branch openings with passport), so all three figures are left null as unpublished."
   },
   {
     "country": "Chad",
@@ -155,7 +187,11 @@
       "https://ecobank.com/personal-banking/everyday-banking/current-accounts/diaspora",
       "https://wheretoemigrate.io/blog/banking-in-chad-expat-guide-2026",
       "https://www.businessincameroon.com/bank/2803-8989-beac-tightens-conditions-for-opening-a-foreign-currency-account-in-and-out-of-the-cemac-region"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Non-residents cannot realistically open a personal account here, so no opening fee, minimum deposit or monthly fee applies or is published."
   },
   {
     "country": "Tanzania",
@@ -173,7 +209,11 @@
       "https://www.riotimesonline.com/bank-account-tanzania-foreigners-2026/",
       "https://bowmanslaw.com/insights/tanzania-key-highlights-of-the-foreign-exchange-regulations-2022/",
       "https://wheretoemigrate.io/blog/banking-in-tanzania-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "No bank named publishes a non-resident personal tariff (CRDB, NMB, Stanbic and Standard Chartered usually request a permit), so all three figures are left null as unpublished."
   },
   {
     "country": "Namibia",
@@ -190,7 +230,11 @@
     "sources": [
       "https://www.fnbnamibia.com.na/downloads/namibia/forex/investments/ForeignCurrencyFormIndividuals.pdf",
       "https://wheretoemigrate.io/blog/banking-in-namibia-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "No bank named publishes a non-resident personal tariff (FNB Namibia and Bank Windhoek non-resident accounts), so all three figures are left null as unpublished."
   },
   {
     "country": "Germany",
@@ -207,7 +251,11 @@
     "sources": [
       "https://n26.com/en-eu/blog/how-to-open-a-bank-account-in-germany",
       "https://allaboutberlin.com/guides/best-bank-germany"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Deutsche Bank, Commerzbank and Sparkassen open non-resident accounts case-by-case with no published non-resident tariff (standard current accounts cost a few EUR per month), so figures are left null as unpublished."
   },
   {
     "country": "Slovakia",
@@ -225,7 +273,11 @@
       "https://wise.com/gb/blog/opening-a-bank-account-in-slovakia",
       "https://prikhodko.com.ua/en/services/international-corporate-law/registration-of-business-in-eu-countries/slovakia/opening-a-bank-account-in-slovakia/",
       "https://wheretoemigrate.io/blog/banking-in-slovakia-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": 0,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Tatra banka, Slovenska sporitelna, VUB and CSOB generally open accounts free of charge (EUR 0); minimum balances and monthly fees for non-residents are not published, so those are null."
   },
   {
     "country": "Moldova",
@@ -243,7 +295,11 @@
       "https://ecnl.org/sites/default/files/2022-04/ECNL%20PILnet%20Banking%20Guide%20Moldova.pdf",
       "https://incorpore.md/en/bank-account-opening-in-moldova/",
       "https://wheretoemigrate.io/blog/banking-in-moldova-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "maib, Moldindconbank, Victoriabank and OTP Moldova do not publish a non-resident personal account tariff that could be found (only legal-entity schedules), so all three are null as unpublished."
   },
   {
     "country": "United Kingdom",
@@ -260,7 +316,11 @@
     "sources": [
       "https://wiki.private.law/en/uk-bank-account-non-resident",
       "https://wise.com/gb/blog/best-expat-accounts-uk"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 33250,
+    "monthly_fee_usd": 53,
+    "cost_note": "Barclays International charges GBP 40 a month if balances are under GBP 25,000, and Lloyds Bank International requires GBP 25,000 savings (or GBP 50,000 income), converted at ~1.33 USD/GBP; no separate opening fee is published."
   },
   {
     "country": "Spain",
@@ -277,7 +337,11 @@
     "sources": [
       "https://www.thelocal.es/20220214/how-to-open-a-bank-account-in-spain-if-youre-not-a-resident",
       "https://wiki.private.law/en/spain-banks"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Santander, Sabadell, CaixaBank, BBVA and Bankinter non-resident accounts commonly carry monthly maintenance fees, but no current figure was confirmed from a bank tariff, so all three are null as unpublished."
   },
   {
     "country": "Saudi Arabia",
@@ -295,7 +359,11 @@
       "https://rulebook.sama.gov.sa/en/node/2544/revisions/24558/view",
       "https://namia.beehiiv.com/p/visitors-can-now-open-bank-accounts-in-saudi-arabia",
       "https://fundingsouq.com/sa/en/blog/can-a-foreigner-or-non-resident-open-a-bank-account-in-saudi-arabia/"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "No bank named publishes a non-resident personal tariff (Al Rajhi and SNB visitor-account offerings are still emerging under SAMA rules), so all three figures are left null as unpublished."
   },
   {
     "country": "Sudan",
@@ -312,7 +380,11 @@
     "sources": [
       "https://sudantribune.com/?p=310781",
       "https://pulitzercenter.org/stories/sudan-some-see-signs-pending-us-sanctions-rollback"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Non-residents cannot realistically open a personal account here, so no opening fee, minimum deposit or monthly fee applies or is published."
   },
   {
     "country": "Djibouti",
@@ -329,7 +401,11 @@
     "sources": [
       "https://www.jarniascyril.com/expatriation/moving-to-djibouti-as-an-expat-complete-guide/expat-banking-services-djibouti-financial-management/",
       "https://wheretoemigrate.io/blog/banking-in-djibouti-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "BCIMR and IIB require a minimum opening deposit for non-residents but publish no amount, opening fee or monthly fee, so all three are null as unpublished."
   },
   {
     "country": "Sri Lanka",
@@ -346,7 +422,11 @@
     "sources": [
       "https://www.dfcc.lk/products/inward-investment-accounts-iia",
       "https://www.nationstrust.com/personal/global/foreign-currency-accounts"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "No bank named publishes a non-resident personal tariff (DFCC, Nations Trust, NSB, Commercial, Sampath and People's Bank charges vary by bank and currency), so all three figures are left null as unpublished."
   },
   {
     "country": "Togo",
@@ -364,7 +444,11 @@
       "https://www.goafricaonline.com/tg/articles/1103-ouvrir-compte-bancaire-togo-etranger",
       "https://wheretoemigrate.io/blog/banking-in-togo-expat-guide-2026",
       "https://www.cyriljarnias.com/?p=41486"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Ecobank Togo and Coris Bank diaspora accounts require an initial deposit whose amount varies by bank and is not published, and no opening or monthly fee is published, so all three are null."
   },
   {
     "country": "Niger",
@@ -381,6 +465,10 @@
     "sources": [
       "https://alliancesolidaire.org/2026/05/07/union-economique-et-monetaire-ouest-africaine-la-france-attentive-aux-nouvelles-regles-de-transferts-de-fonds-imposees-par-la-bceao/",
       "https://www.leconomistemaghrebin.com/2026/03/25/uemoa-la-diaspora-bientot-en-comptes-fcfa/"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Non-residents cannot realistically open a personal account here, so no opening fee, minimum deposit or monthly fee applies or is published."
   }
 ]

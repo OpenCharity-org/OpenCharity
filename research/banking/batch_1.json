@@ -14,7 +14,11 @@
     "sources": [
       "https://www.bankrate.com/banking/non-us-citizens-bank-accounts/",
       "https://grey.co/blog/open-wells-fargo-account-outside-us"
-    ]
+    ],
+    "opening_fee_usd": 0,
+    "min_deposit_usd": 0,
+    "monthly_fee_usd": 15,
+    "cost_note": "Chase Total Checking: no opening fee or minimum opening deposit, USD 15 monthly service fee (raised from USD 12 in Aug 2025) waivable with USD 500 direct deposits or a USD 1,500 daily balance; already in USD."
   },
   {
     "country": "St. Lucia",
@@ -31,7 +35,11 @@
     "sources": [
       "https://www.bankofsaintlucia.com/services/customer-types/view/2/63",
       "https://www.expat.com/en/forum/central-america/saint-lucia/112398-opening-a-bank-account-in-saint-lucia.html"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 5000,
+    "monthly_fee_usd": null,
+    "cost_note": "Minimum deposit is the roughly USD 5,000 non-resident figure cited by third-party guides (not an official Bank of Saint Lucia tariff); opening and monthly fees are not published."
   },
   {
     "country": "Honduras",
@@ -48,7 +56,11 @@
     "sources": [
       "https://wheretoemigrate.io/blog/banking-in-honduras-expat-guide-2026",
       "https://www.expat.com/forum/viewtopic.php?id=811309"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Honduras: not published by the banks named and no official tariff could be found, so all three figures are left null."
   },
   {
     "country": "Guyana",
@@ -65,7 +77,11 @@
     "sources": [
       "https://www.republicguyana.com/personal/foreign-currency-accounts",
       "https://www.riotimesonline.com/bank-account-guyana-foreigners-2026/"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 24,
+    "monthly_fee_usd": null,
+    "cost_note": "Republic Bank (Guyana) savings minimums are cited from GYD 5,000 (about USD 24 at GYD 209/USD) up to GYD 100,000 depending on product; opening and monthly fees are not published."
   },
   {
     "country": "South Korea",
@@ -82,7 +98,11 @@
     "sources": [
       "https://wise.com/au/blog/opening-a-bank-account-in-south-korea",
       "https://www.90daykorean.com/?p=591"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 0,
+    "monthly_fee_usd": null,
+    "cost_note": "Major Korean banks (KB Kookmin, Hana, Shinhan, Woori) typically need no minimum deposit; opening and monthly fees for non-resident accounts are not published."
   },
   {
     "country": "Vietnam",
@@ -99,7 +119,11 @@
     "sources": [
       "https://www.dfdl.com/insights/legal-and-tax-updates/vietnam-draft-circular-to-amend-regulations-on-payment-accounts/",
       "https://globalbanks.com/?p=17518"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Non-residents cannot realistically open a personal account here, so no cost figures apply (all null)."
   },
   {
     "country": "Fiji",
@@ -116,7 +140,11 @@
     "sources": [
       "https://www.bsp.com.fj/media/qoxoxf3h/bsp-new-personal-account-requirements_11-3-24.pdf",
       "https://wheretoemigrate.io/blog/banking-in-fiji-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Fiji: not published by the banks named and no official tariff could be found, so all three figures are left null."
   },
   {
     "country": "Marshall Islands",
@@ -133,7 +161,11 @@
     "sources": [
       "https://globalbanks.com/bank-account-marshall-islands/",
       "https://bbcincorp.com/offshore/company-formation/marshall-islands/open-bank-account"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Non-residents cannot realistically open a personal account here, so no cost figures apply (all null)."
   },
   {
     "country": "Tajikistan",
@@ -150,7 +182,11 @@
     "sources": [
       "https://www.spitamenbank.tj/en/personal/products/cash-management-services/opening-an-account",
       "https://wheretoemigrate.io/blog/banking-in-tajikistan-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Tajikistan: not published by the banks named and no official tariff could be found, so all three figures are left null."
   },
   {
     "country": "Equatorial Guinea",
@@ -167,7 +203,11 @@
     "sources": [
       "https://wheretoemigrate.io/blog/banking-in-equatorial-guinea-expat-guide-2026",
       "https://www.hsfkramer.com/notes/africa/2019-10/overview-of-the-cemac-regulation-of-21-december-2018-on-exchange-control"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Non-residents cannot realistically open a personal account here, so no cost figures apply (all null)."
   },
   {
     "country": "Zambia",
@@ -184,7 +224,11 @@
     "sources": [
       "https://onboardinguat.stanbicbank.co.zm/",
       "https://wheretoemigrate.io/blog/banking-in-zambia-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Zambia: not published by the banks named and no official tariff could be found, so all three figures are left null."
   },
   {
     "country": "South Africa",
@@ -201,7 +245,11 @@
     "sources": [
       "https://reporting.standardbank.com/southafrica/personal/products-and-services/bank-with-us/foreign-nationals/non-residents",
       "https://wheretoemigrate.io/blog/banking-in-south-africa-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Standard Bank's 2026 Non-Residents Pricing Guide was found but its account monthly fee and minimum deposit could not be extracted (it lists outward payments outside the CMA at 0.783%, min ZAR 295.65, max ZAR 991.30, about USD 17-57 at ZAR 17.5/USD), so all three are null."
   },
   {
     "country": "Monaco",
@@ -218,7 +266,11 @@
     "sources": [
       "https://www.hellomonaco.com/how-to/useful-information/monaco-banks-everything-about-bank-accounts-minimum-deposits-and-new-requirements/",
       "https://wise.com/gb/blog/open-bank-account-in-monaco"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 11700,
+    "monthly_fee_usd": null,
+    "cost_note": "Minimum deposit is the low end of the EUR 10,000-50,000 cited for standard non-resident accounts (about USD 11,700 at USD 1.17/EUR; private banking needs EUR 500,000+); opening and monthly fees are not published."
   },
   {
     "country": "Bosnia & Herzegovina",
@@ -235,7 +287,11 @@
     "sources": [
       "https://www.raiffeisenbank.ba/bs/o-nama/media/Novosti/poziv-dostava-dokumentacije-za-azuriranje-racuna.html",
       "https://wheretoemigrate.io/blog/banking-in-bosnia-and-herzegovina-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Bosnia & Herzegovina: not published by the banks named and no official tariff could be found, so all three figures are left null."
   },
   {
     "country": "Bulgaria",
@@ -252,7 +308,11 @@
     "sources": [
       "https://www.innovires.com/en/blog/bankova-smetka-chuzhdentsi.html",
       "https://expatarrivals.com/node/15492"
-    ]
+    ],
+    "opening_fee_usd": 117,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Opening fee is the low end of the EUR 100-500 KYC/document-review fees reported for non-residents at UniCredit Bulbank/DSK (about USD 117 at USD 1.17/EUR); minimum deposit and monthly fees are not published."
   },
   {
     "country": "Sweden",
@@ -269,7 +329,11 @@
     "sources": [
       "https://wise.com/gb/blog/opening-a-bank-account-in-sweden",
       "https://www.thelocal.se/20190507/how-to-set-up-a-bank-account-in-sweden"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Sweden: not published by the banks named and no official tariff could be found, so all three figures are left null."
   },
   {
     "country": "Israel",
@@ -286,7 +350,11 @@
     "sources": [
       "https://wise.com/au/blog/opening-a-bank-account-in-israel",
       "https://wheretoemigrate.io/blog/banking-in-israel-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": 2.7,
+    "cost_note": "Monthly fee is Bank Leumi's cheapest paid plan, Digital Leumi at ILS 10/month (plans range ILS 10-35; about USD 2.7 at ILS 3.7/USD), not confirmed for non-resident accounts; opening fee and minimum deposit are not published."
   },
   {
     "country": "Oman",
@@ -303,7 +371,11 @@
     "sources": [
       "https://www.bankmuscat.om/en/accounts/Documents/Account_Opening_for_Non-Resident_customers_FAQ.pdf",
       "https://prikhodko.com.ua/en/services/international-corporate-law/oman-en/opening-a-bank-account-in-oman/"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 260,
+    "monthly_fee_usd": null,
+    "cost_note": "Bank Muscat needs no minimum to open a savings account but charges a monthly ledger fee if the daily balance falls below OMR 100 (about USD 260 at USD 2.60/OMR); the fee amount and any opening fee are not published in the sources found."
   },
   {
     "country": "Morocco",
@@ -320,7 +392,11 @@
     "sources": [
       "https://www.oc.gov.ma/en/non-resident-foreigners/currency-account-nrf",
       "https://www.bankofafrica.ma/en/node/1590"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Morocco: not published by the banks named and no official tariff could be found, so all three figures are left null."
   },
   {
     "country": "Seychelles",
@@ -337,7 +413,11 @@
     "sources": [
       "https://www.gov.uk/guidance/living-in-seychelles",
       "https://wheretoemigrate.io/blog/banking-in-seychelles-expat-guide-2026"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": 35000,
+    "monthly_fee_usd": null,
+    "cost_note": "Minimum balance is the roughly USD 35,000 for non-residents at Absa Seychelles cited by one third-party guide, not an official tariff; opening and monthly fees are not published."
   },
   {
     "country": "Maldives",
@@ -354,7 +434,11 @@
     "sources": [
       "https://mib.com.mv/personal-deposits/non-resident-foreign-account",
       "https://help.mib.com.mv/portal/en/kb/articles/requirements-for-accounts-for-foreigners"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": 8.33,
+    "cost_note": "MIB Non-Resident Foreigners Deposit Account charges USD 100 a year (shown as USD 8.33/month); opening fee and current minimum deposit are not published (the USD 100-250 minimums dated from MIB's 2011 launch)."
   },
   {
     "country": "Guinea-Bissau",
@@ -371,7 +455,11 @@
     "sources": [
       "https://www.ecofinagency.com/news-finances/2303-53987-west-africa-targets-diaspora-funds-with-new-banking-access-rules",
       "https://www.jarniascyril.com/?p=15272"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Non-residents cannot realistically open a personal account here, so no cost figures apply (all null)."
   },
   {
     "country": "Kosovo",
@@ -388,6 +476,10 @@
     "sources": [
       "https://teb-kos.com/?p=4886",
       "https://www.ubt-uni.net/en/study/new-students/international-students/life-in-kosovo/banks-and-taxes"
-    ]
+    ],
+    "opening_fee_usd": null,
+    "min_deposit_usd": null,
+    "monthly_fee_usd": null,
+    "cost_note": "Kosovo: not published by the banks named and no official tariff could be found, so all three figures are left null."
   }
 ]

@@ -162,7 +162,22 @@ PB_COLS = {
     "Documents required": "pb_docs", "Minimum deposit & fees": "pb_dep",
     "Banks accepting non-residents": "pb_banks", "Restrictions": "pb_restr",
     "Alternatives (fintech / regional)": "pb_alt", "Confidence": "pb_conf", "Sources": "pb_src",
+    "Opening fee (USD)": "pb_open", "Minimum deposit (USD)": "pb_mindep", "Monthly fee (USD)": "pb_month",
+    "Cost note": "pb_costnote",
 }
+PB_NUM = ("pb_open", "pb_mindep", "pb_month")
+
+
+def pb_year_bin(v):
+    if v is None:
+        return "unknown"
+    return "free" if v == 0 else "low" if v <= 60 else "mid" if v <= 240 else "high"
+
+
+def pb_dep_bin(v):
+    if v is None:
+        return "unknown"
+    return "none" if v == 0 else "low" if v <= 500 else "mid" if v <= 10000 else "high"
 
 
 def add_banking(data):
@@ -173,6 +188,12 @@ def add_banking(data):
     for d in data:
         for col, key in PB_COLS.items():
             d[key] = rows[d["country"]][col]
+        for key in PB_NUM:
+            d[key] = float(d[key]) if d[key] != "" else None
+        # first-year fees: 12 monthly fees + the opening fee (unpublished opening fee counts as 0); needs a known monthly fee
+        d["pb_year"] = 12 * d["pb_month"] + (d["pb_open"] or 0) if d["pb_month"] is not None else None
+        d["pb_cost_bin"] = pb_year_bin(d["pb_year"])
+        d["pb_dep_bin"] = pb_dep_bin(d["pb_mindep"])
 
 
 def main():
@@ -371,6 +392,9 @@ aside.dossier { background: var(--surface); border: 1px solid var(--line); borde
 .pbl dt { font: 500 11px var(--f-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding-top: 3px; }
 .pbl dd { margin: 0; overflow-wrap: anywhere; }
 .pbsrc { margin: 8px 0 0; font-size: 13px; }
+.facts.pbcost { margin-bottom: 6px; }
+.facts.pbcost .big { font-size: 18px; }
+.pbnote { margin: 0 0 10px; font-size: 13px; color: var(--muted); }
 @media (max-width: 520px) { .pbl { grid-template-columns: minmax(0, 1fr); } .pbl dd { margin-bottom: 6px; } }
 .sec + .sec { border-top: 1px solid var(--line); padding-top: 14px; }
 .sec ul { margin: 4px 0 0; padding-left: 18px; font-size: 13px; color: var(--muted); display: grid; gap: 5px; overflow-wrap: anywhere; }
@@ -543,6 +567,8 @@ footer p { margin: 0; }
         <th data-k="days_lo"><button type="button">Time</button></th>
         <th data-k="bank_cat"><button type="button">Charity bank</button></th>
         <th data-k="pb_status"><button type="button">Personal acct</button></th>
+        <th data-k="pb_method"><button type="button">Personal remote?</button></th>
+        <th data-k="pb_year"><button type="button">Acct fees/yr</button></th>
         <th data-k="funding_cat"><button type="button">Foreign funding</button></th>
         <th data-k="gfn"><button type="button">Google NP</button></th>
       </tr></thead>
@@ -582,7 +608,8 @@ const MODES = {
   time: { label: "Time", key: "time_bin", cats: [["fast", "Up to 2 weeks", "d1"], ["month", "Up to a month", "d2"], ["quarter", "1–3 months", "d3"], ["slow", "Over 3 months", "d4"], ["unknown", "Not stated", "d0"]] },
   bank: { label: "Charity bank account", key: "bank_cat", cats: [["remote", "Remote option", "d1"], ["visit", "Branch visit", "d2"], ["blocked", "Effectively blocked", "d4"]] },
   pbank: { label: "Personal account (non-resident)", key: "pb_status", cats: [["yes", "Open to non-residents", "d1"], ["limited", "Limited", "d3"], ["no", "Residents only", "d4"]] },
-  pbopen: { label: "Personal account opening", key: "pb_method", cats: [["remote", "Remote", "d1"], ["in-person", "In person", "d2"], ["not available", "Not available", "d4"]] },
+  pbcost: { label: "Personal account cost", key: "pb_cost_bin", cats: [["free", "Free", "d1"], ["low", "Up to $60/yr", "d2"], ["mid", "$61–240/yr", "d3"], ["high", "Over $240/yr", "d4"], ["unknown", "Not published", "d0"]] },
+  pbopen: { label: "Personal account opening", key: "pb_method", cats: [["remote", "Remote, no visit", "d1"], ["in-person", "Branch visit", "d2"], ["not available", "Not available", "d4"]] },
   funding: { label: "Foreign funding", key: "funding_cat", cats: [["open", "No notable limits", "d1"], ["restricted", "Restricted", "d3"]] },
   gfn: { label: "Google for Nonprofits", key: "gfn", cats: [["Yes", "Eligible", "d1"], ["No", "Not eligible", "d4"]] },
   confidence: { label: "Confidence", key: "confidence", cats: [["high", "High", "d1"], ["med", "Medium", "d2"]] },
@@ -591,11 +618,12 @@ const REGIONS = [...new Set(DATA.map(d => d.region))].sort();
 // facet key -> {label, cats}; the first six show up front, the rest under "more"
 const FACETS = {};
 for (const m of Object.values(MODES)) FACETS[m.key] = { label: m.label, cats: m.cats };
+FACETS.pb_dep_bin = { label: "Personal account minimum deposit", cats: [["none", "None", "d1"], ["low", "Up to $500", "d2"], ["mid", "$501–10k", "d3"], ["high", "Over $10k", "d4"], ["unknown", "Not published", "d0"]] };
 FACETS.pb_res = { label: "Local residence needed (personal account)", cats: [["no", "No", "d1"], ["often", "Often", "d2"], ["yes", "Yes", "d4"]] };
 FACETS.pb_diff = { label: "Personal banking difficulty", cats: MODES.difficulty.cats };
 FACETS.region = { label: "Region", cats: REGIONS.map(r => [r, r, null]) };
 const FRONT = ["difficulty", "no_presence", "fee_bin", "time_bin", "bank_cat", "funding_cat", "pb_status", "pb_method"];
-const MORE = ["pb_res", "pb_diff", "region", "gfn", "confidence"];
+const MORE = ["pb_cost_bin", "pb_dep_bin", "pb_res", "pb_diff", "region", "gfn", "confidence"];
 
 const LABEL = {}; for (const [k, f] of Object.entries(FACETS)) for (const [v, l, c] of f.cats) LABEL[k + ":" + v] = [l, c];
 const ORDER = { difficulty: ["easy", "medium", "hard", "very hard"], no_presence: ["yes", "partial", "no"], gfn: ["Yes", "No"],
@@ -611,13 +639,13 @@ const num = (v, desc) => v == null ? BIG : (desc ? -v : v);   // missing values 
 /* ---------- custom weights ---------- */
 const WEIGHTS = [
   ["difficulty", "Ease of registering"], ["remote", "Remote founding"], ["fee", "Low fee"], ["time", "Speed"],
-  ["bank", "Charity bank account"], ["pbank", "Personal account as non-resident"], ["funding", "Open foreign funding"],
+  ["bank", "Charity bank account"], ["pbank", "Personal account as non-resident"], ["pbcost", "Cheap personal account"], ["funding", "Open foreign funding"],
   ["gfn", "Google for Nonprofits"], ["conf", "Research confidence"],
 ];
-const W_DEFAULT = { difficulty: 3, remote: 3, fee: 2, time: 2, bank: 2, pbank: 1, funding: 1, gfn: 1, conf: 1 };
+const W_DEFAULT = { difficulty: 3, remote: 3, fee: 2, time: 2, bank: 2, pbank: 1, pbcost: 0, funding: 1, gfn: 1, conf: 1 };
 const pct = key => { const v = DATA.filter(d => d[key] != null).map(d => d[key]).sort((a, b) => a - b);
   return x => { if (x == null) return 1; let i = 0; while (i < v.length && v[i] < x) i++; return v.length > 1 ? i / (v.length - 1) : 0; }; };
-const feePct = pct("fee_lo"), dayPct = pct("days_lo");
+const feePct = pct("fee_lo"), dayPct = pct("days_lo"), pbYearPct = pct("pb_year");
 // penalty 0 (best) .. 1 (worst) per factor
 const PEN = {
   difficulty: d => (DIFF_N[d.difficulty] ?? 3) / 3,
@@ -626,6 +654,7 @@ const PEN = {
   time: d => dayPct(d.days_lo),
   bank: d => ({ remote: 0, visit: .5, blocked: 1 })[d.bank_cat] ?? 1,
   pbank: d => (({ yes: 0, limited: .5, no: 1 })[d.pb_status] ?? 1) * .7 + (({ remote: 0, "in-person": .5, "not available": 1 })[d.pb_method] ?? 1) * .3,
+  pbcost: d => pbYearPct(d.pb_year),
   funding: d => d.funding_cat === "open" ? 0 : 1,
   gfn: d => d.gfn === "Yes" ? 0 : 1,
   conf: d => d.confidence === "high" ? 0 : .5,
@@ -645,6 +674,7 @@ const RANKS = {
   remote:    { label: "Most remote-friendly", mode: "remote", note: "Fully remote founding first, then easiest banking, then difficulty.", key: d => [ord("no_presence", d), ord("bank_cat", d), ord("difficulty", d)] },
   bank:      { label: "Easiest bank account", mode: "bank", note: "Remote opening possible → branch visit → effectively blocked.", key: d => [ord("bank_cat", d), ord("difficulty", d)] },
   pbank:     { label: "Easiest personal account (non-resident)", mode: "pbank", note: "Open to non-residents → limited → residents only; then remote opening first, then banking difficulty.", key: d => [ord("pb_status", d), ord("pb_method", d), ord("pb_diff", d), ord("pb_res", d)] },
+  pbcheap:   { label: "Cheapest personal account", mode: "pbcost", note: "Lowest first-year fees (12 monthly fees + opening fee, US$) first, then lowest minimum deposit; unpublished fees last. Fee figures exist for about a third of countries, so check the cost note in each dossier.", key: d => [num(d.pb_year), num(d.pb_mindep), ord("pb_status", d)] },
   pbhard:    { label: "Hardest personal account", mode: "pbank", note: "Residents-only and closed banking systems first.", key: d => [-ord("pb_status", d), -ord("pb_diff", d), -ord("pb_method", d)] },
   funding:   { label: "Fewest funding limits", mode: "funding", note: "No notable foreign-funding restrictions first.", key: d => [ord("funding_cat", d), ord("difficulty", d)] },
   cheapfast: { label: "Cheap and fast", mode: "fee", note: "Sum of fee rank and time rank; both must be stated.", key: null },
@@ -664,6 +694,8 @@ const byName = new Map(DATA.map(d => [d.country, d]));
 const geoName = new Map(DATA.map(d => [ALIAS[d.country] || d.country, d.country]));
 const bySlug = new Map(DATA.map(d => [slug(d.country), d.country]));
 const fmtUSD = v => v >= 1000 ? "$" + (v / 1000).toFixed(v % 1000 ? 1 : 0) + "k" : "$" + Math.round(v);
+const usd = v => v == null ? "—" : v === 0 ? "Free" : fmtUSD(v);
+const dep = v => v == null ? "—" : v === 0 ? "None" : fmtUSD(v);
 const feeTxt = d => d.fee_lo == null ? "—" : d.fee_hi === 0 ? "Free" : d.fee_lo === d.fee_hi ? fmtUSD(d.fee_lo) : `${fmtUSD(d.fee_lo)}–${fmtUSD(d.fee_hi)}`;
 const dur = n => n < 14 ? `${n} d` : n < 60 ? `${Math.round(n / 7)} wk` : n < 365 ? `${Math.round(n / 30)} mo` : `${(n / 365).toFixed(n % 365 ? 1 : 0)} yr`;
 const timeTxt = d => { if (d.days_lo == null) return "—"; if (d.days_lo === d.days_hi) return dur(d.days_lo);
@@ -751,7 +783,7 @@ function colVal(d, k) {
   if (k === "rank") return rankPos.get(d.country);
   if (k === "fit") return -fit(d);
   if (ORDER[k]) return ord(k, d);
-  if (k === "fee_lo" || k === "days_lo") return d[k] == null ? BIG : d[k];
+  if (k === "fee_lo" || k === "days_lo" || k === "pb_year") return d[k] == null ? BIG : d[k];
   return d[k].toLowerCase();
 }
 
@@ -773,7 +805,7 @@ let rankPos = new Map();
 const tip = $("tip"), card = document.querySelector(".mapcard");
 function showTip(ev, name) {
   const d = byName.get(name), r = card.getBoundingClientRect();
-  tip.innerHTML = d ? `<b>${esc(d.country)}</b> · #${rankPos.get(d.country)} ${esc(RANKS[rankBy].label.toLowerCase())}${rankBy === "custom" ? ` (fit ${fit(d)})` : ""}<br>${esc(LABEL["difficulty:" + d.difficulty]?.[0] || d.difficulty)} · ${esc(LABEL["no_presence:" + d.no_presence]?.[0] || "")}<br>Fee ${esc(feeTxt(d))} · Time ${esc(timeTxt(d))}`
+  tip.innerHTML = d ? `<b>${esc(d.country)}</b> · #${rankPos.get(d.country)} ${esc(RANKS[rankBy].label.toLowerCase())}${rankBy === "custom" ? ` (fit ${fit(d)})` : ""}<br>${esc(LABEL["difficulty:" + d.difficulty]?.[0] || d.difficulty)} · ${esc(LABEL["no_presence:" + d.no_presence]?.[0] || "")}<br>Fee ${esc(feeTxt(d))} · Time ${esc(timeTxt(d))}<br>Personal account: ${esc(LABEL["pb_status:" + d.pb_status]?.[0] || "")} · ${esc(LABEL["pb_method:" + d.pb_method]?.[0] || "")}`
                     : `<b>${esc(name)}</b><br>Not in dataset`;
   tip.hidden = false;
   const x = Math.max(8, Math.min(ev.clientX - r.left + 14, r.width - tip.offsetWidth - 8)), y = Math.max(ev.clientY - r.top - tip.offsetHeight - 10, 8);
@@ -832,10 +864,12 @@ function renderTable(list) {
     <td class="num" data-l="Fee" title="${esc(d.fee_usd)}">${esc(feeTxt(d))}</td>
     <td class="num" data-l="Time" title="${esc(d.time_to_reg)}">${esc(timeTxt(d))}</td>
     <td class="pc">${pill("bank_cat", d.bank_cat)}</td>
-    <td class="pc" title="${esc(LABEL["pb_method:" + d.pb_method]?.[0] ?? "")} opening · ${esc(d.pb_diff)}">${pill("pb_status", d.pb_status)}</td>
+    <td class="pc" title="Personal account for non-residents · difficulty ${esc(d.pb_diff)}">${pill("pb_status", d.pb_status)}</td>
+    <td class="pc" title="How a non-resident opens a personal account">${pill("pb_method", d.pb_method)}</td>
+    <td class="num" data-l="Acct/yr" title="${esc(d.pb_costnote)}">${esc(usd(d.pb_year))}</td>
     <td class="pc">${pill("funding_cat", d.funding_cat)}</td>
     <td class="pc gfn">${pill("gfn", d.gfn)}</td></tr>`; }).join("")
-    || `<tr><td colspan="12" class="empty">No jurisdictions match all these filters. Remove one of the active filters above.</td></tr>`;
+    || `<tr><td colspan="14" class="empty">No jurisdictions match all these filters. Remove one of the active filters above.</td></tr>`;
   document.querySelectorAll("#tbl th[data-k]").forEach(th => th.setAttribute("aria-sort",
     colSort ? (th.dataset.k === colSort.k ? (colSort.dir > 0 ? "ascending" : "descending") : "none") : (th.dataset.k === "rank" ? "ascending" : "none")));
 }
@@ -861,6 +895,10 @@ function renderCompare() {
     ["Charity bank account", d => pill("bank_cat", d.bank_cat), d => ord("bank_cat", d), pill("bank_cat", mostCommon(pool, "bank_cat"))],
     ["Personal account (non-resident)", d => pill("pb_status", d.pb_status), d => ord("pb_status", d), pill("pb_status", mostCommon(pool, "pb_status"))],
     ["Personal account opening", d => pill("pb_method", d.pb_method), d => ord("pb_method", d), pill("pb_method", mostCommon(pool, "pb_method"))],
+    ["Personal account: first-year cost", d => esc(usd(d.pb_year)), d => num(d.pb_year), (v => v == null ? "—" : usd(v))(median(pool.map(d => d.pb_year).filter(v => v != null)))],
+    ["Personal account: opening fee", d => esc(usd(d.pb_open)), d => num(d.pb_open), (v => v == null ? "—" : usd(v))(median(pool.map(d => d.pb_open).filter(v => v != null)))],
+    ["Personal account: monthly fee", d => esc(usd(d.pb_month)), d => num(d.pb_month), (v => v == null ? "—" : usd(v))(median(pool.map(d => d.pb_month).filter(v => v != null)))],
+    ["Personal account: min deposit", d => esc(dep(d.pb_mindep)), d => num(d.pb_mindep), (v => v == null ? "—" : dep(v))(median(pool.map(d => d.pb_mindep).filter(v => v != null)))],
     ["Personal banking difficulty", d => pill("pb_diff", d.pb_diff), d => ord("pb_diff", d), pill("pb_diff", mostCommon(pool, "pb_diff"))],
     ["Foreign funding", d => pill("funding_cat", d.funding_cat), d => ord("funding_cat", d), pill("funding_cat", mostCommon(pool, "funding_cat"))],
     ["Google for Nonprofits", d => pill("gfn", d.gfn), d => ord("gfn", d), pill("gfn", mostCommon(pool, "gfn"))],
@@ -958,7 +996,7 @@ function renderDossier() {
     <div class="chips">${chip("difficulty", d.difficulty)}${chip("no_presence", d.no_presence)}
       <span class="chip plain">Google for Nonprofits: ${d.gfn === "Yes" ? "eligible" : "not eligible"}</span>
       <span class="chip plain">Charity bank: ${esc(LABEL["bank_cat:" + d.bank_cat][0].toLowerCase())}</span>
-      <span class="chip plain">Personal account: ${esc(LABEL["pb_status:" + d.pb_status]?.[0].toLowerCase() ?? "—")}</span>
+      <span class="chip plain">Personal account: ${esc(LABEL["pb_status:" + d.pb_status]?.[0].toLowerCase() ?? "—")}, ${esc(LABEL["pb_method:" + d.pb_method]?.[0].toLowerCase() ?? "—")}</span>
       <span class="chip plain">Confidence: ${esc(d.confidence === "med" ? "medium" : d.confidence)}</span></div>
     <dl class="facts">
       <div><dt>Registration fee</dt><dd class="big">${esc(feeTxt(d))}</dd><dd>${esc(d.fee_usd || "—")}</dd></div>
@@ -978,6 +1016,11 @@ function renderDossier() {
       <div class="chips">${chip("pb_status", d.pb_status)}${chip("pb_method", d.pb_method)}
         <span class="chip plain">Residence needed: ${esc(d.pb_res)}</span><span class="chip plain">Difficulty: ${esc(d.pb_diff)}</span>
         <span class="chip plain">Confidence: ${esc(d.pb_conf)}</span></div>
+      <dl class="facts pbcost"><div><dt>Opening fee</dt><dd class="big">${esc(usd(d.pb_open))}</dd></div>
+        <div><dt>Monthly fee</dt><dd class="big">${esc(usd(d.pb_month))}</dd></div>
+        <div><dt>Min deposit</dt><dd class="big">${esc(dep(d.pb_mindep))}</dd></div>
+        <div><dt>First year</dt><dd class="big">${esc(usd(d.pb_year))}</dd></div></dl>
+      <p class="pbnote">${esc(d.pb_costnote)}</p>
       <dl class="pbl"><dt>Documents</dt><dd>${esc(d.pb_docs)}</dd><dt>Deposit &amp; fees</dt><dd>${esc(d.pb_dep)}</dd>
         <dt>Banks</dt><dd>${esc(d.pb_banks)}</dd><dt>Restrictions</dt><dd>${esc(d.pb_restr)}</dd><dt>Alternatives</dt><dd>${esc(d.pb_alt)}</dd></dl>
       ${pbs.length ? `<p class="pbsrc">${pbs.map((s, i) => `<a href="${esc(s)}" target="_blank" rel="noopener">source ${i + 1}</a>`).join(" · ")}</p>` : ""}</div>

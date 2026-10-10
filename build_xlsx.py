@@ -186,7 +186,7 @@ def main():
                 row[st_i].fill = status_fill[row[st_i].value]
             if row[df_i].value in DIFF_FILL:
                 row[df_i].fill = DIFF_FILL[row[df_i].value]
-        for i, w in enumerate([24, 14, 14, 13, 12, 44, 32, 40, 44, 40, 11, 50]):
+        for i, w in enumerate([24, 14, 14, 13, 12, 44, 32, 40, 44, 40, 12, 12, 12, 44, 11, 50]):
             ws5.column_dimensions[get_column_letter(i + 1)].width = w
         ws5.freeze_panes = "B2"
         ws5.auto_filter.ref = ws5.dimensions

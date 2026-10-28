@@ -60,6 +60,7 @@ FIELD_MAP = [
 ]
 
 def build_data():
+    from build_atlas import parse_fee
     rows = list(csv.DictReader(open(SRC, encoding="utf-8")))
     out = []
     for r in rows:
@@ -67,6 +68,7 @@ def build_data():
         for key, col in FIELD_MAP:
             rec[key] = (r.get(col) or "").strip()
         rec["region"] = COUNTRY_REGION.get(rec["country"], "Other")
+        rec["fee_lo"] = parse_fee(rec["fee_usd"])[0]
         out.append(rec)
     return out, SRC.name
 
@@ -239,12 +241,12 @@ function filtered(){
     if(s==="difficulty")return (DIFF_ORDER[norm(a.difficulty)]??9)-(DIFF_ORDER[norm(b.difficulty)]??9)||a.country.localeCompare(b.country);
     if(s==="gfn")return(((a.gfn||"").toLowerCase().startsWith("yes")?0:1)-((b.gfn||"").toLowerCase().startsWith("yes")?0:1))||a.country.localeCompare(b.country);
     if(s==="noproblem")return (PRESENCE_ORDER[norm(a.no_presence)]??9)-(PRESENCE_ORDER[norm(b.no_presence)]??9)||a.country.localeCompare(b.country);
-    if(s==="fee")return feeNum(a.fee_usd)-feeNum(b.fee_usd)||a.country.localeCompare(b.country);
+    if(s==="fee")return feeNum(a)-feeNum(b)||a.country.localeCompare(b.country);
     return 0;
   });
   return rows;
 }
-function feeNum(f){if(!f)return 1e9;const m=String(f).replace(/[^0-9.]/g,"");if(!m)return 1e9;const v=parseFloat(m);return isNaN(v)?1e9:v;}
+function feeNum(d){return d.fee_lo==null?1e9:d.fee_lo;}
 
 function facet(key,label,values,order){
   const counts={};DATA.forEach(d=>{const v=norm(d[key]);if(v)counts[v]=(counts[v]||0)+1;});
